@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" "http://www.wapforum.org/DTD/wml13.dtd">
+<wml>
+<head>
+<meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card title="优士网">
+<p align="left">
+<img src="youshi_logo.gif" alt="优士"/> <br/>
+<strong>做更成功的自己</strong><br/>
+优士是为优秀职业人士及创业家所打造的专有社交平台，帮助他们取得生活和职业的更大成功。
+</p>
+
+<br/>
+<br/>
+
+<p align="center">
+<font color="#0066CC">请选择手机型号！</font><br/>
+
+<select name="mobiletype"><option onpick="/servlet/linkverify?token=NDcxZDdkZDI2LGJhMzY5NmYzNTVhYTRiYzg3MGU0MzNjZGU4NmU1N2Y5&amp;mobiletype=Nokia" value="Nokia">诺基亚(Nokia)</option><option onpick="/servlet/linkverify?token=NDcxZDdkZDI2LGJhMzY5NmYzNTVhYTRiYzg3MGU0MzNjZGU4NmU1N2Y5&amp;mobiletype=Motorola" value="Motorola">Motorola</option><option onpick="/servlet/linkverify?token=NDcxZDdkZDI2LGJhMzY5NmYzNTVhYTRiYzg3MGU0MzNjZGU4NmU1N2Y5&amp;mobiletype=Samsung" value="Samsung">Samsung</option><option onpick="/servlet/linkverify?token=NDcxZDdkZDI2LGJhMzY5NmYzNTVhYTRiYzg3MGU0MzNjZGU4NmU1N2Y5&amp;mobiletype=LG" value="LG">LG</option><option onpick="/servlet/linkverify?token=NDcxZDdkZDI2LGJhMzY5NmYzNTVhYTRiYzg3MGU0MzNjZGU4NmU1N2Y5&amp;mobiletype=ZTE" value="ZTE">ZTE</option><option onpick="/servlet/linkverify?token=NDcxZDdkZDI2LGJhMzY5NmYzNTVhYTRiYzg3MGU0MzNjZGU4NmU1N2Y5&amp;mobiletype=Sanyo" value="Sanyo">Sanyo</option><option onpick="/servlet/linkverify?token=NDcxZDdkZDI2LGJhMzY5NmYzNTVhYTRiYzg3MGU0MzNjZGU4NmU1N2Y5&amp;mobiletype=BenQ" value="BenQ">BenQ</option><option onpick="/servlet/linkverify?token=NDcxZDdkZDI2LGJhMzY5NmYzNTVhYTRiYzg3MGU0MzNjZGU4NmU1N2Y5&amp;mobiletype=Sharp" value="Sharp">Sharp</option><option onpick="/servlet/linkverify?token=NDcxZDdkZDI2LGJhMzY5NmYzNTVhYTRiYzg3MGU0MzNjZGU4NmU1N2Y5&amp;mobiletype=Panasonic" value="Panasonic">Panasonic</option><option onpick="/servlet/linkverify?token=NDcxZDdkZDI2LGJhMzY5NmYzNTVhYTRiYzg3MGU0MzNjZGU4NmU1N2Y5&amp;mobiletype=HTC" value="HTC">HTC</option><option onpick="/servlet/linkverify?token=NDcxZDdkZDI2LGJhMzY5NmYzNTVhYTRiYzg3MGU0MzNjZGU4NmU1N2Y5&amp;mobiletype=SonyEricsson" value="Sony Ericsson">Sony Ericsson</option><option onpick="/servlet/linkverify?token=NDcxZDdkZDI2LGJhMzY5NmYzNTVhYTRiYzg3MGU0MzNjZGU4NmU1N2Y5&amp;mobiletype=Other" value="Other">Other</option></select>
+
+</p>
+
+<br/>
+<br/>
+
+<p>优士网 2009</p>
+
+</card>
+</wml>

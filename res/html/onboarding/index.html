@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>问答</title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../answers/css/all.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/onboarding.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../data/lang.js"></script>
+<script type="text/javascript" src="../../../common/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var box=$(".section");
+	var i= 0;
+	var tm=null;
+	var number=box.length;
+	function next(){
+		clearTimeout(tm);
+		box.filter(":visible").css("display","none");
+		$(".iconUl02 li").eq(i).removeClass("on");
+		i==number-1?i=0:i=i+1;
+		$(".pre").css("display","block");
+		box.eq(i).css("display","block");
+		$(".iconUl02 li").eq(i).addClass("on");
+		$(".iconUl02 li").eq(i-1).addClass("over");
+		if(i!=number-1){
+			tm = setTimeout(next, 6000);
+		}
+		else{
+			$(".next").css("display","none")
+		}
+	}
+	$(".next a").click(function(){
+		next();
+	});
+	
+	$(".pre a").click(function(){
+		clearTimeout(tm);
+		box.filter(":visible").css("display","none");
+		$(".iconUl02 li").eq(i).removeClass("on");
+		i==0?i=number-1:i=i-1;
+		box.eq(i).css("display","block");
+		$(".iconUl02 li").eq(i).addClass("on");
+		$(".iconUl02 li").eq(i+1).removeClass("over");
+		if(i==number-1){
+			$(".next").css("display","none")
+		}
+		else{
+			$(".next").css("display","block")
+		}
+		if(i==0){
+			$(".pre").css("display","none")
+		}
+		else{
+			$(".pre").css("display","block")
+		}
+		tm = setTimeout(next, 2000);
+	});
+	tm = setTimeout(next, 6000);
+});
+</script>
+</head>
+<body id="page_public">
+<div id="wrapper" class="container"> 
+	<!--#include virtual="../header.html"-->
+	<div id="main">
+		<div class="onboard">
+			<ul class="topUl">
+				<li><a href="#">重新选择职业角色</a></li>
+				<li><a href="http://www.ushi.com/index.jhtml">进入首页</a></li>
+			</ul>
+			<ul class="iconUl">
+				<li class="pre" style="display:none;"><a href="javascript:void(0);"></a></li>
+				<li class="next"><a href="javascript:void(0);"></a></li>
+			</ul>
+			<div class="section clearfix"> <img src="../../../bns/images/onboarding/photo01.png" alt="" class="float-left" />
+				<div class="boxr">
+					<h4>通过优士获得更好的职业机会</h4>
+					<p>在优士，拥有一份完整而真实的<a href="http://www.ushi.com/user/profile.jhtml" target="_blank">职业档案</a>有助于企业和猎头精准搜索到您的信息，为您带来更好职业发展机会。</p>
+					<p>经常发表感悟和观点，参与专业讨论，解答他人疑惑能助您树立个人品牌，赢得众多企业和猎头的关注与青睐。</p>
+					<p><a href="http://www.ushi.com/jobs" target="_blank">职业频道</a>拥有大量知名企业提供的年薪超过12万的高端职位，这些职位正虚位以待、等待您的主动出击呢！</p>
+					<p class="quiet ptext">已经有很多人通过优士网获得了更好的职业机会，看看他们的<a href="http://www.ushi.com/doc.jhtml?key=success_stories" target="_blank">成功故事</a>吧!</p>
+				</div>
+			</div>
+			<div class="section clearfix" style="display:none;"> <img src="../../../bns/images/onboarding/photo02.png" alt="" class="float-left" />
+				<div class="boxr">
+					<h4>管理人脉网络，与同学同事保持联系</h4>
+					<p>利用优士提供的<a href="http://www.ushi.com/sns/sns!viewExtendConnection.jhtml" target="_blank">人脉拓展</a>工具，可以帮助您找到以往的同学、同事以及您可能认识的人并与他们建立联系。</p>
+					<p>加入优士也意味着您拥有了一个永久的在线联络中心，您不但能与好友保持联系、实时互动，还可以通过优士维护和管理您的人脉资源。</p>
+				</div>
+			</div>
+			<div class="section clearfix" style="display:none;"> <img src="../../../bns/images/onboarding/photo03.png" alt="" class="float-left" />
+				<div class="boxr">
+					<h4>与同行交流互动，提升职业技能</h4>
+					<p>在优士，每天都有各行业的职业精英、资深专家和业内名人分享着他们的行业智慧和各种资讯。您可以关注他们的<a href="http://www.ushi.com/feed/feed!list.jhtml" target="_blank">微博</a>、加入感兴趣的<a href="http://www.ushi.com/group/index.jhtml" target="_blank">群组</a>、参与社会化的<a href="http://www.ushi.com/wenda/index.jhtml" target="_blank">知识问答</a>与他们交流切磋，挖掘取之不尽的知识财富、不断提升自己的职业技能。<span style="display: block; margin-top: 50px;" class="a-right"> <a href="http://www.ushi.com/index.jhtml" class="special-btn">结束指南，进入首页</a></span></p>
+				</div>
+			</div>
+			<ul class="iconUl02">
+				<li class="on over"><a href="javascript:void(0);"></a></li>
+				<li><a href="javascript:void(0);"></a></li>
+				<li><a href="javascript:void(0);"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--#include virtual="../footer.html"--> 
+</div>
+</body>
+</html>

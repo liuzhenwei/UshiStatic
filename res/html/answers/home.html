@@ -1,0 +1,394 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>问答</title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../answers/css/all.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../../../common/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="../../../common/js/widget.js"></script>
+<script type="text/javascript" src="../../../common/js/common.js"></script>
+<script type="text/javascript" src="../data/lang.js"></script>
+<script type="text/javascript" src="../../../answers/js/answers.js"></script>
+</head>
+
+<body id="page_public">
+<div id="wrapper" class="container"> 
+	<!--#include virtual="../header.html"-->
+	<div id="main" class="clearfix">
+		<div class="channel-tit pd-btm15e">
+			<h3>问答</h3>
+		</div>
+		<div class="tabs-common clearfix">
+			<ul>
+				<li class="current"><a href="#">问答动态</a></li>
+				<li><a href="#">我的问答</a></li>
+			</ul>
+		</div>
+		<div class="column-2-3">
+			<div class="notice"><a class="common-close"></a>这是一个预留的位置，当有系统级通知（即系统发送给所有用户的关于问答频道的通知）时在此显示</div>
+			<div class="wd-home-search">
+				<div class="wd-home-search-inner">
+					<div class="wd-home-search-ipt float-left">
+						<input type="text" name="" addQuestion="input" searchkey="" value="搜索话题、问题或人..." defaultTips="搜索话题、问题或人..." js="home_search_input" autocomplete="off" />
+					</div>
+					<div class="btn-special1 float-left">
+						<div class="btn-special1-inner">
+							<a js="addQuestion" href="#"><span class="ico-add-w spe-right"></span>添加问题</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="homeFeed">
+				<div class="tabs-sub margin-top15e margin-bottom clearfix">
+					<ul>
+						<li class="current"><a href="#feed_1">动态</a></li>
+						<li><a href="#feed_2">热门讨论</a></li>
+						<li><a href="#feed_3">高分悬赏</a></li>
+					</ul>
+				</div>
+				<div pageNo="1" style="display:;" ajaxUrl="../data/answers_home_f1.html">
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-content">
+								<h4><a href="#">问题A 被添加到 话题B 问题标题</a></h4>
+<p>问题正文</p>
+<p>动态所属feed的话题</p>
+<p>当前回答数目</p>
+<p><a href="#">“关注此问题”的链接</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">问题A 新增一个回答 在话题B  问题标题</a></h4>
+<p>动态所属feed的话题</p>
+<p>当前回答数目</p>
+<p><a href="#">“关注此问题”的链接</a></p>
+<p>新增的回答的内容:该回答当前的投票总数</p>
+<p>新增的回答的内容:回答的作者的姓名和头像</p>
+<p>新增的回答的内容:该回答中作者的签名档Bio</p>
+<p>新增的回答的内容:回答的正文</p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">用户A  回答了 问题B  问题标题</a></h4>
+<p>动态所属feed的话题</p>
+<p>当前回答数目</p>
+<p><a href="#">“关注此问题”的链接或“取消关注此问题”的链接</a></p>
+<p>新增的回答的内容:该回答当前的投票总数</p>
+<p>新增的回答的内容:回答的作者的姓名和头像</p>
+<p>新增的回答的内容:该回答中作者的签名档Bio</p>
+<p>新增的回答的内容:回答的正文</p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">问题A 被用户B 删除  问题标题</a></h4>
+<p>提出问题的用户（即删除问题者）姓名和头像<p>
+<p>当前回答数目</p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">-	用户A 关注了 用户B    关注者的姓名和头像</a></h4>
+<p>被关注者的姓名和头像<p>
+<p><a href="#">“关注 {B的姓名}”或“取消关注 {B的姓名}”的链接</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">-	用户A 关注了 话题B    关注者的姓名和头像</a></h4>
+<p><a href="#">话题B的链接</a><p>
+<p><a href="#">“关注此话题”或“取消关注此话题”的链接</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">-	用户A 关注了 问题B   问题标题</a></h4>
+<p>关注者的姓名和头像<p>
+<p>当前回答数目</p>
+<p><a href="#">“关注此问题”或“取消关注此问题”的链接</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">-	用户A 投了赞成票给 该回答   投票者的姓名和头像</a></h4>
+<p>被关注者的姓名和头像<p>
+<p><a href="#">“关注此问题”或“取消关注”的链接</a></p>
+<p>当前得票积分最高的回答的内容:该回答当前的投票总数</p>
+<p>当前得票积分最高的回答的内容:回答的作者的姓名和头像</p>
+<p>当前得票积分最高的回答的内容:该回答中作者的签名档Bio</p>
+<p>当前得票积分最高的回答的内容:回答的正文</p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">-	用户A 添加了 问题B  问题标题</a></h4>
+<p>提问者的姓名和头像<p>
+<p>当前回答数目</p>
+<p><a href="#">“关注此问题”或“取消关注此问题”的链接</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">-	用户A 回答了 问题B  问题标题</a></h4>
+<p>回答者的姓名和头像<p>
+<p>当前回答数目</p>
+<p><a href="#">“关注此问题”的链接或“取消关注此问题”的链接</a></p>
+<p>新增的回答的内容:该回答当前的投票总数</p>
+<p>新增的回答的内容:回答的作者的姓名和头像</p>
+<p>新增的回答的内容:该回答中作者的签名档Bio</p>
+<p>新增的回答的内容:回答的正文</p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">-	用户A 删除了 问题B  问题标题</a></h4>
+<p>提出问题的用户（即删除问题者）姓名和头像<p>
+<p>当前回答数目</p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">-	用户A 谢谢 用户B  问题标题</a></h4>
+<p>B的姓名和头像<p>
+<p>当前回答数目</p>
+<p><a href="#">“关注此问题”的链接或“取消关注此问题”的链接</a></p>
+<p>A的姓名和头像</p>
+<p><a href="#">“关注 {B的姓名}”或“取消关注 {B的姓名}”的链接</a></p>
+<p>B的被感谢的回答的内容:该回答当前的投票总数</p>
+<p>B的被感谢的回答的内容:回答的作者的姓名和头像</p>
+<p>B的被感谢的回答的内容:该回答中作者的签名档Bio</p>
+<p>B的被感谢的回答的内容:回答的正文</p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">-	用户A 与 用户B 握手  A的姓名和头像</a></h4>
+<p>B的姓名和头像<p>
+<p><a href="#">关注{B的姓名}”或“取消关注{B的姓名}”的链接</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">-	用户A 喜欢 用户B 的该回答  问题标题</a></h4>
+<p>B的姓名和头像<p>
+<p>当前回答数目</p>
+<p><a href="#">“关注此问题”的链接或“取消关注此问题”的链接</a></p>
+<p>A的姓名和头像</p>
+<p><a href="#">“关注 {B的姓名}”或“取消关注 {B的姓名}”的链接</a></p>
+<p>B的被喜欢的回答的内容:该回答当前的投票总数</p>
+<p>B的被喜欢的回答的内容:回答的作者的姓名和头像</p>
+<p>B的被喜欢的回答的内容:该回答中作者的签名档Bio</p>
+<p>B的被喜欢的回答的内容:回答的正文</p>
+							</div>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="answers-event-cont">
+							<div class="event-owner"><a href="#"><img poppersonInfo="642" src="../../../common/images/face_30.png"></a></div>
+							<div class="event-content">
+								<h4><a href="#">-	用户A请求帮助解答问题  问题标题</a></h4>
+<p>A的姓名和头像<p>
+<p>当前回答数目</p>
+<p><a href="#">“关注此问题”的链接或“取消关注此问题”的链接</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="a-center" js="moreFeedDiv">
+						<a class="cnfont large" href="#">查看更多分享</a><span style="display:inline-block;" class="icon-btn-down middle spe-left"></span>
+					</div>
+				</div>
+				<div pageNo="1" style="display:none;" ajaxUrl="../data/answers_home_f2.html">
+					<div class="a-center" js="moreFeedDiv">
+						<a class="cnfont large" href="#">查看更多分享</a><span style="display:inline-block;" class="icon-btn-down middle spe-left"></span>
+					</div>
+				</div>
+				<div pageNo="1" style="display:none;" ajaxUrl="../data/answers_home_f3.html">
+					<div class="a-center" js="moreFeedDiv">
+						<a class="cnfont large" href="#">查看更多分享</a><span style="display:inline-block;" class="icon-btn-down middle spe-left"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column-3">
+			<div class="common-block">
+				<h5 class="extra-title">我的常用链接</h5>
+				<ul class="list-disc">
+					<li><a href="#">我的关注</a></li>
+					<li><a href="#">我的草稿</a></li>
+					<li><a href="#">所有问题</a></li>
+					<li><a href="#">邀请我回答的问题</a></li>
+					<li><a href="#">来自好友的求助</a></li>
+					<li><a href="#">悬赏问题</a></li>
+				</ul>
+			</div>
+			<div class="common-block">
+				<h5 class="extra-title">你知道吗？</h5>
+				<div class="spe-left-pd2">
+					<img width="53" height="68" src="http://images.ushi.cn/ads/01_03.jpg" class="float-left spe-right2">
+					<div>
+						<p>基于上下文的指南：此区域根据当前用户所在页面，动态显示不同的针对性的指南或提示信息。</p>
+					</div>
+				</div>
+			</div>
+			<div class="common-block">
+				<h5 class="extra-title">您可能感兴趣的人和话题</h5>
+				<ul class="vcard">
+					<li class="border-bottom"><a href="#" userid="3535" class="common-close"><span class="hide">关闭</span></a>
+						<a href="#"><img poppersonInfo="3535" src="../../../common/images/face_30.png"></a>
+						<dl>
+							<dt><a poppersonInfo="3535" href="#">张某某</a></dt>
+							<dd>优士网 财务经理</dd>
+							<dd><a checkInviteMember="3" targetuserid="30" href="#" class="spe-right">加为一度</a>
+								<a followUser="333" href="javascript:void(0);">关注此人</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="border-bottom"><a href="#" userid="3535" class="common-close"><span class="hide">关闭</span></a>
+						<a href="#"><img poppersonInfo="3535" src="../../../common/images/face_30.png"></a>
+						<dl>
+							<dt><a poppersonInfo="3535" href="#">张某某</a></dt>
+							<dd>优士网 财务经理</dd>
+							<dd><a checkInviteMember="3" targetuserid="30" href="#" class="spe-right">加为一度</a>
+								<a followUser="335" href="javascript:void(0);">关注此人</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="border-bottom"><a href="#" userid="3535" class="common-close"><span class="hide">关闭</span></a>
+						<a href="#"><img poppersonInfo="3535" src="../../../common/images/face_30.png"></a>
+						<dl>
+							<dt><a poppersonInfo="3535" href="#">张某某</a></dt>
+							<dd>优士网 财务经理</dd>
+							<dd><a checkInviteMember="3" targetuserid="30" href="#" class="spe-right">加为一度</a>
+								<a followUser="337" href="javascript:void(0);">关注此人</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="border-bottom"><a href="#" userid="3535" class="common-close"><span class="hide">关闭</span></a>
+						<a href="#"><img src="../../../common/images/face_30.png"></a>
+						<dl>
+							<dt><a href="#">您可能感兴趣的话题</a></dt>
+							<dd><a js="followTopic" href="#">关注话题</a></dd>
+						</dl>
+					</li>
+					<li class="border-bottom"><a href="#" userid="3535" class="common-close"><span class="hide">关闭</span></a>
+						<a href="#"><img src="../../../common/images/face_30.png"></a>
+						<dl>
+							<dt><a href="#">您可能感兴趣的话题</a></dt>
+							<dd><a js="followTopic" href="#">关注话题</a></dd>
+						</dl>
+					</li>
+					<li class="border-bottom"><a href="#" userid="3535" class="common-close"><span class="hide">关闭</span></a>
+						<a href="#"><img src="../../../common/images/face_30.png"></a>
+						<dl>
+							<dt><a href="#">您可能感兴趣的话题</a></dt>
+							<dd><a js="followTopic" href="#">关注话题</a></dd>
+						</dl>
+					</li>
+					<li><a href="#">更多</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--#include virtual="../footer.html"--> 
+</div>
+
+<div class="dp-menu" id="followUserPop">
+	<ul>
+		<li><a href="#">关注全站动态</a></li>
+		<li><a href="#">只关注问答动态</a></li>
+	</ul>
+</div>
+
+<div id="addQuestionPop" class="add-question-pop" style="display:none;">
+	<form action="" method="post">
+	<div js="addQuestionStep1">
+		<p><textarea name="" style="height:36px;" js="questionTitle" defaultTips="请输入问题的标题...">请输入问题的标题...</textarea></p>
+		<p><b>可选：</b>添加更多相关细节</p>
+		<p><textarea name="" style="height:80px;" js="questionDesc"></textarea></p>
+		<div class="margin-btm15e">
+			关联话题有助于大家更好的理解你的问题：
+			<div class="search-cont margin-bottom" style="width:350px;">
+				<input type="button" value="确定" class="search-btn">
+				<div>
+					<input type="text" class="formtext" style="width:97%;" js="questionTopicInput" />
+				</div>
+			</div>
+			<div js="questionTopicCont" fieldName="topic">
+					
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="float-right spe-right2">
+				<a href="#" class="spe-right2" js="closePopup">取消</a>
+				<a href="#" class="button" js="goNext">下一步</a>
+			</div>
+			<p><input type="checkbox" value="" />
+				匿名添加问题</p>
+		</div>
+	</div>
+	<div js="addQuestionStep2" style="display:none;">
+		<div class="margin-bottom">
+			<div class="margin-btm05e"><input type="checkbox" value="" />
+				邀请他人回答此问题</div>
+			<div class="add-question-expert clearfix">
+				<div class="loading_l"></div>
+			</div>
+			<p class="clear"><input type="checkbox" value="" />
+				向所有好友求助（无需指定邀请某人）</p>
+			<p><input type="checkbox" value="" />
+				悬赏求助 <span class="quiet spe-left3 spe-right2">你当前的优士币余额为<b js="coins">450</b></span>
+				<input type="text" class="formtext" style="width:40px;" value="20" /></p>
+		</div>
+		<p class="a-right">
+			<a href="#" class="spe-right2" js="closePopup">取消</a>
+			<a href="#" class="common-button" js="goPrev">上一步</a>
+			<input type="submit" class="button" value="完 成" />
+		</p>
+	</div>
+	</form>
+</div>
+
+</body>
+</html>

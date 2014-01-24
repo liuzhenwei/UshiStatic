@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>编辑个人档案</title>
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/reg.1.js"></script>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+</head>
+
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	<div id="main" class="clearfix">
+		<div class="channel-tit">
+			<h3>编辑个人档案</h3>
+			<span><a href="javascript:void(0);">返回个人档案首页</a></span></div>
+		<!-- just for test :)-->
+		<div class="tabs-common clearfix">
+			<ul id="profileTab">
+				<li class="current"><a href="javascript:void(0);">基本信息</a></li>
+				<li><a href="javascript:void(0);">职业总结</a></li>
+				<li><a href="javascript:void(0);">工作经历</a></li>
+				<li><a href="javascript:void(0);">教育经历</a></li>
+				<li><a href="javascript:void(0);">联系信息</a></li>
+			</ul>
+		</div>
+		<!-- profile basic -->
+		<div name="profile"> 
+			<script>var __subnav = "base";</script> 
+			<!-- profile basic -->
+			<form id="edit_base" method="post" action="/user/edit!editBase.jhtml" class="formstyle">
+				<p class="quiet">带 <span class="red">* </span>号的项目为必填项</p>
+				<ul>
+					<li class="form-item clearfix">
+						<label> <span class="red">* </span>姓名：</label>
+						<input type="text" class="input-w-280" id="userName" value="狂飙T" />
+						<div class="tips" style="display:none;">
+							<div class="tips-box-outer">
+								<div class="tips-box-inner">
+									<p>请用规范的形式填写您的真实中文姓名。</p>
+									<p>如果系统误判你的姓名，请换个名字先注册，然后和优士网客服进行联系。</p>
+								</div>
+							</div>
+						</div> 
+						<!-- 错误加 tip-err, 正确加 tip-succ --> 
+					</li>
+					<li>
+						<label>头像：</label>
+						<img src="http://images.ushigroup.cn/bnsphoto/2010/03/22/be8cc17d-0f6f-4f4d-93bc-a1e7aaf9968a_s.jpg?r=0.5004041298203276"> <a href="/user/logo!edit.jhtml">修改</a></li>
+					<li class="form-item clearfix">
+						<label><span class="red">* </span>当前职业头衔：</label>
+						<input type="text" js="career" class="input-w-400" id="profile_careerbrief" value="无敌小旋风" maxlength="64" name="profile.careerbrief">
+						<div class="tips" style="display:none;">
+							<div class="tips-box-outer">
+								<div class="tips-box-inner">
+									<p>请用规范的形式填写您的真实中文姓名。</p>
+									<p>如果系统误判你的姓名，请换个名字先注册，然后和优士网客服进行联系。</p>
+								</div>
+							</div>
+						</div> 
+						<!-- 错误加 tip-err, 正确加 tip-succ --> 
+					</li>
+					<li class="form-item clearfix">
+						<label><span class="red">* </span>所在地：</label>
+						<select class="select" id="selectCountry" name="profile.countryid">
+							<option value="0">请选择</option>
+							<option selected="selected" value="156">中国大陆</option>
+						</select>
+						<select class="select" id="selectRegion" name="profile.regionid">
+							<option value="0">请选择</option>
+							<option selected="selected" value="1392">上海</option>
+						</select>
+						<select class="select" id="selectCity" name="profile.cityid">
+							<option value="0">请选择</option>
+							<option selected="selected" value="8843">上海</option>
+						</select>
+						<div class="tips" style="display:none;">
+							<div class="tips-box-outer">
+								<div class="tips-box-inner">必须选择所在地</div>
+							</div>
+						</div></li>
+					<li class="form-item clearfix">
+						<label>家乡：</label>
+						<select class="select" id="homeCountry" name="profiledetail.homecountryid">
+							<option value="0">请选择</option>
+							<option selected="selected" value="156">中国大陆</option>
+						</select>
+						<select class="select" id="homeRegion" name="profiledetail.homeregionid">
+							<option value="0">请选择</option>
+							<option selected="selected" value="1123">浙江</option>
+						</select>
+						<select class="select" id="homeCity" name="profiledetail.homecityid">
+							<option value="0">请选择</option>
+							<option selected="selected" value="8872">嘉兴</option>
+						</select>
+					</li>
+					<li class="form-item clearfix">
+						<label><span class="red">* </span>所在行业：</label>
+						<select js="industryid" class="select" name="profile.industryid">
+							<option value="0">请选择</option>
+						</select>
+						<div class="tips tip-err" style="display: none;">
+							<div class="tips-box-outer">
+								<div class="tips-box-inner">必须选择所在行业</div>
+							</div>
+						</div></li>
+					<li class="form-item clearfix">
+						<label>Blog地址：</label>
+						<input type="text" class="input-w-400" id="profiledetail_blog" value="http://xxx.sohu.com/" maxlength="255" name="profiledetail.blog">
+					</li>
+				</ul>
+				<p>
+					<input type="submit" js="submit" value="提交" class="common-button">
+				</p>
+				<p><a href="/user/profile.jhtml">放弃修改, 返回我的个人档案</a></p>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!--#include file="footer.html"-->
+</body>
+</html>

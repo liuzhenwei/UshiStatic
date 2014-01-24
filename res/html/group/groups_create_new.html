@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>创建群组 - 优士网</title>
+<meta name="description" content="page.description.default"/>
+<meta name="keywords" content="page.keywords.default"/>
+<link href="../../../bns/images/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="../../../bns/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="../../../bns/images/favicon.ico" rel="bookmark" type="image/x-icon" />
+<link rel="stylesheet" href="../../../common/css/layout.css?5.1" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="/css/member.css?5.1" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="/css/library_sc/pages_member.css?5.1" type="text/css" media="screen, projection">
+<script type="text/javascript" src="/js/jQuery.min.js?1.3.2"></script>
+
+</head>
+ 
+<body>
+<div id="wrapper" class="container">
+
+ 
+	<!-- main start -->
+	<div id="main" class="clearfix">
+		
+ 
+		<div class="column-2-3">
+			
+ 
+ 
+<!--群组路径导航 -->
+<head>
+<title>123123123</title>
+</head>
+         
+ 
+ 
+    <div class="channel-tit"><h3>群组</h3> </div> 
+    <div class="tabs-common clearfix">
+          <ul>
+         <li id="mygroup"><a href="/group/index.jhtml">我的群组</a></li>
+         <li id="allgroup"><a href="/group/groups.jhtml">所有群组</a></li>
+         <li id="createapply"><a href="/group/createinit.jhtml">创建群组</a></li>
+          </ul>
+      </div>  
+        
+        
+         
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<h4 class="border-bottom pd-bottom clearfix" style="margin-top:30px;">为了保证优士群组的总体质量，目前在优士网上创建群组需要经过申请和审批。</h4>
+<div>如果您有意创建并管理群组，请您填写以下申请信息，我们会连同您的个人档案进行审核，在两个工作日内给您反馈。</div>
+ 
+ 
+      <form class="formstyle" action="/group/create.jhtml" method="post" enctype="multipart/form-data">
+       <ul>
+       <li style="margin-bottom:0" class="pd-top"><label>&nbsp;</label>带<span class="red"> * </span>号的项目为必填项</li>
+       <li><label><span class="red">* </span>群组名称 :</label><input class="input-w-400" name="grpCreateApply.groupname" type="text" /></li>
+       <li><label>群组头像 :</label> <input name=" myfile" type="file" /><p class="tips quiet pd-top05e">JPG, GIF图片格式, 最大不超过512K。</p></li>
+       <li><label><span class="red">* </span>群组分类 :</label> <select name="grpCreateApply.categoryid" id="grpCreateApply_categoryid" style="height:auto;padding:2px;width:215px;">
+    <option value="0"
+    >请选择群组分类</option>
+    <option value="1">MBA同学会</option>
+    <option value="2">商业俱乐部</option>
+    <option value="3">大学校友会</option>
+    <option value="4">行业协会</option>
+    <option value="5">非盈利组织 </option>
+    <option value="6">公司</option>
+    <option value="7">其他</option>
+ 
+ 
+</select>
+		<li><label><span class="red">* </span>群组性质 :</label>
+		<div class="float-left" style="margin-left:-5px;">
+			<div class="clearfix">
+				<span><input type="radio" style="top:2px;" name="grpCreateApply.quality" checked value="0" />开放式群组</span>
+				<div class="date" style="padding-left:20px;">任何人经审批后都可以加入，群组成员可以分享群组话题，非群组成员可以看到群组话题。</div>
+			</div>
+			<div class="clearfix">
+				<span><input type="radio" style="top:2px;" name="grpCreateApply.quality" value="1" />半开放式群组</span>
+				<div class="date" style="padding-left:20px;">任何人经审批后都可以加入，只有群组成员才能看到群组内容。显示在所有群组列表中。 </div>
+			</div>
+			<div class="clearfix">
+				<span><input type="radio" style="top:2px;" name="grpCreateApply.quality" value="2" />私密群组</span>
+				<div class="date" style="padding-left:20px;">需要群组成员邀请才能加入，只有群组成员才能看到群组内容。不显示在所有群组列表中。 </div>
+			</div>
+		</div>
+		</li>
+       <li><label><span class="red">* </span>群组简介: </label> <textarea class="msg" name="grpCreateApply.description" ></textarea></li>
+       <li><label>&nbsp;</label><input class="special-btn" name="" type="submit" value="提交" /><input class="common-button" name="" type="button" value="取消" /></li>
+       </ul>
+<form>
+        
+		
+ 
+		</div>
+</div>
+	<!-- main end -->
+
+ 
+</body>
+</html>
+ 
+

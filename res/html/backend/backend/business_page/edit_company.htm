@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>Ushi Customer Service System</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+.form-table{margin:10px 0;border:1px #ccc solid; width:500px;}
+.form-table th, .form-table td{padding:8px; line-height:1.5em;}
+.form-table th{font-weight:400; text-align:right;}
+.form-table .input{width:300px;}
+.form-table .textarea{width:300px; height:100px;}
+.form-table .l-margin{margin-left:10px;}.form-table .r-margin{margin-right:10px;}
+ 
+.form-table .textarea2{width:500px; height:100px;}
+.form-table .select{width:150px;}
+.form-table .multi-col th, .form-table .multi-col td{padding:0;}
+#industryContainer {
+	border: 1px solid #CCCCCC;
+	height: 300px;
+	overflow: auto;
+	padding: 6px;
+	position: relative;
+	width: 300px;
+}
+.head_tit{margin:0 2px;border-bottom:1px #ccc solid; overflow:hidden;line-height:30px;}
+.head_tit .left{float:left;font-weight:bold;}
+.head_tit .right{float:right;}
+.head_tit i{ color:#f00}
+.color_ccc {color:#ccc}
+
+</style>
+
+</head>
+
+<script>
+	$(function(){
+		//加载左侧菜单
+		$('#menu_out').load('../menu.html',function(){
+			initMenus();
+		});
+		
+	})
+
+</script>
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf"> Operator：Christy
+			| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+	<div class="lf">
+		<div id="menu_out" class="leftmenu">
+
+		</div>
+	</div>
+	<div class="rf">
+		<div id="container">
+		<h2>添加公司信息<a href="../jobs/job_company_list.htm" style="float:right">返回公司列表页面>></a></h2>
+		<form method="post" action="">
+		<table width="100%" border="0" cellspacing="0" cellpadding="5" class="form-table">
+		 	<tr>
+				<td colspan="2"><div class="head_tit"><span class="left">公司信息</span><span class="right">带<i> * </i>号的项目为必添项</span></div></td>
+			</tr>
+			<tr>
+				<th valign="top"><span class="red">*</span> 公司名称：</th>
+				<td><input class="input" type="text" /></td>
+			</tr>
+			<tr>
+				<th valign="top"><span class="red">*</span> 公司别名：</th>
+				<td><textarea class="input"></textarea><br />
+					<span class="color_ccc">多个别名以英文逗号分隔</span>
+				</td>
+			</tr>
+			<tr>
+				<th valign="top"><span class="red">*</span> 公司Logo：</th>
+				<td><div><img width="78" height="54" src="../images/comp_logo.png"> <a href="#">修改</a> | <a href="#">删除</a></div>
+					<div style="display:none;"><input type="file" value="选择图片" /> <span>未选择图片</span></div>
+					<div class="color_ccc">图片格式：PNG,JPEG,或GIF,大小不能超过2M</div>
+				</td>
+			</tr>
+			<tr>
+				<th valign="top"><span class="red">*</span> 行业类别：</th>
+				<td><div id="industryContainer">
+<dl>
+    <dt>高科技</dt>
+    <dd><input type="checkbox" name="industryIds" value="2" id="contactForm_industryIds"/>
+    空间科技</dd>
+    <dd><input type="checkbox" name="industryIds" value="3" id="contactForm_industryIds"/>
+    计算机硬件</dd>
+    <dd><input type="checkbox" name="industryIds" value="4" id="contactForm_industryIds"/>
+    计算机软件</dd>
+    <dd><input type="checkbox" name="industryIds" value="5" id="contactForm_industryIds"/>
+    计算机网络设备</dd>
+    <dd><input type="checkbox" name="industryIds" value="6" id="contactForm_industryIds"/>
+    计算机与网络安全</dd>
+    <dd><input type="checkbox" name="industryIds" value="7" id="contactForm_industryIds"/>
+    计算机游戏</dd>
+    <dd><input type="checkbox" name="industryIds" value="8" id="contactForm_industryIds"/>
+    互联网</dd>
+    <dd><input type="checkbox" name="industryIds" value="9" id="contactForm_industryIds"/>
+    半导体</dd>
+    <dd><input type="checkbox" name="industryIds" value="10" id="contactForm_industryIds"/>
+    电信与通讯</dd>
+    <dd><input type="checkbox" name="industryIds" value="11" id="contactForm_industryIds"/>
+    纳米技术</dd>
+    <dd><input type="checkbox" name="industryIds" value="12" id="contactForm_industryIds"/>
+    信息技术与服务</dd>
+    <dd><input type="checkbox" name="industryIds" value="13" id="contactForm_industryIds"/>
+    无线通讯</dd>
+    <dt>法律</dt>
+        <dd><input type="checkbox" name="industryIds" value="15" id="contactForm_industryIds"/>
+    法律援助</dd>
+    <dd><input type="checkbox" name="industryIds" value="16" id="contactForm_industryIds"/>
+    法律服务</dd>
+    <dt>专业咨询、服务</dt>
+        <dd><input type="checkbox" name="industryIds" value="18" id="contactForm_industryIds"/>
+    管理咨询</dd>
+    <dd><input type="checkbox" name="industryIds" value="19" id="contactForm_industryIds"/>
+    招聘、猎头</dd>
+    <dd><input type="checkbox" name="industryIds" value="20" id="contactForm_industryIds"/>
+    人力资源</dd>
+    <dd><input type="checkbox" name="industryIds" value="21" id="contactForm_industryIds"/>
+    培训</dd>
+    <dd><input type="checkbox" name="industryIds" value="22" id="contactForm_industryIds"/>
+    市场推广与广告</dd>
+    <dd><input type="checkbox" name="industryIds" value="23" id="contactForm_industryIds"/>
+    市场调研</dd>
+    <dd><input type="checkbox" name="industryIds" value="24" id="contactForm_industryIds"/>
+    公共关系</dd>
+    <dd><input type="checkbox" name="industryIds" value="25" id="contactForm_industryIds"/>
+    翻译服务</dd>
+    <dd><input type="checkbox" name="industryIds" value="26" id="contactForm_industryIds"/>
+    设备维护</dd>
+    <dd><input type="checkbox" name="industryIds" value="27" id="contactForm_industryIds"/>
+    外包服务</dd>
+    <dd><input type="checkbox" name="industryIds" value="28" id="contactForm_industryIds"/>
+    会务及活动服务</dd>
+    <dt>医疗与健康</dt>
+        <dd><input type="checkbox" name="industryIds" value="30" id="contactForm_industryIds"/>
+    生物工程</dd>
+    <dd><input type="checkbox" name="industryIds" value="31" id="contactForm_industryIds"/>
+    生物信息</dd>
+    <dd><input type="checkbox" name="industryIds" value="32" id="contactForm_industryIds"/>
+    医院与医疗</dd>
+    <dd><input type="checkbox" name="industryIds" value="33" id="contactForm_industryIds"/>
+    医药品</dd>
+    <dd><input type="checkbox" name="industryIds" value="34" id="contactForm_industryIds"/>
+    医疗设备</dd>
+    <dd><input type="checkbox" name="industryIds" value="35" id="contactForm_industryIds"/>
+    兽医</dd>
+    <dd><input type="checkbox" name="industryIds" value="36" id="contactForm_industryIds"/>
+    健身</dd>
+    <dd><input type="checkbox" name="industryIds" value="37" id="contactForm_industryIds"/>
+    心理健康</dd>
+    <dd><input type="checkbox" name="industryIds" value="38" id="contactForm_industryIds"/>
+    中医</dd>
+    <dt>媒体</dt>
+        <dd><input type="checkbox" name="industryIds" value="40" id="contactForm_industryIds"/>
+    广播</dd>
+    <dd><input type="checkbox" name="industryIds" value="41" id="contactForm_industryIds"/>
+    电视</dd>
+    <dd><input type="checkbox" name="industryIds" value="42" id="contactForm_industryIds"/>
+    电影</dd>
+    <dd><input type="checkbox" name="industryIds" value="43" id="contactForm_industryIds"/>
+    报纸</dd>
+    <dd><input type="checkbox" name="industryIds" value="44" id="contactForm_industryIds"/>
+    杂志</dd>
+    <dd><input type="checkbox" name="industryIds" value="45" id="contactForm_industryIds"/>
+    出版</dd>
+    <dd><input type="checkbox" name="industryIds" value="46" id="contactForm_industryIds"/>
+    写作与编辑</dd>
+    <dd><input type="checkbox" name="industryIds" value="47" id="contactForm_industryIds"/>
+    文化艺术</dd>
+    <dd><input type="checkbox" name="industryIds" value="48" id="contactForm_industryIds"/>
+    印刷</dd>
+    <dd><input type="checkbox" name="industryIds" value="49" id="contactForm_industryIds"/>
+    互联网媒体</dd>
+    <dd><input type="checkbox" name="industryIds" value="50" id="contactForm_industryIds"/>
+    媒体设计制作</dd>
+    <dt>体育、休闲、旅游、娱乐</dt>
+        <dd><input type="checkbox" name="industryIds" value="52" id="contactForm_industryIds"/>
+    娱乐业</dd>
+    <dd><input type="checkbox" name="industryIds" value="53" id="contactForm_industryIds"/>
+    休闲度假与旅游</dd>
+    <dd><input type="checkbox" name="industryIds" value="54" id="contactForm_industryIds"/>
+    餐饮业</dd>
+    <dd><input type="checkbox" name="industryIds" value="55" id="contactForm_industryIds"/>
+    住宿业</dd>
+    <dd><input type="checkbox" name="industryIds" value="56" id="contactForm_industryIds"/>
+    体育运动</dd>
+    <dd><input type="checkbox" name="industryIds" value="57" id="contactForm_industryIds"/>
+    食品与饮料</dd>
+    <dd><input type="checkbox" name="industryIds" value="58" id="contactForm_industryIds"/>
+    娱乐设备与服务</dd>
+    <dt>金融</dt>
+        <dd><input type="checkbox" name="industryIds" value="60" id="contactForm_industryIds"/>
+    保险</dd>
+    <dd><input type="checkbox" name="industryIds" value="61" id="contactForm_industryIds"/>
+    财经服务</dd>
+    <dd><input type="checkbox" name="industryIds" value="62" id="contactForm_industryIds"/>
+    房地产</dd>
+    <dd><input type="checkbox" name="industryIds" value="63" id="contactForm_industryIds"/>
+    投资银行</dd>
+    <dd><input type="checkbox" name="industryIds" value="64" id="contactForm_industryIds"/>
+    风险投资</dd>
+    <dd><input type="checkbox" name="industryIds" value="65" id="contactForm_industryIds"/>
+    私募股权投资</dd>
+    <dd><input type="checkbox" name="industryIds" value="66" id="contactForm_industryIds"/>
+    证券</dd>
+    <dd><input type="checkbox" name="industryIds" value="67" id="contactForm_industryIds"/>
+    会计</dd>
+    <dt>非盈利性组织</dt>
+        <dd><input type="checkbox" name="industryIds" value="69" id="contactForm_industryIds"/>
+    非盈利性组织管理</dd>
+    <dd><input type="checkbox" name="industryIds" value="70" id="contactForm_industryIds"/>
+    公益基金</dd>
+    <dd><input type="checkbox" name="industryIds" value="71" id="contactForm_industryIds"/>
+    智囊团</dd>
+    <dd><input type="checkbox" name="industryIds" value="72" id="contactForm_industryIds"/>
+    慈善事业</dd>
+    <dd><input type="checkbox" name="industryIds" value="73" id="contactForm_industryIds"/>
+    科学研究</dd>
+    <dt>教育</dt>
+        <dd><input type="checkbox" name="industryIds" value="75" id="contactForm_industryIds"/>
+    义务教育</dd>
+    <dd><input type="checkbox" name="industryIds" value="76" id="contactForm_industryIds"/>
+    高等教育</dd>
+    <dd><input type="checkbox" name="industryIds" value="77" id="contactForm_industryIds"/>
+    教育管理</dd>
+    <dd><input type="checkbox" name="industryIds" value="78" id="contactForm_industryIds"/>
+    E-Learning</dd>
+    <dd><input type="checkbox" name="industryIds" value="79" id="contactForm_industryIds"/>
+    教育研究</dd>
+    <dt>日常消费品</dt>
+        <dd><input type="checkbox" name="industryIds" value="81" id="contactForm_industryIds"/>
+    化妆品</dd>
+    <dd><input type="checkbox" name="industryIds" value="82" id="contactForm_industryIds"/>
+    服装服饰</dd>
+    <dd><input type="checkbox" name="industryIds" value="83" id="contactForm_industryIds"/>
+    体育用品</dd>
+    <dd><input type="checkbox" name="industryIds" value="84" id="contactForm_industryIds"/>
+    烟草</dd>
+    <dd><input type="checkbox" name="industryIds" value="85" id="contactForm_industryIds"/>
+    超市卖场</dd>
+    <dd><input type="checkbox" name="industryIds" value="86" id="contactForm_industryIds"/>
+    食物生产</dd>
+    <dd><input type="checkbox" name="industryIds" value="87" id="contactForm_industryIds"/>
+    酒类</dd>
+    <dd><input type="checkbox" name="industryIds" value="88" id="contactForm_industryIds"/>
+    消费电子</dd>
+    <dd><input type="checkbox" name="industryIds" value="89" id="contactForm_industryIds"/>
+    快速消费品</dd>
+    <dd><input type="checkbox" name="industryIds" value="90" id="contactForm_industryIds"/>
+    家具</dd>
+    <dd><input type="checkbox" name="industryIds" value="91" id="contactForm_industryIds"/>
+    零售</dd>
+    <dd><input type="checkbox" name="industryIds" value="92" id="contactForm_industryIds"/>
+    批发</dd>
+    <dd><input type="checkbox" name="industryIds" value="93" id="contactForm_industryIds"/>
+    进出口</dd>
+    <dd><input type="checkbox" name="industryIds" value="94" id="contactForm_industryIds"/>
+    奢侈品与珠宝</dd>
+    <dt>建筑</dt>
+        <dd><input type="checkbox" name="industryIds" value="96" id="contactForm_industryIds"/>
+    建筑工程</dd>
+    <dd><input type="checkbox" name="industryIds" value="97" id="contactForm_industryIds"/>
+    建材</dd>
+    <dd><input type="checkbox" name="industryIds" value="98" id="contactForm_industryIds"/>
+    建筑设计</dd>
+    <dd><input type="checkbox" name="industryIds" value="99" id="contactForm_industryIds"/>
+    土木工程</dd>
+    <dd><input type="checkbox" name="industryIds" value="100" id="contactForm_industryIds"/>
+    装饰装潢</dd>
+    <dt>制造</dt>
+        <dd><input type="checkbox" name="industryIds" value="102" id="contactForm_industryIds"/>
+    工艺品</dd>
+    <dd><input type="checkbox" name="industryIds" value="103" id="contactForm_industryIds"/>
+    飞行航空与宇航</dd>
+    <dd><input type="checkbox" name="industryIds" value="104" id="contactForm_industryIds"/>
+    汽车</dd>
+    <dd><input type="checkbox" name="industryIds" value="105" id="contactForm_industryIds"/>
+    化工</dd>
+    <dd><input type="checkbox" name="industryIds" value="106" id="contactForm_industryIds"/>
+    电子电气设备</dd>
+    <dd><input type="checkbox" name="industryIds" value="107" id="contactForm_industryIds"/>
+    机械</dd>
+    <dd><input type="checkbox" name="industryIds" value="108" id="contactForm_industryIds"/>
+    采矿与金属</dd>
+    <dd><input type="checkbox" name="industryIds" value="109" id="contactForm_industryIds"/>
+    石油与能源</dd>
+    <dd><input type="checkbox" name="industryIds" value="110" id="contactForm_industryIds"/>
+    回收与环境保护</dd>
+    <dd><input type="checkbox" name="industryIds" value="111" id="contactForm_industryIds"/>
+    造船</dd>
+    <dd><input type="checkbox" name="industryIds" value="112" id="contactForm_industryIds"/>
+    纺织及皮革制造</dd>
+    <dd><input type="checkbox" name="industryIds" value="113" id="contactForm_industryIds"/>
+    造纸与木材</dd>
+    <dd><input type="checkbox" name="industryIds" value="114" id="contactForm_industryIds"/>
+    铁路</dd>
+    <dd><input type="checkbox" name="industryIds" value="115" id="contactForm_industryIds"/>
+    玻璃, 陶瓷与混凝土</dd>
+    <dd><input type="checkbox" name="industryIds" value="116" id="contactForm_industryIds"/>
+    包装与集装箱</dd>
+    <dd><input type="checkbox" name="industryIds" value="117" id="contactForm_industryIds"/>
+    工业管理</dd>
+    <dd><input type="checkbox" name="industryIds" value="118" id="contactForm_industryIds"/>
+    工业自动化</dd>
+    <dt>政府及公共事业</dt>
+        <dd><input type="checkbox" name="industryIds" value="120" id="contactForm_industryIds"/>
+    外交</dd>
+    <dd><input type="checkbox" name="industryIds" value="121" id="contactForm_industryIds"/>
+    司法机关</dd>
+    <dd><input type="checkbox" name="industryIds" value="122" id="contactForm_industryIds"/>
+    行政部门</dd>
+    <dd><input type="checkbox" name="industryIds" value="123" id="contactForm_industryIds"/>
+    军事机构</dd>
+    <dd><input type="checkbox" name="industryIds" value="124" id="contactForm_industryIds"/>
+    卫生社会福利</dd>
+    <dd><input type="checkbox" name="industryIds" value="125" id="contactForm_industryIds"/>
+    水利环境公共设施</dd>
+    <dd><input type="checkbox" name="industryIds" value="126" id="contactForm_industryIds"/>
+    地质勘探</dd>
+    <dd><input type="checkbox" name="industryIds" value="127" id="contactForm_industryIds"/>
+    水电燃气生产供应</dd>
+    <dd><input type="checkbox" name="industryIds" value="128" id="contactForm_industryIds"/>
+    公共安全</dd>
+    <dd><input type="checkbox" name="industryIds" value="129" id="contactForm_industryIds"/>
+    社会保障</dd>
+    <dd><input type="checkbox" name="industryIds" value="130" id="contactForm_industryIds"/>
+    图书馆及博物馆</dd>
+    <dd><input type="checkbox" name="industryIds" value="131" id="contactForm_industryIds"/>
+    信息服务</dd>
+    <dd><input type="checkbox" name="industryIds" value="132" id="contactForm_industryIds"/>
+    保安服务</dd>
+    <dt>公共服务业</dt>
+        <dd><input type="checkbox" name="industryIds" value="134" id="contactForm_industryIds"/>
+    环保服务</dd>
+    <dd><input type="checkbox" name="industryIds" value="135" id="contactForm_industryIds"/>
+    家政服务</dd>
+    <dd><input type="checkbox" name="industryIds" value="136" id="contactForm_industryIds"/>
+    宗教协会</dd>
+    <dd><input type="checkbox" name="industryIds" value="137" id="contactForm_industryIds"/>
+    物流与供应链</dd>
+    <dd><input type="checkbox" name="industryIds" value="138" id="contactForm_industryIds"/>
+    邮政，包裹，零担货运</dd>
+    <dd><input type="checkbox" name="industryIds" value="139" id="contactForm_industryIds"/>
+    运输/汽运/铁路</dd>
+    <dt>交通运输</dt>
+        <dd><input type="checkbox" name="industryIds" value="141" id="contactForm_industryIds"/>
+    仓储</dd>
+    <dd><input type="checkbox" name="industryIds" value="142" id="contactForm_industryIds"/>
+    航空运输</dd>
+    <dd><input type="checkbox" name="industryIds" value="143" id="contactForm_industryIds"/>
+    水上运输</dd>
+    <dd><input type="checkbox" name="industryIds" value="144" id="contactForm_industryIds"/>
+    客运及城市公共交通</dd>
+    <dt>农林牧渔业</dt>
+        <dd><input type="checkbox" name="industryIds" value="146" id="contactForm_industryIds"/>
+    林业</dd>
+    <dd><input type="checkbox" name="industryIds" value="147" id="contactForm_industryIds"/>
+    渔业</dd>
+    <dd><input type="checkbox" name="industryIds" value="148" id="contactForm_industryIds"/>
+    农场</dd>
+    <dd><input type="checkbox" name="industryIds" value="149" id="contactForm_industryIds"/>
+    畜牧</dd>
+    <dt>商品贸易</dt>
+        <dd><input type="checkbox" name="industryIds" value="151" id="contactForm_industryIds"/>
+    国内贸易</dd>
+    <dd><input type="checkbox" name="industryIds" value="152" id="contactForm_industryIds"/>
+    国际贸易</dd>
+    <dt>其他行业</dt>
+        <dd><input type="checkbox" name="industryIds" value="154" id="contactForm_industryIds"/>
+    其他行业</dd>    
+</dl>
+										</div>
+								<span class="red" style="display:none" vdErr="y">请选择所属行业</span>
+		</td>
+		<tr>
+			<th valign="top"><span class="red">*</span> 公司介绍：</th>
+			<td>
+				<textarea name="textarea" class="textarea"></textarea><br />
+				<span class="color_ccc" style="margin-top:5px;">当前输入456 / 10000个字符（5000个汉字）</span>
+			</td>
+		</tr>
+		</tr>
+			<tr>
+				<th valign="top"><span class="red">*</span> 创始时间：</th>
+				<td><input class="input" type="text" /></td>
+			</tr>
+		<tr>
+			<th valign="top">公司性质：</th>
+			<td><select class="select" name="select6" id="select8">
+				<option>请选择</option>
+			</select></td>
+		</tr>
+		<tr>
+			<th valign="top">公司规模：</th>
+			<td><select class="select" name="select" id="select">
+				<option>请选择</option>
+			</select></td>
+		</tr>
+		<tr>
+			<th valign="top">公司网址：</th>
+			<td><input class="input" type="text" /></td>
+		</tr>
+		<tr>
+			<th valign="top">公司地址：</th>
+			<td><select style="width:100px;">
+					<option>请选择</option>
+				</select>
+				<select style="width:100px;">
+					<option>请选择</option>
+				</select>
+				<select style="width:100px;">
+					<option>请选择</option>
+				</select><br />
+				<input class="input" type="text" />
+			</td>
+		</tr>
+        <tr>
+			<th valign="top">子公司情况：</th>
+			<td><input type="radio" /> 有  <input class="l-margin" type="radio" /> 无</td>
+        </tr>
+		</table>
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="5" class="form-table" style="border:none">
+			<tr>
+				<th valign="top">&nbsp;&nbsp;</th>
+				<td><input type="submit" value=" 提交 " /></td>
+			</tr>
+		</table>
+		</form>
+	</div>
+	</div>
+	<!--footer begin-->
+	<div id="footer">
+		<div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+	</div>
+</div>
+<!--footer end-->
+</body>
+</html>

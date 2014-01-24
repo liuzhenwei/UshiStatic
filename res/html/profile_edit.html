@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>编辑个人档案</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/profile.js"></script>
+</head>
+
+<body id="page_member">
+<div id="wrapper" class="container">
+    <!--#include file="header.html"-->
+    <div id="main" class="clearfix">
+      <div class="channel-tit"><h3>编辑个人档案</h3> <span><a href="javascript:void(0);">返回个人档案首页</a></span></div> 
+
+		  <!-- just for test :)-->            
+          <div class="tabs-common clearfix">
+          <ul id="profileTab">
+          <li class="current"><a href="javascript:void(0);">基本信息</a></li>
+          <li><a href="javascript:void(0);">职业总结</a></li>
+          <li><a href="javascript:void(0);">工作经历</a></li>
+          <li><a href="javascript:void(0);">教育经历</a></li>
+          <li><a href="javascript:void(0);">联系信息</a></li>
+          </ul>
+          </div>
+          
+                  
+          <!-- profile basic -->
+          <div name="profile" class="column-2-3 hide">
+          <div class="notice">常规提示信息！</div> 
+          <form class="formstyle">
+          <p class="quiet">带 <span class="red">* </span>号的项目为必填项</p>
+          <ul>
+            <li><label> <span class="red">* </span> 姓名：</label> <input maxlength="64" class="input-w-280" name="" type="text" value="徐璐芸" /></li>
+            <li><label> 头像：</label> 
+            <img src="../../bns/images/test_p1.png" width="50" height="50" /> <a href="javascript:void(0);">更改</a></li>
+            <li><label><span class="red">* </span> 职业概述：</label> <input name="" type="text" class="input-w-400" value="联合利华市场营销经理" maxlength="64" /></li>
+            <li><label><span class="red">* </span> 所在地：</label> 
+            <select id="selectCountry" name=""><option value="0"> 中国大陆 </option></select>
+             <select id="selectRegion" name=""><option selected="selected"> 上海 </option></select>
+            <select id="selectCtiy" name=""><option> 静安 </option></select></li>
+            <li><label> 家乡：</label> 
+            <select id="homeCountry" name=""><option value="0"> 中国大陆</option></select>
+             <select id="homeRegion" name=""><option> 湖北 </option></select>
+            <select id="homeCtiy" name=""><option> 武汉 </option></select></li>
+            <li><label> <span class="red">* </span> 所在行业：</label>  <select name=""><option> 快速消费品 </option></select></li>
+            <li><label>  Blog地址：</label> <input maxlength="255" class="input-w-400" name="" type="text" value="http://blog.renmai2.com/xuluyun/" /></li>
+          </ul>
+          <p> <input name="" type="submit" class="common-button" value=" 提 交 " /></p>
+          <p><a href="javascript:void(0);">放弃修改,返回个人档案页</a></p>
+          </form>  
+               
+          </div>
+          
+          <!-- profile summary --> 
+          <div name="profile" class="column-2-3 hide">
+          <div class="error">您的职业总结不完整！</div>   
+          <form class="formstyle">
+          <p class="quiet">带 <span class="red">* </span>号的项目为必填项</p>
+          <ul>
+            <li><label>职业概述 ：</label> <textarea name="" cols="" rows=""></textarea></li>
+            <li><label>技能专长 ：</label> <textarea name="" cols="" rows="">市场营销策划，销售</textarea></li>
+            <li><label>兴趣爱好 ：</label> <input name="" type="text" class="input-w-400" value="旅游，音乐，健身，阅读" /></li>
+            <li><label>荣誉奖励 ：</label> <textarea name="" cols="" rows=""></textarea></li>
+          </ul>
+          <p> <input name="" type="submit" class="common-button" value=" 提 交 " /></p>
+          <p><a href="javascript:void(0);">放弃修改,返回个人档案页</a></p>
+          </form>  
+          </div>
+          
+           <!-- profile job background--> 
+          <div name="profile" class="column-2-3"> 
+          <div class="success">您的工作经历已经成功添加！<a href="javascript:void(0);">返回我的个人档案</a></div>
+          <div class="error" >你至少要有一条工作经历，请添加到你的个人档案。</div>         
+          <form class="formstyle">
+           
+           <h5>已经添加的工作经历：</h5>
+           
+           <table class="experience-added-list">
+           <tr>
+           <td>联合利华</td>
+           <td>市场经理</td>
+           <td>2007年6月至今</td>
+           <td><a href="javascript:void(0);">编辑</a></td>
+           </tr>
+           <tr>
+           <td>奥美互动</td>
+           <td>客户经理</td>
+           <td>2005年6月至2007年5月</td>
+           <td><a href="javascript:void(0);">编辑</a></td>
+           </tr>
+           <tr class="highlight">
+           <td>诺华制药</td>
+           <td>销售主管</td>
+           <td>2003年2月至2005年5月</td>
+           <td><a href="javascript:void(0);">编辑</a></td>
+           </tr>
+           </table>
+
+           <h5>添加新的工作经历：</h5>
+           <p class="quiet">带 <span class="red">* </span>号的项目为必填项</p>
+           <ul id="addWork">
+           <li><label><span class="red">* </span> 公司名称：</label> <input id="CompanyID" type="hidden" value="0" /><input name="" id="CompanyName" type="text" class="input-w-400" />
+           <div class="data-display-list fs-space">
+           <a href="#">上海梦达帘床上用品有限公司</a>
+           <a href="#">上海梦达帘床上用品有限公司</a>
+           <a href="#">上海梦达帘床上用品有限公司</a>
+           <a href="#">上海梦达帘床上用品有限公司</a>
+           <a class="last" href="#">上海梦达帘床上用品有限公司</a></div>
+           
+           <span class="tips"><input type="checkbox" name="checkbox" id="checkbox" /> 这是我当前的工作</span></li>
+           
+            <li><label><span class="red">* </span> 公司名称：</label> <span class="large">上海梦达帘床上用品有限公司</span> <span class="spe-left2"><a href="#">修改 </a></span></li>
+            
+            <li><label><span class="red">* </span> 公司名称：</label> <span class="large">上海梦达帘床上用品有限公司</span> <span class="spe-left2"><a href="#">修改 </a></span>
+            <div class="data-user-fill bdr-blue fs-space">
+            <span class="box-arrow-up"></span>
+            <div class="notice2"><h4>关于该公司的更多信息</h4></div>
+            <ul>
+            <li><label>公司网址 ：</label> <input name="" select="Company" type="text" class="input-w-280" maxlength="255" /></li>
+            <li><label>公司规模 ：</label> <select class="select" name=""><option selected="selected"> 请选择 </option></select></li>
+            </ul>
+            </div>
+            </li>
+           
+           
+           <li><label> <span class="red">* </span> 职 位：</label> <input name="" type="text" class="input-w-400" maxlength="64" /></li>
+           <li><label> <span class="red">* </span> 所在时间 ：</label> 
+           <select name=""><option>年 </option></select>
+           <select name=""><option>月 </option></select> 至今 </li>
+           <li><label>工作概述 ：</label> <textarea name="" cols="" rows=""></textarea> 
+           <span class="tips"><a href="javascript:void(0);">看看别人是怎么填的</a></span></li></ul>
+          <p> <input name="" type="submit" class="common-button" value=" 添 加 " /></p>
+          <p><a href="javascript:void(0);">放弃修改,返回个人档案页</a></p>
+          </form>  
+          </div>
+          
+           <!-- profile education background--> 
+          <div name="profile" class="column-2-3 hide"> 
+          <form class="formstyle">
+           
+           <h5>已经添加的教育经历：</h5>
+           <table class="experience-added-list">
+           <tr>
+             <td>复旦大学</td>
+             <td>公共关系专业</td>
+             <td>1999年9月至2003年7月</td>
+             <td><a href="javascript:void(0);">编辑</a></td>
+           </tr>
+           </table>
+
+           <h5>添加新的教育经历：</h5>
+           <p class="quiet">带 <span class="red">* </span>号的项目为必填项</p>
+           <ul>
+           <li><label><span class="red">* </span> 学校名称：</label> <input name="" type="text" class="input-w-400" maxlength="64" /></li>
+           <li><label><span class="red">* </span>  专业 ：</label> <input name="" type="text" class="input-w-400" maxlength="64" /></li>
+           <li><label><span class="red">* </span>  学位 ：</label> 
+            <select name=""><option selected="selected"> 请选择 </option></select></li>
+           <li><label> <span class="red">* </span> 起止时间 ：</label> 
+           <select name=""><option>年 </option></select>
+           <select name=""><option>月 </option></select> <span class="large">至</span>
+           <select name=""><option>年 </option></select>
+           <select name=""><option>月 </option></select> </li>
+           <li>
+             <label>概述 ：</label> <textarea name="" cols="" rows=""></textarea> 
+           <span class="tips"><a href="javascript:void(0);">看看别人是怎么填的</a></span></li></ul>
+          <p> <input name="" type="submit" class="common-button" value=" 添 加 " /></p>
+          <p><a href="javascript:void(0);">放弃修改,返回个人档案页</a></p>
+          </form>  
+          </div>
+          
+           <!-- profile contact info --> 
+          <div name="profile" class="column-2-3 hide">
+          <form class="formstyle">
+          <p class="quiet">带 <span class="red">* </span>号的项目为必填项</p>
+          <ul>
+            <li><label> <span class="red">* </span> 手机：</label>
+              <input type="text" class="input-w-280" value="13801680520" maxlength="16" />
+            <select name=""><option>公开给一度人脉</option></select></li>
+            <li><label>商务电话：</label>
+              <input type="text" class="input-w-280" maxlength="32" />
+            <select name=""><option>公开给一度人脉</option></select></li>
+            <li><label>私人电话：</label>
+              <input type="text" class="input-w-280" maxlength="32" />
+            <select name=""><option>公开给指定分组</option></select> <span> <a href="javascript:void(0);">编辑分组</a></span></li>
+            <li><label>Email：</label> <span class="large">luyun.xu@gmail.com</span>
+             <span class="tips quiet">这是您登录人脉平方的默认邮箱，将显示给您的一度人脉。</span>
+             <span class="tips"><a href="javascript:void(0);">管理Email</a></span></li>
+            
+            <li><label>即时通讯账户：</label>
+                 <div class="mult-lines-box">
+                 <ul>
+                   <li> <select name="select"><option selected="selected">QQ</option> 
+                        <option>MSN</option> </select>
+                        <input name="input2" type="text" class="input-w-180" maxlength="32" />
+                   <select name=""><option>公开给所有人脉</option></select></li>
+              
+                   <li> <select name="select"> <option selected="selected">QQ</option> 
+                        <option>MSN</option> </select>
+                        <input name="input2" type="text" class="input-w-180" maxlength="32" />
+                   <select name=""><option>公开给指定分组</option></select> <span> <a href="javascript:void(0);">编辑分组</a></span></li>
+                    <li><a href="javascript:void(0);">添加即时通讯账户</a> <span class="quiet">(最多添加5组)</span></li>
+                  </ul></div></li> 
+                 
+              <li><label>生日：</label> 
+                  <select name=""><option>年 </option></select>
+                  <select name=""><option>月 </option></select>
+                  <select name=""><option>日 </option></select>
+                  <select><option>只公开月日</option></select>
+             </li>
+            </ul>
+          <p> <input name="" type="submit" class="common-button" value=" 提 交 " /></p>
+          <p><a href="javascript:void(0);">放弃修改,返回个人档案页</a></p>
+          </form>  
+               
+          </div>
+          
+          
+           <div name="profile" class="column-2-3 ">
+           <form>
+           <div>
+           <h4>上传/修改用户头像</h4>
+           <p>优士网是一个私密、可信的职业人士交流社区，在这里，85%的用户都上传了真实的个人头像。 </p></div>
+           
+           <div class="profile-photo-container clearfix">
+           <div class="profile-photo-current">
+           <img class="userface" src="../../common/images/face_120.png" width="120" height="120" alt="username" /> </div>
+           <div class="profile-upload">
+           <p><strong>请选择计算机中要上传的图片文件</strong></p>
+           <p><input  name="" class="input-w-400"  type="file"/></p>
+           <p><input name="" type="checkbox" checked="checked"class="checkbox" />我可以保证所上传的图片是我个人的真实照片，并拥有版权</p>
+           <p><input name="" class="common-button" type="button" value="开始上传" /></p>
+           </div>
+           </div>
+           
+           
+           
+           </form>
+           </div>
+           
+
+
+
+
+
+          
+  </div>     
+</div>
+
+<!--删除有评价的工作经历弹出窗口-->
+<div class="fl-outer" style="width:500px; display:block; top:530px; left:300px;">
+<div class="fl-block">
+<div class="fl-title"><h5>删除工作经历</h5> <a class="close" href="javascript:void(0);"><span class="hide">关闭</span></a></div>
+<div class="fl-content">
+
+	
+<div class="notice tips-pop">
+  <p><strong>你确定要删除这条经历吗？这条经历所收到的评价将会被保存，在将其关联到新的经历之前会隐藏。</strong></p> 
+   <div class="clearfix"><p> <a hidefocus="true"  class="common-button" href="evaluate_manage_my.html">确定</a> <a hidefocus="true"  class="common-button" href="evaluate_manage_my.html">取消</a> </p></div></div>
+</div>
+</div>
+</div>
+
+<!--删除无评价的工作经历弹出窗口-->
+
+<div class="fl-outer" style="width:500px; display:block; top:360px; left:300px; z-index: 0;">
+<div class="fl-block">
+<div class="fl-title"><h5>删除工作经历</h5> <a class="close" href="javascript:void(0);"><span class="hide">关闭</span></a></div>
+<div class="fl-content">
+
+	
+<div class="notice tips-pop">
+  <p><strong>你真的要删除这项经历吗？</strong></p> 
+   <div class="clearfix"><p> <a hidefocus="true"  class="common-button" href="evaluate_manage_my.html">确定</a> <a hidefocus="true"  class="common-button" href="evaluate_manage_my.html">取消</a> </p></div></div>
+</div>
+</div>
+</div>
+
+<!--#include file="footer.html"-->
+</body>
+</html>

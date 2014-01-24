@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>隐私设定:个人档案</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/privacy_profile.js"></script>
+</head>
+
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	<div id="main">
+		<div class="channel-tit">
+			<h3>隐私设定</h3>
+		</div>
+		<div class="tabs-common clearfix">
+			<ul>
+				<li><a href="privacy_contact.html">联系选项</a></li>
+				<li class="current"><a href="javascript:void(0);">个人档案</a></li>
+				<li><a href="privacy_feed.html">人际动态</a></li>
+				<li><a href="privacy_group.html">群组设定</a></li>
+				<li><a href="javascript:void(0);">邮件通知</a></li>
+			</ul>
+		</div>
+		<div class="column-2-3">
+			<div id="pvy_conn" class="clearfix">
+				<h4 class="extra-title">信息公开设置</h4>
+				<form method="post" action="" class="formstyle">
+					<ul>
+						<li> <b class="large">您的一度人脉列表希望公开给：</b>
+							<div class="pvy_profile_info">
+								<input type="radio" value="1" id="privacy_contactlist1" name="privacy.contactlist">
+								<label for="privacy_contactlist1">三度以内人脉</label>
+								<input type="radio" value="2" checked="checked" id="privacy_contactlist2" name="privacy.contactlist">
+								<label for="privacy_contactlist2">一度人脉</label>
+								<input type="radio" value="3" id="privacy_contactlist3" name="privacy.contactlist">
+								<label for="privacy_contactlist3">仅自己可见</label>
+							</div>
+						</li>
+						<li> <b class="large">您的头像希望公开显示给：</b>
+							<div class="pvy_profile_info">
+								<input type="radio" value="1" id="privacy_logoview1" name="privacy.logoview">
+								<label for="privacy_logoview1">所有优士会员</label>
+								<input type="radio" value="2" checked="checked" id="privacy_logoview2" name="privacy.logoview">
+								<label for="privacy_logoview2">三度以内人脉</label>
+								<input type="radio" value="3" id="privacy_logoview3" name="privacy.logoview">
+								<label for="privacy_logoview3">一度人脉</label>
+							</div>
+						</li>
+						<li> <b class="large">当您访问其他人的个人档案时，对方将从"谁看过我的档案"看到：</b>
+							<div class="pvy_profile_info">
+								<div>
+									<input type="radio" value="1">
+									<label for="privacy_logoview1">我的姓名和职位</label>
+								</div>
+								<div class="common-tips1 common-tips1-top">
+									<div class="common-tips1-out">
+										<div class="common-tips1-in">
+											<div class="common-tips1-cont vcard"> <a href="/u/16399"></a><a href="/u/16399"><img id="avatar-16399" src="http://ushi.cn../../common/images/face_30.png"></a>
+												<dl>
+													<dt><a href="/u/16399">王明明Adam</a> </dt>
+													<dd>十年 创始人</dd>
+												</dl>
+											</div>
+										</div>
+										<div class="common-tips1-top-ar"></div>
+									</div>
+								</div>
+								<div class="margin-top">
+									<input type="radio" value="1">
+									<label for="privacy_logoview1">仅显示职位名和所在行业</label>
+								</div>
+								<div class="common-tips1 common-tips1-top">
+									<div class="common-tips1-out">
+										<div class="common-tips1-in">
+											<div class="common-tips1-cont">
+												<ul>
+													<li><a href="#">互联网 产品经理</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="common-tips1-top-ar"></div>
+									</div>
+								</div>
+								<div class="margin-top">
+									<input type="radio" value="1">
+									<label for="privacy_logoview1">不显示认识信息</label>
+								</div>
+								<div class="common-tips1 quiet">对方无法查看到我的访问</div>
+							</div>
+						</li>
+					</ul>
+					<div class="margin-btm15e clear">
+						<input type="submit" value=" 保存设定 " class="special-btn" name="">
+					</div>
+				</form>
+			</div>
+			<div id="pvy_pub" class="clearfix">
+				<h4 class="extra-title">公开档案设置</h4>
+				<form class="formstyle pvy-f">
+					<div class="pvy_profile_url">
+						<label> 您的公开档案地址：</label>
+						<a href="/p/luhansen" class="spe-right2">http://www.ushi.cn/p/<span>luhansen</span></a>
+						<input type="button" id="edit_domain" value="编辑" class="common-button">
+						<div class="clearfix" style="display: ;">
+							<div class="float-left margin-top">个性化定制此地址： http://www.ushi.cn/p/</div>
+							<div class="float-left">
+								<input type="text" class="input input-w-140" size="30" />
+								<input type="button" value="保存" class="common-button" />
+								<input type="button" value="取消" class="common-button" />
+								<br />
+								<span class="quiet">你的URL地址只能由 5-30 个英文字符组成，<br />
+								不能包含中文、数字、特殊字符</span> </div>
+						</div>
+					</div>
+					<div class="pvy-f-p" >
+						<ul>
+							<li>
+								<input name="" type="radio" value="" id="hideAllBtn" />
+								<strong>隐藏全部内容</strong></li>
+							<li>
+								<input name="" type="radio" value="" checked="checked" id="setAllBtn" />
+								<strong>个性化定制</strong>
+								<ul >
+									<li>
+										<input name="input2" type="checkbox" value="" checked="checked" id="box_basic" />
+										基本信息 (姓名、地区、职业总结、行业等)</li>
+									<li>
+										<input name="input2" type="checkbox" value="" checked="checked" id="box_face" />
+										头像</li>
+									<li>
+										<input name="input2" type="checkbox" value="" checked="checked" id="box_newsfeed" />
+										最新动态</li>
+									<li>
+										<input name="input2" type="checkbox" value="" checked="checked" id="box_sum" />
+										职业概述</li>
+									<li>
+										<input name="input2" type="checkbox" value="" checked="checked" id="box_sum2" />
+										职业总结</li>
+									<li>
+										<input name="input2" type="checkbox" value="" checked="checked" id="box_job" />
+										工作经历
+										<ul>
+											<li>
+												<input name="input2" type="checkbox" value="" id="box_job_current" />
+												仅显示当前工作经历</li>
+										</ul>
+									</li>
+									<li>
+										<input name="input2" type="checkbox" value="" checked="checked" id="box_edu" />
+										教育经历
+										<ul>
+											<li>
+												<input name="input2" type="checkbox" value="" id="box_edu_current" />
+												仅显示最新教育经历</li>
+										</ul>
+									</li>
+									<li>
+										<input name="input2" type="checkbox" value="" checked="checked" id="box_other" />
+										其他(包括技能专长、兴趣爱好和荣誉奖励)</li>
+									<li>
+										<input name="input2" type="checkbox" value="" checked="checked" id="box_group" />
+										群组信息</li>
+								</ul>
+							</li>
+						</ul>
+						<input name="" type="submit" class="special-btn" value=" 完成设定 " />
+					</div>
+					<div>公开档案预览</div>
+					<div class="pvy-f-pic" id="hideAll"> <img id="ppimg_face" src="../../common/images/face_30.png" width="30" height="30" /> <img id="ppimg_basic" src="../../bns/images/ppimgs/pic_pprofile_basic.png" width="60" height="30"/> <img id="ppimg_newsfeed" src="../../bns/images/ppimgs/pic_pprofile_newsfeed.png" width="205" height="52" /> <img id="ppimg_sum" src="../../bns/images/ppimgs/pic_pprofile_summary.png" width="205" height="22" /> <img id="ppimg_sum2" src="../../bns/images/ppimgs/pic_pprofile_summary2.png" width="205" height="39" /> <img id="ppimg_job" src="../../bns/images/ppimgs/pic_pprofile_job.png" width="205" height="95" /> <img id="ppimg_job_current" style="display:none" src="../../bns/images/ppimgs/pic_pprofile_job_c.png" width="205" height="54" /> <img id="ppimg_edu"  src="../../bns/images/ppimgs/pic_pprofile_edu.png" width="205" height="64" /> <img id="ppimg_edu_current" style="display:none" src="../../bns/images/ppimgs/pic_pprofile_edu_c.png" width="205" height="38" /> <img id="ppimg_other" src="../../bns/images/ppimgs/pic_pprofile_others.png" width="205" height="44" /> <img id="ppimg_group" src="../../bns/images/ppimgs/pic_pprofile_groups.png" width="205" height="40" /> </div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!--#include file="footer.html"-->
+</body>
+</html>

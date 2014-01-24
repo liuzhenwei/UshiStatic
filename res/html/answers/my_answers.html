@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>问答</title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../answers/css/all.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../../../common/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="../../../common/js/widget.js"></script>
+<script type="text/javascript" src="../../../common/js/common.js"></script>
+<script type="text/javascript" src="../data/lang.js"></script>
+</head>
+
+<body id="page_public">
+<div id="wrapper" class="container"> 
+	<!--#include virtual="../header.html"-->
+	<div id="main" class="clearfix">
+		<div class="channel-tit pd-btm15e">
+			<h3>问答</h3>
+		</div>
+		<div class="tabs-common clearfix">
+			<ul>
+				<li class="current"><a href="#">问答动态</a></li>
+				<li><a href="#">我的问答</a></li>
+			</ul>
+		</div>
+		<div class="column-2-3">
+			<div class="wd-home-search margin-bottom">
+				<div class="wd-home-search-inner">
+					<div class="wd-home-search-ipt float-left">
+						<input type="text" name="" addQuestion="input" searchkey="" value="搜索话题、问题或人..." defaultTips="搜索话题、问题或人..." js="home_search_input" autocomplete="off" />
+					</div>
+					<div class="btn-special1 float-left">
+						<div class="btn-special1-inner"> <a js="addQuestion" href="#"><span class="ico-add-w spe-right"></span>添加问题</a> </div>
+					</div>
+				</div>
+			</div>
+			<div class="profile-t clearfix">
+				<div class="pt-inner-l ">
+					<div class="vcard v-120">
+						<div class="vcard-owner"><a href="/user/logo!edit.jhtml"><img src="http://images.ushigroup.cn/bnsphoto/2010/08/31/68e1bc20-7fcf-4f35-ac24-388821b11978_s.jpg" style="border:none;"></a> <span><a href="/user/logo!edit.jhtml">修改</a></span> </div>
+						<dl>
+							<dt>刘镇维 </dt>
+							<dd>前端架构师</dd>
+							<dd class="border-top margin-top15e pd-top">
+								<table class="quiet">
+									<tr>
+										<td><span class="blue">24</span>人在问答频道关注我</td>
+										<td style="padding:0 15px;">|</td>
+										<td><span class="blue">24</span>人在全站关注我</td>
+									</tr>
+									<tr>
+										<td>我在问答频道关注<span class="blue">14</span>人
+										<td style="padding:0 15px;">|</td>
+										<td>我在全站关注<span class="blue">5</span>人</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="wd-event-list">
+				<div class="tabs-sub margin-top15e margin-bottom clearfix">
+					<ul>
+						<li class="current"><a href="#feed_1">动态</a></li>
+						<li><a href="#feed_2">我的问题</a></li>
+						<li><a href="#feed_3">我的回答</a></li>
+						<li><a href="#feed_4">给我的邀请</a></li>
+					</ul>
+				</div>
+				<div pageNo="1" style="display:;" ajaxUrl="">
+					<div class="event-block">
+						<div class="event-owner">
+							<a href="#"><img src="../../../common/images/face_30.png"></a>
+						</div>
+						<div class="event-content">
+							<p class="quiet">我关注了 <a href="#">张三</a><span class="spe-left2 spe-right2">|</span>
+								<a href="#" class="quiet">取消关注</a>
+							</p>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="event-owner">
+							<a href="#"><img src="../../../common/images/face_30.png"></a>
+						</div>
+						<div class="event-content">
+							<p class="quiet">我关注了话题 <a href="#">张三的话题</a><span class="spe-left2 spe-right2">|</span>
+								<a href="#" class="quiet">取消关注</a>
+							</p>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="event-owner">
+							<a href="#"><img src="../../../common/images/face_30.png"></a>
+						</div>
+						<div class="event-content">
+							<p class="quiet">我关注了问题 <a href="#">张三是谁？</a><span class="spe-left2 spe-right2">|</span>
+								<a href="#" class="quiet">取消关注</a>
+							</p>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="event-owner">
+							<a href="#"><img src="../../../common/images/face_30.png"></a>
+						</div>
+						<div class="event-content">
+							<p class="quiet">我感谢了 <a href="#">张三</a><span class="spe-left2 spe-right2">|</span>
+								<a href="#">关注张三</a>
+							</p>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="event-owner">
+							<a href="#"><img src="../../../common/images/face_30.png"></a>
+						</div>
+						<div class="event-content">
+							<p class="quiet">我与 <a href="#">张三</a> 握手<span class="spe-left2 spe-right2">|</span>
+								<a href="#">关注张三</a>
+							</p>
+						</div>
+					</div>
+					<div class="a-center" js="moreFeedDiv">
+						<a class="cnfont large" href="#">查看更多</a><span style="display:inline-block;" class="icon-btn-down middle spe-left"></span>
+					</div>
+				</div>
+			</div>
+			<div class="wd-event-list">
+				<div class="tabs-sub margin-top15e margin-bottom clearfix">
+					<ul>
+						<li><a href="#feed_1">动态</a></li>
+						<li class="current"><a href="#feed_2">我的问题</a></li>
+						<li><a href="#feed_3">我的回答</a></li>
+						<li><a href="#feed_4">给我的邀请</a></li>
+					</ul>
+				</div>
+				<div pageNo="1" style="display:;" ajaxUrl="">
+					<div class="event-block">
+						<div class="event-content wd-event-cont-45">
+							<h4><a href="#">用户体验如何界定是帮助用户偷懒，还是帮助用户更好的上手？</a></h4>
+							<p class="quiet">问题被关联到话题<a href="#">张三</a>，<a href="#">张三</a>，<a href="#">张三</a><span class="spe-left2 spe-right2">|</span>
+								10个答案 <span class="spe-left2 spe-right2">|</span>
+								<a href="#" class="quiet">删除问题</a>
+							</p>
+							<p>眼球的运动包括有意识的选择注视，和完全无意识的眼动。 后者是不可控制的。 这会给任何试图用眼球运动来操作跟踪的人带来很大麻烦。因此想完全依赖眼球来搞一个输入装置，技术上非常困难，也可以说没有多大意义。
+							</p>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="event-content wd-event-cont-45">
+							<h4><a href="#">用户体验如何界定是帮助用户偷懒，还是帮助用户更好的上手？</a></h4>
+							<p class="quiet"><a href="#">添加话题</a><span class="spe-left2 spe-right2">|</span>
+								10个答案 <span class="spe-left2 spe-right2">|</span>
+								<a href="#" class="quiet">删除问题</a>
+							</p>
+							<div class="margin-bottom">眼球的运动包括有意识的选择注视，和完全无意识的眼动。 后者是不可控制的。 这会给任何试图用眼球运动来操作跟踪的人带来很大麻烦。因此想完全依赖眼球来搞一个输入装置，技术上非常困难，也可以说没有多大意义。
+							</div>
+						</div>
+					</div>
+					<div class="a-center" js="moreFeedDiv">
+						<a class="cnfont large" href="#">查看更多</a><span style="display:inline-block;" class="icon-btn-down middle spe-left"></span>
+					</div>
+				</div>
+			</div>
+			<div class="wd-event-list">
+				<div class="tabs-sub margin-top15e margin-bottom clearfix">
+					<ul>
+						<li><a href="#feed_1">动态</a></li>
+						<li><a href="#feed_2">我的问题</a></li>
+						<li class="current"><a href="#feed_3">我的回答</a></li>
+						<li><a href="#feed_4">给我的邀请</a></li>
+					</ul>
+				</div>
+				<div pageNo="1" style="display:;" ajaxUrl="">
+					<div class="event-block">
+						<div class="event-owner">
+							<a href="#"><img src="../../../common/images/face_30.png"></a>
+						</div>
+						<div class="event-content answers-event-cont">
+							<h4><a href="#">用户体验如何界定是帮助用户偷懒，还是帮助用户更好的上手？</a></h4>
+							<p class="quiet"><a href="#">张三</a> 回答了该问题 <span class="spe-left2 spe-right2">|</span>
+								10个答案
+							</p>
+							<p class="quiet">3票，来自 <a href="#" class="quiet">李四</a>，<a href="#" class="quiet">李四</a>，<a href="#" class="quiet">李四</a></p>
+							<div class="margin-bottom">眼球的运动包括有意识的选择注视，和完全无意识的眼动。 后者是不可控制的。 这会给任何试图用眼球运动来操作跟踪的人带来很大麻烦。因此想完全依赖眼球来搞一个输入装置，技术上非常困难，也可以说没有多大意义。
+								<a href="#">显示全部</a></div>
+							<p class="action">
+								2天前07:04 <a hasbind="yes" class="comments-shop" js="insertComm" href="javascript:void(0)">评论</a><span js="commentCnt">(11)</span>
+								<span class="spe-left2 spe-right2">|</span>
+								<a href="#">删除回答</a><span class="spe-left2 spe-right2">|</span>
+								<a href="#" class="quiet">取消关注</a>
+							</p>
+							<p class="answer-vote">
+								<a href="#" class="answer-vote-count">888</a>
+							</p>
+						</div>
+					</div>
+					<div class="a-center" js="moreFeedDiv">
+						<a class="cnfont large" href="#">查看更多</a><span style="display:inline-block;" class="icon-btn-down middle spe-left"></span>
+					</div>
+				</div>
+			</div>
+			<div class="wd-event-list">
+				<div class="tabs-sub margin-top15e margin-bottom clearfix">
+					<ul>
+						<li><a href="#feed_1">动态</a></li>
+						<li><a href="#feed_2">我的问题</a></li>
+						<li><a href="#feed_3">我的回答</a></li>
+						<li class="current"><a href="#feed_4">给我的邀请</a></li>
+					</ul>
+				</div>
+				<div pageNo="1" style="display:;" ajaxUrl="">
+					<div class="event-block">
+						<div class="event-owner">
+							<a href="#"><img src="../../../common/images/face_30.png"></a>
+						</div>
+						<div class="event-content">
+							<h4><a href="#">用户体验如何界定是帮助用户偷懒，还是帮助用户更好的上手？</a></h4>
+							<p class="quiet"><a href="#" class="boldface spe-right">张三</a>邀请你回答该问题	</p>
+							<div class="margin-bottom">眼球的运动包括有意识的选择注视，和完全无意识的眼动。 后者是不可控制的。 这会给任何试图用眼球运动来操作跟踪的人带来很大麻烦。因此想完全依赖眼球来搞一个输入装置，技术上非常困难，也可以说没有多大意义。
+								<a href="#">显示全部</a></div>
+						</div>
+					</div>
+					<div class="a-center" js="moreFeedDiv">
+						<a class="cnfont large" href="#">查看更多</a><span style="display:inline-block;" class="icon-btn-down middle spe-left"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column-3">
+			<div class="common-block">
+				<h5 class="extra-title">你知道吗？</h5>
+				<div class="spe-left-pd2"> <img width="53" height="68" src="http://images.ushi.cn/ads/01_03.jpg" class="float-left spe-right2">
+					<div>
+						<p>基于上下文的指南：此区域根据当前用户所在页面，动态显示不同的针对性的指南或提示信息。</p>
+					</div>
+				</div>
+			</div>
+			<div class="common-block">
+				<h5 class="extra-title">关注N个话题</h5>
+				<ul class="vcard">
+					<li class="border-bottom"><a href="#" userid="3535" class="common-close"><span class="hide">关闭</span></a> <a href="#"><img src="../../../common/images/face_30.png"></a>
+						<dl>
+							<dt><a href="#">您可能感兴趣的话题</a></dt>
+							<dd><a js="followTopic" href="#">关注话题</a></dd>
+						</dl>
+					</li>
+					<li class="border-bottom"><a href="#" userid="3535" class="common-close"><span class="hide">关闭</span></a> <a href="#"><img src="../../../common/images/face_30.png"></a>
+						<dl>
+							<dt><a href="#">您可能感兴趣的话题</a></dt>
+							<dd><a js="followTopic" href="#">关注话题</a></dd>
+						</dl>
+					</li>
+					<li class="border-bottom"><a href="#" userid="3535" class="common-close"><span class="hide">关闭</span></a> <a href="#"><img src="../../../common/images/face_30.png"></a>
+						<dl>
+							<dt><a href="#">您可能感兴趣的话题</a></dt>
+							<dd><a js="followTopic" href="#">关注话题</a></dd>
+						</dl>
+					</li>
+					<li class="border-bottom">
+						<p class="boldface">关注<a href="#">N个问题</a></p>
+					</li>
+					<li class="border-bottom">
+						<p class="boldface"><a href="#">浏览我所有的关注</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--#include virtual="../footer.html"--> 
+</div>
+</body>
+</html>

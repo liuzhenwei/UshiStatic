@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+	<div class="lf">	
+		<div id="menu_out" class="leftmenu">	
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+		</div>
+	</div>	
+	
+	<div class="rf">
+		<div id="container">
+			<h2>关键字管理</h2>
+			<div style="padding:10px 10px 0 10px;">
+			<form>
+				<p>输入ID或关键字: <input type="text" size="20" value="" />
+					<input type="submit" value="搜索" /></p>
+			</form>
+			</div>
+			<p><input type="button" value="添加关键字" onclick="location.href='keyword_edit.html'" /></p>
+			<table	width="100%" cellpadding="0" cellspacing="0" class="datalist">
+				<tr>
+					<th>ID</th>
+					<th>关键字</th>
+					<th>关联的话题</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>互联网</td>
+					<td>网络，网络</td>
+					<td><a href="keyword_edit.html">修改</a>
+						<a href="#" onclick="return confirm('删除该关键字将删除其所有的对应关系，\n确定要删除？');">删除</a>
+					</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>互联网</td>
+					<td>网络，网络</td>
+					<td><a href="keyword_edit.html">修改</a>
+						<a href="#" onclick="return confirm('删除该关键字将删除其所有的对应关系，\n确定要删除？');">删除</a>
+					</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>互联网</td>
+					<td>网络，网络</td>
+					<td><a href="keyword_edit.html">修改</a>
+						<a href="#" onclick="return confirm('删除该关键字将删除其所有的对应关系，\n确定要删除？');">删除</a>
+					</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>互联网</td>
+					<td>网络，网络</td>
+					<td><a href="keyword_edit.html">修改</a>
+						<a href="#" onclick="return confirm('删除该关键字将删除其所有的对应关系，\n确定要删除？');">删除</a>
+					</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>互联网</td>
+					<td>网络，网络</td>
+					<td><a href="keyword_edit.html">修改</a>
+						<a href="#" onclick="return confirm('删除该关键字将删除其所有的对应关系，\n确定要删除？');">删除</a>
+					</td>
+				</tr>
+			</table>
+			<div class="pagenav">
+				<span class="cur">1</span><span><a href="#">2</a></span><span><a href="#">3</a></span><span><a href="#">4</a></span><span><a href="#">5</a></span><span><a href="#">5</a></span><span><a href="#">7</a></span><span><a href="#">8</a></span><span><a href="#">9</a></span><span><a href="#">末页</a></span>
+			</div>
+		</div>
+	</div>
+
+	<!--footer begin-->
+	<div id="footer">
+	 	<div id="copyright">
+	 	Copyright &copy; 2010 Ushi.cn
+	 	</div>
+ 	</div> 
+	<!--footer end-->
+</div>
+
+</body>
+</html>

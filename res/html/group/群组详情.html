@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>单身社交群 - 优士网</title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/group.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('div.group-topic-list div.event-block').hover(function(){
+		$('.action', this).addClass('current-action');
+		$('.action .hide-action', this).css({display: 'inline-block', opacity: 0}).animate({opacity: 1}, 500);
+	}, function(){
+		$('.action', this).removeClass('current-action');
+		$('.action .hide-action', this).fadeOut(500, function(){$(this).css('display', 'none');});
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper" class="container">
+<!-- main start -->
+	<div id="main" class="clearfix">
+		<div class="column-2-3">
+			<div class="grp-path">
+				<h3>单身社交群</h3>
+			</div>
+			<div class="tabs-common grp-nav clearfix">
+				<div class="grp-logo"><a href="#"><img src="http://images.ushigroup.cn/bnsphoto/g/2011/11/21/0763d992-4c6d-406d-b528-416ffbfd2f64_icon.jpg" width="50" height="50" /></a></div>
+				<ul id="groupBar">
+					<li id="home"><a href="#">群组首页</a></li>
+					<li id="job"><a href="#">职位</a></li>
+					<li id="event"><a href="#">活动</a></li>
+					<li id="member"><a href="#">成员</a></li>
+					<li id="desc"><a href="#">简介</a></li>
+				</ul>
+			</div>
+			<div class="group-mail-box tipsbox margin-bottom"><a href="#" class="common-close" style="display: block;"><span class="hide">Close</span></a>
+				<h4>群公告：互联网创业群只接受成员发布与互联网创业相关的话题与分享，其他广告贴格栅勿论！！！</h4>
+				<div>
+					<p>优士网发展至今，一直以向广大优士用户分享高质量原创内容为原则，为了给所有群组成员提供一个积极向上、高品质的群组讨论氛围。我们将在近期加大对群组非正常内容的处置力度，希望还原群组内良好的讨论 , 学习气氛 ! </p>
+					<h5>本次主要治理的内容为：</h5>
+					<ul>
+						<li>1 内容中包含各种非优士网链接；</li>
+						<li>2 内容中包含各种联系方式 ( 我们欢迎大家以回复话题的形式进行讨论 , 以站内直邮的方式获得联系方式 ) ；</li>
+						<li>3 相同内容在一个群内重复发表；</li>
+						<li>4 主题内容与群组主题无关；</li>
+						<li>5 标题意义表达不清晰或过于笼统（例如：标题只有 " 招商 " ， " 转让房产 " 几个字组成）；</li>
+						<li>6 内容中牵涉到政治及非法内容的；</li>
+						<li>7 语言攻击或挑衅其他用户的。</li>
+					</ul>
+					<p>即日起群组内发布以上内容者，我们将配合群组管理员对相关话题进行删除，情节严重者保留取消用户在群组内的相关权限！</p>
+				</div>
+			</div>
+			<div class="group-topic-add home-add-container">
+				<div class="event-owner">
+					<a href="#" target="_blank"><img width="50" height="50" src="http://images.ushigroup.cn/bnsphoto/2012/03/12/256ac770-eb0c-4401-b05f-3b38bed92cb8_thumb.jpg"></a>
+				</div>
+				<form method="post">
+				<div class="grp-topic-title">
+					<h5>发起话题</h5>
+					<input type="text" class="formtext" />
+					<span class="grp-topic-arrow">&nbsp;</span>
+				</div>
+				<div class="home-add-weibo clearfix">
+					<textarea name="freetext" id="freetext" cols="" rows="" select="text"></textarea>
+					<div class="share-box" style="display:;" id="statusUrlContent"> <a class="common-close"href="#"><span class="hide">关闭</span></a> 输入想分享的网址：
+						<input type="text" class="text formtext" id="linkurl" name="linkurl" />
+					</div>
+					<div class="share-box" style="display:;"> <a class="common-close"href="#"><span class="hide">关闭</span></a>
+						<div class="add-web formstyle">
+							<ul>
+								<li>
+									<label>网址：</label>
+									http://www.worldfriends.com.cn/member/home.jhtml </li>
+								<li>
+									<label>标题：</label>
+									<input name="phone" type="text" class="input-w-280 formtext" value="worldfriends" maxlength="255" select="Company">
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="share-box" style="display:;" id="statusDocumentContent"> <a class="common-close"href="#"><span class="hide">关闭</span></a> 选择本地文件：
+						<input class="file" type="file" name="fileField" id="fileField" />
+						<span class="show">支持Word, Excel, PPT, PDF格式文件，最大5M</span> </div>
+					<div class="share-box picUp" style="display:;" id="statusDocumentContent">
+					</div>
+					<div class="home-add-LU">附加：<a class="spe-right" href="#">网址</a> <a href="#" id="statusDocument">文档</a></div>
+					<div class="home-add-weibo-submit">
+						<div class="syncmb spe-right2">
+							<span js="synced">
+								<input type="checkbox" checked="true" value="1" id="syncCheckbox">
+							</span>
+							<label for="syncCheckbox">
+							<span class="syncmb-sina">&nbsp;</span> 同步到微博</label>
+						</div>
+						<a href="#" class="button large-btn large">发布</a>
+					</div>
+				</div>
+				</form>
+			</div>
+
+			<h4 class="extra-title">群组话题</h4>
+			<div class="group-topic-list">
+				<div class="event-block">
+					<div class="event-owner">
+						<a target="_blank" href="#"><img width="50" height="50" src="http://images.ushigroup.cn/bnsphoto/2012/03/12/256ac770-eb0c-4401-b05f-3b38bed92cb8_thumb.jpg" /></a>
+					</div>
+					<div class="event-content">
+						<h4><a target="_blank" href="#">移动互联网的杀手级应用是什么？</a></h4>
+						<p class="quiet"><a target="_blank" class="spe-right2 boldface" href="#">郑思</a>蓝色科技 - 市场总监</p>
+						<div class="group-topic-cont">杀手级应用要满足几个条件: 用户强依赖（类似强迫症的症状表现）， 传播快（裂变现象）， 退出成本巨大， 快速迭代不断创造需求</div>
+						<div class="action">
+							<span class="grp-topic-time">3小时前</span>
+							<span class="reply-action">
+								<a href="javascript:;">回复<small class="spe-left" js="commentCnt">(11)</small></a>
+							</span>
+							<span class="hide-action">
+								<a href="javascript:;">转发分享<small class="spe-left" js="shareCnt">(88)</small></a>
+								<a href="javascript:;">举报</a>
+								<a href="javascript:;">删除</a>
+								<a href="javascript:;">修改</a>
+								<a href="javascript:;">置顶</a>
+							</span>
+						</div>
+					</div>
+				</div>			
+				<div class="event-block">
+					<div class="event-owner">
+						<a target="_blank" href="#"><img width="50" height="50" src="http://images.ushigroup.cn/bnsphoto/2012/03/12/256ac770-eb0c-4401-b05f-3b38bed92cb8_thumb.jpg" /></a>
+					</div>
+					<div class="event-content">
+						<h4><a target="_blank" href="#">移动互联网的杀手级应用是什么？</a></h4>
+						<p class="quiet"><a target="_blank" class="spe-right2 boldface" href="#">郑思</a>蓝色科技 - 市场总监</p>
+						<div class="group-topic-cont">
+							<div class="grp-topic-inner">
+								<div>
+									杀手级应用要满足几个条件: 用户强依赖（类似强迫症的症状表现）， 传播快（裂变现象）， 退出成本巨大， 快速迭代不断创造需求用户强依赖（类似强迫症的症状表现）， 传播快（裂变现象）， 退出成本巨大， 快速迭代不断创造需求
+									杀手级应用要满足几个条件: 用户强依赖（类似强迫症的症状表现）， 传播快（裂变现象）， 退出成本巨大， 快速迭代不断创造需求用户强依赖（类似强迫症的症状表现）， 传播快（裂变现象）， 退出成本巨大， 快速迭代不断创造需求
+								</div>
+							</div>
+							<div class="grp-topic-more"><a href="#">查看全部</a></div>
+						</div>
+						<div class="action">
+							<span class="grp-topic-time">3小时前</span>
+							<span class="reply-action reply-action-show">
+								<a href="javascript:;">回复<small class="spe-left" js="commentCnt">(11)</small></a>
+							</span>
+							<span class="hide-action">
+								<a href="javascript:;">转发分享<small class="spe-left" js="shareCnt">(88)</small></a>
+								<a href="javascript:;">举报</a>
+								<a href="javascript:;">删除</a>
+								<a href="javascript:;">修改</a>
+								<a href="javascript:;">置顶</a>
+							</span>
+						</div>
+						<div class="group-reply-list" style="display:;">
+							<div class="grp-reply-more"><a href="#" class="spe-right">11条回复</a></div>
+							<div>
+								<div class="grp-reply-block">
+									<div class="event-owner event-owner-30">
+										<a target="_blank" href="#"><img width="30" height="30" src="http://images.ushigroup.cn/bnsphoto/2011/06/05/845b8518-69a1-4e41-a95f-f372d935b069_thumb.jpg" /></a>
+									</div>
+									<div class="grp-reply-cont"><a href="#" class="spe-right">曾珏</a>
+										<span>fef</span>
+									</div>
+									<p class="action">
+										<span class="spe-right2">2012-08-30 14:34</span>
+										<a href="javascript:;" onclick="$(this).parent().next().show();">回复</a>                       
+									</p>
+									<div class="grp-reply-input" style="display:none;">
+										<div class="grp-reply-cont">
+											<textarea class="grp-reply-text"></textarea>
+											<div class="margin-top05e"><a class="button" href="#">发表回复</a>
+												<a href="javascript:;" class="common-button" onclick="$(this).closest('.grp-reply-input').hide();">取消</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="grp-reply-block">
+									<div class="event-owner event-owner-30">
+										<a target="_blank" href="#"><img width="30" height="30" src="http://images.ushigroup.cn/bnsphoto/2011/06/05/845b8518-69a1-4e41-a95f-f372d935b069_thumb.jpg" /></a>
+									</div>
+									<div class="grp-reply-cont"><a href="#" class="spe-right">曾珏</a>
+										<span>fef</span>
+									</div>
+									<p class="action">
+										<span class="spe-right2">2012-08-30 14:34</span>
+										<a href="javascript:;">回复</a>                       
+										<a href="javascript:;">删除</a>                       
+									</p>
+								</div>
+							</div>
+							<textarea class="grp-reply-text-link" onclick="$(this).hide().next().show();">发表回复...</textarea>
+							<div class="grp-reply-input" style="display:none;">
+								<div class="event-owner event-owner-30">
+									<a target="_blank" href="#"><img width="30" height="30" src="http://images.ushigroup.cn/bnsphoto/2011/06/05/845b8518-69a1-4e41-a95f-f372d935b069_thumb.jpg" /></a>
+								</div>
+								<div class="grp-reply-cont">
+									<textarea class="grp-reply-text"></textarea>
+									<div class="margin-top05e"><a class="button" href="#">发表回复</a>
+										<a href="javascript:;" class="common-button" onclick="$(this).closest('.grp-reply-input').hide().prev().show();">取消</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
+				<div class="event-block">
+					<div class="event-owner">
+						<a target="_blank" href="#"><img width="50" height="50" src="http://images.ushigroup.cn/bnsphoto/2012/03/12/256ac770-eb0c-4401-b05f-3b38bed92cb8_thumb.jpg" /></a>
+					</div>
+					<div class="event-content">
+						<h4><a target="_blank" href="#">移动互联网的杀手级应用是什么？</a></h4>
+						<p class="quiet"><a target="_blank" class="spe-right2 boldface" href="#">郑思</a>蓝色科技 - 市场总监</p>
+						<div class="group-topic-cont">
+							<div>
+								<div>
+									杀手级应用要满足几个条件: 用户强依赖（类似强迫症的症状表现）， 传播快（裂变现象）， 退出成本巨大， 快速迭代不断创造需求用户强依赖（类似强迫症的症状表现）， 传播快（裂变现象）， 退出成本巨大， 快速迭代不断创造需求
+									杀手级应用要满足几个条件: 用户强依赖（类似强迫症的症状表现）， 传播快（裂变现象）， 退出成本巨大， 快速迭代不断创造需求用户强依赖（类似强迫症的症状表现）， 传播快（裂变现象）， 退出成本巨大， 快速迭代不断创造需求
+								</div>
+							</div>
+							<div class="grp-topic-more"><a href="#" class="up">收起全部</a></div>
+						</div>
+						<div class="action">
+							<span class="grp-topic-time">3小时前</span>
+							<span class="reply-action">
+								<a href="javascript:;">回复<small class="spe-left" js="commentCnt">(11)</small></a>
+							</span>
+							<span class="hide-action">
+								<a href="javascript:;">转发分享<small class="spe-left" js="shareCnt">(88)</small></a>
+								<a href="javascript:;">举报</a>
+								<a href="javascript:;">删除</a>
+								<a href="javascript:;">修改</a>
+								<a href="javascript:;">置顶</a>
+							</span>
+						</div>
+					</div>
+				</div>			
+				<div class="event-block">
+					<div class="event-owner">
+						<a target="_blank" href="#"><img width="50" height="50" src="http://images.ushigroup.cn/bnsphoto/2012/03/12/256ac770-eb0c-4401-b05f-3b38bed92cb8_thumb.jpg" /></a>
+					</div>
+					<div class="event-content">
+						<h4><a target="_blank" href="#">移动互联网的杀手级应用是什么？</a></h4>
+						<p class="quiet"><a target="_blank" class="spe-right2 boldface" href="#">郑思</a>蓝色科技 - 市场总监</p>
+						<div class="group-topic-cont">杀手级应用要满足几个条件: 用户强依赖（类似强迫症的症状表现）， 传播快（裂变现象）， 退出成本巨大， 快速迭代不断创造需求</div>
+						<div class="action">
+							<span class="grp-topic-time">3小时前</span>
+							<span class="reply-action">
+								<a href="javascript:;">回复<small class="spe-left" js="commentCnt">(11)</small></a>
+							</span>
+							<span class="hide-action">
+								<a href="javascript:;">转发分享<small class="spe-left" js="shareCnt">(88)</small></a>
+								<a href="javascript:;">举报</a>
+								<a href="javascript:;">删除</a>
+								<a href="javascript:;">修改</a>
+								<a href="javascript:;">置顶</a>
+							</span>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+		<div class="column-3">
+			<div class="group-right-top a-right">
+				<a class="ico-grp-setting spe-right" href="javascript:;">群组选项</a>
+			</div>
+			<div class="common-block">
+				<div class="grp-sch-r">
+					<h4>搜索群组话题</h4>
+					<div style="width:100%;" class="search-cont">
+						<input type="button" value="搜索" class="search-btn" />
+						<div>
+							<input type="text" class="formtext" value="" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="common-block">
+				<h5 class="extra-title">最新加入成员</h5>
+				<ul class="vcard bottom spe-left-pd">
+					<li class="border-bottom"><a href="#"><img src="../../../common/images/face_30.png" /></a>
+						<dl>
+							<dt><a href="/u/5009">简简</a></dt>
+							<dd>简翡儿职场漫画 策划人兼投资者</dd>
+						</dl>
+					</li>
+					<li class="border-bottom"><a href="#"><img src="../../../common/images/face_30.png" /></a>
+						<dl>
+							<dt><a href="/u/36687">何旭辰 Carole He</a></dt>
+							<dd>美国伊顿EATON  大中华区维修部助理</dd>
+						</dl>
+					</li>
+					<li class="border-bottom"><a href="#"><img src="../../../common/images/face_30.png" /></a>
+						<dl>
+							<dt><a href="/u/45">沈卓君johnny</a></dt>
+							<dd>优士网QA</dd>
+						</dl>
+					</li>
+					<li class="border-bottom"><a href="#"><img src="../../../common/images/face_30.png" /></a>
+						<dl>
+							<dt><a href="/u/5007">harrisonf@iinet.net.au</a></dt>
+							<dd>PKFCGLOBAL Principal Consultant</dd>
+						</dl>
+					</li>
+					<li class="border-bottom"><a href="#"><img src="../../../common/images/face_30.png" /></a>
+						<dl>
+							<dt><a href="/u/5008">秦晓娟</a></dt>
+							<dd>人力资源</dd>
+						</dl>
+					</li>
+					<li class="a-right"><a href="#">查看全部成员</a></li>
+				</ul>
+			</div>
+			<div class="common-block group-right-list">
+				<div class="normal-title">
+					<h5>这个群组的成员也加入了</h5>
+				</div>
+				<ul class="vcard v-50">
+					<li class="border-bottom">
+						<a href="#"><img width="50" height="50" src="http://images.ushigroup.cn/bnsphoto/g/2010/04/20/928b5b04-28e8-4e10-a37f-2ecf4bcd14eb_icon.jpg"></a>
+						<dl>
+							<dt><a href="#">PE-fund Club （ 私募股权基金俱乐部 ）</a></dt>
+							<dd>成员：6529</dd>
+						</dl>
+					</li>
+					<li class="border-bottom">
+						<a href="#"><img width="50" height="50" src="http://images.ushigroup.cn/bnsphoto/g/2010/04/20/928b5b04-28e8-4e10-a37f-2ecf4bcd14eb_icon.jpg"></a>
+						<dl>
+							<dt><a href="#">PE-fund Club （ 私募股权基金俱乐部 ）</a></dt>
+							<dd>成员：6529</dd>
+						</dl>
+					</li>
+					<li class="border-bottom">
+						<a href="#"><img width="50" height="50" src="http://images.ushigroup.cn/bnsphoto/g/2010/04/20/928b5b04-28e8-4e10-a37f-2ecf4bcd14eb_icon.jpg"></a>
+						<dl>
+							<dt><a href="#">PE-fund Club （ 私募股权基金俱乐部 ）</a></dt>
+							<dd>成员：6529</dd>
+						</dl>
+					</li>
+					<li class="border-bottom">
+						<a href="#"><img width="50" height="50" src="http://images.ushigroup.cn/bnsphoto/g/2010/04/20/928b5b04-28e8-4e10-a37f-2ecf4bcd14eb_icon.jpg"></a>
+						<dl>
+							<dt><a href="#">PE-fund Club （ 私募股权基金俱乐部 ）</a></dt>
+							<dd>成员：6529</dd>
+						</dl>
+					</li>
+					<li>
+						<a href="#"><img width="50" height="50" src="http://images.ushigroup.cn/bnsphoto/g/2010/04/20/928b5b04-28e8-4e10-a37f-2ecf4bcd14eb_icon.jpg"></a>
+						<dl>
+							<dt><a href="#">PE-fund Club （ 私募股权基金俱乐部 ）</a></dt>
+							<dd>成员：6529</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

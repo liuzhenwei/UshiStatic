@@ -1,0 +1,12 @@
+﻿{ 
+	list: [
+		{
+			id : 3,
+			name : "MODUL University Vienna"
+		},
+		{
+			id : 4, 
+			name : "Vienna University of Technology"
+		}
+	]
+}

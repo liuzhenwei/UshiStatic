@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>微博同步设置</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script></head>
+
+<body id="page_member">
+<div id="wrapper" class="container">
+    <!--#include file="header.html"-->
+    <div id="main" class="clearfix">
+      <div class="channel-tit"><h3>账户设置</h3> </div> 
+      <div class="tabs-common clearfix">
+          <ul>
+          <li><a href="#">邮件地址</a></li>
+          <li><a href="account_password.html">更改密码</a></li>
+          <li class="current"><a href="account_password.html">微博同步设置</a></li>
+          </ul>
+          </div>
+       
+         <div class="column-2-3">
+         
+             <p>你可以设置一个与优士网同步的外部微博帐号，这样，不仅您在优士网上发布的微博可以实时同步到您的其他微博中，而且您在其他微博中发布的内容也会同步显示到您的优士账户之中。</p>
+             <p><img src="../../bns/images/miniblog_tb.jpg" width="446" height="229" /></p>
+             <p class="drgee">您尚未设置进行同步的微博帐号</p>
+             <p><a href="#" class="special-btn invite-btn"><span>添加外部微博帐号</span></a></p>
+             
+             
+              <table class="tb-bdr-b" id="selectUpgrade">
+          <tbody>
+          <tr>
+          <th width="33%">同步类型</th>
+          <th width="33%">同步状态</th>
+          <th width="33%">操作</th>
+          </tr>
+          <tr>
+          <td><span class="sina-miniblog-logo"></span></td>
+          <td>未认证</td>
+          <td><a href="#">认证</a></td>
+          </tr>
+          </tbody>
+          </table>
+          
+          
+              
+                  <!--同步进行中-->
+              
+              <form class="formstyle-2"> <p><label> 请填写SOHU的认证码：
+             
+                  </label>
+                  <input type="text" name="textfield" id="textfield" class="input-w-180" />
+                 
+                  
+                  <input type="submit" name="button" id="button" value="确定" class="common-button" />
+                 
+                 
+              </p> </form>
+             <table class="tb-bdr-b" id="selectUpgrade">
+          <tbody>
+          <tr>
+          <th width="33%">同步类型</th>
+          <th width="33%">同步状态</th>
+          <th width="33%">操作</th>
+          </tr>
+          <tr>
+          <td><span class="sina-miniblog-logo"></span></td>
+          <td><span class="fontgreen">同步中</span></td>
+          <td><a href="#">暂停同步</a>
+              <a href="#" class="spe-left2">删除帐号</a></td>
+          </tr>
+          </tbody>
+          </table>
+
+       
+         
+         
+             <table class="tb-bdr-b" id="selectUpgrade2">
+                 <tbody>
+                     <tr>
+                         <th width="33%">同步类型</th>
+                         <th width="33%">同步状态</th>
+                         <th width="33%">操作</th>
+                     </tr>
+
+                     <tr>
+                         <td><span class="sohu-miniblog-logo"></span></td>
+                         <td><span class="fontbrown">已经暂停</span></td>
+                         <td><a href="#">暂停同步</a> <a href="#" class="spe-left2">删除帐号</a></td>
+                     </tr>
+                 </tbody>
+             </table>
+             
+             
+             
+             <table class="tb-bdr-b" id="selectUpgrade2">
+                 <tbody>
+                     <tr>
+                         <th width="33%">同步类型</th>
+                         <th width="33%">同步状态</th>
+                         <th width="33%">操作</th>
+                     </tr>
+
+                     <tr>
+                         <td><span class="t163-miniblog-logo"></span></td>
+                         <td><span class="fontbrown">已经暂停</span></td>
+                         <td><a href="#">暂停同步</a> <a href="#" class="spe-left2">删除帐号</a></td>
+                     </tr>
+                 </tbody>
+             </table>
+        </div>
+
+    </div>     
+</div>
+
+
+
+
+
+<!--弹出层-->
+<div class="fl-outer" style="width:550px; display: block; top:850px; left:300px;">
+  <div class="fl-block">
+    <div class="fl-title">
+      <h5>微博同步</h5>
+      <a class="close" href="javascript:void(0);"><span class="hide">关闭</span></a></div>
+    <div class="fl-content clearfix">
+        
+         <h4>请选择微博服务器商</h4>
+            
+             <p>
+                 <!--同步进行中--><label>
+                 <input type="radio" name="radio" id="radio" value="radio" />
+                 </label>
+             新浪微博</p>
+             <p>
+                 <input type="radio" name="radio" id="radio2" value="radio" />
+             搜狐微博</p>
+            <p><a href="#" class="common-button"><span>保存</span></a></p>
+    </div>
+  </div>
+</div>
+<!--#include file="footer.html"-->
+</body>
+</html>

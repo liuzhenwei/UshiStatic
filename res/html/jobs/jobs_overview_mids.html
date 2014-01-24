@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>职业频道</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/job.js"></script>
+</head>
+<style>
+
+</style>
+<script>
+
+	$(function(){
+		
+		$('.common-close').bind('click',function(){
+			$('.tips').hide();
+			$(this).prev('.tips').show()
+		})
+		$('body').bind('click',function(event){
+			var e = event || window.event;
+			var src = e.srcElement || e.target;
+			if((src.className!='common-close') && (src.className!='tips_link')){
+				$('.tips').hide();
+			}
+			
+		});
+		//dropDownMenu($('.common-close'),$('.tips',this),300);
+		
+	})
+
+
+</script>
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	
+	<div id="main" class="clearfix">
+		<div class="channel-tit">
+			<h3>职业频道</h3>
+		</div>
+		<div class="tabs-common clearfix">
+			<ul>
+				<li class="current"><a href="jobs_overview.html">职位首页</a></li>
+				<li><a href="jobs_my.html">我的职位</a></li>
+				<li><a href="jobs_saved_searches.html">搜索职位</a></li>
+				<li><a href="jobs_consult.html">发布职位</a></li>
+			</ul>
+			<div class="float-right"><a class="job-navigation-help" href="#">帮助</a></div>
+		</div>
+		<div class="margin-bottom spe-left-pd" style="background:#fff6bf; height:35px; line-height:35px;"><span class="migs_smailestIco spe-right-pd2"></span>您是品尚优士，每个月可以在职业频道免费申请 5 <span class="red">10</span> 个年薪12万+的职位，还剩 <span class="red">x</span> 个申请机会。 </div>
+		<div class="jobAd margin-bottom">
+			<span class="boldface quiet float-right"><span class="float-left ">职业频道能带给您的不仅仅只有年薪12万+的职位</span><a href="javascript:;" class="ushi_btn_Mgreen spe-left2"><span></span>点击查看详情</a></span>
+		</div>
+		
+		<!-- Center -->
+		<div id="jobs_mainbody_wrapper" class="column-2-3"> 
+			
+			<!-- Jobs Search -->
+			<div class="jobs-search-module">
+				<form action="jobs_search_result.html" method="post" js="autoValidate">
+					<div class="jobs-search-header">
+						<h4>搜索职位</h4>
+						<span class="quiet spe-left2">优士网专注于提供年薪<strong>12万以上</strong>的高级职位</span> </div>
+					<div class="jobs-search-body clearfix">
+						<div class="jobs-search-keywords" vdFld="y">
+							<input type="text" maxlength="64" value="经理、总监..." name="searchKeyword" Validate="isnotEmpty,isnotValue" vdOpt="val:经理、总监..." />
+							<span class="red" style="display:none;" vdErr="y">请输入关键字</span> </div>
+						<div class="jobs-search-local multi-selector-btn"> <a href="#" js="selectLocation" tips="选择地区" maxlength="10"><span>选择地区</span></a>
+							<input type="hidden" js="selectLocation_id" name="cityIds" value="" />
+							<span class="red" style="display:none;" vdErr="y">请选择地区</span> </div>
+						<div class="jobs-search-button">
+							<input class="special-btn" type="submit" value="搜索职位" />
+							<a href="jobs_search_adv.html">高级搜索</a> </div>
+					</div>
+				</form>
+			</div>
+			
+			<!-- Jobs you may be interested in -->
+			<div class="jobs-common-module" >
+				<div class="normal-title clearfix">
+					<div class="tit-inner-l">
+						<h4>你可能感兴趣的职位</h4>
+					</div>
+					<div class="tit-inner-r"><a href="#">更多职位</a></div>
+				</div>
+				<div id="recommend_jobs" >
+					
+					<div class="jobs-list-block">
+						<div class="tips" style="">
+							<a href="#" class="tips_link">不相关</a>
+							<a href="#" class="tips_link">相关但我不感兴趣</a>
+						</div>
+						<a href="javascript:void(0);" class="common-close"></a>
+						<div class="job-title">
+							<h5><a href="jobs_details.html">软件开发工程师</a></h5>
+						</div>
+						<div class="job-info">
+							<p>公司名称：<strong>美帝弗信息技术（上海）有限公司</strong></p>
+							<p>所在行业：互联网 <span class="spe-left">|</span> <span class="spe-left">工作地点：上海</span> <span class="spe-left">|</span> <span class="spe-left">发布时间：2010-08-10</span> <span class="spe-left">|</span> <span class="spe-left special">年薪：50-100万</span> </p>
+							<p class="quiet margin-top">职位简介：1、负责社区产品的产品规划，设计； 2、跟进开发测试，产品上线反馈跟踪，产品改进等工作； 3、根据公司战略，制定所负责产品线的规划发展； 4、与其他部门积极配合，跟踪产品实施效果以及业务发展状况，持续改善产品。</p>
+						</div>
+					</div>
+					<div class="jobs-list-block list-box-hover">
+						
+						<div class="tips" style="display:none">
+							<a href="#" class="tips_link">不相关</a>
+							<a href="#" class="tips_link">相关但我不感兴趣</a>
+						</div>
+						<a href="javascript:void(0);" class="common-close"></a>
+						<div class="job-title">
+							<h5>
+							
+							<a href="jobs_details.html">软件开发工程师</a>
+							
+							</h5>
+						</div>
+						<div class="job-info">
+							<p>公司名称：<strong>美帝弗信息技术（上海）有限公司</strong></p>
+							<p>所在行业：互联网 <span class="spe-left">|</span> <span class="spe-left">工作地点：上海</span> <span class="spe-left">|</span> <span class="spe-left">发布时间：2010-08-10</span> <span class="spe-left">|</span> <span class="spe-left special">年薪：50-100万</span> </p>
+							<p class="quiet margin-top">职位简介：1、负责社区产品的产品规划，设计； 2、跟进开发测试，产品上线反馈跟踪，产品改进等工作； 3、根据公司战略，制定所负责产品线的规划发展； 4、与其他部门积极配合，跟踪产品实施效果以及业务发展状况，持续改善产品。</p>
+						</div>
+						<div class="job-actions"><a class="link-add2" href="#" js="addFavorite">收藏该职位</a></div>
+					</div>
+					<div class="jobs-list-block lastitem">
+						<div class="tips" style="display:none">
+							<a href="#" class="tips_link">不相关</a>
+							<a href="#" class="tips_link">相关但我不感兴趣</a>
+						</div>
+						<a href="javascript:void(0);" class="common-close"></a>
+						<div class="job-title">
+							<h5><a href="#">软件开发工程师</a></h5>
+						</div>
+						<div class="job-info">
+							<p>所在行业：互联网 <span class="spe-left">|</span> <span class="spe-left">工作地点：上海</span> <span class="spe-left">|</span> <span class="spe-left">发布时间：2010-08-10</span> <span class="spe-left">|</span> <span class="spe-left special">年薪：50-100万</span> </p>
+							<p class="quiet margin-top">职位简介：1、负责社区产品的产品规划，设计； 2、跟进开发测试，产品上线反馈跟踪，产品改进等工作； 3、根据公司战略，制定所负责产品线的规划发展； 4、与其他部门积极配合，跟踪产品实施效果以及业务发展状况，持续改善产品。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="profile-completeness">
+				<h3>你的个人档案完整度</h3>
+				<div class="clearfix">
+					<div class="progress">
+						<div class="progress-box">
+							<div class="progress-percent" style="height:32%;"></div>
+							<span>32%</span></div>
+					</div>
+					<div class="profile-copy">
+						<h4>完善你的个人档案，可以增加你的职业机会</h4>
+						<p class="quiet">填写教育经历+25% <a class="spe-left2" href="#">完善档案</a></p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Saved jobs -->
+			<div class="jobs-common-module">
+				<div class="normal-title clearfix">
+					<div class="tit-inner-l">
+						<h4>收藏的职位</h4>
+					</div>
+					<div class="tit-inner-r"><a href="#">全部收藏</a></div>
+				</div>
+				<div id="saved_new_jobs">
+					<div class="jobs-list-block">
+						<div class="job-title">
+							<h5><a href="#">软件开发工程师</a></h5>
+						</div>
+						<div class="job-info">
+							<p>公司名称：<strong>美帝弗信息技术（上海）有限公司</strong></p>
+							<p>所在行业：互联网 <span class="spe-left">|</span> <span class="spe-left">工作地点：上海</span> <span class="spe-left">|</span> <span class="spe-left">发布时间：2010-08-10</span> <span class="spe-left">|</span> <span class="spe-left special">年薪：50-100万</span> </p>
+							<p class="quiet margin-top">职位简介：1、负责社区产品的产品规划，设计； 2、跟进开发测试，产品上线反馈跟踪，产品改进等工作； 3、根据公司战略，制定所负责产品线的规划发展； 4、与其他部门积极配合，跟踪产品实施效果以及业务发展状况，持续改善产品。</p>
+						</div>
+					</div>
+					<div class="jobs-list-block lastitem">
+						<div class="job-title">
+							<h5><a href="#">软件开发工程师</a></h5>
+						</div>
+						<div class="job-info">
+							<p>公司名称：<strong>美帝弗信息技术（上海）有限公司</strong></p>
+							<p>所在行业：互联网 <span class="spe-left">|</span> <span class="spe-left">工作地点：上海</span> <span class="spe-left">|</span> <span class="spe-left">发布时间：2010-08-10</span> <span class="spe-left">|</span> <span class="spe-left special">年薪：50-100万</span> </p>
+							<p class="quiet margin-top">职位简介：1、负责社区产品的产品规划，设计； 2、跟进开发测试，产品上线反馈跟踪，产品改进等工作； 3、根据公司战略，制定所负责产品线的规划发展； 4、与其他部门积极配合，跟踪产品实施效果以及业务发展状况，持续改善产品。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="company-logos">
+				<div class="extra-title">
+					<h4>优士网职位频道的部分职位由以下知名公司提供</h4>
+				</div>
+				<div class="p-h-list">
+					<ul>
+						<li><img src="../../bns/images/jobs_comp_logos/logo_ibm.png" width="100" height="38" alt="IBM" /></li>
+						<li><img src="../../bns/images/jobs_comp_logos/logo_oracle.png" width="100" height="23" alt="Oracle" /></li>
+						<li><img src="../../bns/images/jobs_comp_logos/logo_citi.png" width="100" height="46" alt="Citi" /></li>
+						<li><img src="../../bns/images/jobs_comp_logos/logo_lenovo.png" width="100" height="21" alt="Lenovo" /></li>
+						<li><img src="../../bns/images/jobs_comp_logos/logo_yili.png" width="100" height="58" alt="伊利" /></li>
+						<li><img src="../../bns/images/jobs_comp_logos/logo_digitalchina.png" width="100" height="40" alt="神州数码" /></li>
+						<li><img src="../../bns/images/jobs_comp_logos/logo_dianpingi.png" width="100" height="37" alt="大众点评网" /></li>
+						<li><img src="../../bns/images/jobs_comp_logos/logo_adchina.png" width="100" height="47" alt="易传媒" /></li>
+						<li><img src="../../bns/images/jobs_comp_logos/logo_sina.png" width="100" height="43" alt="新浪网" /></li>
+						<li><img src="../../bns/images/jobs_comp_logos/logo_sndaonline.png" width="101" height="26" alt="盛大在线" /></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Rightside -->
+		<div id="jobs_extra" class="column-3">
+			<!--div class="common-block">
+				<div class="extra-title">
+					<h4>招聘方</h4>
+				</div>
+				<div class="clearfix">
+					<a href="jobs_post.html" class="link-job-post-b">发布职位</a>
+					<a href="jobs_manage.html" class="link-job-manage-b">管理职位</a>
+				</div>
+			</div-->
+			<div class="common-block">
+				<a href="/job/home!initContactInfo.jhtml">
+					<img width="270" height="190" alt="" src="../../bns/images/promo/jobs_ad_cn_270_1.png" complete="complete"/>
+				</a>
+			</div>
+			<div class="common-block">
+				<h4 class="extra-title">职位统计</h4>
+				<ul class="spe-left2">
+					<li>截至目前优士网共有<a href="#">9866</a>个职位</li>
+					<li>其中<a href="#">830</a>个是互联网行业的职位</li>
+					<li>其中<a href="#">545</a>个是产品经理</li>
+				</ul>
+			</div>
+			<div class="common-block">
+				<div class="extra-title">
+					<h5>谁看过我的档案</h5>
+				</div>
+				<ul class="spe-left2 list-disc">
+					<li><a href="#">互联网产品总监</a></li>
+					<li><a href="#">大型管理咨询公司CEO</a></li>
+					<li><a href="#">外包服务客户经理</a></li>
+					<li><a href="#">医院与医疗副总经理</a></li>
+				</ul>
+				<span class="spe-left3 quiet">最近30天内共348次访问</span> </div>
+		</div>
+	</div>
+	
+	<!--#include file="footer.html"--> 
+</div>
+
+
+<div id="locationContainer" js="jobSelectPopupwin" rel="selectLocation" style="display:none">
+	<div class="popbox-subtit">
+		<h5>已选工作地点：</h5>
+	</div>
+	<div class="popbox-multi-sel clearfix">
+		<dl>
+			<dt>主要城市<br /><br /></dt>
+		</dl>
+		<dl>
+			<dt>&gt;&gt;其他地区<br /><br /></dt>
+		</dl>
+		<div class="btn-line a-center">
+			<input class="special-btn" type="button" value=" 确定 " />
+			<input class="common-button" type="button" value=" 取消 " />
+		</div>
+	</div>
+</div>
+</body>
+</html>

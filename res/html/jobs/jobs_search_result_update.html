@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>职业频道</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="/js/widget.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/job.js"></script>
+</head>
+<body id="page_member">
+<div id="wrapper" class="container">
+    <!--#include file="header.html"-->
+    <div id="main" class="clearfix">
+        <div class="channel-tit">
+            <h3>职业频道</h3>
+        </div>
+        <div class="tabs-common clearfix">
+            <ul>
+                <li><a href="jobs_overview.html">职位首页 </a></li>
+                <li><a href="jobs_my.html"> 我的职位</a></li>
+                <li><a href="jobs_saved_searches.html"> 职位搜索器 </a></li>
+                <li><a href="jobs_post.html"> 发布职位</a></li>
+            </ul>
+        </div>
+        <div id="jobs_sidebar" class="column-1 sidebar">
+            <div class="search-aside">
+                <form>
+                    <dl>
+                        <dt>关键字</dt>
+                        <dd>
+                            <input class="input" type="text" />
+                        </dd>
+                        <dd>
+                            <input type="checkbox" />
+                            结果中搜索</dd>
+                        <dd>
+                            <input class="special-btn" type="submit" value=" 搜 索 " />
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>工作地点</dt>
+                        <dd>
+                            <input type="checkbox" />
+                            上海 (73)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            北京 (22)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            天津 (57)</dd>
+                    </dl>
+                    <dl>
+                        <dt>职位类别</dt>
+                        <dd>
+                            <input type="checkbox" />
+                            软件工程师 (97)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            产品经理 (12)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            项目经理 (45)</dd>
+                        <dd><a href="#">显示更多</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>行业类别</dt>
+                        <dd>
+                            <input type="checkbox" />
+                            互联网 (97)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            贸易 (12)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            银行 (45)</dd>
+                    </dl>
+                    <dl>
+                        <dt>工作经验</dt>
+                        <dd>
+                            <input type="checkbox" />
+                            5年以下 (97)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            5-7年 (12)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            11-15年 (45)</dd>
+                    </dl>
+                    <dl>
+                        <dt>职位级别</dt>
+                        <dd>
+                            <input type="checkbox" />
+                            经理级 (97)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            总监级 (12)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            副总裁级 (45)</dd>
+                    </dl>
+                    <dl>
+                        <dt>公司性质</dt>
+                        <dd>
+                            <input type="checkbox" />
+                            合资 (97)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            国企 (12)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            外企 (45)</dd>
+                    </dl>
+                    <dl>
+                        <dt>学位要求</dt>
+                        <dd>
+                            <input type="checkbox" />
+                            学士 (97)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            MBA (12)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            硕士 (45)</dd>
+                    </dl>
+                    <dl>
+                        <dt>公司规模</dt>
+                        <dd>
+                            <input type="checkbox" />
+                            1~49人 (97)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            50~99人 (12)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            100~499人 (45)</dd>
+                    </dl>
+                    <dl>
+                        <dt>薪资范围</dt>
+                        <dd>
+                            <input type="checkbox" />
+                            20~30万 (97)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            30~50万 (12)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            100万以上 (45)</dd>
+                    </dl>
+                    <dl class="last">
+                        <dt>发布时间</dt>
+                        <dd>
+                            <input type="checkbox" />
+                            今天 (97)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            最近一周 (12)</dd>
+                        <dd>
+                            <input type="checkbox" />
+                            最近两周 (45)</dd>
+                    </dl>
+                </form>
+            </div>
+        </div>
+        <!-- main Content -->
+        <div id="jobs_mainbody_wrapper" class="column-2-2">
+            <div class="jobs-sub-tit">
+                <h4>搜索结果</h4>
+                <span class="quiet">共搜索到<span class="special">0</span>条符合条件的职位</span></div>
+            <div class="tipsbox">没有搜索到匹配的结果，请尝试<a href="#">高级搜索</a>或重试本页左侧的搜索</div>
+            <div id="search_result_jobs">
+                <div id="upgrade-tips">
+                    <div class="upgrade-tips-title">
+                        <h3>升级您的账户查找和申请更多高端职位</h3>
+                        <P>升级为 <a href="upgrade_job.html">优士通会员</a>，更快捷的查找高端职位，可无限申请50000多个高端职位</P>
+                    </div>
+                    <h4>同时享有更多便利:</h4>
+                    <ul class="special-list">
+                        <li>可直接通过公司名查找高端职位</li>
+                        <li>可任意申请高端职位</li>
+                        <li>每月可以向一度以外的其他优士会员发送人脉直邮</li>
+                        <li>可以同时加入多达50个群组</li>
+                    </ul>
+                    <p><a href="upgrade_job.html" class="focus-btn">马上升级</span></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include file="footer.html"-->
+</div>
+</body>
+</html>

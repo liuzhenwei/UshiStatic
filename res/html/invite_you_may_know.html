@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>您可能认识</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+
+</head>
+
+
+<script>
+$(function(){
+	$('.showFriends').bind('click',function(){
+		$('.showFriends').removeClass('showFriendsel')
+		$(this).addClass('showFriendsel')
+		var left = $(this).offset().left-50
+		var top = $(this).offset().top+30
+		$('.fl-outer').css({'display':'block','left':left,'top':top})
+	
+	})
+	
+	$('.list-box').hover(function(){
+		$(this).addClass('current')
+	},function(){
+		$(this).removeClass('current')
+	})
+
+})
+
+</script>
+
+<body id="page_member">
+<div id="wrapper" class="container">
+    <!--#include file="header.html"-->
+    <div id="main">
+
+      <div class="tabs-common clearfix">
+          <ul id="invite-status-btn">
+				<li><a href="invite_home.html">邀请朋友加入</a></li>
+				<li  class="current"><a href="invite_you_may_know.html">您可能认识</a></li>
+				<li><a href="invite_you_mayhope_know.html">你可能希望认识</a></li>
+          </ul>
+          <a class="float-right margin-top05e spe-right2" href="#">查看邀请历史记录</a>
+      </div> 
+       	
+        <div class="column-2-3">
+			<p class="extra-title">
+				共417人|1-10
+			</p>
+
+			<div id = "intr_List">
+			
+			
+			    <div class="list-box">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-3" title="3度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    <div class="list-box">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-3" title="3度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    <div class="list-box  current">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-3" title="3度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    <div class="list-box">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-3" title="3度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    <div class="list-box">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-3" title="3度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    <div class="list-box">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-1" title="1度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    <div class="list-box">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-2" title="2度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    
+			    
+			</div>
+			
+			
+        </div>
+        <div class="column-3">
+			<div class="Emailinvite_ ">
+				<p class="quiet">
+					通过使用MSN导入和邮件通讯簿导入功能<br />
+					，您可以发现自己身边的哪些朋友已经在<br />
+					优士网上注册了，还可以邀请新的联系人<br />
+					成为您在优士上的	一度人脉。
+				</p>
+				<a class="special-more-btn large" href="#">邀请朋友加入优士»</a>
+				<ul class="ivt-ways clearfix">
+					<li id="i-msn"><a href="javascript:;"></a></li>
+					<li id="i-link"><a href="javascript:;"></a></li>
+					<li id="i-email"><a href="javascript:;"></a></li>
+					<li id="i-office-ol"><a href="javascript:;"></a></li>
+					<li id="i-addressBook"><a href="javascript:;"></a></li>
+					<li id="i-linkedin"><a href="javascript:;"></a></li>
+				</ul>
+			</div>
+        </div>
+   	 </div>
+   	 
+   	 
+   	 
+   	 
+<div class="fl-outer" style="width:400px;">
+  <div class="fl-block">
+    	<div class="fl-content" style="overflow:hidden">
+    		
+		   	 <ul id="friendsAbout">
+		   	 	<div class="pointTop"></div>
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="Bill Fisher" /></a>
+		   	 		<span class="blue margin-top05e">Bill Fisher</span>
+		   	 	</li>
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="Bill Fisher" /></a>
+		   	 		<span class="blue margin-top05e">Bill Fisher</span>
+		   	 	</li>
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 </ul>
+ 
+    </div>
+  </div>
+</div> 
+
+
+
+</div>
+<!--#include file="footer.html"-->
+</body>
+</html>

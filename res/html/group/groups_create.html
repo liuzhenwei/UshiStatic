@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>创建群组</title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/groups.js"></script>
+</head>
+
+<body id="page_member">
+<div id="wrapper" class="container">
+    <!--#include file="../header.html"-->
+    <div id="main" class="clearfix">
+    <div class="channel-tit">
+        <h3>申请创建群组</h3> 
+    </div> 
+    <div class="tabs-common clearfix">
+          <ul>
+         <li><a href="groups_my.html">我的群组</a></li>
+         <li><a href="groups_all.html">所有群组</a></li>
+         <li class="current"><a href="groups_create.html">申请创建群组</a></li>
+          </ul>
+      </div>        
+         
+      <div class="column-2-3">
+      
+      <form class="formstyle">
+       <ul>
+       <li><label>群组名称 :</label> <input class="input-w-400 errTextInput" name="" type="text" /><span class="tips errInfo">群组名称为必填</span></li>
+       <li><label>群组简介 :</label> <textarea class="msg" ></textarea></li>
+       <li><label>群组标题图 :</label> <input class="input-w-400" name="" type="file" /> <span class="tips quiet">JPG, GIF图片格式, 最大不超过512K。</span></li>
+       <li><label>群组类型 :</label> <select class="input-w-400" name="" id="groupTypeSelect"><option value="0">请选</option><option value="1">MBA同学会</option></select>
+                     
+       </li>
+       
+       
+       
+       <li><label>加入方式 :</label> <input name="" type="radio" value="" /> 任何人经审批后都可以加入 <input name="" type="radio" value="" /> 只有被邀请者才能加入</li>
+        <li><label>显示在群组列表 :</label> <input name="" type="radio" value="" /> 是 <input name="" type="radio" value="" /> 否</li>
+       </ul>
+       <p><input class="common-button" name="" type="submit" value=" 创建群组 " /></p>
+       
+       </form>
+ </div>
+
+          
+  </div>     
+</div>
+<!--#include file="../footer.html"-->
+</body>
+</html>

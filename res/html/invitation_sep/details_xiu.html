@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<link href="../../../common/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="../../../bns/css/bns.css" rel="stylesheet" type="text/css" />
+<link href="../../../pr/whitecollar/css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+<div id="wrapper">
+<div id="inner-wrapper">
+    <div class="main-head">
+		<div class="text">
+        	<s:if test=" userId == null || userId == 0">
+				当前最多邀请用户累计邀请<span class="text-num-orange">${maxinvite}</span>人<br />
+				累计参与兑奖<span class="text-num-orange">${successPeople}</span>次<br />
+			</s:if>
+			<s:else>
+        		当前最多邀请用户累计邀请<span class="text-num-orange">${maxinvite}</span>人<br />
+				累计参与兑奖<span class="text-num-orange">${successPeople}</span>人<br />
+				您已经成功邀请<span class="text-num-green">${myinvite}</span>人<br />
+				累计兑奖<span class="text-num-gray">${successnum}</span>次<br />
+    		</s:else>
+			<br />
+			<a href="/pr/saveprizes!savePrizesTicket.jhtml"><span class="head-btn1"></span></a><br />
+            <br />
+			<a href="/pr/collar!index.jhtml"><span class="head-btn2"></span></a>    
+        </div>
+	</div>
+	<div class="main-menu menu-bg3">
+        <a href="/pr/eventdetail!eventDetail.jhtml" class="menu-hover menu-a1"></a>
+    	<a href="/pr/collar!index.jhtml" class="menu-hover menu-a2"></a>
+    	<a href="/pr/saveprizes!savePrizesTicket.jhtml" class="menu-hover menu-a3"></a>
+    	<a href="/pr/collar!inverhistory.jhtml" class="menu-hover menu-a4"></a>
+    </div>
+	
+    <div class="main-content">
+    	<div class="details-xiu">
+        	<div class="details-gift-img"><a href=""><img src="" /></a></div>
+        </div>
+    
+		<div class="main-text-title">礼品推荐</div>
+    	
+        <div class="gift-recommend">
+        	<ul>
+            	<li>
+                	<a href="http://www.xiu.com/product/66472.html"><img src="<%=com.m4g.bns.Constants.STATIC_WEB_URL%>/pr/whitecollar/images/present_img/rec1.png" /></a><br />
+                    LOCK&LOCK 乐扣乐扣 Eco环保陶瓷杯
+				</li>
+                <li>
+                	<a href="http://www.xiu.com/product/438647.html"><img src="<%=com.m4g.bns.Constants.STATIC_WEB_URL%>/pr/whitecollar/images/present_img/rec2.png" /></a><br />
+                    Wecan 维康 大号靠背
+				</li>
+                <li>
+                	<a href="http://www.xiu.com/product/411957.html"><img src="<%=com.m4g.bns.Constants.STATIC_WEB_URL%>/pr/whitecollar/images/present_img/rec3.png" /></a><br />
+                    HAPPY LANE 幸福里 可爱小饺子包
+				</li>
+                <li>
+                	<a href="http://www.xiu.com/product/402715.html"><img src="../../../pr/whitecollar/images/present_img/rec4.png" /></a><br />
+                    NIVEA 妮维雅 晶纯皙白修颜日霜50ml
+				</li>
+                <li>
+                	<a href="http://www.xiu.com/product/461306.html"><img src="<%=com.m4g.bns.Constants.STATIC_WEB_URL%>/pr/whitecollar/images/present_img/rec5.png" /></a><br />
+                    VICTORINOX 维氏军刀
+				</li>
+                
+                
+        	</ul>
+        </div>
+        
+    	
+        <div class="margin-btm15e clearfix"></div>
+        <div class="margin-btm15e clearfix"></div>
+        
+        <div class="main-text-title">合作伙伴</div>
+		<a href="http://http://www.xiu.com"><img src="<%=com.m4g.bns.Constants.STATIC_WEB_URL%>/pr/whitecollar/images/logo_xiu.png" /></a>
+        <a href="http://www.fclub.cn"><img src="<%=com.m4g.bns.Constants.STATIC_WEB_URL%>/pr/whitecollar/images/logo_fclub.png" /></a>
+    
+	</div>
+    
+    
+    
+</div>
+</div>
+
+
+</body>
+</html>

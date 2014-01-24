@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员首页</title>
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/reg.1.js"></script>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+</head>
+<body id="page_public">
+<div id="wrapper" class="container">
+	<div id="header_reg" class="clearfix">
+		<div id="logo"><img src="../../bns/images/youshi_logo.png" width="80" height="51" alt="优士" /></div>
+		<div id="login_reg">
+			<p><span class="tipsbox">已经是优士会员？ <a href="javascript:void(0);">立即登录</a></span></p>
+		</div>
+	</div>
+	<div id="main" class="clearfix">
+		<!-- main content -->
+		<div class="column-2-3">
+			
+			<div id="register_wrap">
+				
+				<div class="regform-wrap">
+					<form id="regForm">
+						<div class="form-item clearfix">
+							<label>姓名：</label>
+							<div class="itemmain">
+								<input type="text" class="inputtext" id="userName" value="王某人" />
+							</div>
+							<span class="tips" style="display:none;">请填写真实姓名，以便更好的和朋友联系</span>
+							<!-- 错误加 tip-err, 正确加 tip-succ -->
+						</div>
+						<div class="form-item clearfix">
+							<label>Email：</label>
+							<div class="itemmain">
+								<input type="text" class="inputtext" id="userEmail" value="wang@htomail.com" />
+								<!-- 错误加 errTextInput -->
+							</div>
+							<span class="tips" style="display:none;">请填写正确的Email地址</span>
+						</div>
+						<div class="form-item clearfix">
+							<label>密码：</label>
+							<div class="itemmain">
+								<input type="password" class="inputtext" id="userPass" />
+							</div>
+							<span class="tips" style="display:none;">密码由6-32位字母、数字、标点组成</span>
+						</div>
+						<div class="form-item clearfix">
+							<label><span class="quiet">(选填)</span> 手机：</label>
+							<div class="itemmain">
+								<input type="text" class="inputtext" value="13856985588" />
+							</div>
+							<span class="tips tip-succ" style="display:none;"> </span>
+						</div>
+						<div class="form-item-nolabel">
+							<input type="checkbox" checked="checked" />
+							我已阅读并同意 <a href="#">服务条款</a> </div>
+						<div class="form-btn">
+							<input type="button" value="接受邀请" class="special-btn" />
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="reg-lang"><a href="#">Click here to see this in English</a></div>
+		</div>
+		<div class="column-3 pub-aside2">
+			<div id="ushi-exp2">
+				<h3>优士能帮助你</h3>
+				<ul class="list-arrow">
+					<li>建立你在线上的专业个人档案</li>
+					<li>维护你与同事或朋友之间的联系</li>
+					<li>寻找专家，好点子和各种商业机会</li>
+				</ul>
+				<p><a href="#">了解更多</a></p>
+			</div>
+			
+		</div>
+	</div>
+	<!--#include file="footer.html"-->
+</div>
+</body>
+</html>

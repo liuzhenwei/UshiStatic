@@ -1,0 +1,239 @@
+﻿@charset "utf-8";
+
+/*------ member.home ------*/
+/*用户基本信息*/
+.user-basic dl dt{font-size:1.0833em;}
+
+/* 我在干什么模块*/
+.share-box input.text, #groupsAbout .share-box input.text{ width:70%; }
+
+/*------ member.profile ------*/
+/* 档案编辑 */
+.experience-added-list td{ font-size:1.0833em; }
+
+/* 档案预览 */
+/*登录*/
+.pinfo-u{margin:.833em 0 0 .833em;}
+.pinfo-u dd a{font-size:1.0833em;}
+
+/*------ member.connections ------*/
+#search-list .list-box .col-1{width:40%;}
+#search-list .list-box .col-4{width:20%;}
+
+/*------ member.groups ------*/ 
+.grp-path {font-size:1.0833em;}
+.sub-menu-h li.current {font-size:14px;}
+
+/*------ member.introduce  ------*/
+/*引荐*/
+.divided-b{border-bottom:dotted 1px #ccc; margin-bottom:20px!important; padding-bottom:15px!important;}
+.divided-t{border-top:dotted 1px #ccc; margin-top:10px!important;padding-top:20px!important;}
+
+/*------ member.invitation  ------*/
+/*邀请*/
+.ivt-home .ivt-box .ico-file {background-image: url(../images/ico_ivt_file_en.png);}
+.ivt-ways li dt{font-size:1.0833em;}
+.frd-list-box {width:470px;}
+
+/*------ member.invitation｛Improved viral incentive for Ushi｝ ------*/ 
+/*邀请优士币激励*/
+.column-1 .ad-ivt li ,.column-1 .ad-ivt .special-btn ,.column-1 .ad-ivt h4{ font-size: 11px;}
+
+/* 多重选择*/
+.common-selected,.friend-selected {padding:2px 25px 2px 5px; margin-right:3px;}
+
+/*------ member.evaluation  ------*/
+/*评价系统*/
+.formstyle-4 textarea { width: 650px; }
+#evaluate  .list-box ul li.col-4 {width:200px;}
+.relations-list { margin: 0;}
+.relations-list li {font-size: 11px;}
+#evaluate .white-bg h4 span {font-size: 14px; color: #666;}
+.no-evaluate .evaluate-box {font-size: 12px;}
+.no-evaluate .evaluate-msg ul li {font-size: 11px; }
+.no-evaluate .evaluate-msg .gray-bg {padding:20px 10px 10px 10px;}
+
+/*------ member.mobile  ------*/
+/*-007--mobile_version 手机版下载页*/
+
+
+/*------------------------groups apple----------------------------------------------*/
+.groups_apply .line {padding-bottom:35px; margin-bottom:35px;}
+
+/*------------------------add-to-1st----------------------------------------------*/
+.add-list {width:270px;}
+#add-shop  .formstyle-5 ,#add-shop .other-shop {width: 660px;}
+
+/*------------------------补充----------------------------------------------*/
+#video-ushi {width: 640px;}
+
+/* !important*/
+#update_feeds .tabs-feed{padding-right:5px;}
+#update_feeds .tabs-feed ul li a{padding:3px 5px;}
+
+.add-web .formstyle li label{ width: 45px; text-align:left; padding-left:3px; font-size: 12px;}
+.add-web .formstyle p { margin-left:60px;}
+.add-web .fontgray { display:block; margin-left:60px;}
+
+/* Microblog tools*/
+
+/*Jobs*/
+.jobs-contact li label {width:80px;}
+.jobs-contact .fs-space{margin-left:80px;}
+.best-choice {background-image:url(../images/ban_job_bestchoice_en.png);}
+.jobAd2{ background:url(../images/ad/job/jobAdbg2_en.png) -1px top no-repeat; height:592px;}
+.adInstr{ padding-top:50px;}
+
+.jobs-list-block .tips{ width:150px;}
+.jobs_post_mailbox_label_en {width: 140px!important;}
+.jobs_post_mailbox_en {width: 480px!important;}
+
+
+/* 发直邮弹出优士币窗口 */
+.privilege-desc {margin-top: 3px;}
+.privilege-desc .special-list {margin-bottom: 0;}
+
+/* 群组活动详细页面 */
+.group-event-right .list-disc {width: 200px;}
+
+/*------ help  ------*/ 
+#mobile-iphone,#mobile-java,#mobile-wap{padding:1% 2%;}
+
+/*------ public.pioneer-member  ------*/
+#pm-help .hot {background-image: url(../images/ad_pm_en.png);}
+#pm-help .msg .msg-title h4 {width:400px;}
+#pm-help .msg .status {width:180px;}
+#pm-help .msg .num {right:450px;}
+
+/*好友推荐*/
+#intr_List .col-4{width:21%}
+
+/* 20101104 活动页面 */
+#topic-gagaku {font-family:Verdana, Geneva, sans-serif;}
+#topic-gagaku .tabs-common ul li a {font-family:"Times New Roman", Times, serif;text-transform:uppercase; font-size: 1em;}
+#topic-gagaku .topic-block h4{ font-family:"Times New Roman", Times, serif;}
+#topic-gagaku .normal-title {font-family:"Times New Roman", Times, serif;}
+#topic-gagaku .extra-title {font-family:"Times New Roman", Times, serif;}
+#topic-gagaku .memberList .vcard {min-height:115px;}
+.ad-gagaku { background: url(../images/promo/20101104/gagaku_ad_banner_en.jpg) no-repeat; width:490px; height:180px; display:block; text-indent: -9999px;}
+#citysTips ul{ width:auto;}
+#citysTips ul li{ width:auto; padding-right:10px; float:none}
+#citysTips ul li.last{width:auto;}
+#allEventLink,#a_event_link-menu{ background-position:right 3px;}
+
+#remindPhone .a-centerEn{ text-align:left}
+.huge_BtnL,.huge_BtnM,.huge_BtnR{ line-height:37px;}
+
+span.event_actFor_en{width:80px; text-align:center}
+
+.event_start_help {background:url(../images/bg_event_help_en.jpg) repeat-x left top; width:960px; height:148px; position:relative;}
+.event_start_help a{ display:block; width:180px; height:30px; position:absolute; bottom:15px; right:10px;}
+.event_ad_T{background-image:url(../images/bg_evevt_ad_top_en.png);}
+
+.event_ad_mid{background-image:url(../images/bg_event_ad_middle_en.png);}
+.event_ctrl_wid{ width:200px;}
+.huge_BtnL,.huge_BtnM,.huge_BtnR{ line-height:30px;}
+
+/*低优先级一度人脉请求*/
+.drageOneSetInstr {}
+.drageOneSetInstr ul li.setBroad label{width:200px;padding-right:10px;display:block;*padding-right:20px;*width:190px;}
+.drageOneSetInstr ul li.setBroad .fl-outer{width:auto;}
+.drageOneSetInstr ul li.setBroad label input{top:0;}
+
+/*upgrade member 2 样式*/
+.upgrade-banner h2 {font-size: 1.5em;}
+#upgrade-member-shop {font-size: 1em;}
+.upgrade-member-header h4 {font-size: 1em;}
+.upgrade-member-header li {font-size: 0.95em;}
+#upgrade-member-shop ul li {height: 36px; _height: 36px;}
+
+/* 新用户首页向导 */
+.nug-banner {background-image: url(../images/ban_userguide_en.jpg);}
+
+/* 邀请活动 invitation_campaign */
+.topic-ic-baninfo table {margin: 10px 0 0 25px;}
+.topic-ic-ban-link {width: 170px; height: 33px; left: 345px; top: 148px;}
+.topic-ic-status {width: 450px;}
+.topic-ic-status td {padding: 3px 0;}
+.topic-ic-status .topic-ic-std1 {width: 24px;}
+.topic-ic-status .topic-ic-std2 {width: 310px;}
+.topic-ic-status .topic-ic-std3 {width: 120px;}
+.topic-invitation-campaign .topic-title-img {background: url(../images/promo/invitation/ban_en.jpg) no-repeat; width: 960px; height: 215px;}
+.topic-ic-invite .ico-file {background-image: url(../images/promo/invitation/bg_field_file_en.png);}
+.topic-ic-newuser {background: url(../images/promo/invitation/ban_newuser_en.jpg) no-repeat; width: 692px; height: 71px;}
+.topic-ic-reg {background: url(../images/promo/invitation/ban_reg_en.jpg) no-repeat; width: 280px; height: 80px;}
+.topic-ic-ivt {background: url(../images/promo/invitation/ban_ivt_en.jpg) no-repeat; width: 268px; height: 302px;}
+.topic-ic-ivt-all {background: url(../images/promo/invitation/ban_ivt_all_en.jpg) no-repeat; width: 149px; height: 341px;}
+.topic-ic-email-title {height: 60px;}
+.topic-ic-email-import {right: 0; top: 20px;}
+
+/*feed seting*/
+ul li div.feeed_set_list_select{left:-11px;top:-6px;width:130px;}
+
+
+/* 送coffee */
+.topic-coffee .topic-baninfo td {font-size:10px;line-height:1.2em;padding-bottom:10px;}
+.topic-coffee .topic-title-img {background: url(../images/promo/coffee/ban_en.jpg) no-repeat; width: 960px; height: 299px; position: relative;}
+.topic-coffee .topic-ban-link { width: 158px; height: 33px; left: 232px; top: 225px;}
+.topic-coffee-reg {background: url(../images/promo/coffee/ban_reg_en.jpg) no-repeat;}
+.topic-coffee-ivt {background: url(../images/promo/coffee/ban_ivt_en.jpg) no-repeat;}
+.topic-coffee-ivt-all {background: url(../images/promo/coffee/ban_ivt_all_en.jpg) no-repeat; width: 149px; height: 465px;}
+
+/*尚优士徽章*/
+.brdge_instroduce {background:url(../images/ban_badge_instr_en.jpg) no-repeat 0 0;}
+.brdge_instroduce a.to_invite {top:175px;left:352px;}
+
+/* 哈根达斯活动 */
+.topic-haagendazs-ivt {background: url(../images/promo/haagendazs/ivt_en.jpg) no-repeat;}
+.topic-haagendazs-ivt-all {background: url(../images/promo/haagendazs/ivt_all_en.jpg) no-repeat;}
+/*手机引导英文版不显示*/
+.smartphoneEnDisable{display:none}
+
+/* Job Public Page Right Register */
+.public-reg-btn { font-size:11px; padding:0 0 2px 0!important;}
+
+/* Homepage_new */
+#homeAdd .home-add-link .eng-b-1 { *width:47px;}
+#homeAdd .home-add-link .eng-b-2 { *width:60px;}
+#homeAdd .home-add-link .eng-b-2 { *width:46px;}
+
+#homeAdd .home-add-link .eng-b-1 b { *width:47px;}
+#homeAdd .home-add-link .eng-b-2 b { *width:52px;}
+#homeAdd .home-add-link .eng-b-3 b { *width:47px;}
+.onboard-btn a{
+	background: url(../images/onboarding/btn_see_en.png) no-repeat left top;
+	display:block;
+	width: 96px;
+	height: 25px;
+}
+.pmyk-eng { display:inline-block; font-size:10px; line-height:1; margin-top:7px;}
+/* PermanentInviteIncentiveSystem */
+.ad-invite-incentive .ii-top { height:55px; background:url(../images/ad/other/ad_invite_incentive_top_en.png);}
+.ad-invite-incentive .ii-bottom { height:115px; background:url(../images/ad/other/ad_invite_incentive_bottom_en.png);}
+
+.invite-banner { background:url(../images/invite/bg_invite_banner_en.png);}
+.invite-tips1 { background:url(../images/invite/bg_invite_tips1_en.png);}
+.invite-tips2 { background:url(../images/invite/bg_invite_tips2_en.png);}
+.invite-tips3 { background:url(../images/invite/bg_invite_tips3_en.png);}
+.invite-icon2 { background:url(../images/invite/ico_invite2_en.png);}
+.invite-present-btn { background:url(../images/invite/btn_invite_en.png);}
+
+/* 人脉新按钮图标（FJC-AR） */
+.job-icon-conntect { width:100px; background:url(../images/job/job_hr/ico_connect_en.png) no-repeat;}
+.job-icon-conntect:hover { background:url(../images/job/job_hr/ico_connect_hover_en.png) no-repeat;}
+.job-icon-conntect:active { background:url(../images/job/job_hr/ico_connect_click_en.png) no-repeat;}
+.job-icon-follow { width:62px; background:url(../images/job/job_hr/ico_follow_en.png) no-repeat;}
+.job-icon-follow:hover { background:url(../images/job/job_hr/ico_follow_hover_en.png) no-repeat;}
+.job-icon-follow:active { background:url(../images/job/job_hr/ico_follow_click_en.png) no-repeat;}
+.job-icon-following { background:url(../images/job/job_hr/ico_following_en.png) no-repeat;}
+.job-icon-following:hover { background:url(../images/job/job_hr/ico_following_hover_en.png) no-repeat;}
+.job-icon-following:active { background:url(../images/job/job_hr/ico_following_click_en.png) no-repeat;}
+.job-icon-sendmail { width:136px; background:url(../images/job/job_hr/ico_sendmail_en.png) no-repeat;}
+.job-icon-sendmail:hover { background:url(../images/job/job_hr/ico_sendmail_hover_en.png) no-repeat;}
+.job-icon-sendmail:active { background:url(../images/job/job_hr/ico_sendmail_click_en.png) no-repeat;}
+.job-icon-sendsms {background:url(../images/job/job_hr/ico_sendsms_en.png) no-repeat;}
+
+.job-icon-invited { background:url(../images/job/job_hr/ico_invited_en.png) no-repeat;}
+.job-icon-accept { background:url(../images/job/job_hr/ico_accept_en.png) no-repeat;}
+.job-icon-accept:hover { background:url(../images/job/job_hr/ico_accept_hover_en.png) no-repeat;}
+.job-icon-accept:active { background:url(../images/job/job_hr/ico_accept_click_en.png) no-repeat;}

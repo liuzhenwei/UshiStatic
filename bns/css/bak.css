@@ -1,0 +1,50 @@
+﻿/* 20110118 ecard活动 */
+.topic_ecard {background: #000 url(../images/promo/ecard/bg_ecard_bg1.jpg) no-repeat center 614px;}
+.topic_ecard .container {max-width: 1600px;	width: 100%;}
+.topic_ecard_cont {width: 100%; height: auto; background: url(../images/promo/ecard/bg_ecard_bg.jpg) no-repeat center top; text-align: center;}
+.topic_ecard_main {width: 720px; height: 614px; background: url(../images/promo/ecard/bg_ecard.jpg) no-repeat; position: relative; margin: 0 auto;}
+.topic_ecard_main_bg {position: absolute; top: 0; visibility: hidden;}
+.topic_ecard_main_bg1 {left: -120px;}
+.topic_ecard_main_bg2 {left: 20px;}
+.topic_ecard_main_bg3 {left: 90px;}
+.topic_ecard_footer {width: 720px; *width: 750px; margin: 0 auto; padding-bottom: 100px; color: #330506;}
+.topic_ecard_footer a {color: #330506;}
+.topic_ecard_footer .divide li {border-color: #330506;}
+.ecard_hello {position: absolute; left: 260px; top: 193px; background: url(../images/promo/ecard/ico_hello.png) no-repeat right center; padding-right: 53px; letter-spacing: 2px;}
+.ecard_post {position: absolute; right: 0px; top: 310px; background: url(../images/promo/ecard/ico_post.png) no-repeat left center; padding-left: 65px; letter-spacing: 2px;}
+.ecard_info {position: absolute; left: 320px; top: 380px; width: 400px; text-align: center;}
+.ecard_hongbao {width: 881px; height: 375px; padding-top: 120px; background: url(../images/promo/ecard/bg_receive.png) no-repeat;}
+.ecard-overlay {background-color: #000; left: 0; position: absolute; top: 0;}
+.ecard_hongbao_cont {margin: 0 0 0 440px; width: 300px; height: 300px; position: relative; overflow: hidden;}
+.ecard_hongbao_cont a, .ecard_hongbao_cont span {position: absolute; display: block;}
+.ecard_hongbao_cont span {bottom: 0;}
+.ecard_hongbao_cont a {top: -110px; left: 120px;}
+.ecard_hongbao_tips {position: relative; left: 120px; top: -166px; width: 300px;}
+.ecard_hongbao_tips ol li {list-style-type: decimal; padding-bottom: 8px; line-height: 1.6em; margin-left: 22px; color: #666;}
+.ecard_hongbao_msg {position: relative; left: 120px; top: -120px; color: #666;}
+.topic_ecard_pop {border: 1px solid #ff6b6b;}
+.topic_ecard_pop .fl-block {background: #ff6b6b; border: 1px solid #df2828;}
+.topic_ecard_pop .fl-title {width: 505px;}
+.topic_ecard_pop .fl-title h5 {color: #ffd791;}
+
+/*yobrond活动*/
+.yobrondR{background:url(../images/ad/yobrond/ushiBoardbg.png) no-repeat left top; width:385px; height:396px; padding:83px 12px 0 12px;}
+.yobrondR .regform-wrap{padding-left:0;}
+.yobrondR form{ background:#fff; border:1px #e7e7e7 solid; padding:30px 0 35px 0}
+
+
+
+
+/*============= en =================*/
+/*yobrond活动*/
+.yobrondR .form-item label{ width:100px;}
+.yobrondR .form-item-nolabel,.yobrondR .form-btn{padding-left:110px;}
+
+
+
+
+/*============= cn =================*/
+
+
+
+

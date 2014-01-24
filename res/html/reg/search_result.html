@@ -1,0 +1,1247 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../../../common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../../../common/js/widget.js"></script>
+<script type="text/javascript" src="../../../common/js/common.js"></script>
+<script type="text/javascript" src="../../../bns/js/openreg.js"></script>
+</head>
+
+<body id="page_public">
+<div id="wrapper" class="container">
+	<!-- header start -->
+	<div id="header_reg" class="clearfix">
+    <div id="logo" class="float-left">
+	    <a href="/index.jhtml" >
+	   		<img src="http://static.ushi.cn/s/bns/images/youshi_logo.png" width="80" height="51" alt="优士" />
+	    </a>
+	   
+    </div>
+     <h3><a class="float-left know-about-ushi boldface" href="#">了解优士</a></h3>
+    <div id="login_reg">
+		  <div id="nav_utility">
+		          <ul class="common-nav">
+			          <li class="divide"><a class="link-menu"  href="javascript:void(0);" id="top_btn_lang">Language</a></li>
+			          <li><a href="/login.jhtml">登录</a></li>
+		          </ul>
+		 </div>
+    </div>
+    </div><!-- header end -->
+ 
+	<!-- main start -->
+	<div id="main" class="clearfix">
+<!-- main content -->
+<div class="conn-main clearfix" style="position:relative;">
+			
+<!-- left -->
+<div class="column-1">
+	<div class="search-aside">
+		<form action="/search/search!search.jhtml" method="post">
+			<input type="hidden" name="form.keyWordSearch" value="true" id="is_keyword"/><input type="hidden" name="form.position" value="" id="form_position"/><input type="hidden" name="industryIds" value="0" id="form_industryIds"/><input type="hidden" name="form.scope" value="5" id="form_scope"/><dl>
+				<dd><h5 class="bottom">搜 索</h5></dd>
+			</dl>
+			<dl>
+				<dd><input type="text" name="form.keyword" value="aa" maxlength="32" class="input" /></dd>
+				<dd>
+					<input type="submit" value=" 搜 索 " js="submitKeyword" class="special-btn" />
+				</dd>
+				<dd>
+					<h5 class="bottom margin-top15e">
+						使用筛选细化搜索结果</h5>
+				</dd>
+			</dl>
+		</form>
+		<form action="/search/search!search.jhtml" id="searchForm" method="post">
+			<input type="hidden" name="isResearch" value="1" />
+			<input type="hidden" name="pageNo" value="" />
+			<input type="hidden" name="form.keyword" value="aa" />
+			<input type="hidden" name="form.fullname" value="" />			
+			<input type="hidden" name="form.major" value="" />
+			<input type="hidden" name="form.countryId" value="0" />
+			<input type="hidden" name="form.regionId" value="0" />
+			<input type="hidden" name="form.cityId" value="0" />
+			<input type="hidden" name="form.position" value="" />
+			<input type="hidden" name="form.companyName" value="" />
+			<input type="hidden" name="form.schoolName" value="" />
+			<input type="hidden" name="form.companyId" value="0" />
+			
+			<div id="searchChkArea">
+				<dl js="setCheckboxRadio" area="connectionArea">
+					<dt>
+						人脉距离：</dt>
+					<dd>
+						<input type="checkbox" js="checkall" name="form.scope" value="5"
+							 checked="checked">
+						所有人脉距离</dd>
+					<dd>
+						<input type="checkbox" name="form.scope" value="2"
+							>
+						2度人脉
+						(28)
+					</dd>
+					<dd>
+						<input type="checkbox" name="form.scope" value="4"
+							>
+						3度人脉及以上
+						(264)
+					</dd>
+					</dl>
+				<dl js="setCheckboxRadio" area="cityArea">
+					<dt>
+						所在地点</dt>
+					<dd>
+						<input type="checkbox" js="checkall" name="cityIds" value="0"
+							checked='checked'>
+						所有地点</dd>
+					<dd >
+							<input type="checkbox" name="cityIds" value="8843"
+								>
+							上海 (71)
+						</dd>
+					<dd >
+							<input type="checkbox" name="cityIds" value="8066"
+								>
+							北京 (40)
+						</dd>
+					<dd >
+							<input type="checkbox" name="cityIds" value="8559"
+								>
+							深圳 (10)
+						</dd>
+					<dd >
+							<input type="checkbox" name="cityIds" value="161028"
+								>
+							香港 (8)
+						</dd>
+					<dd >
+							<input type="checkbox" name="cityIds" value="8677"
+								>
+							广州 (7)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="161029"
+								>
+							Singapore (5)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8623"
+								>
+							成都 (4)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="18236"
+								>
+							Copenhagen (4)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8814"
+								>
+							宁波 (4)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="66232"
+								>
+							Aachen (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="162957"
+								>
+							Frankfurt (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="64991"
+								>
+							Bonn (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="77143"
+								>
+							Hyderabad (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8109"
+								>
+							厦门 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="18376"
+								>
+							Århus (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="146865"
+								>
+							Los Angeles (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="6860"
+								>
+							Toronto (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="136902"
+								>
+							Atlanta (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8716"
+								>
+							青岛 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8899"
+								>
+							杭州 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8392"
+								>
+							西安 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8049"
+								>
+							武汉 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="147877"
+								>
+							Baltimore (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="98580"
+								>
+							Lahore (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="130453"
+								>
+							Penryn (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="74512"
+								>
+							Delhi (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="98838"
+								>
+							Islāmābād (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="92228"
+								>
+							Macau (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8577"
+								>
+							常州 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="59922"
+								>
+							Wiesbaden (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="92476"
+								>
+							Kuala Lumpur (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8372"
+								>
+							南京 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="84088"
+								>
+							Modena (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="138770"
+								>
+							Skokie (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8363"
+								>
+							佛山 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="69661"
+								>
+							Meinerzhagen (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="1040"
+								>
+							Melbourne (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8564"
+								>
+							临沂 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="139922"
+								>
+							Chicago (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="148173"
+								>
+							Bellemeade (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8405"
+								>
+							台州 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8131"
+								>
+							福州 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8343"
+								>
+							苏州 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="163031"
+								>
+							朔州 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="163036"
+								>
+							眉山 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8402"
+								>
+							大连 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="138328"
+								>
+							Irvine (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8851"
+								>
+							湖州 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8426"
+								>
+							南昌 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="163051"
+								>
+							五家渠 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="126467"
+								>
+							Bangkok (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8411"
+								>
+							鞍山 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="76313"
+								>
+							Pune (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="18208"
+								>
+							Kjellerup (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8391"
+								>
+							南通 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="77919"
+								>
+							Mīrat (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="18133"
+								>
+							Esbjerg (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="18294"
+								>
+							Espergærde (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="76792"
+								>
+							Jaipur (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="2642"
+								>
+							Middelkerke (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="126815"
+								>
+							Sharjah (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="95800"
+								>
+							Utrecht (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="96116"
+								>
+							Berkel en Rodenrijs (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8981"
+								>
+							台北 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="67258"
+								>
+							Cologne (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="157968"
+								>
+							Cherry Hills Village (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="18206"
+								>
+							Aalborg (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="135558"
+								>
+							Denver (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="130029"
+								>
+							Cairo (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8055"
+								>
+							鄂州 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="1045"
+								>
+							Sydney (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="67899"
+								>
+							Siegburg (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="135696"
+								>
+							Glendale (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8771"
+								>
+							昆明 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8956"
+								>
+							新竹 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="70735"
+								>
+							Athens (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="20322"
+								>
+							Helsinki (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="81178"
+								>
+							Tel Aviv-Yafo (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="95946"
+								>
+							Twenterand (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="58585"
+								>
+							Munich (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="94675"
+								>
+							Mexico City (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="9011"
+								>
+							新庄 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="18137"
+								>
+							Vejle (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="7311"
+								>
+							Vancouver (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8872"
+								>
+							嘉兴 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="18267"
+								>
+							Storvorde (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="126251"
+								>
+							Wangen-Brüttisellen (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="18600"
+								>
+							Santo Domingo (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="121964"
+								>
+							Sant Vicenç de Montalt (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="142036"
+								>
+							Rosemead (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="143427"
+								>
+							Cincinnati (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="105872"
+								>
+							Doha (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="149915"
+								>
+							Louisville (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="130376"
+								>
+							London (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="76901"
+								>
+							Bombay (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="98504"
+								>
+							Karāchi (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="96877"
+								>
+							Ughelli (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="149328"
+								>
+							Placerville (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="148746"
+								>
+							Cartersville (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="98516"
+								>
+							Multān (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="153906"
+								>
+							Minneapolis (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8679"
+								>
+							天津 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="114742"
+								>
+							Johannesburg (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="55722"
+								>
+							Versailles (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8062"
+								>
+							邯郸 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="133859"
+								>
+							Angoon (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="cityIds" value="8196"
+								>
+							龙岩 (1)
+						</dd>
+					<dd>
+							<a href="#" js="showMore">显示更多</a>
+						</dd>
+					</dl>
+				<dl js="setCheckboxRadio" area="industryArea">
+					<dt>
+						行业类别</dt>
+					<dd>
+						<input type="checkbox" js="checkall" name="industryIds"
+							checked='checked'
+							value="0">
+						所有行业</dd>
+					<dd >
+							<input type="checkbox" name="industryIds" value="18"
+								>
+							管理咨询 (24)
+						</dd>
+					<dd >
+							<input type="checkbox" name="industryIds" value="4"
+								>
+							计算机软件 (23)
+						</dd>
+					<dd >
+							<input type="checkbox" name="industryIds" value="8"
+								>
+							互联网 (13)
+						</dd>
+					<dd >
+							<input type="checkbox" name="industryIds" value="22"
+								>
+							市场推广与广告 (13)
+						</dd>
+					<dd >
+							<input type="checkbox" name="industryIds" value="12"
+								>
+							信息技术与服务 (10)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="154"
+								>
+							其他行业 (9)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="106"
+								>
+							电子电气设备 (9)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="10"
+								>
+							电信与通讯 (9)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="107"
+								>
+							机械 (7)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="76"
+								>
+							高等教育 (6)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="61"
+								>
+							财经服务 (6)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="19"
+								>
+							招聘、猎头 (6)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="3"
+								>
+							计算机硬件 (5)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="152"
+								>
+							国际贸易 (4)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="104"
+								>
+							汽车 (4)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="93"
+								>
+							进出口 (4)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="60"
+								>
+							保险 (4)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="63"
+								>
+							投资银行 (4)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="9"
+								>
+							半导体 (4)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="64"
+								>
+							风险投资 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="27"
+								>
+							外包服务 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="112"
+								>
+							纺织及皮革制造 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="49"
+								>
+							互联网媒体 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="52"
+								>
+							娱乐业 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="2"
+								>
+							空间科技 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="34"
+								>
+							医疗设备 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="6"
+								>
+							计算机与网络安全 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="137"
+								>
+							物流与供应链 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="7"
+								>
+							计算机游戏 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="65"
+								>
+							私募股权投资 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="105"
+								>
+							化工 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="21"
+								>
+							培训 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="41"
+								>
+							电视 (3)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="20"
+								>
+							人力资源 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="99"
+								>
+							土木工程 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="78"
+								>
+							E-Learning (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="53"
+								>
+							休闲度假与旅游 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="142"
+								>
+							航空运输 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="109"
+								>
+							石油与能源 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="13"
+								>
+							无线通讯 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="83"
+								>
+							体育用品 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="16"
+								>
+							法律服务 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="25"
+								>
+							翻译服务 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="96"
+								>
+							建筑工程 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="98"
+								>
+							建筑设计 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="33"
+								>
+							医药品 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="62"
+								>
+							房地产 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="88"
+								>
+							消费电子 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="77"
+								>
+							教育管理 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="82"
+								>
+							服装服饰 (2)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="122"
+								>
+							行政部门 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="115"
+								>
+							玻璃, 陶瓷与混凝土 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="32"
+								>
+							医院与医疗 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="89"
+								>
+							快速消费品 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="47"
+								>
+							文化艺术 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="97"
+								>
+							建材 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="91"
+								>
+							零售 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="125"
+								>
+							水利环境公共设施 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="118"
+								>
+							工业自动化 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="43"
+								>
+							报纸 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="110"
+								>
+							回收与环境保护 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="30"
+								>
+							生物工程 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="38"
+								>
+							中医 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="24"
+								>
+							公共关系 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="120"
+								>
+							外交 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="66"
+								>
+							证券 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="55"
+								>
+							住宿业 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="102"
+								>
+							工艺品 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="141"
+								>
+							仓储 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="86"
+								>
+							食物生产 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="48"
+								>
+							印刷 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="5"
+								>
+							计算机网络设备 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="36"
+								>
+							健身 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="79"
+								>
+							教育研究 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="94"
+								>
+							奢侈品与珠宝 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="69"
+								>
+							非盈利性组织管理 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="92"
+								>
+							批发 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="57"
+								>
+							食品与饮料 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="42"
+								>
+							电影 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="135"
+								>
+							家政服务 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="54"
+								>
+							餐饮业 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="67"
+								>
+							会计 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="87"
+								>
+							酒类 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="84"
+								>
+							烟草 (1)
+						</dd>
+					<dd  style="display:none;">
+							<input type="checkbox" name="industryIds" value="90"
+								>
+							家具 (1)
+						</dd>
+					<dd>
+							<a href="#" js="showMore">显示更多</a>
+						</dd>
+					</dl>
+				<dl js="setCheckboxRadio" area="contactArea">
+					<dt>
+						联络目的</dt>
+					<dd>
+						<input type="checkbox" js="checkall" name="contactIds"
+							checked='checked'
+							value="0">
+						所有联络目的</dd>
+					<dd>
+							<input type="checkbox" name="contactIds" value="32"
+								>
+							与同事朋友联络 (272)
+						</dd>
+					<dd>
+							<input type="checkbox" name="contactIds" value="2"
+								>
+							寻求商业合作 (270)
+						</dd>
+					<dd>
+							<input type="checkbox" name="contactIds" value="1"
+								>
+							寻求职业机会 (249)
+						</dd>
+					<dd>
+							<input type="checkbox" name="contactIds" value="16"
+								>
+							发现投资对象 (115)
+						</dd>
+					<dd>
+							<input type="checkbox" name="contactIds" value="4"
+								>
+							寻求咨询服务 (104)
+						</dd>
+					<dd>
+							<input type="checkbox" name="contactIds" value="64"
+								>
+							学习和深造机会 (98)
+						</dd>
+					<dd>
+							<input type="checkbox" name="contactIds" value="8"
+								>
+							招聘高级人才 (91)
+						</dd>
+					</dl>
+				<dl js="setCheckboxRadio" area="groupArea">
+					<dt>
+						群组</dt>
+					<dd>
+						<input type="checkbox" js="checkall" name="groupIds"
+							checked='checked'
+							value="0">
+						你的所有群组</dd>
+					<dd >
+							<input type="checkbox" name="groupIds" value="1369"
+								>
+							Doing Business in China 商业机会 (3)
+						</dd>
+					</dl>
+			</div>
+		</form>
+	</div>
+</div>
+ 
+<!-- main -->
+<div class="column-2-2" style="width:552px;">
+			
+				<p class="large quiet border-bottom pd-bottom">1-15 / 共找到符合条件的会员<b class="special">292</b>人</p>
+				<div id="search-list">
+					<div class="list-box">
+						<ul>
+							<li class="col-1 vcard v-50"><a href='/u/pelle9738'><img src='http://images.ushigroup.cn/bnsphoto/2011/01/05/d1036615-0353-4845-bf60-8fd8a3bf6b51_icon.jpg' id='avatar-90568' /></a><dl>
+									<dt><a href="/u/pelle9738" target="_blank">Pelle Aardema</a><span class="degree-3" title="3度人脉"></span></dt>
+									<dd>Pelle Aardema owner</dd>
+									<dd class="quiet">荷兰&nbsp;Utrecht<!--
+										3度
+										-->
+								    </dd>
+								</dl>
+							</li>
+							<li class="col-2"><a class="grade-1" href="/sns/sns!get1stFriends.jhtml?targetUserId=90568" >2</a></li>
+						      <li class="col-3"><a href="#">查看完整档案</a></li>
+						</ul>
+					</div>
+
+					
+					
+			</div>
+	
+		
+    <!--分页 -->
+				
+ 
+<div class="pages">
+ 
+ 
+	<a class="current">1</a>
+ 
+	<a href="javascript:void(0);" onclick="return topage('2');">2</a>
+ 
+	<a href="javascript:void(0);" onclick="return topage('3');">3</a>
+ 
+	<a href="javascript:void(0);" onclick="return topage('4');">4</a>
+ 
+	<a href="javascript:void(0);" onclick="return topage('5');">5</a>
+ 
+	<a href="javascript:void(0);" onclick="return topage('6');">6</a>
+ 
+ 
+  <a class="next" href="javascript:void(0);" onclick="return topage('2');">下一页</a>
+ 
+</div>
+
+</div>
+<div class="float-left dp-menu" style="position:relative;display:block;background:#ebf4f6;_display:inline;width:200px;margin-left:33px;margin-top:30px;">
+	<ul style="background:#f7faff;">
+		<li class="line"><h5 style="margin-bottom:0">注册优士会员</h5></li>
+		<li>
+			姓名：
+			<div class="pd-top05e"><input type="text" class="input" /></div>
+		</li>
+		<li>
+			Emial：
+			<div class="pd-top05e"><input type="text" class="input" /></div>
+		</li>
+		<li>
+			密码：
+			<div class="pd-top05e"><input type="text" class="input" /></div>
+		</li>
+		<li>
+			<span class="date">(选填)</span>手机：
+			<div class="pd-top05e"><input type="text" class="input" /></div>
+		</li>
+		
+		<li>
+			<input type="checkbox" id="userService" />
+			<label for="userService">我已经阅读并同意<a href="/doc.jhtml?key=term_of_service" target="_blank">服务条款</a></label>
+		</li>
+		<li>
+			<input type="button" class="special-btn" value="注册" />
+			
+		</li>
+		
+	</ul>
+
+</div>
+</div>
+</div>
+
+	<!-- main end -->
+ 
+	<!-- footer start -->
+  	<div id="footer">
+		<ul class="common-nav divide">
+		<li><a href="/overview">了解优士</a></li>
+		<li><a href="/about">关于我们</a></li>
+		<li><a href="/founding-and-charter-members">创始会员</a></li>
+		<li><a href="/contact">联系我们</a></li>
+		<li><a href="/doc.jhtml?key=join_us">加入我们</a></li>
+		<li><a href="/press">媒体中心</a></li>
+		<li><a href="/doc.jhtml?key=success_stories">成功故事</a></li>
+		<li><a href="/doc.jhtml?key=privacy_policy">隐私声明</a></li>
+		<li><a href="/doc.jhtml?key=term_of_service">服务条款</a></li>
+		<li class="divide-none"><a href="http://blog.ushi.cn" target="_blank">优士博客</a></li>	
+		</ul>
+		<p class="clear"><a href=http://www.miibeian.gov.cn/ target=_blank>沪ICP备06027394号</a> Ushi.cn © 版权所有 2009~2011</p> 
+	</div>
+	<!-- footer end -->
+</div>
+
+
+</body>
+</html>

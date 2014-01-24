@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>搜索礼宾服务-优士网</title>
+<link href="http://static.ushi.cn/s/common/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="http://static.ushi.cn/s/common/images/favicon.ico" rel="bookmark" type="image/x-icon" />
+<link href="/static/usc/css/normalize.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/member.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/member_sc.css" type="text/css" media="screen, projection" />
+<link href="../../../usc/css/usc.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper_usc">
+	<div id="header">
+		<div class="usc-hd-info">
+			<div class="userinfo"> 您好，<a href="/u/luhansen" class="link-menu1 spe-right3" target="_blank">卢汉森 Dominic Penaloza</a> <a href="/usc/search!listfav.jhtml" class="spe-right3" target="_blank">收藏夹</a> <span class="ico-coin"></span>余额 <span class="orange" js="coins">9625</span> <a href="/currency/Coins.jhtml" class="spe-right3" target="_blank">充值</a> <a href="/usc/login!logout.jhtml" class="quiet">退出</a> </div>
+			<div class="logo">
+				<div class="float-left"><img src="../../../common/images/ushi_logo_small.png" /></div>
+				<h2>优士企业人才库 <small class="quiet">Beta</small></h2>
+			</div>
+		</div>
+		<form action="/usc/search.jhtml" method="post" id="searchForm" class="usc-hd-form">
+			<input type="hidden" id="pageNo" name="pageNo" />
+			<input type="hidden" name="logId" value="0">
+			<div class="usc-sch-top clearfix">
+				<h2>筛选条件</h2>
+				<div class="select-location"> 选择地区 <a class="btn-location" js="selectLocation" tips="选择工作地点" maxlength="13"> <span locationNames="">选择工作地点</span> </a>
+					<input type="hidden" js="selectLocation_name" name="locationNames" value="" />
+					<input type="hidden" js="selectLocation_id" name="locationIds" value="" />
+				</div>
+				<div class="select-location"> 选择行业 <a class="btn-location" js="selectIndustry" tips="选择行业" maxlength="20" style="width:230px;"> <span industryNames="">选择行业</span> </a>
+					<input type="hidden" js="selectIndustry_id" name="industryIds" value="" />
+					<input type="hidden" js="selectIndustry_name" name="industryNames" value="" />
+				</div>
+				<div class="tips-location"> <img src="../../../common/images/ico_question.png" class="middle spe-right" /><a js="showTips" href="javascript:;">了解搜索技巧</a> </div>
+				<div class="tips-location float-right"> </div>
+			</div>
+			<div class="usc-sch-main clearfix">
+				<div class="filter-frame">
+					<p class="filter-title">职位</p>
+					<p><input type="text" name="position" value="" id="position" class="filter-text"/></p>
+					<p><input type="checkbox" name="currentPosition" value="true" checked="checked" id="currentPosition"/>
+						<input type="hidden" id="__checkbox_currentPosition" name="__checkbox_currentPosition" value="true" />
+						当前职位</p>
+					<p><input type="checkbox" name="pastPosition" value="true" checked="checked" id="pastPosition"/>
+						<input type="hidden" id="__checkbox_pastPosition" name="__checkbox_pastPosition" value="true" />
+						曾经任职过</p>
+				</div>
+				<div class="filter-frame">
+					<p class="filter-title">公司</p>
+					<p><input type="text" name="companyName" value="" id="companyName" class="filter-text"/></p>
+					<p><input type="checkbox" name="currentCompany" value="true" checked="checked" id="currentCompany"/>
+						<input type="hidden" id="__checkbox_currentCompany" name="__checkbox_currentCompany" value="true" />
+						当前在职</p>
+					<p><input type="checkbox" name="pastCompany" value="true" checked="checked" id="pastCompany"/>
+						<input type="hidden" id="__checkbox_pastCompany" name="__checkbox_pastCompany" value="true" />
+						曾经工作过</p>
+				</div>
+				<div class="filter-frame">
+					<p class="filter-title">关键字</p>
+					<p><input type="text" name="keyword" value="" id="keyword" class="filter-text"/></p>
+					<p>多个关键字请用‘空格’隔开</p>
+				</div>
+				<div class="filter-frame">
+					<p class="filter-title">姓名</p>
+					<p><input type="text" name="fullname" value="" id="fullname" class="filter-text"/></p>
+				</div>
+				<div class="filter-frame" style="background:none;">
+					<p class="filter-title">工作年限</p>
+					<p><select name="startYear" id="startYear">
+							<option value="0" selected="selected">不限</option>
+							<option value="1">一年</option>
+							<option value="2">二年</option>
+							<option value="3">三年</option>
+							<option value="5">五年</option>
+							<option value="8">八年</option>
+							<option value="10">十年</option>
+						</select>
+						至
+						<select name="endYear" id="endYear">
+							<option value="100">不限</option>
+							<option value="2">二年</option>
+							<option value="3">三年</option>
+							<option value="4">四年</option>
+							<option value="5">五年</option>
+							<option value="8">八年</option>
+							<option value="10">十年</option>
+							<option value="99">十年以上</option>
+						</select>
+					</p>
+				</div>
+			</div>
+			<div class="usc-sch-button">
+				<input class="btn-search" type="submit" onclick="$('#export_id').val('');" value="" />
+				<a href="javascript:;" js="resetField" class="spe-left3">重置搜索选项</a>
+			</div>
+		</form>
+	</div>
+	<div id="main">
+		<p class="boldface"><span class="ico-person"></span>总共<a >0</a>个候选人信息,请改变搜索条件</p>
+		<table cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<th width="4%">&nbsp;</th>
+					<th width="7%">姓名</th>
+					<th width="15%">职位</th>
+					<th width="10%">公司</th>
+					<th width="10%">教育</th>
+					<th width="7%">所在地</th>
+					<th width="10%">行业</th>
+					<th width="6%">档案完整度</th>
+					<th width="5%">工作年数</th>
+					<th width="5%">一度人数</th>
+					<th width="5%">距离</th>
+					<th width="16%">联系信息</th>
+				</tr>
+				<tr js="rows" class="">
+					<td><a js="fav" href="/usc/profile!fav.jhtml?targetId=7999&amp;logId=302&amp;type=1">收藏</a></td>
+					<td><img src="http://images.ushigroup.cn/bnsphoto/2010/04/30/72c928fd-d039-477f-843f-d482d9fb524a_icon.jpg"> <br>
+						<a target="_blank" href="/usc/profile!view.jhtml?targetId=7999&amp;logId=302&amp;filterKey=java" class="fullname boldface">Majid Hameed</a></td>
+					<td>Avanza Solutions Sr. Software Engineer</td>
+					<td>Avanza Solutions</td>
+					<td>UNIVERSITY OF KARACHI Computer Science</td>
+					<td>Karāchi</td>
+					<td>计算机软件</td>
+					<td>90</td>
+					<td>8</td>
+					<td>62</td>
+					<td>2</td>
+					<td><div style="margin-bottom:3px;" js="viewArea">
+							<span class="quiet">邮箱：</span>Y<span class="quiet spe-left2">手机：</span>Y<span class="quiet spe-left2">IM：</span>N<br>
+							<a price="35" js="viewContacts" class="btn-view" href="/usc/profile!purchase.jhtml?targetId=7999&amp;logId=302&amp;type=1">花费35优士币查看</a>
+						</div></td>
+				</tr>
+				<tr js="rows" class="">
+					<td><a js="fav" href="/usc/profile!fav.jhtml?targetId=52466&amp;logId=302&amp;type=1">收藏</a></td>
+					<td><img src="http://images.ushigroup.cn/bnsphoto/2010/10/08/9bbcf7b5-ba78-4351-b8d0-b5c4746c1cae_icon.jpg"> <br>
+						<a target="_blank" href="/usc/profile!view.jhtml?targetId=52466&amp;logId=302&amp;filterKey=java" class="fullname boldface">Emmanuel Siegel</a></td>
+					<td>Experienced Consultant [ www.evobilis.com ]</td>
+					<td>Evobilis Int'l Ltd</td>
+					<td>HKSI, Hong Kong Securities Institute HKSI Paper 8</td>
+					<td>香港</td>
+					<td>信息技术与服务</td>
+					<td>90</td>
+					<td>13</td>
+					<td>15</td>
+					<td>2</td>
+					<td><div style="margin-bottom:3px;" js="viewArea">
+							<span class="quiet">邮箱：</span>Y<span class="quiet spe-left2">手机：</span>Y<span class="quiet spe-left2">IM：</span>Y<br>
+							<a price="50" js="viewContacts" class="btn-view" href="/usc/profile!purchase.jhtml?targetId=52466&amp;logId=302&amp;type=1">花费50优士币查看</a>
+						</div></td>
+				</tr>
+				<tr js="rows" class="">
+					<td><a js="fav" href="/usc/profile!fav.jhtml?targetId=89167&amp;logId=302&amp;type=1">收藏</a></td>
+					<td><img src="http://images.ushigroup.cn/bnsphoto/2011/01/04/39ff17d0-a518-4d15-b6c4-6e3bc54a1e75_icon.jpg"> <br>
+						<a target="_blank" href="/usc/profile!view.jhtml?targetId=89167&amp;logId=302&amp;filterKey=java" class="fullname boldface">Kim Jan Vangslev Johansson</a></td>
+					<td>Joker Consulting CEO</td>
+					<td>Nordea, Denmark, Sweden, Finland</td>
+					<td>InCase Education Services, The Nederlands Transition to IBM WebSphere Application Server 7 &amp; JEE 5 (WU701)</td>
+					<td>Copenhagen</td>
+					<td>信息技术与服务</td>
+					<td>90</td>
+					<td>11</td>
+					<td>52</td>
+					<td>2</td>
+					<td><div style="margin-bottom:3px;" js="viewArea">
+							<span class="quiet">邮箱：</span>Y<span class="quiet spe-left2">手机：</span>Y<span class="quiet spe-left2">IM：</span>N<br>
+							<a price="35" js="viewContacts" class="btn-view" href="/usc/profile!purchase.jhtml?targetId=89167&amp;logId=302&amp;type=1">花费35优士币查看</a>
+						</div></td>
+				</tr>
+				<tr js="rows" class="">
+					<td><a js="fav" href="/usc/profile!fav.jhtml?targetId=217930&amp;logId=302&amp;type=1">收藏</a></td>
+					<td><img src="http://images.ushigroup.cn/bnsphoto/2011/04/26/35ecfe47-c32d-4847-a27b-7b5f98377ab4_icon.jpg"> <br>
+						<a target="_blank" href="/usc/profile!view.jhtml?targetId=217930&amp;logId=302&amp;filterKey=java" class="fullname boldface">Yunpu Paul Zhu</a></td>
+					<td>IT Professional for International/Local Banking &amp; P/C Insurance</td>
+					<td>ING Canada</td>
+					<td>University of Lethbridge Computer Science</td>
+					<td>Calgary</td>
+					<td>财经服务</td>
+					<td>90</td>
+					<td>11</td>
+					<td>3</td>
+					<td>3</td>
+					<td><div style="margin-bottom:3px;" js="viewArea">
+							<span class="quiet">邮箱：</span>Y<span class="quiet spe-left2">手机：</span>Y<span class="quiet spe-left2">IM：</span>N<br>
+							<a price="35" js="viewContacts" class="btn-view" href="/usc/profile!purchase.jhtml?targetId=217930&amp;logId=302&amp;type=1">花费35优士币查看</a>
+						</div></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="pages">
+			<a onclick="return topage('2');" href="javascript:void(0);" class="next">上一页</a>
+			<a onclick="return topage('1');" href="javascript:void(0);">1</a>
+			<a onclick="return topage('2');" href="javascript:void(0);">2</a>
+			<a class="current">3</a>
+			<a onclick="return topage('4');" href="javascript:void(0);">4</a>
+			<a onclick="return topage('5');" href="javascript:void(0);">5</a>
+			<a onclick="return topage('6');" href="javascript:void(0);">6</a>
+			<a onclick="return topage('7');" href="javascript:void(0);">7</a>
+			<a onclick="return topage('8');" href="javascript:void(0);">8</a>
+			<a onclick="return topage('4');" href="javascript:void(0);" class="next">下一页</a>
+		</div>
+	</div>
+	<div id="footer">
+		<p style="font-size:14px;">招聘服务热线:021-51759800  招聘服务邮箱:<a href="mailto:talentsource@ushi.com"> talentsource@ushi.com</a></p>
+		<p class="quiet">Ushi.com © 2009~2013 沪ICP备06027394号 <a href="http://www.ushi.com/doc.jhtml?key=term_of_service" class="quiet">服务条款</a></p>
+	</div>
+</div>
+</body>
+</html>

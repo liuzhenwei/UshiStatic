@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+</head>
+<body id="page_member">
+<div id="wrapper" class="container">
+	<!--#include file="header.html"-->
+	<div id="main">
+		<div class="tabs-common clearfix">
+			<ul>
+				<li><a href="invite_home.html">邀请朋友加入</a></li>
+				<li class="current"><a href="找同事.html">找同事</a></li>
+				<li><a href="找同学.html">找同学</a></li>
+				<li><a href="invite_you_may_know.html">您可能认识</a></li>
+				<li><a href="invite_you_mayhope_know.html">你可能希望认识</a></li>
+			</ul>
+			<div class="float-right"><a href="invite_history.html">查看邀请记录</a></div>
+		</div>
+		<div class="column-2-2">
+			<div class="spe-left-pd2">
+				<h4>添加新的工作经历，找到你的同事</h4>
+				<div class="notice-special"><span class="quiet">完善工作经历能够帮助你快速找到你的老同事</span></div>
+<form id="edit_job" method="post" action="找到的同事.html" class="formstyle">
+	<input type="hidden" value="" name="cid">
+	<input type="hidden" value="0" id="career_companyid">
+	<input type="hidden" value="0" id="companyID" name="companyId">
+
+	<p class="quiet">带 <span class="red">* </span>号的项目为必填项</p>
+	<ul id="addWork">
+		<li><label><span class="red">* </span>公司名称：</label>
+			<input type="text" class="input-w-400" value="" isindex="0" autocomplete="off" id="CompanyName" name="company.companyname" maxlength="128" searchkey=""><span class="large"></span><a style="display:none;" href="#"> 修改</a>
+			<div style="display:none" class="data-user-fill bdr-blue fs-space">
+			<span class="box-arrow-up"></span>
+			<div class="notice2"><h4>关于该公司的更多信息</h4></div>
+				<ul>
+				<li><label>公司网址 ：</label> <input type="text" maxlength="255" class="input-w-280" value="" select="Company" name="company.site"></li>
+				<li><label>公司规模：</label> <select class="select" id="company_sizeid" name="company.sizeid">
+					<option value="0">请选择</option>
+					<option value="1">1 ~ 49 人</option>
+					<option value="2">50 ~ 99 人</option>
+					<option value="3">100 ~ 499 人</option>
+					<option value="4">500 ~ 999 人</option>
+					<option value="5">1000 ~ 4999 人</option>
+					<option value="6">5000人以上</option>
+				</select></li>
+				</ul>
+			</div>
+			<span class="tips">
+			<input type="checkbox" value="1" name="career.isonduty" js="isonduty">
+			这是我当前的工作</span></li>
+		<li><label> <span class="red">* </span>职 位：</label>
+			<input type="text" class="input-w-400" id="career_position" value="" maxlength="64" name="career.position">
+		</li>
+		<li><label> <span class="red">* </span>在职时间 ：</label>
+			<select js="date" id="career_startyear" name="career.startyear">
+				<option value="-1">选择年</option>
+				<option value="2011">2011</option>
+				<option value="2010">2010</option>
+				<option value="2009">2009</option>
+				<option value="2008">2008</option>
+			</select>
+			<select js="date" id="career_startmonth" name="career.startmonth">
+				<option value="-1">选择月</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select> 
+			至<span style="display:none">今</span><span js="currenDate">
+				<select js="date" id="career_endyear" name="career.endyear">
+					<option value="-1">选择年</option>
+					<option value="2011">2011</option>
+					<option value="2010">2010</option>
+					<option value="2009">2009</option>
+					<option value="2008">2008</option>
+					<option value="2007">2007</option>
+				</select>
+				<select js="date" id="career_endmonth" name="career.endmonth">
+					<option value="-1">选择月</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+			</span>
+		</li>
+		<li><label>职业头衔：</label><span><input type="checkbox" js="jobHeadName">更新当前职业头衔 </span></li>
+		<li js="jobHeadNameLi" style="display:none"><label>&nbsp;</label><input type="text" value="前端架构师" class="input-w-400" name="jobHeadName"></li>
+		<li><label>工作概述 ：</label> 
+			<textarea id="career_summary" rows="80" cols="5" name="career.summary"></textarea>
+		</li>
+	</ul>
+	<p><input type="submit" js="submit" value="添加并找到同事" class="button">
+		<a class="common-button" href="找更多同事.html">取消</a>
+	</p>
+</form>
+			</div>
+		</div>
+		<div class="column-1 rightsidebar">
+		</div>
+	</div>
+</div>
+<!--#include file="footer.html"-->
+</body>
+</html>

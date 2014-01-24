@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/phome_reg.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../../../common/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../../../common/js/jquery.pngFix.pack.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('[js=pngFix]').pngFix({blankgif:'../../../common/images/space.gif', fixSelf:true});
+});
+</script>
+</head>
+
+<body id="page_public" class="reg-body">
+
+<div class="reg-container">
+	<div id="regHeader" class="reg-header clearfix">
+		<div class="a-center"><img src="../../../bns/images/reg/logo_reg.png" width="86" height="59" /></div>
+		<h1 class="reg-proc-info">一份完整的职业档案将为您的工作和职业发展带来更多的机会</h1>
+	</div>
+	<div class="reg-main">
+		<div class="reg-proc-bar">
+			<div class="reg-proc-ico reg-proc-cur">
+				<div class="reg-proc-left"></div>
+			</div><div class="reg-proc-ico">
+				<div class="reg-proc-mid"></div>
+			</div><div class="reg-proc-ico">
+				<div class="reg-proc-mid"></div>
+			</div><div class="reg-proc-ico">
+				<div class="reg-proc-mid"></div>
+			</div><div class="reg-proc-ico">
+				<div class="reg-proc-right"></div>
+			</div>
+		</div>
+		<div class="reg-content">
+			<h2 class="reg-cont-title">创建你的职业档案</h2>
+			<h3 class="reg-cont-stitle">状态信息<small class="quiet spe-left2">真实完整的信息，让他人了解并信任你</small></h3>
+			<p>目前状态</p>
+			<div class="itemmain">
+				<select js="selectMyState" style="display:none;">
+					<option value="0">在职</option>
+					<option value="1">企业家</option>
+					<option value="2">在找工作</option>
+					<option value="3">自由职业者</option>
+					<option value="4">学生</option>
+				</select>
+				<span class="ui-select reg-select-ui">
+					<input type="text" class="ui-select-input reg-text-ui" readonly="readonly" unselectable="on" /><a class="ui-select-toggle reg-button-ui"><span class="ui-select-toggle-ico"></span></a>
+				</span>
+			</div>
+			<p>公司名称</p>
+			<div class="itemmain"><input type="text" validate="isnotEmpty" autocomplete="off" js="companyName" tn="name" value="" name="companyName" class="reg-text-ui" />
+				<span class="spe-right" js="showCompanyName"></span><a href="#" style="display:none;">修改</a>
+				<input type="hidden" name="companyId" value="0" />
+				<div vderr="name" class="tips">请输入公司名称</div>
+			</div>
+			<p>在职时间</p>
+			<div class="itemmain">
+				<div>
+					<select js="selectMyState" style="display:none;">
+						<option value="">年</option>
+					</select>
+					<span class="ui-select reg-select-ui">
+						<input type="text" class="ui-select-input reg-text-ui" style="width:60px;" readonly="readonly" unselectable="on" /><a class="ui-select-toggle reg-button-ui"><span class="ui-select-toggle-ico"></span></a>
+					</span>
+					<select js="selectMyState" style="display:none;">
+						<option value="">月</option>
+					</select>
+					<span class="ui-select reg-select-ui">
+						<input type="text" class="ui-select-input reg-text-ui" style="width:40px;" readonly="readonly" unselectable="on" /><a class="ui-select-toggle reg-button-ui"><span class="ui-select-toggle-ico"></span></a>
+					</span>
+					至
+					<select js="selectMyState" style="display:none;">
+						<option value="">年</option>
+					</select>
+					<span class="ui-select reg-select-ui">
+						<input type="text" class="ui-select-input reg-text-ui" style="width:60px;" readonly="readonly" unselectable="on" /><a class="ui-select-toggle reg-button-ui"><span class="ui-select-toggle-ico"></span></a>
+					</span>
+					<select js="selectMyState" style="display:none;">
+						<option value="">月</option>
+					</select>
+					<span class="ui-select reg-select-ui">
+						<input type="text" class="ui-select-input reg-text-ui" style="width:40px;" readonly="readonly" unselectable="on" /><a class="ui-select-toggle reg-button-ui"><span class="ui-select-toggle-ico"></span></a>
+					</span>
+				</div>
+				<div vderr="name" class="tips">请输入公司名称</div>
+			</div>
+			<p>所在地区</p>
+			<div class="itemmain">
+				<div>
+					<select js="selectMyState" style="display:none;">
+						<option value="">年</option>
+					</select>
+					<span class="ui-select reg-select-ui">
+						<input type="text" class="ui-select-input reg-text-ui" style="width:92px;" readonly="readonly" unselectable="on" /><a class="ui-select-toggle reg-button-ui"><span class="ui-select-toggle-ico"></span></a>
+					</span>
+					<select js="selectMyState" style="display:none;">
+						<option value="">月</option>
+					</select>
+					<span class="ui-select reg-select-ui">
+						<input type="text" class="ui-select-input reg-text-ui" style="width:92px;" readonly="readonly" unselectable="on" /><a class="ui-select-toggle reg-button-ui"><span class="ui-select-toggle-ico"></span></a>
+					</span>
+					<select js="selectMyState" style="display:none;">
+						<option value="">月</option>
+					</select>
+					<span class="ui-select reg-select-ui">
+						<input type="text" class="ui-select-input reg-text-ui" style="width:92px;" readonly="readonly" unselectable="on" /><a class="ui-select-toggle reg-button-ui"><span class="ui-select-toggle-ico"></span></a>
+					</span>
+				</div>
+			</div>
+			<h3 class="reg-cont-stitle margin-top15e">教育背景<small class="quiet spe-left2">可以不填，但有可能会错过通过你的校友带来的职业或商业机会</small></h3>
+			<p>学校名称</p>
+			<div class="itemmain"><input type="text" validate="isnotEmpty" autocomplete="off" js="companyName" tn="name" value="" name="companyName" class="reg-text-ui" />
+				<span class="spe-right" js="showCompanyName"></span><a href="#" style="display:none;">修改</a>
+				<input type="hidden" name="companyId" value="0" />
+				<div vderr="name" class="tips">请输入公司名称</div>
+			</div>
+			<div class="reg-cont-bottom">
+				<input type="button" class="reg-ok-ui" value="创建档案" />
+			</div>
+		</div>
+	</div>
+</div>
+<div class="phome-footer">
+	<p class="phome-footer-link"><a href="#">求职</a>
+		<a href="#">招聘服务</a>
+		<span>|</span>
+		<a href="#">关于我们</a>
+		<a href="#">视频介绍</a>
+		<a href="#">创始会员</a>
+		<a href="#">成功故事</a>
+		<a href="#">联系我们</a>
+		<a href="#">加入我们</a>
+		<a href="#">优士博客</a>
+		<a href="#">官方微博</a>
+		<!--
+		<span>|</span>
+		<b><span>移动优士</span></b>
+		<a href="#"><img src="../../../bns/images/reg/ico_iphone.png" width="37" height="27" alt="iphone" /></a>
+		<a href="#"><img src="../../../bns/images/reg/ico_android.png" width="37" height="27" alt="android" /></a>
+		-->
+	</p>
+	<p>Ushi.com © 2009~2012 沪ICP备06027394号<br />
+		<a href="#" class="spe-left2">服务条款</a><a href="#" class="spe-left2">隐私声明</a><a href="#" class="spe-left2">English version</a>
+	</p>
+</div>
+
+</body>
+</html>

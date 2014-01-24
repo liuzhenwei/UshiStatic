@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>职业频道</title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+</head>
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	<div id="main" class="clearfix">
+		<div class="channel-tit">
+			<h3>职业频道</h3>
+		</div>
+		<div class="tabs-common clearfix">
+			<ul>
+				<li><a href="jobs_overview.html">职位首页 </a></li>
+				<li><a href="jobs_my.html"> 我的职位</a></li>
+				<li><a href="jobs_saved_searches.html"> 职位搜索器 </a></li>
+				<li><a href="jobs_post.html"> 发布职位</a></li>
+			</ul>
+		</div>
+		
+		<!-- Center -->
+		<div id="jobs_mainbody_wrapper" class="column-full">
+			<div class="jobs-sub-tit">
+				<h4>高级搜索</h4>
+				<span class="quiet">带 <span class="red"> * </span> 号的项目为必选项</span></div>
+			<div id="jobs_search_adv_form">
+				<form class="formstyle">
+					<ul>
+						<li>
+							<label>关键词：</label>
+							<input class="input-w-280" type="text" />
+						</li>
+						<li class="in-1-3col">
+							<label><span class="red">* </span> 职位类别：</label>
+							<div class="multi-selector-btn"><a hidden="#"><span>选择期望的职位类别</span></a></div>
+						</li>
+						<li class="in-1-3col">
+							<label><span class="red">* </span> 行业类别：</label>
+							<div class="multi-selector-btn"><a hidden="#"><span>选择期望的行业</span></a></div>
+						</li>
+						<li class="in-1-3col">
+							<label><span class="red">* </span> 工作地点：</label>
+							<div class="multi-selector-btn"><a hidden="#"><span>选择期望的工作地点</span></a></div>
+						</li>
+						<li class="in-1-line">
+							<label>工作经验：</label>
+							<select class=" input-w-180">
+								<option>请选择</option>
+							</select>
+						</li>
+						<li class="in-1-line">
+							<label>职位级别：</label>
+							<select class=" input-w-180">
+								<option>请选择</option>
+							</select>
+						</li>
+						<li class="in-1-line">
+							<label>年薪范围：</label>
+							<select class=" input-w-180">
+								<option>请选择</option>
+							</select>
+						</li>
+						<li class="in-1-line">
+							<label>公司规模：</label>
+							<select class=" input-w-180">
+								<option>请选择</option>
+							</select>
+						</li>
+						<li class="in-1-line">
+							<label>公司性质：</label>
+							<select class=" input-w-180">
+								<option>请选择</option>
+							</select>
+						</li>
+						<li class="in-1-line">
+							<label>学位要求：</label>
+							<select class=" input-w-180">
+								<option>请选择</option>
+							</select>
+						</li>
+						<li class="in-1-line">
+							<label>发布时间：</label>
+							<select class=" input-w-180">
+								<option>请选择</option>
+							</select>
+						</li>
+					</ul>
+					<p>
+						<input type="checkbox"  />
+						保存为职位搜索器（建议）</p>
+					<div class="fs-space bg-lightgrey clearfix">
+						<p class="quiet">当你创建职位搜索器后，我们会在你设置的周期内给你发送符合你要求的职位邮件。当然，你也可以根据自己的意愿设置职位邮件发送的频率。</p>
+						<ul>
+							<li>
+								<label>搜索器名称：</label>
+								<input class="input-w-280" type="text" />
+							</li>
+							<li>
+								<label>职位邮件频率：</label>
+								<div class="mult-lines-box">
+									<ul>
+										<li>
+											<select class="input-w-280">
+												<option>请选择</option>
+											</select>
+										</li>
+										<li>
+											<select class="input-w-280">
+												<option>请选择</option>
+											</select>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<p>
+						<input class="special-btn" type="submit" value=" 搜 索 " />
+					</p>
+				</form>
+			</div>
+		</div>
+		
+		<!-- Rightside -->
+		<div id="jobs_extra" class="column-3"></div>
+	</div>
+	
+	<!--#include file="footer.html"--> 
+</div>
+
+<!--弹出层-->
+<div class="fl-outer" style="width:600px; display:block; top:200px; left:300px; z-index:990;">
+	<div class="fl-block">
+		<div class="fl-title">
+			<h5>请选择职业类别</h5>
+			<span class="quiet">(最多选择5项)</span> <a class="close" href="javascript:void(0);"><span class="hide">关闭</span></a></div>
+		<div class="fl-content">
+			<form>
+				<div class="popbox-subtit">
+					<h5>已选职业类别：</h5>
+					<span class="common-selected">行政 <a class="friend-close" href="javascript:void(0);"></a></span> <span class="common-selected">广告 <a class="friend-close" href="javascript:void(0);"></a></span></div>
+				<div class="popbox-multi-sel clearfix">
+					<dl>
+						<dd>
+							<input type="checkbox" />
+							行政</dd>
+						<dd>
+							<input type="checkbox" />
+							广告</dd>
+						<dd>
+							<input type="checkbox" />
+							分析师</dd>
+						<dd>
+							<input type="checkbox" />
+							艺术/创意</dd>
+						<dd>
+							<input type="checkbox" />
+							咨询</dd>
+						<dd>
+							<input type="checkbox" />
+							客户服务</dd>
+						<dd>
+							<input type="checkbox" />
+							设计</dd>
+						<dd>
+							<input type="checkbox" />
+							物流</dd>
+						<dd>
+							<input type="checkbox" />
+							教育</dd>
+						<dd>
+							<input type="checkbox" />
+							金融</dd>
+						<dd>
+							<input type="checkbox" />
+							医疗</dd>
+						<dd>
+							<input type="checkbox" />
+							人力资源</dd>
+						<dd>
+							<input type="checkbox" />
+							信息技术</dd>
+						<dd>
+							<input type="checkbox" />
+							法律</dd>
+						<dd>
+							<input type="checkbox" />
+							制造业</dd>
+						<dd>
+							<input type="checkbox" />
+							商务拓展 </dd>
+						<dd>
+							<input type="checkbox" />
+							工程</dd>
+						<dd>
+							<input type="checkbox" />
+							管理</dd>
+					</dl>
+					<div class="btn-line a-center">
+						<input class="special-btn" type="submit" value=" 确定 " />
+						<input class="common-button" type="button" value=" 取消 " />
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!--选择行业-->
+<div class="fl-outer" style="width:600px; display:block; top:500px; left:300px;z-index:991;">
+	<div class="fl-block">
+		<div class="fl-title">
+			<h5>请选择行业类别</h5>
+			<span class="quiet">(最多选择5项)</span> <a class="close" href="javascript:void(0);"><span class="hide">关闭</span></a></div>
+		<div class="fl-content">
+			<form>
+				<div class="popbox-subtit">
+					<h5>已选行业类别：</h5>
+					<span class="common-selected">互联网 <a class="friend-close" href="javascript:void(0);"></a></span> <span class="common-selected">计算机硬件 <a class="friend-close" href="javascript:void(0);"></a></span> </div>
+				<div class="popbox-multi-sel  clearfix">
+					<dl>
+						<dt>高科技</dt>
+						<dd>
+							<input type="checkbox" />
+							互联网</dd>
+						<dd>
+							<input type="checkbox" />
+							计算机硬件</dd>
+						<dd>
+							<input type="checkbox" />
+							计算机软件</dd>
+						<dd>
+							<input type="checkbox" />
+							计算机网络设备</dd>
+						<dd>
+							<input type="checkbox" />
+							半导体</dd>
+					</dl>
+					<dl>
+						<dt>专家咨询/服务</dt>
+						<dd>
+							<input type="checkbox" />
+							互联网</dd>
+						<dd>
+							<input type="checkbox" />
+							计算机硬件</dd>
+						<dd>
+							<input type="checkbox" />
+							计算机软件</dd>
+						<dd>
+							<input type="checkbox" />
+							计算机网络设备</dd>
+						<dd>
+							<input type="checkbox" />
+							半导体</dd>
+					</dl>
+					<div class="btn-line a-center">
+						<input class="special-btn" type="submit" value=" 确定 " />
+						<input class="common-button" type="button" value=" 取消 " />
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!--工作地点-->
+<div class="fl-outer" style="width:740px; display:block; top:850px; left:300px;z-index:900;">
+	<div class="fl-block">
+		<div class="fl-title">
+			<h5>请选择工作地点</h5>
+			<span class="quiet">(最多选择5项)</span> <a class="close" href="javascript:void(0);"><span class="hide">关闭</span></a></div>
+		<div class="fl-content">
+			<form>
+				<div class="popbox-subtit">
+					<h5>已选工作地点：</h5>
+					<span class="common-selected">北京 <a class="friend-close" href="javascript:void(0);"></a></span> <span class="common-selected">上海 <a class="friend-close" href="javascript:void(0);"></a></span> <span class="common-selected">天津 <a class="friend-close" href="javascript:void(0);"></a></span> </div>
+				<div class="popbox-multi-sel clearfix">
+					<dl>
+						<dt>主要城市</dt>
+						<dd>
+							<input type="checkbox" />
+							北京</dd>
+						<dd>
+							<input type="checkbox" />
+							上海</dd>
+						<dd>
+							<input type="checkbox" />
+							广州</dd>
+						<dd>
+							<input type="checkbox" />
+							深圳</dd>
+						<dd>
+							<input type="checkbox" />
+							天津</dd>
+					</dl>
+					<dl>
+						<dt>其他地区</dt>
+						<dd><div class="local-area">
+								<input type="checkbox" />
+								<label>湖北省</label>
+							</div>
+							<div class="local-dropmenu" style="display:none;">
+								<ul>
+									<li>
+										<input type="checkbox" />
+										武汉市</li>
+									<li>
+										<input type="checkbox" />
+										宜昌市</li>
+									<li>
+										<input type="checkbox" />
+										鄂州市</li>
+									<li>
+										<input type="checkbox" />
+										荆州市</li>
+									<li>
+										<input type="checkbox" />
+										孝感市</li>
+									<li>
+										<input type="checkbox" />
+										黄石市</li>
+									<li>
+										<input type="checkbox" />
+										仙桃市</li>
+								</ul>
+							</div>
+						</dd>
+						<dd><div class="local-area">
+								<input type="checkbox" />
+								<label>湖北省</label>
+							</div>
+						</dd>
+						<dd><div class="local-area">
+								<input type="checkbox" />
+								<label>湖北省</label>
+							</div>
+						</dd>
+						<dd><div class="local-area">
+								<input type="checkbox" />
+								<label>湖北省</label>
+							</div>
+						</dd>
+						<dd><div class="local-area">
+								<input type="checkbox" />
+								<label>湖北省</label>
+							</div>
+						</dd>
+						<dd><div class="local-area">
+								<input type="checkbox" />
+								<label>湖北省</label>
+							</div>
+						</dd>
+						<dd><div class="local-area">
+								<input type="checkbox" />
+								<label>湖北省</label>
+							</div>
+						</dd>
+						<dd><div class="local-area">
+								<input type="checkbox" />
+								<label>湖北省</label>
+							</div>
+						</dd>
+						<dd><div class="local-area">
+								<input type="checkbox" />
+								<label>湖北省</label>
+							</div>
+						</dd>
+						<dd><div class="local-area">
+								<input type="checkbox" />
+								<label>湖北省</label>
+							</div>
+						</dd>
+						<dd><div class="local-area">
+								<input type="checkbox" />
+								<label>湖北省</label>
+							</div>
+						</dd>
+						<dd><div class="local-area">
+								<input type="checkbox" />
+								<label>湖北省</label>
+							</div>
+						</dd>
+					</dl>
+					<div class="btn-line a-center">
+						<input class="special-btn" type="submit" value=" 确定 " />
+						<input class="common-button" type="button" value=" 取消 " />
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

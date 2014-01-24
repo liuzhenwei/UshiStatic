@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>人脉:关注列表</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/invite.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/connections.js"></script>
+<script type="text/javascript" src="../../common/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(
+function(){
+		$(".home-bar-invite-select li").click(function()
+		{
+			var i=$(".home-bar-invite-select li").index(this);
+			$(".ivt-way").hide();
+			$(".ivt-way").eq(i).show();
+		});
+});
+
+</script>
+</head>
+
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	<div id="main">
+		<div class="tabs-common clearfix">
+			<ul>
+				<li class="current"><a href="connections_1degree.html">添加联系人</a></li>
+				<li><a href="#">找同事</a></li>
+				<li><a href="#">找同学 </a></li>
+				<li><a href="#">你可能认识</a></li>
+				<li><a href="#">你可能希望认识 </a></li>
+			</ul>
+		</div>
+		<div class="tabs-common-news clearfix clear">
+			<ul>
+				<li class="current"><a href="#">添加联系人</a></li>
+				<li><a href="#">可能认识</a></li>
+				<li><a href="#">找同学</a></li>
+				<li><a href="#">找同事</a></li>
+				<li><a href="#">邀请历史记录</a></li>
+			</ul>
+		</div>
+		<div class="column-2-2 clear">
+			<p class="ivt-text">邀请或添加身边的同事、好友和商务朋友成为你的一度联系人，你在优士的人脉网络将得到迅速的扩展。</p>
+			<div class="invite-section">
+				<div class="ivt-inner">
+					<h4>寻找已在优士上的熟人、朋友</h4>
+					<p class="quiet">你可以通过以下方式找到他们，并添加为一度联系人</p>
+					<ul class="home-bar-invite-select">
+						<li class="on"><span class="ivt-select"><span class="ivt-next"><span class="home-bar-ivt-MSN"></span>MSN联系人</span></span></li>
+						<li><span class="ivt-select"><span class="ivt-next"><span class="home-bar-ivt-Mail"></span>邮箱通讯录</span></span></li>
+						<li><span class="ivt-select"><span class="ivt-next"><span class="home-bar-ivt-OL"></span>Outlook地址薄</span></span></li>
+						<li><span class="ivt-select"><span class="ivt-next"><span class="home-bar-ivt-IN"></span>Linkedin/Xing地址薄</span></span></li>
+					</ul>
+					<div class="ivt-way">
+						<table class="form-table" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<th> <label>MSN账号：</label>
+									</th>
+									<td><input class="input-field w240" type="text" value="" maxlength="20" name=""></td>
+								</tr>
+								<tr>
+									<th> <label>MSN账号：</label>
+									</th>
+									<td><input class="input-field w240" type="text" value="" maxlength="20" name=""></td>
+								</tr>
+								<tr>
+									<th>&nbsp;</th>
+									<td><p class="bottom">
+											<input class="button" type="button" value="下一步：查找联系人">
+											<span class="ivt-note"><span class="ivt-ico-left"></span>优士网不会保存你的账号和密码，请放心使用</span></p></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="ivt-way" style="display: none;">
+						<table class="form-table" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<th> <label>MSN账号：</label>
+									</th>
+									<td><input class="input-field w240" type="text" value="" maxlength="20" name=""></td>
+								</tr>
+								<tr>
+									<th> <label>MSN账号：</label>
+									</th>
+									<td><input class="input-field w240" type="text" value="" maxlength="20" name=""></td>
+								</tr>
+								<tr>
+									<th>&nbsp;</th>
+									<td><p style="margin-bottom: 20px;">
+											<input class="button" type="button" value="下一步：查找联系人" style="display: inline-block;">
+											<span class="ivt-note"><span class="ivt-ico-left"></span>优士网不会保存你的账号和密码，请放心使用</span></p>
+										<p class="small">我们目前支持大多数主流在线邮箱，包括：</p>
+										<p> <img class="middle hand" height="28" msnivt="hotmail.com" src="http://static.ushi.cn/s/bns/images/ico_ivt_msn.png"> <img class="middle hand" height="28" msnivt="gmail.com" src="http://static.ushi.cn/s/bns/images/ico_ivt_gmail.png"> <img class="middle hand" height="28" msnivt="163.com" src="http://static.ushi.cn/s/bns/images/ico_ivt_163.png"> <img class="middle hand" height="28" msnivt="163.com" src="../../bns/images/ico_ivt_yahoo.png"> <a class="spe-left2 cnfont" href="/sns/sns!viewInvitePage.jhtml?inviteType=invitebyaddressbook">更多 &gt;&gt;</a> </p></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="ivt-way" style="display: none;">
+						<div class="ivt-outlook">
+							<p>请选择地址簿文件</p>
+							<div class="input-field file-field margin-bottom" js="csvvcf"> <span style="height:26px;overflow:hidden;display:block;"></span> <span class="ico-file">&nbsp;</span>
+								<input type="file" name="csvFile">
+							</div>
+							<p class="clear clearfix">
+								<input class="special-btn" type="submit" submitwaiting="如果你的联系人列表过长，可能需要等待2~3分钟，请耐心等待。" value="上传">
+							</p>
+							<div class="ivt-outlook-note">
+								<div class="ivt-ico-up"> </div>
+								<p>你可以从Outlook、Foxmail等邮件客户端中导出联系人列表为.csv或.vcf地址薄文件，然后选择并上传 <a href="#" class="spe-left2">地址薄导出方法详解>></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="ivt-way" style="display: none">
+						<div class="ivt-outlook">
+							<p>请选择地址簿文件</p>
+							<div class="input-field file-field margin-bottom" js="csvvcf"> <span style="height:26px;overflow:hidden;display:block;"></span> <span class="ico-file">&nbsp;</span>
+								<input type="file" name="csvFile">
+							</div>
+							<p class="clear clearfix">
+								<input class="special-btn" type="submit" submitwaiting="如果你的联系人列表过长，可能需要等待2~3分钟，请耐心等待。" value="上传">
+							</p>
+							<div class="ivt-outlook-note">
+								<div class="ivt-ico-up"> </div>
+								<p>你可以从Outlook、Foxmail等邮件客户端中导出联系人列表为.csv或.vcf地址薄文件，然后选择并上传 <a href="#" class="spe-left2">地址薄导出方法详解>></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="invite-section">
+				<div class="ivt-inner">
+					<h4>通过Email邀请</h4>
+					<p class="quiet">你可以通过以下方式找到他们，并添加为一度联系人</p>
+					<table class="tb-invite-email">
+						<col width="22%" />
+						<col width="30%" />
+						<col width="22%" />
+						<tr>
+							<th>姓名</th>
+							<th>Email地址</th>
+							<th>姓名</th>
+							<th>Email地址</th>
+						</tr>
+						<tr>
+							<td><input class="input-field w140" type="text" value="" maxlength="20" name=""></td>
+							<td><input class="input-field w180" type="text" value="" maxlength="20" name=""></td>
+							<td><input class="input-field w140" type="text" value="" maxlength="20" name=""></td>
+							<td><input class="input-field w180" type="text" value="" maxlength="20" name=""></td>
+						</tr>
+						<tr>
+							<td><input class="input-field w140" type="text" value="" maxlength="20" name=""></td>
+							<td><input class="input-field w180" type="text" value="" maxlength="20" name=""></td>
+							<td><input class="input-field w140" type="text" value="" maxlength="20" name=""></td>
+							<td><input class="input-field w180" type="text" value="" maxlength="20" name=""></td>
+						</tr>
+					</table>
+					<p class="small" style="padding-top:5px; text-align:right;"> <a js="add_email" href="javascript:;">+&nbsp;添加更多</a> </p>
+					<div class="ivt-line"></div>
+					<p class="small" style="padding-top:5px; "> <a href="javascript:;">编辑邀请信</a><span class="link-menu1"></span></p>
+					<p class="bottom">
+						<input class="button" type="submit" submitwaiting="如果你的联系人列表过长，请耐心等待..." value="发送邀请">
+					</p>
+				</div>
+			</div>
+			<div class="invite-section">
+				<div class="ivt-inner">
+					<h4>通过链接邀请</h4>
+					<div class="clearfix">
+						<div class="ivt-left">
+							<p class="quiet">A. 复制以下链接并通过QQ/MSN等发送给身边的朋友</p>
+							<p>
+								<input id="inviteLink" class="input-field w335" type="text" value="http://www.Ushi.com/invite/sns/zh_CN/0080f041-da0e-4591-bbed-48f992b8aacd" name="">
+							</p>
+							<p class="bottom">
+								<input class="button" type="submit" value="选择并复制链接">
+							</p>
+						</div>
+						<div class="ivt-right">
+							<p class="quiet">B. 将邀请链接分享到朋友圈</p>
+							<div class="bshare-custom"> <a class="bshare-sinaminiblog" title="分享到新浪微博" href="javascript:void(0);"></a> <a class="bshare-qqmb" title="分享到腾讯微博" href="javascript:void(0);"></a> <a class="bshare-qqxiaoyou" title="分享到腾讯朋友" href="javascript:void(0);"></a> <a class="bshare-renren" title="分享到人人网" href="javascript:void(0);"></a> <a class="bshare-kaixin001" title="分享到开心" href="javascript:void(0);"></a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="invite-section">
+				<div class="ivt-inner">
+					<h4>通过手机短信邀请</h4>
+					<p class="quiet">输入朋友的手机号码发送邀请，多个号码之间请以逗号","隔开</p>
+					<textarea class="textarea-field"></textarea>
+					<p class="small" style="padding-top:5px; "> <a href="javascript:;">预览短信内容</a><span class="link-menu1"></span></p>
+					<p class="bottom">
+						<input class="button" type="submit" value="发送邀请">
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- connection content --></div>
+</div>
+<!--#include file="footer.html"-->
+<div class="ivt-out">
+	<div class="tabs-sub clearfix">
+		<ul>
+			<li class="current"><a href="#">从邮件客户端导出</a> </li>
+			<li><a href="#">从社交网站中导出</a></li>
+		</ul>
+	</div>
+	<div class="help-csv clear" style="text-align: left;">
+		<ul>
+			<li> <span id="i-foxmail" class="i-icon"></span>
+				<h4>Foxmail</h4>
+				<p>点击"地址薄"-&gt;选中"工具"-&gt;"导出"-&gt;选择任何一个格式（推荐使用CSV格式）, 在弹出的对话框中点击"浏览"选择拟保存的路径和文件名-&gt;一路确定就将地址薄导出来了。</p>
+			</li>
+			<li> <span id="i-office-ol" class="i-icon"></span>
+				<h4>微软Office Outlook系列</h4>
+				<p>点击"文件"-&gt;选择"导出到文件"，单击"下一步"，选择"以逗号为分隔符(Windows)"，单击"下一步"，选择"联系人"，单击"下一步"，选择一个位置保存文件，单击"下一步"完成了。</p>
+			</li>
+			<li> <span id="i-windows-ol" class="i-icon"></span>
+				<h4>Outlook Express</h4>
+				<p>点击"文件"-&gt;选择"导出"-&gt;选择"通讯录"-&gt;选择"文本文件"-&gt;单击"导出"，在弹出框中选择CSV文件保存的位置和文件名，单击"下一步"完成导出。</p>
+			</li>
+		</ul>
+		<p class="a-right margin-top15e"><a class="special-btn" href="#">关闭</a></p>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="http://static.bshare.cn/b/buttonLite.js#uuid=3fdcc2ed-8a07-4d3c-96b1-7a4484d82a26&style=-1"></script>
+<script type="text/javascript" src="http://static.bshare.cn/b/bshareC2P.js"></script>
+<script type="text/javascript" src="http://static.ushi.cn/s/bns/js/invite.home.js?120320"></script>
+<script type="text/javascript">
+$(function(){
+	bShare.addEntry({
+	url: 'http://www.Ushi.com/invite/sns/zh_CN/0080f041-da0e-4591-bbed-48f992b8aacd',
+	title: '请加入我在优士网上的职业人脉网络！',
+	summary: '我正在优士网经营我的职业人脉网络，她可以帮助我们维护和拓展职业人脉，利用人脉解决投资、创业、求职、招聘、商业合作等各种职业需求，请成为我在优士网的一度人脉吧！'
+	});
+	$('form[checkForm="msnInvite"]').submit(function(){
+		return checkMsnInviteForm($(this));
+	});
+	$('form[checkForm="emailInvite"]').submit(function(){
+		return checkEmailInviteForm($(this));
+	});
+	$('form[checkForm="smsInvite"]').submit(function(){
+		return checkSMSInviteForm($(this));
+	});
+	});
+	var _emailIndex;
+	$(document).ready(function(){
+		_emailIndex=4;
+	});
+	$('[js="add_email"]').click(function(){
+	if ($(".tb-invite-email").find("tr").length<21)
+	{
+		var _newEmail=$('<tr><td><input type="text" class="tb1" name="snsInviteInfo.name" value="" /></td><td><input type="text" class="tb2" name="snsInviteInfo.emailAddress" value="" /></td></tr>');
+		_emailIndex++;
+		$(".tb-invite-email").append(_newEmail);
+	}
+	else
+	{
+		$(this).hide();
+	}
+})
+</script>
+</html>

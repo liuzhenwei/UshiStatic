@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+</head>
+
+<body>
+<div id="mainbody"> 
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="..../../bns/images/logo_1.png"/></div>
+		<div class="rf"> Operater：Chirsty
+			| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+	
+	<div class="lf">
+		<div id="menu_out" class="leftmenu">
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+		</div>
+	</div>
+<style type="text/css">
+span.darraw {display: inline-block; width: 13px; color: #666; overflow: hidden; text-align: center; border: 1px solid #888; background: #EEE;
+	font-size: 11px; height: 14px; padding: 0; *height: 13px; *padding-top: 1px; _height: 12px; _padding: 2px 0 0 1px;}
+.gray-title {background: #CCC; font-weight: normal; padding: 3px; margin: 0; font-size: 12px; clear: both;}
+#all-condition .listcont {zoom: 1; overflow: hidden; padding-bottom: 15px;}
+#all-condition label {margin-right: 20px;}
+#all-condition li {list-style: none none; float: left; margin: 0; padding: 0 25px 0 5px;}
+#all-condition li input {vertical-align: middle;}
+#all-condition li span.darraw {vertical-align: middle; margin-left: 3px;}
+.popmenu {background: #FFF; border: 1px solid #999; padding: 10px 0 5px 0; width: 300px; display: none;}
+.popmenu ul {margin: 0; padding: 0;}
+.popmenu li {list-style: none none; float: left; width: 70px; margin: 0; padding: 0 10px 0;}
+</style>
+<script type="text/javascript">
+$(function(){
+	$(':radio[js="showCondition"]').click(function(){
+		if( $(this).attr('ac') == 'show' ){
+			$('#all-condition').show();
+		} else {
+			$('#all-condition').hide();
+		}
+	});
+	
+	$('a[ddmenu]').each(function(){
+		var btn = $(this);
+		var obj = $('#' + btn.attr('ddmenu'));
+		btn.click(function(){
+			if( typeof window.__dropDownMenu != 'undefined' ){
+				window.__dropDownMenu.hide();
+			}
+			window.__dropDownMenu = obj;
+			var objT = btn.offset().top + btn.outerHeight();
+			var objL = btn.offset().left;
+			obj.css({top:objT, left:objL, display:'block', position:'absolute', zIndex:99, margin:0});
+			$(document).one('click',function(){
+				obj.hide();
+			});
+			obj.bind('click', function(event){
+				event.stopPropagation();
+			});
+			return false;
+		});
+	});
+	$('.popmenu :checkbox').bind('click', function(){
+		var chk = $(this),
+			pop = chk.closest('div');
+		if( pop.find(':checked').length ){
+			var a = $('a[ddmenu="' + pop.attr('id') + '"]');
+			a.closest('li').find(':checkbox').attr('checked', false);
+		}
+	});
+	$('.listcont :checkbox', '#all-condition').bind('click', function(){
+		var li = $(this).closest('li');
+		if( li.find('a').length ){
+			$(':checkbox', '#' + li.find('a').attr('ddmenu')).attr('checked', false);
+		}
+	});
+});
+</script>
+	<div class="rf">
+		<div id="container">
+			<h2>发布新广告</h2>
+			<div style="padding:10px 5px;">
+				<form action="" method="post">
+					<table width="100%" cellpadding="0" cellspacing="5" border="0" class="formedit">
+						<tr>
+							<th width="10%">标题</th>
+							<td width="90%"><input name="textfield" type="text" id="textfield" size="50" /></td>
+						</tr>
+						<tr>
+							<th width="10%">URL</th>
+							<td width="90%"><input name="textfield" type="text" id="textfield" size="50" /></td>
+						</tr>
+						<tr>
+							<th width="10%">广告语</th>
+							<td width="90%"><p><label>中文：</label><br />
+									<input name="textfield" type="text" size="50" /></p>
+								<p><label>英文：</label><br />
+									<input name="textfield" type="text" size="50" /></p></td>
+						</tr>
+						<tr>
+							<th width="10%">内容</th>
+							<td width="90%"><p><label>中文：</label><br />
+									<textarea name="" cols="60" rows="8"></textarea></p>
+								<p><label>英文：</label><br />
+									<textarea name="" cols="60" rows="8"></textarea></p></td>
+						</tr>
+						<tr>
+							<th width="10%">推送对象</th>
+							<td width="90%"><p><label><input name="radio" type="radio" value="0" checked="checked" ac="hide" js="showCondition" />
+									全部</label></p>
+								<p><label><input type="radio" name="radio" value="1" ac="show" js="showCondition" />
+									按条件筛选</label></p>
+								<div id="all-condition">
+									<p class="extra">(此广告将推送给符合以下条件的会员,须至少选择一项。)</p>
+									<p class="gray-title">会员类别</p>
+									<p>
+										<label><input type="checkbox" name="checkbox" />
+											普通会员</label>
+										<label><input type="checkbox" name="checkbox2" />
+											高级会员（付费会员）</label>
+									</p>
+									<p class="gray-title">人脉数量</p>
+									<p>
+										<label>
+											<input type="radio" name="radio" value="radio" />
+											小于1</label>
+										<label>
+											<input type="radio" name="radio" value="radio2" />
+											小于10</label>
+										<label>
+											<input type="radio" name="radio" value="radio2" />
+											小于20</label>
+									</p>
+									<p class="gray-title">地区分布</p>
+									<div class="listcont">
+										<ul>
+											<li><input name="" type="checkbox" value="" /> <span>上海</span></li>
+											<li><input name="" type="checkbox" value="" /> <span>北京</span></li>
+											<li><input name="" type="checkbox" value="" /> <span>天津</span></li>
+											<li><input name="" type="checkbox" value="" /> <span>重庆</span></li>
+											<li><input name="" type="checkbox" value="" /> <a href="#" ddmenu="loc_guangdong">广东<span class="darraw">▼</span></a></li>
+											<li><input name="" type="checkbox" value="" /> <a href="#" ddmenu="loc_jiangsu">江苏<span class="darraw">▼</span></a></li>
+											<li><input name="" type="checkbox" value="" /> <a href="#" ddmenu="loc_zhejiang">浙江<span class="darraw">▼</span></a></li>
+										</ul>
+									</div>
+									<p class="gray-title">行业类别</p>
+									<div class="listcont">
+										<ul>
+											<li><input name="" type="checkbox" value="" /> <a href="#" ddmenu="loc_guangdong">广东<span class="darraw">▼</span></a></li>
+											<li><input name="" type="checkbox" value="" /> <a href="#" ddmenu="loc_jiangsu">江苏<span class="darraw">▼</span></a></li>
+											<li><input name="" type="checkbox" value="" /> <a href="#" ddmenu="loc_zhejiang">浙江<span class="darraw">▼</span></a></li>
+										</ul>
+									</div>
+									<p class="gray-title">职业类别</p>
+									<div class="listcont">
+										<ul>
+											<li><input name="" type="checkbox" value="" /> <span>商务拓展</span></li>
+											<li><input name="" type="checkbox" value="" /> <span>信息技术</span></li>
+											<li><input name="" type="checkbox" value="" /> <span>产品管理</span></li>
+											<li><input name="" type="checkbox" value="" /> <span>市场营销</span></li>
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th width="10%">&nbsp;</th>
+							<td width="90%"><p class="mt10"><input name="" type="submit" value="保存" />
+								<input name="" type="button" value="取消" /></p>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!--footer begin-->
+	<div id="footer">
+		<div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+	</div>
+	<!--footer end--> 
+</div>
+
+<div id="loc_guangdong" class="popmenu">
+	<ul>
+		<li><input name="" type="checkbox" value="" /> <span>上海</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>北京</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>天津</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>重庆</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>上海</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>北京</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>天津</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>重庆</span></li>
+	</ul>
+</div>
+
+<div id="loc_jiangsu" class="popmenu">
+	<ul>
+		<li><input name="" type="checkbox" value="" /> <span>北京</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>天津</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>重庆</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>北京</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>天津</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>重庆</span></li>
+	</ul>
+</div>
+
+<div id="loc_zhejiang" class="popmenu">
+	<ul>
+		<li><input name="" type="checkbox" value="" /> <span>上海</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>天津</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>上海</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>天津</span></li>
+		<li><input name="" type="checkbox" value="" /> <span>重庆</span></li>
+	</ul>
+</div>
+
+</body>
+</html>

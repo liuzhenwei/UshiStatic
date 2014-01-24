@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../../../common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../../../common/js/widget.js"></script>
+<script type="text/javascript" src="../../../common/js/common.js"></script>
+<script type="text/javascript" src="../../../bns/js/openreg.js"></script>
+</head>
+
+<body id="page_public" class="public-home">
+
+	<div class="container" style="width:950px;">
+		<div class="ph-main">
+			<span class="corner-tl"></span><span class="corner-tr"></span>
+			<span class="corner-bl"></span><span class="corner-br"></span>
+			<div id="header_public_home" class="clearfix">
+				<div id="logo"><img src="http://192.168.10.181/static/bns/images/youshi_logo_ph.png" />
+					<div class="openreg-home-login">
+						<p><a href="javascript:void(0)" js="top_menu_set_zh" class="spe-right2">中文版</a>
+							|
+							<a href="javascript:void(0);" js="top_menu_set_en" class="spe-left2">English</a></p>
+						<div class="quiet">已经是优士会员了？<a href="/login.jhtml" class="blue large spe-left3">登录</a></div>
+					</div>	
+				</div>
+			</div>
+			<div class="ph-reg-cont">
+				<div class="ph-reg-inner clearfix">
+					<div class="ph-mainpic-reg">
+						<p style="padding:20px 0 10px 20px;"><img src="../../../bns/images/ban_ph_reg_cn.jpg" width="500" height="224" /></p>
+					</div>
+					<div class="ph-form-cont">
+						<div class="ph-regform">
+							<form action="/user/openRegU!saveBasicProfile.jhtml?site=0" method="post">
+								<input type="hidden" name="basicProfile.emailstatus" value="0" id="hiddenEmail"/>
+								<input type="hidden" name="lg" value="" id="lg"/>
+								<input type="hidden" name="basicProfile.status" value="0" />
+								<div class="form-item clearfix">
+									<label>姓名：</label>
+									<div class="itemmain">
+										<input type="text" name="basicProfile.fullname" maxlength="64" value="" id="userName" class="inputtext" autocomplete="off"/>
+									</div>
+								</div>
+								<div class="form-item clearfix">
+									<label>Email：</label>
+									<div class="itemmain">
+										<input type="text" name="basicProfile.email" maxlength="64" value="" id="userEmail" class="inputtext" autocomplete="off"/>
+									</div>
+								</div>
+								<div class="form-item clearfix">
+									<label>密码：</label>
+									<div class="itemmain">
+										<input type="password" name="basicProfile.passwd" maxlength="32" id="userPass" class="inputtext" autocomplete="off"/>
+									</div>
+								</div>
+								<input type="hidden" name="basicProfile.mobile" value="" />
+								<div class="form-item-nolabel">
+									<input id="userService" class="checked" type="checkbox" value="" checked="checked"/>
+									我已经阅读并同意<a href="/doc.jhtml?key=term_of_service" target="_blank">服务条款</a></div>
+								<div class="a-center pd-top">
+									<input type="submit" value="立即加入" class="ph-submit" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ph-search-cont border-bottom clearfix">
+				<form action="/user/openRegU!searchProfile.jhtml" method="post" target="_blank" class="float-right openreg-home-searchform">
+					<input type="text" defaultTips="搜索优士网上职业人脉…" class="input spe-left2" name="form.keyword" style="width:270px;" />
+					<input type="submit" class="special-btn" style="margin-top:-3px" value="查找" />
+				</form>
+				<p style="width:480px;margin-bottom:0;">优士网是一个汇聚了中国职业精英、创业者和企业家的职业社交网络平台,能够帮助你有效拓展行业人脉,取得更大的职业成功。
+					<a href="http://192.168.10.181/static/help/html/helpcenter.html" target="_blank" class="spe-left">了解如何使用</a>
+				</p>
+			</div>
+			<div class="ph-media-cont">
+				<p class="quiet">优士网是中国高质量职业社交网络第一品牌，并由<a href="/doc.jhtml?key=fm_cm">100位各行业杰出的商业领袖</a>在中国共同发起</p>
+				<div>
+					<a href="http://192.168.10.181/static/download/ushipress/brider.jpg" target="_blank"><img src="http://192.168.10.181/static/bns/images/home_logos/zmhb.png" class="spe-right2" alt="" /></a>
+					<a href="http://www.reuters.com/article/2011/05/30/uk-ushi-idUSLNE74T00Q20110530" target="_blank"><img src="http://192.168.10.181/static/bns/images/home_logos/rt.png" class="spe-right2" alt="" /></a>
+					<a href="http://192.168.10.181/static/download/ushipress/lianhezaobao.jpg" target="_blank"><img src="http://192.168.10.181/static/bns/images/home_logos/lhzb.png" class="spe-right2" alt="" /></a>
+					<a href="http://192.168.10.181/static/download/ushipress/video2.html" target="_blank"><img src="http://192.168.10.181/static/bns/images/home_logos/cbn.png" class="spe-right2" alt="" /></a>
+					<a href="http://blogs.forbes.com/rebeccafannin/2011/04/20/whats-left-to-clone-in-china/" target="_blank"><img src="http://192.168.10.181/static/bns/images/home_logos/fb.png" alt="" /></a>
+					<a href="http://www.fastcompany.com/1756431/who-is-the-linkedin-of-china" target="_blank"><img src="http://192.168.10.181/static/bns/images/home_logos/fm.png" class="spe-right2" alt="" /></a>
+					<a href="http://192.168.10.181/static/download/ushipress/video4.html" target="_blank"><img src="http://192.168.10.181/static/bns/images/home_logos/cctv.png" class="spe-right2" alt="" /></a>
+					<a href="http://192.168.10.181/static/download/ushipress/video5.html" target="_blank"><img src="http://192.168.10.181/static/bns/images/home_logos/ics.png" class="spe-right2" alt="" /></a>
+					<a href="http://www.ebusinessreview.cn/articledetail-66239.html" target="_blank"><img src="http://192.168.10.181/static/bns/images/home_logos/hbrc.png" class="spe-right2" alt="" /></a>
+				</div>
+			</div>
+		</div>
+
+		
+		<div id="footer_public_home">
+			<div id="footer">
+				<ul class="common-nav divide">
+					<li><a href="/about">关于我们</a></li>
+					<li><a href="/founding-and-charter-members">创始会员</a></li>
+					<li><a href="/contact">联系我们</a></li>
+					<li><a href="/doc.jhtml?key=join_us">加入我们</a></li>
+					<li><a href="/press">媒体中心</a></li>
+					<li><a href="/doc.jhtml?key=success_stories">成功故事</a></li>
+					<li><a href="/doc.jhtml?key=privacy_policy">隐私声明</a></li>
+					<li><a href="/doc.jhtml?key=term_of_service">服务条款</a></li>
+					<li class="divide-none"><a href="http://blog.ushi.cn" target="_blank">优士博客</a></li>
+				</ul>
+				<p class="clear"><a href=http://www.miibeian.gov.cn/ target=_blank>沪ICP备06027394号</a> Ushi.cn © 版权所有 2009~2011</p> 
+			</div>
+		</div>
+	</div>
+
+	<a href="/summerdrink?src=index" target="_blank" class="topic-haagendazs-home" href="">Haagendazs</a>
+	
+	<div id="joinTitleTip" style="padding:3px 8px 0 8px;background:#fff;display:none;">
+		<ul>
+			<li class="margin-btm05e">1 <b class="large">财富</b> 获得更好的工作和商业机会</li>
+			<li class="margin-btm05e">2 <b class="large">人脉</b> 通过你认识的人结识你需要的人</li>
+			<li class="margin-btm05e">3 <b class="large">信息</b> 实时获取人脉动态和行业信息</li>
+		</ul>
+	</div>
+ 
+</body>
+
+</html>

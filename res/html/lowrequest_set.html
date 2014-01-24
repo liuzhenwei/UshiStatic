@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>低优先级-一度请求</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="/js/friendsSelect.js?4.11"></script>
+<script type="text/javascript" src="/js/feed.js?4.11"></script>
+<script type="text/javascript" src="/js/msg.js?4.11"></script>
+<script type="text/javascript" src="/js/jquery-ui-1.7.3.min.js"></script>
+
+
+<style type="text/css">
+
+</style>
+</head>
+
+<script type="text/javascript">
+	$(function() {
+		function changeLevel(val){
+			var url = ""
+			var levalState = 0;
+			var selChecked = '';
+			//var val = $("#slider-vertical" ).slider("value");
+			if((val<50)){
+				$('.lowestSet').siblings().css("display",'none');
+				$('.lowestSet').css("display","block");
+				selChecked = '';
+				levalState = 0;
+			}else if((val>=50)&&(val<80)){
+				$('.lowerSet').siblings().css("display",'none');
+				$('.lowerSet').css("display",'block');
+				levalState=1;
+				selChecked = ''
+			}else{
+				$('.height_Set').siblings().css("display",'none');
+				$('.height_Set').css("display",'block');
+				var Arr = [];
+				$('.setBroad :checked').each(function(){
+					Arr.push($(this).attr('inputValue'))
+				})
+				selChecked = Arr.join(',')
+				levalState=2;
+			}
+			
+			$.post(url,{'levalState':levalState,'selChecked':selChecked})
+		}
+		
+		
+		$( "#slider-vertical" ).slider({
+			orientation: "vertical",
+			range: "min",
+			min: 0,
+			max: 100,
+			//value: 20,
+			slide: function( event, ui ) {
+				changeLevel(ui.value);
+			}
+		});
+		changeLevel($("#slider-vertical" ).slider( "value" ));
+		
+		$('.drageOneSetInstr .link-menu').bind('click',function(){
+			$('.setBroad').toggle();
+		})
+		
+		$('.setBroad').bind('click',function(){
+			changeLevel(80);
+		});
+		
+		$('.setBroad :checkbox').bind('click',function(){
+			if($('.setBroad :checked').length==0){
+				$(this).attr("checked",true);
+				return false;
+			}
+		})
+		
+	});
+</script>
+<body>
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+
+		
+	<div id="main" class="clearfix">
+	    <div class="channel-tit"><h3>隐私设定</h3></div> 
+	    <div class="tabs-common clearfix">
+	      <ul>
+	        <li><a href="#">联系选项 </a></li>
+	        <li><a href="#"> 个人档案</a></li>
+	        <li><a href="#"> 人际动态 </a></li>
+	        <li><a href="#"> 群组设定</a></li>
+	         <li><a href="#"> 邮件接收</a></li>
+	        <li class="current"><a href="#"> 人脉设置</a></li>
+	      </ul>
+	    </div>
+	    
+	    <div class="spe-left2">
+	    	<h5 class="pd-bottom pd-top">你可以拖动下方的滑块，对自己收到的一度人脉请求进行控制：</h5>
+	    	<div class="yinsiDrage">
+	    	
+	    		<div class="float-left">
+					<div class="slide">
+						<div id="slider-vertical" class="ui-slider">
+							<div class="ui-slider-range ui-slider-range-min ui-widget-header"></div>
+							<a href="#" class="ui-slider-handle ui-state-default ui-corner-all"></a>
+						</div>
+				
+					</div>
+				</div>
+				
+				<div class="clearfloat quiet drageOneSetInstr">
+					<div class="lowestSet" style="display:none">
+						<h4>广泛</h4>
+						<h5>我希望在优士上广交朋友</h5>
+						<ul class="list-disc">
+							<li>你可以接收到各种类型的一度人脉请求</li>
+							<li>不启用优先级规则，只要有一度人脉请求就通知我进行处理</li>
+						</ul>
+					</div>
+					
+					<div class="lowerSet" style="display:none">
+						<h4>适中</h4>
+						<h5>联络老朋友，同时也希望结识新朋友</h5>
+						<ul class="list-disc">
+							<li>你可以接收到各种类型的一度人脉请求</li>
+							<li>启用优先级规则，对你收到的一度人脉请求进行低优先级免打扰处理</li>
+						</ul>
+						<h5 class="margin-top">推荐使用</h5>
+					</div>
+					
+					<div class="height_Set" style="display:none">
+						<h4>谨慎</h4>
+						<h5>仅希望与认识的朋友联络，不想受到无关的打扰</h5>
+						<ul class="list-disc">
+							<li><span class="display-inline-block">只接受以下形式的一度人脉请求</span><a href="#" class="link-menu display-inline-block">设置</a></li>
+							<li class="setBroad pd-top">
+								<label><input type="checkbox" checked inputValue="1" />知道邮件</label>
+								<label><input type="checkbox" checked inputValue="2" />朋友介绍</label>
+								<label><input type="checkbox" checked inputValue="3" />同学</label>
+								<label><input type="checkbox" checked inputValue="4" />商务会议</label>
+								<label><input type="checkbox" checked inputValue="5" />引荐</label>
+								<label><input type="checkbox" checked inputValue="6" />同事</label>
+								<label><input type="checkbox" checked inputValue="7" />商务合作</label>
+							</li>
+							<li>启用优先级规则，对你收到的一度人脉请求进行低优先级免打扰处理</li>
+						</ul>
+					</div>
+				
+				</div>
+				
+	    	</div>
+	    </div>
+
+	</div>
+	<!--#include file="footer.html"-->
+</div>
+
+</body>
+</html>

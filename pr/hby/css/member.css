@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+body {background:url(../images/bg_body.jpg) repeat-x left top; text-align:center;}
+.hby-header {background:url(../images/bg_header.jpg) no-repeat center top;}
+.hby-header-cont {width:996px; height:468px; position:relative; margin:0 auto;}
+.hby-login {background:url(../images/ico_login.png) no-repeat left center; padding-left:20px; display:inline-block;  right:5px; top:7px;}
+.hby-share {color:#FFF; position:absolute; left:745px; top:347px; font-weight:bold;}
+.hby-menu {position:absolute; left:30px; bottom:9px;}
+.hby-menu li {float:left; margin-right:10px;}
+.hby-menu li a {display:block; width:104px; height:52px; line-height:52px; font-size:14px; font-weight:bold; color:#fff;}
+.hby-menu li.current a, .hby-menu li a:hover {background:url(../images/bg_menu.png) no-repeat; text-decoration:none;}
+
+#main {width:996px; margin:0 auto;}
+.hby-member-info {background:url(../images/bg_member.png) no-repeat; padding:17px 32px 0 29px; width:935px;}
+.hby-location {text-align:right; margin:15px 33px 0 0;}
+.hby-vcard-cont {border:5px solid #fafff2; background:#ebf3e0; padding:15px;}
+.hby-vcard-cont dl {margin-left:150px;}
+.hby-vcard-cont dt {line-height:1.5em!important;}
+.hby-ilike,.hby-ilike_dis{width:115px; height:36px; display:inline-block; background:url(../images/btn_ilike.png) no-repeat; text-indent:-9999px;}
+.hby-ilike_dis{background:url(../images/btn_ilike_dis.png) no-repeat; width:121px; height:35px; cursor:default;}
+
+.hby-viewprofile {background:url(../images/ico_ushi.png) no-repeat; padding-left:20px; height:16px; display:inline-block; line-height:16px;}
+
+.hby-content {padding:15px 32px 0 29px; width:935px; text-align:left;}
+.hby-content .tabs-common {background:#acc791 url(../images/bg_tab.png) repeat-x left top;}
+.hby-content .tabs-common ul li a {background:#dce8cf; color:#608537;}
+.hby-content .tabs-common ul li.current a {background:#fff; color:#222;}
+
+.hby-content .event-content {margin-left:80px;}
+
+.hby-post {padding-top:20px;}
+.hby-post textarea, .hby-post .formtext {width:580px;}
+.hby-post textarea {height:100px;}
+.hby-submit {border:0; width:122px; height:39px; background:url(../images/btn_submit.png) no-repeat; cursor:pointer;}
+
+.hby-footer {padding-top:30px;}
+
+.hby-sort-action a {color:#333;}
+.hby-sort-action a:hover {color:#333;}
+
+.hby-member-list img {float:none;}
+.hby-member-list dl {margin-left:0; padding-top:10px; min-height:80px;}
+.hby-member-list dt {line-height:1.5em;}
+.hby-member-list li {width:210px; padding-left:0;}
+

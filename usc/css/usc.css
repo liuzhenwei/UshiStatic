@@ -1,0 +1,93 @@
+body {font-family:"microsoft yahei"; background:url(../images/bg_header.png) repeat-x left top;}
+
+.usc-login { width:960px; text-align:center;}
+.usc-login .usc-login-title { margin-bottom:40px; color:#0066aa; font-size:46px;}
+.usc-login .usc-login-left { float:left; width:404px; height:252px; margin-right:40px; background:url(../images/bg_login.png);}
+.usc-login .usc-login-right { float:left; color:#999; text-align:left;}
+.usc-login .usc-login-right .ulr-title { font-size:24px; margin-bottom:20px;}
+.usc-login .usc-login-right .ulr-frame { width:358px; height:33px; border:1px solid #e0e0e0; font-size:16px; padding:0;}
+.usc-login .usc-login-right .ulr-frame span { display:inline-block; width:35px; height:23px; line-height:22px; padding:5px;}
+.usc-login .usc-login-right .ulr-frame input { width:298px; height:23px; border:0; padding:5px 0; background:transparent;}
+.usc-login .usc-login-right .ulr-button { margin-top:20px;}
+.usc-login .usc-login-right .btn-login { display:inline-block; width:114px; height:30px; padding:0; border:0; background:url(../images/btn_login.png); vertical-align:middle; cursor:pointer;}
+
+#wrapper_usc { margin:0 auto; text-align:center;}
+#wrapper_usc #header { border-bottom:0; width:1240px; margin:0 auto 20px auto; text-align:left; background-color:transparent; overflow:hidden; zoom:1; height:auto !important;}
+
+.usc-hd-info {height:60px;}
+.usc-hd-info .logo {padding:8px;}
+.usc-hd-info .logo h2 {margin:8px 0 8px 80px; line-height:1.1em; border-left:1px solid #ddd; padding-left:10px; color:#0066aa; letter-spacing:2px; font-size:22px;}
+.usc-hd-info .logo h2 small {font-size:13px; font-weight:normal; letter-spacing:0;}
+.usc-hd-info .userinfo {float:right; font-size:12px; color:#999; padding:8px 5px;}
+.usc-hd-info .userinfo .ico-coin { display:inline-block; width:15px; height:15px; background:url(../images/ico_coin.png); vertical-align:middle;}
+
+.usc-hd-form {width:1240px; margin:0 auto; font-size:14px;}
+
+.usc-hd-form .select-location, .usc-upload .select-location {float:left; height:30px; color:#222; font-size:16px; vertical-align:middle; padding:3px 15px 0 15px;}
+.usc-hd-form .select-location .btn-location, .usc-upload .select-location .btn-location {display:inline-block; width:140px; height:20px; padding:2px 10px; border:1px solid #ddd; color:#222; font-size:12px; vertical-align:top; cursor:pointer; background:url(../images/bg_location.png) no-repeat right bottom;}
+.usc-hd-form .select-location .btn-location:hover, .usc-upload .select-location .btn-location:hover {text-decoration:none;}
+.usc-hd-form input {margin-left:0;}
+.usc-hd-form input[type=checkbox] {top:0px; vertical-align:middle;}
+.usc-hd-form .filter-title {font-size:16px;}
+
+.usc-sch-menu {border-bottom:4px solid #06a;}
+
+.usc-sch-top h2 {float:left; text-align:center; padding:0 25px 10px 25px; margin:0; height:30px; line-height:30px; color:#fff; font-size:16px; font-weight:normal; background-color:#06a;}
+.usc-sch-top .tips-location {float:left; padding:5px 20px 0 20px; margin:0;}
+.usc-sch-top .float-right {float:right; margin:0 0 0 30px;}
+
+.usc-sch-main {background-color:#06a; padding:10px 0; color:#FFF;}
+.usc-sch-main .filter-text { width:180px; height:30px; line-height:28px; margin-bottom:5px;}
+.usc-sch-main a.filter-text { display:block; width:250px; cursor:pointer; height:20px; padding:5px 10px; background:#FFF url(../images/bg_industry.png) no-repeat right bottom; border: 1px solid #BBBBBB; color:#999; font-size:14px;}
+.usc-sch-main a.filter-text:hover {text-decoration:none;}
+
+.usc-sch-main .filter-frame {float:left; min-height:130px; padding:0 20px; background:url(../images/bg_header_frame.png) no-repeat right center;}
+.usc-sch-main .filter-frame p { margin-bottom:5px;}
+.usc-sch-main .filter-frame select {padding:7px 5px 7px 3px;}
+.usc-sch-main .filter-button { margin-top:20px; text-align:center;}
+.usc-sch-main .filter-button a { margin-right:20px;}
+
+.usc-sch-main .filter-block {padding:5px 20px;}
+.usc-sch-main .filter-block .inline-block {margin:0; float:left; margin:0 20px 0 0; *display:inline; line-height:32px; height:34px; vertical-align:middle;}
+.usc-sch-main .filter-block .filter-text {margin:0; height:30px\9; line-height:29px\9;}
+.usc-sch-main .select-location {padding:0 5px; height:34px;}
+.usc-sch-main .select-location .btn-location {background-color:#fff; height:27px; line-height:25px; font-size:14px;}
+
+.usc-sch-button {text-align:center; margin:20px auto;}
+#wrapper_usc .btn-excel {border:0; cursor:pointer; display:inline-block; width:104px; height:33px; background:url(../images/btn_excel.png);}
+#wrapper_usc .btn-search {border:0; cursor:pointer; display:inline-block; width:104px; height:33px; background:url(../images/btn_search.png);}
+
+#wrapper_usc #main { max-width:1240px; width:auto; margin:20px auto; }
+#wrapper_usc #main .ico-person { display:inline-block; width:16px; height:16px; background:url(../images/ico_person.png); vertical-align:middle;}
+#wrapper_usc #main table { width:100%;}
+#wrapper_usc #main table tr {background-color:#fff;}
+#wrapper_usc #main table tr.current {border:0 solid #afd4ec; background-color:#f0fafc;}
+#wrapper_usc #main table th { padding:3px 5px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; background-color:#f6f6f6;}
+#wrapper_usc #main table td { padding:10px 5px;}
+#wrapper_usc #main table td.data-loading {background:url(../../common/images/loading.gif) no-repeat 155px 33px;}
+#wrapper_usc #main table .btn-view { display:inline-block; width:152px; height:17px; line-height:16px; padding:3px 5px 3px 25px; background:url(../images/btn_view.png); color:#FFF; vertical-align:middle;}
+#wrapper_usc #main table .btn-view:hover {text-decoration:none;}
+#wrapper_usc #main table a.fullname:visited {color:#999}
+#wrapper_usc #main table input[type="checkbox"], #wrapper_usc #main table input[type="radio"] {top:0;}
+
+.usc-sub-menu {margin-bottom:20px;}
+.usc-sub-menu li {float:left; margin-right:20px; padding:5px 15px; font-size:14px;}
+.usc-sub-menu li.current {background:#ddd; font-weight:bold;}
+
+#footer { width:1240px; padding-top:10px; margin:60px auto 10px auto;}
+
+.pages {line-height:1.2em;}
+
+.usc-list-table td {border-bottom:1px solid #e3e3e3;}
+.usc-list-table .usc-list-summary {width:310px; overflow:hidden; text-overflow:ellipsis;}
+
+.usc-upload {width:550px; padding:20px; background-color:#fff;}
+.usc-upload p.small {margin:2px 0 0 0;}
+.usc-upload input[type=checkbox] {top:0; vertical-align:middle;}
+.usc-upload .formtext {width:300px; font-size:14px;}
+.usc-upload .select-location {float:none; padding:0; height:auto; line-height:auto;}
+.usc-upload .select-location .btn-location {border-color:#bbb; width:290px;}
+
+/* 覆盖原css */
+.popbox-multi-sel dd input {margin:3px 3px 0 3px;}
+.button {white-space:pre;}

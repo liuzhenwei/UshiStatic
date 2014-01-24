@@ -1,0 +1,11 @@
+  `EMAIL` varchar(64) NOT NULL,
+  `PASSWD` char(32) NOT NULL COMMENT 'md5  Algorithm',
+  `FULLNAME` varchar(64) NOT NULL,
+  `DOMAIN` varchar(32) DEFAULT NULL,
+  
+  `MOBILE` varchar(16) DEFAULT NULL,
+  `CAREERBRIEF` varchar(64) NOT NULL,
+  `BLOG` varchar(255) DEFAULT NULL,
+  `EXPERTSKILL` varchar(255) DEFAULT NULL,
+  `INTEREST` varchar(255) DEFAULT NULL,
+  `HORTATION` varchar(255) DEFAULT NULL,

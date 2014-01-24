@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	
+	<div id="main" class="clearfix">
+		<div class="topic-container topic-invitation-campaign">
+			<div class="topic-title-img"><img src="..../../bns/images/promo/invitation/ban.jpg" width="960" /></div>
+			<div class="tabs-common clearfix">
+				<ul>
+					<li class="current"><a href="#">活动介绍</a></li>
+					<li><a href="topic_invitation_winner.html">获奖名单</a></li>
+				</ul>
+			</div>
+			<div class="topic-block spe-left2 spe-right2 clearfix">
+				<div class="common-box2">
+					<div class="cb2-top">
+						<div class="cb2-top-inner"></div>
+					</div>
+					<div class="cb2-cont"><img src="..../../bns/images/promo/invitation/ban_intro.png" width="271" height="213" class="float-right" />
+						<h4 class="green">如何参与？</h4>
+						<p class="topic-ic-intro-a">即日起至7月31日，您只须成功邀请10位朋友注册成为优士会员，即可获得免费一个月的"白金商务会员"资格，如果您再成功邀请10位朋友，那么"白金商务会员"资格的免费时间将延长再延长一个月。(最高可累计获得3次)</p>
+						<p class="topic-ic-intro-b">每月一个ipad2大奖，如果您的成功邀请人数在下月第一天的0时排在第一位，那么您就获得这个月的Ipad2大奖。</p>
+					</div>
+					<div class="cb2-btm">
+						<div class="cb2-btm-inner"></div>
+					</div>
+				</div>
+				<div class="topic-ic-invite-cont">
+					<h4 class="green margin-btm15e">您可以通过以下方式邀请朋友并参加活动:</h5>
+					<div class="topic-ic-invite-block" jsWidget="tabs">
+						<ul>
+							<li><a href="#" class="select">最简单的方式</a></li>
+							<li><a href="#">最有效的方式</a></li>
+						</ul>
+						<div class="topic-ic-invite clearfix">
+							<div class="float-left border-right" style="width:320px;padding-right:60px;">
+								<h5>批量邀请MSN或网站邮箱通讯录中的联系人</h5>
+								<form checkform="Msn" method="post" action="/pr/ipad2!importmsn.jhtml">
+									<input type="hidden" name="sendType" value="1" id="type"/>
+									<input type="hidden" name="email" value="" id="email"/>
+									<p class="margin-top15e">
+										<label>MSN或Email的登录ID:</label>
+										<span js="emailerr" style="display: none;" class="red spe-left2">无效的email地址</span></p>
+									<div class="margin-btm15e clearfix">
+										<input type="text" class="input-field input-w-160 float-left" maxlength="64" js="email1">
+										<label class="large float-left spe-left-pd spe-right-pd">@</label>
+										<div id="showEmailList" class="input-field w120 float-left select-field" js="email2"> <span>hotmail.com</span> <span class="ico-select">&nbsp;</span> </div>
+									</div>
+									<p><label>密码:</label></p>
+									<p>
+										<input type="password" class="input-field w305" name="passwd">
+									</p>
+									<div class="btn-block">
+										<input type="submit" submitwaiting="如果您的联系人列表过长，可能需要等待2~3分钟，请耐心等待。" value="下一步：选择联系人" class="special-btn large-btn">
+										<p class="pd-top05e date">优士网不会保存您的账号和密码 </p>
+									</div>
+								</form>
+								<div class="btm-block border-top">
+									<p class="quiet margin-top">我们目前支持的主流在线邮箱包括： </p>
+									<p><img height="28" msnivt="hotmail.com" class="middle hand" src="../../bns/images/ico_ivt_msn.png"><img height="28" msnivt="gmail.com" class="middle hand" src="../../bns/images/ico_ivt_gmail.png"><img height="28" msnivt="163.com" class="middle hand" src="../../bns/images/ico_ivt_163.png"> <a class="spe-left2 cnfont" href="/sns/sns!viewInvitePage.jhtml?inviteType=invitebyaddressbook">更多 &gt;&gt;</a></p>
+								</div>
+							</div>
+							<div class="float-left" style="padding-left:50px;width:320px;">
+								<h5>输入Email地址邀请：</h5>
+								<form checkform="Email" method="post" action="/sns/sns!inviteUsers.jhtml">
+									<input type="hidden" name="sendType" value="3" id="type"/>
+									<input type="hidden" value="INVITEBYMAIL" name="snsInviteInfo.type">
+									<div class="margin-top15e">
+										<p class="float-right"><img class="middle" src="../../bns/images/promo/ecard/ico_download.png">
+											<a onclick="loadEmailList()" href="javascript:void(0)">导入之前未接收邀请的朋友</a></p>
+										<p><label>请在此处输入电邮地址</label>
+											<span js="emailerr" style="display: none;" class="red spe-left2">包含无效的email地址</span>
+										</p>
+										<div style="position:relative;" id="postEmailList">
+											<textarea name="emaillist" class="input-field" style="height:50px;"></textarea>
+										</div>
+									</div>
+									<div class="margin-top05e margin-bottom">
+										<a onclick="$('#inviteLetter').toggle();" href="javascript:void(0)">个性化邀请信内容 </a>
+									</div>
+									<div style="display: none;" id="inviteLetter">
+										<p><label>邀请信标题:</label></p>
+										<p><s:textfield name="title" cssClass="input-field" /></p>
+										<p><label>邀请信正文:</label></p>
+										<p><textarea name="body" class="input-field" style="height:100px;">${body }</textarea></p>
+									</div>
+									<p>
+										<input type="submit" value="发送邀请" submitwaiting="如果您邀请邮件地址过多，可能需要等待2~3分钟，请耐心等待。" class="special-btn large-btn">
+									</p>
+								</form>
+							</div>
+						</div>
+						<div class="topic-ic-invite clearfix" style="display:none;">
+							<div class="float-left border-right" style="width:320px;padding-right:60px;">
+								<h5>批量邀请Outlook等邮件客户端中的联系人：</h5>
+								<form enctype="multipart/form-data" method="post" action="/sns/sns!importCSV.jhtml">
+									<input type="hidden" name="sendType" value="2" />
+									<p js="csverr" class="margin-top15e quiet"> 从Outlook等电子邮件客户段中导出并上传联系人文件，文件格式必须是 .csv，.txt，或.vcf 其中之一 <br>
+										<a href="/sns/sns!viewInvitePage.jhtml?inviteType=invitebyoutlook">了解更多</a></p>
+									<div class="input-field file-field margin-bottom" js="csvvcf"> <span></span> <span class="ico-file">&nbsp;</span>
+										<input type="file" name="csvFile">
+									</div>
+									<div class="btn-block">
+										<input type="submit" submitwaiting="如果您的联系人列表过长，可能需要等待2~3分钟，请耐心等待。" value="上传" class="special-btn large-btn">
+										<!-- 判断是通过Outlook还是 linked xing邀请-->
+										<input type="hidden" name="importXL" value="1">
+										<p class="quiet pd-top05e">&nbsp;</p>
+									</div>
+								</form>
+								<div class="btm-block border-top">
+									<p class="quiet margin-top">您可以从以下社交网站中导出联系人文件：</p>
+									<p><a class="float-right cnfont margin-top05e" href="/sns/sns!viewInvitePage.jhtml?inviteType=invitebylinkedin">导出方式详解 &gt;&gt;</a> <img width="133" height="28" class="middle" src="../../bns/images/ico_ivt_csv.png" /></p>
+								</div>
+							</div>
+							<div class="float-left" style="padding-left:50px;width:320px;">
+								<h5>通过直接链接邀请：</h5>
+								<p class="margin-top15e"><label>复制一下链接并通过QQ/MSN等发送给身边的朋友 </label></p>
+								<p style="padding-bottom: 122px;"><input type="text" id="invitelink" value="http://192.168.10.169/invite/sns/zh_CN/6aebfea7-934e-4ad9-9d4d-d5662cfc75e9" class="input-field" name=""></p>
+							</div>
+						</div>
+					</div>
+					<h4 class="green margin-top15e">您目前的活动状态：</h4>
+					<table class="large quiet" style="width:300px;">
+						<tr>
+							<td width="15%"><img src="..../../bns/images/ok.png" width="32" height="32" /></td>
+							<td width="55%">邀请成功数</td>
+							<td width="30%">3422</td>
+						</tr>
+						<tr>
+							<td><img src="..../../bns/images/ok.png" width="32" height="32" /></td>
+							<td>邀请No.1的成功数</td>
+							<td>33422</td>
+						</tr>
+					</table>
+					<h4 class="quiet margin-top15e">您已经成功邀请了xx位朋友成为优士会员，只需再邀请xx人即可获得免费使用白金会员资格一个月。</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--#include file="footer.html"--> 
+</div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<link href="../../../common/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="../../../bns/css/member.css" rel="stylesheet" type="text/css" />
+<link href="../../../pr/whitecollar/css/style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+
+<body>
+
+<div id="wrapper">
+<div id="inner-wrapper">
+	<div class="main-head">
+		<div class="text">
+        	当前最多邀请用户累计邀请<span class="text-num-orange">100</span>人<br />
+			累计参与兑奖<span class="text-num-orange">20</span>人<br />
+			您已经成功邀请<span class="text-num-green">5</span>人<br />
+			累计兑奖<span class="text-num-gray">0</span>次
+        
+        </div>
+	</div>
+	<div class="main-menu menu-bg2">
+        <a href="#" class="menu-hover menu-a1"></a>
+    	<a href="#" class="menu-hover menu-a2"></a>
+    	<a href="#" class="menu-hover menu-a3"></a>
+    	<a href="#" class="menu-hover menu-a4"></a>
+    </div>
+	
+    <div class="main-content">
+    	<div class="invite-colomn clearfix">
+        	<div class="invite-item invite-item1">
+            	<div class="invite-title invite-title-spc"></div>
+            	<textarea></textarea>
+                <div class="invite-btn-frame">
+                	<a href="#" class="btn-publish btn-sinamb">20</a>
+                	<a href="#" class="btn-publish btn-tencentmb">20</a>                
+                </div>
+            </div>
+            
+            <div class="invite-item invite-item2">
+            	<div class="item2-text item2-text1">12:17</div>
+                <div class="item2-text item2-text2">17:55</div>
+            </div>
+            
+        </div>
+        
+        <div class="invite-colomn clearfix">
+        	<div class="invite-item invite-item3">
+            	<div class="invite-title">给好友发送邀请短信:</div>
+                <textarea></textarea>
+                <div class="item3-func">
+                	接收人手机号：
+                    <input type="text" class="input-text" />
+                    <input type="button" class="input-button1" />
+                </div>
+            </div>
+            
+            <div class="invite-item invite-item3" style="margin-right:0;">
+            	<div class="invite-title">直接链接邀请:</div>
+                <textarea></textarea>
+            	<div class="item3-func" style="text-align:right;">
+                	<input type="button" class="input-button2" />
+                </div>
+            </div>
+            
+            <div class="invite-edsc">
+            	<a href="#"><span class="invite-edsc-img"></span></a>
+            </div>
+        
+        </div>
+        
+        <div class="invite-colomn clearfix">
+        	<div class="invite-item invite-item4">	
+                <div class="invite-title">给好友发邮件邀请:</div>
+                
+                <div class="ivt-box ivt-box-left">
+                    <div class="box-title">
+                        <h4>批量邀请MSN或网站邮箱通讯录中的联系人</h4>
+                    </div>
+                    <div class="box-cont">
+                    <form checkform="msnInvite" method="post" action="/sns/sns!importAddressBook.jhtml">
+                        <input type="hidden" value="" js="msnEmail" name="email">
+                        <p class="margin-top15e"><label>MSN或Email的登录ID:</label>
+                            <span js="emailerr" style="display:none;" class="red spe-left2">无效的email地址</span></p>
+                        <div class="margin-btm15e clearfix"><input type="text" class="input-field input-w-160 float-left" maxlength="64" js="email1" autocomplete="off">
+                            <label js="msnInviteEmailSep" class="large float-left spe-left-pd spe-right-pd">@</label>
+                            <div id="showMsnEmailList" class="input-field w130 float-left select-field" js="email2">
+                                <span>hotmail.com</span>
+                                <span class="ico-select">&nbsp;</span>
+                            </div>
+                        </div>
+                        <p><label>密码:</label></p>
+                        <p><input type="password" class="input-field" name="emailPassword"></p>
+                        <div class="btn-block">
+                            <input type="submit" submitwaiting="如果你的联系人列表过长，请耐心等待..." value=" 下一步：选择联系人 " class="special-btn">
+                            <p class="quiet pd-top05e">优士网不会保存你的账号和密码 </p>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="btm-block">
+                        <p class="quiet">我们目前支持的主流在线邮箱包括： </p>
+                        <p><img height="28" msnivt="hotmail.com" class="middle hand" src="http://static.ushi.cn/s/bns/images/ico_ivt_msn.png"><img height="28" msnivt="gmail.com" class="middle hand" src="http://static.ushi.cn/s/bns/images/ico_ivt_gmail.png"><img height="28" msnivt="163.com" class="middle hand" src="http://static.ushi.cn/s/bns/images/ico_ivt_163.png">
+                            <a class="spe-left2 cnfont" href="/sns/sns!viewInvitePage.jhtml?inviteType=invitebyaddressbook">更多 &gt;&gt;</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="invite-item invite-item4">
+            	
+                <div class="invite-title"></div>
+                
+                <div class="ivt-box" style="margin-bottom:20px;">
+                    <div class="box-title">
+                        <h4>批量邀请Outlook等邮件客户端中的联系人</h4>
+                    </div>
+                    <div class="box-cont">
+                    <form enctype="multipart/form-data" method="post" action="/sns/sns!importCSV.jhtml">
+                        <p js="csverr" class="margin-top15e quiet"> 从Outlook等电子邮件客户端中导出并上传联系人文件，文件格式必须是 .csv或.vcf 其中之一 <br><a href="/sns/sns!viewInvitePage.jhtml?inviteType=invitebyoutlook">了解更多</a></p>
+                        <div class="input-field file-field margin-bottom" js="csvvcf">
+                            <span style="height:26px;overflow:hidden;display:block;"></span>
+                            <span class="ico-file">&nbsp;</span>
+                            <input type="file" name="csvFile">
+                        </div>
+                        <div class="btn-block">
+                            <input type="submit" submitwaiting="如果你的联系人列表过长，可能需要等待2~3分钟，请耐心等待。" value="上传" class="special-btn">
+                            <!-- 判断是通过Outlook还是 linked xing邀请-->
+                            <input type="hidden" name="importXL" value="1">
+                            <p class="quiet pd-top05e">&nbsp;</p>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="btm-block">
+                        <p>你可以从以下社交网站中导出联系人文件：</p>
+                        <p><a class="float-right cnfont margin-top05e" href="/sns/sns!viewInvitePage.jhtml?inviteType=invitebylinkedin">导出方式详解 &gt;&gt;</a>
+                            <img width="133" height="28" class="middle" src="http://static.ushi.cn/s/bns/images/ico_ivt_csv.png"></p>
+                    </div>
+                </div>
+            
+            </div>
+            
+            
+            <div class="invite-item invite-item4">
+            
+            
+            	<div class="ivt-box">
+                    <div class="box-title">
+                        <h4>通过Email： </h4>
+                    </div>
+                    <div class="box-cont">
+                    <form checkform="emailInvite" method="post" action="/sns/sns!inviteUsers.jhtml">
+                        <input type="hidden" value="INVITEBYMAIL" name="snsInviteInfo.type">
+                        <p class="margin-top15e"><label>通过朋友的email地址发送邀请，多个email地址之间请以逗号隔开</label>
+                            <span js="emailerr" style="display:none;" class="red spe-left2">包含无效的email地址</span></p>
+                        <div><textarea js="emailList" name="emailInviteEmailText" class="input-field"></textarea></div>
+                        <p class="margin-top05e"><a onclick="$('#inviteLetter').toggle();" href="javascript:void(0)">个性化邀请信内容 </a></p>
+                        <div style="display:none;" id="inviteLetter">
+                            <p><label>邀请信标题:</label></p>
+        <p><input type="text" value="张憧CasBill已经引荐您加入优士网" class="input-field" name="snsInviteInfo.title"></p>
+        <p><label>邀请信正文:</label></p>
+        <p><textarea name="snsInviteInfo.body" class="input-field">我想邀请你加入到我在优士网的专业商务网络。</textarea></p>
+            </div>
+                        <p><input type="submit" submitwaiting="如果你的联系人列表过长，请耐心等待..." value="发送" class="special-btn"></p>
+                    </form>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    
+    	<div class="main-text-title">合作伙伴</div>
+        
+    </div>
+    
+</div>
+</div>
+
+</body>
+
+</html>    

@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>问答</title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../answers/css/all.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../../../common/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="../../../common/js/widget.js"></script>
+<script type="text/javascript" src="../../../common/js/common.js"></script>
+<script type="text/javascript" src="../data/lang.js"></script>
+<script type="text/javascript" src="../../../answers/js/answers.js"></script>
+<script type="text/javascript" src="../../../answers/js/home.js"></script>
+</head>
+
+<body>
+<div id="wrapper" class="container"> 
+	<!-- header start -->
+	<div id="header" class="clearfix" style="z-index:999;">
+		<div class="header-wrapper clearfix">
+			<div class="header-logo"><a href="/user/index.jhtml"><img src="http://static.ushi.cn/s/bns/images/youshi_logo.png" width="80" height="51" alt='优士'></a></div>
+			<div class="header-content">
+				<div class="user-list">
+					<ul class="common-nav">
+						<li style="position:relative;" js="user-profile"> <a id="top_btn_userManage" class="link-menu1 boldface profile-control" style="cursor:pointer;">张三</a> </li>
+						<li><a href="/sns/sns!viewInvitePage.jhtml" class="green boldface">拓展人脉</a></li>
+						<li><a href="http://static.ushi.cn/s/help/html/helpcenter.html" target="_blank">帮助中心</a></li>
+						<li><a href="/logout.jhtml">退出</a></li>
+					</ul>
+				</div>
+				<div class="header-content-center clearfix">
+					<div class="menu-frame">
+						<ul>
+							<li><a href="/user/index.jhtml?homePage=1">首 页</a></li>
+							<li class="li-sublist"><a class="link-menu1" href="/user/profile.jhtml">档 案</a> </li>
+							<li class="li-sublist"><a class="link-menu1" href="/sns/contactMgt!home.jhtml">人 脉</a> </li>
+							<li class="li-sublist"><a class="link-menu1" href="javascript:;">应 用</a> </li>
+						</ul>
+					</div>
+					<div class="ico-frame" style="z-index:99; position:relative;">
+						<input type="hidden" js="newNotifacationCount" />
+						<input type="hidden" js="newMessageCount" />
+						<input type="hidden" js="newRequestCount" />
+						
+						<!-- GLG -->
+						<ul>
+							<li class="ico-border-right"> <span js="nav-icon1" class="nav-icon nav-icon1"></span>
+								<div class="nav-num-frame"> </div>
+								<div class="nav-caption-frame">
+									<div class="nc-top">
+										<div class="nc-arrow"></div>
+									</div>
+									<div class="nc-content clearfix"> <span class="nc-left"></span> <span class="nc-center">站内通知</span> <span class="nc-right"></span> </div>
+								</div>
+							</li>
+							<li class="ico-border-right"> <span js="nav-icon2" class="nav-icon nav-icon2"></span>
+								<div class="nav-num-frame"> </div>
+								<div class="nav-caption-frame">
+									<div class="nc-top">
+										<div class="nc-arrow"></div>
+									</div>
+									<div class="nc-content clearfix"> <span class="nc-left"></span> <span class="nc-center">直 邮</span> <span class="nc-right"></span> </div>
+								</div>
+							</li>
+							<li> <span js="nav-icon3" class="nav-icon nav-icon3"></span>
+								<div class="nav-num-frame"> </div>
+								<div class="nav-caption-frame">
+									<div class="nc-top">
+										<div class="nc-arrow"></div>
+									</div>
+									<div class="nc-content clearfix"> <span class="nc-left"></span> <span class="nc-center">请求</span> <span class="nc-right"></span> </div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="search-frame">
+						<div class="input-frame" wendaAjaxSearchCont="header" eventAjaxSearchCont="header" snsAjaxSearchCont="header"> <span>
+							<form method="POST" name="header_search_connection" action="/search/search!search.jhtml">
+								<input name="form.keyword" js="1" type="text" autocomplete="off" />
+							</form>
+							<form method="POST" name="header_search_group" action="/group/searchGroups.jhtml?mark=allgroup" style="display:none;">
+								<input name="grpGroup.groupname" js="2" type="text" />
+							</form>
+							<form method="POST" name="header_search_event" action="/event/searchbykeywords.jhtml" style="display:none;">
+								<input name="keywords" js="3" type="text" autocomplete="off" />
+							</form>
+							<form method="POST" name="header_search_job" action="/job/search!search.jhtml?refer=1" style="display:none;">
+								<input name="searchKeyword" js="4" type="text" />
+							</form>
+							<form method="POST" name="header_search_answer" action="/wenda/search!searchTagAndQuestionMore.jhtml" style="display:none;">
+								<input name="searchKey" js="5" type="text" autocomplete="off" />
+							</form>
+							</span>
+							<div class="search-select"> <span js="0" class="search-type">人 脉</span><span class="ico-expand" style="margin:0 3px 0 3px;"></span> </div>
+							<div class="search-expend" style="display:none;">
+								<ul>
+									<li class="hide"><a js="0">人 脉</a></li>
+									<li><a js="1">群 组</a></li>
+									<li><a js="2">活 动</a></li>
+									<li><a js="3">求 职</a></li>
+									<li class="nav-ushi-answer"><a js="4">优 问</a></li>
+									<li class="cutline"></li>
+									<li><a href="/search/search!advSearch.jhtml">高级搜索</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="search-button" id="header_search_submit"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-border"></div>
+	</div>
+	
+	<!-- header end --> 
+	
+	<!-- main start -->
+	<div id="main" class="clearfix">
+		<div class="tabs-wenda clearfix">
+			<ul>
+				<li id="wenda"><a href="/wenda/index.jhtml">优问首页</a></li>
+				<li id="mywenda"><a href="/wenda/myanswer!index.jhtml">我的问答</a></li>
+			</ul>
+		</div>
+		<div class="column-2-3">
+			<div class="wd-home-search margin-bottom">
+				<div class="wd-home-search-inner">
+					<div class="wd-home-search-ipt float-left" js="wdhomeSearchInput">
+						<form action="/wenda/search!searchTagAndQuestionMore.jhtml" method="post">
+							<input type="text" name="searchKey" addQuestion="input" searchkey="" value="搜索话题或问题..." defaultTips="搜索话题或问题..." js="home_search_input" autocomplete="off" />
+						</form>
+					</div>
+					<div class="btn-special1 float-left hand" js="addQuestion"  guide="add">
+						<div class="btn-special1-inner"> <a href="#"><span class="ico-add-w spe-right"></span>添加问题</a> </div>
+					</div>
+				</div>
+			</div>
+			<div class="wd-home-search-tip" js="homeSearchTip" style="display:none;">建议在提问前先搜索是否已有类似问题存在，以免分流回答</div>
+			<div class="margin-bottom spe-left-pd2">
+				<div js="topicCont" class="question-tag-list clearfix">
+					<p class="wd-topic-outer" topicId="8"><a class="wd-topic" href="/wenda/tag!index.jhtml?id=8"><span class="wd-topic-inner">优士网</span></a></p>
+					<p class="wd-topic-outer" topicId="732"><a class="wd-topic" href="/wenda/tag!index.jhtml?id=732"><span class="wd-topic-inner">优士求职频道</span></a></p>
+					<p class="wd-topic-outer" topicId="923"><a class="wd-topic" href="/wenda/tag!index.jhtml?id=923"><span class="wd-topic-inner">社会化招聘</span></a></p>
+					<p class="wd-topic-outer" topicId="923"><span class="wd-topic"><span class="wd-topic-inner">社会化招聘<a class="common-close" href="#">close</a></span></span></p>
+					<a href="#" class="wd-ico-edit" js="editTopic" >修改</a> </div>
+				<div class="search-cont search-cont-text margin-top05e" js="topicAdd" style="width:400px;display:none;"> <a href="#" class="float-right spe-left2" js="closeTopicAdd">完成</a> <a href="#" class="button" js="addNewTopicLink" ><span class="link-add3">添加</span></a>
+					<div class="search-add">
+						<input type="text" class="formtext" js="questionTopicSearch" questionId="4525" topicCont="[js=topicCont]" maxlength="100" />
+					</div>
+				</div>
+			</div>
+			<div class="question-cont spe-left-pd2 pd-bottom" commentTarget="4525" >
+				<div class="float-left">
+					<p class="answer-vote answer-vote-false" js="voteQuestion" un="刘镇维" aid="4525" voted="false"> <a class="answer-vote-count" href="#" style="display: block;">0</a> <a href="#" class="answer-agree " style="display:none;">赞成</a> <a href="#" class="answer-differ " style="display:none;">反对</a> </p>
+				</div>
+				<div class="question-cont-in">
+					<h4 class="question-title" js="staticEditTitle">
+						<a class="button float-right" follow="4525" followType="1" flc="button float-right" uflc="common-button float-right" href="#">关注</a>
+						<a class="common-button float-right" follow="4525" followType="1" flc="button float-right" uflc="common-button float-right" href="#">取消关注</a>
+						<span class="large" share="title">请问我招聘的话如何搜索人才呢？</span><a href="javascript:void(835970)" class="wd-ico-edit" qedit="EditTitle">修改</a> </h4>
+					<form js="formEditTitle" class="margin-bottom" style="display:none;" action="/wenda/question!updateQuestiontitle.jhtml?qid=4525" method="post">
+						<div class="margin-btm05e">
+							<textarea name="title" class="noresize" style="height:45px;width:550px;" maxlength="200" js="enterSubmitText" defaultTips="请输入问题的标题..."></textarea>
+						</div>
+						<input type="submit" class="button" value="提交" />
+						<a href="#" class="spe-left2" editCancel="Title">取消</a>
+					</form>
+					<p class="quiet">已有<span style="display:inline-block;width:23px;text-align:center;" js="curVotes">0</span>人给此问题投票，好问题将优先显示在问题广场的前列 <span class="wd-show-tip" js="qVoteTip"></span> </p>
+					<p class="question-desc" js="staticEditContent"><span class="large" share="question">&#22312;&#32844;&#20301;&#19968;&#26639;&#20013;&#65292;&#25105;&#28857;&ldquo;&#29454;&rdquo;&#23383;&#65292;&#32463;&#24120;&#20250;&#20986;&#29616;&#30446;&#21069;&#27809;&#26377;&#21512;&#36866;&#20154;&#36873;&#65292;&#24314;&#35758;&#23637;&#24320;&#20027;&#21160;&#25628;&#32034;&#65292;&#35831;&#38382;&#22914;&#20309;&#36827;&#34892;&#20027;&#21160;&#25628;&#32034;&#65311;&#20248;&#22763;&#32593;&#26032;&#25163;&#65292;&#35831;&#24110;&#24537;&#21734;&#12290;</span> <a href="#" qid="4525" class="wd-ico-edit" qedit="EditContent">修改</a> </p>
+					<form js="formEditContent" class="margin-bottom" style="display:none;" action="/wenda/question!updateQuestioncontent.jhtml?qid=4525" method="post">
+						<div class="margin-btm05e">
+							<textarea name="question.content" htmlEditor="true" contType="问题" ln0="添加问题正文" ln1="修改" style="height:66px;width:550px;"></textarea>
+						</div>
+						<input type="submit" class="button" value="提交" />
+						<a href="#" class="spe-left2" editCancel="Content">取消</a>
+					</form>
+					<p class="question-action">1 个答案 <a href="#addanswerform" class="wd-ico-addanswer" js="addAnswerLink">添加答案</a> <a href="#" class="wd-ico-addcomment" js="showComment"> 添加评论 </a><span class="quiet" js="commentCount"></span> 
+						<a href="#" class="wd-ico-addreport" report="1" targetId="4525">举报问题</a> </p>
+					<div class="event-comments" typeId="1" curCmt="0" style="display:none;"></div>
+					<p class="event-comments" style="display:none;">
+						<textarea style="height:60px;" class="input-addcomm margin-btm05e"></textarea>
+						<input type="button" style="" value="发表评论" class="common-button" js="addComment" hidefocus="true"  />
+					</p>
+				</div>
+			</div>
+			<div id="answerList" class="border-top">
+				<div  class="event-block answers-event-block" answerId="11602" id="11602" >
+					<div class="event-owner"> <a href='/u/allendong'><img src='http://images.ushigroup.cn/bnsphoto/2012/05/03/dfa5cfad-eb4a-4b22-bf87-7dbb71c5ae64_thumb.jpg' height='30' width='30' id='avatar-119148' /></a></div>
+					<div class="event-content answers-event-cont qt-answers-event-cont" commentTarget="11602">
+						<h5 js="answerUsername" share="user" class="mg-btm2px"><a href="/u/allendong">Allen Dong</a></h5>
+						<p class="mg-btm15px">Social Recruiting Consultant</p>
+						<p class="quiet" js="voteView"><span js="curVotes">0</span> 票<span  style="display:none;" js="voteFrom">，来自 </span> </p>
+						<div class="margin-bottom large" js="answerCont" share="content">&#20320;&#22909;&#65292;&#38065;&#22899;&#22763;&#12290;&#26681;&#25454;&#20320;&#30340;&#38382;&#39064;&#25152;&#36848;&#65292;&#25152;&#28857;&#29454;&#23383;&#27809;&#26377;&#20986;&#29616;&#21512;&#36866;&#20154;&#36873;&#30340;&#21407;&#22240;&#26377;&#65306;1.&#30446;&#21069;&#32844;&#19994;&#31038;&#20132;&#32593;&#31449;&#20869;&#19968;&#20123;&#20250;&#21592;&#20851;&#38190;&#23383;&#30340;&#35774;&#32622;&#19982;&#21518;&#21488;&#31995;&#32479;&#31639;&#27861;&#26410;&#23436;&#32654;&#23545;&#25509;&#65292;&#38656;&#35201;&#20250;&#21592;&#26222;&#36941;&#25484;&#25569;&#31038;&#20132;&#32593;&#32476;&#20351;&#29992;&#25216;&#24039;&#20043;&#21518;&#33021;&#24930;&#24930;&#36716;&#21464;<br />
+							2.&#35813;&#32844;&#20301;&#23646;&#20919;&#38376;&#32844;&#20301;&#65292;&#27809;&#26377;&#35206;&#30422;&#22312;&#20248;&#22763;&#32593;&#20027;&#35201;&#30340;&#34892;&#19994;&#25968;&#25454;&#20869;<br />
+							&#36890;&#36807;&#26102;&#38388;&#30340;&#31215;&#32047;&#20250;&#24930;&#24930;&#36716;&#21464;&#12290;<br />
+							<br />
+							<br />
+							&#25628;&#32034;&#30340;&#20837;&#21475;&#26377;2&#20010;&#65306;<br />
+							1.&#28857;&#20987;&#39318;&#39029;&#24038;&#36793;&ldquo;&#27714;&#32844;&rdquo;&#39057;&#36947;&#21518;&#20877;&#20110;&ldquo;&#25628;&#32034;&#32844;&#20301;&rdquo;&#26639;&#36755;&#20837;&#20851;&#38190;&#23383;&#21363;&#21487;<br />
+							2.&#22312;&#39318;&#39029;&#21491;&#19978;&#26041;&#30340;&#22823;&#25628;&#32034;&#26694;&#20013;&#30452;&#25509;&#36755;&#20837;&#32844;&#20301;&#21517;&#12289;&#20844;&#21496;&#21517;&#31561;&#20851;&#38190;&#23383;&#20449;&#24687;&#21363;&#21487;&#23436;&#25104;&#25628;&#32034;<br />
+							&#22914;&#27442;&#21457;&#24067;&#32844;&#20301;&#21017;&#20351;&#29992;&#26041;&#27861;&#21644;&#25628;&#32034;&#26041;&#27861;&#19968;&#33268;<br />
+							<br />
+							<br />
+							&#27492;&#22806;&#65292;&#26032;&#29992;&#25143;&#21457;&#24067;&#32844;&#20301;&#21518;&#38656;&#35201;&#26126;&#30830;&#30340;&#20107;&#39033;&#65306;<br />
+							1&#65289;&#26126;&#30830;&#20316;&#20026;&#32844;&#19994;&#31038;&#20132;&#32593;&#31449;&#30340;&#20248;&#22763;&#32593;&#19982;&#20854;&#20182;&#25307;&#32856;&#28192;&#36947;&#30340;&#19981;&#21516;&#65292;&#20998;&#26512;&#21508;&#33258;&#28192;&#36947;&#30340;&#29992;&#25143;&#29305;&#28857;<br />
+							2&#65289;&#22312;&#20248;&#22763;&#32593;&#20869;&#24320;&#23637;&#25307;&#32856;&#24037;&#20316;&#26356;&#22810;&#39035;&#20027;&#21160;&#26816;&#32034;&#20250;&#21592;&#26723;&#26696;&#65292;&#23547;&#27714;&#36827;&#19968;&#27493;&#32852;&#31995;<br />
+							3&#65289;&#26597;&#30475;&#21040;&#19981;&#23436;&#25972;&#20250;&#21592;&#26723;&#26696;&#26102;&#21487;&#21457;&#36865;&#30452;&#37038;&#23547;&#27714;&#36827;&#19968;&#27493;&#32852;&#32476;&#65292;&#25110;&#35270;&#24773;&#20917;&#36992;&#20854;&#36882;&#36865;&#23436;&#25972;&#31616;&#21382;<br />
+							4&#65289;&#38656;&#35201;&#33457;&#31934;&#21147;&#21644;&#24515;&#24605;&#22312;&#20248;&#22763;&#32593;&#20869;&#32789;&#32792;&#65292;&#19977;&#22825;&#25171;&#28180;&#20004;&#22825;&#25746;&#32593;&#25928;&#26524;&#21487;&#33021;&#19981;&#20250;&#29702;&#24819;&#65288;&#24314;&#35758;&#27599;&#21608;&#19968;&#20851;&#27880;&#12289;&#38405;&#35835;&#25105;&#20204;&#30340;&ldquo;&#20248;&#26696;&#20363;&rdquo;&#65292;&#20102;&#35299;&#19981;&#21516;&#30340;&#20351;&#29992;&#26041;&#27861;&#21644;&#20854;&#20182;HR&#30340;&#20351;&#29992;&#26696;&#20363;&#65289;</div>
+						<p class="quiet" style="margin-bottom:5px;">该回答发布于 1天前12:04
+						<p class="action"> <a href="javascript:void(11602)" class="comments-shop" style="margin:0;" js="showComment">评论</a><span class="quiet" js="commentCount"></span> <span class="spe-left spe-right">|</span> <a href="#" shareLink="11602" token="MTMzODI1NTA4NTYwOS0yNzMtNDUyNS0xMTYwMg==" guide="answer">分享答案</a> <span class="spe-left spe-right">|</span> <a href="#" js="suggest">提建议</a> <span class="spe-left spe-right">|</span> <a href="#" js="reportNotHelp">没有帮助</a> <span class="spe-left spe-right">|</span> <a href="#" report="2">举报答案</a> <span class="spe-left spe-right">|</span> <a href="#" userAction="1" class="wd-ico-thank" title="感谢">thank</a></p>
+						<p class="answer-vote answer-vote-false" js="voteArea" un="刘镇维" aid="11602" voted="false"> <a href="#" class="answer-agree ">赞成</a> <a href="#" class="answer-differ ">反对</a> </p>
+						<div class="event-comments" typeId="2" curCmt="0" style="display:none;"></div>
+						<p class="event-comments" style="display:none;">
+							<textarea style="height:60px;" class="input-addcomm margin-btm05e"></textarea>
+							<input type="button" style="" value="发表评论" class="common-button" js="addComment" hidefocus="true"  />
+						</p>
+					</div>
+					<div class="answer-mask"></div>
+				</div>
+			</div>
+			<div class="answer-cont spe-left-pd2 clearfix margin-bottom">
+				<div class="notice" js="addAnswerOk" style="display:none;">你已添加了答案，你可以<a href="#" js="editMyAnswer">点此修改</a>自己的答案。</div>
+				<div js="myAnswerArea">
+					<h4>添加答案<a name="addanswerform"><span class="hide">anchor</span></a></h4>
+					<div class="vcard" js="modiAMCont"> <img src="http://static.ushi.cn/s/common/images/face_30.png" class="hide" /> <a href='/u/liuzhenwei'><img src='http://images.ushigroup.cn/bnsphoto/2010/08/31/68e1bc20-7fcf-4f35-ac24-388821b11978_thumb.jpg' height='30' width='30' id='avatar-273' /></a>
+						<dl>
+							<dt style="margin-bottom:2px;line-height:1.2em;"> <span js="am-1-name" class="hide">匿名用户</span> <span js="am-0-name" class="blue">刘镇维</span> </dt>
+							<dd> <span js="am-0-name">优士网 前端架构师</span> <a href="#" class="quiet wd-ico-switch-am" value="">切换为匿名状态</a> </dd>
+						</dl>
+					</div>
+					<div class="wd-answer-tip"> 做出优质的回答将有机会登上话题专家榜，被众多精英关注，获得潜在机会，更有机会被优先推荐给美国格理集团提供咨询服务。<a target="_blank" href="/wenda/question!detail.jhtml?qid=304">衡量优质回答的标准</a> </div>
+					<div class="answer-form">
+						<form action="/wenda/answer!addAnswer.jhtml" method="post" id="addAnswer" autocomplete="off" >
+							<input type="hidden" name="qid" value="4525" />
+							<input type="hidden" name="isanonymous" value="0" />
+							<textarea style="height:66px;width:568px;" name="content" defaultTips="请输入回答的内容">请输入回答的内容</textarea>
+							<p class="float-left">添加：<a href="#" js="lnkShowext">参考网址</a></p>
+							<div class="answer-ext margin-top" style="display:none;">
+								<p style="display:none;">
+									<input type="text" class="formtext answer-url" defaultTips="请输入可以支持您观点的参考网址" value="请输入可以支持您观点的参考网址" />
+								</p>
+								<p><b>参考网址</b><span class="quiet">(可选)</span><span js="answerUrlErr" style="display:none;" class="red spe-left2">请输入格式正确的网址</span></p>
+								<p js="addAnswerUrl"><span class="wd-ico-addurl"></span><a href="#">添加更多网址</a></p>
+							</div>
+							<p js="sendMsgAreaTitle" class="float-right">
+								<input type="checkbox" value="" js="chkSendMSG" />
+								给提问者发直邮</p>
+							<div js="sendMsgArea" class="clear" style="display:none;">
+								<input type="hidden" name="receiverId" value="835970" />
+								<input type="hidden" name="subject" value="你好，我回答了你的问题 “请问我招聘的话如何搜索人才呢？”，同时有些话想跟你说" />
+								<input type="hidden" name="questionTitle" value="请问我招聘的话如何搜索人才呢？"/>
+								<input type="hidden" name="questionId" value="4525"/>
+								<textarea style="height:50px;width:568px;" name="body" defaultTips="请输入留言内容，只对提问者可见，这是很好的介绍机会">请输入留言内容，只对提问者可见，这是很好的介绍机会</textarea>
+								<p class="quiet" js="sendMsgTips">注意：给对方留言将扣除一次你的直邮配额。</p>
+								<input type="hidden" name="option" value="2" />
+							</div>
+							<p class="answer-action clear pd-top a-right"> <a href="#" class="button large-btn large" js="submitAnswer" >添加答案</a> </p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column-3">
+			<div class="common-block">
+				<h5 class="extra-title"><a href="#" class="normal float-right">换一换</a>探索更多</h5>
+				<ul class="more-question">
+					<li class="hot-question"><a href="/wenda/question!detail.jhtml?qid=11">目前传统网上招聘的优劣势？</a></li>
+					<li class="hot-question"><a href="/wenda/question!detail.jhtml?qid=23">SNS（Facebook, Twitter, Google+，weibo)是否会介入职业网络招聘 (LinkedIn,Ushi)</a></li>
+					<li><a href="/wenda/question!detail.jhtml?qid=68">优士网，经纬，若邻，天际，你喜欢使用哪个？@经纬网 @优士网 @天际网</a></li>
+					<li><a href="/wenda/question!detail.jhtml?qid=70">优士网能帮你做什么</a></li>
+					<li><a href="/wenda/question!detail.jhtml?qid=78">在SNS网站发布的职位为什么没人应聘？发布后的职位是如何传播的？</a></li>
+					<li><a href="/wenda/question!detail.jhtml?qid=86">优士网－优问还需要哪些地方的改进？从功能到使用体验上</a></li>
+					<li><a href="/wenda/question!detail.jhtml?qid=94">如果作为应聘端的求职者，有哪些高效的提升求职效果的技巧？</a></li>
+					<li><a href="/wenda/question!detail.jhtml?qid=96">在职业社交网站上，应聘端的人才除了通过【申请职位】的按钮，应该被倡导通过哪些方式来获得职业机会？</a></li>
+				</ul>
+			</div>
+			<div class="common-block" question="4525" aid="0" token="MTMzODI1NTA4NTgzNC0yNzMtNDUyNS0w" guide="share">
+				<h5 class="extra-title">快速分享问题</h5>
+				<ul class="spe-left-pd2">
+					<li class="float-left" style="width:90px;"><a href="/feed/feedapi!shareToXinlang.jhtml" target="_blank" class="sharesina" shareSNSType="sinaminiblog">新浪微博</a></li>
+					<li class="float-left" style="width:80px;"><a href="#" class="sharerenren" shareSNSType="renren">人人网</a></li>
+					<li class="float-left" style="width:80px;"><a href="#" class="sharekaixin" shareSNSType="kaixin001">开心网</a></li>
+					<li class="float-left" style="width:90px;"><a href="#" class="sharegroup" shareUshi="1">站外好友</a></li>
+					<li class="float-left" style="width:90px;"><a href="#" class="share1du" shareUshi="0">一度好友</a></li>
+				</ul>
+			</div>
+			<div class="common-block" id="inviteFriendList" questionId="4525" guide="invite">
+				<h5 class="extra-title" style="margin-bottom:0;"><a name="inviteBlock"><span class="hide">hash</span></a> <a js="showListLink" href="#" class="float-right normal" style="display:none;">展开已邀请列表</a> 邀请他人回答此问题 (<span js="invitedFriendsCount">0</span>) </h5>
+				<div js="invitedList" style="width:260px;display:none;padding:3px 3px 0 3px;"> </div>
+				<div style="background:#f3f3f3;margin-bottom:0;">
+					<ul js="inviteTypeTab" style="height:auto;overflow:hidden;" class="innerULevent1 innerULevent1_">
+						<li style="margin-bottom:0;padding:0;position:relative;margin-bottom:-1px" class="current"> <a class="normal nofocus" panel="1d" style="font-size:12px;" href="javascript:;">一度人脉</a> </li>
+						<li style="clear:none;_display:inline;margin-right:0;margin-bottom:0;padding:0;position:relative;margin-bottom:-1px"> <a class="normal nofocus" panel="email" style="font-size:12px;" href="javascript:;">站外的朋友</a> </li>
+					</ul>
+				</div>
+				<div invitePanel="1d" style="border-top:1px #ddd solid;padding:10px;margin-top:-1px;background:#eee;zoom:1;overflow:hidden;" class="jobs-search-body clearfix FriendFromUshi1 clearfloat">
+					<input type="hidden" style="height:10px;line-height:none;overflow:hidden" id="inviteFriendsId" name="rids">
+					<div style="width:78%;background:#fff;padding:4px 1px;*margin-top:1px;" class="mult-selector float-left ushi-friendSelectList" id="friendSelectList1">
+						<div class="fslOpenfriendSelect filter-drop"> <a href="javascript:void(0)" class="icon-btn-down"></a> </div>
+						<div class="fslSelectedList friend-selector-selected">
+							<input type="text" value="" name="" style="overflow:hidden;outline:none;width:120px;font-size:12px;" class="fontgray" title="请输入邀请人姓名，支持拼音首字母输入" searchkey="" tip="" autocomplete="off">
+						</div>
+					</div>
+					<div style="width:20%;" class="jobs-search-local multi-selector-btn float-left"> <a style="height:25px;border-left:none;" js="submit1d" href="#"> 邀请</a> </div>
+				</div>
+				<div invitePanel="email" style="display:none;border-top:1px #ddd solid;padding:10px;margin-top:-1px;background:#eee;zoom:1;overflow:hidden;" class="FriendFromOut1 clearfloat spe-left-pd2">
+					<input type="text" maxlength="640" class="input" name="emails" style="width:76%;padding:4px;height:20px;float:left;*margin-top:1px;" />
+					<div style="width:20%;margin-bottom:5px;" class="jobs-search-local multi-selector-btn float-left"> <a style="height:25px;border-left:none;" js="submitEmail" href="#"> 邀请</a> </div>
+					<div class="margin-top grey"> 最多支持10个邮箱地址，请用“,”分隔！</div>
+				</div>
+			</div>
+			<div class="common-block" id="inviteExpertList" questionId="4525" guideHide="invite">
+				<h5 class="extra-title"><a href="javascript:;" js="inviteAllExperts" class="float-right normal">邀请所有专家</a>邀请相关领域专家回答<span class="wd-show-tip" js="inviteExpertTip"></span></h5>
+				<ul class="vcard margin-btm05e">
+					<li class="border-bottom" > <a href='/u/yuanyue7890' target='_blank'><img src='http://images.ushigroup.cn/bnsphoto/2011/04/17/27253842-1597-4b44-89f2-acd67259b856_thumb.jpg' height='30' width='30' id='avatar-189186' /></a>
+						<dl>
+							<dt><a href="/u/189186" target="_blank">袁岳</a></dt>
+							<dd>零点研究咨询集团 董事长</dd>
+							<dd><a href="javascript:;" inviteExpertLink="189186" class="button float-right">邀请回答</a> <a targetuserid="189186" href="/sns/sns!viewSNSInvitePage.jhtml?targetUserId=189186" class="spe-right">加为一度</a> <a unfollow="189186" class="quiet" followType="3" href="#">取消关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom" > <a href='/u/zhangyue' target='_blank'><img src='http://images.ushigroup.cn/bnsphoto/2011/05/10/ca36fea3-87f6-4462-8f40-b26e48df4a96_thumb.jpg' height='30' width='30' id='avatar-2' /></a>
+						<dl>
+							<dt><a href="/u/2" target="_blank">张月</a></dt>
+							<dd>优士网联合创始人，首席产品官</dd>
+							<dd><a href="javascript:;" inviteExpertLink="2" class="button float-right">邀请回答</a> <a targetuserid="2" href="/sns/sns!viewSNSInvitePage.jhtml?targetUserId=2" class="spe-right">加为一度</a> <a follow="2" followType="3" href="#">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom" > <a href='/u/41823' target='_blank'><img src='http://images.ushigroup.cn/bnsphoto/2010/08/14/899b5a80-558e-45e6-a6a4-6247de53c1cc_thumb.jpg' height='30' width='30' id='avatar-41823' /></a>
+						<dl>
+							<dt><a href="/u/41823" target="_blank">郑凯</a></dt>
+							<dd>陕西东大置业有限公司 总裁</dd>
+							<dd><a href="javascript:;" inviteExpertLink="41823" class="button float-right">邀请回答</a> <a targetuserid="41823" href="/sns/sns!viewSNSInvitePage.jhtml?targetUserId=41823" class="spe-right">加为一度</a> <a follow="41823" followType="3" href="#">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom" > <a href='/u/60052' target='_blank'><img src='http://images.ushigroup.cn/bnsphoto/2010/09/29/0a585fd5-86b4-46e9-9b24-d3d309e9edd1_thumb.jpg' height='30' width='30' id='avatar-60052' /></a>
+						<dl>
+							<dt><a href="/u/60052" target="_blank">Angela Xu</a></dt>
+							<dd>董事</dd>
+							<dd><a href="javascript:;" inviteExpertLink="60052" class="button float-right">邀请回答</a> <a targetuserid="60052" href="/sns/sns!viewSNSInvitePage.jhtml?targetUserId=60052" class="spe-right">加为一度</a> <a follow="60052" followType="3" href="#">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom" > <a href='/u/renxiaonan4694' target='_blank'><img src='http://images.ushigroup.cn/bnsphoto/2010/12/16/18e9d82c-b39e-4482-8eb8-dd8de6dbe130_thumb.jpg' height='30' width='30' id='avatar-79201' /></a>
+						<dl>
+							<dt><a href="/u/79201" target="_blank">任晓楠</a></dt>
+							<dd>信托 股权投资部总经理助理</dd>
+							<dd><a href="javascript:;" inviteExpertLink="79201" class="button float-right">邀请回答</a> <a targetuserid="79201" href="/sns/sns!viewSNSInvitePage.jhtml?targetUserId=79201" class="spe-right">加为一度</a> <a follow="79201" followType="3" href="#">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom" style="display:none;"> <a href='/u/luotiancheng2403' target='_blank'><img src='http://images.ushigroup.cn/bnsphoto/2010/12/23/3d4f68c9-2dfe-4856-a53a-35568d6191aa_thumb.jpg' height='30' width='30' id='avatar-81481' /></a>
+						<dl>
+							<dt><a href="/u/81481" target="_blank">罗天成</a></dt>
+							<dd>叁零网络品牌整合推广策划机构  CEO</dd>
+							<dd><a href="javascript:;" inviteExpertLink="81481" class="button float-right">邀请回答</a> <a targetuserid="81481" href="/sns/sns!viewSNSInvitePage.jhtml?targetUserId=81481" class="spe-right">加为一度</a> <a follow="81481" followType="3" href="#">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom" style="display:none;"> <a href='/u/zhouming2764' target='_blank'><img src='http://images.ushigroup.cn/bnsphoto/2011/06/24/7a267a40-27f0-4d03-865a-20d35f7b9e1a_thumb.jpg' height='30' width='30' id='avatar-110435' /></a>
+						<dl>
+							<dt><a href="/u/110435" target="_blank">周明</a></dt>
+							<dd>优士网产品部部门经理，高级产品经理</dd>
+							<dd><a href="javascript:;" inviteExpertLink="110435" class="button float-right">邀请回答</a> <a targetuserid="110435" href="/sns/sns!viewSNSInvitePage.jhtml?targetUserId=110435" class="spe-right">加为一度</a> <a follow="110435" followType="3" href="#">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom" style="display:none;"> <a href='/u/41569' target='_blank'><img src='http://images.ushigroup.cn/bnsphoto/2010/08/31/6e0be7c2-e7d4-4f70-acbb-b832ef0a1e8b_thumb.jpg' height='30' width='30' id='avatar-41569' /></a>
+						<dl>
+							<dt><a href="/u/41569" target="_blank">David Lau</a></dt>
+							<dd>MD专业领域交流社区（SNS类型，封闭中） 主策划人</dd>
+							<dd><a href="javascript:;" inviteExpertLink="41569" class="button float-right">邀请回答</a> <a targetuserid="41569" href="/sns/sns!viewSNSInvitePage.jhtml?targetUserId=41569" class="spe-right">加为一度</a> <a follow="41569" followType="3" href="#">关注</a> </dd>
+						</dl>
+					</li>
+				</ul>
+				<p class="a-center"><a href="#" js="viewAllExperts">查看所有推荐专家</a><span style="display:inline-block;" class="icon-btn-down middle spe-left"></span></p>
+			</div>
+		</div>
+	</div>
+	<!-- main end --> 
+	
+	<!-- footer start -->
+	<div id="footer">
+		<ul class="common-nav divide">
+			<!--
+	<li><a href="/overview">了解优士</a></li>
+	-->
+			<li><a href="/about">关于我们</a></li>
+			<li><a href="/founding-and-charter-members">创始会员</a></li>
+			<li><a href="/contact">联系我们</a></li>
+			<li><a href="/doc.jhtml?key=join_us">加入我们</a></li>
+			<li><a href="/press">媒体中心</a></li>
+			<li><a href="/doc.jhtml?key=success_stories">成功故事</a></li>
+			<li><a href="/doc.jhtml?key=privacy_policy">隐私声明</a></li>
+			<li><a href="/doc.jhtml?key=term_of_service">服务条款</a></li>
+			<li><a href="http://blog.ushi.com" target="_blank">优士博客</a></li>
+			<li><a href="/Recruiting-Solutions">招聘服务</a></li>
+			<li class="divide-none"><a js="top_menu_set_en" href="javascript:void(0)">English version</a></li>
+		</ul>
+		<p class="clear"> <a href=http://www.miibeian.gov.cn/ target=_blank>沪ICP备06027394号</a> Ushi.com © 版权所有 2009~2012</p>
+		<div class="side-feedback" id="side-feedback"><a hidefocus="true" class="feedback-btn" href="#"><span class="hide">Feedback</span></a></div>
+	</div>
+	<!-- footer end --> 
+</div>
+</body>
+</html>

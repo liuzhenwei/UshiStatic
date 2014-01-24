@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>群组动态 - 优士网</title>
+<meta name="description" content="page.description.default"/>
+<meta name="keywords" content="page.keywords.default"/>
+<link href="../../../bns/images/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="../../../bns/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="../../../bns/images/favicon.ico" rel="bookmark" type="image/x-icon" />
+<link rel="stylesheet" href="../../../common/css/layout.css?5.1" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="/css/member.css?5.1" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="/css/library_sc/pages_member.css?5.1" type="text/css" media="screen, projection">
+<script type="text/javascript" src="/js/jQuery.min.js?1.3.2"></script>
+<script type="text/javascript" src="/js/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="/doc!jsprop.jhtml"></script>
+<script type="text/javascript" src="/js/widget.js?5.1"></script>
+<script type="text/javascript" src="/js/friendsSelect.js?5.1"></script>
+<script type="text/javascript" src="/js/common.js?5.1"></script>
+<script type="text/javascript" src="/js/feed.js?5.1"></script>
+<script type="text/javascript" src="/js/group.member.manage.js?5.1"></script>
+<script type="text/javascript" src="/js/groups.js?5.1"></script>
+<script type="text/javascript" src="/js/ajaxfileupload.js?5.1"></script>
+<script type="text/javascript" src="/js/group_feed.js?5.1"></script>
+<script type="text/javascript" src="/js/groups_event.js?5.1"></script>
+<script type="text/javascript" src="/js/DateSelect.js?3.0"></script>
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js"></script>
+<script type="text/javascript"> 
+GS_googleAddAdSenseService("ca-pub-9684247948196378");
+GS_googleEnableAllServices();
+</script>
+<script type="text/javascript"> 
+GA_googleAddSlot("ca-pub-9684247948196378", "ushi_GroupProfile_270x140");
+GA_googleAddSlot("ca-pub-9684247948196378", "ushi_GroupProfile_270x140_EN");
+</script>
+<script type="text/javascript"> 
+GA_googleFetchAds();
+</script>
+<script type="text/javascript"> 
+var __nav = "nav_group";
+</script>
+ 
+ 
+<script type="text/javascript"> 
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-13168519-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</head>
+ 
+<body>
+<div id="wrapper" class="container">
+	<!-- header start -->
+	<!-- utility links -->
+<div id="nav_utility">
+	<ul class="common-nav">
+		<li><a class="link-menu1 boldface" href="javascript:void(1);" id="top_btn_userManage">卢汉森 Dominic Penaloza</a></li>
+		<li><a href="/msg/notification!listNotification.jhtml">站内通知</a> <strong class="red" jsonInfo="newNotifacationCount"></strong></li>
+		<li><a class="link-menu1" href="javascript:void(0)" id="top_btn_set">设置</a></li>
+		<li><a href="/sns/sns!viewInvitePage.jhtml" class="green boldface">发邀请</a></li>
+		<li><a href="/doc.jhtml?key=help">帮助</a></li>
+		<li><a href="/logout.jhtml">退出登录</a></li>
+	</ul>
+</div>
+ 
+<div class="dp-menu" id="top_menu_userManage">
+	<ul>
+		<li>账户类型：<a href="/user/setting.jhtml" jsonInfo="membership"></a></li>
+		<li class="line">优士币：<a href="/currency/Coins!chargeList.jhtml"><span jsonInfo="coinsCount"></span>枚</a></li>
+		<li><a href="/currency/Package.jhtml">升级会员资格</a></li>
+		<li><a href="/currency/Coins.jhtml">优士币充值</a></li>
+	</ul>
+</div>
+<div class="dp-menu" id="top_menu_set">
+	<ul>
+		<li><a href="/user/setting.jhtml">账户信息设置</a></li>
+		<li><a href="/user/edit!bfEditBase.jhtml">编辑个人档案</a> </li>
+		<li class="line"><a href="/security/contact.jhtml">隐私和偏好</a></li>
+		<li><a href="/user/index!toggle.jhtml?request_locale=zh_CN">中文版</a> </li>
+		<li><a href="/user/index!toggle.jhtml?request_locale=en_US">English version</a> </li>
+	</ul>
+</div>
+	 
+	 <!-- Logo and navigation bar --> 
+	 <div id="header" class="clearfix"> 
+		  <div id="logo"><a href="/user/index.jhtml"><img src="../../../bns/images/youshi_logo.png" width="80" height="51" title="优士网"></a></div> 
+		  <div id="navigation"> 
+			   <ul> 
+			   <li id="nav_home"><a href="/user/index.jhtml"><span>首 页</span></a></li> 
+			   <li id="nav_profile"><a href="/user/profile.jhtml"><span>档 案</span></a></li> 
+			   <li id="nav_connection"><a href="/sns/sns!view1stFriends.jhtml"><span>人 脉</span></a></li>
+			   <li id="nav_group"><a href="/group/index.jhtml"><span>群 组</span></a></li> 
+			   <li id="nav_microblogging"><a href="/feed/feed!list.jhtml"><span>微 博</span></a></li>
+			   <li id="nav_job">
+			   <a href="/job/home!view.jhtml"><span class="relative">求 职</span></a></li> 
+			   <li id="nav_event"><a href="/event/list!friendEvent.jhtml"><span>活 动</span></a></li>
+			   <li id="nav_message"><a href="/msg/message!getMessageInbox.jhtml"><span class="relative">直 邮<em class="red" jsonInfo="newMessageCount"></em></span></a></li> 
+			   </ul> 
+		  </div> 
+	</div> 
+ 
+	<div id="nav_profile_menu" class="nav-menu" cnw="88" enw="160">
+		<a href="/user/profile.jhtml">编辑档案</a>
+		<a href="/u/1">预览档案</a>
+		<a href="/endorse/manage!getEndorseReceive.jhtml">我的评价</a>
+	</div> 
+	<div id="nav_connection_menu" class="nav-menu" cnw="88" enw="160">
+		<a href="/sns/sns!view1stFriends.jhtml"> 一度人脉</a>
+		<a href="/sns/sns!viewExtendConnection.jhtml"> 拓展人脉</a>
+		<a href="/sns/sns!getFollowers.jhtml?queryType=1"> 关注列表</a>
+		<a href="/sns/sns!getMemo.jhtml"> 我的备忘</a>
+	</div> 
+	<div id="nav_group_menu" class="nav-menu" cnw="88" enw="110">
+		<a href="/group/index.jhtml">我的群组</a>
+		<a href="/group/groups.jhtml">所有群组</a>
+		<a href="/group/member.groupcreateapply.jhtml">创建群组</a>
+	</div> 
+	<div id="nav_microblogging_menu" class="nav-menu" cnw="88" enw="178">
+		<a href="/feed/feed!list.jhtml">最新微博</a>
+		<a href="/feed/feed!retweetlist.jhtml">我的转播</a>
+		<a href="/feed/feed!getMicroblogFav.jhtml">我的收藏</a>
+		<a href="/feed/feed!getMyComment.jhtml">我的评论</a>
+		<a href="/feedShare/feedShare!instrument.jhtml">分享工具</a>
+	</div> 
+	<div id="nav_job_menu" class="nav-menu" cnw="88" enw="120">
+		<a href="/job/search!viewSearchForm.jhtml">找工作</a>
+		<a href="/job/apply!getMyPost.jhtml">我的职位</a>
+		<a href="/job/recruitment!viewPostForm.jhtml">发布职位</a>
+		<a href="/job/recruitment!listPublishJobs.jhtml">管理职位</a>
+	</div> 
+	<div id="nav_event_menu" class="nav-menu" cnw="88" enw="160">
+		<a href="/event/list!friendEvent.jhtml"> 人脉活动</a>
+		<a href="/event/samecity.jhtml"> 同城活动</a>
+		<a href="/event/myevent.jhtml"> 我的活动</a>
+		<a href="/event/myevent.jhtml#outLink" id="EventOutLink"> 添加活动</a>
+	</div> 
+	<div id="nav_message_menu" class="nav-menu" cnw="118" enw="104">
+		 <a href="/msg/message!getMessageInbox.jhtml">已收到的直邮</a>
+		 <a href="/msg/message!getMessageOutbox.jhtml">已发出的直邮</a>
+		 <a href="/msg/message!composeMessage.jhtml">撰写新直邮</a>
+	</div>
+	<!-- Search bar -->
+	 <div id="searchbar" class="searchbar">
+		 <form id="search_form" action="/search/search!search.jhtml" method="post" >
+		  <input type="hidden" name="form.keyWordSearch" value="true" id="is_keyword"/><input type="hidden" name="form.position" value="" id="form_position"/><input type="hidden" name="industryIds" value="0" id="form_industryIds"/><div class="search-form">
+			<span class="search-q"><input type="text" name="form.keyword" value="姓名、职位、公司、学校..." id="is_keyword_nav" class="quiet" onfocus="$(this).attr('value', '');"/></span>
+			<button type="submit" hideFocus="true"><span class="hide">搜 索</span></button> 
+			<span class="search-link"><a href="/search/search!advSearch.jhtml">高级搜索</a></span> 
+		 </div> 
+	   </form>
+  </div>
+  <!-- header end -->
+ 
+	<!-- main start -->
+	<div id="main" class="clearfix">
+		
+ 
+		<div class="column-2-3">
+			
+ 
+ 
+<!--群组路径导航 -->
+<head>
+<title>123123123</title>
+</head>
+         
+ 
+		
+		<!-- 5796bug修復 -->
+		
+		<!--  
+			<div class="notice-new">优士网群组又添新特性，基于邮件的实时讨论等新功能隆重登场！<a href="/doc.jhtml?key=help_group" target="_blank">了解更多</a><span class="new"></span><a class="common-close"href="#"><span class="hide">关闭</span></a></div>
+		-->
+		
+       <div class="grp-path"><h3>单身社交群</h3></div>
+          <!--群组logo及菜单导航 -->
+        <div class="tabs-common grp-nav clearfix">
+          <div class="grp-logo"><a href="/group/mygroup.jhtml?gid=372"><img src="http://192.168.10.169/photos/g/2010/07/10/92589012-7460-4c04-8890-905077fc8ceb_icon.jpg" width="50" height="50" /></a></div>
+          <ul id="groupBar">
+          <li id="home"><a href="/group/mygroup.jhtml?gid=372">群组首页</a></li>
+          <li id="forum"><a href="/group/topic.list.jhtml?gid=372 ">讨论区</a></li>
+          <li id="resource"><a href="/group/resource.jhtml?gid=372">资源</a></li>
+          <!-- <li id="event"><a href="/group/member.findEvents.jhtml?mark=eventAll&gid=372">活动</a></li> -->
+          <li id="event"><a href="/group/events.jhtml?gid=372">活动</a></li>
+          <li id="member"><a href="/group/member.list.jhtml?gid=372">成员</a></li>
+          
+          </ul>
+        </div>
+        
+        
+        
+        
+ 
+ 
+ 
+ 
+ 
+ 
+<script type="text/javascript">__subnav = "resource";</script>
+ 
+ 
+ 
+<h4>分享我的资源</h4>
+ 
+<div class="group_share_all_type_outer">
+	<ul class="group_share_all_type_left float-left">
+		<li><a href="#" class="sharefile">分享文档</a></li>
+		<li><a href="#" class="sharepic">分享图片</a></li>
+		<li><a href="#" class="sharewebset">分享网址</a></li>
+	</ul>
+	
+	<div class="group_share_all_type_right clearfloat">
+		
+		<div id="share_doc">
+			<form action="/group/shareresource!share.jhtml" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="struts.token.name" value="struts.token" />
+<input type="hidden" name="struts.token" value="411DIUKARDBCAWZ1PECYPU9VRBIQ8585" />
+			<input type="hidden" name="handle" value="2" />
+			<input type="hidden" name="gid" value="372" />
+				<table>
+					<tr>
+						<td>
+							<h5>选择本地文件:</h5>
+							<input type="file" name="document" />
+						</td>
+					</tr>
+					<tr>
+						<td><div class="date margin-top05e">支持Word、Excel、PPT、PDF格式文件，最大5M</div></td>
+					</tr>
+					<tr>
+						<td>
+							<h5 class="margin-top15e">我的评论</h5>
+							<textarea name="desciption" style="width:90%;height:125px;" cols="40" rows="5" ></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div style="padding:30px 0 10px 0">
+								<input type="submit" class="special-btn" value="发布"  name="submit"/>
+								<input type="button" class="common-button" value="取消"  name="submit"/>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div id="share_image" style="display:none">
+			<form action="/group/shareresource!share.jhtml" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="struts.token.name" value="struts.token" />
+<input type="hidden" name="struts.token" value="411DIUKARDBCAWZ1PECYPU9VRBIQ8585" />
+			<input type="hidden" name="handle" value="3" />
+			<input type="hidden" name="gid" value="372" />
+				<table>
+					<tr>
+						<td>
+							<h5>选择本地图片:</h5>
+							<p id="p1"><input type="file" js="image1" name="document" /></p>
+							<p id="p2" style="display:none"><input type="file" js="image2" name="document" /></p>
+							<p id="p3" style="display:none"><input type="file" js="image3" name="document" /></p>
+							<div class="">
+								<span id="pi0"></span>
+								<span id="pi1"></span>
+								<span id="pi2"></span>
+								<span id="pi3"></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td><div class="date">支持JPG、GIF、PNG格式的图片文件，每张图片最大5MB，一次最多可上传3张</div></td>
+					</tr>
+					<tr>
+						<td>
+							<div style="margin-top:25px;">
+								<h5>我的评论</h5>
+								<textarea style="width:90%; height:125px;" name="desciption" cols="40" rows="5" ></textarea>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td><div style="padding:30px 0 10px 0"><input type="submit" value="发布" class="special-btn"  name="submit"/> <input type="button" value="取消" class="common-button"  name=""/></div></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div id="share_linkurl" style="display:none">
+			<form action="/group/shareresource!share.jhtml" method="post" >
+			<input type="hidden" name="struts.token.name" value="struts.token" />
+<input type="hidden" name="struts.token" value="411DIUKARDBCAWZ1PECYPU9VRBIQ8585" />
+			<input type="hidden" name="handle" value="1" />
+			<input type="hidden" name="gid" value="372" />
+				<table>
+					<tr>
+						<td>
+						<div  id="statusUrlContent">
+							<div js="getTitleArea">
+								<h5>输入想分享的网址：</h5>
+								<input class="input float-left" style="width:339px" value="http://" name="linkurl" id="linkurl" type="text" />
+								<input type="button" js="getTitle" value="获 取" class="common-button float-left" style="margin-left:10px;" />
+							</div>
+							<div js="postTitleArea" class="add-web formstyle" style="display: none;">
+								<ul>
+									<li>
+										<label>
+											网址
+											：
+										</label>
+										<p></p>
+									</li>
+									<li>
+										<label>
+											标题
+											：
+										</label>
+										<input type="text" maxlength="128" value="" class="input-w-400" name="linktitle" />
+									</li>
+								</ul>
+							</div>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div style="margin-top:25px;">
+							<h5>我的评论</h5>
+							<textarea name="desciption" style="width:90%;height:125px;" cols="40" rows="5" ></textarea>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td><div style="padding:30px 0 10px 0">
+							<input class="special-btn" type="submit" value="发布"  name="submit"/>
+							<input class="common-button" type="button" value="取消"  name="submit"/>
+						</div></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		
+	
+	</div>
+	
+</div>
+ 
+ 
+<script type="text/javascript"> 
+$(document).ready(function(){
+	$('[name="document"]').previewImage({
+		previewCont: ['#pi0', '#pi1', '#pi2', '#pi3'],
+		checkFile: function(code){
+			//alert('error');
+		},
+		success: function(file, img){
+			$(file).parent().next().show();
+			$(file).parent().hide();
+		}
+	});
+	
+	var urlCont = $('#statusUrlContent');
+	//打开输入网址
+	$("#statusUrl").click(function(){
+		urlCont.show();
+		linkUrl.hide();
+		return false;
+	});
+	//填写网址的时候，阻止回车
+	$('#linkurl').keydown(function(e){
+		if( e.keyCode == 13 ){ return false; }
+	});
+	//获取网址的标题
+	urlCont.find('.common-close').click(function(){
+		var g = urlCont.find('div[js="getTitleArea"]').show();
+		g.find(':text').val('http://');
+		var p = urlCont.find('div[js="postTitleArea"]').hide();
+		p.find(':text').val('');
+		p.find('p').text('');
+		urlCont.hide();
+		linkUrl.show();
+	});
+	urlCont.find(':button[js="getTitle"]').click(function(){
+		var linkurl = $("#linkurl").val().replace(/^(http:\/\/)*/, 'http://');
+		if( linkurl.is_url() ){
+			$.get('/feed/feed!getFeedTitle.jhtml?linkurl=' + linkurl, function(data){
+					urlCont.find('div[js="getTitleArea"]').hide();
+					var area = urlCont.find('div[js="postTitleArea"]').show();
+					area.find('p').text(linkurl);
+					area.find(':text').val(data);
+				});
+		} else {
+			pop_alert('<font color="red">' + lang.feed.linkurl_error + '</font>');
+		}
+	});
+	
+	$('.sharefile').css('font-weight','bold');
+	$('.sharepic').bind('click',function(){
+		$(this).css('font-weight','bold');
+		$(this).parent().siblings().find('a').css('font-weight','normal')
+		$(this).closest('ul').css('background-position','0 -200px');
+		$('#share_image').siblings().hide();
+		$('#share_image').show();
+	});
+	
+	$('.sharefile').bind('click',function(){
+		$(this).css('font-weight','bold');
+		$(this).parent().siblings().find('a').css('font-weight','normal')
+		$(this).closest('ul').css('background-position','0 -401px');
+		$('#share_doc').siblings().hide();
+		$('#share_doc').show();
+	});
+	
+	$('.sharewebset').bind('click',function(){
+		$(this).css('font-weight','bold');
+		$(this).parent().siblings().find('a').css('font-weight','normal')
+		$(this).closest('ul').css('background-position','0 0px');
+		$('#share_linkurl').siblings().hide();
+		$('#share_linkurl').show();
+	});
+	
+	
+});
+</script>
+        
+		
+ 
+		</div>
+</div>
+	<!-- main end -->
+ 
+	<!-- footer start -->
+	<div id="footer">
+		<ul class="common-nav divide">
+	<li><a href="/doc.jhtml?key=overview">了解优士</a></li>
+	<li><a href="/doc.jhtml?key=about_us">关于我们</a></li>
+	<li><a href="/founding-and-charter-members">创始会员</a></li>
+	<li><a href="/doc.jhtml?key=contact_us">联系我们</a></li>
+	<li><a href="/doc.jhtml?key=join_us">加入我们</a></li>
+	<li><a href="/doc.jhtml?key=news">媒体中心</a></li>
+	<li><a href="/doc.jhtml?key=success_stories">成功故事</a></li>
+	<li><a href="/doc.jhtml?key=privacy_policy">隐私声明</a></li>
+	<li><a href="/doc.jhtml?key=term_of_service">服务条款</a></li>
+	<li><a href="http://blog.ushi.cn" target="_blank">优士博客</a></li>
+	<li class="divide-none"><a href="/user/index!toggle.jhtml?request_locale=en_US">English version</a></li>
+	</ul>
+<p class="clear"><a href=http://www.miibeian.gov.cn/ target=_blank>沪ICP备06027394号</a> Ushi.cn © 版权所有 2009~2011</p> 
+<div class="side-feedback" id="side-feedback"><a hidefocus="true" class="feedback-btn" href="#"><span class="hide">Feedback</span></a></div>
+</div>
+	<!-- footer end -->
+</div>
+ 
+</body>
+</html>
+ 
+

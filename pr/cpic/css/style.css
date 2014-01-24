@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+#header {margin-bottom:0;}
+#main {width:100%; text-align:center; background:url(../images/bg_main.png) repeat-x left top; margin:0;}
+.main {width:960px; margin:0 auto; text-align:left; font-size:14px;}
+.cpic-date {background:#2b2b2b url(../images/bg_date.png) repeat-x left top; color:#fff; font-family:Arial; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.cpic-date-header {border-bottom:1px solid #413b3b;}
+.cpic-date-header td {text-align:center; padding:10px 0; color:#fff;}
+.cpic-date-cont {border-bottom:1px solid #282727; border-top:1px solid #554f4f; padding:10px;}
+.cpic-date-calendar {border-spacing:3px; border-collapse:separate; cursor:default;}
+.cpic-date-calendar th {text-align:center; font-size:12px; font-weight:bold; color:#a3a0a0; background:#514b4b; padding:3px 0;}
+.cpic-date-calendar td {text-align:center; font-weight:bold; color:#a3a0a0; height:31px;}
+.cpic-date-calendar td span {display:block; height:29px; line-height:29px; border:1px solid #524f4f;}
+.cpic-date-calendar td span.empty {height:29px; line-height:29px; background:#514b4b;}
+.cpic-date-calendar td a {display:block; height:31px; line-height:31px; background:url(../images/bg_date2.png) repeat-x left top; cursor:pointer; color:#fff;}
+.cpic-date-calendar td a.old {background-image:url(../images/bg_date1.png); cursor:default;}
+.cpic-date-calendar td a:hover {text-decoration:none;}
+.cpic-date-footer {border-top:1px solid #3a3939; padding:12px; text-align:center;}
+.cpic-tag {font-size:12px; display:inline-block; background:url(../images/bg_tag.png) no-repeat left top; height:24px; overflow:hidden; padding-left:12px;}
+.cpic-tag span {display:block; background:url(../images/bg_tag.png) no-repeat right top; height:24px; line-height:24px; overflow:hidden; padding-right:12px; color:#787878;}
+.cpic-tag:hover {background-image:url(../images/bg_tag_h.png); text-decoration:none;}
+.cpic-tag:hover span {background-image:url(../images/bg_tag_h.png); color:#0066aa;}
+.cpic-title {color:#9b0511; line-height:1.3em; font-family:'microsoft yahei'; font-weight:normal;}

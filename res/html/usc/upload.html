@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>搜索礼宾服务-优士网</title>
+<link href="http://static.ushi.cn/s/common/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="http://static.ushi.cn/s/common/images/favicon.ico" rel="bookmark" type="image/x-icon" />
+<link href="/static/usc/css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="../../../common/css/layout.css" rel="stylesheet" type="text/css" media="screen, projection" />
+<link href="../../../bns/css/member.css" rel="stylesheet" type="text/css" media="screen, projection" />
+<link href="../../../bns/css/member_sc.css" rel="stylesheet" type="text/css" media="screen, projection" />
+<link href="../../../usc/css/usc.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper_usc">
+	<div style="padding:30px; background:#eee;">
+		<div class="usc-upload">
+			<table cellspacing="0" cellpadding="0" class="form-table">
+				<tr>
+					<th><span class="red">*</span> <label>上传名录</label></th>
+					<td><input type="file" class="formtext" value="" name="" style="height:auto;" />
+						<p class="red small" style="display:none;">请选择要上传的文件</p>
+						<p class="quiet small">支持的格式: Zip, RAR, GIF, PNG, JPG</p>
+					</td>
+				</tr>
+				<tr>
+					<th><span class="red">*</span> <label>公司名称</label></th>
+					<td><input type="text" class="formtext" value="" maxlength="64" name="">
+						<p class="red small" style="display:none;">请输入公司名称</p>
+					</td>
+				</tr>
+				<tr>
+					<th><span class="red">*</span> <label>所属行业</label></th>
+					<td><div class="select-location"><a class="btn-location" js="selectIndustry" tips="选择" maxlength="20"><span industryNames="">选择</span></a>
+							<input type="hidden" js="selectIndustry_id" name="industryIds" value="" />
+							<input type="hidden" js="selectIndustry_name" name="industryNames" value="" />
+						</div>
+						<p class="red small" style="display:none;">请选择所属行业</p>
+					</td>
+				</tr>
+				<tr>
+					<th><span class="red">*</span> <label>所属地区</label></th>
+					<td><div class="select-location"><a class="btn-location" js="selectLocation" tips="选择" maxlength="13"><span locationNames="">选择</span></a>
+							<input type="hidden" js="selectLocation_name" name="locationNames" value="" />
+							<input type="hidden" js="selectLocation_id" name="locationIds" value="" />
+						</div>
+						<p class="red small" style="display:none;">请选择所属地区</p>
+					</td>
+				</tr>
+				<tr>
+					<th><span class="red">*</span> <label>内含人数</label></th>
+					<td><input type="text" class="formtext" value="" maxlength="6" name="">
+						<p class="red small" style="display:none;">请输入内含人数</p>
+					</td>
+				</tr>
+				<tr>
+					<th><span class="red">*</span> <label>内容统计</label></th>
+					<td><div><label class="spe-right3"><input type="checkbox" /> Email</label>
+							<label class="spe-right3"><input type="checkbox" /> 手机</label>
+							<label class="spe-right3"><input type="checkbox" /> 座机</label>
+						</div>
+						<p class="red small" style="display:none;">请选择内容</p>
+					</td>
+				</tr>
+				<tr>
+					<th><label>名录描述 </label></th>
+					<td>
+						<textarea class="formtext" style="height:80px;"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<th><label>售价 <span class="quiet small">(优士币)</span></label></th>
+					<td><input type="text" class="formtext" value="" maxlength="6" name="">
+						<p class="red small" style="display:none;">请输入数字</p>
+						<p class="quiet small">如果不填写售价，将视作免费出售</p>
+					</td>
+				</tr>
+				<tr>
+					<th>&nbsp;</th>
+					<td class="form-btn"><input type="submit" class="button large-btn" value="&nbsp;确 定&nbsp;">
+						<a class="spe-left2" href="#">取消</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id="footer">
+		<p style="font-size:14px;">招聘服务热线:021-51759800  招聘服务邮箱:<a href="mailto:talentsource@ushi.com"> talentsource@ushi.com</a></p>
+		<p class="quiet">Ushi.com © 2009~2013 沪ICP备06027394号 <a href="http://www.ushi.com/doc.jhtml?key=term_of_service" class="quiet">服务条款</a></p>
+	</div>
+</div>
+</body>
+</html>

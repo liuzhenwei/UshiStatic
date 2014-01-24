@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>加为一度朋友</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+</head>
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	<div id="main" class="clearfix">
+		<div class="channel-tit border-bottom">
+			<h3>邀请 <a href="#">刘宇</a> 成为我在人脉平方的一度朋友</h3>
+		</div>
+		<div class="column-full" id="add-shop">
+			<div class="add-shop-member"> <span class="box-arrow-bottom"></span>
+				<div class="profile-t clearfix">
+					<div class="add-shop-line">
+						<div class="pt-inner-l">
+							<div class="vcard v-120"> <a href="/u/8"><img id="avatar-8" src="http://images.ushi.cn/bnsphoto/2010/05/08/5de7c859-aac0-45cf-978e-6e35b86e4601_s.jpg"></a>
+								<dl>
+									<dt>闵海灵 <span title="付费会员" class="grade-vip"></span> <span title="0度人脉" class="degree-0"></span> </dt>
+									<dd>Chengwei Ventures
+										Founder and Manag Director </dd>
+									<dd>中国大陆 - 上海 - 上海</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="pt-inner-r">
+							<div class="add-shop-content">
+								<h5>感兴趣的联络类型</h5>
+								<p><span>商业合作 </span><span class="spe-left2">顾问咨询</span><span class="spe-left2"> 投资机会</span><span class="spe-left2">朋友联络</span></p>
+								<h5>他的联络建议：</h5>
+								<p class="add-chat">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas feug iat consequat diam. Maecenas metus. Vivamus diam purus, cursus a, commodo non, facilisis vitae, nulla. Aenean dictum lacinia tortor. Nunc iaculis, nibh non iaculis aliquam, orci felis euismod neque.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="add-shop-select clearfix">
+				<div class="tipsbox">
+                您今天发送的一度联络请求已经达到了上限，暂时不能发起新的请求。我们建议您与现实生活中认识的朋友成为一度，<a href="#">了解原因</a></div>
+               <h4 class="fl-button"> <a href="#" >返回李嵩波的个人档案</a></h4>
+						
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="wantcoins" style="display:none;">
+	<div class="bdr-grey margin-bottom">
+		<p>您的账户中还有 <strong class="red">0</strong> 枚优士币，余额不足。发送一封人脉直邮需要 <strong class="red">10</strong> 枚优士币。</p>
+		<p class="btn-line"><a href="/currency/Coins.jhtml" class="common-button"><strong>我想购买优士币</strong></a>  <a href="/currency/Coins!about.jhtml">了解更多关于优士币的信息</a></p>
+	</div>	
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$('input[id^="for_"]:radio').click(function(){
+		$('.formstyle-5 > div').hide();
+		var id = this.id.replace('for_', '');
+		$('#' + id).show();
+	});
+	$('#other .email_know input:radio').click(function(){
+		var index = $('#other .email_know input:radio').index(this);
+		var p = $('#other .email_know').next().find('p');
+		p.hide();
+		$(p[index]).show();
+	});
+	$('form.formstyle-5').attr('firstsubmit', 'yes')
+		.submit(function(){
+			var form = $(this);
+			if( form.attr('firstsubmit') == 'yes' ){
+				form.attr('firstsubmit', 'no');
+				$.getJSON('data/coins.json', function(data){
+					if( data.state == 0 ){
+						form.submit();
+					} else {
+						form.attr('firstsubmit', 'yes');
+						$('#wantcoins strong.red:first').text(data.coins);
+						$('#wantcoins strong.red:last').text(data.payment);
+						$('#wantcoins').popupWin({title: '优士币余额不足'});
+					};
+				});
+				return false;
+			}
+			return true;
+		});
+});
+</script>
+
+<!--#include file="footer.html"-->
+</body>
+</html>

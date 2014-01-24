@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="..../../bns/images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+	<div class="lf">  
+		<div id="menu_out" class="leftmenu">	
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+		</div>
+	</div>  
+
+<style type="text/css">
+.mult-list {display: inline-block; width: 260px; height: 300px; text-align: left; overflow: auto; border: 1px #BBB solid; padding: 3px 6px; vertical-align: top;}
+.mult-list dt {padding: 5px 0; font-weight: bold; font-size: 13px;}
+.mult-list dd {padding: 2px 0;}
+</style>
+	<div class="rf">
+		<div id="container">
+			<h2>搜索添加对象</h2>
+			<div class="search_area">
+			<form action="search_res.html" method="POST">
+				<table width="100%" cellpadding="0" cellspacing="5" border="0">
+					<tr>
+						<td>姓名：
+						<input type="text" name="" /></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>公司：
+							<input type="text" name="" /></td>
+						<td>职位：
+						<input type="text" name="" /></td>
+					</tr>
+					<tr>
+						<td>行业：
+		<div class="mult-list">
+            <dt>高科技</dt>
+				<dd><input type="checkbox" value="2" name="industryIds">空间科技</dd>
+				<dd><input type="checkbox" value="3" name="industryIds">计算机硬件</dd>
+				<dd><input type="checkbox" value="4" name="industryIds">计算机软件</dd>
+				<dd><input type="checkbox" value="5" name="industryIds">计算机网络设备</dd>
+				<dd><input type="checkbox" value="6" name="industryIds">计算机与网络安全</dd>
+				<dd><input type="checkbox" value="7" name="industryIds">计算机游戏</dd>
+				<dd><input type="checkbox" value="8" name="industryIds">互联网</dd>
+				<dd><input type="checkbox" value="9" name="industryIds">半导体</dd>
+				<dd><input type="checkbox" value="10" name="industryIds">电信与通讯</dd>
+				<dd><input type="checkbox" value="11" name="industryIds">纳米技术</dd>
+				<dd><input type="checkbox" value="12" name="industryIds">信息技术与服务</dd>
+				<dd><input type="checkbox" value="13" name="industryIds">无线通讯</dd>
+			<dt>法律</dt>
+				<dd><input type="checkbox" value="15" name="industryIds">法律援助</dd>
+				<dd><input type="checkbox" value="16" name="industryIds">法律服务</dd>
+			<dt>专业咨询、服务</dt>
+				<dd><input type="checkbox" value="18" name="industryIds">管理咨询</dd>
+				<dd><input type="checkbox" value="19" name="industryIds">招聘、猎头</dd>
+				<dd><input type="checkbox" value="20" name="industryIds">人力资源</dd>
+				<dd><input type="checkbox" value="21" name="industryIds">培训</dd>
+				<dd><input type="checkbox" value="22" name="industryIds">市场推广与广告</dd>
+				<dd><input type="checkbox" value="23" name="industryIds">市场调研</dd>
+				<dd><input type="checkbox" value="24" name="industryIds">公共关系</dd>
+				<dd><input type="checkbox" value="25" name="industryIds">翻译服务</dd>
+				<dd><input type="checkbox" value="26" name="industryIds">设备维护</dd>
+				<dd><input type="checkbox" value="27" name="industryIds">外包服务</dd>
+				<dd><input type="checkbox" value="28" name="industryIds">会务及活动服务</dd>
+			<dt>医疗与健康</dt>
+				<dd><input type="checkbox" value="30" name="industryIds">生物工程</dd>
+				<dd><input type="checkbox" value="31" name="industryIds">生物信息</dd>
+				<dd><input type="checkbox" value="32" name="industryIds">医院与医疗</dd>
+				<dd><input type="checkbox" value="33" name="industryIds">医药品</dd>
+				<dd><input type="checkbox" value="34" name="industryIds">医疗设备</dd>
+				<dd><input type="checkbox" value="35" name="industryIds">兽医</dd>
+				<dd><input type="checkbox" value="36" name="industryIds">健身</dd>
+				<dd><input type="checkbox" value="37" name="industryIds">心理健康</dd>
+				<dd><input type="checkbox" value="38" name="industryIds">中医</dd>
+			<dt>媒体</dt>
+				<dd><input type="checkbox" value="40" name="industryIds">广播</dd>
+				<dd><input type="checkbox" value="41" name="industryIds">电视</dd>
+				<dd><input type="checkbox" value="42" name="industryIds">电影</dd>
+				<dd><input type="checkbox" value="43" name="industryIds">报纸</dd>
+				<dd><input type="checkbox" value="44" name="industryIds">杂志</dd>
+				<dd><input type="checkbox" value="45" name="industryIds">出版</dd>
+				<dd><input type="checkbox" value="46" name="industryIds">写作与编辑</dd>
+				<dd><input type="checkbox" value="47" name="industryIds">文化艺术</dd>
+				<dd><input type="checkbox" value="48" name="industryIds">印刷</dd>
+				<dd><input type="checkbox" value="49" name="industryIds">互联网媒体</dd>
+				<dd><input type="checkbox" value="50" name="industryIds">媒体设计制作</dd>
+			<dt>体育、休闲、旅游、娱乐</dt>
+				<dd><input type="checkbox" value="52" name="industryIds">娱乐业</dd>
+				<dd><input type="checkbox" value="53" name="industryIds">休闲度假与旅游</dd>
+				<dd><input type="checkbox" value="54" name="industryIds">餐饮业</dd>
+				<dd><input type="checkbox" value="55" name="industryIds">住宿业</dd>
+				<dd><input type="checkbox" value="56" name="industryIds">体育运动</dd>
+				<dd><input type="checkbox" value="57" name="industryIds">食品与饮料</dd>
+				<dd><input type="checkbox" value="58" name="industryIds">娱乐设备与服务</dd>
+			<dt>金融</dt>
+				<dd><input type="checkbox" value="60" name="industryIds">保险</dd>
+				<dd><input type="checkbox" value="61" name="industryIds">财经服务</dd>
+				<dd><input type="checkbox" value="62" name="industryIds">房地产</dd>
+				<dd><input type="checkbox" value="63" name="industryIds">投资银行</dd>
+				<dd><input type="checkbox" value="64" name="industryIds">风险投资</dd>
+				<dd><input type="checkbox" value="65" name="industryIds">私募股权投资</dd>
+				<dd><input type="checkbox" value="66" name="industryIds">证券</dd>
+				<dd><input type="checkbox" value="67" name="industryIds">会计</dd>
+			<dt>非盈利性组织</dt>
+				<dd><input type="checkbox" value="69" name="industryIds">非盈利性组织管理</dd>
+				<dd><input type="checkbox" value="70" name="industryIds">公益基金</dd>
+				<dd><input type="checkbox" value="71" name="industryIds">智囊团</dd>
+				<dd><input type="checkbox" value="72" name="industryIds">慈善事业</dd>
+				<dd><input type="checkbox" value="73" name="industryIds">科学研究</dd>
+			<dt>教育</dt>
+				<dd><input type="checkbox" value="75" name="industryIds">义务教育</dd>
+				<dd><input type="checkbox" value="76" name="industryIds">高等教育</dd>
+				<dd><input type="checkbox" value="77" name="industryIds">教育管理</dd>
+				<dd><input type="checkbox" value="78" name="industryIds">E-Learning</dd>
+				<dd><input type="checkbox" value="79" name="industryIds">教育研究</dd>
+			<dt>日常消费品</dt>
+				<dd><input type="checkbox" value="81" name="industryIds">化妆品</dd>
+				<dd><input type="checkbox" value="82" name="industryIds">服装服饰</dd>
+				<dd><input type="checkbox" value="83" name="industryIds">体育用品</dd>
+				<dd><input type="checkbox" value="84" name="industryIds">烟草</dd>
+				<dd><input type="checkbox" value="85" name="industryIds">超市卖场</dd>
+				<dd><input type="checkbox" value="86" name="industryIds">食物生产</dd>
+				<dd><input type="checkbox" value="87" name="industryIds">酒类</dd>
+				<dd><input type="checkbox" value="88" name="industryIds">消费电子</dd>
+				<dd><input type="checkbox" value="89" name="industryIds">快速消费品</dd>
+				<dd><input type="checkbox" value="90" name="industryIds">家具</dd>
+				<dd><input type="checkbox" value="91" name="industryIds">零售</dd>
+				<dd><input type="checkbox" value="92" name="industryIds">批发</dd>
+				<dd><input type="checkbox" value="93" name="industryIds">进出口</dd>
+				<dd><input type="checkbox" value="94" name="industryIds">奢侈品与珠宝</dd>
+			<dt>建筑</dt>
+				<dd><input type="checkbox" value="96" name="industryIds">建筑工程</dd>
+				<dd><input type="checkbox" value="97" name="industryIds">建材</dd>
+				<dd><input type="checkbox" value="98" name="industryIds">建筑设计</dd>
+				<dd><input type="checkbox" value="99" name="industryIds">土木工程</dd>
+				<dd><input type="checkbox" value="100" name="industryIds">装饰装潢</dd>
+			<dt>制造</dt>
+				<dd><input type="checkbox" value="102" name="industryIds">工艺品</dd>
+				<dd><input type="checkbox" value="103" name="industryIds">飞行航空与宇航</dd>
+				<dd><input type="checkbox" value="104" name="industryIds">汽车</dd>
+				<dd><input type="checkbox" value="105" name="industryIds">化工</dd>
+				<dd><input type="checkbox" value="106" name="industryIds">电子电气设备</dd>
+				<dd><input type="checkbox" value="107" name="industryIds">机械</dd>
+				<dd><input type="checkbox" value="108" name="industryIds">采矿与金属</dd>
+				<dd><input type="checkbox" value="109" name="industryIds">石油与能源</dd>
+				<dd><input type="checkbox" value="110" name="industryIds">回收与环境保护</dd>
+				<dd><input type="checkbox" value="111" name="industryIds">造船</dd>
+				<dd><input type="checkbox" value="112" name="industryIds">纺织及皮革制造</dd>
+				<dd><input type="checkbox" value="113" name="industryIds">造纸与木材</dd>
+				<dd><input type="checkbox" value="114" name="industryIds">铁路</dd>
+				<dd><input type="checkbox" value="115" name="industryIds">玻璃, 陶瓷与混凝土</dd>
+				<dd><input type="checkbox" value="116" name="industryIds">包装与集装箱</dd>
+				<dd><input type="checkbox" value="117" name="industryIds">工业管理</dd>
+				<dd><input type="checkbox" value="118" name="industryIds">工业自动化</dd>
+			<dt>政府及公共事业</dt>
+				<dd><input type="checkbox" value="120" name="industryIds">外交</dd>
+				<dd><input type="checkbox" value="121" name="industryIds">司法机关</dd>
+				<dd><input type="checkbox" value="122" name="industryIds">行政部门</dd>
+				<dd><input type="checkbox" value="123" name="industryIds">军事机构</dd>
+				<dd><input type="checkbox" value="124" name="industryIds">卫生社会福利</dd>
+				<dd><input type="checkbox" value="125" name="industryIds">水利环境公共设施</dd>
+				<dd><input type="checkbox" value="126" name="industryIds">地质勘探</dd>
+				<dd><input type="checkbox" value="127" name="industryIds">水电燃气生产供应</dd>
+				<dd><input type="checkbox" value="128" name="industryIds">公共安全</dd>
+				<dd><input type="checkbox" value="129" name="industryIds">社会保障</dd>
+				<dd><input type="checkbox" value="130" name="industryIds">图书馆及博物馆</dd>
+				<dd><input type="checkbox" value="131" name="industryIds">信息服务</dd>
+				<dd><input type="checkbox" value="132" name="industryIds">保安服务</dd>
+			<dt>公共服务业</dt>
+				<dd><input type="checkbox" value="134" name="industryIds">环保服务</dd>
+				<dd><input type="checkbox" value="135" name="industryIds">家政服务</dd>
+				<dd><input type="checkbox" value="136" name="industryIds">宗教协会</dd>
+				<dd><input type="checkbox" value="137" name="industryIds">物流与供应链</dd>
+				<dd><input type="checkbox" value="138" name="industryIds">邮政，包裹，零担货运</dd>
+				<dd><input type="checkbox" value="139" name="industryIds">运输/汽运/铁路</dd>
+			<dt>交通运输</dt>
+				<dd><input type="checkbox" value="141" name="industryIds">仓储</dd>
+				<dd><input type="checkbox" value="142" name="industryIds">航空运输</dd>
+				<dd><input type="checkbox" value="143" name="industryIds">水上运输</dd>
+				<dd><input type="checkbox" value="144" name="industryIds">客运及城市公共交通</dd>
+			<dt>农林牧渔业</dt>
+				<dd><input type="checkbox" value="146" name="industryIds">林业</dd>
+				<dd><input type="checkbox" value="147" name="industryIds">渔业</dd>
+				<dd><input type="checkbox" value="148" name="industryIds">农场</dd>
+				<dd><input type="checkbox" value="149" name="industryIds">畜牧</dd>
+			<dt>商品贸易</dt>
+				<dd><input type="checkbox" value="151" name="industryIds">国内贸易</dd>
+				<dd><input type="checkbox" value="152" name="industryIds">国际贸易</dd>
+			<dt>其他行业</dt>
+				<dd><input type="checkbox" value="154" name="industryIds">其他行业</dd>
+		</div>							
+						</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<input type="submit" value=" 搜 索 " />
+						</td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</form>
+			</div>
+		</div>
+	</div>
+	
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright">
+	        Copyright &copy; 2010 Ushi.cn
+        </div>
+    </div> 
+    <!--footer end-->
+</div>
+
+</body>
+</html>

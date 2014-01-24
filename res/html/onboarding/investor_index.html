@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>问答</title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../answers/css/all.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/onboarding.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../data/lang.js"></script>
+<script type="text/javascript" src="../../../common/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var box=$(".section");
+	var i= 0;
+	var tm=null;
+	var number=box.length;
+	function next(){
+		clearTimeout(tm);
+		box.filter(":visible").css("display","none");
+		$(".iconUl02 li").eq(i).removeClass("on");
+		i==number-1?i=0:i=i+1;
+		$(".pre").css("display","block");
+		box.eq(i).css("display","block");
+		$(".iconUl02 li").eq(i).addClass("on");
+		$(".iconUl02 li").eq(i-1).addClass("over");
+		if(i!=number-1){
+			tm = setTimeout(next, 6000);
+		}
+		else{
+			$(".next").css("display","none")
+		}
+	}
+	$(".next a").click(function(){
+		next();
+	});
+	$(".pre a").click(function(){
+		clearTimeout(tm);
+		box.filter(":visible").css("display","none");
+		$(".iconUl02 li").eq(i).removeClass("on");
+		i==0?i=number-1:i=i-1;
+		box.eq(i).css("display","block");
+		$(".iconUl02 li").eq(i).addClass("on");
+		$(".iconUl02 li").eq(i+1).removeClass("over");
+		if(i==number-1){
+			$(".next").css("display","none")
+		}
+		else{
+			$(".next").css("display","block")
+		}
+		if(i==0){
+			$(".pre").css("display","none")
+		}
+		else{
+			$(".pre").css("display","block")
+		}
+		tm = setTimeout(next, 2000);
+	});
+	tm = setTimeout(next, 6000);
+});
+</script>
+</head>
+<body id="page_public">
+<div id="wrapper" class="container"> 
+	<!--#include virtual="../header.html"-->
+	<div id="main">
+		<div class="onboard">
+			<ul class="topUl">
+				<li><a href="#">重新选择职业角色</a></li>
+				<li><a href="http://www.ushi.com/index.jhtml">进入首页</a></li>
+			</ul>
+			<ul class="iconUl">
+				<li class="pre"><a href="javascript:void(0);"></a></li>
+				<li class="next"><a href="javascript:void(0);"></a></li>
+			</ul>
+			<div class="section clearfix"><img src="../../../bns/images/onboarding/investor_photo01.png" alt="" class="float-left" />
+				<div class="boxr">
+					<h4>寻找投资机会，发现投资项目</h4>
+					<p>在优士，创建一份详尽的<a href="http://www.ushi.com/user/profile.jhtml" target="_blank">职业档案</a>展示您成功的投资案例，不但能帮您树立令人信服的个人品牌，更可吸引有前途的企业家或优秀团队主动联系您，获得新的投资项目。</p>
+					<p> 加入和参与一些与创业、投资相关的<a href="http://www.ushi.com/group/index.jhtml" target="_blank">群组</a>和商务<a href="http://www.ushi.com/events" target="_blank">活动</a>，您将可以发现更多潜在的投资机会。</p>
+				</div>
+			</div>
+			<div class="section clearfix" style="display:none"> <img src="../../../bns/images/onboarding/estp_photo03.png" alt="" class="float-left" />
+				<div class="boxr">
+					<h4>招聘高素质的人才</h4>
+					<p>优士网是一个招募人才的极佳平台，您不但可以在<a href="http://www.ushi.com/jobs" target="_blank">职业频道</a>免费发布职位信息进行人才招聘，还可以通过<a href="#" target="_blank">高级搜索</a>精确寻找您的目标候选人。</p>
+					<p>在优士，<a href="http://www.ushi.com/feed/feed!list.jhtml" target="_blank">微博</a>、<a href="http://www.ushi.com/group/index.jhtml" target="_blank">群组</a>和<a href="http://www.ushi.com/wenda/index.jhtml" target="_blank">优问</a>是会员展现自我、发表专业观点和行业智慧的舞台，您一定会发现很多高素质的人才隐藏其中，他们也许正是您苦苦找寻的候选人呢！ <span style="display: block; margin-top: 50px;" class="a-right"> <a href="http://www.ushi.com/index.jhtml" class="special-btn">结束指南，进入首页</a></span></p>
+				</div>
+			</div>
+			<ul class="iconUl02">
+				<li class="on"><a href="javascript:void(0);"></a></li>
+				<li><a href="javascript:void(0);"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--#include virtual="../footer.html"--> 
+</div>
+</body>
+</html>

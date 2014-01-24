@@ -1,0 +1,442 @@
+﻿@charset "utf-8";
+#main .onboard {
+	padding: 80px 105px 0 87px;
+	background: url(../images/onboarding2/bg_common.png) no-repeat left top;
+	text-align: left;
+	color: #888;
+}
+#main .section-top {
+	margin-bottom: 25px;
+	padding-left: 13px;
+}
+#main .section1 {
+	margin-bottom: 15px;
+	background: url(../images/onboarding2/bg__onboard2.png) no-repeat left bottom;
+}
+#main .section1 .inner {
+	padding: 21px 15px 30px 10px;
+	background: url(../images/onboarding2/top_onboard2.png) no-repeat left top;
+	overflow: hidden;
+	zoom:1;
+}
+#main .section1 .inner h4 {
+	margin: 0 0 35px 35px;
+	font-size: 13px;
+}
+
+#main .section1 .inner .small-box {
+	margin: 0 0 0 45px;
+	font-size: 12px;
+}
+#main .section1 .inner .small-box .form-table th,#main .section1 .inner .small-box .form-table td{
+	font-size: 12px;
+}
+#main .number {
+	padding-bottom: 10px;
+	float: left;
+	width: 15px;
+	height: 18px;
+	background: url(../images/onboarding2/number.png) no-repeat left top;
+	text-indent: -999px;
+}
+
+#main .number2 {
+	background: url(../images/onboarding2/number.png) no-repeat left -115px;
+}
+
+#main .number3 {
+	background: url(../images/onboarding2/number.png) no-repeat left -252px;
+}
+
+#main .number4 {
+	background: url(../images/onboarding2/number.png) no-repeat left -384px;
+}
+
+#main .role-ul {
+	margin: 0 0 25px 45px;
+}
+#main .role-ul li {
+	float: left;
+}
+#main .role-ul li a span {
+	background: url(../images/onboarding2/bg02_people01.png) no-repeat right top;
+	display:block;
+	text-align: center;
+}
+#main .role-ul li a:hover span,#main .role-ul li a.on span {
+	background: url(../images/onboarding2/bg02_people01_over.png) no-repeat right top;
+}
+#main .role-ul li a {
+	height: 125px;
+	display:inline-block;
+	color: #888888;
+	text-decoration:  none;
+}
+#main .employee {
+	width: 90px;
+}
+#main .employee a {
+	background: url(../images/onboarding2/bg_people01.png) no-repeat left top;
+	min-width: 70px;
+	-width:70px;
+}
+#main .employee a:hover,#main .employee a.on {
+	color: #fff;
+	background: url(../images/onboarding2/bg_people01_over.png) no-repeat left top;
+}
+#main .business {
+	width: 95px;
+}
+#main .business a {
+	background: url(../images/onboarding2/bg_people02.png) no-repeat left top;
+	min-width: 84px;
+	-width:84px;
+}
+#main .business a:hover,#main .business a.on {
+	color: #fff;
+	background: url(../images/onboarding2/bg_people02_over.png) no-repeat left top;
+}
+#main .hr {
+	width: 85px;
+}
+#main .hr a {
+	padding-left: 10px;
+	background: url(../images/onboarding2/bg_people03.png) no-repeat left top;
+	min-width: 60px;
+	-width:60px;
+}
+#main .hr a:hover,#main .hr a.on {
+	color: #fff;
+	background: url(../images/onboarding2/bg_people03_over.png) no-repeat left top;
+}
+#main .estp {
+	width: 78px;
+}
+#main .estp a {
+	background: url(../images/onboarding2/bg_people04.png) no-repeat left top;
+	min-width: 55px;
+	-width:55px;
+}
+#main .estp a:hover,#main .estp a.on {
+	color: #fff;
+	background: url(../images/onboarding2/bg_people04_over.png) no-repeat left top;
+}
+#main .company {
+	width: 100px;
+}
+#main .company a {
+	background: url(../images/onboarding2/bg_people05.png) no-repeat left top;
+	min-width: 80px;
+	-width:80px;
+}
+#main .company a:hover,#main .company a.on {
+	color: #fff;
+	background: url(../images/onboarding2/bg_people05_over.png) no-repeat left top;
+}
+#main .investor {
+	width: 85px;
+}
+#main .investor a {
+	background: url(../images/onboarding2/bg_people06.png) no-repeat left top;
+	min-width: 55px;
+	-width:55px;
+}
+#main .investor a:hover,#main .investor a.on {
+	color: #fff;
+	background: url(../images/onboarding2/bg_people06_over.png) no-repeat left top;
+}
+#main .seeker {
+	width: 85px;
+}
+#main .seeker a {
+	background: url(../images/onboarding2/bg_people07.png) no-repeat left top;
+	min-width: 55px;
+	-width:55px;
+}
+#main .seeker a:hover,#main .seeker a.on {
+	color: #fff;
+	background: url(../images/onboarding2/bg_people07_over.png) no-repeat left top;
+}
+#main .student {
+	width: 80px;
+}
+#main .student a {
+	padding-left: 10px;
+	background: url(../images/onboarding2/bg_people08.png) no-repeat left top;
+	min-width: 55px;
+	-width:55px;
+}
+#main .student a:hover,#main .student a.on {
+	color: #fff;
+	background: url(../images/onboarding2/bg_people08_over.png) no-repeat left top;
+}
+
+.stp-left{
+	width: 530px;
+	float: left;
+}
+
+.stp-right {
+    background: url(../images/reg/bg_step_ico.png) no-repeat scroll left center transparent;
+    float: right;
+    margin-top: 20px;
+    padding: 35px 0 35px 30px;
+    width: 180px;
+}
+
+.stp-right .special-word {
+    font-size: 18px;
+}
+
+.home-bar-ivt-MSN {
+    background: url(../images/onboarding2/icon01.png) no-repeat left top;
+    display: inline-block;
+    height: 17px;
+    width: 20px;
+	vertical-align: middle;
+}
+.home-bar-ivt-Mail{
+    background: url(../images/onboarding2/icon01.png) no-repeat -116px top;
+    display: inline-block;
+    height: 17px;
+    width: 20px;
+	vertical-align: middle;
+
+}.home-bar-ivt-OL{
+    background: url(../images/onboarding2/icon01.png) no-repeat -235px top;
+    display: inline-block;
+    height: 17px;
+    width: 20px;
+	vertical-align: middle;
+}
+.home-bar-ivt-IN{
+    background: url(../images/onboarding2/icon01.png) no-repeat -334px top;
+    display: inline-block;
+    height: 17px;
+    width: 20px;
+	vertical-align: middle;
+
+}
+
+#main .home-bar-invite-select{
+	margin-bottom: 15px;
+}
+
+.help_inner{
+	width: 582px;
+	float: right;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.help_inner .small_inner{
+	padding: 30px 40px 15px 25px;
+	background-color: #f4f4f4;
+
+}
+#main .section1 .help_inner  h4 {
+    font-size: 13px;
+    margin: 0 0 10px 0;
+}
+
+.help_inner dl dt{
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.help_inner dl dd{
+	font-size: 13px;
+}
+
+.help_inner dl ul li{
+	padding: 5px 0 5px 25px;
+	background: url(../images/right_icon01.png) no-repeat left center;
+	
+}
+
+.bshare-custom .bshare-sinaminiblog {
+    background: url("http://static.bshare.cn/frame/images/logos/mp2/sinaminiblog.gif") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+}
+
+.bshare-custom .bshare-qqmb {
+    background: url("http://static.bshare.cn/frame/images/logos/mp2/qqmb.gif") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+}
+
+.bshare-custom .bshare-qqxiaoyou {
+    background: url("http://static.bshare.cn/frame/images/logos/mp2/qqxiaoyou.gif") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+}
+
+.bshare-custom .bshare-renren {
+    background: url("http://static.bshare.cn/frame/images/logos/mp2/renren.gif") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+}
+
+.bshare-custom .bshare-kaixin001 {
+    background: url("http://static.bshare.cn/frame/images/logos/mp2/kaixin001.gif") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+}
+
+.bshare-custom a {
+    color: #2E3192;
+    cursor: pointer;
+    display: none;
+    height: 34px;
+    line-height: 34px;
+    margin-right: 3px;
+    opacity: 1;
+    padding-left: 35px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+
+
+.layer-box{
+	margin: 0 -35px;
+	width: 830px;
+	text-align: left;
+	overflow: hidden;
+	zoom:1;
+}
+
+.layer-box .topUl {
+	margin-bottom: 48px;
+	text-align: right;
+}
+
+.layer-box .topUl li {
+	display: inline;
+	margin: 0 0 0 20px;
+}
+
+.layer-box .topUl li a {
+	color:#0066aa;
+	font-size: 12px;
+}
+
+.layer-box ul.iconUl li {
+	padding-top: 18px;
+}
+
+.layer-box ul.iconUl li.pre {
+	width: 55px;
+	float: left;
+}
+
+.layer-box ul.iconUl li.pre a {
+	background: url(../images/onboarding2/icon02.png) no-repeat left center;
+	width: 55px;
+	height: 110px;
+	display: block;
+	position: absolute;
+	z-index: 99999;
+}
+
+.layer-box ul.iconUl li.next {
+	width: 55px;
+	float: right;
+
+}
+
+.layer-box ul.iconUl li.next a {
+	background: url(../images/onboarding2/icon02.png) no-repeat right center;
+	width: 55px;
+	height: 110px;
+	display: block;
+	position: absolute;
+	z-index: 99999;
+
+}
+
+.layer-box .section {
+	width: 690px;
+	padding-right: 17px;
+	margin: 0 auto;
+}
+
+.layer-box .section h4 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.layer-box .section p {
+	margin-bottom: 15px;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.layer-box .section p.ptext {
+	font-size: 12px;
+	padding-top: 35px;
+}
+
+.layer-box .section .boxr {
+	float: right;
+	width: 390px;
+}
+
+.layer-box .iconUl02 {
+	padding: 20px 0 20px;
+	text-align: center;
+	clear: both;
+}
+
+.layer-box .iconUl02 li {
+	margin: 0 10px;
+	display: inline;
+}
+
+.layer-box .iconUl02 li a {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: url(../images/onboarding/icon01.png) no-repeat right center;
+	cursor: default;
+}
+
+.layer-box .iconUl02 li.over a {
+	background: url(../images/onboarding/icon01.png) no-repeat left center;
+	cursor: default;
+}
+
+.layer-box .iconUl02 li.on a {
+	background: url(../images/onboarding/icon01.png) no-repeat center center;
+	cursor: default;
+}
+
+.layer-box .peo_section {
+	padding: 53px 25px 0 33px;
+}
+
+.layer-box .peo_section p.text {
+	margin-bottom: 30px;
+}
+
+.layer-box .peo_section .boxr {
+	width: 555px;
+	float: right;
+}
+
+.layer-box .peo_section .boxr .inner {
+	padding: 10px 10px 10px 20px;
+	width: 431px;
+	background: url(../images/onboarding/bg_box02.png) no-repeat left bottom;
+}
+
+.layer-box .peo_section .boxr h4 {
+	font-size: 14px;
+	color: #333;
+}
+
+.layer-box .peo_section .boxr .inner ul{
+	margin-bottom: 10px;
+}
+
+.layer-box .peo_section .boxr .inner ul li {
+	padding: 5px 0;
+	float: left;
+	width: 140px;
+}

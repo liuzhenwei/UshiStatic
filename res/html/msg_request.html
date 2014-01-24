@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>邀请与请求</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/msg.js"></script>
+</head>
+
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	<div id="main" class="clearfix">
+		<div class="channel-tit">
+			<h3>邀请与请求</h3>
+			</div>
+		<div class="tabs-common clearfix">
+			<ul>
+				<li class="current"><a href="mail_inbox.html">新请求</a></li>
+				<li><a href="msg_request_history.html">历史请求 </a></li>
+				<li><a href="msg_request_sent.html">发出的请求</a></li>
+			</ul>
+		</div>
+		<div class="notice">优士提示：请及时处理您收到的一度人脉请求，对于不希望接受的请求，您可以选择忽略，对方将不会收到任何相关的通知。<a href="#" class="common-close"><span class="hide">关闭</span></a></div>
+		<!-- main -->
+		<div class="column-2-3" id="request">
+			<div class="extra-title clearfix">
+				<div class="tit-inner-l">共20个新请求中的第1~20。</div>
+				<div class="tit-inner-r">
+					<select class="input-w-180" name="" id="friendsRequestType">
+						<option value="0">所有请求</option>
+						<option value="1">好友邀请</option>
+						<option value="2">引荐请求</option>
+						<option value="4">群组邀请</option>
+					</select>
+				</div>
+			</div>
+			
+			<!-- list -->
+			<div class="event-block">
+				<div class="event-owner"><a href="/u/zhouwenhua"><img id="avatar-24489" src="http://images.ushi.cn/bnsphoto/2010/06/30/05e0b268-8ec4-44fc-a69b-ead4925ede98_thumb.jpg"></a></div>
+				<div class="event-content">
+					<h5><a friendId="111" href="/u/zhouwenhua">周文华</a> <span class="quiet"> (微软中国市场经理)</span> 希望将您加为他在优士的直接联系人</h5>
+					<span class="date">2009-10-25 17:25</span>
+					<p class="quiet action">刚发现你也在优士网上注册了，让我们成为优士上的直接联系人吧！</p>
+					<p class="description">李嵩波表示您是他的朋友</p>
+					<p><a class="button positive boldface" href="javascript:void(0);" onclick="agreeFriendAdd(this)"> 同意 </a> <a class="button negative" href="javascript:void(0);" onclick="ignoreFriendAdd(this)"> 忽略 </a> </p>
+				</div>
+			</div>
+            
+            <div class="event-block">
+				<div class="event-owner">
+                <span class="success3"></span></div>
+				<div class="event-content">
+		<p class="fontgreen">恭喜，您和李嵩波已经成为优士上的一度人脉了！</p>
+		<p><a href="#">访问李嵩波的个人档案</a><a class="spe-left3" href="#">发一条短消息给李嵩波</a> </p>
+	</div>
+			</div>
+            
+            <div class="event-block">
+				<div class="event-owner">
+                <span class="notice3"></span></div>
+				<div class="event-content">
+		<p >您已经忽略了来自李嵩波的联络请求。</p>
+		<p class="quiet">如果你认为收到了过多的此类请求，我们建议你<a href="#">设置给他人的联络建议</a></p>
+	</div>
+			</div>
+            
+            
+			<div class="event-block">
+				<div class="event-owner"><a href="/u/zhouwenhua"><img id="avatar-24489" src="http://images.ushi.cn/bnsphoto/2010/06/30/05e0b268-8ec4-44fc-a69b-ead4925ede98_thumb.jpg"></a></div>
+				<div class="event-content">
+					<h5><a href="/u/zhouwenhua" >周文华</a> <span class="quiet"> (微软中国市场经理)</span> 希望将您加为他在优士的直接联系人</h5>
+					<span class="date">2009-10-25 17:25</span>
+					<p class="quiet action">刚发现你也在优士网上注册了，让我们成为优士上的直接联系人吧！</p>
+					<p class="description">李嵩波表示您是他在DFJ时的商务合作伙伴...</p>
+					<p class="action"><a href="#" js="insertComm" class="comments-shop-up">3个共同联系人</a></p>
+					<p><a class="button positive boldface" href="javascript:void(0);"> 同意 </a> <a class="button negative" href="javascript:void(0);"> 忽略 </a> </p>
+				</div>
+			</div>
+			<!-- 邀请一度，共同好友展示方法 -->
+			<div class="event-block">
+				<div class="event-owner"><a href="/u/zhouwenhua"><img id="avatar-24489" src="http://images.ushi.cn/bnsphoto/2010/06/30/05e0b268-8ec4-44fc-a69b-ead4925ede98_thumb.jpg"></a></div>
+				<div class="event-content">
+					<h5><a href="/u/zhouwenhua" >周文华</a> <span class="quiet"> (微软中国市场经理)</span> 希望将您加为他在优士的直接联系人</h5>
+					<span class="date">2009-10-25 17:25</span>
+					<p class="quiet action">刚发现你也在优士网上注册了，让我们成为优士上的直接联系人吧！</p>
+					<p class="description">李嵩波表示您是他在DFJ时的商务合作伙伴...</p>
+					<p class="action"><a href="#" js="insertComm" class="comments-shop-down">20个共同联系人</a></p>
+					<div class="comon-friends">
+						<p class="quiet">20个共同人脉（当前显示1~5）</p>
+						<ul class="p-h-list">
+							<li><a href="javascript:void(0);"><img class="userface" src="../../bns/images/test_p1_s.png" width="30" height="30" /></a> <a class="name" href="javascript:void(0);">张兴</a></li>
+							<li><a href="javascript:void(0);"><img class="userface" src="../../bns/images/test_p2_s.png" width="30" height="30" /></a> <a class="name" href="javascript:void(0);">陈波平</a></li>
+							<li><a href="javascript:void(0);"><img class="userface" src="../../bns/images/test_p1_s.png" width="30" height="30" /></a> <a class="name" href="javascript:void(0);">刘涛</a></li>
+							<li><a class="link-collapsed" href="javascript:void(0);">查看全部共同人脉</a></li>
+							<!-- <li><a class=" link-expanded" href="javascript:void(0);">只显示前5位共同人脉</a></li>-->
+						</ul>
+					</div>
+					<p><a class="button positive boldface" href="javascript:void(0);"> 同意 </a> <a class="button negative" href="javascript:void(0);"> 忽略 </a> </p>
+				</div>
+			</div>
+			
+			<!-- 引荐后的请求信-->
+			<div class="event-block">
+				<div class="event-owner"><a href="/u/zhouwenhua"><img id="avatar-24489" src="http://images.ushi.cn/bnsphoto/2010/06/30/05e0b268-8ec4-44fc-a69b-ead4925ede98_thumb.jpg"></a></div>
+				<div class="event-content">
+					<h5><a href="javascript:void(0);">陈国松</a><span class="quiet"> (百度华东市场总监)</span> 希望将 <a href="#">冯翔宇</a>介绍给您认识。 </h5>
+					<span class="date">2009-10-25 17:25</span>
+					<p>我在优士网看到冯翔宇的个人介绍，觉得你可能有兴趣认识一下。我很高兴地介绍他给你认识……</p>
+					<p><a class="button positive boldface" href="#"> 查看详细 </a> <a class="button negative" href="javascript:void(0);"> 忽略 </a> </p>
+				</div>
+			</div>
+			
+			<!-- 引荐后，被引荐人看到的请求信-->
+			<div class="event-block">
+				<div class="event-owner"><a href="/u/zhouwenhua"><img id="avatar-24489" src="http://images.ushi.cn/bnsphoto/2010/06/30/05e0b268-8ec4-44fc-a69b-ead4925ede98_thumb.jpg"></a></div>
+				<div class="event-content">
+					<h5>通过 <a href="javascript:void(0);">陈国松</a> 的介绍，<a href="#">冯翔宇</a> 希望成为你的一度人脉 。 </h5>
+					<span class="date">2009-10-25 17:25</span>
+					<p>我在优士网看到冯翔宇的个人介绍，觉得你可能有兴趣认识一下。我很高兴认识您……</p>
+					<p><a class="button positive boldface" href="#"> 同意请求 </a> <a class="button negative" href="javascript:void(0);"> 忽略 </a> </p>
+				</div>
+			</div>
+			
+			<!--分页 -->
+			<div class="pages"> <a class="next" href="javascript:void(0);">上一页</a> <a class="current" href="javascript:void(0);">1</a> <a href="javascript:void(0);">2</a> <a href="javascript:void(0);">3</a> <a href="javascript:void(0);">4</a> <a href="javascript:void(0);">5</a> <a href="javascript:void(0);">6</a> ... <a href="javascript:void(0);">31</a> <a class="next" href="javascript:void(0);">下一页</a> </div>
+		</div>
+	</div>
+	
+	<!--#include file="footer.html"--> 
+</div>
+
+<div class="fl-outer" style="width:550px; display:none; top:300px; left:300px;">
+	<div class="fl-block">
+		<div class="fl-title">
+			<h5>给李强写评价</h5>
+			<a class="close" href="javascript:void(0);"><span class="hide">关闭</span></a></div>
+		<div class="fl-content">
+			<div class="pop-intro-msg">
+				<h4>给冯翔宇留言：</h4>
+				<form>
+					<p>
+						<textarea>您的朋友曾珏向我推荐您，我很高兴认识您，非常希望加入到您的一度人脉。 
+-孙威</textarea>
+					</p>
+					<p>
+						<input class="common-button" type="submit" value="发送邀请" />
+						<a href="#">取消发送</a></p>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="agreeLayer" class="event-block" style="display:none">
+	<div class="event-content">
+		<p class="fontgreen">恭喜，您和李嵩波已经成为优士上的一度人脉了！</p>
+		<p><a href="#">访问李嵩波的个人档案</a><a href="#" class="spe-left3">发一条短消息给李嵩波</a> </p>
+	</div>
+</div>
+<div id="ignoreLayer" class="event-block" style="display:none">
+	<div class="event-content">
+		<p >您已经忽略了来自李嵩波的联络请求。</p>
+		<p class="quiet">如果您认为收到了过多的此类请求，我们建议您设置给他人的联络建议 </p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+function agreeFriendAdd(a){
+	handleFriendAdd(a, 'agree')
+}
+function ignoreFriendAdd(a){
+	handleFriendAdd(a, 'ignore')
+}
+function handleFriendAdd(a, p){
+	var loading = $('<span class="loading" style="display:block;float:left">正在处理中，请稍候……</span>');
+	$(a).parent().append(loading);
+	$.getJSON('data/faddreq.json', function(data){
+		if( data.state == 0 ){
+			var clone = $('#' + p + 'Layer').find('.event-content').clone();
+			$(a).closest('.event-content').replaceWith(clone);
+		} else {
+			pop_alert('由于网络连接或其他未知问题，操作失败', function(){
+				loading.remove();
+			}, '错误');
+		}
+	});
+}
+
+
+// 以下代码不要加入jsp中，只用在静态页面调试
+
+var lang={
+	lang:'zh_CN',
+	login:{
+		expire:'登录已过期, 请从新登录'
+		
+	},
+	msg:{
+		receiver_error:'请选择发送对象',
+		subject:'发送人脉直邮',
+		subject_error:'标题不能为空',
+		body_error:'内容不能为空'
+	},
+	common:{
+		select:'请选择',
+		confirm:'确定',
+		cancel:'取消',
+		dialog:'对话框',
+		submit_success:'发送成功',
+		submit_failure:'发送失败',
+		close:'关闭',
+		expand:'展开',
+		collapse:'收起',
+		delete_confirm:'确认是否删除？',
+		all_group:'所有分组',
+		profile_limit:'您的优士会员账户已受限，无法使用此功能，请先更新您的个人档案。',
+		photo_next:'下一张',
+		photo_pre:'上一张'
+	},
+	reg:{
+		fullname:'姓名格式错误',
+		email_format:'Email格式错误',
+		email_exist:'Email已经被注册',
+		passwd:'密码必须大于6位并小于32位 ',
+		country:'请选择国家',
+		region:'请选择地区',
+		city:'请选择城市',
+		industry:'请选择行业',
+		privacy:'是否同意服务条款',
+		tips0:'以下好友已经加入了优士网，您可以直接与他们取得联系',
+		tips1:'请选择相应的邀请对象',
+		email_invaild:'请输入有效的邮箱地址 ',
+		profile_fullname_tip:'请填写真实姓名，以便更好地和朋友保持联系。',
+		profile_email_tip:'您的邮箱地址将通过优士网隐私条款得到妥善保护。',
+		reg_step0_tips11:'密码由6-32位字母、数字、标点组成',
+		reg_step0_tips13:'请输入正确的手机号码'
+	},
+	feed:{
+		char_tip: function(str){
+	    	return '还可以输入 <font color="red"><strong>'+str+'</strong></font> 个字符';
+	    },
+	    input_tip:'请输入内容！',
+	    file_size:'文件大小限制在5MB内！',
+		file_type:'仅支持Word、Excel、PPT、PDF格式文件！',
+		char_limit:'200字以内'
+	},
+	group:{
+		quota:'引用',
+		answer:'回复',
+		pleasechouseuse:'请选择用户',
+		sure_delete:'确认是否删除？',
+		toolongcontent:'您输入的内容过长',
+		deleteTopicTitle:'删除讨论主题',
+		deleteTopicReply:'确认删除此条回复吗？',
+		deleteNewsfeedAndTopic:'你是否真的要删除这条群组动态以及相关联的讨论主题?'
+	},
+	profile:{
+		preview_added_follower:'已加关注',
+		fullname_error:'名称填写不正确',
+		career_blank:'职业不能为空',
+		from_blank:'必须选择所在地',
+		industry_blank:'必须选择所在行业',
+		careerbrief_blank:'必须填写职业概述',
+		expertskill_blank:'必须填写技能专长',
+		mobile_blank:'手机号码不能为空',
+		mobile_mustbenum:'手机号码必须为数字',
+		selectgroup:'请选择分组',
+		ok:'确定',
+		schoolname_blank:'学校名称不能为空',
+		major_blank:'专业名称不能为空',
+		degree_blank:'请选择学位',
+		endafterstart:'结束时间必须大于开始时间',
+		delete_education_title:'删除教育经历',
+		delete_education_description:'您真的要删除这项教育经历吗？',
+		companyname_blank:'公司名称不能为空',
+		companyname_invalidate:'公司名称不合法',
+		company_website_blank:'公司网址不能为空',
+		company_size_blank:'公司规模不能为空',
+		position_blank:'职位不能为空',
+		delete_career_title:'删除工作经历',
+		delete_career_description:'您真的要删除这项工作经历吗？',
+		delete_career_description2:'你确定要删除这条经历吗？这条经历所收到的评价将会被保存，在将其关联到新的经历之前会隐藏。',
+		delete_feed_confirm:'确认删除此条动态吗？',
+		job_starttime:'开始日期不能大于当前日期',
+		job_endtime:'结束日期不能大于当前日期',
+		sns_recommend_limit:'提示：您最多可以选择5个好友'
+	},
+	currency:{
+		yuan:'元',
+		amount_nopermit:'金额在0~5000之间'
+	},
+	friend:{
+		friend_tip:'请选择发送对象',
+		friend_groups:'分组名称',
+		friend_find:'查找人脉',
+		friend_remain:'还有<font id="userSelect_inviteMax"></font>个剩余的邀请名额',
+		friend_all:'全部',
+		friend_selected:'已选',
+		friend_unselected:'未选',
+		introduce_misstitle_error:'请输入引荐标题',
+		introduce_missbody_error:'请输入引荐正文',
+		introduce_missconcattype_error:'请选择联络类型',
+		introduce_missforwardmsg_error:'请输入留言'
+	},
+	connections:{
+	    followed: '已关注',
+	    changename: '分组改名 ：',
+	    duplicatedname: '分组名重复',
+	    deletegroup: '您确实希望将分组 {0}删除吗？',
+	    creategroup: '创建新分组',
+	    create: '创建',
+	    nameerror: '分组名不能为空',
+	    waiting_tips:'如果您的联系人列表过长，可能需要等待2~3分钟，请耐心等待。',
+	    delete_group:function(str){
+	    	return '您确实希望将分组 '+str+'删除吗？';
+	    },
+	    delete_friend:function(str){
+	    	return '您确实希望将'+str+'从您的一度人脉列表中删除吗？';
+	    },
+	    delete_follower:function(str){
+	    	return '您确实希望将'+str+'从您的关注列表中删除吗？';
+	    },
+	    delete_memo:function(str){
+	    	return '您确实希望将关于'+str+' 的备忘从您的备忘列表中删除吗？';
+	    }
+	},
+	feedback:{
+		title:'给优士提建议',
+		type_error:'请选择类型',
+		title_error:'请填写标题',
+		body_error:'请填写内容'
+	},
+	domain:{
+		tips:'域名只能是 5~30 个英文字符组成，不能包含中文、数字、特殊字符',
+		occupy:'该域名已被占用',
+		failure:'域名修改失败',
+		blank:'域名不能为空',
+		isnotvalidate:'由4-20个英文字母和数字组成（空格非法），首字符必须是字母'
+	},
+	endorse:{
+		select_on_user:'提示：您只可以选择1个好友',
+		user_need:'请选择至少一个一度好友',
+		option_need:'请选择一项',
+		limit_10:'输入文字不能少于10个字符',
+		limit_200:'输入文字不能多于200个字符'
+	}
+}
+
+</script>
+
+
+</body>
+</html>

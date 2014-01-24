@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body id="page_member">
+
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	
+	<div id="main" class="clearfix">
+		<div class="topic-container topic-coffee">
+			<div class="topic-title-img">
+				<a href="#invite" class="topic-ban-link"></a>
+			</div>
+			<div class="tabs-common clearfix">
+				<ul>
+					<li><a href="topic_coffee_intro.html">活动介绍</a></li>
+					<li><a href="topic_coffee_winner.html">获奖名单</a></li>
+				</ul>
+			</div>
+			<div class="topic-block spe-left2 spe-right2 clearfix pd-top">
+				<img src="../../bns/images/promo/coffee/ban_intro.jpg" width="253" height="234" class="float-right" style="margin-right:100px;" />
+				<div style="width:460px;">
+					<p class="quiet large">恭喜您获得了咖啡优士奖，我们将以邮寄方式把新巴克咖啡券寄给您，为了确保能安全送达，请真实填写以下信息</p>
+					<form action="#" method="post" class="formstyle" name="" id="addressForm">
+						<ul style="margin:40px 0 25px 0;">
+							<li><label><b>收件地址：</b></label><input class="input-w-280" type="text" name="apply.fullname" value="" id="userName" maxLength="64" Validate="isUsername" vdOpt="url:/user/reg!validateUserName.jhtml" />
+								<div class="tips" id="usernameTips" style="display:none;"><div class="tips-box-outer"><div class="tips-box-inner"><s:text name="profile.name.invalid_chinese" /></div></div></div>						
+							</li>
+							<li><label><b>手机：</b></label><input class="input-w-280" type="text" name="apply.email" value="" id="userEmail" maxLength="64" Validate="isAjaxEmail" vdOpt="url:/user/apply!checkmail.jhtml" />
+								<div class="tips" id="emailTips" style="display:none;"><div class="tips-box-outer"><div class="tips-box-inner"><s:text name="reg.step0.error1"/></div></div></div>
+							</li>
+							<li><label><b>邮编：</b></label><input class="input-w-280" type="text" name="apply.companyname" value="" id="companyName" maxLength="250" Validate="isnotEmpty" />
+								<div class="tips" style="display:none;"><div class="tips-box-outer"><div class="tips-box-inner"><s:text name="apply.compay_error" /></div></div></div>
+							</li>
+							<li><label><b>可使用城市：</b></label><select>
+									<option value="">请选择</option>
+								</select>
+								<div class="tips" style="display:none;"><div class="tips-box-outer"><div class="tips-box-inner"><s:text name="apply.postion_error" /></div></div></div>
+							</li>
+						</ul>
+						<p><input type="submit" name="btnsubmit" class="special-btn large-btn large boldface" style="width:80px;" value=" 提 交 " /></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--#include file="footer.html"--> 
+</div>
+</body>
+</html>

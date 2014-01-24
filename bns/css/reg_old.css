@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+#wrapper #header_reg #logo { margin-left:0; width:auto; text-align:left;}
+#openregStep1 {
+	background-position: 0 -112px;
+}
+#openregStep2 {
+	background-position: 0 -84px;
+}
+#openregStep3 {
+	background-position: 0 -56px;
+}
+#openregStep4 {
+	background-position: 0 -28px;
+}
+#openregStep5 {
+	background-position: 0 0;
+}
+.openreg-step span {
+	background: url(../images/reg/bg_step.png) no-repeat scroll 0 0 transparent;
+	display: inline-block;
+	height: 12px;
+	margin: 3px 0 0 10px;
+	width: 131px;
+}
+
+.stp-left{
+	width: 665px;
+	float: left;
+}
+
+.stp-left table{
+	margin-top: 15px;
+}
+
+.stp-left table input{
+	font-size: 12px;
+}
+
+.stp-left td,.stp-left th{
+	font-size: 12px;
+}
+
+.stp-right{
+	margin-top: 60px;
+	padding: 35px 0 35px 30px;
+	background: url(../images/step_ico.png) no-repeat left center;
+	width: 210px;
+	float: right;
+}
+.stp-right .special-word{
+	font-size: 18px;
+}
+
+.step-inner {
+	overflow: scroll;
+	overflow-x: hidden;
+	height: 235px;
+	border: 1px solid #ccc;
+}
+.step-inner input { position:static;}
+
+.home-bar-ivt-MSN{
+	float: left;
+}
+
+.home-bar-ivt-OL {
+    background: url(../images/icons_invite.png) no-repeat left -303px;
+    display: inline-block;
+    height: 32px;
+    width: 35px;
+	float: left;
+}
+
+.home-bar-ivt-Mail {
+    background: url(../images/icons_invite.png) no-repeat left -502px;
+    display: inline-block;
+    height: 32px;
+    width: 35px;
+	float: left;
+}
+
+
+.home-bar-ivt-IN {
+    background: url(../images/icons_invite.png) no-repeat left -1001px;
+    display: inline-block;
+    height: 32px;
+    width: 35px;
+	float: left;
+}
+.reg-ivt { float:left;}
+
+.people-list td{
+	padding: 10px;
+	border: 1px solid #ccc;
+	vertical-align: middle;
+}
+.people-list01 td, .people-list01 th {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	vertical-align: middle;
+}
+.people-list01 .on td, .people-list01 .on th {
+	background-color: #f8f8f8;
+}
+.people-list01 th {
+	border-right: none;
+}
+.people-list01 td {
+	padding-right: 10px;
+	border-left: none;
+	text-align: right;
+}
+
+.step-shadow{
+	background-color: #f2f2f2;
+	position: relative;
+	left: 3px;
+	top: 3px;
+}
+
+.step-shadow .step-section{
+	background-color: #fff;
+	position: relative;
+	left: -3px;
+	top:-4px;
+}
+
+.step-section h5{
+	color: #333333;
+	padding: 6px;
+	margin: 0;
+	background: url(../images/step_bg.png) repeat-x left top;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	height:19px;
+	overflow:hidden;
+}
+
+.step-section .vcard dl dt{
+	line-height: 1.2;
+}
+
+.up-logo-file {display:none;width:70px;height:25px;position:absolute;top:0;left:0;cursor:pointer;overflow:hidden;
+	display:block\9;filter:alpha(opacity=0);}
+.up-logo-link {padding-left:7px\9!important;padding-right:5px\9!important;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {.up-logo-file {display:inline; opacity:0; width:1px; height:25px;}}
+.reg-edit-face {background:url(../images/reg/bg_arrows.png) no-repeat 20px 40px;}
+
+.import-right{
+	float: right;
+	width: 260px;
+	background-color: #f5f5f5;
+	border: 1px solid #eaeaea;
+	padding: 17px 17px 10px;
+	margin-right:20px;
+}
+
+.import-right h4{
+	font-size: 13px;
+	color: #555;
+}
+
+.import-right ul li{
+	padding-bottom: 5px;
+}

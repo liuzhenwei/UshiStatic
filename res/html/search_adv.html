@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>高级搜索</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/widget.js"></script>
+<script type="text/javascript" src="/js/home.js"></script>
+</head>
+
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	<div id="main">
+		<div class="tabs-common clearfix">
+			<ul>
+				<li class="current"><a href="#">高级搜索</a></li>
+			</ul>
+		</div>
+		<div class="column-full">
+			<form class="formstyle spe-left2 spe-right2 margin-btm15e" method="post" action="search_result.html">
+				<div class="common-box2">
+					<div class="cb2-top">
+						<div class="cb2-top-inner"></div>
+					</div>
+					<div class="cb2-cont search-adv-field">
+						<ul>
+							<li>
+								<label>关键词：</label>
+								<input class="input-w-280" maxlength="64" name="" type="text" />
+							</li>
+							<li>
+								<label>姓 名：</label>
+								<input class="input-w-280" name="" type="text"  maxlength="64" />
+							</li>
+							<li>
+								<label>所在地：</label>
+								<select id="selectCountry" class="select">
+									<option value="0">请选择</option>
+									<option value="1">美国</option>
+								</select>
+								<select id="selectRegion"  class="select">
+									<option value="0">请选择</option>
+									<option value="1">上海</option>
+								</select>
+								<select id="selectCtiy"  class="select">
+									<option value="0">请选择</option>
+									<option value="100">上海</option>
+								</select>
+							</li>
+							<li js="search-adv-ext" style="display:none;">
+								<label>专 业：</label>
+								<input class="input-w-280" name="" type="text" maxlength="64" />
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<label>职 位：</label>
+								<input class="input-w-280" name="" type="text" maxlength="64" />
+							</li>
+							<li>
+								<label>公司名称：</label>
+								<input class="input-w-280" name="" type="text" />
+							</li>
+							<li>
+								<label>学校名称：</label>
+								<input class="input-w-280" name="" type="text" />
+							</li>
+						</ul>
+					</div>
+					<div class="cb2-btm">
+						<div class="cb2-btm-inner"><a class="search-adv-ext" href="javascript:void(0);" onclick="showSearchExt(this)"></a></div>
+					</div>
+				</div>
+				<ul>
+					<li class="in-1-line">
+						<label>行 业：</label>
+						<div class="mult-list">
+							<dl>
+								<dd class="selected">
+									<input name="" type="checkbox" checked="checked" value="" />
+									互联网 </dd>
+								<dd class="selected">
+									<input name="" type="checkbox" checked="checked" value="" />
+									制造业 </dd>
+								<dd class="selected">
+									<input name="" type="checkbox" checked="checked" value="" />
+									能源产业</dd>
+								<dt>旅游业</dt>
+								<dd>
+									<input name="" type="checkbox" value="" />
+									旅游业 </dd>
+								<dd>
+									<input name="" type="checkbox" value="" />
+									金融业</dd>
+								<dd>
+									<input name="" type="checkbox" value="" />
+									服装业</dd>
+								<dd>
+									<input name="" type="checkbox" value="" />
+									进出口业</dd>
+								<dd>
+									<input name="" type="checkbox" value="" />
+									医疗器械</dd>
+							</dl>
+						</div>
+					</li>
+					<li class="in-1-line">
+						<label>群 组：</label>
+						<div class="mult-list">
+							<ul>
+								<li>
+									<input name="" type="checkbox" value="" />
+									上海精英高尔夫俱乐部 </li>
+								<li>
+									<input name="" type="checkbox" value="" />
+									上海网球俱乐部 </li>
+								<li>
+									<input name="" type="checkbox" value="" />
+									中欧MBA协会 </li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<label>联络目的：</label>
+						<div class="mult-list">
+							<ul>
+								<li class="selected">
+									<input name="" type="checkbox" checked="checked" value="" />
+									工作机会 </li>
+								<li class="selected">
+									<input name="" type="checkbox" checked="checked" value="" />
+									求职申请 </li>
+								<li>
+									<input name="" type="checkbox" value="" />
+									咨询顾问 </li>
+								<li>
+									<input name="" type="checkbox" value="" />
+									投资机会 </li>
+								<li>
+									<input name="" type="checkbox" value="" />
+									商业合作 </li>
+								<li>
+									<input name="" type="checkbox" value="" />
+									学习机会 </li>
+								<li>
+									<input name="" type="checkbox" value="" />
+									朋友联络 </li>
+								<li>
+									<input name="" type="checkbox" value="" />
+									其他 </li>
+							</ul>
+						</div>
+					</li>
+					<li js="setCheckboxRadio">
+						<label>搜索范围：</label>
+						<input name="" type="checkbox" value="" />
+						所有人脉距离
+						<input name="" type="checkbox" value="" />
+						1度人脉
+						<input name="" type="checkbox" value="" />
+						2度人脉
+						<input name="" type="checkbox" value="" />
+						3度人脉及以上</li>
+				</ul>
+				<p>
+					<input name="" type="submit" class="special-btn large-btn large" value=" 搜 索 " />
+				</p>
+			</form>
+		</div>
+	</div>
+</div>
+<!--#include file="footer.html"-->
+
+<script type="text/javascript">
+function showSearchExt(a){
+	var ext = $('[js="search-adv-ext"]');
+	if( ext.is(':visible') ){
+		ext.hide();
+		$(a).removeClass('search-adv-ext-show');
+	} else {
+		ext.show();
+		$(a).addClass('search-adv-ext-show');
+	}
+}
+
+jQuery.fn.setCheckboxRadio = function(options){
+	return this.each(function(){
+		var chk = $(this).find(':checkbox');
+		chk.click(function(){
+			if( chk.index(this) == 0 ){
+				chk.filter(':gt(0)').attr('checked', false);
+			} else {
+				chk.filter(':eq(0)').attr('checked', false);
+			}
+		});
+	});
+}
+
+$(function(){
+	$('[js="setCheckboxRadio"]').setCheckboxRadio();
+});
+</script>
+</body>
+</html>

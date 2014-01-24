@@ -1,0 +1,1144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>编辑个人档案</title>
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/reg.1.js"></script>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+</head>
+
+<body id="page_member">
+<div id="wrapper" class="container">
+    <!--#include file="header.html"-->
+    <div id="main" class="clearfix">
+      <div class="channel-tit"><h3>编辑个人档案</h3> <span><a href="javascript:void(0);">返回个人档案首页</a></span></div> 
+
+		  <!-- just for test :)-->            
+          <div class="tabs-common clearfix">
+          <ul id="profileTab">
+          <li class="current"><a href="javascript:void(0);">基本信息</a></li>
+          <li><a href="javascript:void(0);">职业总结</a></li>
+          <li><a href="javascript:void(0);">工作经历</a></li>
+          <li><a href="javascript:void(0);">教育经历</a></li>
+          <li><a href="javascript:void(0);">联系信息</a></li>
+          </ul>
+          </div>
+          
+                  
+          <!-- profile basic -->
+          <div name="profile">
+			
+
+ 
+<script>var __subnav = "base";</script>
+
+          <!-- profile basic -->
+          
+          <form id="edit_base" method="post" action="/user/edit!editBase.jhtml" class="formstyle">
+          <p class="quiet">带 <span class="red">* </span>号的项目为必填项</p>
+          <ul>
+            <li class="form-item clearfix"><label> <span class="red">* </span>姓名：</label>
+								<input type="text" class="input-w-280" id="userName" value="狂飙T" />
+							
+            <span class="tips" style="display:none;"><div class="tips-box-outer"><div class="tips-box-inner"><p>请用规范的形式填写您的真实中文姓名。</p>
+<p>如果系统误判你的姓名，请换个名字先注册，然后和优士网客服进行联系。</p></div></div></span>
+							<!-- 错误加 tip-err, 正确加 tip-succ -->
+            </li>
+            <li><label>头像：</label> 
+            <img src="http://images.ushigroup.cn/bnsphoto/2010/03/22/be8cc17d-0f6f-4f4d-93bc-a1e7aaf9968a_s.jpg?r=0.5004041298203276" > <a href="/user/logo!edit.jhtml" class="spe-left">修改</a> <a href="/user/logo!edit.jhtml" class="spe-left">删除</a></li>
+            <li class="form-item clearfix"><label><span class="red">* </span>当前职业头衔：</label> <input type="text" js="career" class="input-w-400" id="profile_careerbrief" value="无敌小旋风" maxlength="64" name="profile.careerbrief"> <span class="tips" style="display:none;"><div class="tips-box-outer"><div class="tips-box-inner"><p>请用规范的形式填写您的真实中文姓名。</p>
+<p>如果系统误判你的姓名，请换个名字先注册，然后和优士网客服进行联系。</p></div></div></span>
+							<!-- 错误加 tip-err, 正确加 tip-succ -->
+            </li>
+            <li class="form-item clearfix"><label><span class="red">* </span>所在地：</label> 
+            <select class="select" id="selectCountry" name="profile.countryid">
+    <option value="0">请选择</option>
+    <option selected="selected" value="156">中国大陆</option>
+    <option value="344">中国香港</option>
+    <option value="446">中国澳门</option>
+    <option value="158">中国台湾</option>
+    <option value="840">美国</option>
+    <option value="826">英国</option>
+    <option value="392">日本</option>
+    <option value="124">加拿大</option>
+    <option value="36">澳大利亚</option>
+    <option value="250">法国</option>
+    <option value="276">德国</option>
+    <option value="410">韩国</option>
+    <option value="643">俄罗斯</option>
+    <option value="380">意大利</option>
+    <option value="724">西班牙</option>
+    <option value="356">印度</option>
+    <option value="8">阿尔巴尼亚</option>
+    <option value="12">阿尔及利亚</option>
+    <option value="4">阿富汗</option>
+    <option value="32">阿根廷</option>
+    <option value="784">阿联酋</option>
+    <option value="533">阿鲁巴</option>
+    <option value="512">阿曼</option>
+    <option value="31">阿塞拜疆</option>
+    <option value="818">埃及</option>
+    <option value="231">埃塞俄比亚</option>
+    <option value="372">爱尔兰</option>
+    <option value="233">爱沙尼亚</option>
+    <option value="20">安道尔</option>
+    <option value="28">安迪卡及巴布达</option>
+    <option value="24">安哥拉</option>
+    <option value="660">安圭拉</option>
+    <option value="40">奥地利</option>
+    <option value="52">巴巴多斯</option>
+    <option value="598">巴布亚新几内亚</option>
+    <option value="44">巴哈马</option>
+    <option value="586">巴基斯坦</option>
+    <option value="600">巴拉圭</option>
+    <option value="48">巴林</option>
+    <option value="591">巴拿马</option>
+    <option value="76">巴西</option>
+    <option value="112">白俄罗斯</option>
+    <option value="60">百慕大</option>
+    <option value="100">保加利亚</option>
+    <option value="580">北马利亚纳群岛</option>
+    <option value="84">贝里斯</option>
+    <option value="204">贝宁</option>
+    <option value="56">比利时</option>
+    <option value="352">冰岛</option>
+    <option value="630">波多黎各</option>
+    <option value="70">波黑共和国</option>
+    <option value="616">波兰</option>
+    <option value="68">玻利维亚</option>
+    <option value="74">玻维特岛</option>
+    <option value="585">帛琉</option>
+    <option value="72">博茨瓦纳</option>
+    <option value="64">布丹</option>
+    <option value="854">布吉纳法索</option>
+    <option value="108">布隆迪</option>
+    <option value="408">朝鲜</option>
+    <option value="226">赤道几内亚</option>
+    <option value="208">丹麦</option>
+    <option value="626">东帝汶</option>
+    <option value="776">东加</option>
+    <option value="768">多哥</option>
+    <option value="214">多米尼加共和国</option>
+    <option value="212">多米尼克</option>
+    <option value="218">厄瓜多尔</option>
+    <option value="232">厄立特里亚</option>
+    <option value="234">法罗群岛</option>
+    <option value="258">法属波立尼西亚</option>
+    <option value="254">法属圭亚那</option>
+    <option value="474">法属马丁尼科</option>
+    <option value="260">法属南部属地</option>
+    <option value="336">梵蒂冈</option>
+    <option value="608">菲律宾</option>
+    <option value="242">斐济</option>
+    <option value="246">芬兰</option>
+    <option value="178">刚果共和国</option>
+    <option value="180">刚果民主共和国</option>
+    <option value="170">哥伦比亚</option>
+    <option value="188">哥斯达黎加</option>
+    <option value="308">格林纳达</option>
+    <option value="304">格陵兰</option>
+    <option value="268">格鲁吉亚</option>
+    <option value="192">古巴</option>
+    <option value="312">瓜德鲁普</option>
+    <option value="320">瓜地马拉</option>
+    <option value="316">关岛</option>
+    <option value="328">圭亚那</option>
+    <option value="398">哈萨克斯坦</option>
+    <option value="332">海地</option>
+    <option value="528">荷兰</option>
+    <option value="530">荷兰属安地列斯</option>
+    <option value="334">赫德及麦当劳群岛</option>
+    <option value="340">洪都拉斯</option>
+    <option value="262">吉布迪</option>
+    <option value="417">吉尔吉斯</option>
+    <option value="296">吉里巴斯</option>
+    <option value="324">几内亚</option>
+    <option value="624">几内亚-比绍</option>
+    <option value="288">加纳</option>
+    <option value="266">加蓬</option>
+    <option value="116">柬埔寨</option>
+    <option value="203">捷克</option>
+    <option value="716">津巴布韦</option>
+    <option value="120">喀麦隆</option>
+    <option value="634">卡塔尔</option>
+    <option value="136">开曼群岛</option>
+    <option value="166">科科斯群岛</option>
+    <option value="174">科摩罗</option>
+    <option value="384">科特迪瓦</option>
+    <option value="414">科威特</option>
+    <option value="191">克罗地亚</option>
+    <option value="404">肯尼亚</option>
+    <option value="184">库克岛</option>
+    <option value="428">拉脱维亚</option>
+    <option value="418">老挝</option>
+    <option value="426">雷索托</option>
+    <option value="422">黎巴嫩</option>
+    <option value="440">立陶宛</option>
+    <option value="430">利比里亚</option>
+    <option value="434">利比亚</option>
+    <option value="438">列支敦士登</option>
+    <option value="638">留尼旺</option>
+    <option value="442">卢森堡</option>
+    <option value="646">卢旺达</option>
+    <option value="642">罗马尼亚</option>
+    <option value="450">马达加斯加</option>
+    <option value="462">马尔代夫</option>
+    <option value="238">马尔维纳斯群岛</option>
+    <option value="470">马耳他</option>
+    <option value="454">马拉维</option>
+    <option value="458">马来西亚</option>
+    <option value="466">马里</option>
+    <option value="807">马其顿</option>
+    <option value="584">马绍尔群岛</option>
+    <option value="480">毛里求斯</option>
+    <option value="478">毛里塔尼亚</option>
+    <option value="175">美亚特</option>
+    <option value="581">美属边疆群岛</option>
+    <option value="16">美属萨摩亚</option>
+    <option value="850">美属维京群岛</option>
+    <option value="496">蒙古</option>
+    <option value="500">蒙瑟拉特岛</option>
+    <option value="50">孟加拉</option>
+    <option value="604">秘鲁</option>
+    <option value="583">密克罗尼西亚</option>
+    <option value="104">缅甸</option>
+    <option value="498">摩尔多瓦</option>
+    <option value="504">摩洛哥</option>
+    <option value="492">摩纳哥</option>
+    <option value="508">莫桑比克</option>
+    <option value="484">墨西哥</option>
+    <option value="516">纳米比亚</option>
+    <option value="710">南非</option>
+    <option value="10">南极洲</option>
+    <option value="239">南乔治亚及南桑威奇群岛</option>
+    <option value="891">南斯拉夫</option>
+    <option value="520">瑙鲁</option>
+    <option value="524">尼泊尔</option>
+    <option value="558">尼加拉瓜</option>
+    <option value="562">尼日尔</option>
+    <option value="566">尼日利亚</option>
+    <option value="570">纽威岛</option>
+    <option value="578">挪威</option>
+    <option value="574">诺福克群岛</option>
+    <option value="612">皮特康岛</option>
+    <option value="620">葡萄牙</option>
+    <option value="752">瑞典</option>
+    <option value="756">瑞士</option>
+    <option value="222">萨尔瓦多</option>
+    <option value="882">萨摩亚群岛</option>
+    <option value="694">塞拉里昂</option>
+    <option value="686">塞内加尔</option>
+    <option value="196">塞浦路斯</option>
+    <option value="690">塞舌尔</option>
+    <option value="682">沙特</option>
+    <option value="162">圣诞岛</option>
+    <option value="678">圣多美和普林西比</option>
+    <option value="654">圣赫勒拿岛</option>
+    <option value="659">圣克里斯托夫</option>
+    <option value="662">圣卢西亚</option>
+    <option value="674">圣马力诺</option>
+    <option value="666">圣匹及密启伦群岛</option>
+    <option value="670">圣文森</option>
+    <option value="748">史瓦吉兰</option>
+    <option value="144">斯里兰卡</option>
+    <option value="703">斯洛伐克</option>
+    <option value="705">斯洛文尼亚</option>
+    <option value="744">斯瓦巴及尖棉岛</option>
+    <option value="736">苏丹</option>
+    <option value="740">苏里南</option>
+    <option value="90">所罗门群岛</option>
+    <option value="706">索马里</option>
+    <option value="762">塔吉克斯坦</option>
+    <option value="764">泰国</option>
+    <option value="834">坦桑尼亚</option>
+    <option value="780">特立尼达和多巴哥</option>
+    <option value="788">突尼斯</option>
+    <option value="792">土耳其</option>
+    <option value="796">土克斯及开科斯群岛</option>
+    <option value="795">土库曼斯坦</option>
+    <option value="798">土瓦卢</option>
+    <option value="772">托克劳群岛</option>
+    <option value="548">瓦努阿图</option>
+    <option value="132">维德角</option>
+    <option value="862">委内瑞拉</option>
+    <option value="96">文莱</option>
+    <option value="876">沃利斯与福他拿岛</option>
+    <option value="800">乌干达</option>
+    <option value="804">乌克兰</option>
+    <option value="858">乌拉圭</option>
+    <option value="860">乌兹别克斯坦</option>
+    <option value="732">西撒哈拉</option>
+    <option value="92">西属维京群岛</option>
+    <option value="300">希腊</option>
+    <option value="702">新加坡</option>
+    <option value="540">新卡里多尼亚岛</option>
+    <option value="554">新西兰</option>
+    <option value="348">匈牙利</option>
+    <option value="760">叙利亚</option>
+    <option value="388">牙买加</option>
+    <option value="51">亚美尼亚</option>
+    <option value="887">也门</option>
+    <option value="368">伊拉克</option>
+    <option value="364">伊朗</option>
+    <option value="376">以色列</option>
+    <option value="360">印尼</option>
+    <option value="86">英属印度洋领地</option>
+    <option value="400">约旦</option>
+    <option value="704">越南</option>
+    <option value="270">赞比亚</option>
+    <option value="894">赞比亚</option>
+    <option value="148">乍得</option>
+    <option value="292">直布罗陀群岛</option>
+    <option value="152">智利</option>
+    <option value="140">中非</option>
+
+
+</select>
+            <select class="select" id="selectRegion" name="profile.regionid">
+    <option value="0">请选择</option>
+    <option value="750">北京</option>
+    <option selected="selected" value="1392">上海</option>
+    <option value="842">天津</option>
+    <option value="1515">重庆</option>
+    <option value="294">安徽</option>
+    <option value="507">福建</option>
+    <option value="326">甘肃</option>
+    <option value="1489">广东</option>
+    <option value="876">广西</option>
+    <option value="976">贵州</option>
+    <option value="459">海南</option>
+    <option value="246">河北</option>
+    <option value="2536">黑龙江</option>
+    <option value="272">河南</option>
+    <option value="279">湖北</option>
+    <option value="309">湖南</option>
+    <option value="872">江苏</option>
+    <option value="833">江西</option>
+    <option value="295">吉林</option>
+    <option value="1141">辽宁</option>
+    <option value="1520">内蒙古</option>
+    <option value="843">宁夏</option>
+    <option value="775">青海</option>
+    <option value="840">陕西</option>
+    <option value="1143">山东</option>
+    <option value="551">山西</option>
+    <option value="827">四川</option>
+    <option value="1153">新疆</option>
+    <option value="566">西藏</option>
+    <option value="599">云南</option>
+    <option value="1123">浙江</option>
+
+
+</select>
+            <select class="select" id="selectCity" name="profile.cityid">
+    <option value="0">请选择</option>
+    <option selected="selected" value="8843">上海</option>
+
+
+</select><span class="tips" style="display:none;"><div class="tips-box-outer"><div class="tips-box-inner">必须选择所在地</div></div></span>
+            </li>
+            <li><label>家乡：</label> 
+            <select class="select" id="homeCountry" name="profiledetail.homecountryid">
+    <option value="0">请选择</option>
+    <option selected="selected" value="156">中国大陆</option>
+    <option value="344">中国香港</option>
+    <option value="446">中国澳门</option>
+    <option value="158">中国台湾</option>
+    <option value="840">美国</option>
+    <option value="826">英国</option>
+    <option value="392">日本</option>
+    <option value="124">加拿大</option>
+    <option value="36">澳大利亚</option>
+    <option value="250">法国</option>
+    <option value="276">德国</option>
+    <option value="410">韩国</option>
+    <option value="643">俄罗斯</option>
+    <option value="380">意大利</option>
+    <option value="724">西班牙</option>
+    <option value="356">印度</option>
+    <option value="8">阿尔巴尼亚</option>
+    <option value="12">阿尔及利亚</option>
+    <option value="4">阿富汗</option>
+    <option value="32">阿根廷</option>
+    <option value="784">阿联酋</option>
+    <option value="533">阿鲁巴</option>
+    <option value="512">阿曼</option>
+    <option value="31">阿塞拜疆</option>
+    <option value="818">埃及</option>
+    <option value="231">埃塞俄比亚</option>
+    <option value="372">爱尔兰</option>
+    <option value="233">爱沙尼亚</option>
+    <option value="20">安道尔</option>
+    <option value="28">安迪卡及巴布达</option>
+    <option value="24">安哥拉</option>
+    <option value="660">安圭拉</option>
+    <option value="40">奥地利</option>
+    <option value="52">巴巴多斯</option>
+    <option value="598">巴布亚新几内亚</option>
+    <option value="44">巴哈马</option>
+    <option value="586">巴基斯坦</option>
+    <option value="600">巴拉圭</option>
+    <option value="48">巴林</option>
+    <option value="591">巴拿马</option>
+    <option value="76">巴西</option>
+    <option value="112">白俄罗斯</option>
+    <option value="60">百慕大</option>
+    <option value="100">保加利亚</option>
+    <option value="580">北马利亚纳群岛</option>
+    <option value="84">贝里斯</option>
+    <option value="204">贝宁</option>
+    <option value="56">比利时</option>
+    <option value="352">冰岛</option>
+    <option value="630">波多黎各</option>
+    <option value="70">波黑共和国</option>
+    <option value="616">波兰</option>
+    <option value="68">玻利维亚</option>
+    <option value="74">玻维特岛</option>
+    <option value="585">帛琉</option>
+    <option value="72">博茨瓦纳</option>
+    <option value="64">布丹</option>
+    <option value="854">布吉纳法索</option>
+    <option value="108">布隆迪</option>
+    <option value="408">朝鲜</option>
+    <option value="226">赤道几内亚</option>
+    <option value="208">丹麦</option>
+    <option value="626">东帝汶</option>
+    <option value="776">东加</option>
+    <option value="768">多哥</option>
+    <option value="214">多米尼加共和国</option>
+    <option value="212">多米尼克</option>
+    <option value="218">厄瓜多尔</option>
+    <option value="232">厄立特里亚</option>
+    <option value="234">法罗群岛</option>
+    <option value="258">法属波立尼西亚</option>
+    <option value="254">法属圭亚那</option>
+    <option value="474">法属马丁尼科</option>
+    <option value="260">法属南部属地</option>
+    <option value="336">梵蒂冈</option>
+    <option value="608">菲律宾</option>
+    <option value="242">斐济</option>
+    <option value="246">芬兰</option>
+    <option value="178">刚果共和国</option>
+    <option value="180">刚果民主共和国</option>
+    <option value="170">哥伦比亚</option>
+    <option value="188">哥斯达黎加</option>
+    <option value="308">格林纳达</option>
+    <option value="304">格陵兰</option>
+    <option value="268">格鲁吉亚</option>
+    <option value="192">古巴</option>
+    <option value="312">瓜德鲁普</option>
+    <option value="320">瓜地马拉</option>
+    <option value="316">关岛</option>
+    <option value="328">圭亚那</option>
+    <option value="398">哈萨克斯坦</option>
+    <option value="332">海地</option>
+    <option value="528">荷兰</option>
+    <option value="530">荷兰属安地列斯</option>
+    <option value="334">赫德及麦当劳群岛</option>
+    <option value="340">洪都拉斯</option>
+    <option value="262">吉布迪</option>
+    <option value="417">吉尔吉斯</option>
+    <option value="296">吉里巴斯</option>
+    <option value="324">几内亚</option>
+    <option value="624">几内亚-比绍</option>
+    <option value="288">加纳</option>
+    <option value="266">加蓬</option>
+    <option value="116">柬埔寨</option>
+    <option value="203">捷克</option>
+    <option value="716">津巴布韦</option>
+    <option value="120">喀麦隆</option>
+    <option value="634">卡塔尔</option>
+    <option value="136">开曼群岛</option>
+    <option value="166">科科斯群岛</option>
+    <option value="174">科摩罗</option>
+    <option value="384">科特迪瓦</option>
+    <option value="414">科威特</option>
+    <option value="191">克罗地亚</option>
+    <option value="404">肯尼亚</option>
+    <option value="184">库克岛</option>
+    <option value="428">拉脱维亚</option>
+    <option value="418">老挝</option>
+    <option value="426">雷索托</option>
+    <option value="422">黎巴嫩</option>
+    <option value="440">立陶宛</option>
+    <option value="430">利比里亚</option>
+    <option value="434">利比亚</option>
+    <option value="438">列支敦士登</option>
+    <option value="638">留尼旺</option>
+    <option value="442">卢森堡</option>
+    <option value="646">卢旺达</option>
+    <option value="642">罗马尼亚</option>
+    <option value="450">马达加斯加</option>
+    <option value="462">马尔代夫</option>
+    <option value="238">马尔维纳斯群岛</option>
+    <option value="470">马耳他</option>
+    <option value="454">马拉维</option>
+    <option value="458">马来西亚</option>
+    <option value="466">马里</option>
+    <option value="807">马其顿</option>
+    <option value="584">马绍尔群岛</option>
+    <option value="480">毛里求斯</option>
+    <option value="478">毛里塔尼亚</option>
+    <option value="175">美亚特</option>
+    <option value="581">美属边疆群岛</option>
+    <option value="16">美属萨摩亚</option>
+    <option value="850">美属维京群岛</option>
+    <option value="496">蒙古</option>
+    <option value="500">蒙瑟拉特岛</option>
+    <option value="50">孟加拉</option>
+    <option value="604">秘鲁</option>
+    <option value="583">密克罗尼西亚</option>
+    <option value="104">缅甸</option>
+    <option value="498">摩尔多瓦</option>
+    <option value="504">摩洛哥</option>
+    <option value="492">摩纳哥</option>
+    <option value="508">莫桑比克</option>
+    <option value="484">墨西哥</option>
+    <option value="516">纳米比亚</option>
+    <option value="710">南非</option>
+    <option value="10">南极洲</option>
+    <option value="239">南乔治亚及南桑威奇群岛</option>
+    <option value="891">南斯拉夫</option>
+    <option value="520">瑙鲁</option>
+    <option value="524">尼泊尔</option>
+    <option value="558">尼加拉瓜</option>
+    <option value="562">尼日尔</option>
+    <option value="566">尼日利亚</option>
+    <option value="570">纽威岛</option>
+    <option value="578">挪威</option>
+    <option value="574">诺福克群岛</option>
+    <option value="612">皮特康岛</option>
+    <option value="620">葡萄牙</option>
+    <option value="752">瑞典</option>
+    <option value="756">瑞士</option>
+    <option value="222">萨尔瓦多</option>
+    <option value="882">萨摩亚群岛</option>
+    <option value="694">塞拉里昂</option>
+    <option value="686">塞内加尔</option>
+    <option value="196">塞浦路斯</option>
+    <option value="690">塞舌尔</option>
+    <option value="682">沙特</option>
+    <option value="162">圣诞岛</option>
+    <option value="678">圣多美和普林西比</option>
+    <option value="654">圣赫勒拿岛</option>
+    <option value="659">圣克里斯托夫</option>
+    <option value="662">圣卢西亚</option>
+    <option value="674">圣马力诺</option>
+    <option value="666">圣匹及密启伦群岛</option>
+    <option value="670">圣文森</option>
+    <option value="748">史瓦吉兰</option>
+    <option value="144">斯里兰卡</option>
+    <option value="703">斯洛伐克</option>
+    <option value="705">斯洛文尼亚</option>
+    <option value="744">斯瓦巴及尖棉岛</option>
+    <option value="736">苏丹</option>
+    <option value="740">苏里南</option>
+    <option value="90">所罗门群岛</option>
+    <option value="706">索马里</option>
+    <option value="762">塔吉克斯坦</option>
+    <option value="764">泰国</option>
+    <option value="834">坦桑尼亚</option>
+    <option value="780">特立尼达和多巴哥</option>
+    <option value="788">突尼斯</option>
+    <option value="792">土耳其</option>
+    <option value="796">土克斯及开科斯群岛</option>
+    <option value="795">土库曼斯坦</option>
+    <option value="798">土瓦卢</option>
+    <option value="772">托克劳群岛</option>
+    <option value="548">瓦努阿图</option>
+    <option value="132">维德角</option>
+    <option value="862">委内瑞拉</option>
+    <option value="96">文莱</option>
+    <option value="876">沃利斯与福他拿岛</option>
+    <option value="800">乌干达</option>
+    <option value="804">乌克兰</option>
+    <option value="858">乌拉圭</option>
+    <option value="860">乌兹别克斯坦</option>
+    <option value="732">西撒哈拉</option>
+    <option value="92">西属维京群岛</option>
+    <option value="300">希腊</option>
+    <option value="702">新加坡</option>
+    <option value="540">新卡里多尼亚岛</option>
+    <option value="554">新西兰</option>
+    <option value="348">匈牙利</option>
+    <option value="760">叙利亚</option>
+    <option value="388">牙买加</option>
+    <option value="51">亚美尼亚</option>
+    <option value="887">也门</option>
+    <option value="368">伊拉克</option>
+    <option value="364">伊朗</option>
+    <option value="376">以色列</option>
+    <option value="360">印尼</option>
+    <option value="86">英属印度洋领地</option>
+    <option value="400">约旦</option>
+    <option value="704">越南</option>
+    <option value="270">赞比亚</option>
+    <option value="894">赞比亚</option>
+    <option value="148">乍得</option>
+    <option value="292">直布罗陀群岛</option>
+    <option value="152">智利</option>
+    <option value="140">中非</option>
+
+
+</select>
+            
+            <select class="select" id="homeRegion" name="profiledetail.homeregionid">
+    <option value="0">请选择</option>
+    <option value="750">北京</option>
+    <option value="1392">上海</option>
+    <option value="842">天津</option>
+    <option value="1515">重庆</option>
+    <option value="294">安徽</option>
+    <option value="507">福建</option>
+    <option value="326">甘肃</option>
+    <option value="1489">广东</option>
+    <option value="876">广西</option>
+    <option value="976">贵州</option>
+    <option value="459">海南</option>
+    <option value="246">河北</option>
+    <option value="2536">黑龙江</option>
+    <option value="272">河南</option>
+    <option value="279">湖北</option>
+    <option value="309">湖南</option>
+    <option value="872">江苏</option>
+    <option value="833">江西</option>
+    <option value="295">吉林</option>
+    <option value="1141">辽宁</option>
+    <option value="1520">内蒙古</option>
+    <option value="843">宁夏</option>
+    <option value="775">青海</option>
+    <option value="840">陕西</option>
+    <option value="1143">山东</option>
+    <option value="551">山西</option>
+    <option value="827">四川</option>
+    <option value="1153">新疆</option>
+    <option value="566">西藏</option>
+    <option value="599">云南</option>
+    <option selected="selected" value="1123">浙江</option>
+
+
+</select>
+            
+            
+            <select class="select" id="homeCity" name="profiledetail.homecityid">
+    <option value="0">请选择</option>
+    <option value="8899">杭州</option>
+    <option value="8851">湖州</option>
+    <option selected="selected" value="8872">嘉兴</option>
+    <option value="8817">金华</option>
+    <option value="8833">丽水</option>
+    <option value="8814">宁波</option>
+    <option value="8855">衢州</option>
+    <option value="8897">绍兴</option>
+    <option value="8885">温州</option>
+    <option value="8405">台州</option>
+    <option value="163070">舟山</option>
+
+
+</select>
+            
+            </li>
+            <li class="form-item clearfix"><label> <span class="red">* </span>所在行业：</label>
+            <select js="industryid" class="select" name="profile.industryid">
+            <option value="0">请选择</option>
+            
+            <optgroup label="高科技"></optgroup>
+            
+            
+            
+            <option value="2">空间科技</option>
+            
+            
+            <option value="3">计算机硬件</option>
+            
+            
+            <option value="4">计算机软件</option>
+            
+            
+            <option value="5">计算机网络设备</option>
+            
+            
+            <option value="6">计算机与网络安全</option>
+            
+            
+            <option value="7">计算机游戏</option>
+            
+            
+            <option selected="selected" value="8">互联网</option>
+            
+            
+            <option value="9">半导体</option>
+            
+            
+            <option value="10">电信与通讯</option>
+            
+            
+            <option value="11">纳米技术</option>
+            
+            
+            <option value="12">信息技术与服务</option>
+            
+            
+            <option value="13">无线通讯</option>
+            
+            <optgroup label="法律"></optgroup>
+            
+            
+            
+            <option value="15">法律援助</option>
+            
+            
+            <option value="16">法律服务</option>
+            
+            <optgroup label="专业咨询、服务"></optgroup>
+            
+            
+            
+            <option value="18">管理咨询</option>
+            
+            
+            <option value="19">招聘、猎头</option>
+            
+            
+            <option value="20">人力资源</option>
+            
+            
+            <option value="21">培训</option>
+            
+            
+            <option value="22">市场推广与广告</option>
+            
+            
+            <option value="23">市场调研</option>
+            
+            
+            <option value="24">公共关系</option>
+            
+            
+            <option value="25">翻译服务</option>
+            
+            
+            <option value="26">设备维护</option>
+            
+            
+            <option value="27">外包服务</option>
+            
+            
+            <option value="28">会务及活动服务</option>
+            
+            <optgroup label="医疗与健康"></optgroup>
+            
+            
+            
+            <option value="30">生物工程</option>
+            
+            
+            <option value="31">生物信息</option>
+            
+            
+            <option value="32">医院与医疗</option>
+            
+            
+            <option value="33">医药品</option>
+            
+            
+            <option value="34">医疗设备</option>
+            
+            
+            <option value="35">兽医</option>
+            
+            
+            <option value="36">健身</option>
+            
+            
+            <option value="37">心理健康</option>
+            
+            
+            <option value="38">中医</option>
+            
+            <optgroup label="媒体"></optgroup>
+            
+            
+            
+            <option value="40">广播</option>
+            
+            
+            <option value="41">电视</option>
+            
+            
+            <option value="42">电影</option>
+            
+            
+            <option value="43">报纸</option>
+            
+            
+            <option value="44">杂志</option>
+            
+            
+            <option value="45">出版</option>
+            
+            
+            <option value="46">写作与编辑</option>
+            
+            
+            <option value="47">文化艺术</option>
+            
+            
+            <option value="48">印刷</option>
+            
+            
+            <option value="49">互联网媒体</option>
+            
+            
+            <option value="50">媒体设计制作</option>
+            
+            <optgroup label="体育、休闲、旅游、娱乐"></optgroup>
+            
+            
+            
+            <option value="52">娱乐业</option>
+            
+            
+            <option value="53">休闲度假与旅游</option>
+            
+            
+            <option value="54">餐饮业</option>
+            
+            
+            <option value="55">住宿业</option>
+            
+            
+            <option value="56">体育运动</option>
+            
+            
+            <option value="57">食品与饮料</option>
+            
+            
+            <option value="58">娱乐设备与服务</option>
+            
+            <optgroup label="金融"></optgroup>
+            
+            
+            
+            <option value="60">保险</option>
+            
+            
+            <option value="61">财经服务</option>
+            
+            
+            <option value="62">房地产</option>
+            
+            
+            <option value="63">投资银行</option>
+            
+            
+            <option value="64">风险投资</option>
+            
+            
+            <option value="65">私募股权投资</option>
+            
+            
+            <option value="66">证券</option>
+            
+            
+            <option value="67">会计</option>
+            
+            <optgroup label="非盈利性组织"></optgroup>
+            
+            
+            
+            <option value="69">非盈利性组织管理</option>
+            
+            
+            <option value="70">公益基金</option>
+            
+            
+            <option value="71">智囊团</option>
+            
+            
+            <option value="72">慈善事业</option>
+            
+            
+            <option value="73">科学研究</option>
+            
+            <optgroup label="教育"></optgroup>
+            
+            
+            
+            <option value="75">义务教育</option>
+            
+            
+            <option value="76">高等教育</option>
+            
+            
+            <option value="77">教育管理</option>
+            
+            
+            <option value="78">E-Learning</option>
+            
+            
+            <option value="79">教育研究</option>
+            
+            <optgroup label="日常消费品"></optgroup>
+            
+            
+            
+            <option value="81">化妆品</option>
+            
+            
+            <option value="82">服装服饰</option>
+            
+            
+            <option value="83">体育用品</option>
+            
+            
+            <option value="84">烟草</option>
+            
+            
+            <option value="85">超市卖场</option>
+            
+            
+            <option value="86">食物生产</option>
+            
+            
+            <option value="87">酒类</option>
+            
+            
+            <option value="88">消费电子</option>
+            
+            
+            <option value="89">快速消费品</option>
+            
+            
+            <option value="90">家具</option>
+            
+            
+            <option value="91">零售</option>
+            
+            
+            <option value="92">批发</option>
+            
+            
+            <option value="93">进出口</option>
+            
+            
+            <option value="94">奢侈品与珠宝</option>
+            
+            <optgroup label="建筑"></optgroup>
+            
+            
+            
+            <option value="96">建筑工程</option>
+            
+            
+            <option value="97">建材</option>
+            
+            
+            <option value="98">建筑设计</option>
+            
+            
+            <option value="99">土木工程</option>
+            
+            
+            <option value="100">装饰装潢</option>
+            
+            <optgroup label="制造"></optgroup>
+            
+            
+            
+            <option value="102">工艺品</option>
+            
+            
+            <option value="103">飞行航空与宇航</option>
+            
+            
+            <option value="104">汽车</option>
+            
+            
+            <option value="105">化工</option>
+            
+            
+            <option value="106">电子电气设备</option>
+            
+            
+            <option value="107">机械</option>
+            
+            
+            <option value="108">采矿与金属</option>
+            
+            
+            <option value="109">石油与能源</option>
+            
+            
+            <option value="110">回收与环境保护</option>
+            
+            
+            <option value="111">造船</option>
+            
+            
+            <option value="112">纺织及皮革制造</option>
+            
+            
+            <option value="113">造纸与木材</option>
+            
+            
+            <option value="114">铁路</option>
+            
+            
+            <option value="115">玻璃, 陶瓷与混凝土</option>
+            
+            
+            <option value="116">包装与集装箱</option>
+            
+            
+            <option value="117">工业管理</option>
+            
+            
+            <option value="118">工业自动化</option>
+            
+            <optgroup label="政府及公共事业"></optgroup>
+            
+            
+            
+            <option value="120">外交</option>
+            
+            
+            <option value="121">司法机关</option>
+            
+            
+            <option value="122">行政部门</option>
+            
+            
+            <option value="123">军事机构</option>
+            
+            
+            <option value="124">卫生社会福利</option>
+            
+            
+            <option value="125">水利环境公共设施</option>
+            
+            
+            <option value="126">地质勘探</option>
+            
+            
+            <option value="127">水电燃气生产供应</option>
+            
+            
+            <option value="128">公共安全</option>
+            
+            
+            <option value="129">社会保障</option>
+            
+            
+            <option value="130">图书馆及博物馆</option>
+            
+            
+            <option value="131">信息服务</option>
+            
+            
+            <option value="132">保安服务</option>
+            
+            <optgroup label="公共服务业"></optgroup>
+            
+            
+            
+            <option value="134">环保服务</option>
+            
+            
+            <option value="135">家政服务</option>
+            
+            
+            <option value="136">宗教协会</option>
+            
+            
+            <option value="137">物流与供应链</option>
+            
+            
+            <option value="138">邮政，包裹，零担货运</option>
+            
+            
+            <option value="139">运输/汽运/铁路</option>
+            
+            <optgroup label="交通运输"></optgroup>
+            
+            
+            
+            <option value="141">仓储</option>
+            
+            
+            <option value="142">航空运输</option>
+            
+            
+            <option value="143">水上运输</option>
+            
+            
+            <option value="144">客运及城市公共交通</option>
+            
+            <optgroup label="农林牧渔业"></optgroup>
+            
+            
+            
+            <option value="146">林业</option>
+            
+            
+            <option value="147">渔业</option>
+            
+            
+            <option value="148">农场</option>
+            
+            
+            <option value="149">畜牧</option>
+            
+            <optgroup label="商品贸易"></optgroup>
+            
+            
+            
+            <option value="151">国内贸易</option>
+            
+            
+            <option value="152">国际贸易</option>
+            
+            <optgroup label="其他行业"></optgroup>
+            
+            
+            
+            <option value="154">其他行业</option>
+            
+            </select><span class="tips tip-err" style="display: none;"><div class="tips-box-outer"><div class="tips-box-inner">必须选择所在行业</div></div></span>
+            </li>
+            <li><label>Blog地址：</label> <input type="text" class="input-w-400" id="profiledetail_blog" value="http://xxx.sohu.com/" maxlength="255" name="profiledetail.blog">
+            </li>
+          </ul>
+          <p> <input type="submit" js="submit" value="提交" class="common-button"></p>
+          <p><a href="/user/profile.jhtml">放弃修改, 返回我的个人档案</a></p>
+          </form>  
+
+          </div>
+          
+
+          
+          
+           
+           
+
+
+
+
+
+          
+  </div>     
+</div>
+
+<!--删除有评价的工作经历弹出窗口-->
+
+
+<!--删除无评价的工作经历弹出窗口-->
+
+
+
+<!--#include file="footer.html"-->
+</body>
+</html>

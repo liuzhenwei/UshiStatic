@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="..../../bns/images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+	<div class="lf">  
+		<div id="menu_out" class="leftmenu">	
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+		</div>
+	</div>  
+
+<script type="text/javascript">
+function selectAll(b){
+	$('table.datalist :checkbox').attr('checked', b);
+	var l = $('table.datalist :checked').length;
+	$('[js="selectedCount"]').text(l);
+}
+$(function(){
+	$('table.datalist :checkbox').bind('click', function(){
+		var l = $('table.datalist :checked').length;
+		$('[js="selectedCount"]').text(l);
+	});
+});
+</script>
+	<div class="rf">
+		<div id="container">
+			<h2>选择添加对象</h2>
+			<div class="tips_area">
+				<a href="javascript:void(0);" onclick="selectAll(true);">全选</a> |
+				<a href="javascript:void(0);" onclick="selectAll(false);" style="margin-right: 20px;">取消全选</a>
+				已选<span js="selectedCount">9</span>人
+			</div>
+			<table width="100%" cellpadding="0" cellspacing="0" class="datalist mt10">
+			<tr>
+				<th>&nbsp;</th>
+				<th>姓名</th>
+				<th>行业</th>
+				<th>职位</th>
+				<th>被关注人数</th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>
+			<tr class="gray">
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>		
+			<tr class="gray">
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>		
+			<tr class="gray">
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>		
+			<tr class="gray">
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>		
+			<tr class="gray">
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>		
+			<tr class="gray">
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>		
+			<tr class="gray">
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>		
+			<tr class="gray">
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>王石</td>
+				<td>计算机软件</td>
+				<td>高级开发工程师</td>
+				<td>2222</td>
+			</tr>		
+			</table>
+			<div class="tips_area">
+				<a href="javascript:void(0);" onclick="selectAll(true);">全选</a> |
+				<a href="javascript:void(0);" onclick="selectAll(false);" style="margin-right: 20px;">取消全选</a>
+				已选<span js="selectedCount">9</span>人
+			</div>
+			<p>
+				<input type="button" value=" 添 加 " />
+			</p>
+			<div class="pagenav">
+				<a href="#">上一页</a>
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<span class="cur">3</span>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">下一页</a>
+			</div>
+		</div>
+	</div>
+	
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright">
+	        Copyright &copy; 2010 Ushi.cn
+        </div>
+    </div> 
+    <!--footer end-->
+</div>
+
+</body>
+</html>

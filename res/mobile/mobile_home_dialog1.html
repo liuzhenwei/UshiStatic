@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"> 
+	<link rel="stylesheet" href="../../mobile/css/jquery.mobile-1.0a4.1.css" />
+	<link rel="stylesheet" href="../../mobile/css/reset.css" />
+	<script src="../../mobile/js/jquery-1.5.2.min.js"></script>
+	<script src="../../mobile/js/jquery.mobile-1.0a4.1.js"></script>
+	<script src="../../mobile/js/dialog.js"></script>
+<title>弹出层dialog显示</title>
+<style type="text/css"> 
+	*{margin:0; padding:0; list-style: none;}
+	img{border:0;}
+	body{font-size:12px; font-family:Tahoma,Arial,Verdana,Helvetica,sans-serif; color:#353535; }
+	/* 弹出层 */
+
+</style>
+</head>
+ 
+<body>
+<div data-role="page" data-theme="d">
+<div data-role="content">
+<p>
+    <pre>var dialogBox = new Dialog("<p>这个世界真无聊！</p>",{
+			"width":"500px",
+			"title":"fuck world!",
+			"closeModal":false,
+			closeDelay:"5000"
+		});</pre>
+	<input id="avvv1" type="button" value="弹出层" onclick="show();"/>
+</p>
+<p>=======================================================</p>
+<p>
+    <pre>var dialogBox1 = new Dialog("<p>这个世界真疯狂！<br />这个世界真疯狂！</p>",{
+            "width":"600px"
+        });</pre>
+	<input id="avvv2" type="button" value="弹出层" onclick="show1();"/>
+</p>
+<p>=======================================================</p>
+<p>
+    <pre>var dialogBox2 = new Dialog("<p>这个世界真疯狂！<br />这个世界真疯狂！</p>",{
+            "width":"600px",
+            "title":"hello world!",
+            'modal':true,
+            "closeModal":false
+        });</pre>
+	<input id="avvv3" type="button" value="弹出层" onclick="show2();"/>
+</p>
+<p>=======================================================</p>
+<p>
+    <pre>Dialog.popTip('成功提示', "<br /> 这个世界真无聊 <br />", 2500); </pre>
+	<input id="avvv4" type="button" value="弹出层" onclick="show3();"/>
+</p>
+<p>=======================================================</p>
+<p>
+    <pre>
+    $("#ask").click(function() {
+        Dialog.ask("你感觉怎么样?", ["确定", "取消"], function(val) {
+          alert("你选择的是: " + val);
+        }, {title: "这是一个问题……","dTopNum":"100px"});
+        return false;
+    });
+    </pre>
+	<input id="ask" type="button" value="弹出层" />
+</p>
+<p>=======================================================</p>
+<p>
+    <pre>
+    $("#load").click(function() {
+        Dialog.load("1.html", {
+            "width":"600px",
+            "title":"hello world!",
+            'modal':true,
+            "closeModal":false
+        });
+    });</pre>
+	<input id="load" type="button" value="弹出层load" />
+</p>
+<p>=======================================================</p>
+<p>
+    <pre>
+    $("#frame").click(function() {
+        Dialog.frame("fuckYou","2.html", {
+            "width":"800px",
+            "title":"hello world!",
+            'modal':true,
+            "closeModal":false,
+            "dTopNum":"100px"
+        });
+    });
+    </pre>
+    <input id="frame" type="button" value="弹出层frame" />
+    <br /><br />
+	<select>
+	<option>中华人民共和国</option><option>美国</option><option>俄罗斯</option>
+	</select>
+</p>
+<script type="text/javascript"> 
+	function show1(){
+		var dialogBox1 = new Dialog("<p>这个世界真疯狂！<br />这个世界真疯狂！</p>",{
+            "width":"600px"
+        });
+	}
+	function show2(){
+		var dialogBox2 = new Dialog("<p>这个世界真疯狂！<br />这个世界真疯狂！</p>",{
+            "width":"600px",
+            "title":"hello world!",
+            'modal':true,
+            "closeModal":false
+        });
+	}
+	function show(){
+		var dialogBox = new Dialog("<p>这个世界真无聊！</p>",{
+			"width":"500px",
+			"title":"fuck world!",
+			"closeModal":false,
+			closeDelay:"5000"
+		});
+	}
+	function show3(){
+		Dialog.popTip('成功提示', "<br /> 这个世界真无聊 <br />", 2500);
+	}
+	$("#ask").click(function() {
+        Dialog.ask("你感觉怎么样?", ["确定", "取消"], function(val) {
+          alert("你选择的是: " + val);
+        }, {title: "这是一个问题……","dTopNum":"100px"});
+        return false;
+    });
+    $("#load").click(function() {
+        Dialog.load("1.html", {
+            "width":"600px",
+            "title":"hello world!",
+            'modal':true,
+            "closeModal":false
+        });
+    });
+    $("#frame").click(function() {
+        Dialog.frame("fuckYou","2.html", {
+            "width":"800px",
+            "title":"hello world!",
+            'modal':true,
+            "closeModal":false,
+            "dTopNum":"100px"
+        });
+    });
+</script>
+<br /><br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+七日黄石公园,总统巨石国家纪念地,全美第一尤他州拱门国家公园<br />
+ 
+ 
+</div>
+</div>
+</body>
+</html>
+

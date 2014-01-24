@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>群组动态 - 优士网</title>
+<meta name="description" content="page.description.default"/>
+<meta name="keywords" content="page.keywords.default"/>
+<link href="../../../bns/images/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="../../../bns/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="../../../bns/images/favicon.ico" rel="bookmark" type="image/x-icon" />
+<link rel="stylesheet" href="../../../common/css/layout.css?5.1" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="/css/member.css?5.1" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="/css/library_sc/pages_member.css?5.1" type="text/css" media="screen, projection">
+<script type="text/javascript" src="/js/jQuery.min.js?1.3.2"></script>
+<script type="text/javascript" src="/js/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="/doc!jsprop.jhtml"></script>
+<script type="text/javascript" src="/js/widget.js?5.1"></script>
+<script type="text/javascript" src="/js/friendsSelect.js?5.1"></script>
+<script type="text/javascript" src="/js/common.js?5.1"></script>
+<script type="text/javascript" src="/js/feed.js?5.1"></script>
+<script type="text/javascript" src="/js/group.member.manage.js?5.1"></script>
+<script type="text/javascript" src="/js/groups.js?5.1"></script>
+<script type="text/javascript" src="/js/ajaxfileupload.js?5.1"></script>
+<script type="text/javascript" src="/js/group_feed.js?5.1"></script>
+<script type="text/javascript" src="/js/groups_event.js?5.1"></script>
+<script type="text/javascript" src="/js/DateSelect.js?3.0"></script>
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js"></script>
+<script type="text/javascript"> 
+GS_googleAddAdSenseService("ca-pub-9684247948196378");
+GS_googleEnableAllServices();
+</script>
+<script type="text/javascript"> 
+GA_googleAddSlot("ca-pub-9684247948196378", "ushi_GroupProfile_270x140");
+GA_googleAddSlot("ca-pub-9684247948196378", "ushi_GroupProfile_270x140_EN");
+</script>
+<script type="text/javascript"> 
+GA_googleFetchAds();
+</script>
+<script type="text/javascript"> 
+var __nav = "nav_group";
+</script>
+ 
+ 
+<script type="text/javascript"> 
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-13168519-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</head>
+ 
+<body>
+<div id="wrapper" class="container">
+	<!-- header start -->
+	<!-- utility links -->
+<div id="nav_utility">
+	<ul class="common-nav">
+		<li><a class="link-menu1 boldface" href="javascript:void(1);" id="top_btn_userManage">卢汉森 Dominic Penaloza</a></li>
+		<li><a href="/msg/notification!listNotification.jhtml">站内通知</a> <strong class="red" jsonInfo="newNotifacationCount"></strong></li>
+		<li><a class="link-menu1" href="javascript:void(0)" id="top_btn_set">设置</a></li>
+		<li><a href="/sns/sns!viewInvitePage.jhtml" class="green boldface">发邀请</a></li>
+		<li><a href="/doc.jhtml?key=help">帮助</a></li>
+		<li><a href="/logout.jhtml">退出登录</a></li>
+	</ul>
+</div>
+ 
+<div class="dp-menu" id="top_menu_userManage">
+	<ul>
+		<li>账户类型：<a href="/user/setting.jhtml" jsonInfo="membership"></a></li>
+		<li class="line">优士币：<a href="/currency/Coins!chargeList.jhtml"><span jsonInfo="coinsCount"></span>枚</a></li>
+		<li><a href="/currency/Package.jhtml">升级会员资格</a></li>
+		<li><a href="/currency/Coins.jhtml">优士币充值</a></li>
+	</ul>
+</div>
+<div class="dp-menu" id="top_menu_set">
+	<ul>
+		<li><a href="/user/setting.jhtml">账户信息设置</a></li>
+		<li><a href="/user/edit!bfEditBase.jhtml">编辑个人档案</a> </li>
+		<li class="line"><a href="/security/contact.jhtml">隐私和偏好</a></li>
+		<li><a href="/user/index!toggle.jhtml?request_locale=zh_CN">中文版</a> </li>
+		<li><a href="/user/index!toggle.jhtml?request_locale=en_US">English version</a> </li>
+	</ul>
+</div>
+	 
+	 <!-- Logo and navigation bar --> 
+	 <div id="header" class="clearfix"> 
+		  <div id="logo"><a href="/user/index.jhtml"><img src="../../../bns/images/youshi_logo.png" width="80" height="51" title="优士网"></a></div> 
+		  <div id="navigation"> 
+			   <ul> 
+			   <li id="nav_home"><a href="/user/index.jhtml"><span>首 页</span></a></li> 
+			   <li id="nav_profile"><a href="/user/profile.jhtml"><span>档 案</span></a></li> 
+			   <li id="nav_connection"><a href="/sns/sns!view1stFriends.jhtml"><span>人 脉</span></a></li>
+			   <li id="nav_group"><a href="/group/index.jhtml"><span>群 组</span></a></li> 
+			   <li id="nav_microblogging"><a href="/feed/feed!list.jhtml"><span>微 博</span></a></li>
+			   <li id="nav_job">
+			   <a href="/job/home!view.jhtml"><span class="relative">求 职</span></a></li> 
+			   <li id="nav_event"><a href="/event/list!friendEvent.jhtml"><span>活 动</span></a></li>
+			   <li id="nav_message"><a href="/msg/message!getMessageInbox.jhtml"><span class="relative">直 邮<em class="red" jsonInfo="newMessageCount"></em></span></a></li> 
+			   </ul> 
+		  </div> 
+	</div> 
+ 
+	<div id="nav_profile_menu" class="nav-menu" cnw="88" enw="160">
+		<a href="/user/profile.jhtml">编辑档案</a>
+		<a href="/u/1">预览档案</a>
+		<a href="/endorse/manage!getEndorseReceive.jhtml">我的评价</a>
+	</div> 
+	<div id="nav_connection_menu" class="nav-menu" cnw="88" enw="160">
+		<a href="/sns/sns!view1stFriends.jhtml"> 一度人脉</a>
+		<a href="/sns/sns!viewExtendConnection.jhtml"> 拓展人脉</a>
+		<a href="/sns/sns!getFollowers.jhtml?queryType=1"> 关注列表</a>
+		<a href="/sns/sns!getMemo.jhtml"> 我的备忘</a>
+	</div> 
+	<div id="nav_group_menu" class="nav-menu" cnw="88" enw="110">
+		<a href="/group/index.jhtml">我的群组</a>
+		<a href="/group/groups.jhtml">所有群组</a>
+		<a href="/group/member.groupcreateapply.jhtml">创建群组</a>
+	</div> 
+	<div id="nav_microblogging_menu" class="nav-menu" cnw="88" enw="178">
+		<a href="/feed/feed!list.jhtml">最新微博</a>
+		<a href="/feed/feed!retweetlist.jhtml">我的转播</a>
+		<a href="/feed/feed!getMicroblogFav.jhtml">我的收藏</a>
+		<a href="/feed/feed!getMyComment.jhtml">我的评论</a>
+		<a href="/feedShare/feedShare!instrument.jhtml">分享工具</a>
+	</div> 
+	<div id="nav_job_menu" class="nav-menu" cnw="88" enw="120">
+		<a href="/job/search!viewSearchForm.jhtml">找工作</a>
+		<a href="/job/apply!getMyPost.jhtml">我的职位</a>
+		<a href="/job/recruitment!viewPostForm.jhtml">发布职位</a>
+		<a href="/job/recruitment!listPublishJobs.jhtml">管理职位</a>
+	</div> 
+	<div id="nav_event_menu" class="nav-menu" cnw="88" enw="160">
+		<a href="/event/list!friendEvent.jhtml"> 人脉活动</a>
+		<a href="/event/samecity.jhtml"> 同城活动</a>
+		<a href="/event/myevent.jhtml"> 我的活动</a>
+		<a href="/event/myevent.jhtml#outLink" id="EventOutLink"> 添加活动</a>
+	</div> 
+	<div id="nav_message_menu" class="nav-menu" cnw="118" enw="104">
+		 <a href="/msg/message!getMessageInbox.jhtml">已收到的直邮</a>
+		 <a href="/msg/message!getMessageOutbox.jhtml">已发出的直邮</a>
+		 <a href="/msg/message!composeMessage.jhtml">撰写新直邮</a>
+	</div>
+	<!-- Search bar -->
+	 <div id="searchbar" class="searchbar">
+		 <form id="search_form" action="/search/search!search.jhtml" method="post" >
+		  <input type="hidden" name="form.keyWordSearch" value="true" id="is_keyword"/><input type="hidden" name="form.position" value="" id="form_position"/><input type="hidden" name="industryIds" value="0" id="form_industryIds"/><div class="search-form">
+			<span class="search-q"><input type="text" name="form.keyword" value="姓名、职位、公司、学校..." id="is_keyword_nav" class="quiet" onfocus="$(this).attr('value', '');"/></span>
+			<button type="submit" hideFocus="true"><span class="hide">搜 索</span></button> 
+			<span class="search-link"><a href="/search/search!advSearch.jhtml">高级搜索</a></span> 
+		 </div> 
+	   </form>
+  </div>
+  <!-- header end -->
+ 
+	<!-- main start -->
+	<div id="main" class="clearfix">
+		
+ 
+		<div class="column-2-3">
+			
+ 
+ 
+<!--群组路径导航 -->
+<head>
+<title>123123123</title>
+</head>
+         
+ 
+		
+		<!-- 5796bug修復 -->
+		
+		<!--  
+			<div class="notice-new">优士网群组又添新特性，基于邮件的实时讨论等新功能隆重登场！<a href="/doc.jhtml?key=help_group" target="_blank">了解更多</a><span class="new"></span><a class="common-close"href="#"><span class="hide">关闭</span></a></div>
+		-->
+		
+       <div class="grp-path"><h3>单身社交群</h3></div>
+          <!--群组logo及菜单导航 -->
+        <div class="tabs-common grp-nav clearfix">
+          <div class="grp-logo"><a href="/group/mygroup.jhtml?gid=372"><img src="http://192.168.10.169/photos/g/2010/07/10/92589012-7460-4c04-8890-905077fc8ceb_icon.jpg" width="50" height="50" /></a></div>
+          <ul id="groupBar">
+          <li id="home"><a href="/group/mygroup.jhtml?gid=372">群组首页</a></li>
+          <li id="forum"><a href="/group/topic.list.jhtml?gid=372 ">讨论区</a></li>
+          <li id="resource"><a href="/group/resource.jhtml?gid=372">资源</a></li>
+          <!-- <li id="event"><a href="/group/member.findEvents.jhtml?mark=eventAll&gid=372">活动</a></li> -->
+          <li id="event"><a href="/group/events.jhtml?gid=372">活动</a></li>
+          <li id="member"><a href="/group/member.list.jhtml?gid=372">成员</a></li>
+          
+          </ul>
+        </div>
+        
+        
+        
+        
+ 
+ 
+ 
+ 
+ 
+ 
+<script type="text/javascript">__subnav = "resource";</script>
+ 
+<div class="clearfloat pd-btm15e pd-top">
+	<span>以下是群组成员分享的全部资源，共 119 个 </span>
+	<a class="float-right special-btn" href="/group/share.jhtml?gid=372" >分享资源</a>
+</div>
+<div class="tabs-sub clearfix">
+	<ul>
+		<li class="current"><a href="/group/resource.jhtml?gid=372" >全部资源</a></li>
+		<li ><a href="/group/resource.jhtml?gid=372&handle=1" >网址</a></li>
+		<li ><a href="/group/resource.jhtml?gid=372&handle=2" >文档</a></li>
+		<li ><a href="/group/resource.jhtml?gid=372&handle=3" >图片</a></li>
+	</ul>
+</div>
+ 
+ 
+ 
+<div id="feed_content" class="pd-top15e" morepageno='1'>
+ 
+ 
+	
+	<div class="event-block" js="group_feed_close_ctrl" id="feed_16247">
+	<div class="event-owner"><a href='/u/luhansen'><img src='http://ushi.cn../../common/images/face_30.png' id='avatar-1' /></a></div>
+		<div class="event-content">
+		<!-- s:if test="#session.user.userid == profile.userid || canDelete == 1"-->
+		<a class="common-close" style="display:none" js="outerGroupClose" href="javascript:;" onmouseover="dropDown(this)" onclick="dropDown(this)" feedid="16247" feedType="0" ownerid="1" gid="372"><span class="hide">删除</span></a>
+		<!-- /s:if-->
+		<p><a class="username" href="/u/luhansen">卢汉森 Dominic Penaloza</a> 分享了文档<span class="spe-left"></span><a href="/group/feed!view.jhtml?feedId=16247" target="_blank"><span class="doctype-doc"></span>%E4%BC%98%E5%A3%AB%E7%BD%91%E9%87%8D%E7%A3%85%E6%8E%A8%E5%87%BA%E5%A4%9A%E9%A1%B9%E5%95%86%E5%8A%A1%E5%BA%94%E7%94%A8_internal</a></p>
+		
+		
+		<p class="description">hfhgdhgfdhg</p>
+		
+		<p class="action" >1天前14:15
+			
+				<a class="comments-shop" js="insertComm" href="#" hasbind="yes">评论</a>
+			
+			<span js="commentCnt"></span>
+			<!--
+			<a class="spe-left" js="insertComm" href="#">评论</a>
+			-->
+			<a class="spe-left" href=""></a>
+		</p>
+		<div class="event-comments" style="display:none;">
+		   
+		   
+		  </div>
+		  
+		  <p><textarea class="input-addcomm" groupId="372" feedId="16247" type="text"   style="display:none;" >我也说两句</textarea><input type="button" hidefocus="true" class="common-button" value="发表评论" style="display:none;" /></p>
+		  
+		 </div>
+	 </div>
+	
+	<div class="event-block" js="group_feed_close_ctrl" id="feed_16245">
+	<div class="event-owner"><a href='/u/luhansen'><img src='http://ushi.cn../../common/images/face_30.png' id='avatar-1' /></a></div>
+		<div class="event-content">
+		<!-- s:if test="#session.user.userid == profile.userid || canDelete == 1"-->
+		<a class="common-close" style="display:none" js="outerGroupClose" href="javascript:;" onmouseover="dropDown(this)" onclick="dropDown(this)" feedid="16245" feedType="0" ownerid="1" gid="372"><span class="hide">删除</span></a>
+		<!-- /s:if-->
+		<p><a class="username" href="/u/luhansen">卢汉森 Dominic Penaloza</a> 分享了图片<span class="spe-left"></span><a href="" ></a></p>
+		
+		    <div class="event-owner">
+		    	
+		    		<img src="http://192.168.10.169/photos/2011/04/19/930ebd0f-4dd0-4d03-a179-592c18767b59.gif" />
+		    	
+		    		<img src="http://192.168.10.169/photos/2011/04/19/94210382-7926-4e42-9a22-47820b1ed432.gif" />
+		    	
+		    </div>
+		
+		
+		<p class="description">fdsafdsafdsa</p>
+		
+		<p class="action" >1天前14:08
+			
+			<span js="commentCnt"></span>
+			<!--
+			
+			-->
+			<a class="spe-left" href=""></a>
+		</p>
+		<div class="event-comments">
+		   
+		   
+		  </div>
+		  
+		 </div>
+	 </div>
+	
+	<div class="event-block" js="group_feed_close_ctrl" id="feed_16222">
+	<div class="event-owner"><a href='/u/dispersedrainbow'><img src='http://ushi.cn../../common/images/face_30.png' id='avatar-15033' /></a></div>
+		<div class="event-content">
+		<!-- s:if test="#session.user.userid == profile.userid || canDelete == 1"-->
+		<a class="common-close" style="display:none" js="outerGroupClose" href="javascript:;" onmouseover="dropDown(this)" onclick="dropDown(this)" feedid="16222" feedType="0" ownerid="15033" gid="372"><span class="hide">删除</span></a>
+		<!-- /s:if-->
+		<p><a class="username" href="/u/dispersedrainbow">梅止观</a> 分享了网址<span class="spe-left"></span><a href="/group/feed!view.jhtml?feedId=16222" target="_blank">&#22467;&#21450;&#27665;&#20247;&#28216;&#34892;&#31034;&#23041;&#35201;&#27714;&#20844;&#23457;&#31302;&#24052;&#25289;&#20811;_&#32593;&#26131;&#26032;&#38395;</a></p>
+		
+		
+		<p class="action" >2011-04-02 11:33
+			
+				<a class="comments-shop" js="insertComm" href="#" hasbind="yes">评论</a>
+			
+			<span js="commentCnt"></span>
+			<!--
+			<a class="spe-left" js="insertComm" href="#">评论</a>
+			-->
+			<a class="spe-left" href=""></a>
+		</p>
+		<div class="event-comments" style="display:none;">
+		   
+		   
+		  </div>
+		  
+		  <p><textarea class="input-addcomm" groupId="372" feedId="16222" type="text"   style="display:none;" >我也说两句</textarea><input type="button" hidefocus="true" class="common-button" value="发表评论" style="display:none;" /></p>
+		  
+		 </div>
+	 </div>
+	
+	<div class="event-block" js="group_feed_close_ctrl" id="feed_16221">
+	<div class="event-owner"><a href='/u/14202'><img src='http://ushi.cn../../common/images/face_30.png' id='avatar-14202' /></a></div>
+		<div class="event-content">
+		<!-- s:if test="#session.user.userid == profile.userid || canDelete == 1"-->
+		<a class="common-close" style="display:none" js="outerGroupClose" href="javascript:;" onmouseover="dropDown(this)" onclick="dropDown(this)" feedid="16221" feedType="0" ownerid="14202" gid="372"><span class="hide">删除</span></a>
+		<!-- /s:if-->
+		<p><a class="username" href="/u/14202">胡蝶</a> 分享了网址<span class="spe-left"></span><a href="/group/feed!view.jhtml?feedId=16221" target="_blank">http://blog.csdn.net/turingbooks/archive/2011/03/29/6285205.aspx</a></p>
+		
+		
+		<p class="action" >2011-04-01 16:39
+			
+				<a class="comments-shop" js="insertComm" href="#" hasbind="yes">评论</a>
+			
+			<span js="commentCnt"></span>
+			<!--
+			<a class="spe-left" js="insertComm" href="#">评论</a>
+			-->
+			<a class="spe-left" href=""></a>
+		</p>
+		<div class="event-comments" style="display:none;">
+		   
+		   
+		  </div>
+		  
+		  <p><textarea class="input-addcomm" groupId="372" feedId="16221" type="text"   style="display:none;" >我也说两句</textarea><input type="button" hidefocus="true" class="common-button" value="发表评论" style="display:none;" /></p>
+		  
+		 </div>
+	 </div>
+	
+	<div class="event-block" js="group_feed_close_ctrl" id="feed_16218">
+	<div class="event-owner"><a href='/u/14202'><img src='http://ushi.cn../../common/images/face_30.png' id='avatar-14202' /></a></div>
+		<div class="event-content">
+		<!-- s:if test="#session.user.userid == profile.userid || canDelete == 1"-->
+		<a class="common-close" style="display:none" js="outerGroupClose" href="javascript:;" onmouseover="dropDown(this)" onclick="dropDown(this)" feedid="16218" feedType="0" ownerid="14202" gid="372"><span class="hide">删除</span></a>
+		<!-- /s:if-->
+		<p><a class="username" href="/u/14202">胡蝶</a> 分享了网址<span class="spe-left"></span><a href="/group/feed!view.jhtml?feedId=16218" target="_blank">&#25506;&#32034;&#25512;&#33616;&#24341;&#25806;&#20869;&#37096;&#30340;&#31192;&#23494;&#65306;&#25512;&#33616;&#24341;&#25806;&#21021;&#25506; - CSDN.NET - CSDN&#36719;&#20214;&#30740;&#21457;&#39057;&#36947;</a></p>
+		
+		
+		<p class="action" >2011-04-01 15:36
+			
+				<a class="comments-shop" js="insertComm" href="#" hasbind="yes">评论</a>
+			
+			<span js="commentCnt"></span>
+			<!--
+			<a class="spe-left" js="insertComm" href="#">评论</a>
+			-->
+			<a class="spe-left" href=""></a>
+		</p>
+		<div class="event-comments" style="display:none;">
+		   
+		   
+		  </div>
+		  
+		  <p><textarea class="input-addcomm" groupId="372" feedId="16218" type="text"   style="display:none;" >我也说两句</textarea><input type="button" hidefocus="true" class="common-button" value="发表评论" style="display:none;" /></p>
+		  
+		 </div>
+	 </div>
+	
+	<div class="event-block" js="group_feed_close_ctrl" id="feed_16162">
+	<div class="event-owner"><a href='/u/dispersedrainbow'><img src='http://ushi.cn../../common/images/face_30.png' id='avatar-15033' /></a></div>
+		<div class="event-content">
+		<!-- s:if test="#session.user.userid == profile.userid || canDelete == 1"-->
+		<a class="common-close" style="display:none" js="outerGroupClose" href="javascript:;" onmouseover="dropDown(this)" onclick="dropDown(this)" feedid="16162" feedType="0" ownerid="15033" gid="372"><span class="hide">删除</span></a>
+		<!-- /s:if-->
+		<p><a class="username" href="/u/dispersedrainbow">梅止观</a> 分享了文档<span class="spe-left"></span><a href="/group/feed!view.jhtml?feedId=16162" target="_blank"><span class="doctype-doc"></span>WAP&#32593;&#31449;&#24320;&#21457;&#20860;&#23481;&#24615;&#32771;&#34385;</a></p>
+		
+		
+		<p class="action" >2011-03-16 16:21
+			
+				<a class="comments-shop" js="insertComm" href="#" hasbind="yes">评论</a>
+			
+			<span js="commentCnt"></span>
+			<!--
+			<a class="spe-left" js="insertComm" href="#">评论</a>
+			-->
+			<a class="spe-left" href=""></a>
+		</p>
+		<div class="event-comments" style="display:none;">
+		   
+		   
+		  </div>
+		  
+		  <p><textarea class="input-addcomm" groupId="372" feedId="16162" type="text"   style="display:none;" >我也说两句</textarea><input type="button" hidefocus="true" class="common-button" value="发表评论" style="display:none;" /></p>
+		  
+		 </div>
+	 </div>
+	
+	<div class="event-block" js="group_feed_close_ctrl" id="feed_16152">
+	<div class="event-owner"><a href='/u/dispersedrainbow'><img src='http://ushi.cn../../common/images/face_30.png' id='avatar-15033' /></a></div>
+		<div class="event-content">
+		<!-- s:if test="#session.user.userid == profile.userid || canDelete == 1"-->
+		<a class="common-close" style="display:none" js="outerGroupClose" href="javascript:;" onmouseover="dropDown(this)" onclick="dropDown(this)" feedid="16152" feedType="0" ownerid="15033" gid="372"><span class="hide">删除</span></a>
+		<!-- /s:if-->
+		<p><a class="username" href="/u/dispersedrainbow">梅止观</a> 分享了网址<span class="spe-left"></span><a href="/group/feed!view.jhtml?feedId=16152" target="_blank">Wikipedia</a></p>
+		
+		
+		<p class="description">&#32500;&#22522;&#32593;&#31449;&#21908;</p>
+		
+		<p class="action" >2011-03-08 11:59
+			
+				<a class="comments-shop" js="insertComm" href="#" hasbind="yes">评论</a>
+			
+			<span js="commentCnt">(1)</span>
+			<!--
+			<a class="spe-left" js="insertComm" href="#">评论(1)</a>
+			-->
+			<a class="spe-left" href=""></a>
+		</p>
+		<div class="event-comments">
+		   
+		   <p class="reply" >&#32929;&#20221;&#30340;&#25910;&#36141;&nbsp;<a href="/u/14202">胡蝶</a>&nbsp;2011-03-31 17:13
+		   <!-- c:if test="false" -->
+		  	 <a class="common-close" href="javascript:void(0);" onmouseover="dropDown(this)" onclick="dropDown(this)" feedid="16152" ownerid="14202" gid="372" commentid="5891"><span class="hide">删除</span></a>
+		   <!-- /c:if -->
+		   </p>
+		   
+		   
+		  </div>
+		  
+		  <p><textarea class="input-addcomm" groupId="372" feedId="16152" type="text"    >我也说两句</textarea><input type="button" hidefocus="true" class="common-button" value="发表评论" style="display:none;" /></p>
+		  
+		 </div>
+	 </div>
+	
+	<p class="large a-center" js="moreFeedDiv" style="display:none;" ><strong><a href="#" id="moreFeed">更多动态</a></strong></p>
+	
+	
+	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+		  
+		  <div class="pages">
+          
+          </div> 
+ </div>
+<!-- 关闭菜单  -->
+<div id="newFeedClose" style="display:none" class="dp-menu"></div>
+<!-- feed举报选项  -->
+<div id="reportSelect" style="display:none">
+	<ul>
+		<li><input name="reportSelect" type="radio" value="1" checked="checked"/>重复发布的内容</li>
+		<li><input name="reportSelect" type="radio" value="2"/>与本群组主题无关的内容</li>
+		<li><input name="reportSelect" type="radio" value="3"/>垃圾广告或含欺诈信息的内容</li>
+		<li><input name="reportSelect" type="radio" value="4"/>暴力、色情、政治等违法或敏感内容</li>
+		<li><input name="reportSelect" type="radio" value="5"/>链接或文件无法访问</li>
+	</ul>
+</div>
+<div id="reportSuccess" style="display:none"> 
+	<p>内容举报成功！您的举报将被审核处理，但您举报的内容并不保证一定被删除。</p>
+</div>
+<div id="reportDuplicate" style="display:none">
+	<p>您以前已经举报过该内容了，无需重复举报。</p>
+</div>
+<script type="text/javascript"> 
+ 
+</script>
+        
+		
+ 
+		</div>
+ 
+ 
+		<div class="column-3">
+			
+ 
+<!--right side -->
+       
+       <div class="grp-sch-r" style="margin-top:33px;">
+	       <h4>搜索群组资源</h4>
+	       <form  action="/group/resourcesearch.jhtml?gid=372" method="post" >
+	       		<input class="input-sch-r" type="text" name="keywords" value=""/> 
+	       		<div class="pd-top"><input id="resource_submit" type="submit" class="common-button" value="搜索" /></div>
+	       </form>
+       </div>
+<script type="text/javascript"> 
+$(document).ready(function(){
+	$('#resource_submit').click(function(){
+		$('#resource_form').submit();
+	});
+});
+</script>
+		</div>
+</div>
+	<!-- main end -->
+ 
+	<!-- footer start -->
+	<div id="footer">
+		<ul class="common-nav divide">
+	<li><a href="/doc.jhtml?key=overview">了解优士</a></li>
+	<li><a href="/doc.jhtml?key=about_us">关于我们</a></li>
+	<li><a href="/founding-and-charter-members">创始会员</a></li>
+	<li><a href="/doc.jhtml?key=contact_us">联系我们</a></li>
+	<li><a href="/doc.jhtml?key=join_us">加入我们</a></li>
+	<li><a href="/doc.jhtml?key=news">媒体中心</a></li>
+	<li><a href="/doc.jhtml?key=success_stories">成功故事</a></li>
+	<li><a href="/doc.jhtml?key=privacy_policy">隐私声明</a></li>
+	<li><a href="/doc.jhtml?key=term_of_service">服务条款</a></li>
+	<li><a href="http://blog.ushi.cn" target="_blank">优士博客</a></li>
+	<li class="divide-none"><a href="/user/index!toggle.jhtml?request_locale=en_US">English version</a></li>
+	</ul>
+<p class="clear"><a href=http://www.miibeian.gov.cn/ target=_blank>沪ICP备06027394号</a> Ushi.cn © 版权所有 2009~2011</p> 
+<div class="side-feedback" id="side-feedback"><a hidefocus="true" class="feedback-btn" href="#"><span class="hide">Feedback</span></a></div>
+</div>
+	<!-- footer end -->
+</div>
+ 
+</body>
+</html>
+ 
+

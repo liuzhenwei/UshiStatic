@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>邀请好友加入</title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/groups.js"></script>
+</head>
+
+<body id="page_member">
+<div id="wrapper" class="container">
+    <!--#include file="../header.html"-->
+    <div id="main" class="clearfix">
+          
+       
+      <div class="column-2-3">
+          <div class="grp-path"><h3>宝洁同事会</h3></div>
+        <!--群组logo及菜单导航 -->
+        <div class="tabs-common grp-nav clearfix">
+          <div class="grp-logo"><a href="javascript:void(0);"><img src="../../../bns/images/test_grp_logo.png" width="50" height="50" alt="logo" /></a></div>
+          <ul>
+          <li><a href="groups_home.html">群组概况</a></li>
+          <li><a href="groups_bbs.html">讨论区</a></li>
+          <li class="current"><a href="groups_event.html">活动</a></li>
+          <li><a href="groups_members.html">成员</a></li>
+          <li><a href="../groups_admin.html">管理</a></li>
+          </ul>
+        </div> 
+         
+        <div class="grp-tit clearfix">
+          <h4>邀请朋友加入活动: <a href="#">《现金流沙龙》免费体验活动</a></h4>
+          <span class="back"><a href="groups_event_view.html">返回活动详情页面</a></span></div>
+        
+        
+        <div id="group_event_invite">
+          <div class="tabs-feed tabs-sub clearfix">
+           <ul>
+            <li><a href="#">邀请群组成员</a></li>
+            <li><a href="#">邀请直接联系人</a></li>
+            <li class="current"><a href="#">发送站外邀请</a></li> 
+            <li><a href="#">已发出的邀请</a></li>
+           </ul> 
+          </div>
+        
+         <div class="grp-block"> 
+         <form class="formstyle-3">
+         <ul>
+         <li><label>方式一：直接链接</label>
+             <p class="quiet">请将以下链接复制并发送给您的朋友</p>
+             <input name="input2" type="text" class="input-w-500" value="http://www.youshi.com/invite/user.jhtml?id=219908" />
+             <p class="margin-top"><input name="" type="checkbox" checked="checked" value="" /> 同时邀请对方成为一度好友</p>
+         </li>
+         
+         <li><label>方式二：邮件邀请</label>
+             <p class="quiet">请输入朋友的邮件地址,多个地址以逗号或回车分开</p>
+             <textarea class="input-w-500"></textarea>
+             <p class="margin-top"><input name="" type="checkbox" checked="checked" value="" /> 同时邀请对方成为一度好友</p>
+         </li>
+         </ul>
+         </form>
+         
+         </div>
+         
+         
+         <div class="grp-block">
+         <p><a href="#" id="invite_friends_Letter_edit">编辑邀请信内容</a></p>
+         <p><TEXTAREA style="display:none;" class="input-w-500" id="invite_friends_Letter_content"></TEXTAREA></p>
+         <p> <input type="button" class="common-button" value="发送活动邀请" id="submit_invite_friends_list"  /> <span class="quiet">提示：对方接受邀请参加活动的同时也将加入群组</span></p> 
+         </div>
+                
+         </div>
+      
+      </div>
+          
+  </div>     
+</div>
+<!--#include file="../footer.html"-->
+</body>
+</html>

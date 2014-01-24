@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>职业频道</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/job.js"></script>
+</head>
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+
+	<div id="main" class="clearfix">
+		<div class="channel-tit">
+			<h3>职业频道</h3>
+		</div>
+		<div class="tabs-common clearfix">
+			<ul>
+				<li><a href="jobs_post.html">发布职位</a></li>
+				<li><a href="jobs_apply_manage.html">应聘管理</a></li>
+				<li><a href="jobs_manage.html">职位管理</a></li>
+				<li class="current"><a href="jobs_company.html">公司信息管理</a></li>
+			</ul>
+			<div class="float-right"><a class="job-navigation-help" href="jobs_overview.html">找工作</a></div>
+		</div>
+		
+		<!-- Center -->
+		<div id="jobs_mainbody_wrapper" class="column-2-3">
+			<div class="jobs_post_info">
+				<p>您是招聘者或者猎头？现在正在为企业或者为客户招聘高端职位吗？</p>
+				<p>您可以<strong>免费</strong>通过优士网招聘到合适的高端人才！<span class="special">注意：我们只接受发布年薪12万以上的职位</span></p>
+			</div>
+			<div class="notice">您还没有填写公司信息，在发布职位之前请先填写好您的公司信息。</div>
+			<div class="notice">您之前提交过部分公司信息，在发布职位之前请先完善您的公司信息。</div>
+			<div id="jobs_post_form">
+				<form class="formstyle">
+				<div class="job-title spe-left-pd2">
+					<p class="quiet float-right">带 <span class="red">* </span> 号的项目为必填项</p>
+					<h4>公司信息</h4>
+				</div>
+				<ul>
+					<li>
+						<label><span class="red">* </span> 类型：</label>
+						<div class="float-left">
+							<input type="radio" />
+							公司HR
+							<input type="radio" />
+							猎头
+							<span class="quiet show">一旦选择并提交后不能再进行更改。</span>
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 公司名称：</label>
+						<div class="float-left">
+							<input class="input-w-280" type="text" />
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 公司Logo：</label>
+						<div class="float-left">
+							<input type="file" size="35" />
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 行业类别：</label>
+						<div class="float-left">
+							<div class="multi-selector-btn input-w-180"><a tips="选择行业类别" js="selectIndustry" href="#"><span>选择行业类别</span></a>
+								<span style="display: none;" js="vdErr" class="red">请选择行业类别</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 公司性质：</label>
+						<div class="float-left">
+							<select class="input-w-180">
+								<option value="">请选择</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 公司规模：</label>
+						<div class="float-left">
+							<select class="input-w-180">
+								<option value="">请选择</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 公司介绍：</label>
+						<div class="float-left">
+							<textarea class="input-w-500"></textarea>
+							<span id="wordCountShow" class="quiet show">还可以输入 <strong class="special">5000</strong> 个字符</span>
+							<div class="quiet">丰富详尽的公司简介能有效提高高端人才对贵公司的关注和了解，有助于达到更好的招聘效果。请不要在公司介绍中直接填写联系方式，这样会导致审核不通过，从而无法正常发布职位。</div>
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 公司地址：</label>
+						<div class="float-left">
+							<input class="input-w-280" type="text" />
+						</div>
+					</li>
+					<li>
+						<label>公司邮编：</label>
+						<div class="float-left">
+							<input class="input-w-280" type="text" />
+						</div>
+					</li>
+					<li>
+						<label>公司网址：</label>
+						<div class="float-left">
+							<input class="input-w-280" type="text" value="http://" />
+						</div>
+					</li>
+				</ul>
+				<div class="job-title spe-left-pd2">
+					<h4>联系信息</h4>
+				</div>
+				<ul>
+					<li>
+						<label><span class="red">* </span> Email：</label>
+						<div class="float-left">
+							<input class="input-w-280" type="text" value="Sekin.tong@meta4-group.com" />
+							<span class="quiet show">如发布职位时无特殊设定，所有求职申请均会发送至此邮箱</span>
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 电话：</label>
+						<div class="float-left">
+							<input class="input-w-280" type="text" />
+							<span class="quiet">示例：021-68888888-188</span>
+							<span class="quiet show">本电话号码仅供优士网工作人员与您联系使用</span>
+						</div>
+					</li>
+					<li>
+						<label>手机：</label>
+						<div class="float-left">
+							<input class="input-w-280" type="text" />
+							<span class="quiet show">本电话号码仅供优士网工作人员与您联系使用</span>
+						</div>
+					</li>
+				</ul>
+				<p class="margin-top15e">
+					<input class="special-btn large-btn" type="submit" value="保存并开始发布职位" />
+				</p>
+				</form>
+			</div>
+		</div>
+		
+		<!-- Rightside -->
+		<div id="jobs_extra" class="column-3"></div>
+	</div>
+	
+	<!--#include file="footer.html"--> 
+</div>
+</body>
+</html>

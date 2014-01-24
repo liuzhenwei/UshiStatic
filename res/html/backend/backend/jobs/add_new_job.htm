@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>Ushi Customer Service System</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/ui.datepicker.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../js/jquery.pack.js"></script>
+<script src="../js/general.js"></script>
+<script src="../js/thickbox.js"></script>
+<script src="../js/ui.datepicker.js"></script>
+
+<style>
+.form-table{margin:10px 0;}
+.form-table th, .form-table td{padding:8px;}
+.form-table th{font-weight:400; text-align:right;}
+.form-table .input{width:300px;}
+.form-table .textarea{width:300px; height:100px;}
+.form-table .textarea2{width:500px; height:100px;}
+.form-table .select{width:150px;}
+.form-table .l-margin{margin-left:10px;}.form-table .r-margin{margin-right:10px;}
+.form-table .multi-col th, .form-table .multi-col td{padding:0;}
+</style>
+
+</head>
+<body>
+<div id="mainbody">
+    <!--header start-->
+    <div id="header">
+        <div class="lf"><img src="../images/logo_1.png"/></div>
+        <div class="rf"> Operator：Christy
+            | <a href="../login.htm">Logout</a></div>
+        <div id="toppad"></div>
+    </div>
+    <!--header end-->
+    <div class="lf">
+        <div id="menu_out" class="leftmenu">
+            <ul id="menu" class="menu collapsible">
+                <li> <a href="../index.htm">Homepage</a> </li>
+                 <li > <a href="view_company_info.htm">Jobs</a>
+                    <ul>
+                        <li><a href="view_company_info.htm">查看公司信息</a></li>
+                        <li><a href="add_new_company.htm">添加公司信息</a></li>
+                        <li><a href="add_new_job.htm">发布职位信息</a></li>
+                        <li><a href="view_jobs.htm">查看已发布职位</a></li>
+                        <li><a href="view_jobs_apply.htm">查看职位申请信息</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li > <a href="#">Members</a>
+                    <ul>
+                        <li><a href="member_list.htm">Activated members</a></li>
+                        <li><a href="deactived_member_list.htm">Deactivated members</a></li>
+                        <li><a href="search_members.htm">Search members</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Contents</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Image</a></li>
+                        <li><a href="javascript:void(0);">Text content</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Filters</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Create filter</a></li>
+                        <li><a href="javascript:void(0);">Manage filter</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Groups</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Manage group quota</a></li>
+                        <li><a href="javascript:void(0);">Group list</a></li>
+                        <li><a href="group_apply.html">Create groups <span id="result_box2"><span title="">management</span></span></a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Payment</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Payment management</a></li>
+                    </ul>
+                </li>
+                <li  class="current"> <a href="#">Date</a>
+                    <ul>
+            	<li><a href="pending_user_company_list.html">Pending User Company List</a></li>
+                <li><a href="pending_user_university_list.html">Pending User University List</a></li>
+				<li><a href="company_list_management.html">Company List Management</a></li>
+                <li><a href="university_list_management.html">University List Management</a></li>
+			</ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="rf">
+        <div id="container">
+	  <h2>发布职位信息</h2>
+		<form method="POST" action="">
+        <table width="100%" border="0" cellspacing="0" cellpadding="5" class="form-table">
+        <tr>
+          <th width="100" valign="top">职位名称：</th>
+          <td><input class="input" type="text" /></td>
+        </tr>
+        <tr>
+          <th valign="top">公司名称：</th>
+          <td><input class="input" type="text" /></td>
+        </tr>
+        <tr>
+          <th valign="top">职位类别：</th>
+          <td><select class="select" name="select8" id="select11">
+            <option>请选择</option>
+            </select></td>
+        </tr>
+        <tr>
+          <th valign="top">工作地点：</th>
+          <td><select class="select" name="select" id="select">
+            <option>请选择</option>
+            </select>
+            <select class="select" name="select2" id="select2">
+              <option>请选择</option>
+            </select></td>
+        </tr>
+        <tr>
+          <th valign="top">工作经验：</th>
+          <td><table border="0" cellspacing="0" class="multi-col">
+            <tr>
+              <td><select class="select" name="select4" id="select4">
+                <option>请选择</option>
+              </select></td>
+              <th width="100">职位级别：</th>
+              <td><select class="select" name="select4" id="select5">
+                <option>请选择</option>
+              </select></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <th valign="top">年薪范围：</th>
+          <td><select class="select" name="select5" id="select6">
+            <option>请选择</option>
+          </select></td>
+        </tr>
+        <tr>
+          <th valign="top">学位要求：</th>
+          <td><select class="select" name="select6" id="select9">
+            <option>请选择</option>
+          </select></td>
+        </tr>
+        <tr>
+          <th valign="top">职位有效期：</th>
+          <td><select class="select" name="select7" id="select10">
+            <option>请选择</option>
+          </select></td>
+        </tr>
+        <tr>
+          <th valign="top">职位简介：<br />
+            <span style="color:#888">120字内</span></th>
+          <td><textarea class="textarea2"></textarea></td>
+        </tr>
+        <tr>
+          <th valign="top">职位描述：</th>
+          <td><textarea name="textarea" class="textarea2" style="height:200px;"></textarea></td>
+        </tr>
+        <tr>
+          <th valign="top">&nbsp;</th>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="8%"><input type="submit" value=" 提交 " /></td>
+              <td width="89%"><input type="checkbox" name="checkbox" id="checkbox" />
+                <label for="checkbox">内容文字</label></td>
+            </tr>
+          </table></td>
+        </tr>
+        </table>
+
+		 
+		</form>
+    </div>
+    </div>
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+    </div>
+</div>
+<!--footer end-->
+</body>
+</html>

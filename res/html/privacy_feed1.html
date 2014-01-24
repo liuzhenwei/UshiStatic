@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>隐私设定:人际动态</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/widget.js"></script>
+
+<script type="text/javascript" src="/js/friendsSelect.js"></script>
+
+</head>
+
+<body id="page_member">
+<div id="wrapper" class="container">
+    <!--#include file="header.html"-->
+    <div id="main">
+      <div class="channel-tit"><h3>隐私设定</h3> </div>
+      
+      <div class="tabs-common clearfix">
+          <ul>
+          <li><a href="privacy_contact.html">联系选项</a></li>
+          <li><a href="privacy_profile.html">个人档案</a></li>
+          <li class="current"><a href="javascript:void(0);">人际动态</a></li>
+          <li><a href="privacy_group.html">群组设定</a></li>
+          <li><a href="javascript:void(0);">邮件通知</a></li>
+          </ul>
+          </div> 
+       
+         <div class="column-2-3">
+         	<div class="tabs-feed clearfix" style="background:#eaeaea">
+         		<ul class="float-left">
+         			<li  class="current"><a href="#">人脉动态设置</a></li>
+         			<li><a href="#">管理阻止用户名单</a></li>
+         		</ul>
+         	</div>
+			<div class="quiet boldface" style="padding:10px;">您希望在首页显示哪些类型的人脉动态。</div>
+         	
+         	<div id="setPersonalMenberShop" style="display:none">
+				<div class="jobs-search-body clearfix pd-top05e margin-bottom FriendFromUshi1">
+					<input name="receiverIds" id="receiverId" jsid="${eventDetail.id}" style="line-height:20px;" type="hidden"  />
+					<div id="feedForbidSelFriends" class="mult-selector float-left" style="width:300px; margin-left:10px;padding:4px 1px;*margin-top:1px;">
+						<div class="fslOpenfriendSelect filter-drop">
+							<a class="icon-btn-down" href="javascript:void(0)"></a>
+						</div>
+						<div class="fslSelectedList friend-selector-selected">
+							<input type="text" class="fontgray" name=""  value='选择一度好友' />
+						</div>
+					</div>
+					<div class="jobs-search-local multi-selector-btn" style="width:80px">
+						<a href="#" maxlength="10" js='submitInvite' style="padding-bottom:3px; border-left: none;"> 添加 </a>
+					</div>
+				</div>
+				
+				<h4 class="spe-left2 pd-top ">已经阻止的用户</h4>
+				<div class="fobidUserList">
+					<div class="event-block">
+						<a class='border-blue float-left' href='/p/5'><img src='../../bns/images/test_p1.png' id='avatar-5' /></a>
+						<a href="javascript:;" class="float-right margin-top15e">从阻止名单中移除</a>
+						<div class="clearfloat spe-left-pd2 spe-right-pd2 pd-top05e">
+							<a href="javascript:;" class="boldface large ">刘莉莉</a>
+							<p class="quiet">北京新浪网 新闻频道主编</p>
+						</div>
+					</div>
+					
+					<div class="event-block">
+						<a class='border-blue float-left' href='/p/5'><img src='../../bns/images/test_p1.png' id='avatar-5' /></a>
+						<a href="javascript:;" class="float-right margin-top15e">从阻止名单中移除</a>
+						<div class="clearfloat spe-left-pd2 spe-right-pd2 pd-top05e">
+							<a href="javascript:;" class="boldface large ">刘莉莉</a>
+							<p class="quiet">北京新浪网 新闻频道主编</p>
+						</div>
+					</div>
+					
+					<div class="event-block">
+						<a class='border-blue float-left' href='/p/5'><img src='../../bns/images/test_p1.png' id='avatar-5' /></a>
+						<a href="javascript:;" class="float-right margin-top15e">从阻止名单中移除</a>
+						<div class="clearfloat spe-left-pd2 spe-right-pd2 pd-top05e">
+							<a href="javascript:;" class="boldface large ">刘莉莉</a>
+							<p class="quiet">北京新浪网 新闻频道主编</p>
+						</div>
+					</div>
+					
+				
+				
+				</div>
+         	
+         	
+         	</div>
+         
+          <form class="formstyle pvy-f" > 
+          		<ul class="spe-left-pd2">
+				<LI>
+					<label class="normal-size" style="width:auto;display:block;float:none;text-align:left;"><INPUT value=1 checked type=checkbox name=feedAcception>一度人脉的微博更新</label>
+					<label class="quiet normal-size" style="width:auto;display:block;float:none;text-align:left;margin-left:20px;"><INPUT value=1 checked type=checkbox name="feedincludeImport">包含外部导入微博的动态</label>
+				</LI>
+				<LI><INPUT value=2 checked type=checkbox name=feedAcception>一度人脉的职业变更</LI>
+				<LI><INPUT value=4 checked type=checkbox name=feedAcception>一度人脉的群组动态</LI>
+				<LI><INPUT value=8 checked type=checkbox name=feedAcception>一度人脉的人脉动态</LI>
+				<LI><INPUT value=512 checked type=checkbox name=feedAcception>一度人脉的评价动态</LI>
+				<LI><INPUT value=1024 checked type=checkbox name=feedAcception>一度人脉的徽章动态</LI>
+				<LI><INPUT value=16 checked type=checkbox name=feedAcception>关注人的微博更新</LI>
+				<LI><INPUT value=2048 checked type=checkbox name=feedAcception>关注人脉的徽章动态</LI>
+				<LI><INPUT value=16384 checked type=checkbox name=feedAcception>一度人脉的活动动态</LI>
+				<LI><INPUT value=32 checked type=checkbox name=feedAcception>关注人的群组动态</LI>
+				<LI><INPUT value=4096 checked type=checkbox name=feedAcception>一度人脉参与的优士活动</LI>
+				<LI><INPUT value=32768 checked type=checkbox name=feedAcception>关注人的活动动态</LI>
+				<LI><INPUT value=64 checked type=checkbox name=feedAcception>我所在群组内的最新活动</LI>
+				<LI><INPUT value=8192 checked type=checkbox name=feedAcception>关注者参与的优士活动</LI>
+				<LI><INPUT value=128 checked type=checkbox name=feedAcception>我所在群组内的最新内容</LI>
+				<LI><INPUT value=256 checked type=checkbox name=feedAcception>我所在群组内的最新讨论主题</LI> 
+				</ul> 
+				<INPUT style="margin-left:30px;margin-top:15px;" class="special-btn spe-right2 display-inline-block" value="&nbsp;&nbsp;完成设定&nbsp;&nbsp;" type=submit name="">     
+          </form>
+         </div>
+
+    </div>     
+</div>
+<!--#include file="footer.html"-->
+</body>
+</html>
+
+<script type="text/javascript">
+$(function(){
+	$('#friendSelectList').friendSelectList({
+			url: '/msg/message!getFriends.jhtml',
+			idField: '#receiverId_event',
+			inviteMax:5,
+			fsParam: {
+				prompt: lang.friend.fs_max_info(5),
+				width:760
+			}
+	});
+
+
+})
+
+</script>

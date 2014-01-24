@@ -1,0 +1,15 @@
+{
+	search_result: [
+		{
+			id: 1,
+			thumb: '/images/face_30.png',
+			name: '张三',
+			title: '百度 CEO'
+		}, {
+			id: 2,
+			thumb: '/images/face_30.png',
+			name: '张王',
+			title: '新浪 CTO'
+		}
+	]
+}

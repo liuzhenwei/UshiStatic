@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<script  language="JavaScript" type="text/javascript" src="/js/allunivlist.js"></script>
+		<script language="JavaScript"  type="text/javascript" src="/js/jQuery.js"></script>
+	</head>
+	<body>
+
+	<table>
+		<tr><td><a id="showCountry" href="javascript:void(0)">Show Country</a></td></tr>
+		<tr><td><div id="tips"></td></tr>
+		
+		<tr><td><div id="country"></td></tr>
+		<tr><td><div id="province"></td></tr>
+		<tr><td><div id="university"></td></tr>
+		
+
+		
+		</table>
+		
+	<script type="text/javascript">
+
+	var str= "";
+	var log = "";
+	var counter =0;
+
+	function showUniv(countryId, provId){
+		log = log + " showUniv("+countryId+","+provId+") called <br>";
+
+		var obj = null;
+		var i=0;
+			
+		
+		if(provId !=-1){
+
+			obj = allUnivList[countryId].provs[provId].univs;
+			
+		}else{
+			
+			obj =  allUnivList[countryId].univs;
+			
+		}
+
+
+
+		for(i=0;i<obj.length;i++){
+			
+				var tmp = "";
+				tmp = obj[i].name;
+				tmp = tmp.replace(/\'/g,"\\'");
+			
+				str =  "insert into BNS_SCHOOL(SCHOOLNAME, FLAG,CREATETIME,LASTMODIFYTIME) values('"+tmp+"',1,now(),now());<br>" +str;
+				
+				counter ++;
+				
+		}
+	
+	
+	log = log + "showUniv called end <br>";
+
+	}
+
+	function showProvince(countryId){
+		log = log + " showProvince("+countryId+") called <br>";
+									
+		var obj = null;
+		var i =0;
+		
+		obj = allUnivList[countryId].provs;
+		log = log + "object in province lenght is:" + obj.length +"<br>";
+		if(obj.length == 0){
+			
+			log = log + "length is 0, need more handling <br>";	
+		}
+		
+		if(obj.length!=0){			
+
+			for(i=0;i<obj.length;i++){
+
+				showUniv(countryId, i);
+
+			}
+
+		}else{
+		
+			showUniv(countryId, -1);
+		}
+	
+		log=log +"showProvince called end <br>";
+	}
+						
+	
+
+	function showCountry(){
+				
+				log = log + "  showCountry called <br>";										
+				var obj;
+				var counter  = 0;
+				var i=0;
+
+				for(i=0;i<allUnivList.length; i++){
+
+					showProvince(i);
+						
+				}
+				
+				log=log + "showCountry called end <br>";
+
+	}
+
+	$(document).ready(function(){
+		$("#showCountry").click(function(){
+			
+			showCountry();
+			
+			//str = str + counter + " record<br>";
+			//$("#tips").html(log);
+			
+			//test();
+			$("#university").html(str);
+			
+			
+		});
+
+
+	});
+
+	function test(){
+		
+		var testStr = "This is .... hejinfu's test";
+		
+		testStr= testStr.replace(/\./g,"haha");
+		
+		str=testStr;
+			
+	}
+
+						
+</script>
+			
+			</body>
+</html>

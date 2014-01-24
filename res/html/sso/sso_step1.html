@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../common/css/layout_en.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns_en_US.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../../../common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../../../common/js/widget.js"></script>
+<script type="text/javascript" src="../../../common/js/common.js"></script>
+<script type="text/javascript" src="../../../bns/js/openreg.js"></script>
+<style type="text/css">
+.sso-left-login {
+	width: 480px;
+	float: left;
+}
+#openReg .form-item .itemmain {
+	width: auto;
+}
+.sso-right-login {
+	width: 390px;
+	float: right;
+	border-left: 1px solid #c6c6c6;
+	padding-left: 60px;
+}
+.sso-right-login h5 {
+	margin-bottom: 30px;
+}
+.sso-right-login .formtext {
+	width: 166px;
+}
+.sso-right-login table {
+	margin-bottom: 30px;
+}
+.sso-right-login table th {
+	text-align: right;
+}
+.sso-right-login table td {
+	padding: 5px 0;
+	text-align: left;
+}
+.sso-right-login dl dt {
+	font-weight: normal;
+}
+.sso-right-login dl dd {
+	padding-left: 15px;
+	text-indent: -15px;
+}
+</style>
+</head>
+
+<body id="page_public">
+<div id="wrapper" class="container">
+  <div id="header_reg" class="clearfix">
+    <div id="logo"><img src="../../../bns/images/youshi_logo.png" width="80" height="51" alt="优士" /></div>
+  </div>
+  <div id="main" class="clearfix">
+    <div class="column-full">
+      <div class="sso-reg-top-profile">
+        <div class="vcard v-50"> <a href="#"><img src="../../../common/images/face_50.png"></a>
+          <dl class="spe-left-pd2">
+            <dd class="pd-top05e">Hi 黄义达， 欢迎加入优士网！</dd>
+            <dd class="pd-top05e">上海 闵行区</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="reg-top">
+        <div class="reg-tit">
+          <h4 class="blue">建立一份属于你的职业档案，更有助于在优士网上拓展自己的人脉！</h4>
+        </div>
+      </div>
+      <div class="sso-reg-cont spe-left2 clearfix" id="openReg">
+        <div class="sso-right-login">
+          <h5>已有优士网帐号，直接绑定我的新浪微博帐号：</h5>
+          <table width="0" border="0" cellspacing="0" cellpadding="0">
+            <col width="20%" />
+            <tr>
+              <th>登录名：</th>
+              <td><input type="text" class="formtext" /></td>
+            </tr>
+            <tr>
+              <th>密码：</th>
+              <td><input type="text" class="formtext" /></td>
+            </tr>
+            <tr>
+              <th>&nbsp;</th>
+              <td><input class="special-btn" type="submit" value="绑定账号" /></td>
+            </tr>
+          </table>
+          <dl>
+            <dt>绑定新浪微博帐号有何好处？</dt>
+            <dd>1. 绑定之后可以使用新浪微博帐号快速登录入口登录优士网，
+              省去记录大量用户及密码的烦恼</dd>
+            <dd>2. 绑定之后可以更加方便的将优士网的内容分享到自己的新浪
+              微博</dd>
+          </dl>
+        </div>
+        <div class="sso-left-login">
+          <div class="form-item clearfix">
+            <label>我目前是：</label>
+            <div class="itemmain">
+              <select js="selectMyState" class="input-w-250">
+                <option value="0">在职</option>
+                <option value="1">企业家</option>
+                <option value="2">在找工作</option>
+                <option value="3">自由职业者</option>
+                <option value="4">学生</option>
+              </select>
+            </div>
+          </div>
+          <form js="form0" action="step2.html" method="post">
+            <input type="hidden" js="myState" value="" />
+            <div class="form-item clearfix">
+              <label>公司名称：</label>
+              <div class="itemmain">
+                <input type="text" class="inputtext" />
+                <div class="tips" vdErr="yes">请输入公司名称</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>职位：</label>
+              <div class="itemmain">
+                <div>
+                  <input type="text" class="inputtext"  />
+                  <div class="tips" vdErr="yes">请输入职位</div>
+                </div>
+                <p class="quiet small">
+                  <input type="checkbox" checked="checked" />
+                  目前仍然在职</p>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>在职时间：</label>
+              <div class="itemmain">
+                <div>
+                  <select jsdate="startyear">
+                    <option value="0">年</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                  </select>
+                  <select jsdate="startmonth">
+                    <option value="0">月</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  至<span style="display:none">今</span><span js="currenDate">
+                  <select jsdate="endyear">
+                    <option value="0">年</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                  </select>
+                  <select jsdate="endmonth">
+                    <option value="0">月</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  </span> </div>
+                <div class="tips" vdErr="yes">请输入正确的在职时间</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>所在行业：</label>
+              <div class="itemmain">
+                <select class="input-w-250">
+                  <option>请选择</option>
+                  <option>医疗与健康</option>
+                </select>
+                <div class="tips" vdErr="yes">请选择所在行业</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>所在地区：</label>
+              <div class="itemmain">
+                <select class="input-w-180">
+                  <option>请选择</option>
+                  <option>中国大陆</option>
+                </select>
+                <select>
+                  <option>请选择</option>
+                </select>
+                <select>
+                  <option>请选择</option>
+                </select>
+                <div class="tips" vdErr="yes">请选择所在地区</div>
+              </div>
+            </div>
+            <div class="form-btn"><a href="#" js="writeEdu">继续填写教育背景 &raquo;</a></div>
+            <div js="eduArea" style="display:none;">
+              <div class="form-item clearfix">
+                <label>学校名称：</label>
+                <div class="itemmain">
+                  <input type="text" class="inputtext" />
+                </div>
+              </div>
+              <div class="form-item clearfix">
+                <label>专业：</label>
+                <div class="itemmain">
+                  <input type="text" class="inputtext" />
+                </div>
+              </div>
+              <div class="form-item clearfix">
+                <label>学位：</label>
+                <div class="itemmain">
+                  <select>
+                    <option>请选择</option>
+                    <option>本科</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-item clearfix">
+                <label>起止时间：</label>
+                <div class="itemmain">
+                  <select>
+                    <option>入学时间</option>
+                    <option>2000</option>
+                  </select>
+                  至
+                  <select>
+                    <option>毕业时间</option>
+                    <option>2000</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-btn">
+              <input class="special-btn" type="submit" value="创建档案" />
+            </div>
+          </form>
+          <form js="form1" action="step2.html" method="post" style="display:none;">
+            <input type="hidden" js="myState" value="" />
+            <div class="form-item clearfix">
+              <label>公司名称：</label>
+              <div class="itemmain">
+                <input type="text" class="inputtext" />
+                <div class="tips" vdErr="yes">请输入公司名称</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>个人头衔：</label>
+              <div class="itemmain">
+                <input type="text" class="inputtext"  />
+                <div class="tips" vdErr="yes">请输入个人头衔</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>所在行业：</label>
+              <div class="itemmain">
+                <select class="input-w-250">
+                  <option>请选择</option>
+                  <option>医疗与健康</option>
+                </select>
+                <div class="tips" vdErr="yes">请选择所在行业</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>所在地区：</label>
+              <div class="itemmain">
+                <select class="input-w-180">
+                  <option>请选择</option>
+                  <option>中国大陆</option>
+                </select>
+                <select>
+                  <option>请选择</option>
+                </select>
+                <select>
+                  <option>请选择</option>
+                </select>
+                <div class="tips" vdErr="yes">请选择所在地区</div>
+              </div>
+            </div>
+            <div class="form-btn"><a href="#" js="writeEdu">继续填写教育背景 &raquo;</a></div>
+            <div js="eduArea" style="display:none;">
+              <div class="form-item clearfix">
+                <label>学校名称：</label>
+                <div class="itemmain">
+                  <input type="text" class="inputtext" />
+                </div>
+              </div>
+              <div class="form-item clearfix">
+                <label>专业：</label>
+                <div class="itemmain">
+                  <input type="text" class="inputtext" />
+                </div>
+              </div>
+              <div class="form-item clearfix">
+                <label>学位：</label>
+                <div class="itemmain">
+                  <select>
+                    <option>请选择</option>
+                    <option>本科</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-item clearfix">
+                <label>起止时间：</label>
+                <div class="itemmain">
+                  <select>
+                    <option>入学时间</option>
+                    <option>2000</option>
+                  </select>
+                  至
+                  <select>
+                    <option>毕业时间</option>
+                    <option>2000</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-btn">
+              <input class="special-btn" type="submit" value="创建档案" />
+            </div>
+          </form>
+          <form js="form2" action="step2.html" method="post" style="display:none;">
+            <input type="hidden" js="myState" value="" />
+            <div class="form-item clearfix">
+              <label>公司名称：</label>
+              <div class="itemmain">
+                <input type="text" class="inputtext" />
+                <div class="tips" vdErr="yes">请输入公司名称</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>职位：</label>
+              <div class="itemmain">
+                <input type="text" class="inputtext"  />
+                <div class="tips" vdErr="yes">请输入职位</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>在职时间：</label>
+              <div class="itemmain">
+                <div>
+                  <select jsdate="startyear">
+                    <option value="0">年</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                  </select>
+                  <select jsdate="startmonth">
+                    <option value="0">月</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  至
+                  <select jsdate="endyear">
+                    <option value="0">年</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                  </select>
+                  <select jsdate="endmonth">
+                    <option value="0">月</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                <div class="tips" vdErr="yes">请输入正确的在职时间</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>所在行业：</label>
+              <div class="itemmain">
+                <select class="input-w-250">
+                  <option>请选择</option>
+                  <option>医疗与健康</option>
+                </select>
+                <div class="tips" vdErr="yes">请选择所在行业</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>所在地区：</label>
+              <div class="itemmain">
+                <select class="input-w-180">
+                  <option>请选择</option>
+                  <option>中国大陆</option>
+                </select>
+                <select>
+                  <option>请选择</option>
+                </select>
+                <select>
+                  <option>请选择</option>
+                </select>
+                <div class="tips" vdErr="yes">请选择所在地区</div>
+              </div>
+            </div>
+            <div class="form-btn"><a href="#" js="writeEdu">继续填写教育背景 &raquo;</a></div>
+            <div js="eduArea" style="display:none;">
+              <div class="form-item clearfix">
+                <label>学校名称：</label>
+                <div class="itemmain">
+                  <input type="text" class="inputtext" />
+                </div>
+              </div>
+              <div class="form-item clearfix">
+                <label>专业：</label>
+                <div class="itemmain">
+                  <input type="text" class="inputtext" />
+                </div>
+              </div>
+              <div class="form-item clearfix">
+                <label>学位：</label>
+                <div class="itemmain">
+                  <select>
+                    <option>请选择</option>
+                    <option>本科</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-item clearfix">
+                <label>起止时间：</label>
+                <div class="itemmain">
+                  <select>
+                    <option>入学时间</option>
+                    <option>2000</option>
+                  </select>
+                  至
+                  <select>
+                    <option>毕业时间</option>
+                    <option>2000</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-btn">
+              <input class="special-btn" type="submit" value="创建档案" />
+            </div>
+          </form>
+          <form js="form3" action="step2.html" method="post" style="display:none;">
+            <input type="hidden" js="myState" value="" />
+            <div class="form-item clearfix">
+              <label>所在行业：</label>
+              <div class="itemmain">
+                <select class="input-w-250">
+                  <option>请选择</option>
+                  <option>医疗与健康</option>
+                </select>
+                <div class="tips" vdErr="yes">请选择所在行业</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>所在地区：</label>
+              <div class="itemmain">
+                <select class="input-w-180">
+                  <option>请选择</option>
+                  <option>中国大陆</option>
+                </select>
+                <select>
+                  <option>请选择</option>
+                </select>
+                <select>
+                  <option>请选择</option>
+                </select>
+                <div class="tips" vdErr="yes">请选择所在地区</div>
+              </div>
+            </div>
+            <div class="form-btn"><a href="#" js="writeEdu">继续填写教育背景 &raquo;</a></div>
+            <div js="eduArea" style="display:none;">
+              <div class="form-item clearfix">
+                <label>学校名称：</label>
+                <div class="itemmain">
+                  <input type="text" class="inputtext" />
+                </div>
+              </div>
+              <div class="form-item clearfix">
+                <label>专业：</label>
+                <div class="itemmain">
+                  <input type="text" class="inputtext" />
+                </div>
+              </div>
+              <div class="form-item clearfix">
+                <label>学位：</label>
+                <div class="itemmain">
+                  <select>
+                    <option>请选择</option>
+                    <option>本科</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-item clearfix">
+                <label>起止时间：</label>
+                <div class="itemmain">
+                  <select>
+                    <option>入学时间</option>
+                    <option>2000</option>
+                  </select>
+                  至
+                  <select>
+                    <option>毕业时间</option>
+                    <option>2000</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-btn">
+              <input class="special-btn" type="submit" value="创建档案" />
+            </div>
+          </form>
+          <form js="form4" action="step2.html" method="post" style="display:none;">
+            <input type="hidden" js="myState" value="" />
+            <div class="form-item clearfix">
+              <label>学校名称：</label>
+              <div class="itemmain">
+                <input type="text" class="inputtext" />
+                <div class="tips" vdErr="yes">请输入学校名称</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>专业：</label>
+              <div class="itemmain">
+                <input type="text" class="inputtext" />
+                <div class="tips" vdErr="yes">请输入专业</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>学位：</label>
+              <div class="itemmain">
+                <select>
+                  <option>请选择</option>
+                  <option>本科</option>
+                </select>
+                <div class="tips" vdErr="yes">请选择学位</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>起止时间：</label>
+              <div class="itemmain">
+                <select>
+                  <option>入学时间</option>
+                  <option>2000</option>
+                </select>
+                至
+                <select>
+                  <option>毕业时间</option>
+                  <option>2000</option>
+                </select>
+                <div class="tips" vdErr="yes">请选择正确的起止时间</div>
+              </div>
+            </div>
+            <div class="form-item clearfix">
+              <label>所在地区：</label>
+              <div class="itemmain">
+                <select class="input-w-180">
+                  <option>请选择</option>
+                  <option>中国大陆</option>
+                </select>
+                <select>
+                  <option>请选择</option>
+                </select>
+                <select>
+                  <option>请选择</option>
+                </select>
+                <div class="tips" vdErr="yes">请选择所在地区</div>
+              </div>
+            </div>
+            <div class="form-btn">
+              <input class="special-btn" type="submit" value="创建档案" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--#include virtual="../footer.html"--> 
+</div>
+</body>
+</html>

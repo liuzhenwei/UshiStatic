@@ -1,0 +1,37 @@
+﻿@charset "utf-8";
+
+/*------ member.introduce  ------*/
+/*引荐*/
+#introduce-content { height:400px; display:block;  position:relative; overflow-x:hidden; overflow-y: auto;}
+
+/*------ member.invitation  ------*/
+/*邀请*/
+.ivt-ways h4 { margin-top: 5px;}
+
+/*------ member.invitation｛Improved viral incentive for Ushi｝ ------*/ 
+/*邀请优士币激励*/
+.column-1 .ad-ivt li ,.column-1 .ad-ivt .special-btn ,.column-1 .ad-ivt h4{ font-size: 13px; _font-size: 12px;}
+
+/* 多重选择*/
+.common-selected,.friend-selected {padding:2px 20px 2px 5px; margin:2px;}
+
+.miniblog-column li, .miniblog-column li{background:url(../images/icons_list.png) no-repeat;}
+.miniblog-column li{background-position:-60px 7px; padding-left:10px; margin-left: 10px;}
+.miniblog-column li.current a, .miniblog-column li.current a:hover{color:#222; font-weight:700; text-decoration:none;}
+
+/*------------------------补充----------------------------------------------*/
+.col-2 .progress{ background: url(../images/icons_nav_grade.png) no-repeat  1px -930px; height:20px; padding:3px; margin-top:15px;}
+.col-2 .progress-box{height:15px;position:relative;padding-left:40px; }
+.col-2 .progress-box .progress-percent{ background:#a03200; width:17px; overflow:hidden; position:absolute; bottom:0px; _bottom:-1px; left:0;}
+.col-2 .progress-box span{ font-weight:700; font-size:1.2em; color:#a03200; line-height:1.2em; vertical-align:top;}
+.list-box .spe-big { padding-left:90px;}/* 资料等级icon*/
+
+/* Microblog tools*/
+.tools-step2 textarea{font-size:12px;}
+
+/*upgrade member*/
+.notice-weak-btn ,.notice-weak-btn:hover {right: 170px;top:8px; position:absolute; font-size:12px; height:15px;}
+
+
+/* Job Public Page Right Register */
+.public-reg-btn { font-size:12px; padding:0 5px 2px 5px!important;}

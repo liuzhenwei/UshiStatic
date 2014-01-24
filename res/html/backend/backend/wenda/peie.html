@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+	<div class="lf">	
+		<div id="menu_out" class="leftmenu">	
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+		</div>
+	</div>	
+	
+	<div class="rf">
+		<div id="container">
+			<h2>参数设置</h2>
+			<div style="padding:10px;">
+			<form>
+				<p>1, 贡献度得分平均每增加<input type="text" size="10" value="" style="margin:auto 3px;" />分可获 1 个新的邀请配额。</p>
+				<p>2, 新用户的初始配额<input type="text" size="10" value="" style="margin:auto 3px;" /></p>
+				<p><input type="submit" value="保 存" /></p>
+			</form>
+			</div>
+			<h2>配额管理</h2>
+			<div style="padding:10px 10px 0 10px;">
+			<form>
+				<p>用户ID: <input type="text" size="10" value="" style="margin-right:10px;" />
+					用户姓名: <input type="text" size="20" value="" />
+					<input type="submit" value="搜索用户" /></p>
+			</form>
+			</div>
+			<form>
+				<table	width="100%" cellpadding="0" cellspacing="0" class="datalist mt10">
+					<tr>
+						<th>用户ID</th>
+						<th>姓名</th>
+						<th>贡献度得分</th>
+						<th>新增邀请配额</th>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><a href="http://www.ushi.cn/u/2754">张月</a></td>
+						<td>5</td>
+						<td><input type="text" size="10" value="" /><input type="hidden" /></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><a href="http://www.ushi.cn/u/2754">张月</a></td>
+						<td>5</td>
+						<td><input type="text" size="10" value="" /><input type="hidden" /></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><a href="http://www.ushi.cn/u/2754">张月</a></td>
+						<td>5</td>
+						<td><input type="text" size="10" value="" /><input type="hidden" /></td>
+					</tr>
+				</table>
+				<div class="pagenav">
+					<span class="cur">1</span><span><a href="#">2</a></span><span><a href="#">3</a></span><span><a href="#">4</a></span><span><a href="#">5</a></span><span><a href="#">5</a></span><span><a href="#">7</a></span><span><a href="#">8</a></span><span><a href="#">9</a></span><span><a href="#">末页</a></span>
+				</div>
+				<p>新增配额总数：****
+					<input type="submit" value="发放配额" /></p>
+			</form>
+		</div>
+	</div>
+
+	<!--footer begin-->
+	<div id="footer">
+	 	<div id="copyright">
+	 	Copyright &copy; 2010 Ushi.cn
+	 	</div>
+ 	</div> 
+	<!--footer end-->
+</div>
+
+</body>
+</html>

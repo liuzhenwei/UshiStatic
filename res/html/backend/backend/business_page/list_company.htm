@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>Ushi Customer Service System</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+.bg{background:#e5e5e5;}
+.job_serch_result{padding:5px;}
+.job_serch_result table{margin:5px 0;}
+.job_serch_result table .first_ td{ font-weight:bold;background:#e5e5e5;padding:7px;}
+.job_serch_result table td{padding:5px; text-align:center}
+#forbidId textarea{width:250px;height:100px; text-align:left;color:#ccc;overflow:hidden;overflow-y:auto;}
+</style>
+
+</head>
+<script>
+	$(function(){
+		$('input[datepicker]').datepicker();
+		$('#menu_out').load('../menu.html',function(){
+			initMenus();
+		});
+		$('.job_serch_result table tr').hover(function(){
+			$(this).addClass('bg')
+			
+		},function(){
+			$(this).removeClass('bg')
+		})
+		
+		$('.forbid').click(function(){
+			$('#forbidId').dialog({
+				title: '提示',
+				width: 300,
+				modal:true,
+				resizable: false,
+				buttonAlign:'center',
+				buttons: {
+					'提交': function(){
+						$(this).dialog('destroy');
+						$(textarea).focus();	
+					}
+				}
+			});
+		});
+		
+	})
+
+</script>
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf"> Operator：Christy
+			| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+	<div class="lf">
+		<div id="menu_out" class="leftmenu"></div>
+	</div>
+	<div class="rf">
+		<div id="container">
+	  	<h2>所有商业主页</h2>
+		<div class="search_area">
+	  		<input type="text" />
+			主页类型：<select>
+	  			<option value="">公司</option>
+	  			<option value="">媒体</option>
+	  			<option value="">组织机构或团体</option>
+	  			<option value="">品牌或产品</option>
+	  		</select>
+	  		<br />
+			<span>提交时间：</span>
+			<input type="text" name="" size="15" datepicker="y" /> -
+			<input type="text" name="" size="15" datepicker="y" />
+			<input type="submit" value="搜索" />
+		</div>
+	  	<div class="job_serch_result">
+		  	<div>总共<span>387</span>条商业主页信息，当前显示<span>1~20</span></div>
+		  	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		  		<tr class="first_">
+					<td>ID</td>
+					<td>名称</td>
+					<td>主页类型</td>
+					<td>行业</td>
+					<td>性质</td>
+					<td>规模</td>
+					<td>提交时间</td>
+					<td>创建人</td>
+					<td>操作</td>
+				</tr>
+		  		<tr>
+		  			<td>765</td>
+		  			<td><a href="#" class="thickbox">优士网</a></td>
+		  			<td>公司</td>
+		  			<td>互联网</td>
+		  			<td>外企</td>
+		  			<td>9999</td>
+		  			<td>2010-11-25</td>
+		  			<td><a href="#">孙伟</a></td>
+		  			<td><a href="edit_company.htm">编辑</a> | <a href="#" >移除</a></td>
+		  		</tr>
+		  		<tr class="gray">
+		  			<td>765</td>
+		  			<td><a href="#" class="thickbox">优士网</a></td>
+		  			<td>公司</td>
+		  			<td>互联网</td>
+		  			<td>外企</td>
+		  			<td>9999</td>
+		  			<td>2010-11-25</td>
+		  			<td><a href="#">孙伟</a></td>
+		  			<td><a href="edit_company.htm">编辑</a> | <a href="#" >移除</a></td>
+		  		</tr>
+		  		<tr>
+		  			<td>765</td>
+		  			<td><a href="#" class="thickbox">优士网</a></td>
+		  			<td>公司</td>
+		  			<td>互联网</td>
+		  			<td>外企</td>
+		  			<td>9999</td>
+		  			<td>2010-11-25</td>
+		  			<td><a href="#">孙伟</a></td>
+		  			<td><a href="edit_company.htm">编辑</a> | <a href="#" >移除</a></td>
+		  		</tr>
+		  	</table>
+		  	<div>总共<span>387</span>条商业主页信息，当前显示<span>1~20</span></div>
+	  	</div>
+		<div class="pagenav"><span class="cur">1</span><span><a href="#">2</a></span><span><a href="#">3</a></span><span><a href="#">4</a></span><span><a href="#">5</a></span><span><a href="#">5</a></span><span><a href="#">7</a></span><span><a href="#">8</a></span><span><a href="#">9</a></span><span><a href="#">末页</a></span></div>
+	</div>
+	</div>
+	<!--footer begin-->
+	<div id="footer">
+		<div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+	</div>
+</div>
+<!--footer end-->
+<div id="forbidId" style="display:none"><textarea>输入公司审核不通过原因</textarea>
+</div>
+</body>
+</html>

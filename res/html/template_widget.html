@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../../common/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../../common/js/jquery-ui-1.8.15.core.js"></script>
+<script type="text/javascript" src="../../common/js/widget.js"></script>
+<script type="text/javascript">
+function popwin(){
+	var pop = $('#testPopupWin');
+	pop.popupWin({
+		title: '弹出层标题',
+		positionTop: true,
+		width: 400
+	});
+}
+function poplayer(){
+	var pop = $('#testPopupLayer');
+	pop.popupLayer({
+		width: 400
+	});
+}
+function poptips(n, btn){
+	n = n || '';
+	var html = '<div>您目前是钻石会员，最多可以同时加入100个群组，目前已经达到上限，不能再加入新的群组。<br /><b>我要了解更多</b></div>';
+	var pop = $(html);
+	pop.popupTips({
+		tipsType: n,
+		closeDestroy: true,
+		reserve: false,
+		position: {of:btn, my:'left top', at:'right center', offset:'10 -20'},
+		width: 400
+	});
+}
+function poptips5(){
+	var pop = $('<div><div class="fl-tips-content">您目前是钻石会员，最多可以同时加入100个群组，目前已经达到上限，不能再加入新的群组。<br /><b>我要了解更多</b></div><div class="fl-tips-foot">底部文字</div></div>');
+	pop.popupTips({
+		title: '弹出层标题',
+		tipsType: 5,
+		arrow: 'top',
+		closeDestroy: true,
+		reserve: false,
+		width: 400
+	});
+}
+function popfade(){
+	var pop = $('<div><div class="fl-tips-content">您目前是钻石会员，最多可以同时加入100个群组，目前已经达到上限，不能再加入新的群组。<br /><b>我要了解更多</b></div><div class="fl-tips-foot">底部文字</div></div>');
+	pop.popupTips({
+		title: 'Fade方式',
+		tipsType: 5,
+		arrow: 'top',
+		closeDestroy: true,
+		reserve: false,
+		width: 300,
+		hide: 'fade',
+		show: 'fade'
+	});
+}
+function popslide(){
+	var pop = $('<div><div class="fl-tips-content">您目前是钻石会员，最多可以同时加入100个群组，目前已经达到上限，不能再加入新的群组。<br /><b>我要了解更多</b></div><div class="fl-tips-foot">底部文字</div></div>');
+	pop.popupTips({
+		title: 'Slide方式',
+		tipsType: 5,
+		arrow: 'top',
+		closeDestroy: true,
+		reserve: false,
+		width: 300,
+		hide: 'slide',
+		show: 'slide'
+	});
+}
+function popscale(){
+	var pop = $('<div><div class="fl-tips-content">您目前是钻石会员，最多可以同时加入100个群组，目前已经达到上限，不能再加入新的群组。<br /><b>我要了解更多</b></div><div class="fl-tips-foot">底部文字</div></div>');
+	pop.popupTips({
+		title: 'Scale方式',
+		tipsType: 5,
+		arrow: 'top',
+		closeDestroy: true,
+		reserve: false,
+		width: 300,
+		hide: 'scale',
+		show: 'scale'
+	});
+}
+</script>
+</head>
+<body id="page_member" style="text-align:left;">
+<div id="wrapper" class="container" style="min-height:1200px;padding:30px;text-align:left;"> 
+	<!--#include file="header.html"-->
+	<h2 style="color:#f00;">弹出层</h2>
+	<p>
+		<input type="button" value="弹窗口" onclick="popwin(this)" />
+		<input type="button" value="弹层" onclick="poplayer(this)" />
+		<input type="button" value="弹Tips" onclick="poptips(0,this)" />
+		<input type="button" value="弹Tips 1" onclick="poptips(1,this)" />
+		<input type="button" value="弹Tips 2" onclick="poptips(2,this)" />
+		<input type="button" value="弹Tips 3" onclick="poptips(3,this)" />
+		<input type="button" value="弹Tips 4" onclick="poptips(4,this)" />
+		<input type="button" value="弹Tips 5" onclick="poptips5(this)" />
+	</p>
+	<p>
+		<input type="button" value="淡入淡出" onclick="popfade()" />
+		<input type="button" value="拉出" onclick="popslide()" />
+		<input type="button" value="放大缩小" onclick="popscale()" />
+	</p>
+	<div id="testPopupWin" style="display:none;">
+		<div>
+			<p>弹层内容</p>
+			<p>
+				<input type="button" value="关闭弹层" js="closePopup" />
+				<input type="button" value="改标题" onclick="$('#testPopupWin').popupWin('option', 'title', '新的标题');" />
+				<input type="button" value="隐藏标题" onclick="$('#testPopupWin').popupWin('option', 'title', null);" />
+				<input type="button" value="改位置" onclick="$('#testPopupWin').popupWin('option', 'position', {of:document, my:'center center', at:'center top'});" />
+				<input type="button" value="位置居中" onclick="$('#testPopupWin').popupWin('option', 'position', ['center', 'center']);" />
+			</p>
+		</div>
+	</div>
+	<div id="testPopupLayer" style="display:none;border:1px solid #999;background:#eee;">
+		<div style="padding:15px;">
+			<p>弹层内容</p>
+			<p>
+				<input type="button" value="关闭弹层" js="closePopup" />
+				<input type="button" value="改标题（不支持）" onclick="$('#testPopupLayer').popupLayer('option', 'title', '新的标题');" />
+				<input type="button" value="改位置" onclick="$('#testPopupLayer').popupLayer('option', 'position', {of:document, my:'right center', at:'right center', offset:'-40 0'});" />
+				<input type="button" value="位置居中" onclick="$('#testPopupLayer').popupLayer('option', 'position', ['center', 'center']);" />
+			</p>
+		</div>
+	</div>
+	
+	<!--#include file="footer.html"--> 
+</div>
+</body>
+</html>

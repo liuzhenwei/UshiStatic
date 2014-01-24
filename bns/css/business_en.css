@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*
+.bus-post dl.bus-post-dl dd ul li span {
+	width: auto;
+	display: inline-block;
+	display:-moz-inline-stack;
+	display:inline-block;
+	vertical-align:top;
+}
+*/
+.bus-post dl.bus-post-dl dt {width:57px;}
+.bus-post dl.bus-post-dl dd.dd01 {width:23px;}
+
+.bus-detail-top-info1 {width:500px; text-align:right; top:-10px;}

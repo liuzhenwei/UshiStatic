@@ -1,0 +1,267 @@
+﻿@charset "utf-8";
+/*.home-bar-invite-select */
+.home-bar-invite-select{
+	margin-bottom: 15px;
+	padding-bottom: 0;
+	clear: both;
+	overflow: hidden;
+	background: url(../images/invite/expand/bg_list.png) repeat-x left bottom;
+	zoom:1;
+}
+
+.home-bar-invite-select li{
+	float: left;
+	background: url(../images/invite/expand/bg_small.png) no-repeat left top;
+	padding-left: 4px;
+	margin-right: 5px;
+	cursor:pointer;
+}
+
+.home-bar-invite-select li .ivt-select{
+	background: url(../images/invite/expand/bg_small.png) no-repeat right top;
+	padding:0 4px 0 0;
+	display: block;
+}
+
+.home-bar-invite-select li.on {
+	background: url(../images/invite/expand/bg_small_on.png) no-repeat left top;
+}
+
+.home-bar-invite-select li.on .ivt-select{
+	background: url(../images/invite/expand/bg_small_on.png) no-repeat right top;
+}
+
+.home-bar-invite-select li .ivt-next{
+	padding-top: 8px;
+	padding-bottom: 13px;
+	-padding-bottom: 14px;
+	display: block;
+}
+
+.home-bar-invite-select li.on .ivt-next{
+	background: url(../images/invite/expand/ico_on.png) no-repeat center bottom;
+}
+
+
+.home-bar-ivt-MSN {
+    background: url("../images/onboarding2/icon01.png") no-repeat scroll left top transparent;
+    display: inline-block;
+    height: 17px;
+    vertical-align: middle;
+    width: 20px;
+}
+.home-bar-ivt-Mail {
+    background: url("../images/onboarding2/icon01.png") no-repeat scroll -116px top transparent;
+    display: inline-block;
+    height: 17px;
+    vertical-align: middle;
+    width: 20px;
+}
+.home-bar-ivt-OL {
+    background: url("../images/onboarding2/icon01.png") no-repeat scroll -235px top transparent;
+    display: inline-block;
+    height: 17px;
+    vertical-align: middle;
+    width: 20px;
+}
+.home-bar-ivt-IN {
+    background: url("../images/onboarding2/icon01.png") no-repeat scroll -334px top transparent;
+    display: inline-block;
+    height: 17px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.bshare-custom .bshare-sinaminiblog {
+    background: url("http://static.bshare.cn/frame/images/logos/mp2/sprite/top_logos_sprite.gif") no-repeat scroll 0 -510px transparent;
+    display: inline-block;
+}
+.bshare-custom .bshare-qqmb {
+    background: url("http://static.bshare.cn/frame/images/logos/mp2/sprite/top_logos_sprite.gif") no-repeat scroll 0 -374px transparent;
+    display: inline-block;
+}
+.bshare-custom .bshare-qqxiaoyou {
+    background: url("http://static.bshare.cn/frame/images/logos/mp2/sprite/top_logos_sprite.gif") no-repeat scroll 0 -408px transparent;
+    display: inline-block;
+}
+.bshare-custom .bshare-renren {
+    background: url("http://static.bshare.cn/frame/images/logos/mp2/sprite/top_logos_sprite.gif") no-repeat scroll 0 -476px transparent;
+    display: inline-block;
+}
+.bshare-custom .bshare-kaixin001 {
+    background: url("http://static.bshare.cn/frame/images/logos/mp2/sprite/top_logos_sprite.gif") no-repeat scroll 0 -238px transparent;
+    display: inline-block;
+}
+
+.bshare-custom a {
+    color: #2E3192;
+    cursor: pointer;
+    display: none;
+    height: 34px;
+    line-height: 34px;
+    margin-right: 10px;
+    opacity: 1;
+    padding-left: 35px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.file-field {
+    cursor: default;
+    padding-right: 0;
+    position: relative;
+}
+
+.ico-file {
+    background: url("../images/ico_ivt_file.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 27px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 53px;
+}
+
+.file-field input {
+    height: 27px;
+    line-height: 27px;
+	width: 505px;
+    opacity: 0;
+	filter:alpha(opacity=0);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@-moz-document url-prefix()
+{.file-field input { width: 220px; }}
+
+/*.invite-sectiont */
+
+.invite-section{
+	margin-bottom: 25px;
+	width: 752px;
+	background: url(../images/invite/expand/bg_section.png) no-repeat left bottom;
+	padding-bottom: 30px;
+	clear: both;
+}
+
+.ivt-inner{
+	background: url(../images/invite/expand/bg_section.png) no-repeat left top;
+	padding:15px 20px 0;
+}
+
+.form-table th{
+	font-size: 12px;
+	line-height: 27px;
+}
+
+.input-field {
+    background: url("../images/bg_ivt_inputfield.png") no-repeat scroll left top transparent;
+    border: 1px solid #D2DBE6 !important;
+    color: #000000;
+    font-size: 14px !important;
+    height: 27px;
+    line-height: 27px;
+    padding: 0 2px 0 4px;
+}
+
+.w335{
+	width: 335px;
+}
+
+.w240{
+	width: 240px;
+}
+
+.w140{
+	width: 140px;
+}
+
+.w180{
+	width: 180px;
+}
+
+
+.ivt-note{
+	font-size: 11px !important;
+	padding: 6px 8px 6px 8px;
+	border: 1px solid #d3dfff;
+	background-color:#fff;
+	display: inline-block;
+	position: relative;
+	color: #888;
+}
+
+.ivt-ico-left{
+	background: url(../images/invite/expand/bg_note.png) no-repeat left center;
+	width: 7px;
+	height: 15px;
+	display: inline-block;
+	position: absolute;
+	left: -7px;
+	top: 5px;
+	overflow: hidden;
+	zoom:1;
+}
+
+.ivt-line{
+	background: url(../images/invite/expand/bg_list.png) repeat-x left top;
+	height: 9px;
+}
+
+.ivt-left{
+	width: 420px;
+	float: left;
+}
+
+.ivt-right{
+	width: 245px;
+	float: right;
+}
+
+.textarea-field{
+	width: 690px;
+	height: 68px;
+	border: 1px solid #BBBBBB;
+	background: url(../images/invite/expand/bg_textarea.png) no-repeat left top;
+	
+}
+
+.ivt-outlook{
+	margin-left: 45px;
+	width: 505px;
+	
+}
+
+.ivt-ico-up{
+	margin: 0 0 -1px 10px;
+	background: url(../images/invite/expand/ico_up.png) no-repeat left top;
+	width: 17px;
+	height: 8px;
+	display: block;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	zoom:1;
+}
+
+.ivt-outlook-note p{
+	margin: 0;
+	border: 1px solid #d3dfff;	
+	padding: 10px;
+	background-color: #fff;
+	overflow: hidden;
+	zoom:1;
+}
+
+.ivt-text{
+	margin: 10px 0 20px 20px;
+}
+
+.email-autocomplete { border:1px solid #C3D4E4; position:absolute; text-align:left;}
+.email-autocomplete li { padding:4px; background:#FFF; color:#777;}
+.email-autocomplete li:hover { background:#E7EEF6; cursor:pointer; color:#333;}
+
+/* 找同事找同学 */
+.corner-new { position:absolute; left:10px; top:10px; width:12px; height:12px; line-height:12px; color:#FFF; font-size:12px; background:#F00;}

@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="..../../bns/images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+	<div class="lf">  
+		<div id="menu_out" class="leftmenu">	
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+		</div>
+	</div>  
+
+<script type="text/javascript">
+$(function(){
+	$('input[datepicker]').datepicker();
+});
+</script>
+	<div class="rf">
+		<div id="container">
+			<h2>群组数据统计</h2>
+			<div class="search_area">
+				<table width="100%" cellpadding="0" cellspacing="5" border="0">
+					<tr>
+						<td>查询时间：
+							<input type="text" name="" size="15" datepicker="y" />
+							-
+							<input type="text" name="" size="15" datepicker="y" />
+							<input type="submit" value="查询" />
+						</td>
+					</tr>
+				</table>
+			</div>
+			<table  width="100%" cellpadding="0" cellspacing="0" class="datalist mt10">
+			<tr>
+				<th>日期</th>
+				<th>UV</th>
+				<th>PV</th>
+				<th>发帖量</th>
+				<th>帖子回复量</th>
+				<th>活动量</th>
+				<th>活动回复量</th>
+				<th>分享量</th>
+				<th>分享回复量</th>
+			</tr>
+			<tr>
+				<td>2010-10-10</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr class="gray">
+				<td>2010-10-10</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>2010-10-10</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>		
+			</table>
+			<div class="pagenav">
+				<a href="#">上一页</a>
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<span class="cur">3</span>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">下一页</a>
+			</div>
+		</div>
+	</div>
+	
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright">
+	        Copyright &copy; 2010 Ushi.cn
+        </div>
+    </div> 
+    <!--footer end-->
+</div>
+
+</body>
+</html>

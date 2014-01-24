@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<body>
+<script type="text/javascript">
+function ResetFile(file){
+	file.value = "";//ff chrome safari
+	if ( file.value ) {
+		file.type = "text"; file.type = "file";//opera
+	}
+}
+
+$(function(){
+	$(':file').previewImage({
+		previewCont:['#p1', '#p2'],
+		checkFile: function(err){
+			alert('error'+err);	
+		}
+	});
+});
+</script>
+<p><input type="file" name="upload_photo_file" /></p>
+<p><input type="file" name="upload_photo_file" /></p>
+<div id="p1" ></div>
+<div id="p2" ></div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+#header {margin-bottom:0;}
+#main {width:100%; text-align:center; background:url(../images/bg_main.png) repeat-x left top; margin:0;}
+.main {width:960px; margin:0 auto; text-align:left; font-size:14px;}
+.dn-date {background:#2b2b2b url(../images/bg_date.png) repeat-x left top; color:#fff; font-family:Arial; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.dn-date-header {border-bottom:1px solid #413b3b;}
+.dn-date-header td {text-align:center; padding:10px 0; color:#fff;}
+.dn-date-cont {border-bottom:1px solid #282727; border-top:1px solid #554f4f; padding:10px;}
+.dn-date-calendar {border-spacing:3px; border-collapse:separate; cursor:default;}
+.dn-date-calendar th {text-align:center; font-size:12px; font-weight:bold; color:#a3a0a0; background:#514b4b; padding:3px 0;}
+.dn-date-calendar td {text-align:center; font-weight:bold; color:#a3a0a0; height:31px;}
+.dn-date-calendar td span {display:block; height:29px; line-height:29px; border:1px solid #524f4f;}
+.dn-date-calendar td span.empty {height:29px; line-height:29px; background:#514b4b;}
+.dn-date-calendar td a {display:block; height:31px; line-height:31px; background:url(../images/bg_date2.png) repeat-x left top; cursor:pointer; color:#fff;}
+.dn-date-calendar td a.old {background-image:url(../images/bg_date1.png); cursor:default;}
+.dn-date-calendar td a:hover {text-decoration:none;}
+.dn-date-footer {border-top:1px solid #3a3939; padding:12px; text-align:center;}
+.dn-tag {font-size:12px; display:inline-block; background:url(../images/bg_tag.png) no-repeat left top; height:24px; overflow:hidden; padding-left:12px;}
+.dn-tag span {display:block; background:url(../images/bg_tag.png) no-repeat right top; height:24px; line-height:24px; overflow:hidden; padding-right:12px; color:#787878;}
+.dn-tag:hover {background-image:url(../images/bg_tag_h.png); text-decoration:none;}
+.dn-tag:hover span {background-image:url(../images/bg_tag_h.png); color:#0066aa;}
+

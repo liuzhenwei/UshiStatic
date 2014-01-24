@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* 公开首页 */
+.phome-logo {background-image:url(../images/reg/logo_home_en.png); width:316px;}
+.phome-form .phome-submit {background-image:url(../images/reg/btn_home_reg_en.png);}
+.phome-form .phome-login {background-image:url(../images/reg/btn_home_login_en.png);}
+.phome-story li strong.phome-ushi1 {background:url(../images/reg/bg_ushi1_en.png) no-repeat;}
+.phome-story li strong.phome-ushi2 {background:url(../images/reg/bg_ushi2_en.png) no-repeat;}
+.phome-story li strong.phome-ushi3 {background:url(../images/reg/bg_ushi3_en.png) no-repeat;}
+.phome-story li strong.phome-ushi1-h {background:url(../images/reg/bg_ushi1_h_en.png) no-repeat;}
+.phome-story li strong.phome-ushi2-h {background:url(../images/reg/bg_ushi2_h_en.png) no-repeat;}
+.phome-story li strong.phome-ushi3-h {background:url(../images/reg/bg_ushi3_h_en.png) no-repeat;}
+.phome-story li h2 {line-height:1.4em; height:65px;}

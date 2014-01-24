@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>人脉:关注列表</title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/contact.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/connections.js"></script>
+</head>
+
+<body id="page-member">
+<div style="position: absolute; text-align: left; height: auto; width: 828px; top: 0px; left: 331.5px; display: block; z-index: 1002;" class="fl-outer ushi-friendSelect">
+	<div class="fl-outer-out">
+		<div class="fl-block-shadow"></div>
+		<div class="fl-outer-in">
+			<div class="fl-block">
+				<div class="fl-title">
+					<h5>选择联系人</h5>
+					<a class="close" href="javascript:void(0)"><span class="hide">close</span></a>
+				</div>
+				<div class="fl-content" style="overflow: hidden;">
+					<div id="friend-selector" class="contact-container">
+						<div class="contact-left">
+							<ul class="contact-navi">
+								<li fsNavi="ushi" class="ct-navi-type"><a href="#">优士联系人<span class="quiet"></span></a></li>
+								<li fsNavi="sina" class="ct-navi-type"><a href="#">新浪微博联系人<span class="quiet"></span></a> </li>
+								<li fsNavi="local" class="ct-navi-type special"><a href="#">本地联系人<span class="quiet"></span></a></li>
+								<li fsFilter="group"><a href="#">按分组查看</a>
+									<ul fs="fsFilterList" class="ct-navi-list" style="display:none;">
+									</ul>
+								</li>
+								<li fsFilter="city"><a href="#">按城市查看</a>
+									<ul fs="fsFilterList" class="ct-navi-list" style="display:none;">
+									</ul>
+								</li>
+								<li fsFilter="industry"><a href="#">按行业查看</a>
+									<ul fs="fsFilterList" class="ct-navi-list" style="display:none;">
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="fsListArea yourmember-box">
+							<div class="yourmember-box-content">
+								<div class="yourmember-search clearfix">
+									<input name="fsFilter" fs="fsKeyword" type="text" defaultTips="按姓名查找" value="按姓名查找" oldKey="" />
+								</div>
+								<div class="ctl-member-ul">
+									<ul fs="fsFriendsList">
+									<li class="vcard v-30">
+										<dl>
+											<dt><a href="#">张月</a></dt>
+											<dd>优士网首席执行官师</dd>
+										</dl>
+									</li>
+									</ul>
+								</div>
+							</div>
+							<div style="display:none;" class="fsButtons fl-button"><a href="javascript:void(0);" class="fsBtnOK button"><span>确定</span></a></div>
+						</div>
+						<div class="fsSelectedArea">
+							<h3>已选
+								<span class="fsSelectedCounts">(0)</span>
+								<span class="fsPrompt select-shop">你还能选择5人</span>
+							</h3>
+							<div class="selected-box">
+								<div class="fsSelectedList selected-box-content"></div>
+								<p class="fsDeleteAll remove"><a href="javascript:void(0)">移除所有</a></p>
+							</div>
+							<p class="fsButtons"><a href="javascript:void(0);" class="fsBtnOK special-btn"><span>确定</span></a>&nbsp;<a href="javascript:void(0);" class="fsBtnCancel common-button"><span>取消</span></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

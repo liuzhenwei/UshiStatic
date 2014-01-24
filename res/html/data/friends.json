@@ -1,0 +1,1181 @@
+{ 
+	//selectedGroupId: 20,
+	user: [
+		{
+			'name' : 'xiaotian5', 
+			'id': '391',
+			'city': '8843',
+			'industry': '8',
+			'careerbrief': 'dsfs dfsf',
+			'gid': '0'
+		}, {
+			'name' : 'seanchen', 
+			'id': '3',
+			'city': '4',
+			'industry': '8',
+			'careerbrief': 'HPceo',
+			'gid': '0'
+		}, {
+			'name' : '666', 
+			'id': '63',
+			'city': '0',
+			'industry': '31',
+			'careerbrief': 'MicroSoftEngineer',
+			'gid': '0'
+		}, {
+			'name' : 'aaaaa', 
+			'id': '414',
+			'city': '0',
+			'industry': '0',
+			'careerbrief': '北京东宝汽车BMW燕莎中心展厅 a',
+			'gid': '0'
+		}, {
+			'name' : 'aaaaa', 
+			'id': '413',
+			'city': '0',
+			'industry': '0',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'liuzhenwei', 
+			'id': '404',
+			'city': '8843',
+			'industry': '63',
+			'careerbrief': '北京银行 经理',
+			'gid': '0'
+		}, {
+			'name' : 'sdfsfsaf', 
+			'id': '402',
+			'city': '0',
+			'industry': '0',
+			'careerbrief': 'df df',
+			'gid': '0'
+		}, {
+			'name' : 'aaa', 
+			'id': '398',
+			'city': '0',
+			'industry': '0',
+			'careerbrief': '安阳钢铁股份有限公司 a',
+			'gid': '0'
+		}, {
+			'name' : 'testone', 
+			'id': '266',
+			'city': '8215',
+			'industry': '10',
+			'careerbrief': 'Ushi java coder',
+			'gid': '20'
+		}, {
+			'name' : 'alberthuang', 
+			'id': '275',
+			'city': '162998',
+			'industry': '10',
+			'careerbrief': 'java developer',
+			'gid': '1621'
+		}, {
+			'name' : 'feedhh', 
+			'id': '261',
+			'city': '8710',
+			'industry': '26',
+			'careerbrief': '设备维护',
+			'gid': '0'
+		}, {
+			'name' : 'feedgg', 
+			'id': '260',
+			'city': '8546',
+			'industry': '26',
+			'careerbrief': '设备维护',
+			'gid': '0'
+		}, {
+			'name' : 'feedee', 
+			'id': '258',
+			'city': '163025',
+			'industry': '23',
+			'careerbrief': '市场调研',
+			'gid': '1620'
+		}, {
+			'name' : '中文', 
+			'id': '257',
+			'city': '8071',
+			'industry': '15',
+			'careerbrief': 'fugufjk',
+			'gid': '0'
+		}, {
+			'name' : '武莉莉', 
+			'id': '256',
+			'city': '8843',
+			'industry': '154',
+			'careerbrief': '上海一茶一坐餐饮有限公司 CMO Assistant',
+			'gid': '438'
+		}, {
+			'name' : 'luyang', 
+			'id': '255',
+			'city': '8228',
+			'industry': '15',
+			'careerbrief': 'fugumobilecode',
+			'gid': '0'
+		}, {
+			'name' : 'feedcc', 
+			'id': '254',
+			'city': '8617',
+			'industry': '26',
+			'careerbrief': '设备维护',
+			'gid': '0'
+		}, {
+			'name' : 'feedbb', 
+			'id': '253',
+			'city': '8710',
+			'industry': '23',
+			'careerbrief': '市场调研',
+			'gid': '0'
+		}, {
+			'name' : 'albertmm', 
+			'id': '49',
+			'city': '8160',
+			'industry': '31',
+			'careerbrief': '生物信息',
+			'gid': '0'
+		}, {
+			'name' : 'aahuang', 
+			'id': '250',
+			'city': '163016',
+			'industry': '22',
+			'careerbrief': '市场推广与广告',
+			'gid': '20'
+		}, {
+			'name' : 'aa', 
+			'id': '246',
+			'city': '8642',
+			'industry': '25',
+			'careerbrief': '翻译服务',
+			'gid': '1621'
+		}, {
+			'name' : 'aa', 
+			'id': '238',
+			'city': '0',
+			'industry': '0',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'aa vv', 
+			'id': '235',
+			'city': '8197',
+			'industry': '10',
+			'careerbrief': '电信与通讯',
+			'gid': '0'
+		}, {
+			'name' : 'aa bb', 
+			'id': '234',
+			'city': '8152',
+			'industry': '16',
+			'careerbrief': '法律服务',
+			'gid': '0'
+		}, {
+			'name' : ' albert huang', 
+			'id': '232',
+			'city': '163035',
+			'industry': '26',
+			'careerbrief': '设备维护',
+			'gid': '0'
+		}, {
+			'name' : 'fugumobile', 
+			'id': '231',
+			'city': '8206',
+			'industry': '53',
+			'careerbrief': 'fugumobilesb',
+			'gid': '0'
+		}, {
+			'name' : 'aabb', 
+			'id': '225',
+			'city': '8433',
+			'industry': '25',
+			'careerbrief': '翻译服务',
+			'gid': '0'
+		}, {
+			'name' : 'itjunhua', 
+			'id': '223',
+			'city': '8107',
+			'industry': '25',
+			'careerbrief': '翻译服务',
+			'gid': '0'
+		}, {
+			'name' : 'xiaodong', 
+			'id': '222',
+			'city': '8642',
+			'industry': '25',
+			'careerbrief': '翻译服务',
+			'gid': '418'
+		}, {
+			'name' : 'xiaoxi', 
+			'id': '221',
+			'city': '8739',
+			'industry': '24',
+			'careerbrief': '公共关系',
+			'gid': '0'
+		}, {
+			'name' : 'itjunhua', 
+			'id': '220',
+			'city': '8454',
+			'industry': '24',
+			'careerbrief': '公共关系',
+			'gid': '0'
+		}, {
+			'name' : 'aa', 
+			'id': '219',
+			'city': '163036',
+			'industry': '26',
+			'careerbrief': 'a安徽金种子集团有限公司aa',
+			'gid': '0'
+		}, {
+			'name' : 'xiaoxxx', 
+			'id': '217',
+			'city': '162992',
+			'industry': '8',
+			'careerbrief': '互联网',
+			'gid': '0'
+		}, {
+			'name' : 'aa', 
+			'id': '212',
+			'city': '8617',
+			'industry': '24',
+			'careerbrief': '公共关系',
+			'gid': '0'
+		}, {
+			'name' : 'aa', 
+			'id': '211',
+			'city': '8197',
+			'industry': '15',
+			'careerbrief': '法律援助',
+			'gid': '0'
+		}, {
+			'name' : 'aa', 
+			'id': '209',
+			'city': '8738',
+			'industry': '23',
+			'careerbrief': '市场调研',
+			'gid': '0'
+		}, {
+			'name' : 'aa', 
+			'id': '202',
+			'city': '8617',
+			'industry': '26',
+			'careerbrief': '设备维护',
+			'gid': '0'
+		}, {
+			'name' : 'aa', 
+			'id': '201',
+			'city': '162992',
+			'industry': '10',
+			'careerbrief': '电信与通讯',
+			'gid': '0'
+		}, {
+			'name' : 'ss', 
+			'id': '195',
+			'city': '0',
+			'industry': '4',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'steeleluo', 
+			'id': '193',
+			'city': '1510',
+			'industry': '26',
+			'careerbrief': 'ass',
+			'gid': '0'
+		}, {
+			'name' : 'steeleluo', 
+			'id': '191',
+			'city': '161030',
+			'industry': '16',
+			'careerbrief': 'assdf',
+			'gid': '0'
+		}, {
+			'name' : 'ddfdsf', 
+			'id': '190',
+			'city': '0',
+			'industry': '4',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'sfasdf', 
+			'id': '188',
+			'city': '0',
+			'industry': '4',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'aaa', 
+			'id': '185',
+			'city': '8327',
+			'industry': '15',
+			'careerbrief': '法律援助',
+			'gid': '0'
+		}, {
+			'name' : 'sfasdf', 
+			'id': '184',
+			'city': '0',
+			'industry': '4',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'fugumobile', 
+			'id': '183',
+			'city': '8843',
+			'industry': '18',
+			'careerbrief': 'sdfsSf',
+			'gid': '0'
+		}, {
+			'name' : 'fugumobile', 
+			'id': '181',
+			'city': '0',
+			'industry': '4',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'fugumobile', 
+			'id': '165',
+			'city': '8843',
+			'industry': '4',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'fugumobile', 
+			'id': '157',
+			'city': '8843',
+			'industry': '4',
+			'careerbrief': 'fuguV',
+			'gid': '0'
+		}, {
+			'name' : 'ddfdsf', 
+			'id': '150',
+			'city': '0',
+			'industry': '4',
+			'careerbrief': '计算机软件',
+			'gid': '0'
+		}, {
+			'name' : 'ddfdsf', 
+			'id': '149',
+			'city': '0',
+			'industry': '4',
+			'careerbrief': '计算机软件',
+			'gid': '0'
+		}, {
+			'name' : 'Wayne', 
+			'id': '148',
+			'city': '0',
+			'industry': '2',
+			'careerbrief': '美丽的美，帝国主义的帝佛教的佛去掉单人旁',
+			'gid': '0'
+		}, {
+			'name' : '发动机', 
+			'id': '147',
+			'city': '8696',
+			'industry': '10',
+			'careerbrief': '中国首钢集团ceo',
+			'gid': '0'
+		}, {
+			'name' : 'hfhdgsf', 
+			'id': '145',
+			'city': '8843',
+			'industry': '8',
+			'careerbrief': '互联网',
+			'gid': '0'
+		}, {
+			'name' : '赴澳复旦', 
+			'id': '144',
+			'city': '8206',
+			'industry': '8',
+			'careerbrief': '互联网',
+			'gid': '0'
+		}, {
+			'name' : '晓笑傲', 
+			'id': '143',
+			'city': '8762',
+			'industry': '9',
+			'careerbrief': '半导体',
+			'gid': '0'
+		}, {
+			'name' : '小晓', 
+			'id': '142',
+			'city': '8160',
+			'industry': '12',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : '小萧', 
+			'id': '141',
+			'city': '8118',
+			'industry': '10',
+			'careerbrief': '电信与通讯',
+			'gid': '0'
+		}, {
+			'name' : '小夏', 
+			'id': '140',
+			'city': '8015',
+			'industry': '13',
+			'careerbrief': '无线通讯',
+			'gid': '0'
+		}, {
+			'name' : 'kenny', 
+			'id': '139',
+			'city': '161028',
+			'industry': '18',
+			'careerbrief': '管理咨询',
+			'gid': '0'
+		}, {
+			'name' : 'xiaohe', 
+			'id': '137',
+			'city': '162992',
+			'industry': '15',
+			'careerbrief': '法律援助',
+			'gid': '0'
+		}, {
+			'name' : 'xiaoha', 
+			'id': '136',
+			'city': '8696',
+			'industry': '11',
+			'careerbrief': '纳米技术',
+			'gid': '0'
+		}, {
+			'name' : 'xka', 
+			'id': '135',
+			'city': '8357',
+			'industry': '10',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : '小小笑', 
+			'id': '134',
+			'city': '162992',
+			'industry': '15',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'asdfs', 
+			'id': '132',
+			'city': '654',
+			'industry': '16',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'sfsdf', 
+			'id': '129',
+			'city': '625',
+			'industry': '19',
+			'careerbrief': '招聘、猎头',
+			'gid': '0'
+		}, {
+			'name' : '陈敏君', 
+			'id': '128',
+			'city': '8843',
+			'industry': '61',
+			'careerbrief': 'meta4',
+			'gid': '0'
+		}, {
+			'name' : '何金福', 
+			'id': '127',
+			'city': '161030',
+			'industry': '19',
+			'careerbrief': '招聘、猎头',
+			'gid': '20'
+		}, {
+			'name' : 'xiaobill', 
+			'id': '126',
+			'city': '8843',
+			'industry': '4',
+			'careerbrief': 'bfdfdddd',
+			'gid': '0'
+		}, {
+			'name' : '晓东', 
+			'id': '125',
+			'city': '8225',
+			'industry': '18',
+			'careerbrief': '管理咨询',
+			'gid': '0'
+		}, {
+			'name' : '小小', 
+			'id': '124',
+			'city': '162983',
+			'industry': '15',
+			'careerbrief': '上海电信cto',
+			'gid': '438'
+		}, {
+			'name' : '小虾', 
+			'id': '123',
+			'city': '162958',
+			'industry': '16',
+			'careerbrief': '上海电信cto',
+			'gid': '438'
+		}, {
+			'name' : '小河', 
+			'id': '122',
+			'city': '8278',
+			'industry': '19',
+			'careerbrief': '招聘、猎头',
+			'gid': '438'
+		}, {
+			'name' : '小王', 
+			'id': '121',
+			'city': '162998',
+			'industry': '16',
+			'careerbrief': '法律服务',
+			'gid': '438'
+		}, {
+			'name' : '小华', 
+			'id': '120',
+			'city': '8738',
+			'industry': '26',
+			'careerbrief': '',
+			'gid': '438'
+		}, {
+			'name' : '以便更', 
+			'id': '119',
+			'city': '162986',
+			'industry': '12',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : '小黄', 
+			'id': '118',
+			'city': '8225',
+			'industry': '9',
+			'careerbrief': '上海电信cto',
+			'gid': '438'
+		}, {
+			'name' : '小罗', 
+			'id': '117',
+			'city': '162972',
+			'industry': '11',
+			'careerbrief': '上海电信cto',
+			'gid': '438'
+		}, {
+			'name' : '爱迪生', 
+			'id': '116',
+			'city': '8066',
+			'industry': '9',
+			'careerbrief': 'unutripcto',
+			'gid': '0'
+		}, {
+			'name' : '爱因斯坦', 
+			'id': '115',
+			'city': '8843',
+			'industry': '4',
+			'careerbrief': '计算机软件',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.sd', 
+			'id': '113',
+			'city': '8517',
+			'industry': '10',
+			'careerbrief': '上海电信cto',
+			'gid': '0'
+		}, {
+			'name' : 'itjunhua.bb', 
+			'id': '112',
+			'city': '162992',
+			'industry': '19',
+			'careerbrief': '上海电信cto',
+			'gid': '0'
+		}, {
+			'name' : 'itjunhua.mm', 
+			'id': '111',
+			'city': '162981',
+			'industry': '15',
+			'careerbrief': '上海电信cot',
+			'gid': '0'
+		}, {
+			'name' : 'itjunhua', 
+			'id': '110',
+			'city': '163001',
+			'industry': '19',
+			'careerbrief': '上海电信cto',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.jj', 
+			'id': '109',
+			'city': '8197',
+			'industry': '2',
+			'careerbrief': '空间科技',
+			'gid': '0'
+		}, {
+			'name' : 'albert.ee', 
+			'id': '108',
+			'city': '162946',
+			'industry': '31',
+			'careerbrief': '计算机',
+			'gid': '0'
+		}, {
+			'name' : 'albert.uu.mm', 
+			'id': '107',
+			'city': '162992',
+			'industry': '31',
+			'careerbrief': '计算机',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.yy', 
+			'id': '106',
+			'city': '8147',
+			'industry': '2',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.oo', 
+			'id': '105',
+			'city': '8615',
+			'industry': '31',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'ablert.mm.kk', 
+			'id': '104',
+			'city': '8197',
+			'industry': '31',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.ll', 
+			'id': '103',
+			'city': '162972',
+			'industry': '2',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.hh', 
+			'id': '102',
+			'city': '8357',
+			'industry': '2',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'ablert.mm.rr', 
+			'id': '101',
+			'city': '162993',
+			'industry': '31',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.uu', 
+			'id': '100',
+			'city': '8172',
+			'industry': '2',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.ww', 
+			'id': '99',
+			'city': '8160',
+			'industry': '31',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.abcd', 
+			'id': '98',
+			'city': '161028',
+			'industry': '31',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.dd', 
+			'id': '97',
+			'city': '8015',
+			'industry': '31',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.abc', 
+			'id': '95',
+			'city': '162958',
+			'industry': '2',
+			'careerbrief': '巨人集团cto',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.b', 
+			'id': '94',
+			'city': '8200',
+			'industry': '31',
+			'careerbrief': '巨人集团cto',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.a', 
+			'id': '93',
+			'city': '8777',
+			'industry': '31',
+			'careerbrief': '上海电信cto',
+			'gid': '0'
+		}, {
+			'name' : 'albert.mm.huang', 
+			'id': '92',
+			'city': '8777',
+			'industry': '31',
+			'careerbrief': '巨人集团cto',
+			'gid': '0'
+		}, {
+			'name' : 'tom.chai.mm', 
+			'id': '91',
+			'city': '8215',
+			'industry': '31',
+			'careerbrief': '上海电信cto',
+			'gid': '0'
+		}, {
+			'name' : 'tomdd', 
+			'id': '90',
+			'city': '8339',
+			'industry': '2',
+			'careerbrief': '上海cto',
+			'gid': '0'
+		}, {
+			'name' : 'tommm', 
+			'id': '89',
+			'city': '8077',
+			'industry': '2',
+			'careerbrief': '爱爱宽口径cto',
+			'gid': '0'
+		}, {
+			'name' : 'tomabc', 
+			'id': '88',
+			'city': '8339',
+			'industry': '31',
+			'careerbrief': '上海集团CTO',
+			'gid': '0'
+		}, {
+			'name' : '藏镜人', 
+			'id': '87',
+			'city': '8843',
+			'industry': '31',
+			'careerbrief': '计算机',
+			'gid': '0'
+		}, {
+			'name' : 'billdd', 
+			'id': '86',
+			'city': '8160',
+			'industry': '31',
+			'careerbrief': '上海电信cto',
+			'gid': '0'
+		}, {
+			'name' : 'billmm', 
+			'id': '85',
+			'city': '8913',
+			'industry': '31',
+			'careerbrief': '上海有线cto',
+			'gid': '0'
+		}, {
+			'name' : 'billd', 
+			'id': '84',
+			'city': '161028',
+			'industry': '31',
+			'careerbrief': '上海有线cto',
+			'gid': '0'
+		}, {
+			'name' : 'steeleb', 
+			'id': '83',
+			'city': '8357',
+			'industry': '2',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'steelea', 
+			'id': '82',
+			'city': '604',
+			'industry': '31',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'mobiletester', 
+			'id': '69',
+			'city': '0',
+			'industry': '31',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'littlefisher', 
+			'id': '53',
+			'city': '8843',
+			'industry': '31',
+			'careerbrief': 'meta4product manager',
+			'gid': '0'
+		}, {
+			'name' : 'billa', 
+			'id': '52',
+			'city': '8147',
+			'industry': '31',
+			'careerbrief': '惠普cto',
+			'gid': '0'
+		}, {
+			'name' : 'ablertabd', 
+			'id': '48',
+			'city': '8568',
+			'industry': '31',
+			'careerbrief': '上海电信CFP',
+			'gid': '0'
+		}, {
+			'name' : 'albertabc', 
+			'id': '47',
+			'city': '8190',
+			'industry': '31',
+			'careerbrief': '上海电信CE0',
+			'gid': '0'
+		}, {
+			'name' : 'hailing', 
+			'id': '45',
+			'city': '0',
+			'industry': '31',
+			'careerbrief': '计算机',
+			'gid': '0'
+		}, {
+			'name' : 'Jiff', 
+			'id': '44',
+			'city': '8066',
+			'industry': '31',
+			'careerbrief': 'meta4 group',
+			'gid': '0'
+		}, {
+			'name' : 'ablertbb', 
+			'id': '40',
+			'city': '8107',
+			'industry': '31',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'ablertab', 
+			'id': '39',
+			'city': '8679',
+			'industry': '31',
+			'careerbrief': '',
+			'gid': '0'
+		}, {
+			'name' : 'alberth', 
+			'id': '38',
+			'city': '8258',
+			'industry': '31',
+			'careerbrief': '惠普人事总监',
+			'gid': '0'
+		}, {
+			'name' : 'ablertg', 
+			'id': '37',
+			'city': '162958',
+			'industry': '2',
+			'careerbrief': '上海有线CE0',
+			'gid': '0'
+		}, {
+			'name' : 'albertf', 
+			'id': '36',
+			'city': '8843',
+			'industry': '31',
+			'careerbrief': '正大CE0',
+			'gid': '0'
+		}, {
+			'name' : 'alberte', 
+			'id': '35',
+			'city': '8197',
+			'industry': '31',
+			'careerbrief': '上海电信高级经理是',
+			'gid': '0'
+		}, {
+			'name' : '222', 
+			'id': '31',
+			'city': '8343',
+			'industry': '31',
+			'careerbrief': '上海电信高级经理',
+			'gid': '0'
+		}, {
+			'name' : 'ablertc', 
+			'id': '30',
+			'city': '8152',
+			'industry': '31',
+			'careerbrief': '小牛~',
+			'gid': '0'
+		}, {
+			'name' : 'ablertb', 
+			'id': '29',
+			'city': '163019',
+			'industry': '2',
+			'careerbrief': '上海电信sse',
+			'gid': '0'
+		}
+		
+	],
+	group: [
+		{
+			'id': '2',
+			'name' : 'test'
+		}, {
+			'id': '20',
+			'name' : 'test888'
+		}, {
+			'id': '418',
+			'name' : 'afdfd'
+		}, {
+			'id': '438',
+			'name' : 'aa'
+		}, {
+			'id': '1620',
+			'name' : 'wwww'
+		}, {
+			'id': '1621',
+			'name' : '1111'
+		}
+	],
+	city: [
+		{
+			'id': '163019',
+			'name' : '锡林郭勒盟'
+		}, {
+			'id': '8152',
+			'name' : '宜昌'
+		}, {
+			'id': '8343',
+			'name' : '苏州'
+		}, {
+			'id': '8197',
+			'name' : '周口'
+		}, {
+			'id': '8843',
+			'name' : '上海'
+		}, {
+			'id': '162958',
+			'name' : '黄山'
+		}, {
+			'id': '8258',
+			'name' : '安顺'
+		}, {
+			'id': '8679',
+			'name' : '天津'
+		}, {
+			'id': '8107',
+			'name' : '玉树'
+		}, {
+			'id': '8066',
+			'name' : '北京'
+		}, {
+			'id': '',
+			'name' : ''
+		}, {
+			'id': '8190',
+			'name' : '三明'
+		}, {
+			'id': '8568',
+			'name' : '清远'
+		}, {
+			'id': '8147',
+			'name' : '毕节'
+		}, {
+			'id': '604',
+			'name' : 'La Massana'
+		}, {
+			'id': '8357',
+			'name' : '郑州'
+		}, {
+			'id': '161028',
+			'name' : '香港'
+		}, {
+			'id': '8913',
+			'name' : '双鸭山'
+		}, {
+			'id': '8160',
+			'name' : '孝感'
+		}, {
+			'id': '8339',
+			'name' : '柳州'
+		}, {
+			'id': '8077',
+			'name' : '临夏'
+		}, {
+			'id': '8215',
+			'name' : '株洲'
+		}, {
+			'id': '8777',
+			'name' : '佳木斯'
+		}, {
+			'id': '8200',
+			'name' : '遵义'
+		}, {
+			'id': '8015',
+			'name' : '阜阳'
+		}, {
+			'id': '8172',
+			'name' : '怀化'
+		}, {
+			'id': '162993',
+			'name' : '伊春'
+		}, {
+			'id': '162972',
+			'name' : '玉林'
+		}, {
+			'id': '8615',
+			'name' : '石家庄'
+		}, {
+			'id': '162992',
+			'name' : '大庆'
+		}, {
+			'id': '162946',
+			'name' : 'Ulleng-gun'
+		}, {
+			'id': '163001',
+			'name' : '淮安'
+		}, {
+			'id': '162981',
+			'name' : '五指山'
+		}, {
+			'id': '8517',
+			'name' : '重庆'
+		}, {
+			'id': '8225',
+			'name' : '桂林'
+		}, {
+			'id': '162986',
+			'name' : '昌江'
+		}, {
+			'id': '8738',
+			'name' : '汉中'
+		}, {
+			'id': '162998',
+			'name' : '张家界'
+		}, {
+			'id': '8278',
+			'name' : '郴州'
+		}, {
+			'id': '162983',
+			'name' : '儋州'
+		}, {
+			'id': '161030',
+			'name' : 'Anguilla'
+		}, {
+			'id': '625',
+			'name' : 'Namibe'
+		}, {
+			'id': '654',
+			'name' : 'Carlisle'
+		}, {
+			'id': '8696',
+			'name' : '绥化'
+		}, {
+			'id': '8118',
+			'name' : '承德'
+		}, {
+			'id': '8762',
+			'name' : '七台河'
+		}, {
+			'id': '8206',
+			'name' : '廊坊'
+		}, {
+			'id': '8327',
+			'name' : '驻马店'
+		}, {
+			'id': '1510',
+			'name' : 'Pirates Well'
+		}, {
+			'id': '8617',
+			'name' : '威海'
+		}, {
+			'id': '163036',
+			'name' : '眉山'
+		}, {
+			'id': '8454',
+			'name' : '延安'
+		}, {
+			'id': '8739',
+			'name' : '咸阳'
+		}, {
+			'id': '8642',
+			'name' : '晋城'
+		}, {
+			'id': '8433',
+			'name' : '宝鸡'
+		}, {
+			'id': '163035',
+			'name' : '达州'
+		}, {
+			'id': '163016',
+			'name' : '巴彦淖尔'
+		}, {
+			'id': '8710',
+			'name' : '潍坊'
+		}, {
+			'id': '8228',
+			'name' : '唐山'
+		}, {
+			'id': '8071',
+			'name' : '吉林'
+		}, {
+			'id': '163025',
+			'name' : '海北'
+		}, {
+			'id': '8546',
+			'name' : '渭南'
+		}, {
+			'id': '4',
+			'name' : 'Taywarah'
+		}
+	],
+	industry: [
+		{
+			'id': '2',
+			'name' : '空间科技'
+		}, {
+			'id': '31',
+			'name' : '生物信息'
+		}, {
+			'id': '19',
+			'name' : '招聘、猎头'
+		}, {
+			'id': '15',
+			'name' : '法律援助'
+		}, {
+			'id': '10',
+			'name' : '电信与通讯'
+		}, {
+			'id': '4',
+			'name' : '计算机软件'
+		}, {
+			'id': '9',
+			'name' : '半导体'
+		}, {
+			'id': '11',
+			'name' : '纳米技术'
+		}, {
+			'id': '12',
+			'name' : '信息技术与服务'
+		}, {
+			'id': '26',
+			'name' : '设备维护'
+		}, {
+			'id': '16',
+			'name' : '法律服务'
+		}, {
+			'id': '18',
+			'name' : '管理咨询'
+		}, {
+			'id': '61',
+			'name' : '财经服务'
+		}, {
+			'id': '13',
+			'name' : '无线通讯'
+		}, {
+			'id': '8',
+			'name' : '互联网'
+		}, {
+			'id': '23',
+			'name' : '市场调研'
+		}, {
+			'id': '24',
+			'name' : '公共关系'
+		}, {
+			'id': '25',
+			'name' : '翻译服务'
+		}, {
+			'id': '53',
+			'name' : '休闲度假与旅游'
+		}, {
+			'id': '',
+			'name' : ''
+		}, {
+			'id': '22',
+			'name' : '市场推广与广告'
+		}, {
+			'id': '154',
+			'name' : '其他行业'
+		}, {
+			'id': '63',
+			'name' : '投资银行'
+		}
+	]
+}

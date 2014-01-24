@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+	<div class="lf">	
+		<div id="menu_out" class="leftmenu">	
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+		</div>
+	</div>	
+	
+	<div class="rf">
+		<div id="container">
+<style type="text/css">
+.td1 {width:23%; padding-left:10px; padding-bottom:5px;}
+.td2 {width:50%; padding-left:10px; padding-bottom:5px;}
+.box1 {height:300px; overflow:auto; border:1px solid #ddd; margin-top:5px;}
+.box1 li {border-bottom:1px solid #ddd; padding:2px 5px 4px 5px; overflow:hidden; zoom:1; font-family:simsun;}
+.box1 input {vertical-align:middle;}
+.titleTR {background:#ddd;}
+.titleTR th {font-weight:bold;}
+</style>
+			<h2>修改行业</h2>
+			<form>
+			<p style="padding:10px 10px 0 10px;">
+				行业名称：
+				<input type="text" value="" />
+			</p>
+			<div style="border:1px solid #ddd; border-width:1px 0;padding:10px 0 5px 0;">
+				<table	width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="td2">
+							<h5>输入行业ID或关键字: <input type="text" size="20" value="" />
+								<input type="submit" value="搜索" />
+							</h5>
+							<div class="box1">
+								<table width="100%" class="datalist">
+									<tr class="titleTR">
+										<th>ID</th>
+										<th>行业名</th>
+										<th>&nbsp;</th>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="parent">加到父行业</a>
+											<a href="#" addTB="sub">加到子行业</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="parent">加到父行业</a>
+											<a href="#" addTB="sub">加到子行业</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="parent">加到父行业</a>
+											<a href="#" addTB="sub">加到子行业</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="parent">加到父行业</a>
+											<a href="#" addTB="sub">加到子行业</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="parent">加到父行业</a>
+											<a href="#" addTB="sub">加到子行业</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="parent">加到父行业</a>
+											<a href="#" addTB="sub">加到子行业</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="parent">加到父行业</a>
+											<a href="#" addTB="sub">加到子行业</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="parent">加到父行业</a>
+											<a href="#" addTB="sub">加到子行业</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="parent">加到父行业</a>
+											<a href="#" addTB="sub">加到子行业</a></td>
+									</tr>
+								</table>
+							</div>
+						</td>
+						<td class="td1">
+							<h5><b>父行业</b></h5>
+							<div class="box1">
+								<table width="100%" class="datalist" js="parent">
+									<tr>
+										<th>ID</th>
+										<th>行业名</th>
+									</tr>
+								</table>
+							</div>
+						</td>
+						<td class="td1">
+							<h5><b>子行业</b></h5>
+							<div class="box1">
+								<table width="100%" class="datalist" js="sub">
+									<tr>
+										<th>ID</th>
+										<th>行业名</th>
+									</tr>
+								</table>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div style="border-bottom:1px solid #ddd;padding:10px 0 5px 0; margin-bottom:10px;">
+				<table	width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="td2">
+							<h5>输入话题ID或关键字: <input type="text" size="20" value="" />
+								<input type="submit" value="搜索" />
+							</h5>
+							<div class="box1">
+								<table width="100%" class="datalist">
+									<tr class="titleTR">
+										<th>ID</th>
+										<th>话题名</th>
+										<th>&nbsp;</th>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="topic">添加</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="topic">添加</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="topic">添加</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="topic">添加</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="topic">添加</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="topic">添加</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="topic">添加</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="topic">添加</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="topic">添加</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="topic">添加</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="topic">添加</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="topic">添加</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>互联网</td>
+										<td><a href="#" addTB="topic">添加</a></td>
+									</tr>
+								</table>
+							</div>
+						</td>
+						<td class="td2">
+							<h5><b>关联话题</b></h5>
+							<div class="box1">
+								<table width="100%" class="datalist" js="topic">
+									<tr>
+										<th>ID</th>
+										<th>话题名</th>
+									</tr>
+								</table>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<p><input type="submit" value="保存" />
+				<input type="button" value="取消" onclick="location.href='industry.html'" /></p>
+<script type="text/javascript">
+$(function(){
+	$('a[addTB]').live('click', function(){
+		var a = $(this), nm = a.attr('addTB'), tb = $('table[js=' + nm + ']');
+		var tr = a.closest('tr').clone();
+		var id = parseInt(tr.find('td:eq(0)').text(), 10);
+		tr.find('td:eq(1)').prepend('<input type="checkbox" checked="true" value="' + id + '" name="' + nm + '" />');
+		tr.find('td:eq(2)').remove();
+		tb.append(tr);
+		return false;
+	});
+});
+</script>
+		</div>
+	</div>
+
+	<!--footer begin-->
+	<div id="footer">
+	 	<div id="copyright">
+	 	Copyright &copy; 2010 Ushi.cn
+	 	</div>
+ 	</div> 
+	<!--footer end-->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+#wrapper { margin:0; width:100%;}
+#header, #nav_utility, #searchbar, #footer { width:960px; margin:0 auto;}
+
+#main { margin:0 auto; width:1000px; background:url(../images/badge_img/bg_badge_page.png) no-repeat; padding-top:165px;}
+
+#inner-wrapper { width:995px; margin:0 auto;}
+.badge-bg-top { width:995px; height:30px; background:url(../images/badge_img/bg_badge_wrapper_top.png) no-repeat;}
+.badge-bg-center { padding:0 45px 0 40px; width:910px; background:url(../images/badge_img/bg_badge_wrapper_center.png); text-align:left;}
+.badge-bg-bottom { width:995px; height:40px; background:url(../images/badge_img/bg_badge_wrapper_bottom.png) no-repeat;}
+
+.content-title { font-family:"微软雅黑"; font-size:18px; margin-bottom:15px;}
+.content-text { font-size:14px; margin-bottom:25px; line-height:2;}
+
+.badge-process { width:908px; height:78px; background:url(../images/badge_img/bg_badge_process.png); margin:0 0 30px 0;}
+
+.badge-lottery-list { width:900px; margin-bottom:25px;}
+.badge-lottery-list li { width:180px; float:left;}
+.badge-lottery-list .badge-title-week { height:20px; font-size:14px; color:#494949; font-family:"微软雅黑"; margin-bottom:10px; text-align:center;}
+.badge-lottery-list .badge-present-img { width:140px; height:160px; margin:0 20px 5px 20px;}
+
+.badge-lottery-button { color:#949494; font-size:14px; font-family:"微软雅黑"; text-align:center;}
+
+.badge-cutline { width:926px; height:40px; background:url(../images/badge_img/bg_badge_cutline.png); margin:0 auto;}
+
+.badge-column { width:440px; float:left; margin:0 10px 20px 0;}
+.badge-column .badge-column-title { width:60px; margin-right:20px; float:left; font-family:"微软雅黑"; font-size:18px; text-align:right;}
+.badge-column .badge-column-title span { color:#a86700;}
+.badge-icon-frame { float:left;}
+.badge-icon-frame li { width:95px; height:20px; padding-top:110px; margin:0 15px 0 0; float:left; background-repeat:no-repeat; font-family:"微软雅黑"; font-size:12px; text-align:center;}
+
+.badge-icon-m01 { background:url(../../../bns/images/badge_system/badge_m_01.png)}
+.badge-icon-m02 { background:url(../../../bns/images/badge_system/badge_m_02.png)}
+.badge-icon-m03 { background:url(../../../bns/images/badge_system/badge_m_03.png)}
+.badge-icon-m04 { background:url(../../../bns/images/badge_system/badge_m_04.png)}
+.badge-icon-m05 { background:url(../../../bns/images/badge_system/badge_m_05.png)}
+.badge-icon-m06 { background:url(../../../bns/images/badge_system/badge_m_06.png)}
+.badge-icon-m07 { background:url(../../../bns/images/badge_system/badge_m_07.png)}
+.badge-icon-m08 { background:url(../../../bns/images/badge_system/badge_m_08.png)}
+.badge-icon-m09 { background:url(../../../bns/images/badge_system/badge_m_09.png)}
+.badge-icon-m10 { background:url(../../../bns/images/badge_system/badge_m_10.png)}
+.badge-icon-m11 { background:url(../../../bns/images/badge_system/badge_m_11.png)}
+.badge-icon-m12 { background:url(../../../bns/images/badge_system/badge_m_12.png)}
+.badge-icon-m13 { background:url(../../../bns/images/badge_system/badge_m_13.png)}
+.badge-icon-m14 { background:url(../../../bns/images/badge_system/badge_m_14.png)}
+.badge-icon-m15 { background:url(../../../bns/images/badge_system/badge_m_15.png)}
+.badge-icon-m16 { background:url(../../../bns/images/badge_system/badge_m_16.png)}
+.badge-icon-m17 { background:url(../../../bns/images/badge_system/badge_m_17.png)}
+.badge-icon-m18 { background:url(../../../bns/images/badge_system/badge_m_18.png)}
+.badge-icon-m19 { background:url(../../../bns/images/badge_system/badge_m_19.png)}
+.badge-icon-m20 { background:url(../../../bns/images/badge_system/badge_m_20.png)}
+.badge-icon-m21 { background:url(../../../bns/images/badge_system/badge_m_21.png)}
+.badge-icon-m22 { background:url(../../../bns/images/badge_system/badge_m_22.png)}
+.badge-icon-m23 { background:url(../../../bns/images/badge_system/badge_m_23.png)}
+.badge-icon-m24 { background:url(../../../bns/images/badge_system/badge_m_24.png)}
+.badge-icon-m25 { background:url(../../../bns/images/badge_system/badge_m_25.png)}
+.badge-icon-m26 { background:url(../../../bns/images/badge_system/badge_m_26.png)}
+.badge-icon-m27 { background:url(../../../bns/images/badge_system/badge_m_27.png)}
+
+.badge-text-block { float:none; margin:20px 0 20px 80px; text-align:left;}
+.badge-present-frame { float:none; margin:0 0 20px 20px; }
+.badge-present-frame li { float:left; width:120px; height:120px; text-align:center; margin: 0 10px 10px 0;}
+.badge-present-frame li img { max-height:120px; max-width:120px;}
+
+.btn-lottery { display:inline-block; width:145px; height:40px; background:url(../images/btn_lottery.png); cursor:pointer;}
+.btn-lottery-today { display:inline-block; width:145px; height:40px; background:url(../images/btn_lottery_today.png); cursor:pointer;}
+
+.badge-popup { position:absolute; z-index:1000; left:-10px;}
+.badge-popup-top { width:100%; height:15px; background:url(../images/badge_img/bg_badge_popup_top.png) no-repeat;}
+.badge-popup-content { width:150px; padding:20px; border-left:3px solid #C0C0C0; border-bottom:3px solid #C0C0C0; border-right:3px solid #C0C0C0; background-color:#FFF; text-align:center;}
+.badge-popup-content dl { margin-top:10px;}
+.badge-popup-content dd { float:left; width:150px; margin:0 0 10px 0; text-align:center;}
+.badge-popup-content dd img { max-height:150px; max-width:150px; margin:0 auto;}

@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.pro-owner-infolist li label {float:left; display:block; width:115px;}
+.pro-owner-infolist li span {display:block; margin-left:115px;}
+
+.btn-en {padding-left:4px!important; padding-right:4px!important;}
+
+.pro-fill-back a {padding:0 10px;}

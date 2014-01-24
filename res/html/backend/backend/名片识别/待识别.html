@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/ui.datepicker.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery.pack.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/ui.datepicker.js"></script>
+</head>
+
+<body>
+<div id="mainbody"> 
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf"> Operater：Chirsty
+			| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+	
+	<div id="container">
+		<h2>优士名片识别后台</h2>
+		<div class="search_area">
+			<form>
+				快速查询:
+				<input type="text"  value="关键字" />
+				<select>
+					<option value="">上传者</option>
+					<option value="">操作人</option>
+				</select>
+				&nbsp;&nbsp;
+				<select>
+					<option value="">待识别</option>
+					<option value="">正在识别</option>
+					<option value="">识别成功</option>
+					<option value="">识别失败</option>
+				</select>
+				<span style="margin-left:15px;">日期:</span>
+				<input type="text" name="" size="15" datepicker="y" />
+				-
+				<input type="text" name="" size="15" datepicker="y" />
+				&nbsp;&nbsp;
+				<input type="submit" value="&nbsp;查询&nbsp;" />
+			</form>
+		</div>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-bottom: 1px solid #ccc; margin: 10px 0;">
+			<tr>
+				<td style="width:80px; padding: 5px; text-align:center; background: #eee;"><a href="#">名片识别</a></td>
+				<td style="width:5px;">&nbsp;</td>
+				<td style="width:80px; padding: 5px; text-align:center; background: #ddd;"><a href="#">待识别</a></td>
+				<td style="width:5px;">&nbsp;</td>
+				<td style="width:80px; padding: 5px; text-align:center; background: #eee;"><a href="#">正在识别</a></td>
+				<td style="width:5px;">&nbsp;</td>
+				<td style="width:80px; padding: 5px; text-align:center; background: #eee;"><a href="#">识别成功</a></td>
+				<td style="width:5px;">&nbsp;</td>
+				<td style="width:80px; padding: 5px; text-align:center; background: #eee;"><a href="#">全部</a></td>
+				<td align="right"><span style="margin-right:15px;">当前操作：刘明</span>
+					今日识别<b>289</b>张，成功<b>200</b>张，失败<b>89</b>张
+					<span style="margin:auto 15px;"><a href="#">数据统计</a></span>
+				</td>
+			</tr>
+		</table>
+		<div style="float:left;">共有<span class="red">269</span>条待识别的名片，当前显示1-20条记录</div>
+		<div class="pagenav" style="text-align: right;"><span class="cur">正序排列</span><span><a href="#">倒序排列</a></span></div>
+		<table  width="100%" cellpadding="0" cellspacing="0" class="datalist mt10">
+			<tr>
+				<th width="5%">名片顺序</th>
+				<th width="10%">上传人</th>
+				<th width="15%">上传时间</th>
+				<th width="35%">名片缩略图</th>
+				<th width="10%">状态</th>
+				<th width="15%">操作</th>
+				<th width="10%">操作人</th>
+			</tr>
+			<tr>
+				<td>23</td>
+				<td><a href="#">张协成</a></td>
+				<td>2012-3-23 21:21</td>
+				<td>&nbsp;</td>
+				<td>待识别</td>
+				<td><input type="submit" value=" 立即识别 " /></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>23</td>
+				<td><a href="#">张协成</a></td>
+				<td>2012-3-23 21:21</td>
+				<td>&nbsp;</td>
+				<td class="orange">正在识别</td>
+				<td><input type="submit" disabled="disabled" value=" 立即识别 " /></td>
+				<td>张三</td>
+			</tr>
+			<tr>
+				<td>23</td>
+				<td><a href="#">张协成</a></td>
+				<td>2012-3-23 21:21</td>
+				<td>&nbsp;</td>
+				<td class="green">识别成功</td>
+				<td><input type="submit" value=" 立即识别 " /></td>
+				<td>李斯</td>
+			</tr>
+			<tr>
+				<td>23</td>
+				<td><a href="#">张协成</a></td>
+				<td>2012-3-23 21:21</td>
+				<td>&nbsp;</td>
+				<td class="red">识别失败</td>
+				<td><input type="submit" value=" 立即识别 " /></td>
+				<td>李斯</td>
+			</tr>
+		</table>
+		<div style="float:left; margin-top: 10px;">共有<span class="red">269</span>条待识别的名片，当前显示1-20条记录</div>
+		<div class="pagenav" style="text-align: right;"><span class="cur">1</span><span><a href="#">2</a></span><span><a href="#">3</a></span><span><a href="#">4</a></span><span><a href="#">5</a></span><span><a href="#">末页</a></span></div>
+	</div>
+</div>
+<!--footer begin-->
+<div id="footer">
+	<div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+</div>
+</div>
+<!--footer end-->
+</body>
+</html>

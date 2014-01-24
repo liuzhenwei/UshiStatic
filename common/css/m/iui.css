@@ -1,0 +1,479 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    font-family: Helvetica;
+    background: #FFFFFF;
+    color: #000000;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: none;
+	font-size: 16px;
+}
+
+body > *:not(.toolbar) {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 45px;
+    width: 100%;
+    height: auto;
+    min-height: 415px;
+    -webkit-transition-duration: 500ms;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transform: translateX(0%);
+}
+body#loginpage > *:not(.toolbar):not(.dialog) {
+    top: 90px;
+}
+body#sitepage > *:not(.toolbar):not(.dialog) {
+    top: 70px;
+}
+
+body > *[selected="true"] {
+    display: block;
+}
+
+li > a[selected], li > a:active {
+    background-color: #0066aa !important;
+    color: #FFFFFF !important;
+}
+
+li > a[selected="loading"] {
+	background: #0066aa url(icoLoading.gif) no-repeat 55px center;
+}
+
+h2 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 16px;
+}
+h4 {
+	font-size: 14px;
+}
+ul, li {
+	list-style: none none;
+	margin: 0;
+	padding: 0;
+}
+ul.disc li {
+	list-style-type: disc;
+	margin-left: 30px;
+}
+a {
+	color: #0066aa;
+	text-decoration: none;
+	outline: none;
+}
+.center {
+	text-align: center !important;
+}
+.aRight {
+	text-align: right !important;
+}
+.middle {
+	vertical-align: middle;
+}
+.mgTop {
+	margin-top: 1em;
+}
+.mgBtm {
+	margin-bottom: 1em;
+}
+.mgLeft {
+	margin-left: 1em;
+}
+.mgRight {
+	margin-right: 1em;
+}
+.pdTop {
+	padding-top: 1em;
+}
+.pdBtm {
+	padding-bottom: 1em;
+}
+.pdLeft {
+	padding-left: 1em;
+}
+.pdRight {
+	padding-right: 1em;
+}
+.bdTop {
+	border-top: 1px #CCC solid;
+}
+.bdBtm {
+	border-bottom: 1px #CCC solid;
+}
+.splitLine {
+	margin: auto 10px;
+}
+.bold {
+	font-weight: bold;
+}
+.normal {
+	font-weight: normal;
+}
+.red, .error {
+	color: #F00;
+}
+.green, .success {
+	color: #066f08;
+}
+.gray {
+	color: #999;
+}
+.blue {
+	color: #0066aa;
+}
+.clearboth {
+	clear: both;
+}
+
+/************************************************************************************************/
+
+body > .toolbar {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-bottom: 1px solid #9cb6cf;
+    padding: 0 10px 10px 10px;
+    height: 45px;
+    background: #acc9e5 url(bgToolbar.png) repeat-x left top;
+}
+body#loginpage > .toolbar {
+	height: 90px;
+	padding: 10px 0;
+}
+body#sitepage > .toolbar {
+	height: 70px;
+}
+body#loginpage #homeButton {
+	display: none;
+}
+
+.toolbar > h1 {
+    position: relative;
+    overflow: hidden;
+    left: 50%;
+    margin: 0 0 0 -56px;
+    padding: 0;
+	background: url(logoEvent.png) no-repeat center center;
+	outline: none;
+    width: 112px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-overflow: ellipsis;
+	text-indent: -9999px;
+    white-space: nowrap;
+    color: #000000;
+    cursor: pointer;
+}
+body#loginpage .toolbar > h1 {
+	background: url(logo.png) no-repeat center center;
+	height: 70px;
+	width: 100px;
+	margin: 0 0 0 -50px;
+}
+body#sitepage .toolbar > h1 {
+	background: none;
+	text-indent: 0;
+    padding-top: 13px;
+	height: 23px;
+    width: 180px;
+	margin: 0 0 0 -90px;
+    cursor: default;
+}
+body#sitepage .toolbar > p {
+	margin: 8px auto 0 auto;
+	font-size: 14px;
+	text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	width: 280px;
+	overflow: hidden;
+}
+
+/*********************************************************************/
+
+.button {
+    position: absolute;
+    overflow: hidden;
+    top: 8px;
+    right: 6px;
+    margin: 0;
+    border-width: 0 10px;
+    padding: 0 3px;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 0;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    white-space: nowrap;
+    background: none;
+}
+
+#backButton {
+    display: none;
+    left: 6px;
+    right: auto;
+	top: 8px;
+    padding: 0;
+    width: 54px;
+    height: 30px;
+    text-indent: -9999px;
+    outline: none;
+    background: url(backButton.png) no-repeat;
+}
+body#loginpage .toolbar > #backButton {
+	top: 45px;
+}
+#backButton.exitSite, #goUshiButton {
+    background: url(backEvent.png) no-repeat;
+}
+#goUshiButton {
+    width: 54px;
+    height: 30px;
+    text-indent: -9999px;
+    outline: none;
+}
+
+#refreshButton {
+	display: none;
+    width: 43px;
+    height: 31px;
+    text-indent: -9999px;
+    outline: none;
+    background: url(refreshButton.png) no-repeat;
+}
+
+.bigButton,
+.blueButton,
+.whiteButton,
+.redButton,
+.greenButton {
+    display: block;
+    border-width: 0 10px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: inherit;
+    white-space: nowrap;
+	line-height: 16px;
+}
+
+.bigButton {
+    -webkit-border-image: url(bigButton.png) 0 10 0 10;
+    -moz-border-image: url(bigButton.png) 0 10 0 10;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 2px 0;
+	font-size: 20px;
+}
+.blueButton {
+    -webkit-border-image: url(blueButton.png) 0 10 0 10;
+    -moz-border-image: url(blueButton.png) 0 10 0 10;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
+}
+.whiteButton {
+    -webkit-border-image: url(whiteButton.png) 0 10 0 10;
+    -moz-border-image: url(whiteButton.png) 0 10 0 10;
+    text-shadow: #CCC 0 1px 0;
+	color: #666;
+}
+.redButton {
+    -webkit-border-image: url(redButton.png) 0 10 0 10;
+    -moz-border-image: url(redButton.png) 0 10 0 10;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
+}
+.greenButton {
+    -webkit-border-image: url(greenButton.png) 0 10 0 10;
+    -moz-border-image: url(greenButton.png) 0 10 0 10;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
+}
+
+/************************************************************************************************/
+
+input[type=text], input[type=password], textarea {
+	width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	border: 1px #BBBBBB solid;
+	padding: 7px;
+	font-size: 14px;
+	-webkit-box-shadow: 0 1px 2px #AAA;
+}
+textarea {
+	height: 100px;
+}
+select {
+	-webkit-appearance: menulist;
+	-webkit-border-horizontal-spacing: 0px;
+	-webkit-border-vertical-spacing: 0px;
+	-webkit-box-align: center;
+	-webkit-box-sizing: border-box;
+	-webkit-rtl-ordering: logical;
+	font-size: 14px;
+}
+  
+body > .dialog {
+    top: 0;
+	left: 0;
+    width: 100%;
+	height: 100%;
+    min-height: 417px;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    text-align: center;
+}
+
+.dialogCont {
+	width: 288px;
+	margin: 30px auto;
+	background: #FFF;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	padding: 4px;
+	font-size: 18px;
+	-webkit-box-shadow: 0 1px 2px #AAA;
+	text-align: center;
+}
+.dialogCont a, .dialogCont span {
+	cursor: pointer;
+}
+.dialogTitle {
+	background: #81a8c8;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	overflow: hidden;
+	color: #FFF;
+}
+.dialogTitle h2 {
+	font-size: 16px;
+	text-align: center;
+	margin: 7px;
+	padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dialogTitle a {
+	color: #FFF;
+}
+.dialogTitle > .dialogClose {
+	float: right;
+	margin: 5px;
+}
+.dialogTitle .closeDialogBtn {
+	display: inline-block;
+	background: url(icoDlgClose.png) no-repeat;
+	width: 23px;
+	height: 21px;
+	overflow: hidden;
+	text-indent: -999px;
+	outline: none;
+}
+
+/************************************************************************************************/
+
+.toggle {
+    position: relative;
+    width: 100px;
+    height: 28px;
+	overflow: hidden;
+    background: url("toggle.png") repeat-x scroll 0 0 #FFFFFF;
+    border: 1px solid #888888;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 30px;
+	cursor: pointer;
+}
+
+.toggle[toggled="true"] {
+	background: url("toggleOn.png") repeat-x scroll 0 0 #194FDB;
+	border: 1px solid #143fae;
+}
+
+.toggleOn {
+    display: none;
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    color: #FFFFFF;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px -1px 0;
+}
+
+.toggleOff {
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    right: 0;
+    top: 0;
+    color: #666666;
+}
+
+.toggle[toggled="true"] > .toggleOn {
+    display: block;
+}
+
+.toggle[toggled="true"] > .toggleOff {
+    display: none;
+}
+
+.thumb {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 40px;
+    height: 28px;    
+    border: 1px solid #888888;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+	background: url("thumb.png") repeat-x scroll 0 0 #FFFFFF;
+}
+
+.toggle[toggled="true"] > .thumb {
+    left: auto;
+    right: -1px;
+}
+
+/************************************************************************************************/
+
+#preloader {
+    display: none;
+    top: 0 !important;
+	left: 0;
+    width: 100%;
+	height: 100%;
+    min-height: 417px;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0;
+    text-align: center;
+}
+.icoPageLoading {
+	margin: 120px auto 0 auto;
+	background: url(bgLoading.png) no-repeat;
+	width: 207px;
+	height: 53px;
+	display: block;
+}

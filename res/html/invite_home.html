@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>邀请朋友加入人脉平方</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+</head>
+<body id="page_member">
+<div id="wrapper" class="container">
+    <!--#include file="header.html"-->
+    <div id="main">
+		<div class="tabs-common clearfix">
+			<ul>
+				<li class="current"><a href="invite_home.html">邀请朋友加入</a></li>
+				<li><a href="invite_you_may_know.html">您可能认识</a></li>
+				<li><a href="invite_you_mayhope_know.html">你可能希望认识</a></li>
+			</ul>
+			<div class="float-right"><a href="invite_history.html">查看邀请记录</a></div>
+		</div>
+        <div class="success"> 邀请发送成功
+            <h5><a href="/u/7841">返回 »</a> </h5>
+        </div>
+        <div class="column-2-2">
+			<div class="ivt-home">
+				<div class="ivt-box-left float-left">
+					<h3>最快捷的方式</h3>
+					<div class="ivt-box float-none">
+						<div class="box-title">
+							<h4>将邀请链接分享到朋友圈</h4>
+						</div>
+						<div class="box-cont" style="height:70px;">
+							<div class="bshare-custom">
+								<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+								<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+								<a title="分享到腾讯朋友" class="bshare-qqxiaoyou"></a>
+								<a title="分享到人人网" class="bshare-renren"></a>
+								<a title="分享到开心" class="bshare-kaixin001"></a>
+							</div>
+						</div>
+					</div>
+					<div class="ivt-box float-none">
+						<div class="box-title">
+							<h4>从MSN或网站邮箱通讯录中的联系人中寻找</h4>
+						</div>
+						<div class="box-cont">
+						<form action="#" method="post" checkForm="Msn">
+							<input type="hidden" name="email" value="" />
+							<p class="margin-top15e"><label>Email或MSN的登录ID:</label>
+								<span class="red spe-left2" style="display:none;" js="emailerr">无效的email地址</span></p>
+							<div class="margin-btm15e clearfix"><input type="text" js="email1" maxlength="64" class="input-field input-w-160 float-left"  />
+								<label class="large float-left spe-left-pd spe-right-pd">@</label>
+								<div js="email2" class="input-field w130 float-left select-field">
+									<span>hotmail.com</span>
+									<span class="ico-select" id="showEmailList">&nbsp;</span>
+								</div>
+							</div>
+							<p><label>密码:</label></p>
+							<p><input type="password" name="passwd" class="input-field" /></p>
+							<div>
+								<input type="submit" submitwaiting="如果你的联系人列表过长，请耐心等待..." value=" 下一步：选择联系人 " class="special-btn">
+								<p class="quiet pd-top05e">优士网不会保存你的账号和密码 </p>
+							</div>
+						</form>
+						</div>
+						<div class="btm-block">
+							<p class="quiet">我们目前支持的主流在线邮箱包括：</p>
+							<p><img height="28" msnivt="hotmail.com" class="middle hand" src="../../bns/images/ico_ivt_msn.png" />
+								<img height="28" msnivt="gmail.com" class="middle hand" src="../../bns/images/ico_ivt_gmail.png" />
+								<img height="28" msnivt="163.com" class="middle hand" src="../../bns/images/ico_ivt_163.png" />
+								<a href="/sns/sns!viewInvitePage.jhtml?inviteType=invitebyaddressbook" class="spe-left2 cnfont">更多&gt;&gt;</a></p>
+						</div>
+					</div>
+					<div class="ivt-box float-none">
+						<div class="box-title">
+							<h4>从Outlook等邮件客户端中的联系人中寻找</h4>
+						</div>
+						<div class="box-cont">
+						<form action="#" method="post" enctype="multipart/form-data" checkForm="CSV">
+							<p class="margin-top15e quiet" js="csverr">从Outlook等电子邮件客户段中导出并上传联系人文件，文件格式必须是 .csv 或 .vcf 其中之一
+								<br /><a href="/sns/sns!viewInvitePage.jhtml?inviteType=invitebyoutlook">了解更多</a></p>
+							<div js="csvvcf" class="input-field file-field margin-bottom">
+								<span></span>
+								<span class="ico-file">&nbsp;</span>
+								<input type="file" name="csvFile" />
+							</div>
+							<div>
+								<input type="submit" submitwaiting="如果你的联系人列表过长，可能需要等待2~3分钟，请耐心等待。" value="上传" class="special-btn">
+								<!-- 判断是通过Outlook还是 linked xing邀请-->
+								<input type="hidden" name="importXL" value="1">
+								<p class="quiet pd-top05e">优士网不会泄露你的联系方式给任何人</p>
+							</div>
+						</form>
+						</div>
+						<div class="btm-block">
+							<p>您可以从以下社交网站中导出联系人文件：</p>
+							<p><img src="../../bns/images/ico_ivt_csv.png" width="133" height="28" class="middle" />
+								<a href="/sns/sns!viewInvitePage.jhtml?inviteType=invitebylinkedin" class="spe-left2 cnfont">导出方式详解&gt;&gt;</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="float-left">
+					<h3 class="clear">最有效的方法</h3>
+					<div class="ivt-box float-none">
+						<div class="box-title">
+							<h4>通过直接链接邀请</h4>
+						</div>
+						<div class="box-cont" style="height:70px;">
+							<p><label>请复制以下链接并通过QQ、MSN等发送给您的朋友:</label></p>
+							<p><input type="text" name="" class="input-field" /></p>
+						</div>
+					</div>
+					<div class="ivt-box float-none">
+						<div class="box-title">
+							<h4>通过手机号码：</h4>
+						</div>
+						<div class="box-cont">
+							<p class="margin-top15e"><label>输入朋友的手机号码发送邀请，多个号码之间请以换行隔开</label></p>
+							<div><textarea class="input-field"></textarea></div>
+							<p class="margin-top05e"><a href="#">个性化定制短信内容</a></p>
+							<p><input type="button" class="special-btn large-btn" value=" 发送邀请 " /></p>
+						</div>
+					</div>
+					<div class="ivt-box float-none">
+						<div class="box-title">
+							<h4>输入Email地址邀请</h4>
+						</div>
+						<div class="box-cont">
+							<p class="margin-top15e"><label>请在此处输入电邮地址:</label></p>
+							<div><textarea class="input-field"></textarea></div>
+							<p class="margin-top05e"><a href="#">个性化邀请信内容</a></p>
+							<p><input type="button" class="special-btn large-btn" value=" 发送邀请 " /></p>
+						</div>
+					</div>
+				</div>
+				<p class="clear"><a href="invite_home_all.html" class="cnfont">更多邀请方式 &gt;&gt;</a></p>
+			</div>
+        </div>
+        <div class="column-1 rightsidebar">
+            <div class="ad-ivt">
+                <h4 class="fontblue">加入中国最活跃的商务社交网站“优士”的四个理由</h4>
+                <ul class="ad-ivt-list">
+                     <li>与全球管理大师-<a href="http://www.xuequfang.com/2010-Master-Forum/stephencovey-Introduction.html">史蒂夫柯维</a>面对面交流的机会</li>
+					  <li>一个月白金会员资格</li>
+					  <li>精美的商务礼品</li>
+					  <li>开拓新商机、结识高端商务人脉</li>
+                </ul>
+                 <p><a class="special-btn" href="help_ad.html"><span>了解详情</span></a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://static.bshare.cn/b/buttonLite.js#uuid=3fdcc2ed-8a07-4d3c-96b1-7a4484d82a26&style=-1"></script>
+<script type="text/javascript" src="http://static.bshare.cn/b/bshareC2P.js"></script>
+<!--#include file="footer.html"-->
+</body>
+</html>

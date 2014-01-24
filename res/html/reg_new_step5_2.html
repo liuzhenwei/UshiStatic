@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员注册::第五步</title>
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/reg.js"></script>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<style>
+.import-box{
+	width: 600px;
+	clear: both;
+	overflow: hidden;
+	zoom:1;
+}
+.import-left{
+	padding-top: 5px;
+	float: left;
+	width: 295px;
+}
+
+.import-right{
+	float: right;
+	width: 260px;
+	background-color: #f5f5f5;
+	border: 1px solid #eaeaea;
+	padding: 17px 17px 10px;
+}
+
+.import-right h4{
+	font-size: 13px;
+	color: #555;
+}
+
+.import-right ul li{
+	padding-bottom: 5px;
+}
+
+</style>
+</head>
+<body id="page_public">
+<div id="wrapper" class="container">
+	<div id="header_reg" class="clearfix">
+		<div id="logo"><img src="../../bns/images/youshi_logo.png" width="80" height="51" alt="优士" /></div>
+	</div>
+	<div id="main" class="clearfix">
+		<div class="column-full">
+			<div class="reg-top clearfix">
+				<div class="reg-tit">
+					<h3>看优士网上还有谁</h3>
+					<p class="quiet">您的很多朋友可能已经在优士网上了，您可以通过以下最快捷的方式找到他们：</p>
+				</div>
+				<div class="reg-stepbar" id="reg_step_5">5/5 步</div>
+			</div>
+			<div class="regform-wrap">
+				<form>
+					<div class="form-findfrds">
+						<ul class="p-h-list">
+							<li>
+								<input type="radio" name="radio" id="for_msn" />
+								<label for="for_msn"><span class="third-ids" id="id_msn"><b class="hide">Windows live messenger</b></span></label>
+							</li>
+							<li>
+								<input type="radio" name="radio" id="for_gmail" />
+								<label for="for_gmail"><span class="third-ids" id="id_gmail"><b class="hide">Gmail</b></span></label>
+							</li>
+							<li>
+								<input type="radio" name="radio" id="for_yahoo" />
+								<label for="for_yahoo"><span class="third-ids" id="id_yahoo"><b class="hide">Yahoo mail</b></span></label>
+							</li>
+							<li>
+								<input type="radio" name="radio" id="for_linkedin" />
+								<label for="for_linkedin"><span class="third-ids" id="id_linkedin"><b class="hide">Linkedin</b></span></label>
+							</li>
+							<li>
+								<input type="radio" name="radio" checked="checked" id="for_outlook" />
+								<label for="for_outlook"><span class="third-ids" id="id_outlook"><b class="hide">Outlook</b></span></label>
+							</li>
+							<li>
+								<input type="radio" name="radio" id="for_other" />
+								<label for="for_other"><span class="large">其他</span></label>
+							</li>
+						</ul>
+						<div class="choose-box">
+							<div class="error" style="width:500px;">您选择的文件格式有误，请重新选择</div>
+							<h4>请选择地址薄文件：</h4>
+							<p>
+								<input name="" type="file" />
+								<span class="quiet spe-left">上传邮件地址簿文件(*.CSV、*.VCF)，然后寻找你的朋友。</span></p>
+							<p class="margin-top">
+								<input class="special-btn" type="submit" value="查找朋友" />
+								<a href="#">跳过此步</a></p>
+						</div>
+						<div class="import-box">
+							<div class="import-left">
+								<p>上传Outlook联系人文件（*.CSV、*.VCF格式）</p>
+								<input name="" type="file" />
+								<p class="margin-top15e">上传中请稍后...</p>
+								<p class="margin-top">
+									<input class="special-btn" type="submit" value="导入" />
+									<a href="#">跳过这一步</a></p>
+							</div>
+							<div class="import-right">
+								<h4>没有Outlook联系人CSV、VCF文件？</h4>
+								<p>以下帮助你如何获得联系人文件：</p>
+								<ul>
+									<li><a href="#">Outlook 2002/2003 导出联系人帮助</a></li>
+									<li><a href="#"> Outlook 2007 导出联系人帮助</a></li>
+									<li><a href="#">Outlook 2010 导出联系人帮助</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--#include file="footer.html"--> 
+</div>
+</body>
+</html>

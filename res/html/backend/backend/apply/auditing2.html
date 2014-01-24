@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>优士网客服系统</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/ui.datepicker.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../js/jquery.pack.js"></script>
+<script src="../js/general.js"></script>
+<script src="../js/thickbox.js"></script>
+<script src="../js/ui.datepicker.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="..../../bns/images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+  <div class="lf">  
+		<div id="menu_out" class="leftmenu">	
+			<ul id="menu" class="menu collapsible">
+				<li>
+					<a href="../index.htm">Homepage</a>
+				</li>
+				<li>
+					<a href="#">Members</a>
+					<ul>
+						<li><a href="member_list.htm">Uncensored members</a></li>
+						<li><a href="deactived_member_list.htm">Deactived members</a></li>
+						<li><a href="search_members.htm">Search members</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Contents</a>
+					<ul>
+						<li><a href="javascript:void(0);">Image</a></li>
+						<li><a href="javascript:void(0);">Text content</a></li>
+					</ul>
+				</li>	
+				<li>
+					<a href="#">Filters</a>
+					<ul>
+						<li><a href="javascript:void(0);">Create filter</a></li>
+						<li><a href="javascript:void(0);">Manage filter</a></li>	
+					</ul>
+				</li>	
+				<li>
+					<a href="#">Groups</a>
+					<ul>
+						<li><a href="javascript:void(0);">Manage group quota</a></li>
+						<li><a href="javascript:void(0);">Group list</a></li>	
+					</ul>
+				</li>			
+				<li>
+					<a href="#">Payment</a>
+					<ul>
+						<li><a href="javascript:void(0);">Payment management</a></li>
+					</ul>
+				</li>
+                <li class="current">
+					<a href="#">用户申请审核</a>
+					<ul>
+						<li><a href="auditing.html">申请加入用户审批</a></li>
+                        <li><a href="data.html">申请加入数据统计</a></li>
+					</ul>
+				</li>			
+			</ul>
+	  </div>
+  </div>  
+  
+  <div class="rf">
+	  <div id="container">
+	  <h2>用户申请审核</h2>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-bottom: 1px solid #ccc; margin: 10px 0;">
+    <tr>
+        <td style="width:100px; padding: 5px; text-align:center; background: #F7F7F7;"><a href="auditing.html">待处理用户</a></td>
+        <td style="width:5px;">&nbsp;</td>
+        <td style="width:100px; padding: 5px; text-align:center; background: #ddd;"><a href="#">已处理用户</a></td>
+        <td >&nbsp;</td>
+    </tr>
+</table>
+
+	  
+	  
+	 	
+		
+      <p><label>申请时间：</label>                  
+                  <input type="text" name="textfield" id="textfield" />
+                  至
+                  <input type="text" name="textfield2" id="textfield2" /><label class="left20">邮箱：</label>
+                  <input type="text" name="textfield3" id="textfield3" />                 
+                  <input type="submit" name="button" id="button" value="查询" />
+        </p>
+        
+        <p style="margin:20px 0;">
+            
+            <input type="checkbox" name="checkbox" id="checkbox" /><label class="left5">全选</label>
+            <span class="left10"><input type="checkbox" name="checkbox" id="checkbox" /><label class="left5">反选</label></span><a href="#" class="left200">同意加入</a> <span class="left10">|</span><a href="#" class="left10">暂时拒绝</a> </p>
+            
+      
+      
+      
+      
+      
+	    <table width="100%" cellpadding="0" cellspacing="0" class="datalist mt10">
+            <tr>
+                <th width="71" height="45">选择</th>
+                <th width="316">基本信息</th>
+                <th width="196">工作经历</th>
+                <th width="64">被推荐人</th>
+                <th width="109">最迟答复时间</th>
+            </tr>
+            <tr>
+                <td align="left"><label>
+                    <input type="checkbox" name="checkbox2" id="checkbox2" />
+                </label></td>
+                <td><a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700" class="thickbox"><img src="http://www.ushi.cn../../common/images/face_120.png" width="80" border="0" /></a> <br/>
+                        <a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700">张涛</a><span class="normal">中国大陆 上海</span>
+                        <div class="extra">邮箱：guanghua@gmail.com</div>
+                    <div>手机：1373426382</div></td>
+                <td height="5">上海梅霖技术有限公司 高级咨询师 </td>
+                <td><p>同事：5人</p>
+                        <p>同学：20人</p>
+                    <p>同行：23人</p>
+                     
+                </td>
+                <td>2010-09-10&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="left"><label>
+                    <input type="checkbox" name="checkbox11" id="checkbox12" />
+                </label></td>
+                <td><a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700" class="thickbox"><img src="http://www.ushi.cn../../common/images/face_120.png" width="80" border="0" /></a> <br/>
+                        <a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700">张涛</a><span class="normal">中国大陆 上海</span>
+                        <div class="extra">邮箱：guanghua@gmail.com</div>
+                    <div>手机：1373426382</div></td>
+                <td height="5">上海梅霖技术有限公司 高级咨询师 </td>
+                <td><p>同事：5人</p>
+                        <p>同学：20人</p>
+                    <p>同行：23人</p>
+                     
+                </td>
+                <td>2010-09-10&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="left"><label>
+                    <input type="checkbox" name="checkbox11" id="checkbox13" />
+                </label></td>
+                <td><a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700" class="thickbox"><img src="http://www.ushi.cn../../common/images/face_120.png" width="80" border="0" /></a> <br/>
+                        <a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700">张涛</a><span class="normal">中国大陆 上海</span>
+                        <div class="extra">邮箱：guanghua@gmail.com</div>
+                    <div>手机：1373426382</div></td>
+                <td height="5">上海梅霖技术有限公司 高级咨询师 </td>
+                <td><p>同事：5人</p>
+                        <p>同学：20人</p>
+                    <p>同行：23人</p>
+                     
+                </td>
+                <td>2010-09-10&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="left"><label>
+                    <input type="checkbox" name="checkbox11" id="checkbox16" />
+                </label></td>
+                <td><a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700" class="thickbox"><img src="http://www.ushi.cn../../common/images/face_120.png" width="80" border="0" /></a> <br/>
+                        <a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700">张涛</a><span class="normal">中国大陆 上海</span>
+                        <div class="extra">邮箱：guanghua@gmail.com</div>
+                    <div>手机：1373426382</div></td>
+                <td height="5">上海梅霖技术有限公司 高级咨询师 </td>
+                <td><p>同事：5人</p>
+                        <p>同学：20人</p>
+                    <p>同行：23人</p></td>
+                <td>2010-09-10&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="left"><label>
+                    <input type="checkbox" name="checkbox11" id="checkbox15" />
+                </label></td>
+                <td><a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700" class="thickbox"><img src="http://www.ushi.cn../../common/images/face_120.png" width="80" border="0" /></a> <br/>
+                        <a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700">张涛</a><span class="normal">中国大陆 上海</span>
+                        <div class="extra">邮箱：guanghua@gmail.com</div>
+                    <div>手机：1373426382</div></td>
+                <td height="5">上海梅霖技术有限公司 高级咨询师 </td>
+                <td><p>同事：5人</p>
+                        <p>同学：20人</p>
+                    <p>同行：23人</p></td>
+                <td>2010-09-10&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="left"><label>
+                    <input type="checkbox" name="checkbox11" id="checkbox14" />
+                </label></td>
+                <td><a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700" class="thickbox"><img src="http://www.ushi.cn../../common/images/face_120.png" width="80" border="0" /></a> <br/>
+                        <a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700">张涛</a><span class="normal">中国大陆 上海</span>
+                        <div class="extra">邮箱：guanghua@gmail.com</div>
+                    <div>手机：1373426382</div></td>
+                <td height="5">上海梅霖技术有限公司 高级咨询师 </td>
+                <td><p>同事：5人</p>
+                        <p>同学：20人</p>
+                    <p>同行：23人</p></td>
+                <td>2010-09-10&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="left"><label>
+                    <input type="checkbox" name="checkbox11" id="checkbox19" />
+                </label></td>
+                <td><a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700" class="thickbox"><img src="http://www.ushi.cn../../common/images/face_120.png" width="80" border="0" /></a> <br/>
+                        <a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700">张涛</a><span class="normal">中国大陆 上海</span>
+                        <div class="extra">邮箱：guanghua@gmail.com</div>
+                    <div>手机：1373426382</div></td>
+                <td height="5">上海梅霖技术有限公司 高级咨询师 </td>
+                <td><p>同事：5人</p>
+                        <p>同学：20人</p>
+                    <p>同行：23人</p></td>
+                <td>2010-09-10&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="left"><label>
+                    <input type="checkbox" name="checkbox11" id="checkbox18" />
+                </label></td>
+                <td><a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700" class="thickbox"><img src="http://www.ushi.cn../../common/images/face_120.png" width="80" border="0" /></a> <br/>
+                        <a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700">张涛</a><span class="normal">中国大陆 上海</span>
+                        <div class="extra">邮箱：guanghua@gmail.com</div>
+                    <div>手机：1373426382</div></td>
+                <td height="5">上海梅霖技术有限公司 高级咨询师 </td>
+                <td><p>同事：5人</p>
+                        <p>同学：20人</p>
+                    <p>同行：23人</p></td>
+                <td>2010-09-10&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="left"><label>
+                    <input type="checkbox" name="checkbox11" id="checkbox17" />
+                </label></td>
+                <td><a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700" class="thickbox"><img src="http://www.ushi.cn../../common/images/face_120.png" width="80" border="0" /></a> <br/>
+                        <a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700">张涛</a><span class="normal">中国大陆 上海</span>
+                        <div class="extra">邮箱：guanghua@gmail.com</div>
+                    <div>手机：1373426382</div></td>
+                <td height="5">上海梅霖技术有限公司 高级咨询师 </td>
+                <td><p>同事：5人</p>
+                        <p>同学：20人</p>
+                    <p>同行：23人</p></td>
+                <td>2010-09-10&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="left"><label>
+                    <input type="checkbox" name="checkbox11" id="checkbox20" />
+                </label></td>
+                <td><a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700" class="thickbox"><img src="http://www.ushi.cn../../common/images/face_120.png" width="80" border="0" /></a> <br/>
+                        <a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700">张涛</a><span class="normal">中国大陆 上海</span>
+                        <div class="extra">邮箱：guanghua@gmail.com</div>
+                    <div>手机：1373426382</div></td>
+                <td height="5">上海梅霖技术有限公司 高级咨询师 </td>
+                <td><p>同事：5人</p>
+                        <p>同学：20人</p>
+                    <p>同行：23人</p>
+                      
+                </td>
+                <td>2010-09-10&nbsp;</td>
+            </tr>
+        </table>
+	    <p style="margin:20px 0;">
+            
+            <input type="checkbox" name="checkbox" id="checkbox" /><label class="left5">全选</label>
+            <span class="left10"><input type="checkbox" name="checkbox" id="checkbox" /><label class="left5">反选</label></span><a href="#" class="left200">同意加入</a> <span class="left10">|</span><a href="#" class="left10">暂时拒绝</a> </p>
+        
+        
+        
+	  </div>
+  </div>
+  <!--footer begin-->
+  <div id="footer">
+	 	<div id="copyright">
+	 	Copyright &copy; 2010 Ushi.cn
+	 	</div>
+ 	</div> 
+	</div>
+  <!--footer end-->
+</body>
+</html>

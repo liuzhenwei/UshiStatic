@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/ui.base/jquery-ui-1.8.21.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/jquery-1.5.2.min.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.22.min.js"></script>
+<script src="../../../../../common/js/widget.js"></script>
+</head>
+
+<body>
+<div id="mainbody"> 
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf"> Operater：Chirsty
+			| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+<style type="text/css">
+.f-right {float:right;}
+.rsmm-cont {padding:10px; margin:0;}
+.rsmm-cont li {list-style:none none; padding-bottom:3px;}
+.rsmm-cont .rsmm-list {margin-left:15px; display:none;}
+.rsmm-cont .rsmm-list li {list-style:none none; padding:2px 0 3px 0; list-style-type:disc;}
+.rsm-container {padding:5px 0;}
+.rsm-info-table th, .rsm-info-table td {padding:0 5px 5px 0;}
+.rsm-info-table th {text-align:right; vertical-align:top; padding-top:3px;}
+.rsm-rv-info li {padding-top:3px;}
+.rsm-rv-info li div {display:inline-block; *display:inline;}
+.rsm-rv-info li div.rsm-rv-col1 {width:25%;}
+.rsm-rv-info li div.rsm-rv-col2 {width:20%;}
+.rsm-rv-info li div.rsm-rv-col3 {width:50%;}
+.rsm-rm-info li {border-bottom:1px dashed #ccc; padding:3px 3px 3px 0;}
+</style>
+<script type="text/javascript">
+$(function(){
+	$('.rsmm-cont>li>a').click(function(){
+		var ul = $(this).siblings('ul');
+		$('.rsmm-cont ul.rsmm-list').not(ul).hide();
+		ul.toggle();
+	});
+});
+</script>
+	<div class="lf">
+		<div id="menu_out" class="leftmenu"> 
+			<ul class="rsmm-cont">
+				<li><a href="javascript:;"><b>CTO</b></a>
+					<ul class="rsmm-list">
+						<li><a href="javascript:;">张三</a></li>
+						<li><a href="javascript:;">张三</a></li>
+						<li><a href="javascript:;">张三</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;"><b>前端开发工程师</b></a>
+					<ul class="rsmm-list">
+						<li><a href="javascript:;">张三</a></li>
+						<li><a href="javascript:;">张三</a></li>
+						<li><a href="javascript:;">张三</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="rf">
+		<div id="container">
+			<h2>简历管理</h2>
+			<div class="rsm-container">
+				<form action="" method="post">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="rsm-info-table">
+						<colgroup>
+							<col width="7%" />
+							<col width="18%" />
+							<col width="7%" />
+							<col width="18%" />
+							<col width="7%" />
+							<col width="18%" />
+							<col width="7%" />
+							<col width="18%" />
+						</colgroup>
+						<tr>
+							<th>用户Id:</th>
+							<td><input type="text" size="20" value="" /></td>
+							<th>姓名:</th>
+							<td><input type="text" size="20" value="" /></td>
+							<th>手机:</th>
+							<td><input type="text" size="20" value="" /></td>
+							<th>附件:</th>
+							<td><a href="#">简历</a>
+								<input type="file" size="5" />
+							</td>
+						</tr>
+						<tr>
+							<th>当前职位:</th>
+							<td><input type="text" size="20" value="" /></td>
+							<th>目前公司:</th>
+							<td><input type="text" size="20" value="" /></td>
+							<th>地点:</th>
+							<td><input type="text" size="20" value="" /></td>
+							<th>邮箱:</th>
+							<td><input type="text" size="20" value="" /></td>
+						</tr>
+						<tr>
+							<td colspan="8" align="center"><input type="submit" value="保存" /></td>
+						</tr>
+					</table>
+				</form>
+				<form action="" method="post">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="rsm-info-table">
+						<colgroup>
+							<col width="7%" />
+							<col width="93%" />
+						</colgroup>
+						<tr>
+							<th>面试情况:</th>
+							<td style="padding-left:20px;">
+								<ol class="rsm-rv-info">
+									<li><input type="text" size="20" value="IBM" />
+										<input type="text" size="20" value="CTO" />
+										<input type="text" size="40" value="良好" />
+									</li>
+									<li><input type="text" size="20" value="IBM" />
+										<input type="text" size="20" value="CTO" />
+										<input type="text" size="40" value="良好" />
+									</li>
+									<li style="list-style-type:none;">
+										<a href="javascript:;">添加面试情况</a>
+									</li>
+								</ol>
+							</td>
+						</tr>
+						<tr>
+							<th>标签:</th>
+							<td>
+								<input type="text" size="12" value="CTO" />
+								<input type="text" size="12" value="下属7人" />
+								<input type="text" size="12" value="20万年薪" />
+								<a href="javascript:;">添加标签</a>
+							</td>
+						</tr>
+						<tr>
+							<th>备注:</th>
+							<td style="padding-left:20px;">
+								<ol class="rsm-rm-info">
+									<li><b class="f-right">编辑人姓名</b>
+										<div style="margin-right:80px;">备注信息</div>
+									</li>
+									<li><b class="f-right">编辑人姓名</b>
+										<div style="margin-right:80px;">备注信息</div>
+									</li>
+									<!--
+									<li><textarea style="width:500px; height:30px;"></textarea>
+									</li>
+									-->
+									<li style="list-style-type:none;border:0;">
+										<a href="javascript:;">添加备注信息</a>
+									</li>
+								</ol>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center"><input type="submit" value="保存" /></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!--footer begin-->
+	<div id="footer">
+		<div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+	</div>
+	<!--footer end--> 
+</div>
+</body>
+</html>

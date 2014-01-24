@@ -1,0 +1,12 @@
+.main {background:#a10b00 url(../images/bg_main.jpg) no-repeat; min-height:1090px; _height:1090;}
+.pn-main {padding:350px 41px 0 41px; width:878px; font-size:14px; line-height:1.7em;}
+.pn-main .special {color:#b20000;}
+.pn-main .delete {text-decoration:line-through;}
+.pn-box {height:334px; width:878px; margin-bottom:35px; overflow:hidden; zoom:1;}
+.pn-box-right {width:40px; height:334px; float:right; background:url(../images/bg_box_r.png) no-repeat;}
+.pn-box-left {width:40px; height:334px; float:left; background:url(../images/bg_box_l.png) no-repeat;}
+.pn-box-center {width:798px; margin:0 40px;}
+.pn-box-top {height:33px; width:798px; overflow:hidden; background:url(../images/bg_box_t.png) no-repeat left bottom;}
+.pn-box-btm {height:34px; width:798px; overflow:hidden; background:url(../images/bg_box_b.png) no-repeat left top;}
+.pn-box-cont {height:215px; width:780px; overflow:hidden; background:url(../images/bg_box.jpg) no-repeat; padding:30px 3px 22px 15px; zoom:1;}
+

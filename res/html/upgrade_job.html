@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>账户升级页 优士通</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script> 
+<script type="text/javascript" src="/js/widget.js"></script> 
+<script type="text/javascript" src="/js/common.js"></script> 
+<script type="text/javascript" src="/js/job.js"></script> 
+</head>
+<body id="page_member">
+<div id="wrapper" class="container">
+  <!--#include file="header.html"-->
+     
+     <div id="upgrade-member" class="clearfix">
+     		<div class="upgrade-banner">
+            	<h2>轻松获得高端职位,成就事业巅峰</h2>
+                <h5>升级成为优士通会员，可享受50000多个高端职业机会</h5>
+            </div>
+            
+            <div id="upgrade-member-shop" class="clearfix">
+            	<div class="member-features">
+                	<ul>
+                    		<li>给非一度会员发送人脉直邮</li>
+                            <li>可加入群组数量</li>
+                	        <!--<li>每次搜索结果的显示</li>-->
+                	        <li>可任意查找和申请经优士网精选的年薪12万以上的职位</li>
+                	        <!--<li>可设置“我正在找工作”选项，优先被HR猎头找到</li>
+                	        <li>可以查看“谁来看过我的档案”</li>-->
+                	        <li>显示皇冠图标<span title="付费会员" class="grade-vip"></span></li>
+                	</ul>
+                </div>
+                
+                <div class="upgrade-memmber-2">
+                	<div class="upgrade-member-header">
+                    	<h4>普通免费会员</h4>
+                        <P>您当前的会员身份</P>
+                    </div>
+                	<ul>
+                    		<li>可使用10枚优士币发送一次</li>
+                            <li>20个群组</li>
+                	        <!--<li>300条</li>
+                	        <li><span class="no"></span></li>
+                	        <li><span class="no"></span></li>
+                	        <li><span class="no"></span></li>-->
+                	        <li><span class="no"></span></li>
+                	        <li><span class="no"></span></li>
+                	</ul>
+                </div>
+                
+                <div class="upgrade-memmber-3">
+                	<div class="upgrade-member-header">
+                    	<h4>优士通会员</h4>
+                        <P>58元/每月<span class="spe-left2">168元/3个月</span><span class="spe-left2">580元/每年</span></P>
+                        <p><a href="upgrade_select.html" class="focus-btn">马上升级</span></a></p>
+                        
+                    </div>
+                	<ul>
+                    		<li>每月5个免费直邮</li>
+                            <li>50个群组</li>
+                	        <!--<li>500条</li>
+                	        <li><span class="yes"></span></li>
+                	        <li><span class="yes"></span></li>
+                	        <li><span class="yes"></span></li>-->
+                	        <li><span class="yes"></span></li>
+                	        <li class="end"><span class="yes"></span></li>
+                	</ul>
+                </div>
+            </div>
+            
+        
+            	
+
+     </div>
+
+    
+  
+  <!--#include file="footer.html"-->
+</div>
+
+<div id="forward_job_cont" style="display:none;">
+	<div id="forward_job">
+		<div class="tabs-feed tabs-sub clearfix">
+			<ul>
+				<li id="invite1degree" class="current"><a href="#">推荐给我的一度人脉</a></li>
+				<li id="inviteexternal" class="" ><a href="#">推荐给站外好友</a></li>
+			</ul>
+		</div>
+		<form id="tab_friend" class="formstyle-3">
+			<ul>
+				<li>
+					<label>一度人脉: <span class="quiet">(一次最多选５个)</span> </label>
+					<div id="friendSelectList" class="mult-selector clearfix">
+						<div class="fslOpenfriendSelect filter-drop"><a class="icon-btn-down" href="javascript:void(0)"></a></div>
+						<div class="fslSelectedList friend-selector-selected">
+							<input type="text" class="fontgray" value="请输入姓名..." />
+						</div>
+					</div>
+					<input type="hidden" id="inviteFriendsId" value="" />
+				</li>
+				<li>
+					<label>给对方留言: <span class="quiet">(300字内)</span></label>
+					<textarea class="input-w-500">我觉得你可能对这个职位有兴趣，推荐给你看看。</textarea>
+				</li>
+			</ul>
+			<p class="btn-line">
+				<input type="button" class="special-btn" value=" 发送推荐 " />
+				<input type="button" class="common-button" value=" 取消 " />
+			</p>
+		</form>
+		<form class="formstyle-3" style="display:none;">
+			<p class="quiet">将职位推荐给优士网以外的朋友，如果对方成功加入优士网，您将获得x个优士币的奖励。</p>
+			<ul>
+				<li>
+					<label>方式一：直接链接</label>
+					<p class="quiet">请将以下链接复制并发送给您的朋友</p>
+					<input name="input2" type="text" class="input-w-500" value="http://www.youshi.com/invite/user.jhtml?id=219908" />
+					<p class="margin-top">
+						<input name="" type="checkbox" checked="checked" value="" />
+						同时邀请对方成为一度好友</p>
+				</li>
+				<li>
+					<label>方式二：邮件邀请</label>
+					<p class="quiet">请输入朋友的邮件地址,多个地址以逗号或回车分开</p>
+					<textarea class="input-w-500"></textarea>
+					<p class="margin-top">
+						<input name="" type="checkbox" checked="checked" value="" />
+						同时邀请对方成为一度好友</p>
+				</li>
+			</ul>
+			<p><a href="#">编辑邀请信内容</a></p>
+			<p class="btn-line">
+				<input type="button" class="special-btn" value=" 发送推荐 " />
+				<input type="button" class="common-button" value=" 取消 " />
+			</p>
+		</form>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var bindForwardJob = function(cont){
+		cont.find('.btn-line :button').bind('click', function(){
+			cont.popupWin('destroy');
+		});
+		var tabli = cont.find('.tabs-sub li');
+		tabli.each(function(i){
+			var li = $(this);
+			$('a', this).click(function(){
+				tabli.removeClass('current');
+				li.addClass('current');
+				cont.find('form').hide();
+				cont.find('form:eq(' + i + ')').show();
+				return false;
+			});
+		});
+	}
+	$('a[js="forwardJob"]').click(function(){
+		var cont = $($('#forward_job_cont').html());
+		bindForwardJob(cont);
+		cont.popupWin({
+			title: '推荐给朋友',
+			width: 600,
+			closeDestroy: true
+		});
+		return false;
+	});
+});
+</script>
+
+</body>
+</html>

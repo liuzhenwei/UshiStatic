@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>Ushi Customer Service System</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/layout_zh_CN.css" rel="stylesheet" type="text/css" media="screen, projection" />
+<script src="../js/jquery-1.4.2.min.js"></script>
+<script src="../js/thickbox.js"></script>
+<script src="../js/jquery-ui-1.8.5.min.js"></script>
+<script src="../js/general.js"></script>
+</head>
+<body>
+<div id="mainbody">
+    <!--header start-->
+    <div id="header">
+        <div class="lf"><img src="..../../bns/images/logo_1.png"/></div>
+        <div class="rf"> Operator：Christy
+            | <a href="../login.htm">Logout</a></div>
+        <div id="toppad"></div>
+    </div>
+    <!--header end-->
+    <div class="lf">
+        <div id="menu_out" class="leftmenu">
+            <ul id="menu" class="menu collapsible">
+                <li> <a href="../index.htm">Homepage</a> </li>
+                <li > <a href="#">Members</a>
+                    <ul>
+                        <li><a href="member_list.htm">Activated members</a></li>
+                        <li><a href="deactived_member_list.htm">Deactivated members</a></li>
+                        <li><a href="search_members.htm">Search members</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Contents</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Image</a></li>
+                        <li><a href="javascript:void(0);">Text content</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Filters</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Create filter</a></li>
+                        <li><a href="javascript:void(0);">Manage filter</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Groups</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Manage group quota</a></li>
+                        <li><a href="javascript:void(0);">Group list</a></li>
+                        <li><a href="group_apply.html">Create groups <span id="result_box2"><span title="">management</span></span></a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Payment</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Payment management</a></li>
+                    </ul>
+                </li>
+                <li > <a href="#">Date</a>
+                    <ul>
+            	<li><a href="pending_user_company_list.html">Pending User Company List</a></li>
+                <li><a href="pending_user_university_list.html">Pending User University List</a></li>
+				<li><a href="company_list_management.html">Company List Management</a></li>
+                <li><a href="university_list_management.html">University List Management</a></li>
+			</ul>
+                </li>
+                  <li> <a href="#">Block list</a>
+                      <ul>
+            	<li><a href="block_list.html">Block list</a></li>
+                <li></li>
+				</ul>
+                </li>
+                <li  class="current"> <a href="#">每周简报管理</a>
+                      <ul>
+            	<li><a href="edit_newsletter.html">编辑简报模版</a></li>
+                <li><a href="audit_newsletter.html">查看和审批</a></li>
+                <li><div style="padding:10px 10px 10px 20px; "><h4>测试邮箱地址：</h4><p>peggy.wu@meta4-group.com</p><p>xxxx@meta4-group.com</p></div>
+                <a href="javascript:void(0);" onclick="modiEmail(this);" style="color:#0066CC;">修改邮件地址</a>
+                </li>
+				</ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="rf">
+        <div id="container">
+	  <h2>编辑简报模版 2010-09-23<div style="float:right; width:180px; text-align:right; margin-right:10px;">
+                <a href="block_list.html">新增简报模版</a>            
+             </div>
+	  </h2>
+      <div class="success">保存成功！测试邮件已发送</div>
+      <div class="error">此发送时间已有简报，请重新输入</div>
+      <div class="error">发送时间未设定，请选择</div>
+    <p>发送时间：
+          <label>
+          <select name="select" id="select">
+              <option>2010</option>
+                    </select>
+          </label>
+          年
+          <select name="select2" id="select2">
+              <option>6</option>
+                    </select>
+          月
+          <select name="select3" id="select3">
+              <option>5</option>
+                    </select>
+      号</p>
+      <h4>中文版本:<div style="float:right; width:180px; text-align:right; margin-right:10px;">
+                <a href="block_list.html">预览</a>            
+            </div></h4>
+    
+		
+      <label>
+      <textarea name="textarea" id="textarea" cols="80" rows="20"><div id="nav_utility">
+          <ul class="common-nav">
+          <li><a class="link-menu boldface" href="javascript:void(0);" onclick="fillProfileInfo();" id="top_btn_userManage">dfgg</a></li>
+          <li><a href="/sns/sns!viewInvitePage.jhtml">发邀请</a></li>
+          <li class="divide"><a href="/msg/notification!listNotification.jhtml">站内通知</a> <strong class="red" jsonInfo="newNotifacationCount"></strong></li>
+
+          <li><a class="link-menu" href="javascript:void(0)" id="top_btn_set">设置</a></li>
+          <li class="divide"><a class="link-menu"  href="javascript:void(0);" id="top_btn_lang">语言</a></li>
+           <li><a href="/doc.jhtml?key=help">帮助</a></li>
+          <li><a href="/logout.jhtml">退出</a></li>
+          </ul>
+     </div>
+</textarea>
+      </label>
+       <h4>英文版本:<div style="float:right; width:180px; text-align:right; margin-right:10px;">
+                <a href="block_list.html">预览</a>            
+            </div></h4>
+    
+		
+      <label>
+      <textarea name="textarea" id="textarea" cols="80" rows="20"><div id="nav_utility">
+          <ul class="common-nav">
+          <li><a class="link-menu boldface" href="javascript:void(0);" onclick="fillProfileInfo();" id="top_btn_userManage">dfgg</a></li>
+          <li><a href="/sns/sns!viewInvitePage.jhtml">发邀请</a></li>
+          <li class="divide"><a href="/msg/notification!listNotification.jhtml">站内通知</a> <strong class="red" jsonInfo="newNotifacationCount"></strong></li>
+
+          <li><a class="link-menu" href="javascript:void(0)" id="top_btn_set">设置</a></li>
+          <li class="divide"><a class="link-menu"  href="javascript:void(0);" id="top_btn_lang">语言</a></li>
+           <li><a href="/doc.jhtml?key=help">帮助</a></li>
+          <li><a href="/logout.jhtml">退出</a></li>
+          </ul>
+     </div>
+</textarea>
+      </label>
+      
+      <h4>上传图片</h4>
+    
+		
+      <input name="" type="text" size="40" />
+      <label>
+      <input type="submit" name="button" id="button" value="浏览" />
+      <input type="submit" name="button2" id="button2" value="上传图片" style=" margin-left:15px;"/>
+    </label>
+    <h4>图片地址：</h4>
+    <div style="background: #eee; border:1px solid #ccc; padding:10px; margin:10px 0;">
+    	http://www.ushi.cn/feed/img/2143434.jpg
+    </div>
+    <p><input name="" type="button" value="保存并预览" style=" padding: 5px; font-size: 14px; font-weight: 700;" /></p>
+</div>
+    </div>
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+    </div>
+	<!--footer end-->
+</div>
+
+
+<!--弹出层-->
+<div id="modiEmailPop" style="display:none;">
+<p><textarea name="" cols="30" rows="5" >peggy.wu@meta4-group.com
+xxxx@meta4-group.com</textarea></p>
+</div>
+
+<script type="text/javascript">
+function modiEmail(){
+	$('#modiEmailPop').dialog({
+		title: '修改邮箱地址',
+		modal: true,
+		buttons: {
+			'保存': function(){
+				var email = $('textarea', this).val();
+				$(this).dialog('destroy');
+			},
+			'取消': function(){
+				$(this).dialog('destroy');
+			}
+		}
+	});	
+}	
+</script>
+
+</body>
+</html>

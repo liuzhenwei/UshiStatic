@@ -1,0 +1,14 @@
+﻿@charset "utf-8";
+
+.contact-sort li a {padding-left:3px;}
+
+.ct-en-ivt-msg {display:block;margin:4px 0 0 0!important;}
+.ct-en-local-th {width:20%;}
+.ct-en-local-td {width:80%;}
+
+.ct-email-invite-cont {max-height:190px;}
+.ct-ivt-emailaddress-ipt {width:70px;}
+.w130e {width:110px;}
+.w100e {width:112px;}
+
+.contact-detail .contact-use li {width:76px;}

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	pop({
+	   width:400,
+	   html:'<input type="text" size="20" />',
+	   button:"dfdsfds",
+	   func:function(options){
+		   options.content.find('input:eq(0)').focus();				   
+		   options.button.click(function(){
+				options.content.find('input:eq(0)').focus();							 
+			});
+		   
+	   }
+	});
+});
+</script>
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+dsjagdsafdhgsfahgdfsaghfdhgsafhg<br />
+dsjagdsafdhgsfahgdfsaghfdhgsafhg<br />
+dsjagdsafdhgsfahgdfsaghfdhgsafhg<br />
+dsjagdsafdhgsfahgdfsaghfdhgsafhg<br />
+dsjagdsafdhgsfahgdfsaghfdhgsafhg<br />
+</body>
+</html>

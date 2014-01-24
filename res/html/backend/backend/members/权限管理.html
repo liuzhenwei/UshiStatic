@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+</head>
+
+<body>
+<div id="mainbody"> 
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf"> Operater：Chirsty
+			| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+	
+	<div class="lf">
+		<div id="menu_out" class="leftmenu"> 
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 --> 
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script> 
+		</div>
+	</div>
+	<div class="rf">
+		<div id="container">
+			<h2>用户权限管理</h2>
+			<div style="padding:10px 10px 0 10px;">
+				<form>
+					<p>邮箱地址:
+						<input type="text" size="20" value="" />
+						<input type="submit" value="添加用户" />
+					</p>
+				</form>
+				<form>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td><label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label>
+								<label>
+									<input type="checkbox" />
+									11111</label></td>
+						</tr>
+						<tr>
+							<td style="padding: 10px 0;"><input type="submit" value="确定" /></td>
+						</tr>
+					</table>
+					
+				</form>
+			</div>
+			<table	width="100%" cellpadding="0" cellspacing="0" class="datalist mt10">
+				<tr>
+					<th>姓名</th>
+					<th>邮箱地址</th>
+					<th>权限设置</th>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>51223@163.com</td>
+					<td><a href="#">设置权限</a> <a href="#">删除权限</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>51223@163.com</td>
+					<td><a href="#">设置权限</a> <a href="#">删除权限</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>51223@163.com</td>
+					<td><a href="#">设置权限</a> <a href="#">删除权限</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<!--footer begin-->
+	<div id="footer">
+		<div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+	</div>
+	<!--footer end--> 
+</div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>职业频道</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/job.js"></script>
+</head>
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	
+	<div id="main" class="clearfix">
+		<div class="channel-tit">
+			<h3>职业频道</h3>
+		</div>
+		<div class="tabs-common clearfix">
+			<ul>
+				<li class="current"><a href="jobs_post.html">发布职位</a></li>
+				<li><a href="jobs_apply_manage.html">应聘管理</a></li>
+				<li><a href="jobs_manage.html">职位管理</a></li>
+				<li><a href="jobs_company.html">公司信息管理</a></li>
+			</ul>
+			<div class="float-right"><a class="job-navigation-help" href="jobs_overview.html">找工作</a></div>
+		</div>
+		
+		<!-- Center -->
+		<div id="jobs_mainbody_wrapper" class="column-2-3">
+			<div class="success">您的招聘意向已提交成功</div>
+			<div id="jobs_post_form">
+			<form class="formstyle">
+				<div class="job-title spe-left-pd2">
+					<p class="quiet float-right">带 <span class="red">* </span> 号的项目为必填项</p>
+					<h4>职位基本信息</h4>
+				</div>
+				<ul>
+					<li>
+						<label><span class="red">* </span> 职位名称：</label>
+						<div class="float-left">
+							<input class="input-w-280" type="text" />
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 公司名称：</label>
+						<div class="float-left">
+							<div class="margin-bottom"> 优士网信息技术有限公司 <span class="quiet middle spe-left3" style="display:none;">
+								<input class="input-w-180" type="text" />
+								请填写分公司或分部名称 </span> </div>
+							<div class="middle">
+								<label>
+									<input name="" type="checkbox" value="" onclick="$(this).closest('div').prev().find('span').toggle();" />
+									分公司招聘？</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 客户公司名称：</label>
+						<div class="float-left">
+							<input class="input-w-280" type="text" />
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 工作地点：</label>
+						<div class="float-left" id="selectJobLocation">
+							<div class="clearfix middle">
+								<select class="input-w-140" js="selectCountry">
+								    <option value="0" selected="selected">请选择</option>
+								    <option value="156">中国大陆</option>
+								    <option value="344">中国香港</option>
+								    <option value="446">中国澳门</option>
+								    <option value="158">中国台湾</option>
+								    <option value="840">美国</option>
+								    <option value="826">英国</option>
+								    <option value="392">日本</option>
+								    <option value="124">加拿大</option>
+								    <option value="36">澳大利亚</option>
+								    <option value="250">法国</option>
+								    <option value="276">德国</option>
+								    <option value="410">韩国</option>
+								    <option value="643">俄罗斯</option>
+								    <option value="380">意大利</option>
+								    <option value="724">西班牙</option>
+								    <option value="356">印度</option>
+								</select>
+								<select class="input-w-140" js="selectRegion">
+									<option value="0">请选择</option>
+								</select>
+								<select class="input-w-140" js="selectCity">
+									<option value="0">请选择</option>
+								</select>
+								<a href="#">Delete</a>
+							</div>
+							<span class="show quiet"> <a href="javascript:void(0)" js="addLocation" class="link-add2 spe-right2">新增地点</a> 最多支持5个工作地点 </span>
+						</div>
+					</li>
+				</ul>
+				<div class="job-title spe-left-pd2 border-bottom">
+					<p class="quiet float-right">应聘者的申请信息会发送到设定的邮箱</p>
+					<h4>邮箱设置</h4>
+				</div>
+				<ul class="nobkg">
+					<li>
+						<label>
+							<input name="email" type="radio" value="" checked="checked" />
+							公司邮箱：</label>
+						<div class="float-left">
+							<div class="margin-top05e"> <span>Sekin.tong@meta4-group.com</span> <a href="#" class="spe-left2">编辑</a> </div>
+							<div style="display:none;">
+								<input class="input-w-280" type="text" value="Sekin.tong@meta4-group.com" />
+								<a href="#">取消</a> </div>
+						</div>
+					</li>
+					<li>
+						<label>
+							<input name="email" type="radio" value="" />
+							其他邮箱：</label>
+						<div class="float-left">
+							<input class="input-w-280" type="text" />
+							<span class="show quiet">最多输入3个Email，用英文逗号(,)分隔</span>
+						</div>
+					</li>
+				</ul>
+				<div class="job-title spe-left-pd2 border-bottom">
+					<h4>职位其他信息</h4>
+				</div>
+				<ul class="nobkg">
+					<li>
+						<label><span class="red">* </span> 职位类别：</label>
+						<div class="float-left">
+							<div class="multi-selector-btn input-w-180"><a tips="选择职位类别" js="selectIndustry" href="#"><span>选择职位类别</span></a> <span style="display: none;" js="vdErr" class="red">请选择职位类别</span> </div>
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 工作经验：</label>
+						<div class="float-left">
+							<select class="input-w-180">
+								<option value="">请选择</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 职位级别：</label>
+						<div class="float-left">
+							<select class="input-w-180">
+								<option value="">请选择</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 学位要求：</label>
+						<div class="float-left">
+							<select class="input-w-180">
+								<option value="">请选择</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 年薪范围：</label>
+						<div class="float-left">
+							<select class="input-w-180">
+								<option value="">请选择</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 职位有效期：</label>
+						<div class="float-left">
+							<select class="input-w-180">
+								<option value="">请选择</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<label><span class="red">* </span> 职位描述：</label>
+						<div class="float-left">
+							<textarea class="input-w-500"></textarea>
+							<span id="wordCountShow" class="quiet show">还可以输入 <strong class="special">20000</strong> 个字符</span> </div>
+					</li>
+				</ul>
+				<p>
+					<input class="common-button large-btn large" type="submit" value=" 预 览 " />
+					<input class="special-btn large-btn" type="submit" value=" 发 布 " />
+				</p>
+			</form>
+		</div>
+	</div>
+	
+	<!-- Rightside -->
+	<div id="jobs_extra" class="column-3"></div>
+</div>
+
+<!--#include file="footer.html"-->
+</div>
+
+<script type="text/javascript">
+$(function(){
+})	
+</script>
+
+</body>
+</html>

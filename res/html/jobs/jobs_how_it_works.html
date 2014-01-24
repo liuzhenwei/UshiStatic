@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>职业频道</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/job.js"></script>
+</head>
+<style>
+
+
+#totalTagsList .event-block {padding-right:0;}
+.channel-tit .newEvent{ position:absolute; right:23px; top:-10px; width:220px; }
+#totalTagsList .display-block{ margin-bottom:25px; position:relative; height:1%}
+#totalTagsList .display-block span{ position:absolute;top:-15px; color:#666; display:inline-block; background:#fff;padding:5px 10px 5px 0;}
+
+
+		.jobAd {clear:both;overflow:hidden; background:url('..../../bns/images/ad/job/jobAd1.jpg') no-repeat left top; padding:145px 20px 0 0; width:942px; height:42px; line-height:30px;}
+		.jobAd2 {clear:both;overflow:hidden; background:url('..../../bns/images/ad/job/jobAdbg2.png') no-repeat left top; width:960px; height:523px;}
+		.jobAd2 ul{ padding:56px 0 0 16px; overflow:hidden; zoom:1;}
+		.jobAd2 ul li{ float:left; padding:10px 13px 0 13px;width:335px; margin:0}
+		.jobAd2 ul li p{ zoom:1; overflow:hidden; padding-left:12px;}
+		
+		.jobAd2 .li1 b,.jobAd2 .li2 b,.jobAd2 .li3 b,.jobAd2 .li4 b,.jobAd2 .li5 b,.jobAd2 .li6 b{background:url('..../../bns/images/ad/job/jobAd2_ico.png') no-repeat left top; width:41px; height:30px; float:left;}
+		.jobAd2 .li1,.jobAd2 .li3,.jobAd2 .li5{border:2px #f0f6fe solid;}
+		.jobAd2 .li2,.jobAd2 .li4,.jobAd2 .li6{border:2px #e9f7cf solid; margin-left:196px; _display:inline;}
+		
+		.jobAd2 .li1Ov,.jobAd2 .li3Ov,.jobAd2 .li5Ov{border:2px #bed2ec solid; background:#fff;}
+		.jobAd2 .li2Ov,.jobAd2 .li4Ov,.jobAd2 .li6Ov{border:2px #cfe4a4 solid; background:#fff;}
+		.jobAd2 .li1Ov b,.jobAd2 .li2Ov b,.jobAd2 .li3Ov b,.jobAd2 .li4Ov b,.jobAd2 .li5Ov b,.jobAd2 .li6Ov b{background-position:-1px -394px;}
+		
+		.jobAd2 .li2 b {background-position:left -190px; height:36px;}
+		.jobAd2 .li2Ov b {background-position:-2px -582px;}
+		.jobAd2 .li3 b {background-position:left -66px; height:36px;}
+		.jobAd2 .li3Ov b {background-position:-3px -460px;}
+		.jobAd2 .li4 b {background-position:-4px -264px; height:36px;}
+		.jobAd2 .li4Ov b {background-position:-3px -657px;}
+		.jobAd2 .li5 b {background-position:-2px -151px; height:36px;}
+		.jobAd2 .li5Ov b {background-position:-3px -545px;}
+		.jobAd2 .li6 b {background-position:-4px -343px; height:36px;}
+		.jobAd2 .li6Ov b {background-position:-3px -736px;}
+		.adInstr{ padding:30px 10px 0 30px;}
+		
+</style>
+<script>
+
+	$(function(){
+	
+		/*$.each($('.jobAd2 li'),function(i){
+			$(this).bind('mouseover',function(){
+				//
+				//alert($(this).siblings().eq(i).attr("class"))
+				alert(i)
+				$(this).addClass('li'+(i+1)+'Ov');
+				var cl = $(this).siblings().attr('class');
+				$(this).siblings().attr('class',cl.substring(0,3));
+			})
+		})*/
+		
+		$('.jobAd2 li').bind('mouseover',function(){
+			var this_ = $(this)
+			var n = this_.attr('class').slice(-1);
+			this_.addClass('li'+n+"Ov");
+			if(n!='v'){
+				$('.jobAd2 .div'+n).show();
+				$('.jobAd2 .div'+n).siblings(".cotjobAd").hide();
+				
+				this_.siblings().each(function(){
+					var c1 = $(this).attr('class');
+					$(this).attr('class',c1.substring(0,3));
+				})
+			}
+
+		})
+		
+	})
+
+
+</script>
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	
+	<div id="main" class="clearfix">
+		<div class="channel-tit">
+			<h3>职业频道</h3>
+		</div>
+		<div class="tabs-common clearfix">
+			<ul>
+				<li><a href="jobs_overview.html">职位首页</a></li>
+				<li><a href="jobs_my.html">我的职位</a></li>
+				<li><a href="jobs_saved_searches.html">搜索职位</a></li>
+				<li><a href="jobs_consult.html">发布职位</a></li>
+			</ul>
+			<div class="float-right"><a class="job-navigation-help" href="#">帮助</a></div>
+		</div>
+		
+
+		<h4 class="border-bottom pd-bottom pd-top ">How It Works</h4>
+		<h4>让我们来指导你如何使用优士职业频道找到满意的工作!</h4>
+		<p class="quiet" style="line-height:24px;">优士网职业频道专注于提供年薪12万以上的中高端职位，包括大量知名企业提供的极具吸引力和挑战的职位，在使用职业频道过程中如果有任何问题请您可以随时将您的反馈通<br />过优士页面右边的“给优士提建议”标签发送给我们。</p>
+		
+		<div class="jobAd2">
+			<ul>
+				<li class="li1 li1Ov">
+					<b></b>
+					<p class="quiet">
+						<span class="blue boldface">准备工作</span><br />
+						完善您在优士网的档案
+					</p>
+				</li>
+				
+				<li class="li2">
+					<b></b>
+					<p class="quiet">
+						<span class="blue boldface">无限制申请XXX个职位</span><br />
+						职业频道拥有大量12万+名企的中高端职位，总有<br />
+						一个职位适合您
+					</p>
+				</li>
+				
+				<li class="li3">
+					<b></b>
+					<p class="quiet">
+						<span class="blue boldface">开始搜索职位</span><br />可以收藏您感兴趣的职位，并且可以订阅每周优士网<br />推荐的职位邮件
+					</p>
+				</li>
+				
+				<li class="li4">
+					<b></b>
+					<p class="quiet">
+						<span class="blue boldface">精准直投</span><br />
+							您的职位申请将由我们直接投递到HR的邮箱并确保<br />
+							及时反馈，安全可靠
+					</p>
+				</li>
+				
+				<li class="li5">
+					<b></b>
+					<p class="quiet">
+						<span class="blue boldface">职业咨询</span><br />
+							可以匿名的咨询一些职业发展规划的问题，会由优士<br />
+							网的职业咨询专家每周选择一些比较有代表性的问题<br />
+							进行解答。
+					</p>
+				</li>
+				
+				<li class="li6">
+					<b></b>
+					<p class="quiet">
+						<span class="blue boldface">更多增值服务</span><br />
+						每月10个免费直邮（价值100元）<br />
+						可加入最多50个群组<br />
+						人脉搜索时能查看到最多300条结果
+					</p>
+				</li>
+			</ul>
+			
+			<div class="adInstr"> 
+				<div class="float-right border-right border-bottom" style="background:#f3f3f3;padding:28px 55px;">
+					<a href="javascript:void(0);" class="ushi_btn_M boldface large"><span></span>马上升级为商务会员!</a>
+				</div>
+				<div class="cotjobAd div1" style="color:#333;zoom:1;overflow:hidden;padding-right:15px;line-height:24px;display:block">
+					<h4>准备工作</h4>
+						有数据表明当您的个人职业档案完整度在90%以上时更容易获得招聘方的注意。所以我们<br />
+						建议您在搜索职位之前花一些时间，编辑并完善一份最能体现您自己最完整、真实的个人<br />
+						档案，它将给您带来更多商业合作和职业提升的机会。<br />
+						需要特殊说明的是您的个人职业档案越完善，系统推荐给您的职位就将越精准。
+				</div>
+				<div class="cotjobAd div2" style="color:#333;zoom:1;overflow:hidden;padding-right:15px;line-height:24px;display:none">
+					<h4>无限制申请职位</h4>
+					职业频道有大量年薪12万以上来自知名企业的中高端职位，所有职位经过优士网精挑细选<br />
+					和人工审核，确保职位质量。
+				</div>
+				
+				<div class="cotjobAd div3" style="color:#333;zoom:1;overflow:hidden;padding-right:15px;line-height:24px;display:none">
+					<h4>开始搜索职位</h4>
+					您可以在优士网职业频道输入合适的关键词搜索您感兴趣的职位，还可以收藏您喜欢的职<br />
+					位，另外还可以根据你的需要订阅定期给您发送的推荐职位邮件。	
+				</div>
+				
+				<div class="cotjobAd div4" style="color:#333;zoom:1;overflow:hidden;padding-right:15px;line-height:24px;display:none">
+					<h4>精准直投</h4>
+					您提交职位申请后，系统将会您的职位申请直接发送给Hr，没有中间环节，确保您的职位<br />
+					申请能在第一时间被Hr阅读的，安全无忧。<br />
+					如果您的职位申请被Hr阅读过，我们的系统也会第一时间通知到您。
+				</div>
+				
+				<div class="cotjobAd div5" style="color:#333;zoom:1;overflow:hidden;padding-right:15px;line-height:24px;display:none">
+					<h4>职业咨询</h4>
+					如果您在求职、就业、创业指导、人才素质测评、职业生涯规划、职业心理等方面遇到困<br />
+					惑，可以提交您的问题，优士网的职业咨询专家老Kong将每周选择一些比较有代表性的问<br />
+					题进行解答，我们也会定期将问题与答案公布在<a href="http://careerblog.ushi.cn/" target="_blank">职业咨询博客</a>上，以帮助更多的职业人士
+				</div>
+				
+				<div class="cotjobAd div6" style="color:#333;zoom:1;overflow:hidden;padding-right:15px;line-height:24px;display:none">
+					<h4>更多增值服务</h4>
+						在您升级为商务会员后，除了可以完全享受职业频道所有功能外还将具备如下特权：<br />
+						每月10个免费直邮（价值100元）<br />
+						可加入最多50个群组<br />
+						人脉搜索时能查看到最多300条结果
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<!--#include file="footer.html"--> 
+</div>
+
+</body>
+</html>

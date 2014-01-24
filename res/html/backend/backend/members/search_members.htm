@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>优士网客服系统</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/ui.datepicker.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../js/jquery.pack.js"></script>
+<script src="../js/general.js"></script>
+<script src="../js/thickbox.js"></script>
+<script src="../js/ui.datepicker.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+  <div class="lf">  
+		<div id="menu_out" class="leftmenu">	
+			<ul id="menu" class="menu collapsible">
+				<li>
+					<a href="../index.htm">Homepage</a>
+				</li>
+				<li class="current">
+					<a href="#">Members</a>
+					<ul>
+						<li><a href="member_list.htm">Uncensored members</a></li>
+						<li><a href="deactived_member_list.htm">Deactived members</a></li>
+						<li><a href="search_members.htm">Search members</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Contents</a>
+					<ul>
+						<li><a href="javascript:void(0);">Image</a></li>
+						<li><a href="javascript:void(0);">Text content</a></li>
+					</ul>
+				</li>	
+				<li>
+					<a href="#">Filters</a>
+					<ul>
+						<li><a href="javascript:void(0);">Create filter</a></li>
+						<li><a href="javascript:void(0);">Manage filter</a></li>	
+					</ul>
+				</li>	
+				<li>
+					<a href="#">Groups</a>
+					<ul>
+						<li><a href="javascript:void(0);">Manage group quota</a></li>
+						<li><a href="javascript:void(0);">Group list</a></li>	
+					</ul>
+				</li>			
+				<li>
+					<a href="#">Payment</a>
+					<ul>
+						<li><a href="javascript:void(0);">Payment management</a></li>
+					</ul>
+				</li>				
+			</ul>
+
+	  </div>
+  </div>  
+  
+  <div class="rf">
+	<div id="container">
+	  <h2>Search for members</h2>
+		<form method="POST" action="member_search_result.htm">
+		<div class="searchform">
+			<div class="row"><label for="name">Name:</label><input type="input" name="name" value=""></div>
+			<div class="row"><label for="email">Email:</label><input type="input" name="email" value=""></div>
+			<div class="row"><input type="submit" name="search_member" value="Search"></div>
+		</div>
+		</form>
+    </div>
+  </div>
+</div>
+  <!--footer begin-->
+  <div id="footer">
+	 	<div id="copyright">
+	 	Copyright &copy; 2010 Ushi.cn
+	 	</div>
+ 	</div> 
+	</div>
+  <!--footer end-->
+</body>
+</html>

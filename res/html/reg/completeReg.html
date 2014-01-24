@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../../../common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../../../common/js/widget.js"></script>
+<script type="text/javascript" src="../../../common/js/common.js"></script>
+<script type="text/javascript" src="../../../bns/js/openreg.js"></script>
+</head>
+
+<body id="page_public">
+<div id="wrapper" class="container">
+	<!-- header start -->
+	<div id="header_reg" class="clearfix">
+    <div id="logo" class="float-left">
+	    <a href="/index.jhtml" >
+	   		<img src="http://static.ushi.cn/s/bns/images/youshi_logo.png" width="80" height="51" alt="优士" />
+	    </a>
+	   
+    </div>
+     <h3><a class="float-left know-about-ushi boldface" href="#">了解优士</a></h3>
+    <div id="login_reg">
+		  <div id="nav_utility">
+		          <ul class="common-nav">
+			          <li class="divide"><a class="link-menu"  href="javascript:void(0);" id="top_btn_lang">Language</a></li>
+			          <li><a href="/login.jhtml">登录</a></li>
+		          </ul>
+		 </div>
+    </div>
+    </div><!-- header end -->
+ 
+	<!-- main start -->
+	<div id="main" class="clearfix">
+	
+	<script type="text/javascript" src="http://static.ushi.cn/s/bns/js/reg.base.js"></script>
+ 
+<!-- main content -->
+
+<h3 class="blue spe-left2">完成注册信息</h3>
+
+<div id="register_wrap" class="pd-top05e" style="position:relative">
+
+	<div class="openreg_right_tips_cont">
+		<div class="openreg_right_tipsKK">
+			<div class="openreg_right_tips">
+				<dl>
+					<dt><h5>优士能帮助你：</h5></dt>
+					<dd>为你的事业成功获得所需的资金和人才资源</dd>
+					<dd>建立你的职业档案，让机会主动找到你</dd>
+					<dd>联络老朋友，认识新朋友，你的人脉即是你的优势</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+
+	<div class="regform-wrap">
+		<form action="/user/reg!saveBasicProfile.jhtml" method="post" name="regForm" id="regForm" >
+			<input type="hidden" name="basicProfile.emailstatus" value="1" id="hiddenEmail"/><input type="hidden" name="token" value="134a5dd8-36fd-4f7d-84cc-190e870af139" id="token"/><input type="hidden" name="lg" value="zh_CN" id="lg"/><input type="hidden" name="jobId" value="0" id="jobId"/><input type="hidden" name="gift" value="0" id="gift"/><input type="hidden" name="rmail" value="" id="rmail"/><div class="form-item clearfix">
+				<label>姓名：</label>
+				<div class="itemmain">
+					<input type="text" name="basicProfile.fullname" maxlength="64" value="" id="userName" class="inputtext" Validate="isUsername" vdOpt="url:/user/reg!validateUserName.jhtml" autocomplete="off"/></div>
+				<div class="tips" id="usernameTips" style="display:none">
+					<div class="tips-box-outer"><div class="tips-box-inner">
+						<p>请用规范的形式填写您的真实姓名。<br/>如果系统误判你的姓名，请换个名字先注册，然后和优士网客服进行联系。</p>
+					</div></div>
+				</div>
+			</div>
+			<div class="form-item clearfix">
+				<label>Email：</label>
+				<div class="itemmain">
+					<input type="text" name="basicProfile.email" maxlength="64" value="" id="userEmail" class="inputtext" Validate="isAjaxEmail" vdOpt="url:/ajax/json!checkEmail.jhtml;key:email" autocomplete="off"/></div>
+				<div class="tips" id="emailTips" style="display:none">
+					<div class="tips-box-outer"><div class="tips-box-inner">请输入有效的邮箱地址 </div></div>
+				</div>
+			</div>
+			<div class="form-item clearfix">
+				<label>密码：</label>
+				<div class="itemmain">
+					<input type="password" name="basicProfile.passwd" maxlength="32" id="userPass" class="inputtext" Validate="isPassword" autocomplete="off"/></div>
+				<div class="tips" style="display:none">
+					<div class="tips-box-outer"><div class="tips-box-inner">密码由6-32位字母、数字、标点组成</div></div>
+				</div>
+			</div>
+			<div class="form-item clearfix">
+				<label><span class="quiet">(选填)</span>
+					手机：</label>
+				<div class="itemmain">
+					<input type="text" name="basicProfile.mobile" maxlength="64" value="" id="mobile" class="inputtext" Validate="isPhone" vdOpt="ignore:empty"/></div>
+				<div class="tips" style="display:none">
+					<div class="tips-box-outer"><div class="tips-box-inner">请输入正确的手机号码</div></div>
+				</div>
+			</div>
+			<div class="form-item-nolabel">
+				<input id="userService" class="checked" type="checkbox" value="" checked="checked"/>
+				我已经阅读并同意<a href="/doc.jhtml?key=term_of_service" target="_blank">服务条款</a></div>
+			<div class="form-btn">
+				<input type="submit" value="&nbsp;&nbsp;注册&nbsp;&nbsp;" class="special-btn" id="userEnter"/>
+			</div>
+		</form>
+	</div>
+</div>
+
+	<!-- main end -->
+ 
+	<!-- footer start -->
+  	<div id="footer">
+		<ul class="common-nav divide">
+		<li><a href="/overview">了解优士</a></li>
+		<li><a href="/about">关于我们</a></li>
+		<li><a href="/founding-and-charter-members">创始会员</a></li>
+		<li><a href="/contact">联系我们</a></li>
+		<li><a href="/doc.jhtml?key=join_us">加入我们</a></li>
+		<li><a href="/press">媒体中心</a></li>
+		<li><a href="/doc.jhtml?key=success_stories">成功故事</a></li>
+		<li><a href="/doc.jhtml?key=privacy_policy">隐私声明</a></li>
+		<li><a href="/doc.jhtml?key=term_of_service">服务条款</a></li>
+		<li class="divide-none"><a href="http://blog.ushi.cn" target="_blank">优士博客</a></li>	
+		</ul>
+		<p class="clear"><a href=http://www.miibeian.gov.cn/ target=_blank>沪ICP备06027394号</a> Ushi.cn © 版权所有 2009~2011</p> 
+	</div>
+	<!-- footer end -->
+</div>
+
+
+</body>
+</html>

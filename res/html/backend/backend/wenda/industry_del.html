@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+	<div class="lf">	
+		<div id="menu_out" class="leftmenu">	
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+		</div>
+	</div>	
+	
+	<div class="rf">
+		<div id="container">
+<style type="text/css">
+.td1 {width:23%; padding-left:10px; padding-bottom:5px;}
+.td2 {width:50%; padding-left:10px; padding-bottom:5px;}
+.box1 {height:300px; overflow:auto; border:1px solid #ddd; margin-top:5px;}
+.box1 li {border-bottom:1px solid #ddd; padding:2px 5px 4px 5px; overflow:hidden; zoom:1; font-family:simsun;}
+</style>
+			<h2>删除行业</h2>
+			<p style="padding:10px 10px 0 10px;">
+				行业名称：<b style="font-size:14px;">互联网</b>
+			</p>
+			<form>
+			<table	width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="td1">
+						<h5><b>父行业</b></h5>
+						<div class="box1">
+							<ul js="parent">
+								<li><label><input type="radio" name="parentIndu" value="1" />
+									互联网</label>
+								</li>
+								<li><label><input type="radio" name="parentIndu" value="1" />
+									互联网</label>
+								</li>
+								<li><label><input type="radio" name="parentIndu" value="1" />
+									互联网</label>
+								</li>
+								<li><label><input type="radio" name="parentIndu" value="1" />
+									互联网</label>
+								</li>
+								<li><label><input type="radio" name="parentIndu" value="1" />
+									互联网</label>
+								</li>
+								<li><label><input type="radio" name="parentIndu" value="1" />
+									互联网</label>
+								</li>
+								<li><label><input type="radio" name="parentIndu" value="1" />
+									互联网</label>
+								</li>
+							</ul>
+						</div>
+					</td>
+					<td class="td1">
+						<h5><b>子行业</b></h5>
+						<div class="box1">
+							<ul js="sub">
+								<li><label><input type="radio" name="subIndu" value="1" />
+									互联网</label>
+								</li>
+								<li><label><input type="radio" name="subIndu" value="1" />
+									互联网</label>
+								</li>
+								<li><label><input type="radio" name="subIndu" value="1" />
+									互联网</label>
+								</li>
+								<li><label><input type="radio" name="subIndu" value="1" />
+									互联网</label>
+								</li>
+								<li><label><input type="radio" name="subIndu" value="1" />
+									互联网</label>
+								</li>
+								<li><label><input type="radio" name="subIndu" value="1" />
+									互联网</label>
+								</li>
+								<li><label><input type="radio" name="subIndu" value="1" />
+									互联网</label>
+								</li>
+							</ul>
+						</div>
+					</td>
+					<td class="td2">
+						<h5 style="text-align:center">关联</h5>
+						<div class="box1">
+							<ul js="related">
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center;">
+						<input type="button" value="添加到关联" js="addRelated" />
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+			<p><input type="submit" value="确认" />
+				<input type="button" value="取消" onclick="location.href='industry.html'" /></p>
+<script type="text/javascript">
+$(function(){
+	var p = $('ul[js="parent"]'), s = $('ul[js="sub"]'), r = $('ul[js="related"]');
+	$('[js="addRelated"]').bind('click', function(){
+		var pr = p.find(':checked'), sr = s.find(':checked');
+		if( pr.length == 0 || sr.length == 0 ){
+			alert('请先选择父行业和子行业');
+			return false;
+		}
+		var html = '<li><input type="button" style="float:right;" value="取消关联" />' + pr.closest('li').text() + ' &lt;---&gt; ' +
+				sr.closest('li').text() + '<input type="hidden" name="" value="' + pr.val() + ',' + sr.val() + '" /></li>';
+		var li = $(html);
+		r.append(li);
+		li.find(':button').click(function(){
+			$(this).closest('li').remove();
+		});
+		pr.attr('checked', false);
+		sr.attr('checked', false);
+	});
+});
+</script>
+		</div>
+	</div>
+
+	<!--footer begin-->
+	<div id="footer">
+	 	<div id="copyright">
+	 	Copyright &copy; 2010 Ushi.cn
+	 	</div>
+ 	</div> 
+	<!--footer end-->
+</div>
+
+</body>
+</html>

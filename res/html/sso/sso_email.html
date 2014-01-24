@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../../../common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../../../common/js/widget.js"></script>
+<script type="text/javascript" src="../../../common/js/common.js"></script>
+<script type="text/javascript" src="../../../bns/js/openreg.js"></script>
+</head>
+
+<body id="page_public">
+<div id="wrapper" class="container">
+	<!-- header start -->
+	<div id="header_reg" class="clearfix">
+	    <div id="logo" class="float-left">
+		    <a href="/index.jhtml" >
+		   		<img src="http://static.ushi.cn/s/bns/images/youshi_logo.png" width="80" height="51" alt="优士" />
+		    </a>
+		   
+	    </div>
+	    <div id="login_reg">
+			  <div id="nav_utility">
+			          <ul class="common-nav">
+				          <li class="divide"><a class="link-menu"  href="javascript:void(0);" id="top_btn_lang">Language</a></li>
+				          <li><a href="/login.jhtml">登录</a></li>
+			          </ul>
+			 </div>
+	    </div>
+    </div><!-- header end -->
+ 
+	<!-- main start -->
+	<div id="main" class="clearfix">
+ 
+<!-- main content -->
+
+		<h4 class="blue spe-left2 pd-top">填写您的常用邮箱，可以及时掌握自己人脉拓展的进展！</h4>
+		
+		<div class="pd-top05e">
+			<div class="sso-reg-cont spe-left2">
+				<form action="" method="post" name="regForm" id="regForm" >
+					<div class="form-item clearfix">
+						<label style="width:150px;">邮箱：</label>
+						<div class="itemmain">
+							<input type="text" name="basicProfile.email" maxlength="64" value="" id="userEmail" class="inputtext" Validate="isAjaxEmail" vdOpt="url:/ajax/json!checkEmail.jhtml;key:email" autocomplete="off"/>
+						</div>
+						<div class="tips" id="emailTips" style="display:none">
+							<div class="tips-box-outer"><div class="tips-box-inner">请输入有效的邮箱地址 </div></div>
+						</div>
+					</div>
+					<div class="form-btn" style="padding-left:160px;">
+						<input type="submit" value="&nbsp;&nbsp;确认&nbsp;&nbsp;" class="button" />
+					</div>
+					<div class="form-item-nolabel" style="padding-left:150px;">
+						<div class="tipsbox" style="width:500px;margin-top:30px;">确认提交信息后，请至填写邮箱查收优士网确认邮件。<br />
+							在邮件确认后，下次使用第三方账号或优士网确认邮箱均可登录优士网！
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	<!-- main end -->
+ 
+	<!-- footer start -->
+  	<div id="footer">
+		<ul class="common-nav divide">
+		<li><a href="/overview">了解优士</a></li>
+		<li><a href="/about">关于我们</a></li>
+		<li><a href="/founding-and-charter-members">创始会员</a></li>
+		<li><a href="/contact">联系我们</a></li>
+		<li><a href="/doc.jhtml?key=join_us">加入我们</a></li>
+		<li><a href="/press">媒体中心</a></li>
+		<li><a href="/doc.jhtml?key=success_stories">成功故事</a></li>
+		<li><a href="/doc.jhtml?key=privacy_policy">隐私声明</a></li>
+		<li><a href="/doc.jhtml?key=term_of_service">服务条款</a></li>
+		<li class="divide-none"><a href="http://blog.ushi.cn" target="_blank">优士博客</a></li>	
+		</ul>
+		<p class="clear"><a href=http://www.miibeian.gov.cn/ target=_blank>沪ICP备06027394号</a> Ushi.cn © 版权所有 2009~2011</p> 
+	</div>
+	<!-- footer end -->
+</div>
+
+
+</body>
+</html>

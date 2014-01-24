@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>搜索礼宾服务-优士网</title>
+<link href="http://static.ushi.cn/s/common/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="http://static.ushi.cn/s/common/images/favicon.ico" rel="bookmark" type="image/x-icon" />
+<link href="/static/usc/css/normalize.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/member.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/member_sc.css" type="text/css" media="screen, projection" />
+<link href="../../../usc/css/usc.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper_usc">
+	<div id="header">
+		<div class="usc-hd-info">
+			<div class="userinfo"> 您好，<a href="/u/luhansen" class="link-menu1 spe-right3" target="_blank">卢汉森 Dominic Penaloza</a> <a href="/usc/search!listfav.jhtml" class="spe-right3" target="_blank">收藏夹</a> <span class="ico-coin"></span>余额 <span class="orange" js="coins">9625</span> <a href="/currency/Coins.jhtml" class="spe-right3" target="_blank">充值</a> <a href="/usc/login!logout.jhtml" class="quiet">退出</a> </div>
+			<div class="logo">
+				<div class="float-left"><img src="../../../common/images/ushi_logo_small.png" /></div>
+				<h2>优士企业人才库 <small class="quiet">Beta</small></h2>
+			</div>
+		</div>
+		<form action="" method="post" class="usc-hd-form">
+			<div class="usc-sch-top clearfix">
+				<h2>企业名录</h2>
+				<div class="tips-location"><a href="javascript:;">我的名录</a></div>
+				<div class="tips-location"><a href="javascript:;">关于企业名录</a></div>
+				<div class="tips-location"><a href="javascript:;" class="special"><b>上传企业名录</b></a></div>
+				<div class="tips-location float-right"><a href="javascript:;" class="small">返回优士企业人才库</a></div>
+			</div>
+			<div class="usc-sch-main clearfix">
+				<div class="filter-block clearfix">
+					<p class="filter-title inline-block">搜索</p>
+					<p class="inline-block"><input type="text" name="keyword" value="" id="keyword" class="filter-text" placeholder="名录关键字" /></p>
+					<div class="select-location"><a class="btn-location" js="selectIndustry" tips="选择行业" maxlength="20" style="width:230px;"><span industryNames="">选择行业</span></a>
+						<input type="hidden" js="selectIndustry_id" name="industryIds" value="" />
+						<input type="hidden" js="selectIndustry_name" name="industryNames" value="" />
+					</div>
+					<div class="select-location"><a class="btn-location" js="selectLocation" tips="选择工作地点" maxlength="13"><span locationNames="">选择地区</span></a>
+						<input type="hidden" js="selectLocation_name" name="locationNames" value="" />
+						<input type="hidden" js="selectLocation_id" name="locationIds" value="" />
+					</div>
+					<p class="inline-block" style="margin-left:20px;*margin-left:0;">内容包含
+						<label class="spe-left3"><input type="checkbox" /> Email</label>
+						<label class="spe-left3"><input type="checkbox" /> 手机</label>
+						<label class="spe-left3"><input type="checkbox" /> 座机</label>
+					</p>
+					<p class="inline-block spe-left-pd2">
+						<input class="btn-search" type="submit" onclick="$('#export_id').val('');" value="" />
+					</p>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div id="main">
+		<p class="boldface">总共 <a>0</a> 条企业名录</p>
+		<table cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<th width="12%">公司名称</th>
+					<th width="10%">所属行业</th>
+					<th width="7%">地区</th>
+					<th width="10%">内容统计</th>
+					<th width="5%">人数</th>
+					<th width="26%">描述</th>
+					<th width="8%">上传人</th>
+					<th width="8%">上传时间</th>
+					<th width="8%">售价</th>
+					<th width="6%">操作</th>
+				</tr>
+				<tr class="">
+					<td><a target="_blank" href="#" class="fullname boldface">Majid Hameed</a></td>
+					<td>Avanza Solutions</td>
+					<td>UNIVERSITY</td>
+					<td>Email/手机/座机</td>
+					<td>888</td>
+					<td>计算机软件</td>
+					<td><a href="javascript:;">张三</a></td>
+					<td>2013-10-22</td>
+					<td>20优士币</td>
+					<td><a href="javascript:;" class="button">购买</a></td>
+				</tr>
+				<tr class="">
+					<td><a target="_blank" href="#" class="fullname boldface">Majid Hameed</a></td>
+					<td>Avanza Solutions</td>
+					<td>UNIVERSITY</td>
+					<td>Email/手机/座机</td>
+					<td>888</td>
+					<td>计算机软件</td>
+					<td><a href="javascript:;">张三</a></td>
+					<td>2013-10-22</td>
+					<td>20优士币</td>
+					<td><a href="javascript:;" class="button">购买</a></td>
+				</tr>
+				<tr class="">
+					<td><a target="_blank" href="#" class="fullname boldface">Majid Hameed</a></td>
+					<td>Avanza Solutions</td>
+					<td>UNIVERSITY</td>
+					<td>Email/手机/座机</td>
+					<td>888</td>
+					<td>计算机软件</td>
+					<td><a href="javascript:;">张三</a></td>
+					<td>2013-10-22</td>
+					<td>20优士币</td>
+					<td><a href="javascript:;" class="button">购买</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="pages">
+			<a onclick="return topage('2');" href="javascript:void(0);" class="next">上一页</a>
+			<a onclick="return topage('1');" href="javascript:void(0);">1</a>
+			<a onclick="return topage('2');" href="javascript:void(0);">2</a>
+			<a class="current">3</a>
+			<a onclick="return topage('4');" href="javascript:void(0);">4</a>
+			<a onclick="return topage('5');" href="javascript:void(0);">5</a>
+			<a onclick="return topage('6');" href="javascript:void(0);">6</a>
+			<a onclick="return topage('7');" href="javascript:void(0);">7</a>
+			<a onclick="return topage('8');" href="javascript:void(0);">8</a>
+			<a onclick="return topage('4');" href="javascript:void(0);" class="next">下一页</a>
+		</div>
+	</div>
+	<div id="footer">
+		<p style="font-size:14px;">招聘服务热线:021-51759800  招聘服务邮箱:<a href="mailto:talentsource@ushi.com"> talentsource@ushi.com</a></p>
+		<p class="quiet">Ushi.com © 2009~2013 沪ICP备06027394号 <a href="http://www.ushi.com/doc.jhtml?key=term_of_service" class="quiet">服务条款</a></p>
+	</div>
+</div>
+</body>
+</html>

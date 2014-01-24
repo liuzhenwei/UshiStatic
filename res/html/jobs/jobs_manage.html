@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>职业频道</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="/doc!jsprop.jhtml"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/job.js"></script>
+</head>
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	
+	<div id="main" class="clearfix">
+		<div class="channel-tit">
+			<h3>职业频道</h3>
+		</div>
+		<div class="tabs-common clearfix">
+			<ul>
+				<li><a href="jobs_post.html">发布职位</a></li>
+				<li><a href="jobs_apply_manage.html">应聘管理</a></li>
+				<li class="current"><a href="jobs_manage.html">职位管理</a></li>
+				<li><a href="jobs_company.html">公司信息管理</a></li>
+			</ul>
+			<div class="float-right"><a class="job-navigation-help" href="jobs_overview.html">找工作</a></div>
+		</div>
+		
+		<!-- Center -->
+		<div id="jobs_mainbody_wrapper" class="column-full">
+			<div class="tipsbox">还没有职位信息，即刻开始<a href="jobs_post.html">发布职位</a>吧！</div>
+			<div class="success">您的职位已经成功提交，在通过审核之后将会正式发布！ <a href="jobs_post.html">继续发布职位</a></div>
+			<div class="success">您的职位已经完成编辑，在通过审核之后将会正式发布。</div>
+			<div class="clearfix margin-bottom">
+				<div class="jobs_search_input">
+					<input type="text" value="输入关键字" style="color:#AAA;" />
+					<div class="multi-selector-btn"> <a href="#">查看职位</a> </div>
+				</div>
+			</div>
+			<table class="topic-list">
+				<thead>
+					<tr>
+						<th width="3%"><input name="" type="checkbox" value="" /></th>
+						<th width="12%">职位名称</th>
+						<th width="13%">公司名称</th>
+						<th width="8%">工作地点</th>
+						<th width="12%">发布时间</th>
+						<th width="12%">更新时间</th>
+						<th width="12%">结束时间</th>
+						<th width="7%">状态</th>
+						<th width="8%">应聘人数</th>
+						<th width="13%">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input name="" type="checkbox" value="" /></td>
+						<td><a href="jobs_post.html">市场总监</a></td>
+						<td>天下网</td>
+						<td>上海</td>
+						<td>2010-11-29 22:22</td>
+						<td>2010-11-29 22:22</td>
+						<td>2010-11-29 22:22</td>
+						<td><span class="green">发布中</span></td>
+						<td><a href="jobs_apply_manage.html">888</a></td>
+						<td><a href="#" class="spe-right">编辑</a> <a href="#" class="spe-right" js="updateJob">更新</a> <a href="#" class="spe-right">暂停</a></td>
+					</tr>
+					<tr>
+						<td><input name="" type="checkbox" value="" /></td>
+						<td><a href="jobs_post.html">市场总监</a></td>
+						<td>天下网</td>
+						<td>上海</td>
+						<td>2010-11-29 22:22</td>
+						<td>2010-11-29 22:22</td>
+						<td>2010-11-29 22:22</td>
+						<td><span class="orange">审核中</span></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><input name="" type="checkbox" value="" /></td>
+						<td><a href="jobs_post.html">市场总监</a></td>
+						<td>天下网</td>
+						<td>上海</td>
+						<td>2010-11-29 22:22</td>
+						<td>2010-11-29 22:22</td>
+						<td>2010-11-29 22:22</td>
+						<td><span class="red">审核失败</span></td>
+						<td>&nbsp;</td>
+						<td><a href="#" class="spe-right">编辑</a></td>
+					</tr>
+					<tr>
+						<td><input name="" type="checkbox" value="" /></td>
+						<td><a href="jobs_post.html">市场总监</a></td>
+						<td>天下网</td>
+						<td>上海</td>
+						<td>2010-11-29 22:22</td>
+						<td>2010-11-29 22:22</td>
+						<td>2010-11-29 22:22</td>
+						<td><span class="quiet">暂停</span></td>
+						<td><a href="jobs_apply_manage.html">888</a></td>
+						<td><a href="#" class="spe-right">编辑</a> <a href="#" class="spe-right" js="updateJob">更新</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<input type="button" class="common-button" value="批量更新" />
+			</p>
+			<div class="pages"> <a href="#" class="current">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="/group/groups.jhtml?pageNo=2" class="next">下一页</a> </div>
+		</div>
+	</div>
+	
+	<!--#include file="footer.html"--> 
+</div>
+
+<div id="popUpdateJob" style="display:none">
+	<p>点击"刷新"后本职位的有效期将<b>从现在开始重新计算</b>，职位过期时间将调整为：<br />
+		<strong></strong></p>
+	<p>&nbsp;</p>
+	<p class="quiet"><input type="checkbox" />
+		已明白，以后不再提示</p>
+	<p class="margin-top15e a-center">
+		<input type="button" class="special-btn spe-right2" value=" 确定 " />
+		<input type="button" class="common-button" value=" 取消 " />
+	</p>
+</div>
+
+</body>
+</html>

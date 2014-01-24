@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>Ushi Customer Service System</title>
+<link href="/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="/js/backend/jquery-1.4.2.min.js"></script>
+<script src="/js/backend/thickbox.js"></script>
+<script src="/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="/js/backend/general.js"></script>
+
+
+</head>
+
+<body>
+<div id="mainbody">
+    <!--header start-->
+    <div id="header">
+        <div class="lf"><img src="../images/logo_1.png"/></div>
+        <div class="rf"> Operator：Christy
+            | <a href="../login.htm">Logout</a></div>
+        <div id="toppad"></div>
+    </div>
+    <!--header end-->
+    <div class="lf">
+        <div id="menu_out" class="leftmenu">
+			<!-- include value="/WEB-INF/jsp/backend/inc/menu.jsp"></include-->
+        </div>
+    </div>
+    
+    
+    
+    
+	<style>
+		.tagSearch{ margin-top:10px;}
+		table.tableTags {border:1px #ccc solid;border-right:none;border-bottom:none; table-layout:fix; width:100%; margin:10px 0;}
+		.tableTags td{border-right:1px #ccc solid;border-bottom:1px #ccc solid; text-align:center; padding:5px;}
+	</style>
+	<script >
+		$(function(){
+			$('input[datepicker]').datepicker();
+		})	
+	</script>
+
+    <div class="rf">
+        <div id="container">
+	  	<h2>数据视图</h2>
+		<div class="tagSearch">
+			<form action="" method="post" name="">
+				<span> 时间 </span>
+				<input type="text" name="startdate" size="15" datepicker="y" />
+				<span> 至 </span>
+				<input type="text" name="enddate" size="15" datepicker="y" />
+				<input type="submit" value="查询" />
+			</form>
+		</div>
+		
+		<table class="tableTags" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<td>日期</td>
+					<td>UV</td>
+					<td>PV</td>
+					<td>发布数</td>
+					<td>参与数</td>
+					<td>当天进行</td>
+					<td>签到数</td>
+					<td>手机使用人数</td>
+				</tr>
+				
+				<tr>
+					<td>2010-10-14</td>
+					<td>123</td>
+					<td>234</td>
+					<td>123</td>
+					<td>45</td> 
+					<td>456</td>
+					<td>123</td>
+					<td>22</td>
+				</tr>
+				
+				<tr>
+					<td>2010-10-14</td>
+					<td>123</td>
+					<td>234</td>
+					<td>123</td>
+					<td>45</td> 
+					<td>456</td>
+					<td>123</td>
+					<td>22</td>
+				</tr>
+				
+				<tr>
+					<td>2010-10-14</td>
+					<td>123</td>
+					<td>234</td>
+					<td>123</td>
+					<td>45</td> 
+					<td>456</td>
+					<td>123</td>
+					<td>22</td>
+				</tr>
+
+				
+			</tbody>
+		</table>
+		
+    </div>
+    
+    
+    
+    
+    
+    
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+    </div>
+    
+</div>
+<!--footer end-->
+
+</body>
+</html>

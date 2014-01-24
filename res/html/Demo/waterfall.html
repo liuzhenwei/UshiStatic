@@ -1,0 +1,131 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>瀑布流布局</title>
+<style type="text/css">
+body {padding:10px;}
+#item-container {
+	position:relative;
+	margin:0 auto;
+	width:auto;
+}
+.item {
+	position:absolute;
+	opacity:0;
+	filter:alpha(opacity=0);
+	width:200px;
+}
+.item-in {
+	border:0;
+	padding:0 0 10px 0;
+	position:relative;
+	background-color:#ddd;
+}
+.item-in img {
+	max-width:200px;
+	display:block;
+}
+.item-in div {
+	margin:10px 10px 0 10px;
+	padding:5px;
+	font-family:微软雅黑;
+	color:#444;
+	font-size:14px;
+	background-color:#fff;
+}
+#load-more {
+	width:400px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	color:#000;
+	font-size:26px;
+	border:1px solid #ddd;
+	box-shadow:1px 2px 3px #eee;
+	background-color:#037C1D;
+	color:#fff;
+	display:none;
+	position:absolute;
+	border-radius:2px;
+}
+</style>
+<script type="text/javascript" src="../../../common/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../../../common/js/jquery-ui-1.8.24.core.js"></script>
+<script type="text/javascript" src="../../../common/js/widget1.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#item-container').waterfall({
+		showInterval: 0,
+		showOvertime: 20,
+		resizeRefresh: true
+	});
+});
+</script>
+</head>
+<body>
+<div id="item-container">
+	<div class="item">
+		<div class="item-in"><img src="http://static.ushi.cn/s/res/html/Demo/images/1.jpg" width="250" alt="" />
+			<div>1 最上面那层果冻的味道太赞了！离火，加入软化的鱼胶片，搅拌至完全融化，加入100ml果茶，倒入容器，冷藏成型后，切碎，装饰在慕斯上</div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="item-in"><img src="images/2.jpg" width="250" alt="" />
+			<div>2 以森林和自然为主题的木质家居小产品</div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="item-in"><img src="images/3.jpg" width="250" alt="" />
+			<div>3 日本国内的一个环保组织more
+				trees与AXIS画廊在东京联合举办了一场名为“感受森林12天”的展览，旨在提高人们对日本目前的森林现状的认识。活动中展览的一组由深泽直人等日本精英设计师设计的以森林和自然为主题的木质家居小产品，让人眼前一亮。 </div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="item-in"><img src="http://static.ushi.cn/s/res/html/Demo/images/4.jpg" width="250" alt="" />
+			<div>4 创意分享 | Fran?oise Gilot，创作这些作品的时候作者正处于一个重要的时刻，缺乏技巧并且屡受挫折的创作者认识了一位对他意义非凡的老师，并且这位老师激发了他的灵感，他最终意识到对于他重要的东西并非创作一幅艺术品，而是艺术本身。</div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="item-in"><img src="images/5.jpg" width="250" alt="" />
+			<div>5 以森林和自然为主题的木质家居小产品</div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="item-in"><img src="images/6.jpg" width="250" alt="" />
+			<div>6 以森林和自然为主题的木质家居小产品</div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="item-in"><img src="images/1.jpg" width="250" alt="" />
+			<div>7 以森林和自然为主题的木质家居小产品</div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="item-in"><img src="images/2.jpg" width="250" alt="" />
+			<div>8 创意分享 | Fran?oise Gilot，创作这些作品的时候作者正处于一个重要的时刻，缺乏技巧并且屡受挫折的创作者认识了一位对他意义非凡的老师，并且这位老师激发了他的灵感，他最终意识到对于他重要的东西并非创作一幅艺术品，而是艺术本身。</div>
+		</div>
+	</div>
+</div>
+
+<div id="append" style="display:none;">
+	<div class="item">
+		<div class="item-in"><img src="images/1.jpg" width="250" alt="" />
+			<div>11 最上面那层果冻的味道太赞了！离火，加入软化的鱼胶片，搅拌至完全融化，加入100ml果茶，倒入容器，冷藏成型后，切碎，装饰在慕斯上</div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="item-in"><img src="images/2.jpg" width="250" alt="" />
+			<div>12 以森林和自然为主题的木质家居小产品</div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="item-in"><img src="images/3.jpg" width="250" alt="" />
+			<div>13 日本国内的一个环保组织more
+				trees与AXIS画廊在东京联合举办了一场名为“感受森林12天”的展览，旨在提高人们对日本目前的森林现状的认识。活动中展览的一组由深泽直人等日本精英设计师设计的以森林和自然为主题的木质家居小产品，让人眼前一亮。 </div>
+		</div>
+	</div>	
+</div>
+
+</body>
+</html>

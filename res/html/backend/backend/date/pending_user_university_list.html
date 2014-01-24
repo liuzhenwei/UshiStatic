@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>Ushi Customer Service System</title>
+<link href="../css/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/ui.datepicker.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../css/fancy.css" media="screen" />
+<script src="../js/jquery.pack.js"></script>
+<script src="../js/general.js"></script>
+<script src="../js/thickbox.js"></script>
+<script src="../js/ui.datepicker.js"></script>
+<script type="text/javascript" src="../js/jquery.pngFix.pack.js"></script>
+<script type="text/javascript" src="../js/jquery.fancybox-1.0.0.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			//Activate FancyBox
+				$("#boxshow a.outbox").fancybox({
+				'zoomSpeedIn':	0, 
+				'zoomSpeedOut':	0, 
+				'overlayShow':	true
+
+			});
+			
+			//Some lines for this page
+			$("div#donate").bind("click", function() {
+				$("#donate_form").submit()
+			});
+			
+			$("#comment_form").attr("action", "/fancy/add_comment"); $("#age").val('fancy'); //die spamers, die...
+		});
+
+		//List can contain mixed media too
+		//Parameter "o" ir optional and used to override settings, example: {url: "http://www.google.com", title: false,  o: {'frameWidth': 200} }
+		
+		
+		function getGroupItems(opts) {
+			jQuery.each(imageList, function(i, val) {
+		        opts.itemArray.push(val);
+		    });
+		}
+		
+	</script>
+</head>
+<body>
+<div id="mainbody">
+    <!--header start-->
+    <div id="header">
+        <div class="lf"><img src="..../../bns/images/logo_1.png"/></div>
+        <div class="rf"> Operator：Christy
+            | <a href="../login.htm">Logout</a></div>
+        <div id="toppad"></div>
+    </div>
+    <!--header end-->
+    <div class="lf">
+        <div id="menu_out" class="leftmenu">
+            <ul id="menu" class="menu collapsible">
+                <li> <a href="../index.htm">Homepage</a> </li>
+                <li > <a href="#">Members</a>
+                    <ul>
+                        <li><a href="member_list.htm">Activated members</a></li>
+                        <li><a href="deactived_member_list.htm">Deactivated members</a></li>
+                        <li><a href="search_members.htm">Search members</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Contents</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Image</a></li>
+                        <li><a href="javascript:void(0);">Text content</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Filters</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Create filter</a></li>
+                        <li><a href="javascript:void(0);">Manage filter</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Groups</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Manage group quota</a></li>
+                        <li><a href="javascript:void(0);">Group list</a></li>
+                        <li><a href="group_apply.html">Create groups <span id="result_box2"><span title="">management</span></span></a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Payment</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Payment management</a></li>
+                    </ul>
+                </li>
+                <li  class="current"> <a href="#">Date</a>
+                    <ul>
+                        <li><a href="pending_user_company_list.html">Pending User Company List</a></li>
+                        <li><a href="pending_user_university_list.html">Pending User University List</a></li>
+                        <li><a href="company_list_management.html">Company List Management</a></li>
+                        <li><a href="university_list_management.html">University List Management</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="rf">
+        <div id="container">
+            <h2>Pending User University List</h2>
+            <div style="float:right;margin-top:10px;"><a href="pending_user_company_list.html">Pending User Company List</a> | Pending User University List </div>
+            <div id="tips"><b>1~50</b> of total <b>100</b> universities</div>
+            <div style="width:100%; overflow:visible; overflow-x:auto; overflow-y:hidden; padding-bottom:15px;">
+                <form>
+                    <table width="100%" cellpadding="0" cellspacing="0" class="datalist mt10" id="boxshow">
+                        <tr>
+                            <th width="30"><strong>ID</strong></th>
+                            <th>University  Which User input</th>
+                            <th width="220">Action</th>
+                        </tr>
+                        <tr>
+                            <td align="left">1 </td>
+                            <td>北京大学</td>
+                            <td height="5"><p><a href="#box1" class="outbox">Associate</a> | <a href="#">Ignore</a></p></td>
+                        </tr>
+                        <tr>
+                            <td align="left">2 </td>
+                            <td>北京电影学院</td>
+                            <td height="5"><p><a href="#box2" class="outbox">Associate</a> | <a href="#">Ignore</a></p></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="pagenav"><span class="cur">1</span><span><a href="#">2</a></span><span><a href="#">3</a></span><span><a href="#">4</a></span><span><a href="#">5</a></span><span><a href="#">5</a></span><span><a href="#">7</a></span><span><a href="#">8</a></span><span><a href="#">9</a></span><span><a href="#">End of Page</a></span></div>
+        </div>
+    </div>
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+    </div>
+</div>
+<!--footer end-->
+<div  id="box1" style="display:none;">
+    <h2><strong>Associate University</strong></h2>
+    <table width="100%" border="0">
+        <tr>
+            <td  style="width:140px;"><strong>Search for universities</strong> </td>
+            <td style="width:300px;"><input name="textfield" type="text" id="textfield" value="enter University name..." size="50" style="width:290px;" /></td>
+            <td ><input type="submit" name="button" id="button" value="Search" /></td>
+        </tr>
+    </table>
+    <table width="100%" border="0" class="datalist mt10">
+        <tr>
+            <th><strong>University</strong></th>
+            <th><strong>Action</strong></th>
+        </tr>
+        <tr>
+            <td>北京大学</td>
+            <td><input type="submit" name="button2" id="button2" value="Associate" /></td>
+        </tr>
+        <tr>
+            <td>北京学院</td>
+            <td><input type="submit" name="button3" id="button3" value="Associate" /></td>
+        </tr>
+        <tr>
+            <td>北京人民大学</td>
+            <td><input type="submit" name="button4" id="button4" value="Associate" /></td>
+        </tr>
+        <tr>
+            <td>北京艺术学院</td>
+            <td><input type="submit" name="button5" id="button5" value="Associate" /></td>
+        </tr>
+        <tr>
+            <td>北京广播学院</td>
+            <td><input type="submit" name="button5" id="button6" value="Associate" /></td>
+        </tr>
+        <tr>
+            <td>北京工学院</td>
+            <td><input type="submit" name="button5" id="button7" value="Associate" /></td>
+        </tr>
+    </table>
+</div>
+<div  id="box2" style="display:none;">
+    <h2><strong>Associate University</strong></h2>
+    <table width="100%" border="0">
+        <tr>
+            <td  style="width:140px;"><strong>Search for universities</strong> </td>
+            <td style="width:300px;"><input name="textfield" type="text" id="textfield" value="enter University name..." size="50" style="width:290px;" /></td>
+            <td ><input type="submit" name="button" id="button" value="Search" /></td>
+        </tr>
+    </table>
+    <table width="100%" border="0" class="datalist mt10">
+        <tr>
+            <th><strong>University</strong></th>
+            <th><strong>Action</strong></th>
+        </tr>
+        <tr>
+            <td>北京大学</td>
+            <td><input type="submit" name="button2" id="button2" value="Associate" /></td>
+        </tr>
+        <tr>
+            <td>北京学院</td>
+            <td><input type="submit" name="button3" id="button3" value="Associate" /></td>
+        </tr>
+        <tr>
+            <td>北京人民大学</td>
+            <td><input type="submit" name="button4" id="button4" value="Associate" /></td>
+        </tr>
+        <tr>
+            <td>北京艺术学院</td>
+            <td><input type="submit" name="button5" id="button5" value="Associate" /></td>
+        </tr>
+        <tr>
+            <td>北京广播学院</td>
+            <td><input type="submit" name="button5" id="button6" value="Associate" /></td>
+        </tr>
+        <tr>
+            <td>北京工学院</td>
+            <td><input type="submit" name="button5" id="button7" value="Associate" /></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

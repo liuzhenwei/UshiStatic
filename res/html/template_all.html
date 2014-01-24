@@ -1,0 +1,960 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../../common/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../../common/js/jquery-ui-1.9.1.core.js"></script>
+<script type="text/javascript" src="../../common/js/widget.js"></script>
+<script type="text/javascript" src="../../common/js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('[uiSelect]').uiSelect({
+		type: 'search',
+		searchTips: '可输入关键字查询选项',
+		acOptions: {width:200}
+	}).show();
+});
+</script>
+<style type="text/css">
+h2,h3{margin:20px 0 5px 0;}
+.tpl-cont {margin-left:20px;}
+.ui-select-list {max-height:150px; overflow:auto; overflow-x:visible; border:1px solid #bbb;}
+.ui-select-list .list-bottom {border:0;}
+.ui-select-list .list-bottom li {border:0; padding:3px; color:#333;}
+</style>
+</head>
+
+<body id="page_member">
+<div id="wrapper" class="container" style="padding:0 0 30px 30px; text-align: left; width: 960px;">
+	<h2>分享内容模块 (老版本)</h2>
+	<p style="padding:10px;font-size:14px;"><a href="template_feed.html"><b>新版本参见 template_feed.html</b></a></p>
+	<div class="tpl-cont" style="width:600px;">
+		<div class="feed-block event-block"> <a class="common-close" href="javascript:;"></a>
+			<div class="event-owner event-owner-30"><a href="#"><img src="../../common/images/face_30.png"></a></div>
+			<div class="event-content">
+				<p><a href="#" class="username">殷建东</a> SIEMENS真是不差钱，在《南方周末》已经不满足于普通的报花报眼通栏投广告了，而是直接硬板套页再通栏大幅广告，不过主题不错"答长远，行更远"。 <span class="spe-left2 fontgray">- 来自新浪微博</span></p>
+				<p class="action">4小时前 <a href="#" groupid="" js="insertComm" class="comments-shop">评论</a> <span js="commentCnt">(2)</span> <span js="fav_span"><span class="spe-left spe-right">|</span> <a feedid="1192832" href="#">收藏</a> </span> <span class="retweet_span"><span class="spe-left spe-right">|</span> <a feedid="1192832" href="#">转播</a> </span> </p>
+				<div class="event-comments">
+					<div class="reply">
+						<p><a href="#">王凝墨</a> <span class="spe-left">有截图吗~！</span></p>
+						<p class="action">2011-04-14 09:49<span class="spe-left3"><a uid="95284" uname="王凝墨" js="addComment" href="#">回复</a></span> </p>
+					</div>
+					<div class="reply">
+						<p><a href="#">殷建东</a> <span class="spe-left">呵呵，纸媒，无截图，今天正好是发行日，你可以买一份体验下，或者不买到报摊上看下就知了，</span></p>
+						<p class="action">2011-04-14 09:55 <span class="spe-left3"><a js="addComment" href="#">回复</a></span> </p>
+					</div>
+				</div>
+				<p>
+					<textarea style="height: 80px;" class="input-addcomm">我也说两句</textarea>
+					<input type="button" style="" value="发表评论" class="common-button" hidefocus="true">
+				</p>
+			</div>
+		</div>
+		<h3>普通微博</h3>
+		<div hasbind="yes" class="feed-block event-block"> <a hasbind="yes" href="javascript:;" class="common-close" style="display: none;" js="showFeedCtrl" ctrltype="feed" targetid="204876" feedtype="1" feedid="3044445"></a>
+			<div class="event-owner event-owner-30"><a href="#"><img src="../../common/images/face_30.png" alt="" /></a></div>
+			<div class="event-content">
+				<p><a hasbind="showPersonInfo" class="username" poppersoninfo="204876" href="http://www.ushi.com/u/zhanghailin3983">stone zhang</a> 我只想快乐的活着<span class="spe-left"></span> <a href="" target="_blank"></a> </p>
+				<div class="action"> 1小时前<a hasbind="yes" class="comments-shop" js="insertComm" groupid="" href="#">评论</a> <span js="commentCnt">(1)</span> <span js="fav_span"><span class="spe-left spe-right">|</span> <a hasbind="yes" href="#" feedid="3044445">收藏</a> </span> <span class="retweet_span"> <span class="spe-left spe-right">|</span> <a hasbind="yes" href="javascript:void(0)" feedid="3044445">转播</a> </span> </div>
+				<div class="event-comments" style="display: none;"></div>
+				<p>
+					<textarea hasbind="yes" class="input-addcomm" groupid="" feedid="3044445" pid="" pname="" lastname="" style="display: none;">我也说两句</textarea>
+					<input hasbind="yes" hidefocus="true" class="common-button" value="发表评论" style="display: none;" type="button">
+				</p>
+			</div>
+		</div>
+		<h3>发布职位</h3>
+		<div hasbind="yes" class="feed-block event-block"> <a hasbind="yes" href="javascript:;" class="common-close" style="display: block;" js="showFeedCtrl" ctrltype="feed" targetid="34279" feedtype="524288" feedid="3045228"></a>
+			<div class="event-owner event-owner-30"><a href="#"><img src="../../common/images/face_30.png" alt="" /></a></div>
+			<div class="event-content">
+				<p><a pifocus="out" hasbind="showPersonInfo" class="username" poppersoninfo="34279" href="http://www.ushi.com/u/jobchannel">欧阳泽林 Lynn</a> 温静：中国软件与技术服务股份有限公司 招聘专员<span class="spe-left"></span> <a href="" target="_blank"></a> </p>
+				<div class="jobs-list-block clearfix noborder" style="padding:3px 0;">
+					<div class="float-left border" style="width:100px; height:43px;"><a href="#"><img src="../../common/images/face_30.png" alt="" /></a></div>
+					<div class="clearfloat pd-top05e" style="width:auto;padding-left:15px;"> <strong class="boldface"><a href="http://www.ushi.com/job/apply%21viewDetail.jhtml?jobId=43180">技术总监</a></strong><br>
+						中国软件与技术服务股份有限公司</div>
+				</div>
+				<div class="action"> 11分钟前<a hasbind="yes" class="comments-shop" js="insertComm" groupid="" href="#">评论</a> <span js="commentCnt"></span> <span js="fav_span"><span class="spe-left spe-right">|</span> <a hasbind="yes" href="#" feedid="3045228">收藏</a> </span> <span class="retweet_span"> <span class="spe-left spe-right">|</span> <a hasbind="yes" href="javascript:void(0)" feedid="3045228">转播</a> </span> </div>
+				<div class="event-comments" style="display: none;"></div>
+				<p>
+					<textarea hasbind="yes" class="input-addcomm" groupid="" feedid="3045228" pid="" pname="" lastname="" style="display: none;">我也说两句</textarea>
+					<input hasbind="yes" hidefocus="true" class="common-button" value="发表评论" style="display: none;" type="button">
+				</p>
+			</div>
+		</div>
+		<h3>参加活动</h3>
+		<div hasbind="yes" class="feed-block event-block"> <a hasbind="yes" href="javascript:;" class="common-close" style="display: none;" js="showFeedCtrl" ctrltype="feed" targetid="34279" feedtype="16384" feedid="3045213"></a>
+			<div class="event-owner event-owner-30"><a href="#"><img src="../../common/images/face_30.png" alt="" /></a></div>
+			<div class="event-content">
+				<p><a pifocus="out" hasbind="showPersonInfo" class="username" poppersoninfo="34279" href="http://www.ushi.com/u/jobchannel">欧阳泽林 Lynn</a> 计划去活动<a target="_blank" href="http://www.ushi.com/event/view%21viewDetail.jhtml?id=5,202"> 2012猎头"赢"新春年会暨猎头赢3周年庆 </a><span class="spe-left"></span> <a href="" target="_blank"></a> </p>
+				<div class="action"> 13分钟前<span js="commentCnt"></span> </div>
+				<div class="event-comments" style="display: none;"></div>
+			</div>
+		</div>
+		<h3>转播</h3>
+		<div hasbind="yes" class="feed-block event-block">
+			<div class="event-owner event-owner-30"><a href="#"><img src="../../common/images/face_30.png" alt="" /></a></div>
+			<div class="event-content">
+				<p><span class="icon-retweet"></span><a hasbind="showPersonInfo" class="username" poppersoninfo="301624" href="http://www.ushi.com/u/zhuxiaoyan2628">朱晓燕</a> 有没有那么一个世界，永远不天黑，星星太阳万物都听我指挥！！<a href="" target="_blank"></a> </p>
+				<div class="event-box">
+					<p><a hasbind="showPersonInfo" class="username" poppersoninfo="301624" href="http://www.ushi.com/u/zhuxiaoyan2628">cassy li</a> 美国Green Option公司近日推出新型车用空调技术：TE-HVAC(7300BTU以上）+ COP 2.0，该产品日前已在美国申请专利， 产品尚未商业化一旦商业化，现有空调市场将重新洗牌！对此专利感兴趣者请直接联系：Green Option Inc.(Scott Diamond：sdiamond@greenoption.biz, Tel: 0014043075152 </p>
+					<div class="action clearfloat clear"> 2011-05-20 20：03<a hasbind="yes" class="comments-shop" js="insertComm" groupid="" href="#">查看转播和评论</a> <span js="commentCnt">(2)</span></div>
+				</div>
+				<div class="action"><span>32分钟前</span><span class="spe-left"><a hasbind="yes" href="javascript:void(0)" name="a_retweethistorylink" feedid="3043299">查看转播记录(1)</a></span><a hasbind="yes" class="comments-shop" js="insertComm" groupid="" href="#">评论</a> <span js="commentCnt">(2)</span> <span js="fav_span"><span class="spe-left spe-right">|</span> <a hasbind="yes" href="#" feedid="3043299">收藏</a> </span> <span class="retweet_span"> <span class="spe-left spe-right">|</span> <a hasbind="yes" href="javascript:void(0)" feedid="3043299">转播</a> </span> </div>
+				<div class="event-comments" style="display: none;"></div>
+				<p>
+					<textarea hasbind="yes" class="input-addcomm" groupid="" feedid="3043299" pid="" pname="" lastname="" style="display: none;">我也说两句</textarea>
+					<input hasbind="yes" hidefocus="true" class="common-button" value="发表评论" style="display: none;" type="button">
+				</p>
+			</div>
+		</div>
+		<h3>问答</h3>
+		<div hasbind="yes" class="feed-block event-block">
+			<div class="event-owner event-owner-30"><a href="#"><img src="../../common/images/face_30.png" alt="" /></a></div>
+			<div class="event-content ">
+				<p><a target="_blank" class="username" href="http://www.ushi.com/u/luhansen">卢汉森		 Dominic Penaloza</a> 认为 <a target="_blank" href="http://www.ushi.com/wenda/question%21detail.jhtml?qid=52">SNS社区的第一批用户从哪里来？</a> 是个好问题<span class="spe-left"></span> <a href="" target="_blank"></a> </p>
+				<div class="action"> 1小时前<span js="commentCnt"></span> </div>
+				<div class="event-comments" style="display: none;"></div>
+			</div>
+		</div>
+		<h3>分享网址</h3>
+		<div hasbind="yes" class="feed-block event-block"> <a hasbind="yes" href="javascript:;" class="common-close" style="display: none;" js="showFeedCtrl" ctrltype="feed" targetid="200" feedtype="1" feedid="1199154"></a>
+			<div class="event-owner event-owner-30"><a href="#"><img src="../../common/images/face_30.png" alt="" /></a></div>
+			<div class="event-content ">
+				<p><a pifocus="out" hasbind="showPersonInfo" class="username" poppersoninfo="200" href="http://192.168.10.195/u/200">刘孝和</a> 分享了网址<span class="spe-left"></span> <a href="http://192.168.10.195/feed/feed%21view.jhtml?feedId=1199154" target="_blank">网易</a> </p>
+				<p class="description hasLayout">aaaa</p>
+				<div class="action"> 32秒前<a hasbind="yes" class="comments-shop" js="insertComm" groupid="" href="#">评论</a> <span js="commentCnt"></span> <span js="fav_span"></span> </div>
+				<div class="event-comments" style="display: none;"></div>
+				<p>
+					<textarea hasbind="yes" class="input-addcomm" groupid="" feedid="1199154" pid="" pname="" lastname="" style="display: none;">我也说两句</textarea>
+					<input hasbind="yes" hidefocus="true" class="common-button" value="发表评论" style="display: none;" type="button">
+				</p>
+			</div>
+		</div>
+		<h3>分享文件</h3>
+		<div hasbind="yes" class="feed-block event-block"> <a hasbind="yes" href="javascript:;" class="common-close" style="display: none;" js="showFeedCtrl" ctrltype="feed" targetid="200" feedtype="1" feedid="1199156"></a>
+			<div class="event-owner event-owner-30"><a href="#"><img src="../../common/images/face_30.png" alt="" /></a></div>
+			<div class="event-content ">
+				<p><a hasbind="showPersonInfo" class="username" poppersoninfo="200" href="http://192.168.10.195/u/200">刘孝和</a> 分享了文档<span class="spe-left"></span> <a href="http://192.168.10.195/feed/feed%21view.jhtml?feedId=1199156" target="_blank"><span class="doctype-doc"></span>26个职业文案</a> </p>
+				<p class="description hasLayout">aaaa</p>
+				<div class="action"> 1秒前<a hasbind="yes" class="comments-shop" js="insertComm" groupid="" href="#">评论</a> <span js="commentCnt"></span> <span js="fav_span"></span> </div>
+				<div class="event-comments" style="display: none;"></div>
+				<p>
+					<textarea hasbind="yes" class="input-addcomm" groupid="" feedid="1199156" pid="" pname="" lastname="" style="display: none;">我也说两句</textarea>
+					<input hasbind="yes" hidefocus="true" class="common-button" value="发表评论" style="display: none;" type="button">
+				</p>
+			</div>
+		</div>
+		<h3>分享图片</h3>
+		<div hasbind="yes" class="feed-block event-block"> <a hasbind="yes" href="javascript:;" class="common-close" style="display: none;" js="showFeedCtrl" ctrltype="feed" targetid="204876" feedtype="1" feedid="3044445"></a>
+			<div class="event-owner event-owner-30"><a href="#"><img src="../../common/images/face_30.png" alt="" /></a></div>
+			<div class="event-content">
+				<p><a hasbind="showPersonInfo" class="username" poppersoninfo="204876" href="http://www.ushi.com/u/zhanghailin3983">stone zhang</a> 我只想快乐的活着<span class="spe-left"></span> <a href="" target="_blank"></a> </p>
+				<div class="event-share-image"><img src="../../bns/images/biz_spark/video_thumb/13.jpg" /></div>
+				<div class="action"> 1小时前<a hasbind="yes" class="comments-shop" js="insertComm" groupid="" href="#">评论</a> <span js="commentCnt">(1)</span> <span js="fav_span"><span class="spe-left spe-right">|</span> <a hasbind="yes" href="#" feedid="3044445">收藏</a> </span> <span class="retweet_span"> <span class="spe-left spe-right">|</span> <a hasbind="yes" href="javascript:void(0)" feedid="3044445">转播</a> </span> </div>
+				<div class="event-comments" style="display: none;"></div>
+				<p>
+					<textarea hasbind="yes" class="input-addcomm" groupid="" feedid="3044445" pid="" pname="" lastname="" style="display: none;">我也说两句</textarea>
+					<input hasbind="yes" hidefocus="true" class="common-button" value="发表评论" style="display: none;" type="button">
+				</p>
+			</div>
+		</div>
+		<h3>分享图片（展开）</h3>
+		<div hasbind="yes" class="feed-block event-block"> <a hasbind="yes" href="javascript:;" class="common-close" style="display: none;" js="showFeedCtrl" ctrltype="feed" targetid="204876" feedtype="1" feedid="3044445"></a>
+			<div class="event-owner event-owner-30"><a href="#"><img src="../../common/images/face_30.png" alt="" /></a></div>
+			<div class="event-content">
+				<p><a hasbind="showPersonInfo" class="username" poppersoninfo="204876" href="http://www.ushi.com/u/zhanghailin3983">stone zhang</a> 我只想快乐的活着<span class="spe-left"></span> <a href="" target="_blank"></a> </p>
+				<div class="event-share-image event-box">
+					<p><a href="#">收起</a> <span class="spe-left spe-right">|</span> <a href="#">查看大图</a></p>
+					<p><img src="../../bns/images/biz_spark/video_thumb/13.jpg" /></p>
+				</div>
+				<div class="action"> 1小时前<a hasbind="yes" class="comments-shop" js="insertComm" groupid="" href="#">评论</a> <span js="commentCnt">(1)</span> <span js="fav_span"><span class="spe-left spe-right">|</span> <a hasbind="yes" href="#" feedid="3044445">收藏</a> </span> <span class="retweet_span"> <span class="spe-left spe-right">|</span> <a hasbind="yes" href="javascript:void(0)" feedid="3044445">转播</a> </span> </div>
+				<div class="event-comments" style="display: none;"></div>
+				<p>
+					<textarea hasbind="yes" class="input-addcomm" groupid="" feedid="3044445" pid="" pname="" lastname="" style="display: none;">我也说两句</textarea>
+					<input hasbind="yes" hidefocus="true" class="common-button" value="发表评论" style="display: none;" type="button">
+				</p>
+			</div>
+		</div>
+	</div>
+	<h2>人脉列表</h2>
+	<div class="tpl-cont">
+		<h3>大</h3>
+		<div style="width:700px;">
+			<div class="list-box">
+				<ul>
+					<li class="col-1 vcard v-50"><a href="#"><img src="../../common/images/face_50.png" /></a>
+						<dl>
+							<dt><a href="#">黄俊华 Albert</a> <span title="付费会员" class="grade-vip"></span> <span title="品尚优士" class="migs_smailestIco"></span> </dt>
+							<dd>优士网 技术经理</dd>
+							<dd class="quiet">中国大陆&nbsp;上海</dd>
+						</dl>
+					</li>
+					<li class="col-2"><a href="#" class="grade-2">280</a></li>
+					<li class="col-3"><a href="#" class="link-menu">未分组</a></li>
+					<li class="col-4"><a href="javascript:void(0)" class="link-mail">发直邮</a><br />
+						<a href="javascript:void(0)" class="link-del">删除</a></li>
+				</ul>
+			</div>
+		</div>
+		<h3>简 1, 头像默认30px	（使用ul, vcard）</h3>
+		<p>也适用于群组</p>
+		<div class="common-block" style="width:250px;">
+			<ul class="vcard">
+				<li class="border-bottom"><a href="#" class="common-close"><span class="hide">关闭</span></a> <a href="#"><img src="../../common/images/face_30.png"></a>
+					<dl>
+						<dt><a href="#">项皎</a></dt>
+						<dd>中国户外网 市场</dd>
+						<dd><a href="#" class="spe-right">加为一度</a> <a href="#">关注此人</a></dd>
+					</dl>
+				</li>
+				<li class="border-bottom"><a href="#" class="common-close"><span class="hide">关闭</span></a> <a href="#"><img src="../../common/images/face_30.png"></a>
+					<dl>
+						<dt><a href="#">项皎</a></dt>
+						<dd>中国户外网 市场</dd>
+						<dd><a href="#" class="spe-right">加为一度</a> <a href="#">关注此人</a></dd>
+					</dl>
+				</li>
+				<li><a href="#">更多</a></li>
+			</ul>
+		</div>
+		<p>头像为50px</p>
+		<div class="common-block" style="width:250px;">
+			<ul class="vcard v-50">
+				<li class="border-bottom"><a href="#" class="common-close"><span class="hide">关闭</span></a> <a href="#"><img src="../../common/images/face_50.png"></a>
+					<dl>
+						<dt><a href="#">项皎</a></dt>
+						<dd>中国户外网 市场</dd>
+					</dl>
+				</li>
+				<li class="border-bottom"><a href="#" class="common-close"><span class="hide">关闭</span></a> <a href="#"><img src="../../common/images/face_50.png"></a>
+					<dl>
+						<dt><a href="#">项皎</a></dt>
+						<dd>中国户外网 市场</dd>
+					</dl>
+				</li>
+				<li><a href="#">更多</a></li>
+			</ul>
+		</div>
+		<p>横排</p>
+		<div style="width:580px;">
+			<ul class="p-h-list vcard v-50">
+				<li> <a href="#"><img src="../../common/images/face_50.png"></a>
+					<dl>
+						<dt><a href="#">项皎</a></dt>
+						<dd>中国户外网 市场</dd>
+					</dl>
+				</li>
+				<li> <a href="#"><img src="../../common/images/face_50.png"></a>
+					<dl>
+						<dt><a href="#">项皎</a></dt>
+						<dd>中国户外网 市场</dd>
+					</dl>
+				</li>
+				<li> <a href="#"><img src="../../common/images/face_50.png"></a>
+					<dl>
+						<dt><a href="#">项皎</a></dt>
+						<dd>中国户外网 市场</dd>
+					</dl>
+				</li>
+				<li> <a href="#"><img src="../../common/images/face_50.png"></a>
+					<dl>
+						<dt><a href="#">项皎</a></dt>
+						<dd>中国户外网 市场</dd>
+					</dl>
+				</li>
+				<li> <a href="#"><img src="../../common/images/face_50.png"></a>
+					<dl>
+						<dt><a href="#">项皎</a></dt>
+						<dd>中国户外网 市场</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+		<p>带边框线</p>
+		<div style="width:680px;">
+			<ul class="p-h-list vcard-list vcard v-50">
+				<li> <a href="#"><img src="../../common/images/face_50.png"></a>
+					<dl>
+						<dt><a href="#">项皎</a></dt>
+						<dd>中国户外网 市场</dd>
+					</dl>
+				</li>
+				<li> <a href="#"><img src="../../common/images/face_50.png"></a>
+					<dl>
+						<dt><a href="#">项皎</a></dt>
+						<dd>中国户外网 市场</dd>
+					</dl>
+				</li>
+				<li> <a href="#"><img src="../../common/images/face_50.png"></a>
+					<dl>
+						<dt><a href="#">项皎</a></dt>
+						<dd>中国户外网 市场</dd>
+					</dl>
+				</li>
+				<li> <a href="#"><img src="../../common/images/face_50.png"></a>
+					<dl>
+						<dt><a href="#">项皎</a></dt>
+						<dd>中国户外网 市场</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+		<p>带边框线checkbox</p>
+		<ul class="p-h-list vcard v-50 v-50-chk vcard-list p-296">
+			<li>
+				<input type="checkbox" />
+				<a href="/group/mygroup.jhtml?gid=821"><img src="http://images.ushigroup.cn/bnsphoto/g/2011/05/12/7bc7b492-9afc-4962-9f5e-28198fb50c86_icon.jpg" alt="" width="50" height="50" /></a><a href='/u/14202'></a>
+				<dl>
+					<dt><a href="/u/14202">胡蝶</a> <span class="quiet modify">创建人</span> </dt>
+					<dd>第一感觉交友网 CEO</dd>
+					<dd> <a class="grade-3" href="/sns/sns!get1stFriends.jhtml?targetUserId=14202">451</a>
+						<div class="float-right" js="group_member_editor" style="display:none"> <a href="../javascript;;">降为普通成员</a> </div>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<input type="checkbox" />
+				<a href='/u/5009'><img src='http://ushi.cn../../common/images/face_30.png' id='avatar-5009' /></a>
+				<dl>
+					<dt><a href="/u/5009">简简</a> <span class="quiet modify">管理员</span> </dt>
+					<dd>简翡儿职场漫画 策划人兼投资者</dd>
+					<dd> <a class="grade-1" href="/sns/sns!get1stFriends.jhtml?targetUserId=5009">10</a>
+						<div class="float-right" js="group_member_editor" style="display:none"> <a href="../javascript;;">降为普通成员</a> </div>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+		<h3>简 2 （使用div）</h3>
+		<p>也适用于群组</p>
+		<div style="width:250px;">
+			<div class="vcard"> <a href="#"><img src="../../common/images/face_30.png"></a>
+				<dl>
+					<dt><a href="#">项皎</a></dt>
+					<dd>中国户外网 市场</dd>
+					<dd><a href="#" class="spe-right">加为一度</a> <a href="#">关注此人</a></dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<h2>通用表格样式</h2>
+	<div class="tpl-cont">
+		<table class="topic-list">
+			<thead>
+				<tr>
+					<th>表格列名称</th>
+					<th>表格列名称</th>
+					<th>表格列名称</th>
+					<th>表格列名称</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="#">表格内容链接</a></td>
+					<td>群组显示在您的个人档案中</td>
+					<td><input type="radio" name="m629">
+						允许
+						<input type="radio" value="0" checked="" name="m629">
+						不允许</td>
+					<td><select name="select">
+							<option value="">请选择</option>
+						</select></td>
+				</tr>
+				<tr>
+					<td><a href="#">表格内容链接</a></td>
+					<td>群组显示在您的个人档案中</td>
+					<td><input type="radio" name="m29">
+						允许
+						<input type="radio" value="0" checked="" name="m29">
+						不允许</td>
+					<td><select name="select">
+							<option value="">请选择</option>
+						</select></td>
+				</tr>
+				<tr>
+					<td><a href="#">表格内容链接</a></td>
+					<td>群组显示在您的个人档案中</td>
+					<td><input type="radio" name="m9">
+						允许
+						<input type="radio" value="0" checked="" name="m9">
+						不允许</td>
+					<td><select name="select">
+							<option value="">请选择</option>
+						</select></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<h2>页面表单提示</h2>
+	<div class="tpl-cont">
+		<div class="success">成功信息提示样式<a href="#" class="common-close"><span class="hide">Close</span></a></div>
+		<div class="error">错误信息提示样式</div>
+		<div class="notice">注意信息提示样式</div>
+		<div class="tipsbox">普通信息提示样式</div>
+		<div class="notice-special">特殊通知信息提示样式</div>
+        <div class="tipsbox-bulb1">灯泡提示1</div>
+	</div>
+	<h2>按钮</h2>
+	<div class="tpl-cont">
+		<h3>主按钮</h3>
+		<p>使用input：
+			<input type="button" class="special-btn" value="确定" />
+			使用Link： <a href="#" class="special-btn">确定</a> English input：
+			<input type="button" class="special-btn" value="Apply to Join" />
+			English Link： <a href="#" class="special-btn">Apply to Join</a> </p>
+		<p>Medium Button --- 使用input：
+			<input type="button" class="special-btn medium-btn" value="确定" />
+			使用Link： <a href="#" class="special-btn medium-btn">确定</a> English input：
+			<input type="button" class="special-btn medium-btn" value="Apply to Join" />
+			English Link： <a href="#" class="special-btn medium-btn">Apply to Join</a> </p>
+		<p>Large Button --- 使用input：
+			<input type="button" class="special-btn large-btn" value="申请加入" />
+			使用Link： <a href="#" class="special-btn large-btn">申请加入</a> English input：
+			<input type="button" class="special-btn large-btn" value="Apply to Join" />
+			English Link： <a href="#" class="special-btn large-btn">Apply to Join</a> </p>
+		<h3>辅助按钮</h3>
+		<p>使用input：
+			<input type="button" class="common-button" value="取消" />
+			使用Link： <a href="#" class="common-button">取消</a> </p>
+		<p>Large Button --- 使用input：
+			<input type="button" class="common-button large-btn" value="取消" />
+			使用Link： <a href="#" class="common-button large-btn">取消</a> </p>
+		<h3>强调按钮</h3>
+		<p>使用input：
+			<input type="button" class="focus-btn" value="购买" />
+			使用Link： <a href="#" class="focus-btn">购买</a> </p>
+		<p>Large Button --- 使用input：
+			<input type="button" class="focus-btn large-btn boldface" value="购买" />
+			使用Link： <a href="#" class="focus-btn large-btn boldface">购买</a> </p>
+		<h3>禁用按钮</h3>
+		<p>使用input：
+			<input type="button" class="disable-button" value="禁用" disabled="true" />
+			使用Link： <a href="#" class="disable-button"><span>禁用</span></a> </p>
+		<p>Large Button --- 使用input：
+			<input type="button" class="disable-button large-btn" value="禁用" disabled="true" />
+			使用Link： <a href="#" class="disable-button large-btn"><span>禁用</span></a> </p>
+	</div>
+	<h2>Form 表单项</h2>
+	<div class="tpl-cont">
+		<table>
+			<tr>
+				<td><h3>Select</h3>
+					<p>
+						<select uiSelect="#uislt">
+							<option value="">请选择</option>
+<optgroup label="高科技"></optgroup>
+<option value="2">空间科技</option>
+<option value="3">计算机硬件</option>
+<option value="4">计算机软件</option>
+<option value="5">计算机网络设备</option>
+<option value="6">计算机与网络安全</option>
+<option value="7">计算机游戏</option>
+<option value="8">互联网</option>
+<option value="9">半导体</option>
+<option value="10">电信与通讯</option>
+<option value="11">纳米技术</option>
+<option value="12">信息技术与服务</option>
+<option value="13">无线通讯</option>
+<optgroup label="法律"></optgroup>
+<option value="15">法律援助</option>
+<option value="16">法律服务</option>
+<optgroup label="专业咨询、服务"></optgroup>
+<option value="18">管理咨询</option>
+<option value="19">招聘、猎头</option>
+<option value="20">人力资源</option>
+<option value="21">培训</option>
+<option value="22">市场推广与广告</option>
+<option value="23">市场调研</option>
+<option value="24">公共关系</option>
+<option value="25">翻译服务</option>
+<option value="26">设备维护</option>
+<option value="27">外包服务</option>
+<option value="28">会务及活动服务</option>
+<optgroup label="医疗与健康"></optgroup>
+<option value="30">生物工程</option>
+<option value="31">生物信息</option>
+<option value="32">医院与医疗</option>
+<option value="33">医药品</option>
+<option value="34">医疗设备</option>
+<option value="35">兽医</option>
+<option value="36">健身</option>
+<option value="37">心理健康</option>
+<option value="38">中医</option>
+<optgroup label="媒体"></optgroup>
+<option value="40">广播</option>
+<option value="41">电视</option>
+<option value="42">电影</option>
+<option value="43">报纸</option>
+<option value="44">杂志</option>
+<option value="45">出版</option>
+<option value="46">写作与编辑</option>
+<option value="47">文化艺术</option>
+<option value="48">印刷</option>
+<option value="49">互联网媒体</option>
+<option value="50">媒体设计制作</option>
+<optgroup label="体育、休闲、旅游、娱乐"></optgroup>
+<option value="52">娱乐业</option>
+<option value="53">休闲度假与旅游</option>
+<option value="54">餐饮业</option>
+<option value="55">酒店/宾馆业</option>
+<option value="56">体育运动</option>
+<option value="57">食品与饮料</option>
+<option value="58">娱乐设备与服务</option>
+<optgroup label="金融"></optgroup>
+<option value="60">保险</option>
+<option value="61">财经服务</option>
+<option value="62">房地产</option>
+<option value="155">商业银行</option>
+<option value="63">投资银行</option>
+<option value="64">风险投资</option>
+<option value="65">私募股权投资</option>
+<option value="66">证券</option>
+<option value="67">会计</option>
+<optgroup label="非盈利性组织"></optgroup>
+<option value="69">非盈利性组织管理</option>
+<option value="70">公益基金</option>
+<option value="71">智囊团</option>
+<option value="72">慈善事业</option>
+<option value="73">科学研究</option>
+<optgroup label="教育"></optgroup>
+<option value="75">义务教育</option>
+<option value="76">高等教育</option>
+<option value="77">教育管理</option>
+<option value="78">E-Learning</option>
+<option value="79">教育研究</option>
+<optgroup label="日常消费品"></optgroup>
+<option value="81">化妆品</option>
+<option value="82">服装服饰</option>
+<option value="83">体育用品</option>
+<option value="84">烟草</option>
+<option value="85">超市卖场</option>
+<option value="86">食物生产</option>
+<option value="87">酒类</option>
+<option value="88">消费电子</option>
+<option value="89">快速消费品</option>
+<option value="90">家具</option>
+<option value="91">零售</option>
+<option value="92">批发</option>
+<option value="93">进出口</option>
+<option value="94">奢侈品与珠宝</option>
+<optgroup label="建筑"></optgroup>
+<option value="96">建筑工程</option>
+<option value="97">建材</option>
+<option value="98">建筑设计</option>
+<option value="99">土木工程</option>
+<option value="100">装饰装潢</option>
+<optgroup label="制造"></optgroup>
+<option value="102">工艺品</option>
+<option value="103">飞行航空与宇航</option>
+<option value="104">汽车</option>
+<option value="105">化工</option>
+<option value="106">电子电气设备</option>
+<option value="107">机械</option>
+<option value="108">采矿与金属</option>
+<option value="109">石油与能源</option>
+<option value="110">回收与环境保护</option>
+<option value="111">造船</option>
+<option value="112">纺织及皮革制造</option>
+<option value="113">造纸与木材</option>
+<option value="114">铁路</option>
+<option value="115">玻璃, 陶瓷与混凝土</option>
+<option value="116">包装与集装箱</option>
+<option value="117">工业管理</option>
+<option value="118">工业自动化</option>
+<optgroup label="政府及公共事业"></optgroup>
+<option value="120">外交</option>
+<option value="121">司法机关</option>
+<option value="122">行政部门</option>
+<option value="123">军事机构</option>
+<option value="124">卫生社会福利</option>
+<option value="125">水利环境公共设施</option>
+<option value="126">地质勘探</option>
+<option value="127">水电燃气生产供应</option>
+<option value="128">公共安全</option>
+<option value="129">社会保障</option>
+<option value="130">图书馆及博物馆</option>
+<option value="131">信息服务</option>
+<option value="132">保安服务</option>
+<optgroup label="公共服务业"></optgroup>
+<option value="134">环保服务</option>
+<option value="135">家政服务</option>
+<option value="136">宗教协会</option>
+<option value="137">物流与供应链</option>
+<option value="138">邮政，包裹，零担货运</option>
+<option value="139">运输/汽运/铁路</option>
+<optgroup label="交通运输"></optgroup>
+<option value="141">仓储</option>
+<option value="142">航空运输</option>
+<option value="143">水上运输</option>
+<option value="144">客运及城市公共交通</option>
+<optgroup label="农林牧渔业"></optgroup>
+<option value="146">林业</option>
+<option value="147">渔业</option>
+<option value="148">农场</option>
+<option value="149">畜牧</option>
+<optgroup label="商品贸易"></optgroup>
+<option value="151">国内贸易</option>
+<option value="152">国际贸易</option>
+<optgroup label="其他行业"></optgroup>
+<option value="154">其他行业</option>
+						</select>
+						<span class="ui-select" id="uislt">
+							<input type="text" class="ui-select-input" unselectable="on" /><a class="ui-select-toggle"><span class="ui-select-toggle-ico"></span></a>
+						</span> 自定义UI
+					</p></td>
+				<td><h3>Text</h3>
+					<p>
+						<input type="text" class="formtext" />
+					</p></td>
+				<td><h3>Search Text</h3>
+					<div class="margin-bottom">
+						<div class="search-cont search-cont-text" style="width:300px;"> <a href="#" class="button"><span class="link-add3">添加</span></a>
+							<div class="search-add">
+								<input type="text" class="formtext" />
+							</div>
+						</div>
+					</div></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td><h3>Search Text</h3>
+					<div class="search-cont" style="width:300px;">
+						<input type="button" class="search-btn" value="确定" />
+						<div>
+							<input type="text" class="formtext" />
+						</div>
+					</div></td>
+				<td><h3>Search Add</h3>
+					<div class="search-cont" style="width:300px;"> <a href="#" class="common-button"><span class="link-add">添加</span></a>
+						<div class="search-add">
+							<input type="text" class="formtext" />
+						</div>
+					</div></td>
+			</tr>
+		</table>
+	</div>
+	<h2>Form 结构</h2>
+	<div class="tpl-cont" style="position:relative;">
+		<div class="fl-outer fl-outer-tips fl-outer-tips11 fl-outer-aleft" style="display: block; position: absolute; text-align: left; height: 32px; width: 260px; top:14px; left:386px;">
+			<div class="fl-outer-out" style="width: auto">
+				<div class="fl-block-shadow"></div>
+				<div class="fl-outer-in">
+					<div class="fl-block"> <span class="arrow-left popupArrow">&nbsp;</span>
+						<div class="fl-content" style="min-height: 20px;">表单项正常提示信息</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="border:1px solid #ccc; padding:15px; width:500px;">
+			<div class="form-item clearfix">
+				<label>正常样式：</label>
+				<div class="itemmain">
+					<div>
+						<input type="text" name="" maxlength="20" value="" class="inputtext" />
+					</div>
+				</div>
+			</div>
+			<div class="form-item clearfix">
+				<label>正确样式：</label>
+				<div class="itemmain">
+					<div><span class="form-suc-text">
+						<input type="text" name="" maxlength="20" value="" class="inputtext" />
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="form-item clearfix">
+				<label>错误样式：</label>
+				<div class="itemmain">
+					<input type="text" name="" maxlength="20" value="" class="inputtext form-err-field" />
+					<p style="display:;" class="red small">表单项错误提示<span class="form-err-tipsico spe-left">&nbsp;</span></p>
+				</div>
+			</div>
+			<div class="form-item clearfix">
+				<label>列表样式：</label>
+				<div class="itemmain">
+					<select class="form-err-field">
+						<option>下拉选项</option>
+					</select>
+					<p style="display:;" class="red small">表单项错误提示</p>
+				</div>
+			</div>
+			<div class="form-btn">
+				<input type="submit" value="&nbsp;提交按钮&nbsp;" class="button" />
+				<a href="#" class="spe-left2">取消</a> </div>
+		</div>
+	</div>
+	<h2>Form 结构 使用 table</h2>
+	<div class="tpl-cont">
+		<div style="border:1px solid #ccc; padding:15px; width:600px;">
+			<table cellspacing="0" cellpadding="0" class="form-table">
+				<tr>
+					<th><label>标题：</label></th>
+					<td><input type="text" name="" maxlength="20" value="" class="formtext" />
+						<p class="red small">表单项错误提示</p>
+						<p class="quiet small">表单项默认提示信息</p></td>
+				</tr>
+				<tr>
+					<th><label>标题：</label></th>
+					<td><input type="text" name="" maxlength="20" value="" class="formtext" />
+						<p class="red small display-inline">要错误提示不转行在同一个块里加上宽度就可以并且把display-inline改成display-inline-block就可以了</p>
+					</td>
+				</tr>
+				<tr>
+					<th><label>标题：</label></th>
+					<td><select>
+							<option>下拉选项</option>
+						</select>
+						<p class="red small">表单项错误提示</p></td>
+				</tr>
+				<tr>
+					<th>&nbsp;</th>
+					<td class="form-btn"><input type="submit" value="&nbsp;提交按钮&nbsp;" class="button large-btn" />
+						<a href="#" class="spe-left2">取消</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<h2>头像</h2>
+	<div class="tpl-cont">
+		<table>
+			<tr>
+				<td><h3>用户头像</h3>
+					<p> <img src="../../common/images/face_30.png" class="userface" alt="" /> <img src="../../common/images/face_50.png" class="userface" alt="" /> <img src="../../common/images/face_120.png" class="userface" alt="" /> </p></td>
+				<td><h3>群组头像</h3>
+					<p> <img src="../../common/images/group_30.png" class="userface" alt="" /> <img src="../../common/images/group_50.png" class="userface" alt="" /> <img src="../../common/images/group_120.png" class="userface" alt="" /> </p></td>
+			</tr>
+		</table>
+	</div>
+	<h2>翻页</h2>
+	<div class="tpl-cont">
+		<div class="a-center"> <a href="#" class="large">查看更多分享</a><span style="display:inline-block;" class="icon-btn-down middle spe-left"></span> </div>
+		<div class="pages"> <a href="#" class="next">上一页</a> <a href="#">1</a> <a href="#">2</a> <a href="#" class="current">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> <a href="#" class="next">下一页</a> </div>
+	</div>
+	<h2>标题样式</h2>
+	<div class="tpl-cont">
+		<h4 class="extra-title">标题样式 extra</h4>
+		<h4 class="normal-title">标题样式 normal</h4>
+		<h4 class="special-title">标题样式 special</h4>
+	</div>
+	<h2>下拉菜单</h2>
+	<div class="tpl-cont">
+		<p>如果是静态菜单，需额外加 dp-menu-static
+		<table>
+			<tr>
+				<td><div class="dp-menu dp-menu-static">
+						<ul>
+							<li>账户类型：<a href="#">钻石商务</a></li>
+							<li class="line">优士币：<a href="#"><span>7</span>枚</a></li>
+							<li><a href="#">升级会员资格</a></li>
+							<li><a href="#">优士币充值</a></li>
+						</ul>
+					</div></td>
+				<td><div class="dp-menu dp-menu-static" style="margin-top:10px;">
+						<ul class="dp-menulist">
+							<li><a href="#">升级会员资格</a></li>
+							<li><a href="#">优士币充值</a></li>
+							<li><a href="#">升级会员资格</a></li>
+							<li><a href="#">优士币充值</a></li>
+						</ul>
+					</div></td>
+			</tr>
+		</table>
+	</div>
+	<h2>UL 列表样式</h2>
+	<div class="tpl-cont">
+		<table class="margin-bottom">
+			<tr>
+				<td><ul class="list-disc">
+						<li>这是 list-disc 列表</li>
+						<li>这是 list-disc 列表</li>
+						<li>这是 list-disc 列表</li>
+					</ul></td>
+				<td><ul>
+						<li class="list-disc">这是 list-disc 在li里</li>
+						<li class="list-disc">这是 list-disc 在li里</li>
+						<li class="list-disc">这是 list-disc 在li里</li>
+					</ul></td>
+				<td><ul class="list-arrow">
+						<li>这是 list-arrow 列表</li>
+						<li>这是 list-arrow 列表</li>
+						<li>这是 list-arrow 列表</li>
+					</ul></td>
+			</tr>
+		</table>
+		<h3>autocomplete 组件的列表样式</h3>
+		<table>
+			<tr>
+				<td class="spe-right-pd2"><p>标准列表</p>
+					<ul class="ac-dp-list">
+						<li>autocomplete 组件的列表样式</li>
+						<li class="hover">hover状态加 hover 这个名称的class</li>
+						<li>autocomplete 组件的列表样式</li>
+					</ul></td>
+				<td class="spe-right-pd2"><p>带头像的复杂列表</p>
+					<ul class="ac-dp-list vcard">
+						<li><a href="#"><img src="../../common/images/face_50.png"></a>
+							<dl>
+								<dt><a href="#">项皎</a></dt>
+								<dd>中国户外网 市场</dd>
+							</dl>
+						</li>
+						<li class="hover"><a href="#"><img src="../../common/images/face_50.png"></a>
+							<dl>
+								<dt><a href="#">项皎</a></dt>
+								<dd>中国户外网 市场</dd>
+							</dl>
+						</li>
+						<li><a href="#"><img src="../../common/images/face_50.png"></a>
+							<dl>
+								<dt><a href="#">项皎</a></dt>
+								<dd>中国户外网 市场</dd>
+							</dl>
+						</li>
+					</ul></td>
+				<td><p>旧版样式不建议再用</p>
+					<ul class="list-bottom">
+						<li>autocomplete 组件的列表样式</li>
+						<li class="hover">hover状态加 hover 这个名称的class</li>
+						<li>autocomplete 组件的列表样式</li>
+					</ul></td>
+			</tr>
+		</table>
+	</div>
+	<h2>人脉等级图标</h2>
+	<div class="tpl-cont">
+		<table>
+			<tr>
+				<td><p class="grade-1">grade-1</p></td>
+				<td><p class="grade-2">grade-2</p></td>
+				<td><p class="grade-3">grade-3</p></td>
+				<td><p class="grade-4">grade-4</p></td>
+				<td><p class="grade-vip">grade-vip</p></td>
+				<td><p class="degree-1">degree-1</p></td>
+				<td><p class="degree-2">degree-2</p></td>
+				<td><p class="degree-3">degree-3</p></td>
+			</tr>
+		</table>
+	</div>
+	<h2>内容布局</h2>
+	<div class="tpl-cont">
+		<div class="channel-tit">
+			<h3>大标题</h3>
+		</div>
+		<div class="tabs-common clearfix">
+			<ul>
+				<li class="current"><a href="#">当前项</a></li>
+				<li><a href="#">选项一</a></li>
+				<li><a href="#">选项二</a></li>
+			</ul>
+		</div>
+		<div class="tabs-sub clearfix">
+			<ul>
+				<li class="current"><a href="#">当前项</a></li>
+				<li><a href="#">选项一</a></li>
+				<li><a href="#">选项二</a></li>
+			</ul>
+		</div>
+		<h4 class="extra-title">具体设置/选项标题</h4>
+		<div class="notice">注意信息提示样式</div>
+		<ul class="margin-bottom">
+			<li>
+				<p><b>您的一度人脉列表希望公开给：</b></p>
+				<div class="pvy_profile_info">
+					<input type="radio" value="1" id="privacy_contactlist1" name="privacy.contactlist">
+					<label for="privacy_contactlist1">三度以内人脉</label>
+					<input type="radio" value="2" checked="checked" id="privacy_contactlist2" name="privacy.contactlist">
+					<label for="privacy_contactlist2">一度人脉</label>
+					<input type="radio" value="3" id="privacy_contactlist3" name="privacy.contactlist">
+					<label for="privacy_contactlist3">仅自己可见</label>
+				</div>
+			</li>
+			<li class="pd-top">
+				<p><b>您的头像希望公开显示给：</b></p>
+				<div class="pvy_profile_info">
+					<input type="radio" value="1" id="privacy_logoview1" name="privacy.logoview">
+					<label for="privacy_logoview1">所有优士会员</label>
+					<input type="radio" value="2" checked="checked" id="privacy_logoview2" name="privacy.logoview">
+					<label for="privacy_logoview2">三度以内人脉</label>
+					<input type="radio" value="3" id="privacy_logoview3" name="privacy.logoview">
+					<label for="privacy_logoview3">一度人脉</label>
+				</div>
+			</li>
+		</ul>
+		<p>
+			<input type="button" class="special-btn" value="保存设定" />
+		</p>
+	</div>
+	<h2>菜单样式</h2>
+	<div class="tpl-cont">
+		<div class="tabs-common-news clearfix">
+			<ul>
+				<li class="current"><a href="javascript:;">全部 (7)</a></li>
+				<li><a href="javascript:;">我管理的 (1)</a></li>
+			</ul>
+			<div style="margin-top:-3px;" class="float-right">
+				排序：
+				<a href="javascript:;">成员人数</a>
+			</div>
+		</div>
+	</div>
+	<h2>常用图标</h2>
+	<div class="tpl-cont">
+		<a class="display-inline-block link-menu">&nbsp;</a>
+		<a class="display-inline-block link-menu1">&nbsp;</a>
+		<a class="display-inline-block link-mobile">&nbsp;</a>
+		<a class="display-inline-block link-mail">&nbsp;</a>
+		<a class="display-inline-block link-del">&nbsp;</a>
+		<a class="display-inline-block link-intro">&nbsp;</a>
+		<a class="display-inline-block link-add">&nbsp;</a>
+		<a class="display-inline-block link-add2">&nbsp;</a>
+		<a class="display-inline-block link-collapsed">&nbsp;</a>
+		<a class="display-inline-block link-expanded">&nbsp;</a>
+		<a class="display-inline-block link-edit">&nbsp;</a>
+		<a class="display-inline-block link-forward">&nbsp;</a>
+		<a class="display-inline-block link-print">&nbsp;</a>
+		<a class="display-inline-block link-follow-a">&nbsp;</a>
+		<a class="display-inline-block link-share-ushi">&nbsp;</a>
+		<a class="display-inline-block link-share-group">&nbsp;</a>
+		<a class="display-inline-block link-share-othersns">&nbsp;</a>
+	</div>
+	<h2>常用Box</h2>
+	<div class="tpl-cont">
+		<div style="float:left;padding:0 50px 20px 0;width:400px;">
+			<div class="common-box1">
+				<div class="common-box1-cont">
+					common-box1
+				</div>
+			</div>
+		</div>
+		<div style="float:left;padding:0 50px 20px 0;width:400px;">
+			<div class="common-box2">
+				<div class="cb2-top"><div class="cb2-top-inner"></div></div>
+				<div class="cb2-cont">
+					common-box2
+				</div>
+				<div class="cb2-btm"><div class="cb2-btm-inner"></div></div>
+			</div>
+		</div>
+		<div style="float:left;padding:0 50px 20px 0;width:400px;">
+			<div class="common-box3">
+				<div class="common-box3-inner">
+					<div class="common-box3-cont">
+						common-box3
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="float:left;padding:0 50px 20px 0;width:400px;">
+			<div class="common-box4">
+				<div class="common-box4-cont">
+					common-box4
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

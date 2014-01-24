@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>活动详情</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=3&amp;sensor=false&amp;key=ABQIAAAAaiz2dC8AYH7teaLUHtnb5RSDqkYLQ1K-ackqUpgutrmQ9nn8VBRbkWqjHT_Wwi2UcAPlYzmhNk-O-g"  type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="../js/event.js"></script>
+<script type="text/javascript" src="../js/feed.js"></script>
+<script type="text/javascript" src="../js/friendsSelect.js"></script>
+<style>
+
+</style>
+</head>
+
+<script type="text/javascript">
+$(function(){
+
+	$('#TestEvent').popupWin({
+		title:"优士活动内测",
+		closeDestroy: true,
+		reserve: true,
+		width:800,
+		open: function(){
+
+		}
+	});
+})
+</script>
+<body onunload="GUnload()">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	
+	<div id="main" class="clearfix">
+	
+		<div class="channel-tit pd-btm15e" style="position:relative; margin-top:30px">
+			<h3>活动</h3>
+			<div class="newEvent">
+				<div class="huge_BtnL">
+					<div class="huge_BtnR">
+						<a class="huge_BtnM" href="javascript:;" >
+							<span>分享我的活动日程</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="tabs-common clearfix">
+			<ul>
+				<li><a href="javascript:;">人脉活动</a></li>
+				<li><a href="javascript:;">同城活动</a></li>
+				<li><a href="javascript:;">我的活动</a></li>
+			</ul>
+		</div>
+		
+		<div class="column-2-3" id="totalTagsList">	
+		
+			<div class="clearfix pd-top spe-left-pd2 border-bottom pd-bottom">
+				<div class="tit-inner-l">
+					<h4 class="spe-left2">12月19日俱乐部创业投资项目交流聚会</h4>
+				</div>
+				<div class="tit-inner-r"><a href="#">编辑</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="#">撤销</a></div>
+			</div>
+			
+			<div class="event-block margin-top15e clear">
+				<a class="special-btn  float-right">&nbsp;&nbsp;我也要去&nbsp;&nbsp;</a>
+				<p class="quiet clearfloat">
+					<span class="show">浦东新区上海市浦东新区春晓路350号 - 2010-12-12 19:00 至 2010-12-19 10:00</span>
+					<span class="show date pd-top05e">一周前由&nbsp;&nbsp;<a href="javascript:;">张殷云</a>&nbsp;&nbsp;发布，121参加&nbsp;&nbsp;|&nbsp;&nbsp;623人感兴趣</span><br />
+					<span class="show pd-top05e">标签：
+						<a href="javascript:;">新闻发布会</a>&nbsp;&nbsp;<a href="javascript:;">媒体见面会</a>&nbsp;&nbsp;<a href="javascript:;">创业</a>&nbsp;&nbsp;<a href="javascript:;">投资</a>&nbsp;&nbsp;<a href="javascript:;">俱乐部 </a>
+					</span>
+				</p>
+			</div>
+			
+			<div style="clear:both;" class="event-block spe-right-pd clearfix" >
+				<h5 class="pd-top">我的人脉</h5>
+				<div class="pd-top05e clearfix activeUserList">
+						<div class="picList noborder clear">
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /><i></i></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p3.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p4.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p3.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /></a>
+						</div>
+				</div>
+				
+				
+				<h5 class="pd-top">其他</h5>
+				<div class="pd-top05e clearfix activeUserList">
+						<div class="picList noborder clear">
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /><i></i></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p3.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p4.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p3.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p4.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /><i></i></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p3.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p4.png" width="50" height="50" /><i></i></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p3.png" width="50" height="50" /><i></i></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /></a>
+							<a class="border-blue float-left" href="javascript:;"><img src="..../../bns/images/test_p4.png" width="50" height="50" /></a>
+							<a class="border-blue float-left hide" href="javascript:;"><img src="..../../bns/images/test_p3.png" width="50" height="50" /></a>
+							<a class="border-blue float-left hide" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /></a>
+							<a class="border-blue float-left hide" href="javascript:;"><img src="..../../bns/images/test_p4.png" width="50" height="50" /></a>
+							<a class="border-blue float-left hide" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /></a>
+							<a class="border-blue float-left hide" href="javascript:;"><img src="..../../bns/images/test_p3.png" width="50" height="50" /></a>
+							<a class="border-blue float-left hide" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /></a>
+							<a class="border-blue float-left hide" href="javascript:;"><img src="..../../bns/images/test_p4.png" width="50" height="50" /></a>
+							<a class="border-blue float-left hide" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /></a>
+							<a class="border-blue float-left hide" href="javascript:;"><img src="..../../bns/images/test_p3.png" width="50" height="50" /></a>
+							<a class="border-blue float-left hide" href="javascript:;"><img src="..../../bns/images/test_p2.png" width="50" height="50" /><i></i></a>
+							<a class="border-blue float-left hide" href="javascript:;"><img src="..../../bns/images/test_p4.png" width="50" height="50" /><i></i></a>
+						</div>
+					</div>
+				<a href="#" id="viewAll_">查看全部100人</a>
+			</div>
+			
+			<div class="event-block noborder spe-right-pd clearfix">
+				<h5 class="pd-top">活动介绍</h5>
+				<p class="quiet spe-right">
+					创始人互动俱乐部应会员和社会各界的众多创业者，企业主，投资机构，投资人的要求，组织举行“12月19日俱乐部创业<br />
+					投资项目交流聚会”，促使创业者与创业者，创业者与投资方能互通有无，交流，展示的聚会活动，让大家与近距离接，<br />
+					确发现资源，发现人才与事业伙伴，让大家在事业的道路上多一个与志同道合者共创未来的空间。<br /><br />
+					本次活动集全了投资早，中，晚各个阶段的资本投资机构和个人投资者，投资行业集中在，消费类，高科技，互联网，电<br />
+					子商务几个领域，也有部份信托，营销，法律专业人士参与，其它行业的会在以后的交流会中做出安排，希望参加者做好<br />
+					各自领域的前期准备，如项目PPT，名片，行业资料，团队等以便现场与他人交流，提高沟通效率...   <a href="#">了解更多</a><br />
+				</p>
+			</div>
+			
+				
+			<div id="status_edit">
+				<div class="status-edit clearfix"  style="background:#f3f3f3">
+					<form method="post">
+						<h5 class="bottom">参与讨论</h5>
+						<textarea name="freetext" id="freetext" select="text" ></textarea>
+						<div id="statusLinkUrl" style="width: 30%; float: left;" class="margin-top05e">添加：<a class="spe-right"
+						    href="javascript:void(0)" id="statusUrl">网址</a> <a href="javascript:void(0)"
+						    id="statusDocument">文档</a></div>
+						<div class="share-box" id="statusUrlContent">
+						<a class="common-close" href="javascript:void(0)"><span class="hide">关闭</span></a>
+						<div js="getTitleArea">输入想分享的网址：<input
+						    class="text" value="http://" name="linkurl" id="linkurl" type="text" />
+						<input type="button" js="getTitle"
+						    value="获 取" class="common-button" />
+						</div>
+						<div js="postTitleArea" class="add-web formstyle" style="display: none;">
+						<ul>
+						    <li><label>网址：</label>
+						    <p></p>
+						    </li>
+						    <li><label>标题：</label><input
+						        type="text" maxlength="128" value="" class="input-w-280"
+						        name="linktitle" /></li>
+						</ul>
+						</div>
+						</div>
+						<div class="share-box"id="statusDocumentContent"><a
+						    class="common-close" href="javascript:void(0)"><span
+						    class="hide">关闭</span></a> 选择本地文件：<input class="file" type="file"
+						    name="document" id="fileField" value="浏览" /> <span class="show">支持Word、Excel、PPT、PDF格式文件，最大5MB</span></div>
+						<div class="float-right"><a href="javascript:void(0)"
+						    id="statusEnter" hidefocus="true" class="special-btn spe-right margin-top05e">&nbsp;&nbsp;&nbsp;发布&nbsp;&nbsp;&nbsp;<span class="more_shop"></span></a>
+						 
+						<div id="statusEnterMore" class="dp-menu-shop" style="display: none;">
+							<a href="/feed/feedapi!setup.jhtml" class="spe-left2">现在设置</a></div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+			
+			<div class="event-block">
+			    <div class="event-owner">
+			    <a href='/u/1006'><img src='http://images.ushigroup.cn/bnsphoto/2010/03/20/257c3807-07a3-4d8e-b601-a0db4f70ab0a_thumb.jpg' id='avatar-1006' /></a></div>
+			    <div class="event-content ">
+			    <p><a class="username" href="/u/1006">王东杰</a> &#20908;&#33267;&#26085;&#65292;&#22312;&#25105;&#30340;&#23478;&#20065;&#65292;&#36825;&#22825;&#26159;&#35201;&#21507;&#39290;&#23376;&#30340;&#12290;&#21621;&#21621;&#65292;&#19978;&#28023;&#30340;&#22825;&#65292;&#27809;&#26377;&#21271;&#26041;&#37027;&#31181;&#39128;&#38634;&#30340;&#23506;&#20919;&#19979;&#21507;&#28909;&#20046;&#39290;&#23376;&#30340;&#24863;&#35273;&#65292;&#24576;&#24565;&#36807;&#21435;&#65292;&#24605;&#24565;&#32769;&#23478;&#65281;<span class="spe-left"></span><a href=""
+			        ></a></p>
+			    <p class="action">7小时前<a class="comments-shop" js="insertComm" href="#">评论</a>
+			    <span js="commentCnt">(1)</span> <span js="fav_span"> <span class="spe-left">|</span>
+			                <span class="spe-left"></span>
+			                <a href="#" feedId="673151">收藏</a>
+			            </span>
+			        <span class="retweet_span"> <span class="spe-left">|</span><span
+			                class="spe-left"></span> <a href="javascript:void(0)"
+			                feedId="673151">转播</a> </span>
+			        </p>
+			    <div class="event-comments" style="display: none;"><div class="reply">
+			            <p><a href="/u/25147">Lucy Guo</a> <span class="spe-left">&#21363;&#20351;&#19981;&#22312;&#23478;&#20065;,&#20063;&#21035;&#24536;&#35760;&#21507;&#39290;&#23376;.</span></p>
+			        <p class="action">2010-12-22 09:36<span class="spe-left3"><a href="javascript:void(0);"
+			            js="addComment"
+			            onclick="addComment(this, 'Lucy Guo', '25147');">回复</a></span> </p></div>
+			    </div>
+			    <p><textarea class="input-addcomm" groupId=""
+			            feedId="673151" pid="" pname="" lastname=""
+			            style="display: none;">我也说两句</textarea><input type="button"
+			            hidefocus="true" class="common-button"
+			            value="发表评论"
+			            style="display: none;" /></p>
+			    </div>
+		    </div>
+		    
+		    
+			<div class="event-block">
+			    <div class="event-owner">
+			    <a href='/u/1006'><img src='http://images.ushigroup.cn/bnsphoto/2010/03/20/257c3807-07a3-4d8e-b601-a0db4f70ab0a_thumb.jpg' id='avatar-1006' /></a></div>
+			    <div class="event-content ">
+			    <p><a class="username" href="/u/1006">王东杰</a> &#20908;&#33267;&#26085;&#65292;&#22312;&#25105;&#30340;&#23478;&#20065;&#65292;&#36825;&#22825;&#26159;&#35201;&#21507;&#39290;&#23376;&#30340;&#12290;&#21621;&#21621;&#65292;&#19978;&#28023;&#30340;&#22825;&#65292;&#27809;&#26377;&#21271;&#26041;&#37027;&#31181;&#39128;&#38634;&#30340;&#23506;&#20919;&#19979;&#21507;&#28909;&#20046;&#39290;&#23376;&#30340;&#24863;&#35273;&#65292;&#24576;&#24565;&#36807;&#21435;&#65292;&#24605;&#24565;&#32769;&#23478;&#65281;<span class="spe-left"></span><a href=""
+			        ></a></p>
+			    <p class="action">7小时前<a class="comments-shop" js="insertComm" href="#">评论</a>
+			    <span js="commentCnt">(1)</span> <span js="fav_span"> <span class="spe-left">|</span>
+			                <span class="spe-left"></span>
+			                <a href="#" feedId="673151">收藏</a>
+			            </span>
+			        <span class="retweet_span"> <span class="spe-left">|</span><span
+			                class="spe-left"></span> <a href="javascript:void(0)"
+			                feedId="673151">转播</a> </span>
+			        </p>
+			    <div class="event-comments"><div class="reply">
+			            <p><a href="/u/25147">Lucy Guo</a> <span class="spe-left">&#21363;&#20351;&#19981;&#22312;&#23478;&#20065;,&#20063;&#21035;&#24536;&#35760;&#21507;&#39290;&#23376;.</span></p>
+			        <p class="action">2010-12-22 09:36<span class="spe-left3"><a href="javascript:void(0);"
+			            js="addComment"
+			            onclick="addComment(this, 'Lucy Guo', '25147');">回复</a></span> </p></div>
+			    </div>
+			    <p><textarea class="input-addcomm" groupId=""
+			            feedId="673151" pid="" pname="" lastname=""
+			            >我也说两句</textarea><input type="button"
+			            hidefocus="true" class="common-button"
+			            value="发表评论"
+			           /></p>
+			    </div>
+		    </div>
+		    
+			<div class="event-block">
+			    <div class="event-owner">
+			    <a href='/u/1006'><img src='http://images.ushigroup.cn/bnsphoto/2010/03/20/257c3807-07a3-4d8e-b601-a0db4f70ab0a_thumb.jpg' id='avatar-1006' /></a></div>
+			    <div class="event-content ">
+			    <p><a class="username" href="/u/1006">王东杰</a> &#20908;&#33267;&#26085;&#65292;&#22312;&#25105;&#30340;&#23478;&#20065;&#65292;&#36825;&#22825;&#26159;&#35201;&#21507;&#39290;&#23376;&#30340;&#12290;&#21621;&#21621;&#65292;&#19978;&#28023;&#30340;&#22825;&#65292;&#27809;&#26377;&#21271;&#26041;&#37027;&#31181;&#39128;&#38634;&#30340;&#23506;&#20919;&#19979;&#21507;&#28909;&#20046;&#39290;&#23376;&#30340;&#24863;&#35273;&#65292;&#24576;&#24565;&#36807;&#21435;&#65292;&#24605;&#24565;&#32769;&#23478;&#65281;<span class="spe-left"></span><a href=""
+			        ></a></p>
+			    <p class="action">7小时前<a class="comments-shop" js="insertComm" href="#">评论</a>
+			    <span js="commentCnt">(1)</span> <span js="fav_span"> <span class="spe-left">|</span>
+			                <span class="spe-left"></span>
+			                <a href="#" feedId="673151">收藏</a>
+			            </span>
+			        <span class="retweet_span"> <span class="spe-left">|</span><span
+			                class="spe-left"></span> <a href="javascript:void(0)"
+			                feedId="673151">转播</a> </span>
+			        </p>
+			    <div class="event-comments" style="display: none;"><div class="reply">
+			            <p><a href="/u/25147">Lucy Guo</a> <span class="spe-left">&#21363;&#20351;&#19981;&#22312;&#23478;&#20065;,&#20063;&#21035;&#24536;&#35760;&#21507;&#39290;&#23376;.</span></p>
+			        <p class="action">2010-12-22 09:36<span class="spe-left3"><a href="javascript:void(0);"
+			            js="addComment"
+			            onclick="addComment(this, 'Lucy Guo', '25147');">回复</a></span> </p></div>
+			    </div>
+			    <p><textarea class="input-addcomm" groupId=""
+			            feedId="673151" pid="" pname="" lastname=""
+			            style="display: none;">我也说两句</textarea><input type="button"
+			            hidefocus="true" class="common-button"
+			            value="发表评论"
+			            style="display: none;" /></p>
+			    </div>
+		    </div>
+		    
+		    
+			<div class="event-block">
+			    <div class="event-owner">
+			    <a href='/u/1006'><img src='http://images.ushigroup.cn/bnsphoto/2010/03/20/257c3807-07a3-4d8e-b601-a0db4f70ab0a_thumb.jpg' id='avatar-1006' /></a></div>
+			    <div class="event-content ">
+			    <p><a class="username" href="/u/1006">王东杰</a> &#20908;&#33267;&#26085;&#65292;&#22312;&#25105;&#30340;&#23478;&#20065;&#65292;&#36825;&#22825;&#26159;&#35201;&#21507;&#39290;&#23376;&#30340;&#12290;&#21621;&#21621;&#65292;&#19978;&#28023;&#30340;&#22825;&#65292;&#27809;&#26377;&#21271;&#26041;&#37027;&#31181;&#39128;&#38634;&#30340;&#23506;&#20919;&#19979;&#21507;&#28909;&#20046;&#39290;&#23376;&#30340;&#24863;&#35273;&#65292;&#24576;&#24565;&#36807;&#21435;&#65292;&#24605;&#24565;&#32769;&#23478;&#65281;<span class="spe-left"></span><a href=""
+			        ></a></p>
+			    <p class="action">7小时前<a class="comments-shop" js="insertComm" href="#">评论</a>
+			    <span js="commentCnt">(1)</span> <span js="fav_span"> <span class="spe-left">|</span>
+			                <span class="spe-left"></span>
+			                <a href="#" feedId="673151">收藏</a>
+			            </span>
+			        <span class="retweet_span"> <span class="spe-left">|</span><span
+			                class="spe-left"></span> <a href="javascript:void(0)"
+			                feedId="673151">转播</a> </span>
+			        </p>
+			    <div class="event-comments" style="display: none;"><div class="reply">
+			            <p><a href="/u/25147">Lucy Guo</a> <span class="spe-left">&#21363;&#20351;&#19981;&#22312;&#23478;&#20065;,&#20063;&#21035;&#24536;&#35760;&#21507;&#39290;&#23376;.</span></p>
+			        <p class="action">2010-12-22 09:36<span class="spe-left3"><a href="javascript:void(0);"
+			            js="addComment"
+			            onclick="addComment(this, 'Lucy Guo', '25147');">回复</a></span> </p></div>
+			    </div>
+			    <p><textarea class="input-addcomm" groupId=""
+			            feedId="673151" pid="" pname="" lastname=""
+			            style="display: none;">我也说两句</textarea><input type="button"
+			            hidefocus="true" class="common-button"
+			            value="发表评论"
+			            style="display: none;" /></p>
+			    </div>
+		    </div>
+		    
+
+			
+
+		</div>
+		
+		<div class="column-3 margin-top" >
+			
+			<div id="googlemap" ></div>
+			<h5>邀请朋友一起去</h5>
+			<div class="tabs-common" style="height:26px;background:#f3f3f3">
+				<ul class="innerULevent1">
+					<li class="current"><a href="javascript:;" style="font-size:12px;" class="normal nofocus">优士上的朋友</a></li>
+					<li style="clear:none"><a href="javascript:;" style="font-size:12px;" class="normal nofocus">站外的朋友</a></li>
+				</ul>
+			</div>
+			
+			<div class="jobs-search-body clearfix pd-top05e margin-bottom FriendFromUshi1"> 
+				<input name="receiverIds" id="receiverId" type="hidden" />
+	            <div id="friendSelectList1" class="mult-selector float-left" style="width:70%;border-right:none">
+	            	<div class="fslOpenfriendSelect filter-drop"><a class="icon-btn-down" href="javascript:void(0)"></a></div>
+	                <div class="fslSelectedList friend-selector-selected">
+	                    <input type="text" class="fontgray" name="" value="请输入一度好友或关注者姓名" />
+	                </div>
+				</div>
+				<div class="jobs-search-local multi-selector-btn" style="width:20%;">
+					<a href="#" maxlength="10" style="padding-bottom:3px"> 邀请 </a>
+				</div>
+			</div> 
+			
+			<div class="FriendFromOut1" class="spe-left-pd2" style="display:none">
+				<input style="width:260px;padding:4px" type="text" name="" class="input margin-top" maxlength="120"  /><br />
+				<div class="margin-top margin-bottom date">最多支持5个邮箱地址，请用”,“分隔！</div>
+			</div>
+			
+			
+			<div class="common-block">
+				<h5 class="extra-title">分享活动到</h5>
+				<div class="event-block">
+					<ul>
+						<li><a href="javascript:void(0);" class="sharesina">新浪微博</a></li>
+						<li><a href="javascript:void(0);" class="sharekaixin">开心网</a></li>
+						<li><a href="javascript:void(0);" class="sharerenren">人人网</a></li>
+					</ul>
+				</div>
+				<div class="event-block noborder">
+					<ul>
+						<li><a href="javascript:void(0);" class="share1du">新浪微博</a></li>
+						<li><a href="javascript:void(0);" class="sharegroup">开心网</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			<div class="common-block">
+				<h5 class="extra-title">保存活动计划到</h5>
+				<div class="event-block noborder">
+					<ul>
+						<li><a href="javascript:void(0);" class="sharegoogle">Google日历</a></li>
+						<li><a href="javascript:void(0);" class="shareoutlook">Microsoft Outlook  日历 </a></li>
+					</ul>
+				</div>
+			</div>
+
+			
+			<div class="common-block" style="line-height:20px;">
+				<h5 class="extra-title">您可能感兴趣的活动</h5>
+				<div class="event-block" style="line-height:20px;">
+					<a href="javascript:;">单身白领相聚上岛咖啡浪漫晚餐</a><br />
+					<span class="quiet">长寿路181弄2号日月星辰大楼2号楼2306室</span><br />
+					<span class="date">2010-12-21&nbsp;&nbsp;|&nbsp;&nbsp;41363人参加</span>
+				</div>
+				<div class="event-block" style="line-height:20px;">
+					<a href="javascript:;">单身白领相聚上岛咖啡浪漫晚餐</a><br />
+					<span class="quiet">长寿路181弄2号日月星辰大楼2号楼2306室</span><br />
+					<span class="date">2010-12-21&nbsp;&nbsp;|&nbsp;&nbsp;41363人参加</span>
+				</div>
+				<div class="event-block" style="line-height:20px;">
+					<a href="javascript:;">单身白领相聚上岛咖啡浪漫晚餐</a><br />
+					<span class="quiet">长寿路181弄2号日月星辰大楼2号楼2306室</span><br />
+					<span class="date">2010-12-21&nbsp;&nbsp;|&nbsp;&nbsp;41363人参加</span>
+				</div>
+			</div>
+
+		
+		</div>
+
+	</div>
+	
+	
+	
+	<!--#include file="footer.html"--> 
+</div>
+
+<div class="fl-outer" id="personalInfo" style="width:305px; display:none;position:absolute;zoom:1;">
+  <div class="fl-block">
+        <div class="fl-content" style="overflow:hidden">
+             <ul id="userInfoUL">
+             	<div class="pointTop"></div>
+				<li class="border-bottom">
+					<a class="border-blue pic" href="javascript:void(0)"><img src="../../bns/images/test_p1.png" alt="显示用户名字" /></a>
+					<a class="userBoardClose float-right" href="javascript:void(0)"></a>
+					<p>
+						<a href="javascript:void(0)" class="blue large">陈德志</a><span class="grade-vip"></span><span class="migs_smailestIco"></span><span class="degree-3"></span><br />
+						<span class="quiet">优视科技UC mobile  技术总监 <br />中国大陆 - 上海</span>
+					</p>
+           		</li>
+           		
+           		<li>
+           			<div class="pd-top05e">
+		           		<a href="javascript:void(0)" class="display-inline-block">查看档案</a>
+		           		<span class="display-inline-block spe-left spe-right quiet">|</span>
+		           		<a class="display-inline-block" href="javascript:void(0)">发送直邮</a>
+	           		</div>
+           		</li>
+             </ul>
+        </div>
+    </div>
+</div> 
+
+
+<div id="exportGoogle" class="quiet333" style="display:none">
+	<div class="pd-top15e pd-btm15e">你可以将视图中的活动计划导入到的你的Google日历中，对其进行很方便的管理，导出方式如下：</div>
+	<p style="padding:10px;background:#e7f2fc;line-height:24px;overflow:hidden;_width:550px;">
+		1. 登录并进入你的Google日历<br />
+		2. 点击左下方“其他日历”中的“添加”按钮<br />
+		3. 选择“通过URL添加”<br />
+		4. 点击复制下方的链接地址并粘贴到你刚才打开的Google日历添加项的文本框中<br />
+			<input type="text" style="padding:5px; margin:10px 0 10px 10px;width:520px;" class="date clearfix" value="http://www.ushi.cn/?type=user_subscriptions&scope=everywhere&user_id=9090" />
+		5. 然后点击“添加日历”按钮即可<br />
+	</p>
+	
+	<div class="a-center formstyle">
+		<a class="common-button nofocus" href="#">&nbsp;&nbsp;&nbsp;关闭&nbsp;&nbsp;&nbsp;</a>
+	</div>
+</div>
+
+<div id="exportOutLook" class="quiet333" style="display:none">
+	<div class="pd-top15e pd-btm15e">你可以将视图中的活动计划导入到的你的Outlook日历中，对其进行很方便的管理，导出方式如下：</div>
+	<p style="padding:10px;background:#e7f2fc;line-height:24px;overflow:hidden;_width:550px;">
+		1. 点击<a href="#">日历文件</a>下载到你的电脑<br />
+		2. 打开你的Outlook<br />
+		3. 执行如下系列操作：点击“文件”->选择“打开”->选择“日历“<br />
+		4. 选中你刚刚下载的"ics”后缀名的文件<br />
+		5. 至此你就可以通过Outlook管理你的活动计划<br />
+	</p>
+	<div class="a-center formstyle">
+		<a class="common-button nofocus" href="#">&nbsp;&nbsp;&nbsp;关闭&nbsp;&nbsp;&nbsp;</a>
+	</div>
+</div>
+
+
+<div id="TestEvent">
+	<div class="TestEventTop">
+		<h5 class="large quiet333">内测声明</h5>
+		<p>非常感谢您参与优士活动频道内测，为了能够给您带来更好的服务，优士网现推出活动频道，同时提供电脑、移动设备（移动设备访问网址：http://m.ushi.cn）两种访问方式！由于产品目前处于系统内测阶段，<span class="boldface">暂时不接受新活动日程的发布，</span>许多功能还有待完善，在使用过程中如果给您带来不便，敬请谅解！<br />  <br />    
+同时，您在内测过程中有任何问题或对产品有任何建议，均可通过邮件的形式反馈给我们 <a href="mailto:cs@ushi.cn">cs@ushi.cn</a> ！为了给您提供更满意的服务，我们一直在努力！</p>
+		
+	</div>
+	
+	
+	<div class="TestEventMid">
+		<h5 class="large quiet333">功能简介</h5>
+		<ul>
+			<li class="liNo1disable liNo1disable_en">在活动平台内测期间，暂时不接受新活动日程的发布，对此给您造成的不便，还请谅解</li>
+			<li class="liNo1 liNo1_en">进入活动平台之后，您可以点击：<span class="boldface">分享我的活动日程</span> 按钮，分享您的活动日程，为了便于将您的活动分享给更多用户，您还可以为您的活动添加活动标签或直接邀请您的站内或站外好友</li>
+			<li class="liNo2 liNo2_en">您可以通过关注活动标签来快速找到您感兴趣的活动，关注某个活动标签之后，您会在 <span class="boldface">同城活动</span> 栏目右侧直接查看您所关注的此类活动；当然，您也可以通过关注其他优士会员的形式时刻了解他/她所感兴趣的活动</li>
+			<li class="liNo3 liNo3_en">在 <span class="boldface">人脉活动</span> 以及 <span class="boldface">我的活动</span> 栏目的右边栏中，我们为您提供了活动导出功能，您可以将朋友或自己的活动日程安排导入到自己的Google或Outlook日历，方便您的活动安排；当然，您在查看单个活动详情时同样可以使用此功能</li>
+			<li class="liNo4 liNo4_en border-bottom pd-bottom">在发现自己感兴趣并有意参加的活动时，您可以通过点击 我也要去 表达自己要去的意向，当然，对于即将开始的活动，您还可以通过使用移动设备（移动设备访问：<span class="blue">http://m.ushi.cn</span>）登录优士活动平台直接进行 现场签到</li>
+			<li class="liNo5 liNo5_en">优士活动平台中，专门为使用移动设备终端访问的用户提供了 <span class="boldface">现场签到</span> 功能，当活动在即将开始之前，活动状态栏会显示为 现场签到 模式，您可以使用手机进行签到</li>
+			<li class="liNo6 liNo6_en">如果您担心在进入活动现场后与会人员给您造成打搅，您可以在签到时选择 <span class="boldface">免打搅模式</span>，这样，活动现场的用户将不能向你发送一度人脉申请</li>
+		</ul>
+	</div>
+	
+	
+	
+	
+
+</div>
+
+
+</body>
+</html>
+

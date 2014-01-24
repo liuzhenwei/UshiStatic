@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>邀请好友加入</title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/groups.js"></script>
+</head>
+
+<body id="page_member">
+<div id="wrapper" class="container">
+    <!--#include file="../header.html"-->
+    <div id="main" class="clearfix">
+       <div class="success large" style="width:610px;"><strong>恭喜! 您的群组 <a href="#">宝洁同事会</a> 已经创建成功!现在就邀请身边的朋友加入吧!</strong></div>   
+       <div class="tabs-common clearfix">
+          <ul>
+          <li class="current"><a href="groups_create_invite.html">邀请我的一度人脉</a></li>
+          <li><a href="groups_create_invite_out.html">邀请站外好友</a></li>
+          </ul>
+      </div>
+      
+       <div class="column-2-3">
+         <div id="inviteFriendsSelect" groupid="0"></div>
+         <p><a href="#" id="invite_friends_Letter_edit">编辑邀请信内容</a></p>
+         <p><TEXTAREA style="display:none;" class="input-w-500" id="invite_friends_Letter_content"></TEXTAREA></p>
+         <p> <input type="button" class="common-button large" value=" 预览并发送邀请 " id="submit_invite_friends_list"  /></p>
+         <p><a href="#">以后再邀请,带我去群组的首页</a></p>
+       </div>
+          
+  </div>     
+</div>
+<!--#include file="../footer.html"-->
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>Ushi Customer Service System</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+
+
+
+</head>
+
+<body>
+<div id="mainbody">
+    <!--header start-->
+    <div id="header">
+        <div class="lf"><img src="../images/logo_1.png"/></div>
+        <div class="rf"> Operator：Christy
+            | <a href="../login.htm">Logout</a></div>
+        <div id="toppad"></div>
+    </div>
+    <!--header end-->
+    <div class="lf">
+        <div id="menu_out" class="leftmenu"></div>
+    </div>
+    
+	<style>
+		.bg{background:#e5e5e5;}
+		.job_serch_result{padding:5px;}
+		.job_serch_result table{margin:5px 0;}
+		.job_serch_result table .first_ td{ font-weight:bold;background:#e5e5e5;padding:7px;}
+		.job_serch_result table td{padding:5px; text-align:center}
+		#forbidId textarea{width:250px;height:100px; text-align:left;color:#ccc;overflow:hidden;overflow-y:auto;}
+	</style>
+    
+	<script>
+		$(function(){
+			$('input[datepicker]').datepicker();
+			$('#menu_out').load('../menu.html',function(){
+				initMenus();
+			});
+			$('.job_serch_result table tr').hover(function(){
+				$(this).addClass('bg')
+				
+			},function(){
+				$(this).removeClass('bg')
+			})
+			
+			$('.Resent').click(function(){
+				$('#forbidId').dialog({
+					title: '转发职位申请',
+					width: 200,
+					modal:true,
+					resizable: false,
+					buttonAlign:'center',
+					buttons: {
+						'发送': function(){
+							$(this).dialog('destroy');
+							$(textarea).focus();	
+						}
+					}
+				});
+			});
+			
+		})
+	
+	</script>
+    <div class="rf">
+        <div id="container">
+	  	<h2>职位申请</h2>
+	  	
+		<div class="search_area">
+	  		<select>
+	  			<option value="">公司名称</option>
+	  			<option value="">职位名称</option>
+	  			<option value="">应聘者</option>
+	  		</select>
+	  		&nbsp;&nbsp;<input type="text" />&nbsp;&nbsp;<span>申请时间：</span>
+			<input type="text" name="" size="15" datepicker="y" /> -
+			<input type="text" name="" size="15" datepicker="y" />
+			<input type="submit" value="搜索" />
+		</div>
+	  	<div class="job_serch_result">
+		  	<div>总共<span>387</span>条待职位申请信息，当前显示<span>1~20</span></div>
+		  	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		  		<tr class="first_"><td>ID</td><td>应聘者</td><td>职位</td><td>公司名称</td><td>申请时间</td><td>求职信</td><td>简历</td><td>操作</td></tr>
+		  		<tr>
+		  			<td>88</td>
+		  			<td><a href="#">张月</a></td>
+		  			<td><a href="#">产品经理</a></td>
+		  			<td><a href="../jobs/company_info.htm?TB_iframe=true" class="thickbox">优士网</a></td>
+		  			<td>2010-10-25</td>
+		  			<td><a href="#"><img src="../images/jianli.png" width="23" height="25" /></a></td>
+		  			<td><a href="#"><img src="../images/jianli.png" width="23" height="25" /></a></td>
+		  			<td><a href="../jobs/job_information.htm" target="_blank">预览</a> | <a href="#" class="Resent">转发</a></td>
+		  		</tr>	
+		  	</table>
+		  	<div>总共<span>387</span>条待职位申请信息，当前显示<span>1~20</span></div>
+	  	</div>
+		<div class="pagenav"><span class="cur">1</span><span><a href="#">2</a></span><span><a href="#">3</a></span><span><a href="#">4</a></span><span><a href="#">5</a></span><span><a href="#">5</a></span><span><a href="#">7</a></span><span><a href="#">8</a></span><span><a href="#">9</a></span><span><a href="#">末页</a></span></div>
+    </div>
+    </div>
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+    </div>
+</div>
+<!--footer end-->
+<div id="forbidId" style="display:none"><p>请输入要转发的Email地址<br /><input type="text" /></p>
+</div>
+</body>
+</html>

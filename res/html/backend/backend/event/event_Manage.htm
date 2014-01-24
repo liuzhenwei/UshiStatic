@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>Ushi Customer Service System</title>
+<link href="/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="/js/backend/jquery-1.4.2.min.js"></script>
+<script src="/js/backend/thickbox.js"></script>
+<script src="/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="/js/backend/general.js"></script>
+
+
+</head>
+
+<body>
+<div id="mainbody">
+    <!--header start-->
+    <div id="header">
+        <div class="lf"><img src="../images/logo_1.png"/></div>
+        <div class="rf"> Operator：Christy
+            | <a href="../login.htm">Logout</a></div>
+        <div id="toppad"></div>
+    </div>
+    <!--header end-->
+    <div class="lf">
+        <div id="menu_out" class="leftmenu">
+			<!-- include value="/WEB-INF/jsp/backend/inc/menu.jsp"></include-->
+        </div>
+    </div>
+    
+    
+    
+    
+	<style>
+		.tagSearch,.tagsEditor{ margin-top:10px;}
+		.tagsEditor{clear:both;overflow:hidden;}
+		.tagsEditorL{ float:left}
+		.tagsEditorL *{float:left; line-height:22px; }
+		.tagsEditorR{ float:right}
+		.tagsEditorL label{ width:70px;}
+		.blue{ color:#06a}
+		table.tableTags {border:1px #ccc solid;border-right:none;border-bottom:none; table-layout:fix; width:100%; margin:10px 0;}
+		.tableTags td{border-right:1px #ccc solid;border-bottom:1px #ccc solid; text-align:center; padding:5px;}
+	</style>
+	<script >
+		$(function(){
+			$('input[datepicker]').datepicker();
+		})	
+	</script>
+
+    <div class="rf">
+        <div id="container">
+	  	<h2>活动管理</h2>
+		<div class="tagSearch">
+			<form action="" method="post" name="">
+				<span> 时间 </span>
+				<input type="text" name="startdate" size="15" datepicker="y" />
+				<span> 至 </span>
+				<input type="text" name="enddate" size="15" datepicker="y" />
+				<span> 关键字 </span>
+				<input type="text" value="" />
+				<input type="submit" value="查询" />
+			</form>
+		</div>
+		
+		<div class="tagsEditor">
+			<div class="tagsEditorL">
+				<label><input type="checkbox"  /><span>全选</span></label>
+				<label><input type="checkbox"  /><span>反选</span></label>
+				<a href="javascript:;">删除</a>
+				
+			</div>
+		</div>
+		
+		<table class="tableTags" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<td width="5%">选择</td>
+					<td>活动主题</td>
+					<td>活动时间</td>
+					<td>活动地点</td>
+					<td>详细说明</td>
+					<td>活动情况</td>
+					<td>标签</td>
+				</tr>
+				
+				<tr>
+					<td><input type="checkbox"  /></td>
+					<td>fdsafdsafdsafdsaf</td>
+					<td>2010-10-14</td>
+					<td>上海老街</td>
+					<td>收拾收拾手术室手术室</td>
+					<td>
+						<p>
+							要去<span class="blue">123</span>人<br />
+							签到<span class="blue">123</span>人
+						</p>
+					</td>
+					<td>旅游</td>
+				</tr>
+				
+				<tr>
+					<td><input type="checkbox"  /></td>
+					<td>fdsafdsafdsafdsaf</td>
+					<td>2010-10-14</td>
+					<td>上海老街</td>
+					<td>收拾收拾手术室手术室</td>
+					<td>
+						<p>
+							要去<span class="blue">123</span>人<br />
+							签到<span class="blue">123</span>人
+						</p>
+					</td>
+					<td>旅游</td>
+				</tr>
+				
+				<tr>
+					<td><input type="checkbox"  /></td>
+					<td>fdsafdsafdsafdsaf</td>
+					<td>2010-10-14</td>
+					<td>上海老街</td>
+					<td>收拾收拾手术室手术室</td>
+					<td>
+						<p>
+							要去<span class="blue">123</span>人<br />
+							签到<span class="blue">123</span>人
+						</p>
+					</td>
+					<td>旅游</td>
+				</tr>
+				
+			</tbody>
+		</table>
+		
+		<div class="tagsEditor">
+			<div class="tagsEditorL">
+				<label><input type="checkbox"  /><span>全选</span></label>
+				<label><input type="checkbox"  /><span>反选</span></label>
+				<a href="javascript:;">删除</a>
+			</div>
+		</div>
+		
+    </div>
+    
+    
+    
+    
+    
+    
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+    </div>
+    
+</div>
+<!--footer end-->
+
+</body>
+</html>

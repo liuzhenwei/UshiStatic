@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>问答</title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../answers/css/all.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../../../common/js/widget.js"></script>
+<script type="text/javascript" src="../../../common/js/common.js"></script>
+<script type="text/javascript" src="../../../common/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="../data/lang.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var text=$(".horse-logo li");
+	var count=text.length;
+	var i=0;
+	function textup(){
+		text.eq(i).appendTo(".horse-logo");
+		i=(i==count)? 0 : i+1;
+		text.hide();
+		$(".horse-logo li:lt(5)").show();
+	}
+	tm = setInterval(textup, 3000);
+	text.hide();
+	$(".horse-logo li:lt(5)").show();
+
+});
+</script>
+<style type="text/css">
+.horse-section {
+	margin-bottom: 10px;
+	clear: both;
+}
+.hos-left {
+	float: left;
+	width: 184px;
+}
+.hos-left .logo img {
+	border: 1px solid #c4c4c4;
+}
+.hos-left ul li {
+	padding-top: 10px;
+}
+.hos-right {
+	float: right;
+	width: 756px;
+}
+.hos-right h3 {
+	margin: 0 0 10px 0;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #e9e9e9;
+	font-size: 14px;
+	clear: both;
+}
+.hos-inner {
+	margin-bottom: 15px;
+}
+.hos-inner-left {
+	width: 462px;
+	float: left;
+}
+.hos-inner-right {
+	width: 270px;
+	float: right;
+	background-color: #fafafa;
+	border: 1px solid #e5e5e5;
+}
+.hos-inner-right h5 {
+	padding: 5px 18px;
+	margin-bottom: 0;
+}
+.hos-inner-right .video {
+	border-top: 1px solid #e5e5e5;
+	padding: 12px 0 12px 18px;
+}
+.horse-logo {
+	clear: both;
+	width: 760px;
+	margin-right: -4px;
+	overflow: hidden;
+	zoom:1;
+}
+.horse-logo li {
+	float: left;
+	margin-right: 1px;
+}
+.horse-logo li a {
+	float: left;
+}
+.horse-ranking {
+	margin-bottom: 10px;
+	border: 1px solid #e5e5e5;
+	clear: both;
+}
+.horse-ranking td {
+	padding: 5px 10px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #fafafa;
+	vertical-align: middle;
+	color: #888888;
+}
+</style>
+</head>
+<body id="page_public">
+<div id="wrapper" class="container"> 
+	<!--#include virtual="../header.html"-->
+	<div id="main" class="clearfix">
+		<div class="horse-section clearfix">
+			<div class="hos-left">
+				<div class="logo"><a href="#"><img src="../../../answers/images/horse/logo.jpg" alt="" /></a></div>
+				<ul>
+					<li><a href="#"><img src="../../../answers/images/horse/btn01.png" alt="" /></a></li>
+					<li><a href="#"><img src="../../../answers/images/horse/btn02.png" alt="" /></a></li>
+				</ul>
+			</div>
+			<div class="hos-right">
+				<div class="hos-inner clearfix">
+					<div class="hos-inner-left">
+						<h3>飞马旅及36城活动介绍</h3>
+						<p>"飞马旅"，是中国首家创业项目专业管理支持机构，飞马旅的宗旨是建立中国首屈一指的创新型创业项目服务公司，由袁岳博士担任飞马旅首任CEO。</p>
+						<p>【飞马连营，36城】是飞马旅整合优势资源推出的全国性线上线下互动动员品牌。
+							它将着眼于全球化背景下的中国服务业创业与投资机会，由【飞马诸君】携手创业新星，联动国内外知名的投资家、经济学家，全年持续在上海、北京、广州、深圳、西安、大连、成都、武汉、长沙、杭州、南京、厦门、青岛、三亚等经济活跃城市开坛论道。鼎力打造高端互动平台，帮助其中重要城市奠定其领先地位...<a href="#">查看更多</a></p>
+					</div>
+					<div class="hos-inner-right">
+						<h5>活动视频</h5>
+						<div class="video"><img src="../../../answers/images/horse/video.jpg" alt="" /></div>
+					</div>
+				</div>
+				<h3>活动图片</h3>
+				<ul class="horse-logo">
+					<li><a href="#"><img src="../../../answers/images/horse/logo01.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="../../../answers/images/horse/logo02.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="../../../answers/images/horse/logo03.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="../../../answers/images/horse/logo04.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="../../../answers/images/horse/logo05.jpg" alt="" /></a></li>
+				</ul>
+			</div>
+		</div>
+		<table width="0" border="0" cellspacing="0" cellpadding="0" class="horse-ranking">
+			<col width="4%" />
+			<col width="8%" />
+			<col width="15%" />
+			<col width="40%" />
+			<col width="26%" />
+			<tr>
+				<td><img src="../../../answers/images/horse/num01.png" alt="" /></td>
+				<td class="boldface">洛阳</td>
+				<td class="boldface">4月13日</td>
+				<td>主题：这里是一个主题名称</td>
+				<td>嘉宾：季琦 范敏 江南春</td>
+				<td><a href="#">报名</a></td>
+			</tr>
+			<tr>
+				<td><img src="../../../answers/images/horse/num02.png" alt="" /></td>
+				<td class="boldface">青岛</td>
+				<td class="boldface">4月21日</td>
+				<td>主题：这里是一个主题名称</td>
+				<td>嘉宾：季琦 范敏 江南春</td>
+				<td><a href="#">报名</a></td>
+			</tr>
+			<tr>
+				<td><img src="../../../answers/images/horse/num03.png" alt="" /></td>
+				<td class="boldface">上海</td>
+				<td class="boldface">5月10-11日</td>
+				<td>主题：这里是一个主题名称</td>
+				<td>嘉宾：季琦 范敏 江南春</td>
+				<td><a href="#">报名</a></td>
+			</tr>
+			<tr>
+				<td><img src="../../../answers/images/horse/num04.png" alt="" /></td>
+				<td class="boldface">杭州</td>
+				<td class="boldface">5月23日</td>
+				<td>主题：这里是一个主题名称</td>
+				<td>嘉宾：季琦 范敏 江南春</td>
+				<td><a href="#">报名</a></td>
+			</tr>
+		</table>
+		<div class="column-2-3">
+			<div class="horse-banner margin-bottom"><a href="#"><img src="../../../answers/images/horse/banner.jpg" alt="" /></a></div>
+			<div class="wd-home-search margin-bottom">
+				<div class="wd-home-search-inner">
+					<div class="wd-home-search-ipt float-left" js="wdhomeSearchInput">
+						<form method="post" action="/wenda/search!searchTagAndQuestionMore.jhtml">
+							<input type="text" autocomplete="off" js="home_search_input" defaulttips="搜索话题或问题..." value="搜索话题或问题..." searchkey="" addquestion="input" name="searchKey" style="color: rgb(153, 153, 153);" hasbind="true">
+						</form>
+					</div>
+					<div class="btn-special1 float-left hand" js="addQuestion">
+						<div class="btn-special1-inner"> <a href="#"> <span class="ico-add-w spe-right"></span> 添加问题 </a> </div>
+					</div>
+				</div>
+			</div>
+			<div class="margin-bottom">
+				<div class="clearfix" js="topicCont">
+					<p class="wd-topic-outer" topicid="139"> <a class="wd-topic" href="#">创业</a></p>
+					<p class="wd-topic-outer" topicid="164"> <a class="wd-topic" href="#">创新</a></p>
+					<p class="wd-topic-outer" topicid="924"> <a class="wd-topic" href="#">投资</a></p>
+					<p class="wd-topic-outer" topicid="924"> <a class="wd-topic" href="#">服务行业</a></p>
+					<p class="wd-topic-outer" topicid="924"> <a class="wd-topic" href="#">创业项目</a></p>
+					<p class="wd-topic-outer" topicid="924"> <a class="wd-topic" href="#">飞马旅</a></p>
+				</div>
+			</div>
+			<div class="wd-event-list">
+				<div class="tabs-sub margin-bottom clearfix clear">
+					<ul>
+						<li class="current"><a href="#feed_1">动态</a></li>
+						<li><a href="#feed_2">最新问题</a></li>
+						<li><a href="#feed_3">热门问题</a></li>
+					</ul>
+				</div>
+				<div pageNo="1" style="display:;" ajaxUrl="">
+					<div class="event-block">
+						<div class="event-owner"> <a href="#"><img src="../../../common/images/face_30.png"></a> </div>
+						<div class="event-content answers-event-cont">
+							<h4><a href="#">用户体验如何界定是帮助用户偷懒，还是帮助用户更好的上手？</a></h4>
+							<p class="quiet"><a href="#">张三</a> 回答了该问题 <span class="spe-left2 spe-right2">|</span> 10个答案</p>
+							<p class="quiet">3票，来自 <a href="#" class="quiet">李四</a>，<a href="#" class="quiet">李四</a>，<a href="#" class="quiet">李四</a></p>
+							<div class="margin-bottom">眼球的运动包括有意识的选择注视，和完全无意识的眼动。 后者是不可控制的。 这会给任何试图用眼球运动来操作跟踪的人带来很大麻烦。因此想完全依赖眼球来搞一个输入装置，技术上非常困难，也可以说没有多大意义。 <a href="#">显示全部</a></div>
+							<p class="action"> 2天前07:04 <a hasbind="yes" class="comments-shop" js="insertComm" href="javascript:void(0)">评论</a><span js="commentCnt">(11)</span> <span class="spe-left2 spe-right2">|</span> <a href="#">删除回答</a><span class="spe-left2 spe-right2">|</span> <a href="#" class="quiet">取消关注</a></p>
+							<p class="answer-vote"> <a href="#" class="answer-vote-count">888</a></p>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="event-owner"> <a href="#"><img src="../../../common/images/face_30.png"></a> </div>
+						<div class="event-content answers-event-cont">
+							<h4> <a href="/wenda/question!detail.jhtml?qid=2113">物流公司碰到资金瓶颈，是该继续还是终止？</a> </h4>
+							<p class="quiet"> <a href="/u/685540">郑思</a> 谢谢 <a href="/u/781645">赵洪明</a> 的回答 <span class="spe-left2 spe-right2 quiet">|</span> 4 个答案 <span class="spe-left2 spe-right2 quiet">|</span> <a ufldn="取消关注此问题" fldn="关注此问题" followtype="1" follow="2113" href="#">关注此问题</a> <span class="spe-left2 spe-right2 quiet">|</span> <a ufldn="取消关注 赵洪明" fldn="关注 赵洪明" followtype="3" follow="781645" href="#">关注 赵洪明</a></p>
+							<p> <a class="boldface" href="/u/781645">赵洪明</a> , <span>中联汇沣投资顾问公司 融资顾问</span></p>
+							<div>
+								<p style="display:none;"> 由于不了解您项目（公司）的具体实际情况，所以，还真难给您针对性的意见，也只能在侧面帮助一些，希望能给您的事业发展带来一点帮助！ <br>
+									如果您有意向继续融资做大企业，以下是我给的一点点粗浅的建议，也许能提高您融资的成功几率，意见不是很成熟，欢迎沟通、指正！ <br>
+									<br>
+									与其说:"如何提高融资的成功概率",不如说:"融资之前,我们要做到哪些". <br>
+									<br>
+									资本市场的发达，为企业融资提供了优越的平台，加速了企业成长的步伐，但是，在众多的企业当中，什么样的企业，融资概率会更高些呢？ <br>
+									很多委托代写商业计划书的朋友都这样问我，其实，融资是否成功，没有特定的关键因素，融资的过程中，每一个细节都很重要，融资本来就是一场类似婚姻的游戏，没有特定的规则，却有着细处决定成败的艺术。 <br>
+									<br>
+									首先，什么样的企业适合融资？ <br>
+									很多人对我说，我是刚开始创业的小企业，或者，我已经做了很多年，但一直都是默默无闻的，没什么大的起色，我适合融资吗？VC会喜欢我这样的企业吗？ <br>
+									我个人认为，融资的企业，没有大、小，新、老之分，只要你的项目本身，具备投资价值，有足够的增殖空间，就有资格接触投资人，也有机会获得投资。很多企业还没有成立，属于自然人阶段，但是，一样存在机会，也许，在某些条件下，这样的项目，更加吸引投资人。 <br>
+									VC不仅只对成长期的企业感兴趣，众多VC之间，也都各自有不同的投资范围与方向，很多VC喜欢种子期的项目，因此，概括一句的讲，任何企业都有机会寻求投资，关键，是项目本身的投资价值是否可以吸引投资人。 <br>
+									<br>
+									另外，找到投资人了，如何提高融资几率呢？ <br>
+									包装，其实很重要，我讲的包装，不是指外在虚荣的包装，豪华的办公环境，气派的场面等等，我说的是，项目的商业计划包装，完美的计划书，不仅是要将项目说清楚，而更加着重介绍的是投资价值,团队价值，以及运营中的风险控制！ <br>
+									<br>
+									1、投资价值：要描述项目所处行业整体环境的分析及了解，描述您对行业未来发展趋势的预测；其次，描述项目本身在行业内起到的作用，能在什么层次上起作用，是属于跟随者，还是领导者，或者是新规则的创造者；同时，项目的运营方面，你的创意是什么，你的定位有什么优势，其中，什么优势是可以被别人复制的，什么优势是别人无法复制或跟随的，优势的创造及体现，成本是多少，优势的变现能力，机会是多少等等。只有详尽的"包装"好你的优势，以及展现你对行业及宏观环境的发展趋势预测，才能体现出项目本身的"投资价值"。 <br>
+									<br>
+									2、团队价值：VC流行一句话，以前我在其他文章里转述过："一流的团队，可以做好二流的项目，而二流的团队，却做不好一流的项目"。也就是说，任何时候，"人"才是第一生产力，拥有一个优秀的创业团队，是吸引投资人的重要因素；很多创业者和我说，我目前就一个人，但是，只要我有钱，我可以招聘很多人才，甚至去其他大企业挖墙角；当然，这的确是一个招兵买马的方法，可是，问题的关键不在于你是否有"钱"去吸引人，而是你是否有那个魅力去吸引"人"为你赚钱，问问自己，你个人的知识背景如何，你项目的发展前景如何，你的人格魅力如何，你的团队建设、发展规划如何等等，这些，你都具备吸引人才的条件吗？相信我，真正能帮你打天下的人才，是不会为五斗米折腰的，钱，不一定能解决实际问题。美国硅谷的VC们，每天做的事情不是去选项目，而是跟着有能力创业的团队转，只要他们张嘴要钱，VC们甚至不去是什么项目，因为他们相信，一流的人才，即使做二流的项目，也是具备投资价值的。 <br>
+									<br>
+									3、运营中的风险控制：这里面不仅仅是要学会如何去说服投资人，如何去回答投资人提出的关于风险控制方面的严峻问题，更重要的是，一个可以遇见未来风险的人，他基本上具备解决问题的能力，起码，能做到防患于未然，千万不要和投资人说，你的项目没有风险。风险有很多种，我把它分为两类，一是内在风险，即企业经营中出现的内部风险，包含人员变动风险，技术更新风险，管理脱节风险，营销错位风险，产品、服务质量引发的恶性事件风险等，二是外在风险，即法律法规、行业政策对项目的影响，原材料稀缺及环保政策的影响，上层主管部门对地方经济宏观调控的影响，产品生命力及功能本身对消费者的影响等等，这些都不是企业可以自主控制的风险，虽然我们都有方法去应对或改善，但是，提前预见能力，决定了风险控制的能力。 <br>
+									<br>
+									还有一些简单的寻找VC的方法； <br>
+									<br>
+									寻找投资公司渠道有几种： <br>
+									1、通过已经融资成功或曾经融过资的朋友介绍和推荐。 <br>
+									2、通过风险投资行业内的朋友进行推荐。 <br>
+									3、通过当地招商局、银行、发展改革委员会等政府、职能机构推荐。 <br>
+									4、通过媒体捕捉投资公司信息。 <br>
+									5、通过网络搜索。 <br>
+									6、通过融资顾问推荐（例如本人）。 <br>
+									7、其他（本人也不是全能，请谅解）</p>
+								<p> 由于不了解您项目（公司）的具体实际情况，所以，还真难给您针对性的意见，也只能在侧面帮助一些，希望能给您的事业发展带来一点帮助！ <br>
+									如果您有意向继续融资做大企业，以下是我给的一点点粗浅的建议，也许能提高您融资的成功几率，意见不是很成熟，欢迎沟通、指正！ <br>
+									<br>
+									与其说:"如何提高融资的成功概率",不如说:"融资之前,我们要做到哪些". <br>
+									<br>
+									资本市场的发达，为企业融资提供了优越的平台，加速了企业成长的步伐，但是... <a class="spe-left" href="#">显示更多</a></p>
+							</div>
+							<p class="answer-vote answer-vote-false" voted="false" aid="5907" un="stone zhang" js="voteArea" hasbind="vote"> <a class="answer-vote-count" href="#" style="display: block;" title="当前投票数量，点击可投票">1</a> <a class="answer-agree " style="display: none;" href="#" title="点击投赞成票">赞成</a> <a class="answer-differ " style="display: none;" href="#" title="点击投反对票">反对</a></p>
+						</div>
+					</div>
+					<div class="event-block" feedid="31547">
+						<div class="event-owner"> <a href="/u/sophiazheng"> <img id="avatar-685540" src="http://images.ushigroup.cn/bnsphoto/2012/01/30/c720e2b7-0acc-42c4-8dfa-8beb4210103a_thumb.jpg"> </a> </div>
+						<div class="event-content">
+							<h4> <a href="/wenda/question!detail.jhtml?qid=2546">在你看来，面试者的哪些肢体语言会让你为他加分？</a> </h4>
+							<p class="quiet"> <a class="spe-right boldface" href="/u/685540">郑思</a> 添加了此问题 <span class="spe-left2 spe-right2 quiet">|</span> 7 个答案 <span class="spe-left2 spe-right2 quiet">|</span> <a ufldn="取消关注此问题" fldn="关注此问题" followtype="1" follow="2546" href="#">关注此问题</a></p>
+						</div>
+					</div>
+					<div class="a-center" js="moreFeedDiv"> <a class="cnfont large" href="#">查看更多</a><span style="display:inline-block;" class="icon-btn-down middle spe-left"></span> </div>
+				</div>
+			</div>
+		</div>
+		<div class="column-3">
+			<div class="common-block">
+				<h5 class="extra-title">飞马诸军 &amp; 优问智士</h5>
+				<ul class="vcard">
+					<li class="border-bottom v-50"> <a href="/u/zhangrongguo7559"> <img id="avatar-104208" src="http://images.ushigroup.cn/bnsphoto/2011/10/24/c8bc031c-0ad8-4961-88d3-1e6ce6f8b7c1_icon.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/104208">张荣国人脉圈renmaiquan.com</a> </dt>
+							<dd>杭州细搜科技有限公司总经理兼产品经理（renmaiquan.com）职业（商务）即时通讯概念提出者</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=104208" targetuserid="104208">加为一度</a> <a href="#" followtype="3" follow="104208">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom v-50"> <a href="/u/zhangrongguo7559"> <img id="avatar-104208" src="http://images.ushigroup.cn/bnsphoto/2011/10/24/c8bc031c-0ad8-4961-88d3-1e6ce6f8b7c1_icon.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/104208">张荣国人脉圈renmaiquan.com</a> </dt>
+							<dd>杭州细搜科技有限公司总经理兼产品经理（renmaiquan.com）职业（商务）即时通讯概念提出者</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=104208" targetuserid="104208">加为一度</a> <a href="#" followtype="3" follow="104208">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom v-50"> <a href="/u/zhangrongguo7559"> <img id="avatar-104208" src="http://images.ushigroup.cn/bnsphoto/2011/10/24/c8bc031c-0ad8-4961-88d3-1e6ce6f8b7c1_icon.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/104208">张荣国人脉圈renmaiquan.com</a> </dt>
+							<dd>杭州细搜科技有限公司总经理兼产品经理（renmaiquan.com）职业（商务）即时通讯概念提出者</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=104208" targetuserid="104208">加为一度</a> <a href="#" followtype="3" follow="104208">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom v-50"> <a href="/u/zhangrongguo7559"> <img id="avatar-104208" src="http://images.ushigroup.cn/bnsphoto/2011/10/24/c8bc031c-0ad8-4961-88d3-1e6ce6f8b7c1_icon.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/104208">张荣国人脉圈renmaiquan.com</a> </dt>
+							<dd>杭州细搜科技有限公司总经理兼产品经理（renmaiquan.com）职业（商务）即时通讯概念提出者</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=104208" targetuserid="104208">加为一度</a> <a href="#" followtype="3" follow="104208">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom v-50"> <a href="/u/zhangrongguo7559"> <img id="avatar-104208" src="http://images.ushigroup.cn/bnsphoto/2011/10/24/c8bc031c-0ad8-4961-88d3-1e6ce6f8b7c1_icon.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/104208">张荣国人脉圈renmaiquan.com</a> </dt>
+							<dd>杭州细搜科技有限公司总经理兼产品经理（renmaiquan.com）职业（商务）即时通讯概念提出者</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=104208" targetuserid="104208">加为一度</a> <a href="#" followtype="3" follow="104208">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom v-50"> <a href="/u/zhangrongguo7559"> <img id="avatar-104208" src="http://images.ushigroup.cn/bnsphoto/2011/10/24/c8bc031c-0ad8-4961-88d3-1e6ce6f8b7c1_icon.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/104208">张荣国人脉圈renmaiquan.com</a> </dt>
+							<dd>杭州细搜科技有限公司总经理兼产品经理（renmaiquan.com）职业（商务）即时通讯概念提出者</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=104208" targetuserid="104208">加为一度</a> <a href="#" followtype="3" follow="104208">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom v-50"> <a href="/u/zhangrongguo7559"> <img id="avatar-104208" src="http://images.ushigroup.cn/bnsphoto/2011/10/24/c8bc031c-0ad8-4961-88d3-1e6ce6f8b7c1_icon.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/104208">张荣国人脉圈renmaiquan.com</a> </dt>
+							<dd>杭州细搜科技有限公司总经理兼产品经理（renmaiquan.com）职业（商务）即时通讯概念提出者</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=104208" targetuserid="104208">加为一度</a> <a href="#" followtype="3" follow="104208">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom v-50"> <a href="/u/zhangrongguo7559"> <img id="avatar-104208" src="http://images.ushigroup.cn/bnsphoto/2011/10/24/c8bc031c-0ad8-4961-88d3-1e6ce6f8b7c1_icon.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/104208">张荣国人脉圈renmaiquan.com</a> </dt>
+							<dd>杭州细搜科技有限公司总经理兼产品经理（renmaiquan.com）职业（商务）即时通讯概念提出者</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=104208" targetuserid="104208">加为一度</a> <a href="#" followtype="3" follow="104208">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom v-50"> <a href="/u/zhangrongguo7559"> <img id="avatar-104208" src="http://images.ushigroup.cn/bnsphoto/2011/10/24/c8bc031c-0ad8-4961-88d3-1e6ce6f8b7c1_icon.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/104208">张荣国人脉圈renmaiquan.com</a> </dt>
+							<dd>杭州细搜科技有限公司总经理兼产品经理（renmaiquan.com）职业（商务）即时通讯概念提出者</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=104208" targetuserid="104208">加为一度</a> <a href="#" followtype="3" follow="104208">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom v-50"> <a href="/u/zhangrongguo7559"> <img id="avatar-104208" src="http://images.ushigroup.cn/bnsphoto/2011/10/24/c8bc031c-0ad8-4961-88d3-1e6ce6f8b7c1_icon.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/104208">张荣国人脉圈renmaiquan.com</a> </dt>
+							<dd>杭州细搜科技有限公司总经理兼产品经理（renmaiquan.com）职业（商务）即时通讯概念提出者</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=104208" targetuserid="104208">加为一度</a> <a href="#" followtype="3" follow="104208">关注</a> </dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="common-block">
+				<h5 class="special-title">Top10飞马优士</h5>
+				<ul class="vcard">
+					<li class="border-bottom"> <a href="/u/rogerxin"> <img id="avatar-264439" src="http://images.ushigroup.cn/bnsphoto/2011/12/28/0044db16-d3cd-4996-81fd-4c9199e080e0_thumb.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/264439">辛璋</a> </dt>
+							<dd>优士网-运营经理</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=264439" targetuserid="264439">加为一度</a> <a href="#" followtype="3" follow="264439">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom"> <a href="/u/rogerxin"> <img id="avatar-264439" src="http://images.ushigroup.cn/bnsphoto/2011/12/28/0044db16-d3cd-4996-81fd-4c9199e080e0_thumb.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/264439">辛璋</a> </dt>
+							<dd>优士网-运营经理</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=264439" targetuserid="264439">加为一度</a> <a href="#" followtype="3" follow="264439">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom"> <a href="/u/rogerxin"> <img id="avatar-264439" src="http://images.ushigroup.cn/bnsphoto/2011/12/28/0044db16-d3cd-4996-81fd-4c9199e080e0_thumb.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/264439">辛璋</a> </dt>
+							<dd>优士网-运营经理</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=264439" targetuserid="264439">加为一度</a> <a href="#" followtype="3" follow="264439">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom"> <a href="/u/rogerxin"> <img id="avatar-264439" src="http://images.ushigroup.cn/bnsphoto/2011/12/28/0044db16-d3cd-4996-81fd-4c9199e080e0_thumb.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/264439">辛璋</a> </dt>
+							<dd>优士网-运营经理</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=264439" targetuserid="264439">加为一度</a> <a href="#" followtype="3" follow="264439">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom"> <a href="/u/rogerxin"> <img id="avatar-264439" src="http://images.ushigroup.cn/bnsphoto/2011/12/28/0044db16-d3cd-4996-81fd-4c9199e080e0_thumb.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/264439">辛璋</a> </dt>
+							<dd>优士网-运营经理</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=264439" targetuserid="264439">加为一度</a> <a href="#" followtype="3" follow="264439">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom"> <a href="/u/rogerxin"> <img id="avatar-264439" src="http://images.ushigroup.cn/bnsphoto/2011/12/28/0044db16-d3cd-4996-81fd-4c9199e080e0_thumb.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/264439">辛璋</a> </dt>
+							<dd>优士网-运营经理</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=264439" targetuserid="264439">加为一度</a> <a href="#" followtype="3" follow="264439">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom"> <a href="/u/rogerxin"> <img id="avatar-264439" src="http://images.ushigroup.cn/bnsphoto/2011/12/28/0044db16-d3cd-4996-81fd-4c9199e080e0_thumb.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/264439">辛璋</a> </dt>
+							<dd>优士网-运营经理</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=264439" targetuserid="264439">加为一度</a> <a href="#" followtype="3" follow="264439">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom"> <a href="/u/rogerxin"> <img id="avatar-264439" src="http://images.ushigroup.cn/bnsphoto/2011/12/28/0044db16-d3cd-4996-81fd-4c9199e080e0_thumb.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/264439">辛璋</a> </dt>
+							<dd>优士网-运营经理</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=264439" targetuserid="264439">加为一度</a> <a href="#" followtype="3" follow="264439">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom"> <a href="/u/rogerxin"> <img id="avatar-264439" src="http://images.ushigroup.cn/bnsphoto/2011/12/28/0044db16-d3cd-4996-81fd-4c9199e080e0_thumb.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/264439">辛璋</a> </dt>
+							<dd>优士网-运营经理</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=264439" targetuserid="264439">加为一度</a> <a href="#" followtype="3" follow="264439">关注</a> </dd>
+						</dl>
+					</li>
+					<li class="border-bottom"> <a href="/u/rogerxin"> <img id="avatar-264439" src="http://images.ushigroup.cn/bnsphoto/2011/12/28/0044db16-d3cd-4996-81fd-4c9199e080e0_thumb.jpg"> </a>
+						<dl>
+							<dt> <a href="/u/264439">辛璋</a> </dt>
+							<dd>优士网-运营经理</dd>
+							<dd> <a class="spe-right" href="/sns/sns!viewSNSInvitePage.jhtml?fromWhere=${fromWhere}&targetUserId=264439" targetuserid="264439">加为一度</a> <a href="#" followtype="3" follow="264439">关注</a> </dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--#include virtual="../footer.html"--> 
+</div>
+</body>
+</html>

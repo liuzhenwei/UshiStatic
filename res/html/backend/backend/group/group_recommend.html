@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="..../../bns/images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+	<div class="lf">  
+		<div id="menu_out" class="leftmenu">	
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+		</div>
+	</div>  
+
+<style type="text/css">
+h2.cont_tab {zoom: 1; overflow: hidden;}
+h2.cont_tab a {display: block; float: left; width: 80px; height: 25px; line-height: 25px; padding: 0 6px; border: 1px #999 solid; border-bottom: 0; margin-right: 5px; font-size: 14px; text-align: center; background: #CCC;}
+h2.cont_tab a.select {background: #FFF;}
+#groupTag dt {clear: both; text-align: left; padding: 5px 0;}
+#groupTag li {float: left; text-align: left; width: 120px; list-style: none none;}
+</style>
+<script type="text/javascript">
+function showGroupTag(tags, callback){
+	tags = tags || '';
+	tags = tags.split(',');
+	var dlg = $('#groupTag');
+	dlg.find(':checkbox').attr('checked', false);
+	for( var i = 0; i < tags.length ; i++ ){
+		dlg.find(':checkbox[value="' + tags[i] + '"]').attr('checked', true);
+	}
+	dlg.dialog({
+		title: '添加标签',
+		width: 650,
+		modal: true,
+		resizable: false,
+		buttons: {
+			'确定': function(){
+				if( $.isFunction(callback) ){
+					callback(dlg);
+				}
+				dlg.dialog('destroy');
+			},
+			'取消': function(){
+				dlg.dialog('destroy');
+			}
+		}
+	});
+}
+$(function(){
+	$('[js="addTag"]').bind('click', function(event){
+		var a = $(this);
+		showGroupTag($(this).attr('tags'), function(dlg){
+			var tags = '', stags = '';
+			dlg.find(':checked').each(function(){
+				tags += this.value + ',';
+				stags += $(this).next().text() + ',';
+			});
+			tags = tags.slice(0, tags.length - 1);
+			a.attr('tags', tags)
+			a.closest('td').prev().text(stags.slice(0, stags.length - 1));
+		});
+		return false;
+	});
+});
+</script>
+	<div class="rf">
+		<div id="container">
+			<h2 class="cont_tab">
+				<a href="group_manage_group.html">按群组</a>
+				<a href="group_manage_content.html">按内容</a>
+				<a href="group_recommend.html" class="select">群组推荐</a>
+			</h2>
+			<div class="search_area">
+				<table width="100%" cellpadding="0" cellspacing="5" border="0">
+					<tr>
+						<td>关键字：</td>
+						<td><input type="text" name="" size="15" /></td>
+						<td>网址后缀：</td>
+						<td><input type="text" name="" size="15" /></td>
+						<td>群组类型：</td>
+						<td><select name="">
+								<option value="">选择群组类型</option>
+							</select>
+						</td>
+						<td>活跃度：</td>
+						<td><input type="radio" name="active" value="week" checked="checked" />周活跃度
+							<input type="radio" name="active" value="month" />月活跃度</td>
+					</tr>
+					<tr>
+						<td>群组规模：</td>
+						<td><select name="">
+								<option value="">选择群组规模</option>
+							</select>
+						</td>
+						<td>行业类型：</td>
+						<td><select name="">
+								<option value="">选择行业类型</option>
+							</select></td>
+						<td>加入方式：</td>
+						<td><select name="">
+								<option value="">选择加入方式</option>
+							</select></td>
+						<td>群组图标：</td>
+						<td><input type="radio" name="active" value="1" checked="checked" />有
+							<input type="radio" name="active" value="0" />无</td>
+					</tr>
+					<tr>
+						<td colspan="8" align="right">
+							<input type="submit" value="查询" />
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="tips_area">
+				<b class="red">符合条件群组：总计1208个（未找到符合条件群组）</b>
+			</div>
+			<div class="tips_area">
+				<a href="javascript:void(0);" onclick="$('table.datalist :checkbox').attr('checked', true);">全选</a> |
+				<a href="javascript:void(0);" onclick="$('table.datalist :checkbox').attr('checked', false);">取消全选</a> | 
+				<a href="javascript:void(0);" onclick="">多项添加分类标签</a>
+			</div>
+			<table  width="100%" cellpadding="0" cellspacing="0" class="datalist mt10">
+			<tr>
+				<th>&nbsp;</th>
+				<th>群组名称</th>
+				<th>简介</th>
+				<th>群组规模</th>
+				<th>活跃度</th>
+				<th>加入方式</th>
+				<th>行业分类</th>
+				<th>&nbsp;</th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" value="" /></td>
+				<td><a href="#">北大PE投资联盟</a></td>
+				<td>北大PE投资联盟--致力于服务中国股权投虑根据对方大.....</td>
+				<td>999人</td>
+				<td>2010</td>
+				<td>任何人经过审批都可以加入</td>
+				<td>互联网，空间科技，计算机硬件，外包...</td>
+				<td><a href="#" js="addTag" tags="">添加分类</a></td>
+			</tr>
+			<tr class="gray">
+				<td><input type="checkbox" name="" value="" /></td>
+				<td><a href="#">北大PE投资联盟</a></td>
+				<td>北大PE投资联盟--致力于服务中国股权投虑根据对方大.....</td>
+				<td>999人</td>
+				<td>2010</td>
+				<td>任何人经过审批都可以加入</td>
+				<td>互联网，空间科技，计算机硬件，外包...</td>
+				<td><a href="#" js="addTag" tags="">添加分类</a></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" value="" /></td>
+				<td><a href="#">北大PE投资联盟</a></td>
+				<td>北大PE投资联盟--致力于服务中国股权投虑根据对方大.....</td>
+				<td>999人</td>
+				<td>2010</td>
+				<td>任何人经过审批都可以加入</td>
+				<td>互联网，空间科技，计算机硬件，外包...</td>
+				<td><a href="#" js="addTag" tags="">添加分类</a></td>
+			</tr>		
+			</table>
+			<div class="tips_area">
+				<a href="javascript:void(0);" onclick="">全选</a> |
+				<a href="javascript:void(0);" onclick="">取消全选</a> | 
+				<a href="javascript:void(0);" onclick="">多项添加分类标签</a>
+			</div>
+			<div class="pagenav">
+				<a href="#">上一页</a>
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<span class="cur">3</span>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">下一页</a>
+			</div>
+		</div>
+	</div>
+	
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright">
+	        Copyright &copy; 2010 Ushi.cn
+        </div>
+    </div> 
+    <!--footer end-->
+</div>
+
+
+<div id="groupTag" style="display:none;">
+	<dl>
+		<dt><b>高科技</b></dt>
+		<dd>
+			<ul>
+				<li><input type="checkbox" value="1" /><label>空间科技</label></li>
+				<li><input type="checkbox" value="1" /><label>空间科技</label></li>
+				<li><input type="checkbox" value="1" /><label>空间科技</label></li>
+				<li><input type="checkbox" value="1" /><label>空间科技</label></li>
+				<li><input type="checkbox" value="1" /><label>空间科技</label></li>
+			</ul>
+		</dd>
+		<dt><b>高科技</b></dt>
+		<dd>
+			<ul>
+				<li><input type="checkbox" value="2" /><label>计算机软件</label></li>
+				<li><input type="checkbox" value="2" /><label>计算机软件</label></li>
+				<li><input type="checkbox" value="2" /><label>计算机软件</label></li>
+				<li><input type="checkbox" value="2" /><label>计算机软件</label></li>
+				<li><input type="checkbox" value="2" /><label>计算机软件</label></li>
+			</ul>
+		</dd>
+		<dt><b>高科技</b></dt>
+		<dd>
+			<ul>
+				<li><input type="checkbox" /><label>计算机软件</label></li>
+				<li><input type="checkbox" /><label>计算机软件</label></li>
+				<li><input type="checkbox" /><label>计算机软件</label></li>
+				<li><input type="checkbox" /><label>计算机软件</label></li>
+				<li><input type="checkbox" /><label>计算机软件</label></li>
+			</ul>
+		</dd>
+		<dt><b>高科技</b></dt>
+		<dd>
+			<ul>
+				<li><input type="checkbox" /><label>计算机软件</label></li>
+				<li><input type="checkbox" /><label>计算机软件</label></li>
+				<li><input type="checkbox" /><label>计算机软件</label></li>
+				<li><input type="checkbox" /><label>计算机软件</label></li>
+				<li><input type="checkbox" /><label>计算机软件</label></li>
+			</ul>
+		</dd>
+	</dl>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/login.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../../../common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../../../common/js/widget.js"></script>
+<script type="text/javascript" src="../../../common/js/common.js"></script>
+</head>
+
+<body id="page_public">
+<div id="wrapper" class="container">
+	<div id="header_reg" class="clearfix">
+		<div id="logo"><img src="../../../bns/images/youshi_logo.png" width="80" height="51" alt="优士" /></div>
+	</div>
+	<div id="main" class="clearfix">
+		<div class="column-full">
+			<div class="reg-top">
+				<div class="reg-tit">
+					<h3>个人头像设定</h3>
+				</div>
+				<div class="openreg-step">2/4 步 <span id="openregStep2"></span></div>
+			</div>
+			<div class="regform-wrap">
+				<div class="help_note">
+					<h5>拥有个人真实的头像照片，有助于...</h5>
+					<ul class="text_note">
+						<li>让好友更容易的找到您，不被忽略</li>
+						<li>增强个人档案的可信度，获得更多职业或商务合作的机会</li>
+					</ul>
+				</div>
+				<form action="step3.html" method="post" enctype="multipart/form-data" id="registrationPicForm" name="reg_logo_form">
+					<div class="profile-photo-container clearfix">
+						<div class="profile-photo-current"> <img id="uploadpic" src="../../../common/images/face_120.png" w="0" h="0" alt="" /> </div>
+						<div class="profile-upload">
+							<h4>请从电脑里选择您喜欢的图片</h4>
+							<p class="note">您可以上传JPG或PNG格式的文件，文件需小于2M</p>
+							<p>
+								<input class="input-w-400" name="logo" type="file"/>
+							</p>
+							<p class="quiet">
+								<input name="" type="checkbox" checked="checked" class="checkbox" />
+								我可以保证所上传的图片是我个人的真实照片，并拥有版权</p>
+							<p>
+								<input name="" class="button" id="logo_upload" type="submit" value="开始上传"" />
+								<a class="spe-left2" href="/user/sns!viewInvitePage.jhtml?skip=skip">跳过此步</a> </p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!--#include virtual="../footer.html"--> 
+</div>
+</body>
+</html>

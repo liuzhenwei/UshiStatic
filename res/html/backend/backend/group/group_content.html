@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="..../../bns/images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+	<div class="lf">  
+		<div id="menu_out" class="leftmenu">	
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+		</div>
+	</div>  
+
+<script type="text/javascript">
+$(function(){
+	$('input[datepicker]').datepicker();
+});
+</script>
+	<div class="rf">
+		<div id="container">
+			<h2><img src="..../../common/images/face_50.png" width="50" height="50" />
+				群组名称</h2>
+			<div class="search_area">
+				<table width="100%" cellpadding="0" cellspacing="5" border="0">
+					<tr>
+						<td width="50%">群组网址：XXX XXXXXXXXXX XXXXXXX XXXXXX XXXXXX</td>
+						<td width="50%">群组状态：XXX XXXXXXXXXX XXXXXXX XXXXXX XXXXXX</td>
+					</tr>
+					<tr>
+						<td width="50%">申请时间：XXX XXXXXXXXXX XXXXXXX XXXXXX XXXXXX</td>
+						<td width="50%">群组类型：XXX XXXXXXXXXX XXXXXXX XXXXXX XXXXXX</td>
+					</tr>
+					<tr>
+						<td width="50%">成立时间：XXX XXXXXXXXXX XXXXXXX XXXXXX XXXXXX</td>
+						<td width="50%">加入方式：XXX XXXXXXXXXX XXXXXXX XXXXXX XXXXXX</td>
+					</tr>
+					<tr>
+						<td width="50%">群组简介：XXX XXXXXXXXXX XXXXXXX XXXXXX XXXXXX</td>
+						<td width="50%">显示在群组列表：XXX XXXXXXXXXX XXXXXXX XXXXXX XXXXXX</td>
+					</tr>
+				</table>
+			</div>
+			<h4>成员管理</h4>
+			<div class="search_area">
+				<table width="100%" cellpadding="0" cellspacing="5" border="0">
+					<tr>
+						<td width="50%">
+							邮件地址：
+							<input name="" type="text" size="15" />
+							<input name="" type="button" value="添加为管理员" />
+						</td>
+						<td width="50%">
+							姓名：
+							<input name="" type="text" size="15" />
+							<input name="" type="button" value="搜索" />
+						</td>
+					</tr>
+				</table>
+			</div>
+			<table  width="600" cellpadding="0" cellspacing="0" class="datalist mt10">
+			<tr>
+				<td colspan="4"><input name="" type="button" value="从群组中删除" /></td>
+			</tr>
+			<tr>
+				<th></th>
+				<th>姓名</th>
+				<th>群内身份</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" value="" /></td>
+				<td>2</td>
+				<td>管理员</td>
+				<td><a href="#">降为普通会员</a></td>
+			</tr>
+			<tr class="gray">
+				<td><input type="checkbox" name="" value="" /></td>
+				<td>2</td>
+				<td>普通会员</td>
+				<td><a href="#">提升为管理员</a></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" value="" /></td>
+				<td>2</td>
+				<td>非群内用户</td>
+				<td><a href="#">加入该群并设为管理员</a></td>
+			</tr>		
+			</table>
+			<div class="pagenav">
+				<a href="#">上一页</a>
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<span class="cur">3</span>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">下一页</a>
+			</div>
+			<h4>成员审核</h4>
+			<div class="tips_area">
+				<b class="red">当前没有待审核的会员</b>
+			</div>
+			<table  width="100%" cellpadding="0" cellspacing="0" class="datalist mt10">
+			<tr>
+				<td colspan="4"><input name="" type="button" value="批准" />
+					<input name="" type="button" value="拒绝" />
+				</td>
+			</tr>
+			<tr>
+				<th></th>
+				<th>姓名</th>
+				<th>职位</th>
+				<th>一度数量</th>
+				<th>申请时间</th>
+				<th>申请理由</th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" value="" /></td>
+				<td>2</td>
+				<td>工程师</td>
+				<td>5</td>
+				<td>2010-10-10 22:22</td>
+				<td>5</td>
+			</tr>
+			<tr class="gray">
+				<td><input type="checkbox" name="" value="" /></td>
+				<td>2</td>
+				<td>工程师</td>
+				<td>5</td>
+				<td>2010-10-10 22:22</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" value="" /></td>
+				<td>2</td>
+				<td>工程师</td>
+				<td>5</td>
+				<td>2010-10-10 22:22</td>
+				<td>5</td>
+			</tr>		
+			</table>
+		</div>
+	</div>
+	
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright">
+	        Copyright &copy; 2010 Ushi.cn
+        </div>
+    </div> 
+    <!--footer end-->
+</div>
+
+</body>
+</html>

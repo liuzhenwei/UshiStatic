@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>var ti = {};ti.fb = new Date().getTime();ti.pt = 'newpage';</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="走秀网是全球时尚在线百货零售机构，提供奢侈品特卖，品牌折扣，名品打折；服装、奢侈品、化妆品、手表、珠宝配饰等品牌商品，网上购物正品保障，货到付款，7天无条件退换货。" />
+<meta name="keywords" content="网上购物,名品打折网,品牌折扣网,奢侈品,LV,巴宝莉,古驰,蔻驰,安普里奥?阿玛尼,路易威登,爱马仕,欧米茄,D&G,施华洛世奇,香奈儿,耐克,阿迪达斯,李宁,ZARA,百丽,货到付款,走秀网,走秀网官网" />
+<title>走秀网-全球时尚在线百货:奢侈品特卖,品牌折扣,名品打折,网上购物,正品货到付款!</title>
+<link media="screen, projection" type="text/css" href="../../../common/css/layout.css" rel="stylesheet">
+<link media="screen, projection" type="text/css" href="../../../bns/css/bns.css" rel="stylesheet">
+<link href="http://www.xiu.com/static/css/default/base.css" rel="stylesheet" type="text/css">
+<link href="http://www.xiu.com/favicon.ico" rel="icon">
+<style type="text/css">
+.autocomplete-shadow {
+	position:absolute;
+	left:0;
+	top:0;
+	margin:8px 0 0 6px;
+	background:transparent url(http://www.xiu.com/static/css/default/img/shadow.png) no-repeat right bottom;
+}
+.autocomplete {
+	position:relative;
+	max-height:350px;
+	text-align:left;
+	margin:-6px 6px 6px -6px;
+	border:1px solid #999999;
+	cursor:default;
+	background:none no-repeat scroll 0 0 #FFFFFF;
+	overflow:auto;
+}
+.autocomplete .selected {
+	background:none repeat scroll 0 0 #F0F0F0;
+}
+.autocomplete div {
+	padding:2px 5px;
+	white-space:nowrap;
+}
+.autocomplete strong {
+	font-weight:normal;
+	color:#3399FF;
+}
+.header h3 {
+	margin-bottom: 0;
+}
+#main {
+	border: 1px solid #E8E8E8;
+	clear: both;
+}
+.partner-left-cont {
+	padding:10px 20px;
+	width:490px;
+}
+.partner-left-cont p {
+	line-height:2em;
+	margin-bottom:1.5em;
+}
+.partner-right-cont {
+	margin-top:10px;
+	padding-right: 20px;
+	width: 391px;
+	background:url(../../../bns/images/logo_ushi_partner.png) no-repeat;
+}
+.partner-reg {
+	background: url(../../../bns/images/bg_partner_reg1.png) no-repeat left bottom;
+	width: 391px;
+	padding: 0 0 30px 0;
+}
+.partner-reg-inner {
+	background: url(../../../bns/images/bg_partner_reg1.png) no-repeat left top;
+	padding: 25px 13px 0 12px;
+}
+</style>
+<script type="text/javascript" src="http://www.xiu.com/static/js/library/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="http://www.xiu.com/static/js/xiu/common.setting.js"></script>
+<script type="text/javascript" src="http://www.xiu.com/static/js/xiu/click_xiu.js"></script>
+<script type="text/javascript" src="http://www.xiu.com/static/js/xiu/index/randTab.min.js"></script>
+</head>
+<body id="index">
+<div style="display:none"></div>
+<!--头部开始-->
+<div class="header">
+	<ul class="w toplink">
+		<li class="nofix"><a href="/mobile.html" target="_blank" class="redx" onclick="XIU.Window.ctraceClick('version=b|lev1=yetou|lev2=mobile|lev3=mobile','abtest');">移动走秀</a></li>
+		<li><a href="#" onclick="addfavorite(); XIU.Window.ctraceClick('version=b|lev1=yetou|lev2=enshrine|lev3=enshrine','abtest');">收藏走秀</a></li>
+		<li><a href="/help/index.shtml" target="_blank" onclick="XIU.Window.ctraceClick('version=b|lev1=yetou|lev2=help|lev3=help','abtest');">帮助</a></li>
+		<li class="my_xiu" id="mine"> <a href="javascript:;" id="xiuurl" onclick="XIU.Window.ctraceClick('version=b|lev1=yetou|lev2=myxiu|lev3=myxiu','abtest');">我的走秀</a>
+			<div class="myXiu_menu" id="my_xiu"> <a href="#">我的订单</a> <a href="#">我的收藏</a> </div>
+		</li>
+		<li class="my_bag" id="bag"> <a href="http://portal.xiu.com/business/XOrderItemDisplayCmd?langId=-7&storeId=10154&catalogId=10101&sellType=5" id="new_bag" target="_blank" onclick="XIU.Window.ctraceClick('version=b|lev1=yetou|lev2=shopcart|lev3=shopcart','abtest');">购物袋<font class="redx" id="num">0</font>件</a>
+			<div class="myBag_con" id="my_bag"> </div>
+		</li>
+		<li> <span id="logindiv">您好，欢迎光临走秀网！<a href="#">[登录]</a><a href="#">[注册]</a></span> </li>
+	</ul>
+	<style type="text/css">
+	.leon-search-box{position:relative;}
+	.leon-welcome{position:absolute;top:9px;top:11px\9;left:30px;z-index:2}
+	.leon-autosug-style{border-color:#999; background-color:#fff}
+	.leon-autosug-style .autosug-odd{background-color:#fff}
+	.leon-autosug-style .autosug-over{background-color:#f0f0f0;}
+	.leon-autosug-style font{color:#3399FF}
+	.leon-autosug-style .leon-s-oclass{color:#7b7b7b;margin-left:10px}
+	.leon-autosug-style .leon-fb{font-weight:bold}
+	.leon-autosug-style .leon-s-gn{position:absolute;right:5px;top:1px;color:green}
+	.leon-autosug-style{padding:0px; border-width:1px; border-style:solid;overflow:hidden;z-index:99999;}
+	.leon-autosug-style ul{width:100%;list-style-position:outside;list-style:none;padding:0;margin:0;}
+	.leon-autosug-style li{margin:0px;padding:2px 5px;cursor:default;display:block;font-size:12px;line-height:18px;overflow:hidden;position:relative}
+	.leon-autosug-style li font{font-size:12px;}
+	.leon-autosug-loading{background:white right center no-repeat;}
+/*only for new head.html under code*/
+.leon-autosug-style{width:232px !important}
+	</style>
+	<div class="w LSS_box">
+		<h1 class="logo_x"><a href="http://www.xiu.com/" onclick="XIU.Window.ctraceClick('version=b|lev1=yetou|lev2=xiulogo|lev3=xiulogo','abtest');"><img src="static/css/default/img/index/x_logo.jpg" width="194" alt="走秀网-全球品牌网络旗舰店"></a></h1>
+		<form id="J_searchForm" action="http://search.xiu.com/s" method="get" onsubmit="var param=document.getElementById('J_searchTerm').value;XIU.Window.ctraceClick('version=b|lev1=yetou|lev2=search|lev3='+param,'abtest');return LEON.searchSubmit();">
+			<div class="search_x leon-search-box">
+				<label id="J_search_welcome" for="J_searchTerm" class="leon-welcome" style="display:none">请输入商品名称或品牌名称</label>
+				<input id="J_searchTerm" type="text" value="" name="kw" autocomplete="off"
+        	 onfocus="$('#J_search_welcome').hide();" onblur="if(!$(this).val())$('#J_search_welcome').show();">
+				<input type="submit" value="" class="s_btn" id="searchBtn">
+				<input type="hidden" name="salesCatgroupId" id="J_st_oclass_id"/>
+				<p><b class="redx">热搜：</b> <a target="_blank" href="http://search.xiu.com/s?kw=gucci" onclick="XIU.Window.ctraceClick('version=b|lev1=yetou|lev2=hotkw|lev3=GUCCI','abtest');">GUCCI</a> <a target="_blank" href="http://brand.xiu.com/3649.html" onclick="XIU.Window.ctraceClick('version=b|lev1=yetou|lev2=hotkw|lev3=CK JEANS','abtest');">CK JEANS</a> <a target="_blank" href="http://brand.xiu.com/1791.html" onclick="XIU.Window.ctraceClick('version=b|lev1=yetou|lev2=hotkw|lev3=BURBERRY','abtest');">BURBERRY</a> </p>
+			</div>
+		</form>
+		<div class="service_x"><a onclick="XIU.Window.ctraceClick('version=b|lev1=yetou|lev2=olcc|lev3=olcc','abtest');this.newWindow=window.open('http://chat.live800.com/live800/chatClient/chatbox.jsp?companyID=77366&amp;configID=113113&amp;jid=1560839906&amp;enterurl=http%3A%2F%2Fwww%2Ezoshow%2Ecom%2F&amp;timestamp=1222675300890', 'chatbox77366','toolbar=0,scrollbars=0,location=0,menubar=0,resizable=1,width=570,height=424');this.newWindow.focus();this.newWindow.opener=window;return false;" href="javascript:void(0)" target="_self" id="live800iconlink" title="在线客服">在线客服</a></div>
+	</div>
+	<script type="text/javascript" src="http://www.xiu.com/static/js/thirdparty/autocomplete/autocomplete.js"></script>
+	<div class="nav_box">
+		<div class="w nav_type">
+			<div class="class_type">
+				<h3>全部商品和分类</h3>
+			</div>
+			<ul class="navlist">
+				<li><a href="http://www.xiu.com/" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=ng1|lev3=首页','abtest');">首页</a></li>
+				<li><a href="http://www.xiu.com/luxury.html" target="_blank" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=ng2|lev3=奢侈品','abtest');">奢侈品</a></li>
+				<li class="sub"> <a href="javascript:" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=ng3|lev3=全球购','abtest');">全球购</a> <span ></span>
+					<div class="subNav"> <a target="_blank" href="http://www.xiu.com/west.html" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=ng3|lev3=欧美馆','abtest');">欧美馆</a> <a target="_blank" href="http://www.xiu.com/korea.html" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=ng3|lev3=韩国馆','abtest');">韩国馆</a> </div>
+				</li>
+				<li><a href="http://tuan.xiu.com/" target="_blank" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=ng4|lev3=秀团','abtest');">秀团</a></li>
+				<li><a href="http://outlets.xiu.com" target="_blank" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=ng5|lev3=名品特卖','abtest');">名品特卖</a></li>
+				<li class="sub"> <a href="javascript:" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=ng6|lev3=特色馆','abtest');">特色馆</a> <span ></span>
+					<div class="subNav"> <a target="_blank" href="http://www.xiu.com/sports.html" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=ng6|lev3=运动馆','abtest');">运动馆</a> </div>
+				</li>
+				<li class="sub"> <a href="javascript:" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=ng7|lev3=活动','abtest');">活动</a> <span  class="pfix" ></span>
+					<div class="subNav"> <a target="_blank" href="http://www.xiu.com/seckill/" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=ng7|lev3=秒杀','abtest');">秒杀</a> <a target="_blank" href="http://www.xiu.com/cx/15314.shtml" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=ng7|lev3=清仓','abtest');">清仓</a> </div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="hotspot">
+		<div class="w">
+			<p class="HS_l son_HS_l"><b class="redx">热点推荐：</b> <a target="_blank" href="http://www.xiu.com/cx/19049.shtml" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=redian|lev3=本命年内衣经典','abtest');">本命年内衣经典</a> <a target="_blank" href="http://www.xiu.com/cx/19072.shtml" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=redian|lev3=淑女春装折扣专场','abtest');">淑女春装折扣专场</a> <a target="_blank" href="http://www.xiu.com/cx/18540.shtml" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=redian|lev3=男装春季热销','abtest');">男装春季热销</a> </p>
+			<p class="HS_r"><b>秀快讯：</b> <a target="_blank" href="http://www.xiu.com/about/affiche120301.shtml" onclick="XIU.Window.ctraceClick('version=b|lev1=navigation|lev2=kuaixun|lev3=38女人节4天3晚港澳双人游中奖名单','abtest');">38女人节4天3晚港澳双人游中奖名单</a> </p>
+		</div>
+	</div>
+</div>
+<!--头部结束-->
+
+<div id="main" class="clearfix" style="padding-bottom: 20px; width:950px;">
+	<div class="partner-left-cont">
+		<p>尊敬的 走秀网 会员：</p>
+		<p>走秀网 祝您在职业和商务领域中取得成功。</p>
+		<p><b class="special">您获得了来自 走秀网 的礼券</b>：现在您不仅可以通过走秀网会员的专属邀请入口成为优士会员，与七十多万各行业中的商业领袖和职业精英同行，还能够获得价值<b class="special">RMB288元(45美金)的三个月白金会员资格</b>。</p>
+		<P>优士网是一家专门面向中国数以千万计的优秀职业人士、创业者和企业家而建立的职业社交平台，定位于帮助他们更好的管理和拓展人脉网络，并通过人脉来解决商务领域中的各种问题，如投资创业、商务合作、专家咨询、求职招聘等。优士网通过电脑和手机终端为会员提供了稳定、安全、可信任、个性化的网络服务和许多高质量的职业机遇，加速他们在职业生涯中取得成功。</p>
+		<p>优士网2010年由100位创始会员共同创立，经过迅猛的发展，目前已经成为了中国高质量职业社交网络第一品牌，书写着口碑营销神话。同时，优士网致力于维系高品质的社区和会员质量。优士网的会员目前已经覆盖了风险投资、金融财务、媒体广告、互联网、移动通讯、法律咨询、新能源、旅游、酒店、房地产等众多行业，其中总裁级别以上会员高达10%以上。 </p>
+	</div>
+	<div class="partner-right-cont">
+		<h5 class="quiet" style="padding:36px 0 10px 86px;">中国高质量职业社交网络第一品牌</h5>
+		<div class="partner-reg">
+			<div class="partner-reg-inner">
+				<div style="color:#444444" class="a-left large boldface margin-bottom clearfix"><span style="float:left;margin-top:2px;" class="middle grade-vip"></span>
+					<p style="margin-left:24px;">加入优士免费尊享价值288元优士白金会员资格</p>
+				</div>
+				<form action="/user/apply!saveapply.jhtml" method="post" name="regForm" id="partnerRegForm">
+					<div class="form-item clearfix">
+						<label> 姓名：</label>
+						<div class="itemmain">
+							<input type="text" name="basicProfile.fullname" maxlength="64" value="" id="userName" class="inputtext" Validate="isUsername" vdOpt="url:/user/reg!validateUserName.jhtml"/>
+						</div>
+						<div class="tips" style="display:none">
+							<div class="tips-box-outer">
+								<div class="tips-box-inner">
+									<p>请用规范的形式填写您的真实姓名。<br/>
+										如果系统误判你的姓名，请换个名字先注册，然后和优士网客服进行联系。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-item clearfix">
+						<label>Email：</label>
+						<div class="itemmain">
+							<input type="text" name="basicProfile.email" maxlength="64" value="" id="userEmail" class="inputtext" Validate="isAjaxEmail" vdOpt="url:/user/apply!checkmail.jhtml"/>
+						</div>
+						<div class="tips" id="emailTips" style="display:none;">
+							<div class="tips-box-outer">
+								<div class="tips-box-inner"> 请输入有效的邮箱地址 </div>
+							</div>
+						</div>
+					</div>
+					<div class="form-item clearfix">
+						<label>密码：</label>
+						<div class="itemmain">
+							<input type="password" name="basicProfile.passwd" maxlength="32" id="userPass" class="inputtext" Validate="isPassword"/>
+						</div>
+						<div class="tips" style="display:none">
+							<div class="tips-box-outer">
+								<div class="tips-box-inner">密码由6-32位字母、数字、标点组成</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-item clearfix">
+						<label><span class="quiet">(选填)</span> 手机：</label>
+						<div class="itemmain">
+							<input type="text" name="basicProfile.mobile" maxlength="64" value="" id="mobile" class="inputtext" Validate="isCellphone" vdOpt="ignore:empty"/>
+						</div>
+						<div class="tips" style="display:none">
+							<div class="tips-box-outer">
+								<div class="tips-box-inner">请输入正确的手机号码</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-item-nolabel">
+						<input type="checkbox" checked="checked" />
+						同意并已阅读<a href="/doc.jhtml?key=term_of_service" target="_blank">服务条款</a>的内容</div>
+					<div class="form-btn">
+						<input type="submit" value="立即加入" class="special-btn large-btn large" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script>if(typeof ti == 'object') ti.atf=new Date().getTime();</script> 
+<!--主体部分开始--><script>if(typeof ti == 'object') ti.cf = new Date().getTime();</script> 
+
+<!--客服中心开始--><script type="text/javascript">
+$('#w_service_box a').each(function(){
+    if(this.rel != null && this.rel != ""){
+		this.href = this.rel.replace(/#{url}/g,url['wcsurl']).replace(/#{params}/g,url['parms']);
+	}
+})
+</script> 
+<!--客服中心结束--> 
+
+<!--页脚开始-->
+<div class="w footer">
+	<div class="footlink">
+		<div class="fLink_con">
+			<ul>
+				<li><a href="http://www.xiu.com/about/aboutus.shtml" target="_blank" onclick="XIU.Window.ctraceClick('version=b|lev1=yj|lev2=yj|lev3=yj','abtest');">关于走秀</a>|</li>
+				<li><a href="http://www.xiu.com/about/media.shtml" target="_blank" onclick="XIU.Window.ctraceClick('version=b|lev1=yj|lev2=yj|lev3=yj','abtest');">媒体报道</a>|</li>
+				<li><a href="http://www.xiu.com/about/cooperate.shtml" target="_blank" onclick="XIU.Window.ctraceClick('version=b|lev1=yj|lev2=yj|lev3=yj','abtest');">品牌招商</a>|</li>
+				<li><a href="http://www.xiu.com/about/job.shtml" target="_blank" onclick="XIU.Window.ctraceClick('version=b|lev1=yj|lev2=yj|lev3=yj','abtest');">加入走秀</a>|</li>
+				<li><a href="http://www.xiu.com/about/link.shtml" target="_blank" onclick="XIU.Window.ctraceClick('version=b|lev1=yj|lev2=yj|lev3=yj','abtest');">友情链接</a>|</li>
+				<li><a href="http://www.xiu.com/about/contact.shtml" target="_blank" onclick="XIU.Window.ctraceClick('version=b|lev1=yj|lev2=yj|lev3=yj','abtest');">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="server_btn"> <a href="http://www.xiu.com/help/index.shtml" target="_blank">&nbsp;</a> <a href="http://www.xiu.com/help/index.shtml" target="_blank" class="btn2">&nbsp;</a> <a href="http://www.xiu.com/help/index.shtml" target="_blank" class="btn3">&nbsp;</a> </div>
+	<p class="copyright">Copyright ? 2008-2011<a href="#" target="_blank" onclick="XIU.Window.ctraceClick('version=b|lev1=yj|lev2=yj|lev3=yj','abtest');">Xiu.com</a>版权所有 . <a href="#" target="_blank">粤ICP备07502993号</a></p>
+	<div class="des_div"> <a href="http://www.xiu.com/help/help1-8.shtml" target="_blank"><img src3="http://www.xiu.com/static/img/footer/picc.jpg" width="118" height="31"></a> <a href="http://www.xiu.com/help/ICP.shtml" target="_blank"><img src3="http://www.xiu.com/static/img/footer/binfo06.jpg" width="94" height="31"></a> <a href="http://www.xiu.com/help/ICP.shtml" target="_blank"><img src3="http://www.xiu.com/static/img/footer/binfo02.jpg" width="113" height="31"></a> <a href="http://net.china.com.cn/index.htm" target="_blank"><img src3="http://www.xiu.com/static/img/footer/binfo01.jpg" width="150" height="31"></a> <a href="#" target="_blank"><img src3="http://www.xiu.com/static/img/footer/cjdwlogo.jpg" width="166" height="31"></a> <a href="http://www.sznet110.gov.cn/netalarm/index.jsp" target="_blank"><img src3="http://images.xiu.com/cms/advertisement/2012/02/15/c626a2d2-cf52-4177-98b6-6313d9144573.gif" /></a> <a href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403101020565
+" target="_blank"><img src3="http://images.xiu.com/cms/advertisement/2012/02/15/f0a169d7-f9a5-4efe-a48a-2c0517ee3f79.gif" /></a> <a href="https://www.itrust.org.cn/yz/pjwx.asp?wm=1667062250" target="_blank"><img src3="http://www.xiu.com/static/img/footer/binfo05.jpg" width="94" height="31"></a> <a href="https://ss.cnnic.cn/verifyseal.dll?sn=2010090100100002003&pa=621350" target="_blank"><img src3="http://www.xiu.com/static/img/footer/knetSealLogo.jpg" width="100" height="31"></a> <a href="http://www.ebs.gov.cn/EntCertificate.aspx?mainId=7ffba2a8-c8b9-4d36-b196-bf81c17253b5" target="_blank"><img src3="http://www.xiu.com/static/img/footer/ebsIcon.jpg" width="116" height="31"></a> <a href="http://www.xiu.com/help/service_new.shtml" target="_blank"><img src3="http://www.xiu.com/static/img/footer/consumer_service.jpg" width="105" height="31"></a> </div>
+</div>
+<!--页脚结束--> 
+<script type="text/javascript"> 
+  var _gaq = _gaq || [];    _gaq.push(['_setAccount', 'UA-9540643-5']);    _gaq.push(['_addOrganic', 'soso', 'w']);    _gaq.push(['_addOrganic', 'youdao', 'q']);    _gaq.push(['_addOrganic', 'baidu', 'word']);    _gaq.push(['_addOrganic', 'sogou', 'query']);    _gaq.push(['_setDomainName', '.xiu.com']);    _gaq.push(['_setAllowLinker', true]);    _gaq.push(['_setAllowHash', false]);     _gaq.push(['_trackPageview']);    _gaq.push(['_trackPageLoadTime']); 
+  (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })(); </script>
+</body>
+<script type="text/javascript" src="http://www.xiu.com/static/js/thirdparty/jqueryCookie.js"></script>
+<script type="text/javascript" src="http://www.xiu.com/static/js/thirdparty/autocomplete/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="http://www.xiu.com/static/js/xiu/index/index.2.5.min.js"></script>
+
+<!--全站嵌入该js。用于记二跳-->
+<!--请将js代码嵌入到html中body标签结束之前。（整个body部分最后边）-->
+<script type="text/javascript" src="http://t.agrantsem.com/js/agwebtracking_224.js"></script>
+<script type="text/javascript">
+try{
+var _mvsite=new $mvt.$site("m-90-0");
+_mvsite.$logConversion();
+}catch(err){}
+</script>
+<!--
+<script type='text/javascript' src='/static/js/thirdparty/wlySemForXiu.v2.0.js'></script>
+-->
+<script type="text/javascript">
+XIU.Window.send();
+</script>
+<script src='http://media.xiu.com/js/media.js' language='JavaScript' charset='utf-8'></script>
+<!--速度测试-->
+<script>typeof ti=="object"&&jQuery(document).ready(function(){function c(){ti.pl=(new Date).getTime();var a=window.performance||window.webkitPerformance;if(a=a&&a.timing)if(a.navigationStart!=0){ti.ns=a.navigationStart;ti.dls=a.domainLookupStart;ti.dle=a.domainLookupEnd;ti.cs=a.connectStart;ti.ce=a.connectEnd;ti.rqs=a.requestStart;ti.rss=a.responseStart;ti.rse=a.responseEnd;ti.le=a.loadEventStart}ti.send=function(){ti.u=window.location.href.replace("http:/","").replace("https:/","");var b=XIU;if(b=b&&b.Window&&b.Window.info){ti.p=b.p;ti.c=b.cook_id}if(!ti.p)ti.c=ti.p=0;if(!ti.fb)ti.fb=0;if(!ti.atf)ti.atf=0;if(!ti.cf)ti.cf=0;if(!ti.pq)ti.pq=0;if(!ti.pr)ti.pr=0;if(!ti.cdn)ti.cdn=0;if(!ti.ns)ti.ns=ti.dls=ti.dle=ti.cs=ti.ce=ti.rqs=ti.rss=ti.rse=ti.le=0;return"p={"+ti.p+"}&c={"+ti.c+"}&b={fb="+ti.fb+"|atf="+ti.atf+"|cf="+ti.cf+"|dr="+ti.dr+"|pq="+ti.pq+"|pr="+ti.pr+"|pl="+ti.pl+"|ns="+ti.ns+"|dls="+ti.dls+"|dle="+ti.dle+"|cs="+ti.cs+"|ce="+ti.ce+"|rqs="+ti.rqs+"|rss="+ti.rss+"|rse="+ti.rse+"|le="+ti.le+"|cdn="+ti.cdn+"|pt="+ti.pt+"}&u={"+ti.u+"}"};jQuery.getScript(("https:"==document.location.protocol?"https":"http")+"://latency.xiu.com/?"+ti.send())}ti.dr=(new Date).getTime();if(ti.pt=="newpage"||ti.pt=="oldpage"||ti.pt=="item")jQuery.ajax({type:"GET",url:"/latency.html",cache:false,beforeSend:function(){ti.pq=(new Date).getTime()},complete:function(a){ti.pr=(new Date).getTime();a=a.getResponseHeader("X-Via");if(a!==null&&a.indexOf("Cdn Cache Server")!==-1)ti.cdn=1}});if(window.addEventListener)window.addEventListener("load",c,false);else window.attachEvent&&window.attachEvent("onload",c)});</script>
+<script type="text/javascript" src="http://www.xiu.com/static/js/xiu/json.js"></script>
+<script type="text/javascript" src="http://portal.xiu.com/business/HeadView?langId=-7&storeId=10154&catalogId=10101"></script>
+<!-- Google Code for &#22882;&#20360;&#31867; Remarketing List -->
+</html>
+<!-- xxx_check_page_state_flag_xxx -->

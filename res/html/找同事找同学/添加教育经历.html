@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/bns.css" type="text/css" media="screen, projection" />
+</head>
+<body id="page_member">
+<div id="wrapper" class="container">
+	<!--#include file="header.html"-->
+	<div id="main">
+		<div class="tabs-common clearfix">
+			<ul>
+				<li><a href="invite_home.html">邀请朋友加入</a></li>
+				<li><a href="找同事.html">找同事</a></li>
+				<li class="current"><a href="找同学.html">找同学</a></li>
+				<li><a href="invite_you_may_know.html">您可能认识</a></li>
+				<li><a href="invite_you_mayhope_know.html">你可能希望认识</a></li>
+			</ul>
+			<div class="float-right"><a href="invite_history.html">查看邀请记录</a></div>
+		</div>
+		<div class="column-2-2">
+			<div class="spe-left-pd2">
+				<h4>添加新的教育经历，找到你的同学</h4>
+				<div class="notice-special"><span class="quiet">完善教育经历能够帮助你快速找到你的老同学</span></div>
+<form id="edit_edu" method="post" action="找到的同学.html" class="formstyle">
+	<input type="hidden" value="" name="eid">
+	<input type="hidden" id="schoolID" name="schoolId">
+	<p class="quiet">带 <span class="red">* </span>号的项目为必填项</p>
+	<ul>
+		<li>
+			<label><span class="red">* </span>学校名称：</label>
+			<input type="text" autocomplete="off" class="input-w-400" id="SchoolName" value="" maxlength="64" name="schoolName" searchkey="">
+		</li>
+		<li>
+			<label><span class="red">* </span>专业 ：</label>
+			<input type="text" js="major" class="input-w-400" id="education_major" value="" maxlength="64" name="education.major">
+		</li>
+		<li>
+			<label><span class="red">* </span>学位 ：</label>
+			<select js="degreeid" class="select" id="degreeid" name="education.degreeid">
+				<option value="0">请选择</option>
+				<option value="1">学士</option>
+				<option value="2">MBA</option>
+				<option value="3">硕士</option>
+				<option value="4">博士</option>
+				<option value="5">博士后</option>
+				<option value="6">大专</option>
+				<option value="7">其他</option>
+			</select>
+		</li>
+		<li>
+			<label> <span class="red">* </span>起止时间 ：</label>
+			<select js="date" id="education_startyear" name="education.startyear">
+				<option value="-1">选择年</option>
+				<option value="2011">2011</option>
+				<option value="2010">2010</option>
+				<option value="2009">2009</option>
+				<option value="2008">2008</option>
+				<option value="2007">2007</option>
+				<option value="2006">2006</option>
+				<option value="2005">2005</option>
+			</select>
+			<span class="large">至</span>
+			<select js="date" id="education_endyear" name="education.endyear">
+				<option value="-1">选择年</option>
+				<option value="2015">2015</option>
+				<option value="2014">2014</option>
+				<option value="2013">2013</option>
+				<option value="2012">2012</option>
+				<option value="2011">2011</option>
+				<option value="2010">2010</option>
+				<option value="2009">2009</option>
+			</select>
+		</li>
+		<li>
+			<label>概述 ：</label>
+			<textarea id="education_summary" rows="80" cols="5" name="education.summary"></textarea>
+		</li>
+	</ul>
+	<p>
+		<input type="submit" js="submit" value="添加" class="button">
+		<a class="common-button" href="找更多同学.html">取消</a>
+	</p>
+</form>
+			</div>
+		</div>
+		<div class="column-1 rightsidebar">
+		</div>
+	</div>
+</div>
+<!--#include file="footer.html"-->
+</body>
+</html>

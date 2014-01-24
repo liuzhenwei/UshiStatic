@@ -1,0 +1,38 @@
+﻿@charset "utf-8";
+/* public pages */
+
+.redirect-page{padding-top:60px;}
+
+/*------ public.registration  ------*/ 
+/*邀请注册模块*/
+.invite-inviteContent{margin:30px 10px 0 40px; width:200px; _display:inline;}
+
+/*注册完善模块*/
+.step-bar{background-image:url(../images/bg_reg_step_en_ushi.png);}
+#registration li{clear:left;}
+#registration li label {width:120px; margin:0 10px 0 0;}
+#registration input[type=text], #registration li input[type=password] {font-size:1.0833em;}
+#registration li select {font-size:1.0833em;}
+
+/* New registration*/ 
+.openreg-form .form-item label{width:100px;}
+.openreg-form .form-item-nolabel {padding:5px 0 5px 110px;} 
+.openreg-form .form-btn, .reg-lang {}
+.regMult-pd-left{padding:20px 0 20px 150px;}
+.openreg-form .form-item-nolabel {font-size:11px;}
+
+/* partner apply */
+.partner-reg .form-item label {width: 110px;}
+.partner-reg .form-item-nolabel, .partner-reg .form-btn {padding-left:120px;}
+#partnerRegForm .tips-box-outer .tips-box-inner {padding-left:120px;}
+
+/* 档案预览 */
+/*未登录*/
+.ptp-inner-l{ width:65.5%; }
+.ptp-inner-r { padding-right:90px; width: 210px;}
+.ptp-inner-l .vcard {width:65%;}
+.ptp-action {width:35%;}
+.ptp-action .p-h-list li{display:block;}
+
+/* 哈根达斯活动 */
+.topic-haagendazs-home {background-image:url(../images/promo/haagendazs/ico_home_en.png);}

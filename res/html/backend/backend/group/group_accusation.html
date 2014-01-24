@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>Ushi Customer Service System</title>
+<link href="/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="/js/backend/jquery-1.4.2.min.js"></script>
+<script src="/js/backend/thickbox.js"></script>
+<script src="/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="/js/backend/general.js"></script>
+</head>
+<body>
+<div id="mainbody">
+    <!--header start-->
+    <div id="header">
+        <div class="lf"><img src="..../../bns/images/logo_1.png"/></div>
+        <div class="rf"> Operator：Christy
+            | <a href="../login.htm">Logout</a></div>
+        <div id="toppad"></div>
+    </div>
+    <!--header end-->
+    <div class="lf">
+        <div id="menu_out" class="leftmenu">
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+        </div>
+    </div>
+    
+    <style type="text/css">
+		table.tableTags {border:1px #ccc solid;border-right:none;border-bottom:none; table-layout:fix; width:100%; margin:10px 0;}
+		.tableTags td{border-right:1px #ccc solid;border-bottom:1px #ccc solid; text-align:center; padding:5px;}
+		tr.headTr td{background:#e5e5e5; padding:5px; font-weight:bold;}
+		td.tdTextL{ text-align:left}
+    </style>
+    
+    
+    <div class="rf">
+        <div id="container">
+        	<!-- 群组举报的所有内容 -->
+        
+            <h2>群组举报</h2>
+			<form style="padding:10px 0;" action="" method="post" name="formGroupReport">
+				<input type="text" name=""  /><input type="button" value="查找" />
+			</form>
+            <div style="zoom:1;overflow:hidden;padding:10px 0;">
+            	<span style="float:left">
+	            	<label><input type="checkbox" name="groupReport" />全选</label>
+	            	<label><input type="checkbox" name="groupReport" />反选</label>
+	            	<span style="padding-left:20px;">已选 <b class="red">333</b> 条</span>
+            	</span>
+            	
+            	<span style="text-align:right;float:right">
+	            	<select>
+	            		<option value="0">请选择批量操作</option>
+	            		<option value="1">是垃圾邮件并删除</option>
+	            		<option value="2">转给管理员</option>
+	            		<option value="3">不是垃圾内容</option>
+	            	</select>
+	            	<input type="button" value="执行" />
+            	</span>
+            </div>
+		<table class="tableTags" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr class="headTr">
+					<td width="5%">选择</td>
+					<td>举报内容</td>
+					<td>举报日期</td>
+					<td>举报人</td>
+					<td>群组名</td>
+					<td>举报原因</td>
+					<td>操作</td>
+				</tr>
+				
+				<tr>
+					<td><input type="checkbox"  /></td>
+					<td><a href="javascript:;" target="_blank">北大PE投资联盟--致力于服务中国股权投虑根据对方大.....</a></td>
+					<td>2010-10-14</td>
+					<td>张三、李四、王武等10人</td>
+					<td>北大PE投资联盟</td>
+					<td>链接或文件无法访问</td>
+					<td class="tdTextL">
+						<a href="javascript:;">是垃圾内容并删除</a><br />
+						<a href="javascript:;">转给管理员</a><br />
+						<a href="javascript:;">不是垃圾邮件</a>
+					</td>
+				</tr>
+				
+				<tr>
+					<td><input type="checkbox"  /></td>
+					<td><a href="javascript:;" target="_blank">北大PE投资联盟--致力于服务中国股权投虑根据对方大.....</a></td>
+					<td>2010-10-14</td>
+					<td>张三、李四、王武等10人</td>
+					<td>北大PE投资联盟</td>
+					<td>链接或文件无法访问</td>
+					<td class="tdTextL">
+						<a href="javascript:;">是垃圾内容并删除</a><br />
+						<a href="javascript:;">转给管理员</a><br />
+						<a href="javascript:;">不是垃圾邮件</a>
+					</td>
+				</tr>
+				
+				<tr>
+					<td><input type="checkbox"  /></td>
+					<td><a href="javascript:;" target="_blank">北大PE投资联盟--致力于服务中国股权投虑根据对方大.....</a></td>
+					<td>2010-10-14</td>
+					<td>张三、李四、王武等10人</td>
+					<td>北大PE投资联盟</td>
+					<td>链接或文件无法访问</td>
+					<td class="tdTextL">
+						<a href="javascript:;">是垃圾内容并删除</a><br />
+						<a href="javascript:;">转给管理员</a><br />
+						<a href="javascript:;">不是垃圾邮件</a>
+					</td>
+				</tr>
+				
+			</tbody>
+		</table>
+		
+        <div style="zoom:1;overflow:hidden;padding:10px 0;">
+        	<span style="float:left">
+         	<label><input type="checkbox" name="groupReport" />全选</label>
+         	<label><input type="checkbox" name="groupReport" />反选</label>
+         	<span style="padding-left:20px;">已选 <b class="red">333</b> 条</span>
+        	</span>
+        	
+        	<span style="text-align:right;float:right">
+         	<select>
+         		<option value="0">请选择批量操作</option>
+         		<option value="1">是垃圾邮件并删除</option>
+         		<option value="2">转给管理员</option>
+         		<option value="3">不是垃圾内容</option>
+         	</select>
+         	<input type="button" value="执行" />
+        	</span>
+        </div>
+            <!-- 群组举报的所有内容 -->
+            
+            
+        </div>
+    </div>
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+    </div>
+</div>
+<!--footer end-->
+</body>
+</html>

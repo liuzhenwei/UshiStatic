@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf">
+		操作员：Chirsty
+		| <a href="login.htm">登出</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+  <div class="lf">
+  <div id="menu_out" class="leftmenu">	
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+  </div>
+  </div>
+  <div class="rf">
+  <div id="container">
+  <h2>Home</h2>
+  <div class="rf" style="width:35%;">
+	  <h4>Profile Censorship Summary</h4>
+	  <table class="datalist"  width="300">
+		<tr>
+		<td>Total members to be censored:</td>
+		<td align="right">350</td>
+		</tr>
+		<tr>
+		<td>Total deactived members:</td>
+		<td align="right">50</td>
+		</tr>
+		<tr>
+		<td>Censored today:</td>
+		<td align="right">50</td>
+		</tr>	
+	  </table>
+	  <h4>Content Censorship Summary</h4>
+	  <table class="datalist" width="300">
+		<tr>
+		<td>Total contents to be audit:</td>
+		<td align="right">350</td>
+		</tr>
+		<tr>
+		<td>Deleted today:</td>
+		<td align="right">50</td>
+		</tr>
+		<tr>
+		<td>Approved today:</td>
+		<td align="right">150</td>
+		</tr>	
+	  </table>
+  </div>  
+  <div class="lf" style="width:35%;">
+	  <h4>Useful information</h4>
+	  <ul class="notify">
+		<li><a href="http://wiki.worldfriendsnetworks.com:18000/wiki/index.php5/Youshi_custom_service_guideline">custom service guideline</a></li>
+		<li><a href="http://wiki.worldfriendsnetworks.com:18000/wiki/index.php5/Youshi_profile_review_guideline">Profile review principal</a></li>
+	  </ul>
+  	  <h4>Search for members</h4>
+		<form>
+		<div class="searchform">
+			<div class="row"><label for="name">Name:</label><input type="input" name="name" value=""></div>
+			<div class="row"><label for="email">Email:</label><input type="input" name="email" value=""></div>
+			<div class="row"><input type="submit" name="search_member" value="Search"></div>
+		</div>
+		</form>
+  </div>
+  <div style="clear:both"></div>
+  </div>
+  </div>
+  <!--footer begin-->
+  <div id="footer">
+	 	<div id="copyright">
+	 	Copyright &copy; 2010 Ushi.cn
+	 	</div>
+ 	</div> 
+	</div>
+  <!--footer end-->
+</div>
+</body>
+</html>
+  

@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="..../../bns/images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+	<div class="lf">  
+		<div id="menu_out" class="leftmenu">	
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+		</div>
+	</div>  
+
+	<div class="rf">
+		<div id="container">
+			<h2>广告管理</h2>
+			<div class="tips_area">
+				<p>提示：可同时发布的广告数量为3-5条，请不要低于或超过此数值</p>
+				<p class="red">当前发布的广告数量少于3条，不满足最小发布条件，前端页面将不会显示广告内容。</p>
+			</div>
+			<table  width="100%" cellpadding="0" cellspacing="0" class="datalist">
+				<tr>
+					<td colspan="6" align="right">
+						过滤：
+						<a href="manage.html">全部</a> |
+						<a href="manage1.html">发布中</a> |
+						<a href="manage2.html">已撤销</a>
+					</td>
+				</tr>
+				<tr>
+					<th width="1%"><input type="checkbox" name="" value="" onclick="$('table.datalist input').attr('checked', this.checked);" /></th>
+					<th width="5%">排序</th>
+					<th width="36%">广告标题</th>
+					<th width="20%">发布日期</th>
+					<th width="18%">状态</th>
+					<th width="20%">操作</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="" /></td>
+					<td><select name=""><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></td>
+					<td><a href="add.html">广告</a></td>
+					<td>2010-10-10</td>
+					<td>发布中</td>
+					<td><a href="#">撤销</a></td>
+				</tr>
+				<tr class="gray">
+					<td><input type="checkbox" name="" value="" /></td>
+					<td><select name=""><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></td>
+					<td><a href="add.html">广告</a></td>
+					<td>2010-10-10</td>
+					<td>发布中</td>
+					<td><a href="#">撤销</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="" /></td>
+					<td><select name=""><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></td>
+					<td><a href="add.html">广告</a></td>
+					<td>2010-10-10</td>
+					<td>发布中</td>
+					<td><a href="#">撤销</a></td>
+				</tr>		
+			</table>
+			<p>
+				<input name="" type="button" value="更新排序" />
+				<input name="" type="button" value="撤销" />
+			</p>
+		</div>
+	</div>
+	
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright">
+	        Copyright &copy; 2010 Ushi.cn
+        </div>
+    </div> 
+    <!--footer end-->
+</div>
+
+</body>
+</html>

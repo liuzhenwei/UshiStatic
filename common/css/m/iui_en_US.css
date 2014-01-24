@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.toolbar > h1 {
+	background: url(logoEvent_en.png) no-repeat center center;
+}
+.icoPageLoading {
+	background: url(bgLoading_en.png) no-repeat;
+}

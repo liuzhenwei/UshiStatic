@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>微博页面</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/profile.js"></script>
+<script type="text/javascript" src="/js/feed.js"></script>
+<script type="text/javascript">
+$(function(){
+	writeShare();
+});
+</script>
+</head>
+<body id="page_member">
+<div id="wrapper" class="container">
+    <!--#include file="header.html"-->
+    <div id="main" class="clearfix">
+        <h3>微博</h3>
+        <!-- Center -->
+        <div id="miniblog" class="column-2-3">
+        	<div class="success">发布成功</div>
+            <div class="status-edit clearfix">
+                <form method="post">
+                    <p>给大家分享些什么：<span id="wordCountShow" class="quiet">(200字以内)</span></p>
+                    <textarea select="text" id="freetext" name="freetext"></textarea>
+                    <div id="statusLinkUrl" style="width:30%;">添加： <a id="statusUrl" href="#" class="spe-right">网址</a> <a id="statusDocument" href="#">文档</a></div>
+                    <div id="statusUrlContent" style="display: none;" class="share-box"><a href="#" class="common-close"><span class="hide">关闭</span></a>输入想分享的网址：
+                        <input type="text" id="linkurl" name="linkurl" value="http://" class="text">
+                    </div>
+                    <div id="statusDocumentContent" style="display: none;" class="share-box"><a href="#" class="common-close"><span class="hide">关闭</span></a> 选择本地文件：
+                        <input type="file" id="fileField" name="document" class="file">
+                        <span class="show">支持Word、Excel、PPT、PDF格式文件，最大3MB</span></div>
+                    <div class="float-right" ><a href="#" id="statusEnter" class="special-more-btn">发布<span class="more_shop"></span></a>
+                    	<div id="statusEnterMore" class="dp-menu-shop">
+   							<span class="fontgreen">同步进行中</span><a href="#" class="spe-left3">暂停</a><a href="#" class="spe-left2">修改设置</a></div>	
+                    </div>
+                </form>
+                <!--发布下拉菜单 -->
+                <div  class="dp-menu" style="top: 20px; left: 710.5px; display: block; position: absolute; z-index: 99; margin: 0px;width:130px;">
+   未设置同步<a href="#" class="spe-left3">现在设置</a></div>
+  
+   <div  class="dp-menu" style="top: 150px; left: 710.5px; display: block; position: absolute; z-index: 99; margin: 0px; width:200px;">
+    <span class="fontbrown">微博同步已暂停</span><a href="#" class="spe-left3">恢复</a><a href="#" class="spe-left2">修改设置</a></div>
+   
+            </div>
+            <div class="profile-miniblog-main">
+                <!--microblogging -->
+                <div class="common-block">
+                        <h4 class="special-title">最新微博<span><a href="#">刷新</a></span></h4>
+                </div>
+                <div class="event-block">
+                    <div class="event-owner"><a href="/u/xufei"><img id="avatar-23" src="http://images.ushi.cn/bnsphoto/2010/04/06/5573ea4d-a749-42bf-ad0d-8300a4c4a51b_thumb.jpg"></a></div>
+                    <div class="event-content">
+                        <p><span class="icon-retweet"></span><a href="/u/xufei" class="username">徐斐</a> Panasonic 自称他们即将在年底推出的 AF100 为「专业」的 M4/3 摄影机，但实际上它和 GH1 之类的 M4/3 最主要的分别，只是在于它的机身设计，和多了几个一般相机上比较找不到的接头而已，和 RED 或 Alexa 之类的摄影机在规格上还是有不小的距离。</p>
+                        <p class="action margin-top">10分钟前 由<a href="#">张海红</a>转播：也没什么太新的东西…… <span class="spe-left"><a href="#">查看转播记录</a>(17)</span></p>
+                        <p class="action">原文24分钟前发布<a href="#" js="insertComm" class="comments-shop">评论</a>(142)<span class="spe-left">|</span><span class="spe-left"><a href="#">收藏</a></span> <span class="spe-left">|</span><span class="spe-left"><a href="#">再次转播</a></span></p>
+                    
+                    <div class="event-comments">
+                            <div class="retweet"><p><a href="/u/24">张海红</a><span class="spe-left">PayPal 预计今年将员工数增至1000人，战略布局显而易见！</span></p><p class="action">2010-04-09 09:31<span class="spe-left3"><a href="#">回复</a></span> <!--<span class="spe-left">|</span><span class="spe-left"><a href="#">举报</a></span>--></p></div>
+                            <div class="reply"><p><a href="/u/24">丁翔</a><span class="spe-left">战略布局显而易见！</span></p><p class="action">2010-04-09 09:31<span class="spe-left3"><a href="#">回复</a></span> <!--<span class="spe-left">|</span><span class="spe-left"><a href="#">举报</a></span>--></p></div>
+                            <div class="reply" ><p><a href="/u/49">albertmm</a><span class="spe-left">不错啊不错 很开心能有人喜欢这个作品。还附上了朋友帮做的的flash，不过有点长，有点沉重。不过有时候成长就是有点沉重吧，呵呵。</span></p><p class="action">2010-04-09 09:31<span class="spe-left3"><a href="#">回复</a></span> <!--<span class="spe-left">|</span><span class="spe-left"><a href="#">举报</a></span>--></p></div>
+                            <div class="reply-me"><p><a href="/u/hermes">马骏 Hermes Ma</a><span class="spe-left">卷土重来了啊，真是坚韧不拔啊：）&nbsp; 卷土重来了啊，真是坚韧不拔啊：）&nbsp;卷土重来了啊，真是坚韧不拔啊：）&nbsp;卷土重来了啊，真是坚韧不拔</span></p><p class="action">2010-04-09 09:31<span class="spe-left3"><a href="#">回复</a></span><span class="spe-left">|</span><span class="spe-left"><a href="#">删除</a></span></p></div>
+                            <p class="all"><a href="#">查看全部102条评论</a></p>
+                            <p>
+                                <textarea type="text" feedid="721" groupid="24" class="input-addcomm" style="height: 80px;">我也说两句</textarea>
+                                <input type="button" style="display: block;" value="发表评论" class="common-button" hidefocus="true">
+                            </p>
+                        </div>
+                    
+                    
+                    </div>
+                </div>
+                
+                <div class="event-block">
+                    <div class="event-owner"><a href="/u/xufei"><img id="avatar-23" src="http://images.ushi.cn/bnsphoto/2010/04/06/5573ea4d-a749-42bf-ad0d-8300a4c4a51b_thumb.jpg"></a></div>
+                    <div class="event-content">
+                        <p><a href="/u/xufei" class="username">徐斐</a> Panasonic 自称他们即将在年底推出的 AF100 为「专业」的 M4/3 摄影机，但实际上它和 GH1 之类的 M4/3 最主要的分别，只是在于它的机身设计，和多了几个一般相机上比较找不到的接头而已，和 RED 或 Alexa 之类的摄影机在规格上还是有不小的距离。 <span class="spe-left2 fontgray">- 来自新浪微博</span></p>
+                        <p class="action margin-top">24分钟前<a href="#" js="insertComm" class="comments-shop">评论</a>(142)<span class="spe-left">|</span><span class="spe-left"><a href="#">取消收藏</a></span> <span class="spe-left">|</span><span class="spe-left"><a href="#">转播</a></span><span class="spe-left">|</span><span class="spe-left"><a href="#">删除</a></span></p>
+                    </div>
+                </div>
+                <div class="event-block">
+                    <div class="event-owner"><a href="/u/xufei"><img id="avatar-23" src="http://images.ushi.cn/bnsphoto/2010/04/06/5573ea4d-a749-42bf-ad0d-8300a4c4a51b_thumb.jpg"></a></div>
+                    <div class="event-content">
+                        <p><a href="/u/xufei" class="username">徐斐</a> Panasonic 小的距离。离。 <span class="spe-left2 fontgray">- 来自搜狐微博</span></p>
+                        <p class="action margin-top">24分钟前<a href="#" js="insertComm" class="comments-shop">评论</a>(142)<span class="spe-left">|</span><span class="spe-left"><a href="#">收藏</a></span> <span class="spe-left">|</span><span class="spe-left"><a href="#">转播</a></span></p>
+                    </div>
+                </div>
+                <div class="event-block">
+                    <div class="event-owner"><a href="/u/xufei"><img id="avatar-23" src="http://images.ushi.cn/bnsphoto/2010/04/06/5573ea4d-a749-42bf-ad0d-8300a4c4a51b_thumb.jpg"></a></div>
+                    <div class="event-content">
+                        <p><a href="/u/xufei" class="username">徐斐</a> Panasonic 自称他们即将在年底推出的 AF100 为「专业」的 M4/3 摄影机，但实际上它和 GH1 之类的 M4/3 最主要的分别，只是在于它的机身设计，和多了几个一般相机上比较找不到的接头而已，和 RED 或 Alexa 之类的摄影机在规格上还是有不小的距离。。 <span class="spe-left2 fontgray">- 来自搜狐微博</span> </p>
+                        <p class="action margin-top">24分钟前<a href="#" js="insertComm" class="comments-shop">评论</a>(142)</span><span class="spe-left">|</span><span class="spe-left"><a href="#">收藏</a></span> <span class="spe-left">|</span><span class="spe-left"><a href="#">转播</a></span></p>
+                    </div>
+                </div>
+                <div class="event-block">
+                    <div class="event-owner"><a href="/u/xufei"><img id="avatar-23" src="http://images.ushi.cn/bnsphoto/2010/04/06/5573ea4d-a749-42bf-ad0d-8300a4c4a51b_thumb.jpg"></a></div>
+                    <div class="event-content">
+                        <p><a href="/u/xufei" class="username">徐斐</a> 分享了网址 <a href="#">付亮的歪评瞎论 -- 腾讯博客 - CNNIC调查：博客增速列主流应用倒数第一 - Qzone</a> </p>
+                        <p class="description">这已是美国针对中国所产礼盒丝带进行的第二次反倾销</p>
+                        <p class="action margin-top">24分钟前<a href="#" js="insertComm"  class="comments-shop">评论</a>(142)<span class="spe-left">|</span><span class="spe-left"><a href="#">收藏</a></span> <span class="spe-left">|</span><span class="spe-left"><a href="#">转播</a></span></p>
+                        
+                    </div>
+                </div>
+                <div class="pages"> <a href="#" class="current">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="/group/groups.jhtml?pageNo=2" class="next">下一页</a> </div>
+            </div>
+        </div>
+    
+    <!-- Rightside -->
+    <div id="extra" class="column-3">
+        <div class="common-block">
+            <div class="vcard me"> <a href="http://www.ushi.cn/p/54" target="_blank"> <img src="http://images.ushi.cn/bnsphoto/2010/01/18/d10fd249-49b1-45ee-bfd6-b0bef6f334f0_icon.jpg" /> </a>
+                <dl>
+                    <dt><a href="http://www.ushi.cn/p/54" target="_blank">许嘉荣</a></dt>
+                    <dd>CFF Partners</dd>
+                    <dd>中国大陆 - 北京 - 北京</dd>
+                </dl>
+            </div>
+            <div class="user-shop">
+                <ul>
+                    <li class="sidebar" >
+                        <h3><a href="#">1</a></h3>
+                        <a href="#">关注</a></li>
+                    <li class="sidebar">
+                        <h3><a href="#">265805</a></h3>
+                        <a href="#">被关注</a></li>
+                    <li>
+                        <h3><a href="#">41</a></h3>
+                        <a href="#">微博</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="common-block">
+            <div class="miniblog-search clearfix">
+                <input type="text" value="搜索微博内容" />
+                <input type="button" value="搜索" class="common-button" />
+            </div>
+        </div>
+        
+        <div class="common-block">
+                <h5 class="extra-title">微博常用链接</h5>
+                <ul class="miniblog-column">
+                    <li class="current"><a href="miniblog_main.html">最新微博</a></li>
+                    <li><a href="miniblog_view_retweet.html">转播微博</a></li>
+                    <li><a href="miniblog_main_favorites.html">我的收藏</a></li>
+                    <li><a href="miniblog_main_comments.html">我的评论</a></li>
+                </ul>
+            </div>
+        
+        <div class="common-block">
+            <h5 class="extra-title">人气会员推荐</h5>
+            <ul class="vcard spe-left-pd" id="userFriendsList">
+                <li class="border-bottom"><a href="javascript:void(0);"><img src="../../bns/images/test_p2.png" width="30" height="30" alt="username"></a>
+                    <dl>
+                        <dt><a href="javascript:void(0);">何振宇</a></dt>
+                        <dd>爱车网市场总监</dd>
+                    </dl>
+                </li>
+                <li class="border-bottom"><a href="javascript:void(0);"><img src="../../bns/images/test_p3.png" width="30" height="30" alt="username"></a>
+                    <dl>
+                        <dt><a href="javascript:void(0);">何研</a></dt>
+                        <dd>奥美互动客户经理</dd>
+                    </dl>
+                </li>
+                <li class="border-bottom"><a href="javascript:void(0);"><img src="../../bns/images/test_p4.png" width="30" height="30" alt="username"></a>
+                    <dl>
+                        <dt><a href="javascript:void(0);">王石</a></dt>
+                        <dd>万科集团董事长</dd>
+                    </dl>
+                </li>
+                <li class="border-bottom"><a href="javascript:void(0);"><img src="../../bns/images/test_p4.png" width="30" height="30" alt="username"></a>
+                    <dl>
+                        <dt><a href="javascript:void(0);">王石</a></dt>
+                        <dd>万科集团董事长</dd>
+                    </dl>
+                </li>
+                <li class="border-bottom"><a href="javascript:void(0);"><img src="../../bns/images/test_p4.png" width="30" height="30" alt="username"></a>
+                    <dl>
+                        <dt><a href="javascript:void(0);">王石</a></dt>
+                        <dd>万科集团董事长</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div><!--#include file="footer.html"-->
+</div>
+
+
+<!--删除回复
+<div class="fl-outer" style="width:350px; display:block; top:200px; left:300px;">
+  <div class="fl-block">
+    <div class="fl-title">
+      <h4>提示</h4>
+      <a class="close" href="javascript:void(0);"><span class="hide">关闭</span></a></div>
+    <div class="fl-content">
+    <p class="large center" style="margin-top:15px;">确定要删除这条回复?</p>
+    </div>
+    <div class="fl-button">
+      <input class="special-btn" type="submit" value="确定" /> 
+      <input class="common-button" style="margin-left:10px;" type="button" value="取消" /> 
+   </div> 
+  </div>
+</div>
+-->
+
+
+</body>
+</html>

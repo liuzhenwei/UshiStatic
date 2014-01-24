@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>Ushi Customer Service System</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+</head>
+<body>
+<div id="mainbody">
+    <!--header start-->
+    <div id="header">
+        <div class="lf"><img src="..../../bns/images/logo_1.png"/></div>
+        <div class="rf"> Operator：Christy
+            | <a href="../login.htm">Logout</a></div>
+        <div id="toppad"></div>
+    </div>
+    <!--header end-->
+    <div class="lf">
+        <div id="menu_out" class="leftmenu">
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+        </div>
+    </div>
+    <div class="rf">
+        <div id="container">
+            <h2>Group Moderation</h2>
+            <div style="float:right;margin-top:10px;"><a href="#">Unprocessed Group Applications</a> | <a href="#">Processed Group Applications</a> </div>
+            <div id="tips"><b>1~20</b> of total <b>200</b> activated groups</div>
+            <div style="width:100%; overflow:visible; overflow-x:auto; overflow-y:hidden; padding-bottom:15px;">
+                <form>
+                    <div class="controlbar">
+                        <input type="submit" value="Update">
+                    </div>
+                    <table width="100%" cellpadding="0" cellspacing="0" class="datalist mt10">
+                        <tr>
+                            <th width="150">Applicant</th>
+                            <th>Description <span id="result_box3"><span title="">of group</span></span></th>
+                            <th width="20">Action</th>
+                        </tr>
+                        <tr>
+                            <td align="left"><h1><a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700" class="thickbox">张三</a> </h1>
+                                    <p>Title: xxxx </p>
+                                <p>Joined 2009/12/31</p>
+                                <p>Connections:898</p>
+                                <p><span id="result_box4"><span title=""> Groups created</span></span>:5</p></td>
+                            <td><table class="userinfo min-height80" width="100%" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="110"><strong>Group Name</strong></td>
+                                        <td width="245">某大公司业务经理</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="110" class="min-height80"><strong>Targeted Members</strong></td>
+                                        <td class="min-height80">我工作很多年了，一直很努力，我工作很多年了，一直很努力，我工作很多年了，一直很努力，我工作很多年了，一直很</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="110" class="min-height80"><strong>Objective</strong></td>
+                                        <td class="min-height80">我工作很多年了，一直很努力，就是领导不给我涨工资</td>
+                                    </tr>
+                            </table></td>
+                            <td height="5">
+                            <p>
+                                    <input type="radio" name="3" checked="checked" />
+                                Pending</p>
+                            <p>
+                                    <input type="radio" name="3"  />
+                                Approve</p>
+                                    
+                                <input type="radio" name="4" />
+                                Reject
+                                </p>
+                                <div class="group_eject">
+                                    <div class="ar_box_top"></div>
+                                    <div class="ar_box_content">
+                                    	<ul>
+                                        <li><input name="" type="radio" value="" />个人档案完成度没有达到80%</li>
+                                        <li><input name="" type="radio" value="" />没有上传个人真实照片，申请者个人档案被封锁</li>
+                                        <li><input name="" type="radio" value="" />申请中包含虚假，缺失，或无意义的信息等原因</li>
+                                        <li><input name="" type="radio" value="" style="float: left;"/><textarea name="textarea2" id="textarea2" cols="35" rows="2">填写其他拒绝申请的原因
+</textarea>
+                                        </li>
+</ul>
+                                    </div>
+                                </div></td>
+                        </tr>
+                        <tr>
+                            <td align="left"><h1><a href="view_member_profile.htm?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=700" class="thickbox">张三</a> </h1>
+                                    <p>Title: xxxx </p>
+                                <p>Joined 2009/12/31</p>
+                                <p>Connections:898</p>
+                                <p><span id="result_box"><span title=""> Groups created</span></span>:5</p></td>
+                            <td><table class="userinfo min-height80" width="100%" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="110"><strong>Group Name</strong></td>
+                                        <td width="245">某大公司业务经理</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="110" class="min-height80"><strong>Targeted Members</strong></td>
+                                        <td class="min-height80">我工作很多年了，一直很努力，我工作很多年了，一直很努力，我工作很多年了，一直很努力，我工作很多年了，一直很</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="110" class="min-height80"><strong>Objective</strong></td>
+                                        <td class="min-height80">我工作很多年了，一直很努力，就是领导不给我涨工资</td>
+                                    </tr>
+                            </table></td>
+                            <td height="5"><p>
+                                    <input type="radio" name="3" checked="checked" />
+                                Pending</p>
+                                    <p>
+                                        <input type="radio" name="3"  />
+                                        Approve</p>
+                                <input type="radio" name="4" />
+                                Reject
+                                </p>
+                                <div class="group_eject">
+                                    <div class="ar_box_top"></div>
+                                    <div class="ar_box_content">
+                                        <ul>
+                                            <li>
+                                                <input name="" type="radio" value="" />
+                                                个人档案完成度没有达到80%</li>
+                                            <li>
+                                                <input name="" type="radio" value="" />
+                                                没有上传个人真实照片，申请者个人档案被封锁</li>
+                                            <li>
+                                                <input name="" type="radio" value="" />
+                                                申请中包含虚假，缺失，或无意义的信息等原因</li>
+                                            <li>
+                                                <input name="" type="radio" value="" style="float: left;"/>
+                                                <textarea name="textarea" id="textarea" cols="35" rows="2">填写其他拒绝申请的原因
+</textarea>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div></td>
+                        </tr>
+                    </table>
+                    <div class="controlbar">
+                        <input type="submit" value="Update">
+                    </div>
+                </form>
+            </div>
+            <div class="pagenav"><span class="cur">1</span><span><a href="#">2</a></span><span><a href="#">3</a></span><span><a href="#">4</a></span><span><a href="#">5</a></span><span><a href="#">5</a></span><span><a href="#">7</a></span><span><a href="#">8</a></span><span><a href="#">9</a></span><span><a href="#">End of Page</a></span></div>
+        </div>
+    </div>
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+    </div>
+</div>
+<!--footer end-->
+</body>
+</html>

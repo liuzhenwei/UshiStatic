@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>Ushi Customer Service System</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+
+
+</head>
+
+
+<body>
+<div id="mainbody"  style="position:relative">
+    <!--header start-->
+    <div id="header">
+        <div class="lf"><img src="../images/logo_1.png"/></div>
+        <div class="rf"> Operator：Christy
+            | <a href="../login.htm">Logout</a></div>
+        <div id="toppad"></div>
+    </div>
+    <!--header end-->
+    <div class="lf">
+        <div id="menu_out" class="leftmenu">
+
+        </div>
+    </div>
+    
+	<script type="text/javascript" src="../../../data/lang.js"></script>
+	<script type="text/javascript" src="../../../../../common/js/widget.js"></script>
+	<script type="text/javascript" src="../../../../../common/js/common.js"></script>
+	<script type="text/javascript" src="../../../../../common/js/job.js"></script>
+	
+	
+	
+	<style>
+	.form-table{margin:10px 0;border:1px #ccc solid; width:700px;}
+	.form-table th, .form-table td{padding:8px;}
+	.form-table th{font-weight:400; text-align:right;width:125px;}
+	.form-table .input{width:300px;}
+	.form-table .textarea{width:300px; height:100px;}
+	.form-table .l-margin{margin-left:10px;}.form-table .r-margin{margin-right:10px;}
+	.form-table .textarea2{width:500px; height:100px;}
+	.form-table .select{width:150px;}
+	.form-table .multi-col th, .form-table .multi-col td{padding:0;}
+	#industryContainer {
+	    border: 1px solid #CCCCCC;
+	    height: 300px;
+	    overflow: auto;
+	    padding: 6px;
+	    position: relative;
+	    width: 300px;
+	}
+	.head_tit{margin:0 2px;border-bottom:1px #ccc solid; overflow:hidden;line-height:30px;}
+	.head_tit .left{float:left;font-weight:bold;}
+	.head_tit .right{float:right;}
+	.head_tit i{ color:#f00}
+	.color_ccc{color:#ccc};
+	.tip_job{position:absolute;width:300px;height:100px;border:1px #ccc solid;}
+	.tip_job a{display:block;border-bottom:1px #ccc solid}
+	.jobtab select{width:155px;}
+	.jobtab textarea{ width:304px; height:100px; overflow:hidden;overflow-y:auto}
+	
+	#typeAll label{float:left;width:80px;text-align:left;}
+	</style>
+	<script>
+		$(function(){
+			//加载左侧菜单
+			$('#menu_out').load('../menu.html',function(){
+				initMenus();
+			});
+			
+			$('#custom_comp').bind('focus',function(){
+				$('.tip_job').css('display','block')
+			})
+			
+			$('#custom_comp').bind('blur',function(){
+				$('.tip_job').css('display','none')
+			})
+			
+			$('.tip_job a').live('mousedown',function(){
+				$('#custom_comp').val($(this).html())
+			})
+			
+			
+			$('.selJobType').click(function(){
+				$('#typeAll').dialog({
+					title: '职位类别',
+					width: 300,
+					modal:true,
+					resizable: false,
+					buttonAlign:'center',
+					buttons: {
+						'确定': function(){
+							
+							var typeHide=[];
+							var typeHidename=[];
+							var i=0;
+							$('input:checked',this).each(function(){
+								i++;
+
+									var tmp = $(this).attr("rid");
+									var tmpname = $(this).closest("label").text()
+									typeHide.push(tmp);
+									typeHidename.push(tmpname);
+								
+
+							})
+							if(!i){
+								alert("至少选一个类别");
+								return false;
+							}if(i>5){
+								alert("所选类别不能超过5个");
+								return false;
+							}
+							$('.hidejobtype').val(typeHide.join(','))
+							$('.selJobType').val(typeHidename.join(','))
+							$(this).dialog('destroy');
+						},
+						'取消':function(){
+							$(this).dialog('destroy');
+						}
+					}
+				});
+			});
+	
+			
+		})
+	
+	</script>
+    
+    <div class="rf">
+        <div id="container">
+	  <h2>编辑职位</h2>
+		<form method="post" action="">
+        <table width="100%" border="0" cellspacing="0" cellpadding="5" class="form-table">
+	 	<tr>
+	 		<td colspan="2"><div class="head_tit"><span class="left">职位基本信息</span><span class="right">带<i>*</i>号的项目为必填项</span></div></td>
+	 	</tr>
+
+        <tr>
+          <th valign="top"><span class="red">*</span> 职位名称：</th>
+          <td><input class="input" type="text" value="高级产品经理" /></td>
+        </tr>
+        <tr>
+        	<th valign="top"><span class="red">*</span> 公司名称：</th>
+        	<td>
+				<div>
+					<div>
+						优士网信息技术有限公司 
+						<span style="display:none;">
+							<input type="text" /> 请填写分公司或分部名称 
+						</span>
+					</div>
+					<div>
+						<label>
+							<input name="" type="checkbox" value="" onclick="$(this).closest('div').prev().find('span').toggle();" />
+							分公司招聘？
+						</label>
+					</div>
+				</div>
+        	</td>
+        
+        </tr>
+        <tr>
+          <th valign="top"><span class="red">*</span> 客户公司名称：</th>
+          <td >
+          	<div class="tip_job" style="position:absolute;width:290px;height:100px;border:1px #ccc solid;z-index:1000;top:285px;line-height:24px;background:#e5e5e5;padding:5px;display:none">
+          		<a href="#">上海某公司</a>
+          		<a href="#">深圳某公司</a>
+          		<a href="#">北京某公司</a>
+          	</div>
+          	<input id="custom_comp" class="input" value="深圳市腾讯计算机系统有限公司
+          	" type="text"  />
+
+          </td>
+        </tr>
+
+        <tr>
+          <th valign="top"><span class="red">*</span> 工作地点：</th>
+          <td>
+			<div id="selectJobLocation">
+				<div>
+					<select js="selectCountry">
+					    <option value="0" selected="selected">请选择</option>
+					    <option value="156">中国大陆</option>
+					    <option value="344">中国香港</option>
+					    <option value="446">中国澳门</option>
+					    <option value="158">中国台湾</option>
+					    <option value="840">美国</option>
+					    <option value="826">英国</option>
+					    <option value="392">日本</option>
+					    <option value="124">加拿大</option>
+					    <option value="36">澳大利亚</option>
+					    <option value="250">法国</option>
+					    <option value="276">德国</option>
+					    <option value="410">韩国</option>
+					    <option value="643">俄罗斯</option>
+					    <option value="380">意大利</option>
+					    <option value="724">西班牙</option>
+					    <option value="356">印度</option>
+					</select>&nbsp;&nbsp;
+					<select class="input-w-140" js="selectRegion">
+						<option value="0">请选择</option>
+					</select>&nbsp;&nbsp;
+					<select class="input-w-140" js="selectCity">
+						<option value="0">请选择</option>
+					</select>
+				</div><br />
+				<span class="show quiet"> <a href="javascript:void(0)" js="addLocation" class="link-add2 spe-right2">新增地点</a> 最多支持5个工作地点 </span>
+			</div>
+          
+          </td>
+        </tr>
+
+        </table>
+        
+		 <table width="100%" border="0" cellspacing="0" cellpadding="5" class="form-table">
+		 	<tr>
+		 		<td colspan="2"><div class="head_tit"><span class="left">邮箱设置</span><span class="right">应聘者的申请信息会发送到设定的邮箱</span></div></td>
+		 	</tr>
+		 	
+	        <tr>
+	          <th valign="top"><input type="radio" name="compEmail" checked />公司邮箱：</th>
+	          <td><input type="text" value="hr@ushi.com" /></td>
+	        </tr>
+	        <tr>
+	          <th valign="top"><input type="radio" name="compEmail" />其他邮箱：</th>
+	          <td><input type="text" /> <span class="color_ccc">最多输入3个Email，用英文逗号(,)分隔</span></td>
+	        </tr>
+
+	        
+         </table>
+         
+		 <table width="100%" border="0" cellspacing="0" cellpadding="5" class="form-table jobtab">
+		 	<tr>
+		 		<td colspan="2"><div class="head_tit"><span class="left">职位其他信息</span></div></td>
+		 	</tr>
+	        <tr>
+	          <th><span class="red">*</span> 职位类别：</th>
+	          <td>
+					<input type="button" class="selJobType" value="请选择类别" />
+					<input class="hidejobtype" type="hidden" value="" />
+	          </td>
+	        </tr>
+	        
+	        <tr>
+	          <th><span class="red">*</span> 工作经验：</th>
+	          <td>
+	          	<select>
+	          		<option>5-7年</option>
+	          	</select>
+	          </td>
+	        </tr>
+	        
+	        <tr>
+	          <th><span class="red">*</span> 职位级别：</th>
+	          <td>
+	          	<select>
+	          		<option>经理级</option>
+	          	</select>
+	          </td>
+	        </tr>
+	        
+	        <tr>
+	          <th><span class="red">*</span> 学位要求：</th>
+	          <td>
+	          	<select>
+	          		<option>学士</option>
+	          	</select>
+	          </td>
+	        </tr>
+	        
+	        <tr>
+	          <th><span class="red">*</span> 年薪范围：</th>
+	          <td>
+	          	<select>
+	          		<option>20-30万</option>
+	          	</select>
+	          </td>
+	        </tr>
+	        
+	        <tr>
+	          <th><span class="red">*</span> 职位有效期：</th>
+	          <td>
+	          	<select>
+	          		<option>3个月</option>
+	          	</select>
+	          </td>
+	        </tr>
+	        
+	        <tr>
+	          <th valign="top"><span class="red">*</span> 职位描述：</th>
+	          <td><textarea>关于职位的描述</textarea><br /><br /><span class="color_ccc">当前输入xxx / 40000个字符（20000个汉字）</span></td>
+	        </tr>
+	        
+	        <tr>
+	          <th valign="top"><span class="red">*</span> 职位简介：</th>
+	          <td><textarea>关于职位的简介</textarea><br /><br /><span class="color_ccc">当前输入xxx / 300个字符（120个汉字）</span></td>
+	        </tr>
+		 	
+         </table>
+         
+         
+        
+        <table width="100%" border="0" cellspacing="0" cellpadding="5" class="form-table" style="border:none">
+	        <tr>
+	          <th></th>
+	          <td><input type="button" value=" 预览 " />  <input type="submit" value=" 发布 " /></td>
+	        </tr>
+         </table>
+
+		 
+		</form>
+    </div>
+    </div>
+    
+    <div id="typeAll" style="display:none">
+
+		
+			<label><input type="checkbox" rid="1" />会计/审计</label>
+		
+			<label><input type="checkbox" rid="2" />行政</label>
+		
+			<label><input type="checkbox" rid="3" />广告</label>
+		
+			<label><input type="checkbox" rid="4" />分析师</label>
+		
+			<label><input type="checkbox" rid="5" />艺术/创意</label>
+		
+			<label><input type="checkbox" rid="6" />商务拓展</label>
+		
+			<label><input type="checkbox" rid="7" />咨询</label>
+		
+			<label><input type="checkbox" rid="8" />客户服务</label>
+		
+			<label><input type="checkbox" rid="9" />设计</label>
+		
+			<label><input type="checkbox" rid="10" />物流</label>
+		
+			<label><input type="checkbox" rid="11" />教育</label>
+		
+			<label><input type="checkbox" rid="12" />工程</label>
+		
+			<label><input type="checkbox" rid="13" />金融</label>
+		
+			<label><input type="checkbox" rid="14" />医疗</label>
+		
+			<label><input type="checkbox" rid="15" />人力资源</label>
+		
+			<label><input type="checkbox" rid="16" />信息技术</label>
+		
+			<label><input type="checkbox" rid="17" />法律</label>
+		
+			<label><input type="checkbox" rid="18" />管理</label>
+		
+			<label><input type="checkbox" rid="19" />制造业</label>
+		
+			<label><input type="checkbox" rid="20" />市场营销</label>
+		
+			<label><input type="checkbox" rid="21" />生产</label>
+		
+			<label><input type="checkbox" rid="22" />产品管理</label>
+		
+			<label><input type="checkbox" rid="23" />项目管理</label>
+		
+			<label><input type="checkbox" rid="24" />公共关系</label>
+		
+			<label><input type="checkbox" rid="25" />质量控制</label>
+		
+			<label><input type="checkbox" rid="26" />销售</label>
+		
+			<label><input type="checkbox" rid="27" />战略规划</label>
+			<label><input type="checkbox" rid="28" />供应链管理</label>
+			<label><input type="checkbox" rid="29" />培训</label>
+		
+		
+    </div>
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+    </div>
+</div>
+<!--footer end-->
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>Ushi Customer Service System</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/ui.datepicker.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../js/jquery.pack.js"></script>
+<script src="../js/general.js"></script>
+<script src="../js/thickbox.js"></script>
+<script src="../js/ui.datepicker.js"></script>
+
+<style>
+.view_msg{position:relative;}
+.view_msg_box{background:#fff; border:solid 1px #555; padding:10px; position:absolute; bottom:-80px; left:0px; width:300px;}
+
+.pop-container{position:absolute;width:600px; background:#fff; border:solid 4px #ddd;top:0;left:0;text-align:left;}
+.pop-title{height:22px; background:#EAEAEA; position:relative; padding-right:25px;}
+.pop-title .close-btn{font-family:Verdana, Geneva, sans-serif; display:block; font-weight:700; position:absolute; top:2px; right:2px;}
+.pop-title .close-btn a{color:#333; padding:2px; display:block;text-decoration:none;}.pop-title .close-btn a:hover{color:#555;}
+.pop-content{padding-top:10px;}
+.pop-content td, .pop-content th{padding:8px;} .pop-content th{font-weight:700; text-align:center;}
+.pop-content .line-bottom td, .pop-content .line-bottom th{border-bottom:solid 1px #ddd;}
+.pop-content  p{margin-bottom:5px; line-height:1.2;}
+
+</style>
+</head>
+<body>
+<div id="mainbody">
+    <!--header start-->
+    <div id="header">
+        <div class="lf"><img src="../images/logo_1.png"/></div>
+        <div class="rf"> Operator：Christy
+            | <a href="../login.htm">Logout</a></div>
+        <div id="toppad"></div>
+    </div>
+    <!--header end-->
+    <div class="lf">
+        <div id="menu_out" class="leftmenu">
+            <ul id="menu" class="menu collapsible">
+                <li> <a href="../index.htm">Homepage</a> </li>
+                
+                <li > <a href="view_company_info.htm">Jobs</a>
+                    <ul>
+                        <li><a href="view_company_info.htm">查看公司信息</a></li>
+                        <li><a href="add_new_company.htm">添加公司信息</a></li>
+                        <li><a href="add_new_job.htm">发布职位信息</a></li>
+                        <li><a href="view_jobs.htm">查看已发布职位</a></li>
+                        <li><a href="view_jobs_apply.htm">查看职位申请信息</a></li>
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                <li > <a href="#">Members</a>
+                    <ul>
+                        <li><a href="member_list.htm">Activated members</a></li>
+                        <li><a href="deactived_member_list.htm">Deactivated members</a></li>
+                        <li><a href="search_members.htm">Search members</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Contents</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Image</a></li>
+                        <li><a href="javascript:void(0);">Text content</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Filters</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Create filter</a></li>
+                        <li><a href="javascript:void(0);">Manage filter</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Groups</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Manage group quota</a></li>
+                        <li><a href="javascript:void(0);">Group list</a></li>
+                        <li><a href="group_apply.html">Create groups <span id="result_box2"><span title="">management</span></span></a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Payment</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Payment management</a></li>
+                    </ul>
+                </li>
+                <li  class="current"> <a href="#">Date</a>
+                    <ul>
+            	<li><a href="pending_user_company_list.html">Pending User Company List</a></li>
+                <li><a href="pending_user_university_list.html">Pending User University List</a></li>
+				<li><a href="company_list_management.html">Company List Management</a></li>
+                <li><a href="university_list_management.html">University List Management</a></li>
+			</ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="rf">
+        <div id="container">
+            <h2>查看已发布职位 <div style="float:right; width:180px; text-align:right; margin-right:10px;">
+                <a href="add_new_job.htm">发布新职位</a>            
+             </div></h2>
+           
+            <table border="0" cellpadding="5" style="margin: 5px 0 20px 0;">
+        <tr>
+            <td align="center" style="width:100px;"><strong>搜索</strong> </td>
+            <td><select style="width:150px; margin-right:10px;" name="select">
+              <option>联系人</option>
+            </select></td>
+            <td style="width:300px;"><input name="textfield" type="text" id="textfield" value="enter company name..." size="50" style="width:290px;" /></td>
+            <td ><input type="submit" name="button" id="button" value="Search" /></td>
+        </tr>
+    </table>
+ 
+             
+            <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+            <td width="50%"><input type="button" value="上架" /> <input type="button" value="下架" /> <input type="button" value="移除" /></td>
+            <td align="right"> 点击职位和公司名可以对列表进行删选排序</td>
+            </tr>
+            </table>
+
+            <div style="width:100%; overflow:visible; overflow-x:auto; overflow-y:hidden; padding-bottom:15px;">
+                <form>
+                    <table width="100%" cellpadding="0" cellspacing="0" class="datalist mt10">
+                        <tr>
+                            <th width="20">&nbsp;</th>
+                            <th width="120"><strong>职位名</strong></th>
+                          <th width="220" ><strong>公司名</strong></th>
+                            <th width="150"><strong>联系信息</strong></th>
+                            <th width="80"><strong>提交时间</strong></th>
+                            <th width="80">当前状态</th>
+                            <th><strong>操作</strong></th>
+                        </tr>
+                        <tr>
+                            <td height="5" align="left" valign="top"><input type="checkbox" /></td>
+                            <td valign="top"><a href="javascript:void(0);">产品经理</a></td>
+                            <td valign="top">北京百度网讯科技有限公司</td>
+                          <td valign="top">
+                                <p>联系人：<a href="#">刘涛</a></p>
+                            <p>商务电话：021-88849876</p>
+                                <p>电子邮件：sekin@live.com</p>
+                                <p>MSN：sekin@live.cn</p>
+                            </td>
+                          <td valign="top">2010-8-12</td>
+                          <td valign="top">上架中</td>
+                            <td valign="top"><a href="javascript:void(0);">编辑</a> <a style="margin-left:10px;" href="javascript:void(0);">下架</a> <a style="margin-left:10px;" href="javascript:void(0);">移除</a></td>
+                        </tr>
+                        <tr>
+                            <td height="5" align="left" valign="top"><input type="checkbox" /></td>
+                            <td valign="top"><a href="javascript:void(0);">产品经理</a></td>
+                            <td valign="top">北京新浪</td>
+                            <td valign="top">
+                                <p>联系人：<a href="#">刘涛</a></p>
+                              <p>商务电话：021-88849876</p>
+                                <p>电子邮件：sekin@live.com</p>
+                            <p>MSN：sekin@live.cn</p></td>
+                          <td valign="top">2010-8-12</td>
+                          <td valign="top">已下架</td>
+                            <td valign="top"><a href="javascript:void(0);">编辑</a> <a style="margin-left:10px;" href="javascript:void(0);">下架</a> <a style="margin-left:10px;" href="javascript:void(0);">移除</a></td>
+                        </tr>
+                        <tr>
+                            <td height="5" align="left" valign="top"><input type="checkbox" /></td>
+                            <td valign="top"><a href="javascript:void(0);">产品经理</a></td>
+                            <td valign="top">上海魅影互动时代</td>
+                            <td valign="top">
+                                <p>联系人：<a href="#">刘涛</a></p>
+                              <p>商务电话：021-88849876</p>
+                                <p>电子邮件：sekin@live.com</p>
+                            <p>MSN：sekin@live.cn</p></td>
+                          <td valign="top">2010-8-12</td>
+                          <td valign="top">已下架</td>
+                            <td valign="top"><a href="javascript:void(0);">编辑</a> <a style="margin-left:10px;" href="javascript:void(0);">下架</a> <a style="margin-left:10px;" href="javascript:void(0);">移除</a></td>
+                        </tr>
+                        <tr>
+                            <td height="5" align="left" valign="top"><input type="checkbox" /></td>
+                            <td valign="top"><a href="javascript:void(0);">产品经理</a></td>
+                            <td valign="top">北京百度网讯科技有限公司</td>
+                            <td valign="top">
+                                <p>联系人：<a href="#">刘涛</a></p>
+                              <p>商务电话：021-88849876</p>
+                                <p>电子邮件：sekin@live.com</p>
+                            <p>MSN：sekin@live.cn</p></td>
+                          <td valign="top">2010-8-12</td>
+                          <td valign="top">已下架</td>
+                            <td valign="top"><a href="javascript:void(0);">编辑</a> <a style="margin-left:10px;" href="javascript:void(0);">下架</a> <a style="margin-left:10px;" href="javascript:void(0);">移除</a></td>
+                        </tr>
+                        <tr>
+                            <td height="5" align="left" valign="top"><input type="checkbox" /></td>
+                            <td valign="top"><a href="javascript:void(0);">产品经理</a></td>
+                            <td valign="top">北京百度网讯科技有限公司</td>
+                            <td valign="top">
+                                <p>联系人：<a href="#">刘涛</a></p>
+                              <p>商务电话：021-88849876</p>
+                                <p>电子邮件：sekin@live.com</p>
+                            <p>MSN：sekin@live.cn</p></td>
+                          <td valign="top">2010-8-12</td>
+                          <td valign="top">已下架</td>
+                            <td valign="top"><a href="javascript:void(0);">编辑</a> <a style="margin-left:10px;" href="javascript:void(0);">下架</a> <a style="margin-left:10px;" href="javascript:void(0);">移除</a></td>
+                        </tr>
+                        <tr>
+                            <td height="5" align="left" valign="top"><input type="checkbox" /></td>
+                            <td valign="top"><a href="javascript:void(0);">产品经理</a></td>
+                            <td valign="top">北京百度网讯科技有限公司</td>
+                            <td valign="top">
+                                <p>联系人：<a href="#">刘涛</a></p>
+                              <p>商务电话：021-88849876</p>
+                                <p>电子邮件：sekin@live.com</p>
+                            <p>MSN：sekin@live.cn</p></td>
+                          <td valign="top">2010-8-12</td>
+                          <td valign="top">已下架</td>
+                            <td valign="top"><a href="javascript:void(0);">编辑</a> <a style="margin-left:10px;" href="javascript:void(0);">下架</a> <a style="margin-left:10px;" href="javascript:void(0);">移除</a></td>
+                        </tr>
+                    </table>
+                    
+                    
+            <table width="100%" border="0" cellspacing="0" cellpadding="5" style="margin-top:10px;">
+            <tr>
+            <td><input type="button" value="上架" /> <input type="button" value="下架" /> <input type="button" value="移除" /></td> 
+            </tr>
+            </table>
+                    
+                </form>
+            </div>
+            <div class="pagenav"><span class="cur">1</span><span><a href="#">2</a></span><span><a href="#">3</a></span><span><a href="#">4</a></span><span><a href="#">5</a></span><span><a href="#">5</a></span><span><a href="#">7</a></span><span><a href="#">8</a></span><span><a href="#">9</a></span><span><a href="#">End of Page</a></span></div>
+        </div>
+    </div>
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+    </div>
+</div>
+<!--footer end-->
+
+
+<!--弹出层-->
+<div class="pop-container" style="top:200px; left:200px; display:none;">
+<div class="pop-title"><span class="close-btn"><a href="javascript:void(0);">X</a></span></div>
+<div class="pop-content">
+</div>
+</div>
+
+
+</body>
+</html>

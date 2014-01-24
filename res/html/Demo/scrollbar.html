@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Scrollbar</title>
+<style type="text/css">
+body {padding:10px;}
+.ushi-scrollbar .scrollbar-block, .ushi-scrollbar .scrollbar-arrow {background:#eee; border:1px solid #ccc; padding:1px;}
+#overflow p {font:bold 18px arial; padding-left:10px;}
+</style>
+<script type="text/javascript" src="../../../common/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../../../common/js/jquery-ui-1.8.24.core.js"></script>
+<script type="text/javascript" src="../../../common/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../../common/js/widget1.js"></script>
+<script type="text/javascript">
+var bar = $('<div />'), bar1 = $('<div />');
+
+var wrap;
+
+$(function(){
+	//bar.scrollbar({
+	//	height: 200,
+	//	blockHeight: 30,
+	//	opacity: 1,
+	//	container: '#container',
+	//	hasArrow: true,
+	//	start: function(event, rate){
+	//	},
+	//	drag: function(event, rate){
+	//		if( event.originalEvent.type != 'drag' ) console.log(event.originalEvent.type + ':' + rate);
+	//	}
+	//});
+
+	//bar1.scrollbar({
+	//	horizontal: true,
+	//	height: 200,
+	//	blockHeight: 45,
+	//	opacity: 1,
+	//	container: '#container1',
+	//	hasArrow: false
+	//});
+
+	$('#overflow').uiScrollBar({
+		//direction: 'horizontal',
+		fixed: true,
+		opacity: 0.6,
+		sbOptions: {
+			width: 15,
+			hasArrow: false
+		},
+		scroll: function(event, data){
+console.log(event.originalEvent.type + '|' + data.dir + '|' + data.delta + '|' + data.top);			
+		}
+	});
+
+	wrap = $('#overflow').uiScrollBar('wrapper');
+});
+</script>
+</head>
+
+<body>
+
+<div>
+	<button onclick="bar.scrollbar('option', 'opacity', 1)">opacity 1</button>
+	<button onclick="bar.scrollbar('option', 'opacity', 0.2)">opacity 0.2</button>
+	<button onclick="bar.scrollbar('option', 'height', 250)">height 250</button>
+	<button onclick="bar.scrollbar('option', 'scrollTop', 100)">scrollTop 100</button>
+	<button onclick="$('#overflow').uiScrollBar('option', 'scrollTop', 50)">Height 500</button>
+	<button onclick="$('#overflow').uiScrollBar('append', '<p style=\'height:120px;\'>AAAAAA</p>');">Append</button>
+</div>
+
+<!--<div id="container" style="background:#fed;width:300px;height:300px;">
+</div>
+-->
+<div id="overflow" style="background:#fff;border:3px solid #666;width:250px;height:400px;overflow:auto;">
+	<p>1234567890 1234567890 1234567890 1234567890</p>
+	<!--<p><img alt="" src="http://www.liuzhenwei.sh.cn/mine/work/common/upload/2012/01/17/133630eh.jpg" /></p>-->
+	<p>2</p>
+	<p>3</p>
+	<p>4</p>
+	<p>5</p>
+	<p>6</p>
+	<p>7</p>
+	<p>8</p>
+	<p>9</p>
+	<p>10101010 10101010 101010101 010101010 101010 9999</p>
+	<p>11</p>
+	<p>12</p>
+	<p>13</p>
+	<p>14</p>
+	<p>15</p>
+	<p>16</p>
+	<p>17</p>
+	<p>18</p>
+	<p>19</p>
+	<p>20</p>
+</div>
+
+<div id="container1" style="height:100px;">
+</div>
+
+</body>
+</html>

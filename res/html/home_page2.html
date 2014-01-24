@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员首页</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/widget.js"></script>
+<script type="text/javascript" src="/js/home.js"></script>
+<script type="text/javascript">
+function feed(){};
+function writeShare(){};
+</script>
+</head>
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<div id="nav_utility">
+		<ul class="common-nav">
+			<li><a class="link-menu1 boldface" href="javascript:void(0);" id="top_btn_userManage">徐陆云</a></li>
+			<li><a href="msg_notification.html">站内通知</a> <strong class="red">6</strong></li>
+			<li><a class="link-menu1" href="javascript:void(0);" id="top_btn_set">设置</a></li>
+			<li><a href="invite_home.html" class="green boldface">发邀请</a></li>
+			<li><a href="help.html">帮助</a></li>
+		</ul>
+	</div>
+	<div class="dp-menu" id="top_menu_userManage">
+		<ul>
+			<li>账户类型：<a href="account.html">普通</a></li>
+			<li class="line">优士币：<a href="RMB_charging.html">300枚</a></li>
+			<li><a href="account_upgrade.html">升级会员资格</a></li>
+			<li class="line"><a href="RMB_charging.html">优士币充值</a></li>
+			<li><a href="#">退出登录</a></li>
+		</ul>
+	</div>
+	<div class="dp-menu" id="top_menu_set">
+		<ul>
+			<li><a href="settings_email_modi.html">账户信息设置</a></li>
+			<li><a href="profile_edit.html">个人档案设置</a></li>
+			<li class="line"><a href="privacy_contact.html">隐私与偏好</a></li>
+			<li><a href="javascript:void(0);">简体中文</a></li>
+			<li><a href="javascript:void(0);">English</a></li>
+		</ul>
+	</div>
+	
+	<!-- Logo and navigation bar -->
+	<div id="header" class="clearfix">
+		<div id="logo"><a href="javascript:void(0);"><img src="../../bns/images/youshi_logo.png" width="80" height="51" alt="优士"></a></div>
+		<div id="navigation">
+			<ul>
+				<li id="nav_home"><a href="home_member.html"><span> 首 页 </span></a></li>
+				<li id="nav_profile"><a href="profile_view_my.html"><span> 档 案 </span></a></li>
+				<li id="nav_connection"><a href="connections_1degree.html"><span> 人 脉 </span></a></li>
+				<li id="nav_group"><a href="group/groups_home.html"><span> 群 组 </span></a></li>
+				<li id="nav_microblogging"><a href="miniblog_main.html"><span> 微 博 </span></a></li>
+				<li id="nav_job"><a href="jobs_overview.html"><span  class="relative"> 职 位 <em></em></span></a></li>
+				<li id="nav_message"><a href="mail_inbox.html"><span class="relative"> 直 邮 <em class="red">12</em></span></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Search bar -->
+	<div id="searchbar" class="searchbar">
+		<form id="" action="" method="post">
+			<div class="search-form"> <span class="search-q">
+				<input id="is_keyword" type="text"  value="请输入搜索关键词" class="quiet" onfocus='if(this.value=="请输入搜索关键词"){this.value="";}; this.className="loud";' onblur='if(this.value=="") {this.value="请输入搜索关键词";};this.className="quiet";' />
+				</span>
+				<button type="submit"><span class="hide">搜 索</span></button>
+				<span class="search-link"><a href="search_adv.html">高级搜索</a></span> </div>
+		</form>
+	</div>
+	
+	<div id="main" class="clearfix">
+		<div class="notice">您输入的姓名格式不够规范，为了在优士营造更加真实、可信的社交环境，我们建议您<a href="#">进行修改</a>。<a href="#" class="common-close"><span class="hide">关闭</span></a></div>
+		<!-- Leftside -->
+		<div id="sidebar" class="column-1">
+			<div class="user-basic"> <a href="#"><img src="../../bns/images/test_p1.png" width="50" height="50" alt="username"></a>
+				<dl>
+					<dt>徐璐芸<span class="grade-vip" title="付费会员"></span></dt>
+					<dd class="large">联合利华市场营销经理</dd>
+					<dd><a href="#">更新</a></dd>
+				</dl>
+			</div>
+			<div class="common-block border-bottom">
+				<ul>
+					<li>您还未获得成就徽章吗？</li>
+					<li><a href="#">查看可取得的成就徽章</a></li>
+				</ul>
+			</div>
+			<!-- 新加徽章 -->
+			<div class="common-block border-bottom">
+				<h5>赢取品尚优士徽章</h5>
+				<ul>
+					<li class="clearfix">
+						<span class="badge-iconq margin-top05e"></span>
+						<div class="quiet memberInGoodS spe-left-pd2">
+							邀请<span class="membersNum large"> 2 </span>个朋友<br />加入优士即获得<br />
+							<a class="blue" href="badge_list.html">品尚优士徽章</a>
+							
+						</div>
+					</li>
+					<li class="clearfix migs_notice">您只需再邀请<span class="boldface"> 1 </span>名会员加入优士即可获得该徽章！</li>
+					<li class="clearfix quiet">同时还将拥有 <span class="orange">每个月免费申请5个职位的资格</span></li>
+					
+				</ul>
+			</div>
+			
+			<div class="common-block border-bottom">
+				<ul>
+					<li>我的成就<span class="spe-left"><a href="#">更多</a></span></li>
+					<li class="clearfix">
+						<a class="badge-icon01" title="优士网奠基人"  href="#"></a>
+						<a class="badge-icon18" title="最佳职业口碑" href="#" ></a>
+						<a class="badge-icon16" title="人气之星" href="#" ></a>
+						<a class="badge-icon24" title="品尚优士" href="#" ></a>
+					</li>
+				</ul>
+			</div>
+			<!-- 新加徽章 -->
+			
+			<div id=" profile_progress" class="common-block border-bottom">
+				<ul>
+					<li>资料完整度：<strong class="blue spe-num">68<small>%</small></strong></li>
+					<li>
+						<div class="percent-blue">
+							<span class="percent-progress" style="width:68%;"></span>
+						</div>
+					</li>
+					<li class="quiet">填写教育经历+10% <span class="spe-left"><a href="#">编辑</a></span></li>
+				</ul>
+			</div>
+			<div class="common-block border-bottom">
+				<ul class="margin-btm15e">
+					<li>优士币：<strong>30000</strong> 枚</li>
+					<li class="quiet">填写工作经历 +3<br />
+						完善教育经历 +3<br />
+						邀请朋友加入 +5</li>
+					<li><a href="#">了解如何获得和使用优士币</a></li>
+				</ul>
+			</div>
+			<div class="common-block border-bottom">
+				<ul class="margin-btm15e">
+					<li><a href="#">一度人脉共<strong>5000</strong>人</a><span id="limit_friends" class="icon-notice middle spe-left"></span><div id="limit_friends_tips" style="display:none;">一度人脉数量达到上限</div></li>
+					<li class="quiet">人脉网络总人数： 34590</li>
+					<li><a href="#">加入群组<strong>5</strong>个</a></li>
+					<li><a href="#">参与活动<strong>34</strong>个</a></li>
+				</ul>
+			</div>
+			<div class="common-block">
+				<form action="" method="post">
+					<h5>发邀请</h5>
+					<ul>
+						<li>
+							<input name="" type="text" class="input-ivt" value="朋友姓名">
+						</li>
+						<li>
+							<input name="" type="text" class="input-ivt" value="Email">
+						</li>
+						<li>
+							<input type="submit" class=" common-button" value=" 发 送 ">
+						</li>
+						<li><a href="#">邀请更多</a></li>
+					</ul>
+				</form>
+			</div>
+		</div>
+		<!-- Center -->
+		<div id="content" class="column-2-1">
+			<div id="status_edit">
+				<div class="status-edit clearfix">
+					<form method="post">
+						<p>顺便说两句：<span class="quiet">(200字以内)</span></p>
+						<textarea name="freetext" id="freetext" cols="" rows="" select="text"></textarea>
+						<div id="statusLinkUrl">添加：<a class="spe-right" href="#" id="statusUrl"> 网址</a> <a href="#" id="statusDocument">文档</a></div>
+						<div class="share-box" style="display:none;" id="statusUrlContent"><a class="common-close"href="#"><span class="hide">关闭</span></a> 输入想分享的网址：
+							<input class="text" name="linkurl" id="linkurl" type="text" />
+						</div>
+						<div class="share-box"><a class="common-close"href="#"><span class="hide">关闭</span></a>
+							<div class="add-web formstyle">
+								<ul>
+									<li>
+										<label>网址：</label>
+										http://www.worldfriends.com.cn/member/home.jhtml </li>
+									<li>
+										<label>标题：</label>
+										<input name="phone" type="text" class="input-w-280" value="worldfriends" maxlength="255" select="Company">
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="share-box" style="display:none;" id="statusDocumentContent"><a class="common-close"href="#"><span class="hide">关闭</span></a> 选择本地文件：
+							<input class="file" type="file" name="fileField" id="fileField" />
+							<span class="show">支持Word, Excel, PPT, PDF格式文件，最大5M</span></div>
+						<div class=" float-right"> <a href="#" class="special-more-btn">发布<span class="more_shop"></span></a>
+							<div class="notice-box">
+								<div class="notice-box-content">为了保护优士会员的信息安全和沟通质量，请不要在微博中包含手机号码、Email地址和即时通讯ID等信息，我们建议您<a href="#">将个人档案中的联络信息补全</a>。 </div>
+							</div>
+							<div  class="dp-menu-shop" style="display:none;"> 微博同步已暂停<a href="#" class="spe-left3">恢复</a><a href="#" class="spe-left2">修改设置</a></div>
+						</div>
+					</form>
+					<!--发布下拉菜单 --> 
+					
+				</div>
+				<p class="show spe-left"><a href="#">查看我最近的发布</a></p>
+			</div>
+			<div id="update_feeds">
+				<div class="tabs-feed clearfix">
+					<h4>人际动态</h4>
+					<ul class="float-right" id="feed_tab">
+						<li class="current"><a href="#">精选</a></li>
+						<li><a href="#">来自好友</a></li>
+						<li><a href="#">来自关注</a></li>
+						<li><a href="#">群组动态</a> <span class="divide">|</span> </li>
+						<li><a href="#">编辑</a></li>
+					</ul>
+				</div>
+				<div id="feed_content">
+					<div class="event-block">
+						<div class="event-owner"><a href="/u/1"><img src="../../common/images/face_30.png" title="阿尔伯特" /></a></div>
+						<div class="event-content">
+							<p><a class="username" href="/u/1">阿尔伯特</a> 与 <a class="username" href="/u/53"/>littlefisher</a> 成为一度人脉<a href=""></a></p>
+							<p class="action">1分钟前 <a class="spe-left" href="#">评论</a> | <a class="spe-left" href="#">喜欢</a> | <a class="spe-left" href="#">隐藏</a></p>
+							<div class="event-comments"> </div>
+							<p>
+								<input class="input-addcomm"  type="text" value="写评论"  style="display:none;" />
+							</p>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="event-owner"><a href="/u/1"><img src="../../common/images/face_30.png" title="阿尔伯特" /></a></div>
+						<div class="event-content">
+							<p><a class="username" href="/u/1">阿尔伯特</a> 发起了群组活动 <a href="/feed!view.jhtml?id=165,sns">本周末浦东高尔夫活动</a></p>
+							<p class="action">1天前03:52 <a class="spe-left" href="#">评论</a> <a class="spe-left" href="#">进入上海高尔夫俱乐部</a> </p>
+							<div class="event-comments"> </div>
+							<p>
+								<input class="input-addcomm"  type="text" value="写评论"  style="display:none;" />
+							</p>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="event-owner"><a href="/u/1"><img src="../../common/images/face_30.png" title="阿尔伯特" /></a></div>
+						<div class="event-content">
+							<p><a class="username" href="/u/1">阿尔伯特</a> 分享了文档 <a href="/feed!view.jhtml?id=165,sns"><span class="doctype-doc"></span>哥本哈根会议将进入核心讨论</a></p>
+							<p class="description">13日，哥本哈根气候变化大会休会一天，这也标志着大会的第一阶段已经结束。自7日会议开幕以来，各方代表已从最初的展示期望、随后的观点交锋，逐步进入到对协议草案的核心讨论之中。</p>
+							<p class="action">1天前03:52 <a class="spe-left" href="#">评论</a> | <a class="spe-left" href="#">喜欢</a> | <a class="spe-left" href="#">隐藏</a></p>
+							<div class="event-comments"> </div>
+							<p>
+								<input class="input-addcomm"  type="text" value="写评论"  style="display:none;" />
+							</p>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="event-owner"><a href="/u/1"><img src="../../common/images/face_30.png" title="阿尔伯特" /></a></div>
+						<div class="event-content">
+							<p><a class="username" href="/u/1">阿尔伯特</a> 分享了网址 <a href="/feed!view.jhtml?id=164,sns"> 上海轨道交通俱乐部 - 上海地铁论坛 - 上海地铁迷乐园</a></p>
+							<p class="description">希望能带给大家方便，支持吧！</p>
+							<p class="action">1天前03:52 <a class="spe-left" href="#">评论</a> | <a class="spe-left" href="#">喜欢</a> | <a class="spe-left" href="#">隐藏</a></p>
+							<div class="event-comments">
+								<p class="reply">i love you <a href="/u/1">阿尔伯特</a> 2009-11-16 16:51</p>
+								<p class="reply-me">好啊啊，你们终于来了，呵呵&nbsp; <a href="/u/1">您自己</a> 2009-11-16 16:52</p>
+								<p class="reply-me">凡人啊 <a href="/u/1">您自己</a> 2009-11-17 16:11</p>
+							</div>
+							<p>
+								<input class="input-addcomm" groupId="1" feedId="2"  type="text" value="写评论"  style="display:block;" />
+								<input type="button" class="common-button" value="回 复" style="display:none;" />
+							</p>
+						</div>
+					</div>
+					<div class="event-block">
+						<div class="event-owner"><a href="/u/1"><img src="../../common/images/face_30.png" title="阿尔伯特" /></a></div>
+						<div class="event-content">
+							<p><a class="username" href="/u/1">阿尔伯特</a> 测试freetext<a href=""></a></p>
+							<p class="action">1天前03:52 <a class="spe-left" href="#">评论</a> | <a class="spe-left" href="#">喜欢</a> | <a class="spe-left" href="#">隐藏</a></p>
+							<div class="event-comments">
+								<p class="liking">100人喜欢</p>
+								<p class="reply">aa&nbsp;<a href="/u/1">阿尔伯特</a> 2009-01-01 00:00</p>
+								<p class="reply-me">211&nbsp; <a href="/u/1">您自己</a> 2009-01-01 00:00</p>
+								<p class="reply-me">法定时间刻录机德萨来访接待撒 &nbsp; <a href="/u/1">您自己</a> 2009-01-01 00:00</p>
+								<p class="reply-me">好啊啊，你们终于来了，呵呵&nbsp; <a href="/u/1">您自己</a> 2009-11-16 16:54</p>
+								<p class="reply-me">i love you1212&nbsp; <a href="/u/1">您自己</a> 2009-11-17 16:11</p>
+							</div>
+							<p>
+								<input class="input-addcomm"  type="text" value="写评论"  style="display:block;" />
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Rightside -->
+		<div id="extra" class="column-3">
+			<div class="common-block">
+				<h5 class="extra-title">收到请求</h5>
+				<div class="request-info">
+					<ul>
+						<li><a href="#">好友申请：<strong>6</strong></a></li>
+						<li><a href="#">请求引荐：<strong>8</strong></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="common-block" id="userFriendsList">
+				<h5 class="extra-title">您可能认识</h5>
+				<ul class="vcard spe-left-pd">
+					<li class="border-bottom"> <a class="common-close"href="#"><span class="hide">关闭</span></a> <a href="#"><img src="../../bns/images/test_p2.png" width="30" height="30" alt="username"></a>
+						<dl rid="1" isrecommtop="false">
+							<dt><a href="#">何振宇</a><span class="grade-vip" title="付费会员"></span></dt>
+							<dd>爱车网市场总监</dd>
+							<dd><a class="spe-right" href="#" onclick="showFriendsLimitPop()">加为一度</a> <a href="#">关注此人</a></dd>
+						</dl>
+					</li>
+					<li class="border-bottom"> <a class="common-close"href="#"><span class="hide">关闭</span></a> <a href="#"><img src="../../bns/images/test_p3.png" width="30" height="30" alt="username"></a>
+						<dl rid="1" isrecommtop="false">
+							<dt><a href="#">何研</a><span class="grade-vip" title="付费会员"></span></dt>
+							<dd>奥美互动客户经理</dd>
+							<dd><a class="spe-right" href="#" onclick="showFriendsLimitPop()">加为一度</a> <a href="#">关注此人</a></dd>
+						</dl>
+					</li>
+					<li> <a class="common-close"href="#"><span class="hide">关闭</span></a> <a href="#"><img src="../../bns/images/test_p4.png" width="30" height="30" alt="username"></a>
+						<dl rid="1" isrecommtop="false">
+							<dt><a href="#">王石</a></dt>
+							<dd>万科集团董事长</dd>
+							<dd><a class="spe-right" href="#" onclick="showFriendsLimitPop()">加为一度</a> <a href="#">关注此人</a></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="common-block">
+				<h5 class="extra-title">您可能希望认识</h5>
+				<ul class="spe-search">
+					<li><span class="spe-num"><a href="#">8</a></span> <a href="#">In your industry and your city</a> </li>
+					<li><span class="spe-num"><a href="#">82</a></span> <a href="#">Recently joined in your industry</a></li>
+					<li><span class="spe-num"><a href="#">178</a></span> <a href="#">Knows more than 20 people in your industry</a></li>
+				</ul>
+			</div>
+			<div class="common-block" id="recommendationGroupList">
+				<h5 class="extra-title">推荐群组</h5>
+				<ul class="vcard v-50 spe-left-pd">
+					<li ><a class="common-close" href="javascript:void(0);"><span class="hide">关闭</span></a> <a href="/group/mygroup.jhtml?gid=1"><img src="" width="50" height="50" ></a>
+						<dl groupId="1">
+							<dt><a href="/group/mygroup.jhtml?gid=1">宝洁公司</a></dt>
+							<dd>成员：1</dd>
+							<dd><a href="/group/mygroup.jhtml?gid=1">进去看看</a></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="common-block">
+				<div class="extra-title">
+					<h5>谁看过我的档案</h5>
+				</div>
+				<ul class="list-disc">
+					<li class="vcard"><a href="/u/16399"><img id="avatar-16399" src="http://ushi.cn../../common/images/face_30.png"></a>
+						<dl>
+							<dt><a href="/u/16399">王明明Adam</a> </dt>
+							<dd>十年 创始人</dd>
+						</dl>
+					</li>
+					<li><a href="#">招聘网 职业顾问</a></li>
+					<li><a href="#">互联时空 客户经理</a></li>
+					<li><a href="#">某互联网行业人士</a></li>
+				</ul>
+				<p class="quiet spe-left2">最近30天内共7次访问</p>
+			</div>
+			<div class="common-block" id="recommendationGroupList">
+				<h5 class="extra-title">优士网手机版</h5>
+				<div class="mobile-info">
+					<p>我的人脉，指间掌握！</p>
+					<p><a href="mobile_version_apple.html">点击进入手机客户端下载</a></p>
+				</div>
+			</div>
+			<div class="common-block"> <a href="#"><img src="..../../bns/images/aden_US.jpg" alt="先锋会员入口" /></a> </div>
+		</div>
+	</div>
+</div>
+
+<!--#include file="footer.html"-->
+
+<!-- 好友数达到上限5000的提示窗口 -->
+<div id="friendsLimitPop" style="display:none;">
+	<div class="notice">
+		您最多可以与5000个优士会员成为一度关系，目前已经达到上限，不能再加入新的一度人脉。
+	</div>
+	<div class="quiet margin-top15e">
+		为了保证优士网社区的质量，提高人脉关系的真实性，同时可以帮助您获得更加真实有用的人脉价值。为此优士网对人脉数量做了一定的限制。
+	</div>
+	<p class="margin-top15e">
+		<a href="#" class="cnfont">整理我的一度人脉>></a>
+	</p>
+	<p class="margin-top15e center">
+		<input type="button" class="common-button large" value=" 关闭 " onclick="$('#friendsLimitPop').popupWin('destroy');" />
+	</p>
+</div>
+
+</body>
+</html>

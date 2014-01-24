@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>关于优士</title>
+<script type="text/javascript" src="../../../common/js/jquery-1.5.2.js" ></script>
+<script type="text/javascript">
+jQuery.fn.abc = function(){
+	return this.each(function(){
+		var conts=$(this)
+		var ct = $('<div></div>').insertAfter(conts);
+		ct.append(conts);
+		var text=conts.attr("defaultTips");
+		var lbl = $('<label></label>').appendTo(ct);
+		lbl.text(text);
+		ct.css("position", "relative");
+		lbl.css({
+			"position": "absolute",
+			"left": parseInt(conts.css("padding-left"))+parseInt(conts.css("margin-left"))+parseInt(conts.css("border-left-width"))+"px",
+			"top": parseInt(conts.css("padding-top"))+parseInt(conts.css("margin-top"))+parseInt(conts.css("border-top-width"))+"px",
+			"font-size": conts.css("font-size"),
+			"line-height": parseInt(conts.css("line-height"))+"px"
+		});	
+		ct.css("display", "inline-block");
+		lbl.css("color","#999");
+		lbl.bind('click', function(){
+			conts.focus();
+		})
+		conts.focus(function(){
+			lbl.css("color","#999");
+		})
+		conts.blur(function(){
+			lbl.css("color","#ccc");
+		})
+		
+		conts.keyup(function(){
+			if($(this).val()!=""){
+				lbl.css("display","none");}
+			else{
+				lbl.css("display","block");
+			}
+		});
+		
+		if(conts.val()!=""){
+			lbl.css("display","none");
+		}
+	})
+}
+$(document).ready(function(){
+	$(".name").abc();
+	
+})
+
+
+</script>
+<style type="text/css">
+* {
+	padding: 0;
+	margin: 0;
+}
+.name {
+	padding: 5px 0 5px 5px;
+	font-size: 14px;
+	border: 1px solid #F00;
+	color: #f00;
+	width: 150px;
+}
+</style>
+</head>
+<body>
+<input type="text" class="name" defaultTips="密码"><input type="text" class="name" defaultTips="密码">
+<br>
+<textarea class="name"  defaultTips="密码"></textarea><textarea class="name"  defaultTips="密码"></textarea>
+</body>
+</html>

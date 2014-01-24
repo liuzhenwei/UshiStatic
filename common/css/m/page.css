@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+.hide {
+	display: none;
+}
+
+a > img {
+	border: 1px #69a5ca solid;
+}
+
+.blockTitle {
+	background: #EEE;
+	border-top: 1px #FFF solid;
+	border-bottom: 1px #CCC solid;
+	padding: 6px 10px 4px 10px;
+	font-weight: bold;
+	margin: 0;
+}
+.blockCont {
+	padding: 15px;
+	text-align: left;
+}
+.blockCont h3 {
+	font-size: 16px;
+	margin: 0 0 10px 0;
+	padding: 5px 0 0 0;
+}
+.blockCont p {
+	font-size: 14px;
+	margin: 0 0 10px 0;
+}
+.blockForm {
+	margin: 0 auto;
+	padding: 20px 15px;
+	max-width: 400px;
+	overflow: hidden;
+}
+
+.inlineList li {
+	display: inline-block;
+	margin-right: 15px;
+	padding-bottom: 8px;
+}
+.inlineList li.viewmore {
+	display: block;
+}
+.inlineList li.viewmore a {
+	display: block;
+	padding: 15px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 100px;	
+}
+
+ul.formStyle {
+	padding: 0;
+	margin: 0 auto;
+}
+ul.formStyle li {
+	padding: 5px 0;
+	overflow: hidden;
+	min-height: 32px;
+}
+ul.formStyle li.label {
+	padding: 8px 0 0 0;
+	min-height: 16px;
+}
+ul.formStyle li label {
+	float: left;
+	width: 25%;
+	text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	line-height: 36px;
+}
+ul.formStyle li p {
+	float: left;
+	margin: 0;
+	width: 75%;
+}
+ul.formStyle li > p > input[type=text], ul.formStyle li > p > input[type=password], ul.formStyle li > p > textarea {
+	width: 98%;
+}
+ul.nopd, li.nopd {
+	padding: 0 !important;
+}
+ul.formStyle li.rightLabel label {
+	float: right;
+	text-align: left;
+}
+ul.formStyle li.rightLabel p {
+	float: right;
+}
+ul.formStyle span.dateSelect {
+	display: block;
+	width: 120px;
+	float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	border: 1px #BBBBBB solid;
+	padding: 7px;
+	font-size: 14px;
+	-webkit-box-shadow: 0 1px 2px #AAA;
+	margin-right: 10px;
+	cursor: pointer;
+}
+select.dateSelect {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	padding: 5px;
+	font-size: 16px;
+	border: 1px #BBBBBB solid;	
+	-webkit-box-shadow: 0 1px 2px #AAA;
+}
+
+.tabBar {
+	background: #ecf3fb;
+	padding: 4px 0 0 0;
+	border-top: 1px #FFF solid;
+	border-bottom: 1px #bcc8d8 solid;
+	overflow: hidden;
+}
+.tabBar h2 {
+	font-size: 18px;
+	text-align: center;
+	margin: 6px auto 7px auto;
+}
+ul.tabStyle {
+	overflow: hidden;
+	border-bottom: 1px #FFF solid;
+}
+ul.tabStyle li {
+	float: left;
+	margin-left: 10px;
+	padding-top: 2px;
+}
+ul.tabStyle li > h2, ul.tabStyle li > a {
+	display: block;
+	padding: 6px 10px 5px 10px;
+	font-weight: bold;
+	font-size: 16px;
+}
+ul.tabStyle li > h2 {
+	margin: 0;
+	background: #FFF;
+	border: 1px #bcc8d8 solid;
+	border-bottom: 0;
+	-webkit-box-shadow: 0 0 2px #AAA;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+}
+
+ul.blockList {
+}
+ul.blockList li.viewmore a {
+	display: block;
+	padding: 18px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 100px;	
+}
+li.listCont {
+	padding: 10px 10px 3px 10px;
+	overflow: hidden;
+	border-bottom: 1px #CCC solid;
+	clear: both;
+}
+li.listCont > div {
+	float: right;
+	margin: 3px 0 8px 10px;
+	min-width: 80px;
+	font-size: 14px;
+	text-align: right;
+}
+li.listCont > div > p {
+	margin-top: 10px;
+}
+li.listCont h3 {
+	margin: 0 0 6px 0;
+	font-size: 16px;
+}
+li.listCont p {
+	margin: 0 0 6px 0;
+	font-size: 14px;
+}
+li.listCont p img {
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+}
+
+.profile {
+	padding: 0;
+	margin: 0 auto;
+}
+.profile dt {
+	float: left;
+	padding: 5px 0 3px 0;
+	margin: 0;
+	vertical-align: top;
+}
+.profile dt img {
+	width: 50px;
+	height: 50px;
+}
+.profile dd {
+	margin: 0 0 0 60px;
+	padding: 0;
+}
+.profile dd > * {
+	margin: 0 0 5px 0;
+}
+.profile dd a {
+	display: inline-block;
+	margin: 5px 5px 5px 0;
+}
+.profile dd a img {
+	border: 0;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+
+/**********************************************/
+#howtojoin h2 {
+	background: #d2e2f0;
+	margin: 0;
+	padding: 6px;
+	font-size: 20px;
+}
+
+/** event ********************************************/
+.w150 {
+	width: 150px!important;
+}
+.eventBan {
+	background: #ecf3fb;
+    border-bottom: 1px solid #b5c8d9;
+    border-top: 1px solid #ebf2f9;
+	padding: 12px 15px;
+	text-align: center;
+}
+.eventBan h2 {
+	font-size: 16px;
+	margin: 0;
+	padding: 0 10px 10px 10px;
+}
+.eventBan a {
+	margin: 0 auto;
+}
+.eventDetail p {
+	font-size: 16px;
+}
+.eventDetail .eventTag {
+	background: #ecf3fb;
+	padding: 15px 15px 5px 15px;
+	border-top: 1px #FFF solid;
+	border-bottom: 1px #bcc8d8 solid;
+	overflow: hidden;
+}
+.eventDetail .eventTagList a {
+	margin-left: 6px;
+}
+.eventDetail .eventIntro {
+	height: auto;
+	overflow: hidden;
+	/*max-height: 102px;
+	margin-bottom: 10px;*/
+}
+.eventDetail .eventIntro p{
+	line-height: 1.3em;
+}
+
+h2.eventCity {
+	font-size: 20px;
+	margin: 0 10px 10px;
+}
+h2.eventCity a {
+	font-size: 16px;
+	margin-left: 10px;
+}
+p.searchEventKey {
+	margin: 0 10px 10px;
+}
+p.searchEventKey span {
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+.dialogTitle td {
+	color: #FFF;
+	font-weight: bold;
+    white-space: nowrap;
+	padding: 5px;
+}
+#calendarTable {
+	width: 280px;
+	text-align: center;
+}
+#calendarTable .calendarHeader {
+	background: #63a0d3;
+	border-bottom: 1px solid #666;
+}
+#calendarTable th {
+	background: #ecf3fb;
+	color: #000;
+	padding: 5px 2px;
+	border-bottom: 1px #CCC solid;
+	width: 14%;
+}
+#calendarTable td {
+	padding: 1px 3px;
+}
+#calendarTable td span {
+	display: block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	padding: 4px;
+	border: 2px transparent solid;
+	cursor: pointer;
+}
+#calendarTable .weekDaysCell {
+}
+#calendarTable .weekDaysCellOver span {
+	background: #EEE;
+	border-color: #CCC;
+}
+#calendarTable #calendarToday span {
+	background: #DDD;
+}
+#calendarTable #selectedDay span {
+	background: #ecf3fb;
+	border-color: #81a8c8;
+	color: #004c91;
+}
+#prevMonth, #nextMonth {
+	display: block;
+	width: 24px;
+	height: 19px;
+	margin: 3px;
+	text-indent: -9999px;
+	outline: none;
+}
+#prevMonth {
+	float: left;
+	background: url(icoCaleLeft.png) no-repeat;
+}
+#nextMonth {
+	float: right;
+	background: url(icoCaleRight.png) no-repeat;
+}
+.selectTimeTable {
+	width: 95%;
+	margin: 3px auto 8px auto;
+}
+.selectTimeTable td {
+	padding: 1px;
+}
+.selectTimeTable td span {
+	display: block;
+	width: 60px;
+	background: #EEE;
+	border: 2px #FFF solid;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	padding: 2px;
+}
+.selectTimeTable td span.select {
+	background: #CCC;
+	border: 2px #999 solid;
+} 
+
+/** profile ****************************************************/
+.profileInfo {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	padding: 6px 10px;
+	border: 1px #CCC solid;
+	background: #F0F0F0;
+	margin: 0 auto;
+}
+
+/** site *******************************************************/
+.tabRequest {
+	background: #F0F0F0;
+	overflow: hidden;
+	padding: 8px 6px 0 10px;
+}
+.tabRequest .tabStyle {
+	min-width: 250px;
+	overflow: hidden;
+	float: left;
+}
+.tabRequest .tabStyle h3, .tabRequest .tabStyle p {
+	display: inline-block;
+	padding: 10px;
+	font-size: 16px;
+	margin: 0;
+}
+.tabRequest .tabStyle h3 {
+	background: #FFF;
+}
+.requestStatus {
+	float: right;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+.requestStatus span.gray {
+	font-size: 14px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.requestStatus .toggle {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#requestInbox .listCont p {
+	font-size: 16px;
+}
+#requestInbox .listCont > div a {
+	display: inline-block;
+}
+
+.comments li {
+	border: 1px #d7e4f2 solid;
+	padding: 2px 3px 1px 20px;
+	background: #ecf3fb url(icoComment.png) no-repeat;
+	background-position: -19px 9px;
+	margin-bottom: 4px;
+}
+.comments li.replyMe {
+	background-position: 5px -15px;
+}
+.comments li p {
+	margin: 0;
+}
+

@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"> 
+	<title>首页</title> 
+	<link rel="stylesheet" href="../../mobile/css/jquery.mobile-1.0a4.1.css" />
+	<link rel="stylesheet" href="../../mobile/css/reset.css" />
+	<script src="../../mobile/js/jquery-1.5.2.min.js"></script>
+	<script src="../../mobile/js/jquery.mobile-1.0a4.1.js"></script>
+	<script src="../../mobile/js/dialog.js"></script>
+</head> 
+<body> 
+<div data-role="page" data-theme="d">
+	<div class="header" data-role="header" data-backbtn="false">
+		<div class="l">
+			<a href="#" class="back"></a>
+			<span class="break"></span>
+			<a href="#" class="home"></a>
+		</div>
+		<div class="r"></div>
+		<div class="c">张三的个人档案</div>
+	</div>
+	<div data-role="content" class="pd-top10">
+		
+		<div class="sel_bar sel_bar3">
+			<a href="mobile_profile_home.html" class="current"><span class="l">档案</span></a><a href="mobile_profile_microblog.html"><span>微博</span></a><a href="mobile_profile_friends.html"><span class="r">人脉<i class="ico-arrow-r"></i></span></a>
+		</div>
+	
+		<div class="vard">
+			<a class="l" href=""><img src="../../mobile/images/pic/pic-65.png" /></a>
+			<a class="r" href=""></a>
+			<dl class="c" >
+				<dt><a href="#"><a class="na" href="#">罗瑞奇</a></dt>
+				<dd><span class="zw pd-top">海优仕珠宝有限公司 市场总监</span></dd>
+				<dd><span class="addr">中国大陆 - 上海 - 上海</span></dd>
+			</dl>
+		</div>
+		
+		<div class="common-block">
+			<h5>职业总结</h5>
+			<p>
+				有意愿在战略管理、投资融资、产业研究等领域取得良好的发展。具有多年投融资行业的工作经历。在投融资项目信息的实施过程中积累了丰富的经验。
+			</p>
+		</div>
+		
+		<div class="common-block">
+			<h5>工作经历</h5>
+			<dl>
+				<dt><b>市场总监</b></dt>
+				<dd>
+					上海优仕珠宝有限公司 <span class="quiet">(100 ~ 499 人)</span><br />
+					2008年1月 - 现在 <span class="quiet">(2 年 11 个月)</span>
+				</dd>
+			</dl>
+		</div>
+	</div>
+		
+	<div data-role="footer" data-position="fixed" class="footer-profile">
+		<ul>
+			<li class="r"><a href="#" js="otherContact">其他联系方式</a></li>
+			<li><a href="#" class="send-msg"></a></li>
+		</ul>
+	</div>
+	
+	<div js="popOtherContact" style="display:none;">
+		<div class="pop-other-contact">
+			<p class="border-bottom">电子邮件：abcdefghi@163.com</p>
+			<p class="border-bottom">电话：13011111111</p>
+			<p class="border-bottom">短信：13088888888</p>
+			<p class="a-center"><a class="ushi-common-btn" href="#">返 回</a></p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.footer-profile a[js="otherContact"]').live('click', function(){
+		var html = $('[js="popOtherContact"]').html();
+		var dlg = new Dialog(html, {
+            "width":"300px",
+            "title":"其他联系方式",
+            "modal":true,
+            "closeModal":false
+        });
+	});
+});
+</script>
+
+</body> 
+</html> 

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="../../../common/js/jquery-1.5.2.min.js" type="text/javascript"></script>
+
+<style type="text/css">
+
+.div_1 { border:1px solid black; width:200px; height:200px; float:left; margin:0 20px 20px 0;}
+.div_2 { border:1px solid black; width:200px; height:200px; float:left; background:#F00; margin:0 20px 20px 0;}
+.div_3 { border:1px solid black; width:200px; height:200px; float:left; background:#0F0; margin:0 20px 20px 0;}
+.div_4 { border:1px solid black; width:200px; height:200px; float:left; background:#00F; margin:0 20px 20px 0;}
+.div_5 { border:1px solid black; width:200px; height:200px; float:left; background:#FF0; margin:0 20px 20px 0;}
+
+.transparent-area { position:absolute; display:block; z-index:1000;}
+.opacity-area { position:absolute; display:block; z-index:1000; background:#8AD; opacity:0.8;}
+.opacity-area-high { position:absolute; display:block; z-index:1100; background:#8AD; opacity:0.8;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	transparent_area(420,100,200,200);
+	opacity_area(0,0,100,100);
+	opacity_area(150,150,50,50);
+
+});
+
+function transparent_area(_left,_top,_width,_height)
+{
+	var _bodyWidth=document.body.clientWidth;
+	var _bodyHeight=document.body.clientHeight;
+	
+	var _divTransparent=$("<div js=\"transparent_area\" style=\"position:absolute; display:block; z-index:1000;\"></div>");
+	_divTransparent.css({"left":_left,"top":_top,"width":_width,"height":_height});
+	
+	var _divOpacity1=$("<div class=\"opacity-area\"></div>");
+	var _divOpacity2=$("<div class=\"opacity-area\"></div>");
+	var _divOpacity3=$("<div class=\"opacity-area\"></div>");
+	var _divOpacity4=$("<div class=\"opacity-area\"></div>");
+	
+	_divOpacity1.css({"left":0,"top":0,"width":_bodyWidth,"height":_top});
+	_divOpacity2.css({"left":_left+_width,"top":_top,"width":_bodyWidth-_left-_width,"height":_height});
+	_divOpacity3.css({"left":0,"top":_top+_height,"width":_bodyWidth,"height":_bodyHeight-_top-_height});
+	_divOpacity4.css({"left":0,"top":_top,"width":_left,"height":_height});
+
+	$("#main").append(_divTransparent);
+	$("#main").append(_divOpacity1);
+	$("#main").append(_divOpacity2);
+	$("#main").append(_divOpacity3);
+	$("#main").append(_divOpacity4);
+}
+
+function opacity_area(_left,_top,_width,_height)
+{
+	var _divOpacity=$("<div class=\"opacity-area-high\"></div>");
+	_divOpacity.css({"left":_left,"top":_top,"width":_width,"height":_height});
+	
+	$("[js='transparent_area']").append(_divOpacity);
+}
+
+(function($){     
+	$.fn.extend({     
+		transparent_area:function(opt,callback){     
+        	
+		}
+	})     
+})(jQuery);
+
+
+
+</script>
+
+</head>
+
+<body>
+<div id="main">
+	<div class="div_1"></div>
+    <div class="div_4"></div>
+    <div class="div_2"></div>
+    <div class="div_3"></div>
+    <div class="div_2"></div>
+    <div class="div_5"></div>
+    <div class="div_4"></div>
+    <div class="div_5"></div>
+    <div class="div_1"></div>
+    <div class="div_3"></div>
+    <div class="div_2"></div>
+    <div class="div_4"></div>
+    <div class="div_1"></div>
+    <div class="div_4"></div>
+    <div class="div_5"></div>
+    <div class="div_4"></div>
+    <div class="div_1"></div>
+    <div class="div_2"></div>
+    <div class="div_1"></div>
+    <div class="div_3"></div>
+    <div class="div_2"></div>
+    <div class="div_5"></div>
+    <div class="div_4"></div>
+    <div class="div_2"></div>
+    <div class="div_3"></div>
+    <div class="div_1"></div>
+    <div class="div_1"></div>
+    <div class="div_2"></div>
+    <div class="div_4"></div>
+    <div class="div_5"></div>
+    <div class="div_3"></div>
+    
+    <div style="clear:both;"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+﻿<div id="nav_utility">
+          <ul class="common-nav">
+          <li><a class="link-menu boldface" href="javascript:void(0);" onclick="fillProfileInfo();" id="top_btn_userManage">Sekin</a></li>
+          <li><a href="/sns/sns!viewInvitePage.jhtml">Invite Connections</a></li>
+          <li class="divide"><a href="/msg/notification!listNotification.jhtml">Notifications</a> <strong class="red" jsonInfo="newNotifacationCount"></strong></li>
+
+          <li><a class="link-menu" href="javascript:void(0)" id="top_btn_set">Settings</a></li>
+          <li class="divide"><a class="link-menu"  href="javascript:void(0);" id="top_btn_lang">Language</a></li>
+           <li><a href="/doc.jhtml?key=help">Help</a></li>
+          <li><a href="/logout.jhtml">Sign out</a></li>
+          </ul>
+     </div>
+
+<div class="dp-menu" id="top_menu_userManage">
+    <ul>
+    <li><a href="/sns/sns!view1stFriends.jhtml">Connections</a> <span jsonInfo="firstDegreeFriendCount">86</span></li>
+    <li><a href="/group/index.jhtml">Group(s)</a> <span jsonInfo="mygroupCount">25</span></li>
+    <li class="line">Event(s) <span jsonInfo="groupeventCount">2</span></li>
+
+    <li><a href="/user/profile.jhtml">My Profile</a></li>
+    <li><a href="/user/setting.jhtml">Account Settings</a></li>
+    <li class="line"><a href="/security/contact.jhtml">Privacy Settings</a></li>
+    <li><a href="/currency/Coins!chargeList.jhtml">My Ushi Coins</a> <span jsonInfo="coinsCount"></span></li>
+    <li><a href="/currency/Coins!about.jhtml">Get Ushi Coins</a></li>
+    </ul>
+
+</div>
+<div class="dp-menu" id="top_menu_set">
+    <ul>
+    <li><a href="/user/edit!bfEditBase.jhtml">Profile Settings</a> </li>
+    <li><a href="/user/setting.jhtml">Account Settings</a></li>
+    <li><a href="/security/contact.jhtml">Privacy Settings</a></li>
+    </ul>
+</div>
+
+<div class="dp-menu" id="top_menu_lang">
+    <ul>
+    <li><a href="/user/index!toggle.jhtml?request_locale=zh_CN">简体中文</a> </li>
+    <li><a href="/user/index!toggle.jhtml?request_locale=en_US">English</a> </li>
+    </ul>
+</div>
+     
+     <!-- Logo and navigation bar --> 
+     <div id="header" class="clearfix"> 
+          <div id="logo"><a href="/user/index.jhtml"><img src="../../bns/images/youshi_logo.png" width="80" height="51" title="Ushi"></a></div> 
+          <div id="navigation"> 
+               <ul> 
+               <li id="nav_home"><a href="/user/index.jhtml"><span><span> Home</span></span></a></li> 
+               <li id="nav_profile"><a href="/user/profile.jhtml"><span><span> Profile</span></span></a></li> 
+               <li id="nav_connection"><a href="/sns/sns!view1stFriends.jhtml"><span><span> Contacts</span></span></a></li> 
+               <li id="nav_group"><a class="m-over" href="/group/index.jhtml"><span><span> Groups </span></span></a></li> 
+               <li id="nav_microblogging"><a class="m-over" href="/feed/feed!list.jhtml"><span><span>Microblog</span></span></a></li>
+
+               <li id="nav_message"><a href="/msg/message!getMessageInbox.jhtml"><span><span> Messages <em class="red" jsonInfo="newMessageCount"></em></span></span></a></li> 
+               </ul> 
+          </div> 
+    </div> 
+
+    <div id="nav_connection_menu" class="nav-menu"> 
+         <a href="/sns/sns!view1stFriends.jhtml"> Connections</a> 
+         <a href="/sns/sns!viewExtendConnection.jhtml"> Invite Connections</a>
+         <a href="/sns/sns!getFollowers.jhtml?queryType=1"> Following</a>
+
+         <a href="/sns/sns!getMemo.jhtml"> Memos</a>
+    </div> 
+    <div id="nav_group_menu" class="nav-menu"> 
+         <a href="/group/groups.jhtml">Browse</a> 
+         <a href="/group/index.jhtml">My Groups</a> 
+         <a href="/group/member.groupcreateapply.jhtml">Create</a>  
+    </div> 
+    <div id="nav_message_menu" class="nav-menu"> 
+         <a href="/msg/message!getMessageInbox.jhtml">Inbox</a> 
+         <a href="/msg/message!getMessageOutbox.jhtml">Sent</a>
+
+         <a href="/msg/message!composeMessage.jhtml">Compose</a>
+    </div>
+        <div id="nav_profile_menu" class="nav-menu"> 
+         <a href="/user/profile.jhtml">Edit Profile</a> 
+         <a href="/u/16">View Profile</a>
+         <a href="/endorse/manage!getEndorseReceive.jhtml">Recommendations</a>
+    </div> 
+    <div id="nav_microblogging_menu" class="nav-menu"> 
+         <a href="/feed/feed!list.jhtml">All Microblog Updates</a> 
+         <a href="/feed/feed!retweetlist.jhtml">My Retweet</a>
+
+         <a href="/feed/feed!getMicroblogFav.jhtml">My Favorites</a>
+         <a href="/feed/feed!getMyComment.jhtml">My Comments</a>
+         <a href="/feedShare/feedShare!instrument.jhtml">Microblog Tools</a>
+    </div> 
+    <!-- Search bar -->
+     <div id="searchbar" class="searchbar">
+         <form id="search_form" action="/search/search!search.jhtml" method="post" >
+          <input type="hidden" name="form.keyWordSearch" value="true" id="is_keyword"/><input type="hidden" name="form.position" value="" id="form_position"/><input type="hidden" name="industryIds" value="0" id="form_industryIds"/><div class="search-form">
+
+            <span class="search-q"><input type="text" name="form.keyword" value="Name, Title, Company, School, ..." id="is_keyword_nav" class="quiet" onfocus="$(this).attr('value', '');"/></span>
+            <button type="submit" hideFocus="true"><span class="hide">Search</span></button> 
+            <span class="search-link"><a href="/search/search!advSearch.jhtml">Advanced Search</a></span> 
+         </div> 
+       </form>
+  </div>

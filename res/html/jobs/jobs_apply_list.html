@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>职业频道</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="/doc!jsprop.jhtml"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/job.js"></script>
+</head>
+<body id="page_member">
+<div id="wrapper" class="container"> 
+	<!--#include file="header.html"-->
+	
+	<div id="main" class="clearfix">
+		<div class="channel-tit">
+			<h3>职业频道</h3>
+		</div>
+		<div class="tabs-common clearfix">
+			<ul>
+				<li><a href="jobs_post.html">发布职位</a></li>
+				<li class="current"><a href="jobs_apply_manage.html">应聘管理</a></li>
+				<li><a href="jobs_manage.html">职位管理</a></li>
+				<li><a href="jobs_company.html">公司信息管理</a></li>
+			</ul>
+			<div class="float-right"><a class="job-navigation-help" href="jobs_overview.html">找工作</a></div>
+		</div>
+		
+		<!-- Center -->
+		<div id="jobs_mainbody_wrapper" class="column-2-3">
+			<p>以下为应聘 优士网 <strong>产品经理</strong> 的优士会员：
+				<a href="jobs_apply_manage.html" class="spe-left2">选择其他职位</a>
+			</p>
+			<table class="topic-list">
+				<thead>
+					<tr>
+						<th width="18%">姓名</th>
+						<th width="22%">当前公司职位</th>
+						<th width="10%">学位</th>
+						<th width="10%">求职信</th>
+						<th width="8%">简历</th>
+						<th width="19%">申请时间</th>
+						<th width="13%">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="#">张月</a></td>
+						<td>天下网产品总监</td>
+						<td>博士</td>
+						<td>未填写</td>
+						<td><span class="doctype-doc hand"></span></td>
+						<td>2010-11-29 22:22</td>
+						<td><a href="../EmailTemplate_new/jobs_apply_2.html" target="_blank">预览</a>
+							<a href="#" class="spe-left2" js="forwardEmail">转发</a>
+						</td>
+					</tr>
+					<tr>
+						<td><a href="#">张月</a></td>
+						<td>天下网产品总监</td>
+						<td>博士</td>
+						<td><span class="doctype-eml hand" js="viewApplyLetter"></span></td>
+						<td><span class="doctype-pdf hand"></span></td>
+						<td>2010-11-29 22:22</td>
+						<td><a href="../EmailTemplate_new/jobs_apply_2.html" target="_blank">预览</a>
+							<a href="#" class="spe-left2" js="forwardEmail">转发</a>
+						</td>
+					</tr>
+					<tr>
+						<td><a href="#">张月</a></td>
+						<td>天下网产品总监</td>
+						<td>博士</td>
+						<td>未填写</td>
+						<td><span class="doctype-doc hand"></span></td>
+						<td>2010-11-29 22:22</td>
+						<td><a href="../EmailTemplate_new/jobs_apply_2.html" target="_blank">预览</a>
+							<a href="#" class="spe-left2" js="forwardEmail">转发</a>
+						</td>
+					</tr>
+					<tr>
+						<td><a href="#">张月</a></td>
+						<td>天下网产品总监</td>
+						<td>博士</td>
+						<td><span class="doctype-eml hand" js="viewApplyLetter"></span></td>
+						<td><span class="doctype-doc hand"></span></td>
+						<td>2010-11-29 22:22</td>
+						<td><a href="../EmailTemplate_new/jobs_apply_2.html" target="_blank">预览</a>
+							<a href="#" class="spe-left2" js="forwardEmail">转发</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="pages"> <a href="#" class="current">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="/group/groups.jhtml?pageNo=2" class="next">下一页</a> </div>
+		</div>
+		
+		<!-- Rightside -->
+		<div id="jobs_extra" class="column-3"></div>
+	</div>
+	
+	<!--#include file="footer.html"--> 
+</div>
+
+<!-- 转发邮件弹出层 -->
+<div id="popForwardEmail" style="display:none;">
+	<p>请输入需转发的邮件地址：</p>
+	<p class="middle"><input type="text" class="formtext input-w-280" value="" />
+		<input type="button" class="special-btn medium-btn" value=" 转 发 " /></p>
+</div>
+
+</body>
+</html>

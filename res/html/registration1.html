@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员首页</title>
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="/js/registration.js"></script>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+</head>
+<body id="page_public">
+<div id="wrapper" class="container">
+	 <!--#include file="header.html"-->
+     <div id="main" class="clearfix">
+        <div class="column-4">
+        <div class="step-bar" id="reg_step1"><h3 class="hide">注册第一步：完善职业档案</h3></div>
+        <div id="registration">
+        <h4>完善职业档案</h4>
+        <p>在这里每个人都有完整的职业档案，这有助于您开拓人脉和获得商业机会。</p>
+        <form action="" method="post" name="reg_career_form">
+           <h5>最近工作经历:(必填)</h5>
+           <ul class="clearfix">
+           <li><label>公司名称：</label><input id="CompanyID" type="hidden" value="0" /><input id="CompanyName"  name="" class="input-w-280" type="text" /></li>
+           <li><label>职位：</label><input name="" class="input-w-280" type="text" /><input name="" type="checkbox" value="" />
+           <span class="checkedText">目前仍在职</span></li>
+           
+           <li><label>所在时间：</label> <select><option>年</option></select> <select><option>月</option></select> 至今</li>
+           </ul>
+           
+           <h5>主要教育经历：</h5>
+           <ul class="clearfix">
+           <li><label>学校名称: </label> <input id="SchoolID" type="hidden" value="0" /><input id="SchoolName" name="" class="input-w-280" type="text" /></li>
+           <li><label>专业: </label> <input name="" class="input-w-280" type="text" /></li>
+           <li><label>学位: </label> <select class="select"><option>学士</option></select> </li>
+           <li><label>所在时间：</label> <select><option>入学时间</option></select> 至 <select><option>毕业时间</option></select></li>
+           </ul>
+           <p class="reg-btnbar"><input type="submit" class="common-button" value="下一步" /> </p>
+        </form>
+        </div>
+        
+       </div>
+    </div>
+</div>
+<!--#include file="footer.html"-->
+</body>
+</html>

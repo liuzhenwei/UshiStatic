@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员首页</title>
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/reg.js"></script>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+</head>
+<body id="page_public">
+<div id="wrapper" class="container"> 
+<!--#include file="header.html"-->
+	<div id="main" class="clearfix">
+        <!-- main content -->
+    	<div class="column-2-3">
+        	<div class="invite-inviteUser clearfix">
+            
+            	<div class="inner-grp">
+                <div class="grp-logo"><a href="javascript:void(0);"><img src="../../bns/images/test_grp_logo.png" width="50" height="50" alt="logo" /></a></div>
+                 <h4><a href="#">徐璐芸</a> 邀请您加入群组 <a href="#">宝洁同事会</a>，并成为她在人脉平方的一度人脉。</h4>
+                <div class="clearfix">
+                <span class="owner-pic"> <a href="javascript:void(0);"><img class="userface" src="../../bns/images/test_photos_1.png" width="50" height="50" /></a></span>
+                <p class="quote-box">有很多熟悉的同事都在上面，快去看看吧！<span class="quote-box-r"></span></p>
+                </div>
+               
+               </div>
+                
+            </div>
+            
+          <form class="formstyle" action="" method="post" id="regForm">
+                  <p><font class="red">如果您已经是会员，</font>请走<a href="javascript:void(0);">快捷通道</a></p>
+                  <p><font class="loud">如果您还不是会员，请填写如下信息：</font></p>
+                  <ul>
+                	<li><span id="nameErr" class="tips quiet errInfo"></span><label>姓名：</label><input id="userName" class="input-w-280" type="text" maxlength="64" />
+                    <span class="tips quiet">请填写真实姓名，以便更好的和朋友保持联系。</span></li>
+                    <li><span id="emailErr" class="tips quiet errInfo"></span><label>E-mail：</label><input id="userEmail" class="input-w-280" type="text" maxlength="64" /><input id="hiddenEmail" type="hidden" value="1" />
+                    <span class="tips quiet">我们不会泄露您的邮箱及发送垃圾邮件。</span></li>
+                    <li><span id="passErr" class="tips quiet errInfo"></span><label>密码：</label><input id="userPass" class="input-w-280" type="password" maxlength="32" /></li>
+                    <li><label>性别：</label><input name="" type="radio" value="" class="checked" checked="checked" />男<input name="" class="checked" type="radio" value=""/>女</li>
+                    <li><span id="cityErr" class="tips quiet errInfo"></span><label>所在地：</label><select id="selectCountry" class="select"><option value="0">请选择</option><option value="1">美国</option></select><select id="selectRegion"  class="select"><option value="0">请选择</option><option value="1">上海</option></select><select id="selectCtiy"  class="select"><option value="0">请选择</option><option value="100">上海</option></select></li>
+                    <li><span id="professionErr" class="tips quiet errInfo"></span><label>行业：</label><select id="profession"><option value="0">请选择</option><option value="1">学生</option></select></li>
+                </ul>
+              <p><span id="serviceErr" class="tips quiet errInfo"></span><input id="userService" class="checked" type="checkbox" value="" />我已经阅读并同意<a href="javascript:void(0);">服务条款</a></p>
+              <p><input id="userEnter" type="button" class="std-button positive" value=" 接受邀请" /></p>
+            </form>
+        </div>
+        
+        
+        <div class="column-3">
+                        
+            <div class="common-block">
+            <h5 class="extra-title">宝洁同事会中的成员</h5>
+            <ul class="vcard spe-left-pd" id="userFriendsList">
+            <li class="border-bottom">
+            <a href="javascript:void(0);"><img src="../../bns/images/test_p1_s.png" width="30" height="30" alt="username"></a>
+              <dl>
+              <dt><a href="javascript:void(0);">何振宇</a></dt>
+              <dd>爱车网市场总监</dd>
+              </dl>
+            </li>
+            
+            <li class="border-bottom"><a href="javascript:void(0);"><img src="../../bns/images/test_p2_s.png" width="30" height="30" alt="username"></a>
+               <dl>
+              <dt><a href="javascript:void(0);">何研</a></dt>
+              <dd>奥美互动客户经理</dd>
+              </dl>
+            </li>
+            
+             <li class="border-bottom">
+            <a href="javascript:void(0);"><img src="../../bns/images/test_p1_s.png" width="30" height="30" alt="username"></a>
+              <dl>
+              <dt><a href="javascript:void(0);">何振宇</a></dt>
+              <dd>爱车网市场总监</dd>
+              </dl>
+            </li>
+            
+            <li class="border-bottom"><a href="javascript:void(0);"><img src="../../bns/images/test_p2_s.png" width="30" height="30" alt="username"></a>
+               <dl>
+              <dt><a href="javascript:void(0);">何研</a></dt>
+              <dd>奥美互动客户经理</dd>
+              </dl>
+            </li>
+            
+            <li> <a href="javascript:void(0);"><img src="../../bns/images/test_p4.png" width="30" height="30" alt="username" /></a>
+              <dl>
+               <dt><a href="javascript:void(0);">王石</a></dt>
+               <dd>万科集团董事长</dd>
+              </dl>
+            </li>
+            <li><a href="javascript:void(0);">查看全部群组成员</a></li>
+            </ul></div>
+        </div>
+    </div>
+</div>
+<!--#include file="footer.html"-->
+</body>
+</html>

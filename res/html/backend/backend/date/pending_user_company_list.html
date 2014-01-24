@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>Ushi Customer Service System</title>
+<link href="../css/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/ui.datepicker.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/jquery.fancybox-1.3.1.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="../js/jquery.pack.js"></script>
+<script type="text/javascript" src="../js/general.js"></script>
+<script type="text/javascript" src="../js/thickbox.js"></script>
+<script type="text/javascript" src="../js/ui.datepicker.js"></script>
+<script type="text/javascript" src="../js/jquery.pngFix.pack.js"></script>
+<script type="text/javascript" src="../js/jquery.fancybox-1.3.1.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//Activate FancyBox
+		$("#boxshow a.outbox").fancybox({
+			onStart: function(a){
+				var name = $(a).closest('td').prev().text();
+				$('#box1 input[name="searchKey"]').val(name);
+				$('#box1').find('table.datalist').find('tr:gt(0)').remove();
+				$('#box1').find('.boxTurnpage').empty()
+			}
+		});
+		
+		//Some lines for this page
+		$("div#donate").bind("click", function() {
+			$("#donate_form").submit()
+		});
+		
+		$("#comment_form").attr("action", "/fancy/add_comment"); $("#age").val('fancy'); //die spamers, die...
+	});
+
+	//List can contain mixed media too
+	//Parameter "o" ir optional and used to override settings, example: {url: "http://www.google.com", title: false,  o: {'frameWidth': 200} }
+	
+	
+	function getGroupItems(opts) {
+		jQuery.each(imageList, function(i, val) {
+	        opts.itemArray.push(val);
+	    });
+	}
+	
+</script>
+</head>
+<body>
+<div id="mainbody">
+    <!--header start-->
+    <div id="header">
+        <div class="lf"><img src="..../../bns/images/logo_1.png"/></div>
+        <div class="rf"> Operator：Christy
+            | <a href="../login.htm">Logout</a></div>
+        <div id="toppad"></div>
+    </div>
+    <!--header end-->
+    <div class="lf">
+        <div id="menu_out" class="leftmenu">
+            <ul id="menu" class="menu collapsible">
+                <li> <a href="../index.htm">Homepage</a> </li>
+                <li > <a href="#">Members</a>
+                    <ul>
+                        <li><a href="member_list.htm">Activated members</a></li>
+                        <li><a href="deactived_member_list.htm">Deactivated members</a></li>
+                        <li><a href="search_members.htm">Search members</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Contents</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Image</a></li>
+                        <li><a href="javascript:void(0);">Text content</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Filters</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Create filter</a></li>
+                        <li><a href="javascript:void(0);">Manage filter</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Groups</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Manage group quota</a></li>
+                        <li><a href="javascript:void(0);">Group list</a></li>
+                        <li><a href="group_apply.html">Create groups <span id="result_box2"><span title="">management</span></span></a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Payment</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Payment management</a></li>
+                    </ul>
+                </li>
+                <li  class="current"> <a href="#">Date</a>
+                    <ul>
+                        <li><a href="pending_user_company_list.html">Pending User Company List</a></li>
+                        <li><a href="pending_user_university_list.html">Pending User University List</a></li>
+                        <li><a href="company_list_management.html">Company List Management</a></li>
+                        <li><a href="university_list_management.html">University List Management</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="rf">
+        <div id="container">
+            <h2>Pending User Company List</h2>
+            <div style="float:right;margin-top:10px;">Pending User Company List | <a href="pending_user_university_list.html">Pending User University List</a> </div>
+            <div id="tips"><b>1~50</b> of total <b>100</b> companys</div>
+            <div style="width:100%; overflow:visible; overflow-x:auto; overflow-y:hidden; padding-bottom:15px;">
+                <form>
+                    <table width="100%" cellpadding="0" cellspacing="0" class="datalist mt10" id="boxshow">
+                        <tr>
+                            <th width="30"><strong>ID</strong></th>
+                            <th><strong>Company Which User input</strong></th>
+                            <th width="220">Action</th>
+                        </tr>
+                        <tr>
+                            <td align="left">1 </td>
+                            <td>北京百度网讯科技有限公司</td>
+                            <td height="5"><p><a href="#box1" class="outbox">Associate</a> | <a href="#">Ignore</a></p></td>
+                        </tr>
+                        <tr>
+                            <td align="left">2 </td>
+                            <td>北京百度</td>
+                            <td height="5"><p><a href="#box1" class="outbox">Associate</a> | <a href="#">Ignore</a></p></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="pagenav"><span class="cur">1</span><span><a href="#">2</a></span><span><a href="#">3</a></span><span><a href="#">4</a></span><span><a href="#">5</a></span><span><a href="#">5</a></span><span><a href="#">7</a></span><span><a href="#">8</a></span><span><a href="#">9</a></span><span><a href="#">End of Page</a></span></div>
+        </div>
+    </div>
+    <!--footer begin-->
+    <div id="footer">
+        <div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+    </div>
+</div>
+<!--footer end-->
+<div style="display:none;">
+<div id="box1" style="min-height:450px;text-align:left;">
+    <h2><strong>Associate company</strong></h2>
+    <table width="100%" border="0">
+        <tr>
+            <td  style="width:140px;"><strong>Search for companies</strong> </td>
+            <td style="width:300px;"><input name="searchKey" type="text" value="enter company name..." size="50" style="width:290px;" /></td>
+            <td ><input type="button" name="button" id="searchSubmit" value="Search" /></td>
+        </tr>
+    </table>
+    <table width="100%" border="0" class="datalist mt10">
+        <tr>
+            <th><strong>Company</strong></th>
+            <th><strong>Action</strong></th>
+        </tr>
+    </table>
+    <div class="boxTurnpage"></div>
+</div>
+
+</div>
+
+
+<script type="text/javascript">
+$(function(){
+	$('#searchSubmit').click(function(){
+		var key = $(this).closest('table').find('input[name="searchKey"]').val();
+		$.get('ajax_data.html', showSearchResult);
+	});
+});
+
+function showSearchResult( data ){
+	var tr = $('<table></table>').append(data).find('tr');
+	var box = $('#box1');
+	var table = box.find('table.datalist');
+	
+	var showResult = function(page){
+		page = page || 1;
+		start = (page - 1) * 10;
+		table.find('tr:gt(0)').remove();
+		var ctr = tr.clone();
+		for( var i = start; i < start + 10 && i < ctr.length; i++ ){
+			table.append(ctr[i]);
+		}
+		showPage(page, Math.ceil(ctr.length / 10));
+	}
+	
+	var showPage = function(curpage, pagecount){
+		var shtml = '';
+		for( var i = 1; i <= pagecount; i++ ){
+			shtml += '<a href="javascript:void(0)" style="margin:0 3px;">';
+			if( i == curpage ){
+				shtml += '<b>' + i + '</b>';
+			} else {
+				shtml += i;
+			}
+			shtml += '</a>';
+		}
+		box.find('.boxTurnpage').empty().append(shtml);
+	}
+
+	$('.boxTurnpage a', box).live('click', function(){
+		showResult(parseInt($(this).text()));
+	});
+	
+	showResult();
+}
+</script>
+
+</body>
+</html>

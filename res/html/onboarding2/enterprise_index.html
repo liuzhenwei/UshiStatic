@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>问答</title>
+<link rel="stylesheet" href="../../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../answers/css/all.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../../bns/css/onboarding.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../data/lang.js"></script>
+<script type="text/javascript" src="../../../common/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var box=$(".section");
+	var i= 0;
+	var tm=null;
+	var number=box.length;
+	function next(){
+		clearTimeout(tm);
+		box.filter(":visible").css("display","none");
+		$(".iconUl02 li").eq(i).removeClass("on");
+		i==number-1?i=0:i=i+1;
+		$(".pre").css("display","block");
+		box.eq(i).css("display","block");
+		$(".iconUl02 li").eq(i).addClass("on");
+		$(".iconUl02 li").eq(i-1).addClass("over");
+		if(i!=number-1){
+			tm = setTimeout(next, 6000);
+		}
+		else{
+			$(".next").css("display","none")
+		}
+	}
+	$(".next a").click(function(){
+		next();
+	});
+	$(".pre a").click(function(){
+		clearTimeout(tm);
+		box.filter(":visible").css("display","none");
+		$(".iconUl02 li").eq(i).removeClass("on");
+		i==0?i=number-1:i=i-1;
+		box.eq(i).css("display","block");
+		$(".iconUl02 li").eq(i).addClass("on");
+		$(".iconUl02 li").eq(i+1).removeClass("over");
+		if(i==number-1){
+			$(".next").css("display","none")
+		}
+		else{
+			$(".next").css("display","block")
+		}
+		if(i==0){
+			$(".pre").css("display","none")
+		}
+		else{
+			$(".pre").css("display","block")
+		}
+		tm = setTimeout(next, 2000);
+	});
+	tm = setTimeout(next, 6000);
+});
+</script>
+</head>
+
+<body id="page_public">
+<div id="wrapper" class="container"> 
+	<!--#include virtual="../header.html"-->
+	<div id="main">
+		<div class="onboard">
+			<ul class="topUl">
+				<li><a href="#">重新选择职业角色</a></li>
+				<li><a href="http://www.ushi.com/index.jhtml">进入首页</a></li>
+			</ul>
+			<ul class="iconUl">
+				<li class="pre" style="display: none;"><a href="javascript:void(0);"></a></li>
+				<li class="next"><a href="javascript:void(0);"></a></li>
+			</ul>
+			<div class="section clearfix"><img src="../../../bns/images/onboarding/estp_photo02.png" alt="" class="float-left" />
+				<div class="boxr">
+					<h4>拓展人脉，获得商务合作机会</h4>
+					<p>在优士，完整而真实的<a href="http://www.ushi.com/user/profile.jhtml" target="_blank">职业档案</a>是您与他人建立联系时获取对方信任的基础，也有助于您的同行或潜在合作对象找到您。</p>
+					<p><a href="http://www.ushi.com/sns/sns!viewExtendConnection.jhtml" target="_blank">人脉拓展</a>工具能帮您构建人脉网络，加入与您行业相关的<a href="http://www.ushi.com/group/index.jhtml" target="_blank">群组</a>，参与商务<a href="http://www.ushi.com/events" target="_blank">活动</a>可以结识更多的同行。通过朋友的引荐，您将可以拓展更加广阔的人脉圈，获得更多的合作机会。</p>
+				</div>
+			</div>
+			<div class="section clearfix" style="display:none;"> <img src="../../../bns/images/onboarding/estp_photo03.png" alt="" class="float-left" />
+				<div class="boxr">
+					<h4>招聘高素质的人才</h4>
+					<p>优士网是一个招募人才的极佳平台，您不但可以在<a href="http://www.ushi.com/jobs" target="_blank">职业频道</a>免费发布职位信息进行人才招聘，还可以通过<a href="#" target="_blank">高级搜索</a>精确寻找您的目标候选人。</p>
+					<p>在优士，<a href="http://www.ushi.com/feed/feed!list.jhtml" target="_blank">微博</a>、<a href="http://www.ushi.com/group/index.jhtml" target="_blank">群组</a>和<a href="http://www.ushi.com/wenda/index.jhtml" target="_blank">优问</a>是会员展现自我、发表专业观点和行业智慧的舞台，您一定会发现很多高素质的人才隐藏其中，他们也许正是您苦苦找寻的候选人呢！ </p>
+					<p class="quiet ptext">有很多公司和猎头通过优士找到了大量高素质的人才，看看他们的<a href="http://www.ushi.com/doc.jhtml?key=success_stories" target="_blank">成功故事</a>吧！</p>
+				</div>
+			</div>
+			<div class="section clearfix" style="display:none;"> <img src="../../../bns/images/onboarding/estp_photo04.png" alt="" class="float-left" />
+				<div class="boxr">
+					<h4>宣传公司产品和服务 </h4>
+					<p>在优士，您还可以利用<a href="http://www.ushi.com/feed/feed!list.jhtml" target="_blank">微博</a>和<a href="http://www.ushi.com/group/index.jhtml" target="_blank">群组</a>介绍您的产品和服务，通过人脉的快速传播可以让更多的人了解它们，起到绝佳的产品宣传效果。<span style="display: block; margin-top: 50px;" class="a-right"> <a href="http://www.ushi.com/index.jhtml" class="special-btn">结束指南，进入首页</a></span></p>
+				</div>
+			</div>
+			<ul class="iconUl02">
+				<li class="on"><a href="javascript:void(0);"></a></li>
+				<li><a href="javascript:void(0);"></a></li>
+				<li><a href="javascript:void(0);"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--#include virtual="../footer.html"--> 
+</div>
+</body>
+</html>

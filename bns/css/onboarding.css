@@ -1,0 +1,194 @@
+﻿@charset "utf-8";
+#main .onboard {
+	padding: 27px 96px 0;
+	background: url(../images/onboarding/bg_common.png) no-repeat left top;
+	text-align: left;
+}
+
+#main .onboard .topUl {
+	margin-bottom: 48px;
+	text-align: right;
+}
+
+#main .onboard .topUl li {
+	display: inline;
+	margin: 0 0 0 20px;
+}
+
+#main .onboard .topUl li a {
+	color:#0066aa;
+	font-size: 12px;
+}
+
+#main .onboard ul.iconUl li {
+	padding-top: 18px;
+}
+
+#main .onboard ul.iconUl li.pre {
+	margin-left: -40px;
+	width: 40px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	zoom:1;
+	display: inline;
+}
+
+#main .onboard ul.iconUl li.pre a {
+	background: url(../images/onboarding/icon02.png) no-repeat left center;
+	width: 40px;
+	height: 104px;
+	display: block;
+}
+
+#main .onboard ul.iconUl li.next {
+	margin-right: -40px;
+	width: 40px;
+	float: right;
+	overflow: hidden;
+	zoom: 1;
+	display: inline;
+}
+
+#main .onboard ul.iconUl li.next a {
+	background: url(../images/onboarding/icon02.png) no-repeat right center;
+	width: 40px;
+	height: 104px;
+	display: block;
+}
+
+#main .onboard .section {
+	width: 745px;
+	padding-right: 17px;
+	min-height: 300px;
+	margin: 0 auto;
+}
+
+#main .onboard .section h4 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+#main .onboard .section p {
+	margin-bottom: 15px;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+#main .onboard .section p.ptext {
+	font-size: 12px;
+	padding-top: 35px;
+}
+
+#main .onboard .section .boxr {
+	float: right;
+	width: 430px;
+}
+
+#main .onboard .iconUl02 {
+	padding: 20px 0 20px;
+	text-align: center;
+	clear: both;
+}
+
+#main .onboard .iconUl02 li {
+	margin: 0 10px;
+	display: inline;
+}
+
+#main .onboard .iconUl02 li a {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: url(../images/onboarding/icon01.png) no-repeat right center;
+	cursor: default;
+}
+
+#main .onboard .iconUl02 li.over a {
+	background: url(../images/onboarding/icon01.png) no-repeat left center;
+	cursor: default;
+}
+
+#main .onboard .iconUl02 li.on a {
+	background: url(../images/onboarding/icon01.png) no-repeat center center;
+	cursor: default;
+}
+
+#main .onboard .peo_section {
+	padding: 53px 25px 0 33px;
+}
+
+#main .onboard .peo_section p.text {
+	margin-bottom: 30px;
+}
+
+#main .onboard .peo_section .boxr {
+	width: 555px;
+	float: right;
+}
+
+#main .onboard .peo_section .boxr .inner {
+	padding: 10px 10px 10px 20px;
+	width: 431px;
+	background: url(../images/onboarding/bg_box02.png) no-repeat left bottom;
+}
+
+#main .onboard .peo_section .boxr h4 {
+	font-size: 14px;
+	color: #333;
+}
+
+#main .onboard .peo_section .boxr .inner ul{
+	margin-bottom: 10px;
+}
+
+#main .onboard .peo_section .boxr .inner ul li {
+	padding: 5px 0;
+	float: left;
+	width: 140px;
+}
+
+.okbtn {
+	clear: both;
+}
+
+.okbtn a {
+	padding: 0 20px;
+	background:#c5c5c5 url(../images/onboarding/bg_btn.png) repeat-x left top;
+	border: 1px solid #afafaf;
+	clear: both;
+	display: inline-block;
+	font-size: 13px;
+	color: #333;
+	line-height: 24px;
+}
+
+.okbtn a:hover {
+	text-decoration: none;
+}
+
+.help_inner{
+	width: 424px;
+	background: url(../images/onboarding/bg_help02.png) no-repeat left bottom;
+}
+
+.help_inner .small_inner{
+	padding: 30px 40px 30px 25px;
+	background: url(../images/onboarding/bg_help01.png) no-repeat left top;
+}
+
+.help_inner dl dt{
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.help_inner dl dd{
+	font-size: 13px;
+}
+
+.help_inner dl ul li{
+	padding: 5px 0 5px 25px;
+	background: url(../images/right_icon01.png) no-repeat left center;
+	
+}

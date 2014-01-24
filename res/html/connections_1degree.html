@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>人脉</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/widget.js"></script>
+<script type="text/javascript" src="/js/friendsSelect.js"></script>
+<script type="text/javascript" src="/js/connections.js"></script>
+</head>
+
+<body id="page_member">
+<div id="wrapper" class="container">
+    <!--#include file="header.html"-->
+    <div id="main">
+      <div class="channel-tit"><h3>我的人脉</h3></div> 
+      <div class="tabs-common clearfix">
+          <ul>
+          <li class="current"><a href="connections_1degree.html">一度人脉</a></li>
+          <li><a href="#">所有人脉 </a></li>
+          <li><a href="connections_follow.html">关注列表</a></li>
+          <li><a href="connections_memo.html">我的备忘</a></li>
+          </ul>
+      </div>
+      
+      <div class="notice">
+      	您最多可以与5000个优士会员成为一度关系，目前已经达到上限，不能再加入新的一度人脉。
+      	<a id="limit_friends" href="javascript:void(0);" class="spe-left boldface">了解更多</a>
+      	<div id="limit_friends_tips" style="display:none;">为了保证优士网社区的质量，提高人脉关系的真实性，同时可以帮助您获得更加真实有用的人脉价值。为此优士网对人脉数量做了一定的限制。请整理你的一度人脉。</div>
+      </div>
+      <!-- connection content -->    
+      <div id="conn_1_degree" class="conn-main clearfix">
+         <!-- left -->
+         <div class="column-1">
+              <div class="conn-schr">
+              <input name="" type="text" class="input-conn" value="查找好友" />
+              </div>
+          <div class="conn-class-block border-bottom">
+              <h5>分组</h5>
+              <ul>
+              <li class="current"><a href="#">设计师圈子</a></li>
+              <li><a href="#">好友</a></li>
+              <li><a href="#">不太认识</a></li>
+              <li><a href="#">Google</a></li>
+              </ul>
+              </div>
+              
+              <div class="conn-class-block border-bottom">
+              <h5>城市</h5>
+              <ul>
+              <li class="action"><a href="#">北京</a> <a class="act-edit" href="javascript:void(0);" title="编辑"><span class="hide">编辑</span></a><a class="act-del" href="javascript:void(0);" title="删除"><span class="hide">删除</span></a></li>
+              <li><a href="#">上海</a></li>
+              <li><a href="#">深圳</a></li>
+              </ul>
+              </div>
+              
+              <div class="conn-class-block border-bottom">
+              <h5>行业</h5>
+              <ul>
+              <li><a href="#">互联网</a></li>
+              <li><a href="#">软件</a></li>
+              <li><a href="#">文化教育</a></li>
+              </ul>
+              </div>
+         
+         </div> 
+         <!-- main -->           
+         <div class="column-2-2">
+         
+          <div class="extra-title clearfix">
+              <div class="tit-inner-l"> <h4>设计师圈子</h4> 1-20 / 共528人</div>
+              <div class="tit-inner-r"><ul>
+               <li><a href="javascript:openSelectFriends()">管理分组成员</a></li>
+               <li class="divide"><a href="#" id="createFriendsGroup">创建新分组</a></li>
+               <li><a class="link-menu" href="#">按最近活跃度排序</a></li>
+               </ul></div>
+           </div>
+            
+           <!--connections list -->
+           <div id="connections_list">
+           <div class="list-box">
+             <ul><li class="col-1 vcard v-50">
+                  <a href="profile_view.html"><img src="../../bns/images/test_p2.png" width="50" height="50" alt="username"></a>
+                  <dl><dt><a href="profile_view.html">何振宇</a><span class="grade-vip" title="付费会员"></span><span class="migs_smailestIco"></span></dt>
+               <dd>天极网高级设计</dd>
+               <dd class="quiet">中国 北京</dd></dl>
+             </li>
+             <li class="col-2"><a class="grade-1" href="#">1</a></li>
+             <li class="col-3"><a class="link-menu" href="#">设计师圈子</a></li>
+             <li class="col-4"><a class="link-mail" href="#">发直邮</a> <br />  <a class="link-del" href="#">删除</a></li>
+             </ul>
+           </div> 
+           
+           <div class="list-box">
+             <ul>
+               <li class="col-1 vcard v-50">
+                  <a href="profile_view.html"><img src="../../bns/images/test_p1.png" width="50" height="50" alt="username"></a>
+                  <dl>
+                    <dt><a href="profile_view.html">徐陆云</a></dt>
+                 <dd>微软中国高级经理 </dd>
+                 <dd class="quiet">中国 北京</dd></dl>
+             </li>
+             <li class="col-2"><a class="grade-2" href="#">10</a></li>
+             <li class="col-3"><a class="link-menu" href="#">设计师圈子</a></li>
+             <li class="col-4"><a class="link-mail" href="#">发直邮</a> <br />  <a class="link-del" href="#">删除</a></li>
+             </ul>
+           </div> 
+           
+           <div class="list-box">
+             <ul><li class="col-1 vcard v-50">
+                  <a href="#"><img src="../../bns/images/test_p3.png" width="50" height="50" alt="username"></a>
+                  <dl><dt><a href="#">章百合</a><span class="migs_smailestIco"></span></dt>
+                  <dd>优士网网络编辑 </dd>
+                  <dd class="quiet">中国 上海</dd></dl>
+             </li>
+             <li class="col-2"><a class="grade-3" href="#">100</a></li>
+             <li class="col-3"><a class="link-menu" href="#">设计师圈子</a></li>
+             <li class="col-4"><a class="link-mail" href="#">发直邮</a> <br />  <a class="link-del" href="#">删除</a></li>
+             </ul>
+           </div> 
+           
+           <div class="list-box">
+             <ul><li class="col-1 vcard v-50">
+                  <a href="#"><img src="../../bns/images/test_p4.png" width="50" height="50" alt="username"></a>
+                  <dl><dt><a href="#">王石</a></dt>
+                  <dd>万科地产董事局主席 </dd>
+                  <dd class="quiet">中国 深圳</dd></dl>
+             </li>
+             <li class="col-2"><a class="grade-4" href="#">1000</a></li>
+             <li class="col-3"><a class="link-menu" href="#">设计师圈子</a></li>
+             <li class="col-4"><a class="link-mail" href="#">发直邮</a> <br />  <a class="link-del" href="#">删除</a></li>
+             </ul>
+           </div> 
+           
+           <div class="list-box">
+             <ul><li class="col-1 vcard v-50">
+                  <a href="#"><img src="../../bns/images/test_p2.png" width="50" height="50" alt="username"></a>
+                  <dl><dt><a href="#">何振宇</a></dt>
+                  <dd>天极网高级设计师</dd>
+                  <dd class="quiet">中国 上海</dd></dl>
+             </li>
+             <li class="col-2"><a class="grade-1" href="#">1</a></li>
+             <li class="col-3"><a class="link-menu" href="#">设计师圈子</a></li>
+             <li class="col-4"><a class="link-mail" href="#">发直邮</a> <br />  <a class="link-del" href="#">删除</a></li>
+             </ul>
+           </div> 
+           
+           <div class="list-box">
+             <ul>
+               <li class="col-1 vcard v-50">
+                  <a href="#"><img src="../../bns/images/test_p1.png" width="50" height="50" alt="username"></a>
+                  <dl>
+                    <dt><a href="#">徐陆云</a></dt>
+                 <dd>微软中国高级经理  <span class="spe-left">中国 北京</span></dd></dl>
+             </li>
+             <li class="col-2"><a class="grade-4" href="#">1213</a></li>
+             <li class="col-3"><a class="link-menu" href="#">设计师圈子</a></li>
+             <li class="col-4"><a class="link-mail" href="#">发直邮</a> <br />  <a class="link-del" href="#">删除</a></li>
+             </ul>
+           </div> 
+           
+           <div class="list-box">
+             <ul><li class="col-1 vcard v-50">
+                  <a href="#"><img src="../../bns/images/test_p3.png" width="50" height="50" alt="username"></a>
+                  <dl><dt><a href="#">章百合</a></dt>
+                  <dd>优士网网络编辑  <span class="spe-left">中国 上海</span></dd></dl>
+             </li>
+             <li class="col-2"><a class="grade-3" href="#">100</a></li>
+             <li class="col-3"><a class="link-menu" href="#">设计师圈子</a></li>
+             <li class="col-4"><a class="link-mail" href="#">发直邮</a> <br />  <a class="link-del" href="#">删除</a></li>
+             </ul>
+           </div> 
+           
+           <div class="list-box">
+             <ul><li class="col-1 vcard v-50">
+                  <a href="#"><img src="../../bns/images/test_p4.png" width="50" height="50" alt="username"></a>
+                  <dl><dt><a href="#">王石</a></dt>
+                  <dd>万科地产董事局主席  <span class="spe-left">中国 深圳</span></dd></dl>
+             </li>
+             <li class="col-2"><a class="grade-4" href="#">1000</a></li>
+             <li class="col-3"><a class="link-menu" href="#">设计师圈子</a></li>
+             <li class="col-4"><a class="link-mail" href="#">发直邮</a> <br />  <a class="link-del" href="#">删除</a></li>
+             </ul>
+           </div> 
+           </div>
+           
+          <div class="pages">
+          <a class="current" href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          ...
+          <a href="#">31</a>
+          <a class="next" href="#">下一页</a>
+          </div>
+               
+        </div>
+      </div>
+          
+         
+
+          
+  </div>     
+</div>
+<!--#include file="footer.html"-->
+
+<div id="friend-selector" style="display:none;"></div>
+
+<div id="friendSelectList" class="mult-selector" style="display:none;">
+	<div class="fslOpenfriendSelect filter-drop"><a class="icon-btn-down" href="javascript:void(0)"></a></div>
+    <div class="fslSelectedList friend-selector-selected">
+        <input type="text" value="选择一度朋友..." />
+    </div>
+</div>
+
+<script type="text/javascript">
+function openSelectFriends(){
+	$('#friend-selector').friendSelect({
+		url: 'data/friends.json',
+		prompt: '最多只能选择5个联系人',
+		selectedTitle: 'group',
+		height: 300,
+		inviteMax: 5
+	}).popupWin({
+		width: 760,
+		title: 'test fs',
+		reserve: true,
+		beforeclose: function(){
+			$(this).friendSelect('refresh');
+		}
+	});
+}
+
+$(function(){
+	$('#friendSelectList').friendSelectList({
+		url: 'data/friends.json',
+		inviteMax: 5,
+		fsParam: {
+			prompt: '最多只能选择5个联系人',
+			height: 300,
+			width: 760
+		}
+	});	
+});
+</script>
+
+</body>
+</html>

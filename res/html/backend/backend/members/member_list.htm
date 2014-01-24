@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>优士网客服系统</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/ui.datepicker.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../js/jquery.pack.js"></script>
+<script src="../js/general.js"></script>
+<script src="../js/thickbox.js"></script>
+<script src="../js/ui.datepicker.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+  <div class="lf">  
+		<div id="menu_out" class="leftmenu">	
+			<ul id="menu" class="menu collapsible">
+				<li>
+					<a href="../index.htm">Homepage</a>
+				</li>
+				<li class="current">
+					<a href="#">Members</a>
+					<ul>
+						<li><a href="member_list.htm">Uncensored members</a></li>
+						<li><a href="deactived_member_list.htm">Deactived members</a></li>
+						<li><a href="search_members.htm">Search members</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Contents</a>
+					<ul>
+						<li><a href="javascript:void(0);">Image</a></li>
+						<li><a href="javascript:void(0);">Text content</a></li>
+					</ul>
+				</li>	
+				<li>
+					<a href="#">Filters</a>
+					<ul>
+						<li><a href="javascript:void(0);">Create filter</a></li>
+						<li><a href="javascript:void(0);">Manage filter</a></li>	
+					</ul>
+				</li>	
+				<li>
+					<a href="#">Groups</a>
+					<ul>
+						<li><a href="javascript:void(0);">Manage group quota</a></li>
+						<li><a href="javascript:void(0);">Group list</a></li>	
+					</ul>
+				</li>			
+				<li>
+					<a href="#">Payment</a>
+					<ul>
+						<li><a href="javascript:void(0);">Payment management</a></li>
+					</ul>
+				</li>				
+			</ul>
+	  </div>
+  </div>  
+  
+  <div class="rf">
+	  <div id="container">
+	  <h2>Members to be censored</h2>
+	  	<div style="float:right;margin-top:10px;">Show <b>All uncensored members</b> | <a href="deactived_member_list.htm">Only deactived members</a> </div>
+		<div id="tips"><b>1~20</b> of total <b>200</b> uncensored members</div>
+	 	<div style="width:100%; overflow:visible; overflow-x:auto; overflow-y:hidden; padding-bottom:15px;">
+			<form>
+			<div class="controlbar"><input type="submit" value="Update"></div>
+			<table width="100%" cellpadding="0" cellspacing="0" class="datalist mt10">
+			<tr>
+				<th>Photo</th>
+				<th>Description</th>
+				<th>Action</th>
+			</tr>
+		
+			<tr>
+				<td width="150" align="center">
+				<a href="view_member_profile.htm?&KeepThis=true&TB_iframe=true&height=400&width=700" class="thickbox"><img src="http://www.ushi.cn/images/face_120.png" width="80" border=0></a>
+				<br/><span id="username"><a href="view_member_profile.htm?&KeepThis=true&TB_iframe=true&height=400&width=700" class="thickbox">张三</a> </span><span class="normal"><span class="status_normal">[Normal]</span></span>
+				<div class="extra">zhangsan@gmail.com</div>   Updated 2009/12/31<br/> Joined 2009/12/31</div>
+				</td>
+				<td>
+					<table class="userinfo" width="100%" cellpadding=0 cellspacing=0>				
+						<tr>
+							<td width="100"><b>Biz Headline</b></td>
+							<td>某大公司业务经理</td>
+						</tr>
+						<tr>
+							<td><b>Working Exp.</b></td>
+							<td>
+								<div>公司1/职位1</div>
+								<div>公司2/职位2</div>
+								<div>公司3/职位3</div>
+							</td>
+						</tr>
+						<tr>
+							<td><b>Education Exp.</b></td>
+							<td>
+								<div>学校1/专业1</div>
+								<div>学校2/专业2</div>
+								<div>学校3/专业3</div>
+							</td>
+						</tr>
+						<tr>
+							<td><b>Summary</b></td>
+							<td>我工作很多年了，一直很努力，就是领导不给我涨工资</td>
+						</tr>
+						<tr></tr>
+					</table>
+				<td>
+				<input type="radio" name="a" checked> Approve<br/>
+				<input type="radio" name="a"> Deactive <select name="deac_reasons"><option>用户资料不完整</option></select><br/>
+				<input type="radio" name="a"> Reactive<br/>
+				<input type="radio" name="a"> Delete
+				</td>
+			</tr>
+			<tr>
+				<td width="150" align="center">
+				<a href="view_member_profile.htm?&KeepThis=true&TB_iframe=true&height=400&width=700" class="thickbox"><img src="http://www.ushi.cn/images/face_120.png" width="80" border=0></a>
+				<br/><span id="username"><a href="view_member_profile.htm?&KeepThis=true&TB_iframe=true&height=400&width=700" class="thickbox">张三</a> </span><span class="normal"><span class="status_deac">[Deactived]</span></span>
+				<div class="extra">zhangsan@gmail.com</div>   Updated 2009/12/31<br/> Joined 2009/12/31</div>
+				</td>
+				<td>
+					<table class="userinfo" width="100%" cellpadding=0 cellspacing=0>				
+						<tr>
+							<td width="100"><b>Biz Headline</b></td>
+							<td>某大公司业务经理</td>
+						</tr>
+						<tr>
+							<td><b>Working Exp.</b></td>
+							<td>
+								<div>公司1/职位1</div>
+								<div>公司2/职位2</div>
+								<div>公司3/职位3</div>
+							</td>
+						</tr>
+						<tr>
+							<td><b>Education Exp.</b></td>
+							<td>
+								<div>学校1/专业1</div>
+								<div>学校2/专业2</div>
+								<div>学校3/专业3</div>
+							</td>
+						</tr>
+						<tr>
+							<td><b>Summary</b></td>
+							<td>我工作很多年了，一直很努力，就是领导不给我涨工资</td>
+						</tr>
+						<tr></tr>
+					</table>
+				<td>
+				<input type="radio" name="b" checked> No Change<br/>
+				<input type="radio" name="b"> Reactive<br/>
+				<input type="radio" name="b"> Delete
+				</td>
+			</tr>			
+		
+			</table>	
+			<div class="controlbar"><input type="submit" value="Update"></div>
+			</form>
+		</div>
+		<div class="pagenav"><span class="cur">1</span><span><a href="#">2</a></span><span><a href="#">3</a></span><span><a href="#">4</a></span><span><a href="#">5</a></span><span><a href="#">5</a></span><span><a href="#">7</a></span><span><a href="#">8</a></span><span><a href="#">9</a></span><span><a href="#">末页</a></span></div>
+      </div>
+  </div>
+  <!--footer begin-->
+  <div id="footer">
+	 	<div id="copyright">
+	 	Copyright &copy; 2010 Ushi.cn
+	 	</div>
+ 	</div> 
+	</div>
+  <!--footer end-->
+</body>
+</html>

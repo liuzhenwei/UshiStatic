@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/ui.datepicker.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery.pack.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/ui.datepicker.js"></script>
+</head>
+
+<body>
+<div id="mainbody"> 
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf"> Operater：Chirsty
+			| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+	
+	<div id="container">
+		<h2>优士名片识别后台</h2>
+		<div class="search_area">
+			<form>
+				快速查询:
+				<input type="text"  value="关键字" />
+				<select>
+					<option value="">上传者</option>
+					<option value="">操作人</option>
+				</select>
+				&nbsp;&nbsp;
+				<select>
+					<option value="">待识别</option>
+					<option value="">正在识别</option>
+					<option value="">识别成功</option>
+					<option value="">识别失败</option>
+				</select>
+				<span style="margin-left:15px;">日期:</span>
+				<input type="text" name="" size="15" datepicker="y" />
+				-
+				<input type="text" name="" size="15" datepicker="y" />
+				&nbsp;&nbsp;
+				<input type="submit" value="&nbsp;查询&nbsp;" />
+			</form>
+		</div>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-bottom: 1px solid #ccc; margin: 10px 0;">
+			<tr>
+				<td style="width:80px; padding: 5px; text-align:center; background: #ddd;"><a href="#">名片识别</a></td>
+				<td style="width:5px;">&nbsp;</td>
+				<td style="width:80px; padding: 5px; text-align:center; background: #eee;"><a href="#">待识别</a></td>
+				<td style="width:5px;">&nbsp;</td>
+				<td style="width:80px; padding: 5px; text-align:center; background: #eee;"><a href="#">正在识别</a></td>
+				<td style="width:5px;">&nbsp;</td>
+				<td style="width:80px; padding: 5px; text-align:center; background: #eee;"><a href="#">识别成功</a></td>
+				<td style="width:5px;">&nbsp;</td>
+				<td style="width:80px; padding: 5px; text-align:center; background: #eee;"><a href="#">全部</a></td>
+				<td align="right"><span style="margin-right:15px;">当前操作：刘明</span>
+					今日识别<b>289</b>张，成功<b>200</b>张，失败<b>89</b>张
+					<span style="margin:auto 15px;"><a href="#">数据统计</a></span>
+				</td>
+			</tr>
+		</table>
+		<table width="100%" border="1" bordercolor="#ccc" cellspacing="0" cellpadding="0" class="datalist mt10">
+			<tr>
+				<td width="60%" style="vertical-align:top">
+					<p><span style="margin-right:20px;">名片序列：24</span>
+						<span style="margin-right:20px;">上传人：刘茜茜</span>
+						<span style="margin-right:20px;">上传时间：2012-3-22  12:22:47</span>
+					</p>
+					<p><img src="" alt="" /></p>
+				</td>
+				<td width="40%" style="vertical-align:top">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="userinfo">
+						<col width="20%" />
+						<col width="80%" />
+						<tr>
+							<td colspan="2"><input type="submit" value=" 无法识别 " style="width:100%;" /></td>
+						</tr>
+						<tr>
+							<td>手机:</td>
+							<td><input type="text" value="" size="30" /></td>
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td><input type="text" value="" size="30" /></td>
+						</tr>
+						<tr>
+							<td>姓名：</td>
+							<td><input type="text" value="" size="10" />
+								<input type="text" value="" size="20" /></td>
+						</tr>
+						<tr>
+							<td>公司：</td>
+							<td><input type="text" value="" size="32" /></td>
+						</tr>
+						<tr>
+							<td>职位：</td>
+							<td><input type="text" value="" size="32" /></td>
+						</tr>
+						<tr>
+							<td>电话：</td>
+							<td><div><select>
+										<option>手机：</option>
+										<option>住宅：</option>
+										<option>办公：</option>
+									</select>
+									<input type="text" value="" size="20" />
+								</div>
+								<a href="#">增加</a>
+							</td>
+						</tr>
+						<tr>
+							<td>传真：</td>
+							<td><input type="text" value="" size="32" /></td>
+						</tr>
+						<tr>
+							<td>地址：</td>
+							<td><input type="text" value="" size="32" /></td>
+						</tr>
+						<tr>
+							<td>邮编：</td>
+							<td><input type="text" value="" size="32" /></td>
+						</tr>
+						<tr>
+							<td>网址：</td>
+							<td><input type="text" value="" size="32" /></td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align: center;"><input type="submit" value=" 识别完成 " />
+								<label style="margin-left:10px;"><input type="checkbox" />
+								继续识别下一张</label>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<!--footer begin-->
+<div id="footer">
+	<div id="copyright"> Copyright &copy; 2010 Ushi.cn </div>
+</div>
+</div>
+<!--footer end-->
+</body>
+</html>

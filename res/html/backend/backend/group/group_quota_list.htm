@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="cn" />
+<title>优士网客服系统</title>
+<link href="../../../../../common/css/backend/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../../../../common/css/backend/redmond/jquery-ui-1.8.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../../../../../common/js/backend/jquery-1.4.2.min.js"></script>
+<script src="../../../../../common/js/backend/thickbox.js"></script>
+<script src="../../../../../common/js/backend/jquery-ui-1.8.5.min.js"></script>
+<script src="../../../../../common/js/backend/general.js"></script>
+</head>
+
+<body>
+<div id="mainbody">
+	<!--header start-->
+	<div id="header">
+		<div class="lf"><img src="../images/logo_1.png"/></div>
+		<div class="rf">
+		Operater：Chirsty
+		| <a href="../login.htm">Logout</a></div>
+		<div id="toppad"></div>
+	</div>
+	<!--header end-->
+
+	<div class="lf">	
+		<div id="menu_out" class="leftmenu">	
+			<!-- 以下js代码为调用菜单代码，不要直接集成到jsp中。菜单代码在menu.html中 -->
+			<script type="text/javascript">
+				$(function(){
+					$.get('../menu.html', function(data){
+						$('#menu_out').append(data);
+						initMenus();
+					});
+				});
+			</script>
+		</div>
+	</div>	
+	
+	<div class="rf">
+	<div id="container">
+		<h2>Group quota list</h2>
+		<table	width="100%" cellpadding="0" cellspacing="0" class="datalist mt10">
+		<tr>
+			<th>Name</th>
+			<th>Quota granted</th>
+			<th>Quota left</th>
+		</tr>
+		<tr>
+			<td><a href="http://www.ushi.cn/u/2754">张月</a></td>
+			<td>5</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td><a href="http://www.ushi.cn/u/2754">张月</a></td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td><a href="http://www.ushi.cn/u/2754">张月</a></td>
+			<td>1</td>
+			<td>1</td>
+		</tr>		
+		</table>
+		</div>
+	</div>
+</div>
+	<!--footer begin-->
+	<div id="footer">
+	 	<div id="copyright">
+	 	Copyright &copy; 2010 Ushi.cn
+	 	</div>
+ 	</div> 
+	</div>
+	<!--footer end-->
+</body>
+</html>

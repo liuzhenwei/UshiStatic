@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>您可能认识</title>
+<link rel="stylesheet" href="../../common/css/layout.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="../../bns/css/bns.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript" src="data/lang.js"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+
+</head>
+
+
+<script>
+$(function(){
+	$('.showFriends').bind('click',function(){
+		$('.showFriends').removeClass('showFriendsel')
+		$(this).addClass('showFriendsel')
+		var left = $(this).offset().left-50
+		var top = $(this).offset().top+30
+		$('.fl-outer').css({'display':'block','left':left,'top':top})
+	})
+	
+	$('.showmore').bind('click',function(){
+		if($(this).prev('.hidden_item').hasClass('opened')){
+			$(this).html('显示更多')
+			$(this).prev('.hidden_item').hide('slow');
+			$(this).prev('.hidden_item').removeClass('opened')
+		
+		}else{
+			$(this).prev('.hidden_item').show('slow');
+			$(this).prev('.hidden_item').addClass('opened')
+			$(this).html('')
+		}
+	})
+	
+	$('.list-box').hover(function(){
+		$(this).addClass('current')
+	},function(){
+		$(this).removeClass('current')
+	});
+	
+	$('body').bind('click',function(event){
+		var event = event || window.event
+		var src = event.srcElement || event.target;
+		if((src.className.indexOf('fl-outer')==-1)&&(src.className.indexOf('showFriends')==-1)){
+			$('.fl-outer').hide();
+		}
+	})
+	
+	$('.link-del').bind('click',function(){
+		$(this).closest('.list-box').slideUp('slow',function(){
+			$(this).closest('.list-box').remove();
+		})
+	})
+	
+	
+	
+})
+
+</script>
+
+<body id="page_member">
+<div id="wrapper" class="container">
+    <!--#include file="header.html"-->
+    <div id="main">
+
+      <div class="tabs-common clearfix">
+          <ul id="invite-status-btn">
+	          <li tab="0"><a href="invite_home.html" >邀请朋友加入</a></li>
+				<li><a href="invite_you_may_know.html">您可能认识</a></li>
+				<li class="current"><a href="invite_you_mayhope_know.html">你可能希望认识</a></li>
+          </ul>
+          <a class="float-right margin-top05e spe-right2" href="#">查看邀请历史记录</a>
+      </div> 
+       	<div class="column-2-1 column_int1 border-bottom ">
+       		<div>
+       			<span>所在地点</span>
+       			<label class="quiet"><input type="checkbox" checked name="" />所有地点</label>
+       			<label class="quiet margin-top05e"><input type="checkbox" name="" />北京(10)</label>
+       			<label class="quiet margin-top05e"><input type="checkbox" name="" />上海(18)</label>
+       			<label class="quiet margin-top05e"><input type="checkbox" name="" />广州(15)</label>
+       			<label class="quiet margin-top05e hidden_item" style="display:none"><input type="checkbox" name="" />江苏(100)</label>
+       			<a href="#" class="margin-top float-left margin-bottom showmore">显示更多</a>
+       		</div>
+       		
+       		<div>
+       			<span>行业类别</span>
+       			<label class="quiet"><input type="checkbox" checked name="" />所有</label>
+       			<label class="quiet margin-top05e"><input type="checkbox" name="" />互联网(10)</label>
+       			<label class="quiet margin-top05e"><input type="checkbox" name="" />生物工程(18)</label>
+       			<label class="quiet margin-top05e"><input type="checkbox" name="" />计算机软件(15)</label>
+       			<label class="quiet margin-top05e hidden_item" style="display:none"><input type="checkbox" name="" />医疗(43)</label>
+       			<a href="#" class="margin-top float-left margin-bottom showmore">显示更多</a>
+       		</div>
+       		
+       		<div  class="margin-bottom">
+       			<span>人脉距离</span>
+       			<label class="quiet"><input type="checkbox" checked name="" />所有人脉距离</label>
+       			<label class="quiet margin-top05e"><input type="checkbox" name="" />2度人脉(10)</label>
+       			<label class="quiet margin-top05e"><input type="checkbox" name="" />群组成员(18)</label>
+       			<label class="quiet margin-top05e"><input type="checkbox" name="" />3度及以上(15)</label>
+       		</div>
+       		
+       	</div>
+        <div class="column-2-2 column_int2">
+			<p class="extra-title">
+				共417人|1-10
+			</p>
+
+			<div id = "intr_List">
+			    <div class="list-box">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-3" title="3度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    <div class="list-box">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-3" title="3度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    <div class="list-box  current">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-3" title="3度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    <div class="list-box">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-3" title="3度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    <div class="list-box">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-3" title="3度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    <div class="list-box">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-1" title="1度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    <div class="list-box">
+			      <ul>
+				      <li class="col-1 vcard v-50">
+				        <a href='#'><img id="avatar-26090" src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" complete="complete"/></a><dl>
+				        <dt><a href="#">libby</a>
+				        <span class="degree-2" title="2度人脉"></span>
+				        </dt>
+				        <dd>服装设计 设计师</dd>
+				        <dd class="quiet">中国大陆&nbsp;杭州</dd>
+				        </dl>
+				       </li>
+				      <li class="col-3">共同朋友：<strong class="showFriends blue hand">16</strong></li>
+				      <li class="col-4">
+				      		<a class="link-add" target="_blank" href="#" checkFriendsLimit="0">加为一度人脉</a>
+					      	<a class="link-focus" send_mail_id="send_mail" href="#" receiverId="36705">关注此人</a> <br />  
+					      	<a class="link-del" href="#" checkFriendsLimit="0">移除</a> <br />
+					      
+				      </li>
+			      </ul>
+			    </div> 
+			    
+			    
+			    
+			</div>
+			
+			
+        </div>
+        <div class="column-3 column_int3">
+			<div class="Emailinvite_ ">
+				<p class="quiet">
+					通过使用MSN导入和邮<br />
+					件通讯簿导入功能，<br />
+					您可以发现自己身边<br />
+					的哪些朋友已经在优<br />
+					士网上注册了，还可<br />
+					以邀请新的联系人成<br />
+					为您在优士上的	一度<br />
+					人脉。
+				</p>
+				<a class="special-btn" href="#">邀请朋友加入优士»</a>
+				<ul class="ivt-ways clearfix">
+					<li id="i-msn"><a href="javascript:;"></a></li>
+					<li id="i-link"><a href="javascript:;"></a></li>
+					<li id="i-email"><a href="javascript:;"></a></li>
+					<li id="i-office-ol"><a href="javascript:;"></a></li>
+					<li id="i-addressBook"><a href="javascript:;"></a></li>
+					<li id="i-linkedin"><a href="javascript:;"></a></li>
+				</ul>
+			</div>
+        </div>
+   	 </div>
+   	 
+   	 
+   	 
+   	 
+<div class="fl-outer" style="width:400px;">
+  <div class="fl-block">
+    	<div class="fl-content" style="overflow:hidden">
+    		
+		   	 <ul id="friendsAbout">
+		   	 	<div class="pointTop"></div>
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="Bill Fisher" /></a>
+		   	 		<span class="blue margin-top05e">Bill Fisher</span>
+		   	 	</li>
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="Bill Fisher" /></a>
+		   	 		<span class="blue margin-top05e">Bill Fisher</span>
+		   	 	</li>
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 	<li>
+		   	 		<a href="#"><img src="http://images.ushigroup.cn/bnsphoto/2010/07/03/dcabee26-2f7a-44a2-a4d3-5da5470d7252_icon.jpg" alt="张学友" /></a>
+		   	 		<span class="blue margin-top05e">张学友</span>
+		   	 	</li>
+		   	 	
+		   	 </ul>
+ 
+    </div>
+  </div>
+</div> 
+
+
+
+</div>
+<!--#include file="footer.html"-->
+</body>
+</html>
